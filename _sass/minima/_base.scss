@@ -95,6 +95,7 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
+  color: $heading-color;
 }
 
 
@@ -111,7 +112,8 @@ a {
   }
 
   &:hover {
-    color: $link-hover-color;
+    color: darken($link-base-color, 15%);
+    background: $link-base-color;
     text-decoration: underline;
   }
 
