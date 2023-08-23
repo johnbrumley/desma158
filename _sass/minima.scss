@@ -3,10 +3,9 @@
 
 // try changing here, changes need to come before defaults?!
 
-.site-title {
-  color: white;
-}
 
+$site-title-color: rgb(0, 255, 128);
+$heading-color: #d4ead4;
 $text-color:            #bbbbbb;
 $background-color:      #181818;
 $code-background-color: #212121;
@@ -21,7 +20,7 @@ $grey-color-dark:  darken($grey-color, 25%);
 
 $link-base-color:       #79ffa8;
 $link-visited-color:    $link-base-color;
-$link-hover-color:      $text-color;
+$link-hover-color:      #1c852f;
 
 $border-color-01:       $brand-color-dark;
 $border-color-02:       $brand-color-light;
