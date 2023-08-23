@@ -28,3 +28,5 @@ Read a bit more about [projects](projects.md) or some cool info on how to do [co
 [test project](test.html) try this out
 
 
+[code-test](code-test.md) -- syntax highlight test
+
