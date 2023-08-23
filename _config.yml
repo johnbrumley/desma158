@@ -29,10 +29,12 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 
-remote_theme: jekyll/minima
+# Add to plugins: list
 plugins:
-  - jekyll-feed
   - jekyll-remote-theme
+
+# set up remote_theme
+remote_theme: jekyll/minima
 
 # Exclude from processing.
 # The following items will not be processed, by default.
