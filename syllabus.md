@@ -14,15 +14,11 @@ Day and Time: Tuesday and Thursday: 9 – 11:50am
 
 Instructor: John Brumley (He/Him)  
 Office hours & Location: Tuesdays 1-2pm / Game Lab  
-Email: jtbrumley [at] g.ucla.edu
+Email: jtbrumley@g.ucla.edu
 
-Teaching Assistant: Aurora Mititelu (She/Her)  
-Office hours & Location: Available by appointment  
-Email: ucaurora95 [at] g.ucla.edu
-
-**UCLA Game Lab Office Hours:  
-**Alex Rickett, Tyler Stefanich          
-Usually Fridays by appointment, stay tuned for more info.
+Teaching Assistant: Vincent Roca  
+Office hours & Location: Tuesdays 1-2pm Room 4240  
+Email: vroca@g.ucla.edu
 
 ## Course Description
 
