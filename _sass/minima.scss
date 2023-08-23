@@ -3,6 +3,10 @@
 
 // try changing here, changes need to come before defaults?!
 
+.site-title {
+  color: white;
+}
+
 $text-color:            #bbbbbb;
 $background-color:      #181818;
 $code-background-color: #212121;
@@ -15,7 +19,7 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
-$link-base-color:       #79b8ff;
+$link-base-color:       #79ffa8;
 $link-visited-color:    $link-base-color;
 $link-hover-color:      $text-color;
 
@@ -34,9 +38,9 @@ $table-border-color:    $border-color-01;
   background: #212121;
   @extend %vertical-rhythm;
 
-  .highlighter-rouge & {
-      background: #224;
-  }
+  // .highlighter-rouge & {
+  //     background: #224;
+  // }
 
   .c     { color: #545454; font-style: italic } // Comment
   .err   { color: #f07178; background-color: #e3d2d2 } // Error
