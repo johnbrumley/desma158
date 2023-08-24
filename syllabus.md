@@ -2,8 +2,6 @@
 layout: page
 title: Syllabus
 ---
-
-
 # DESMA 158: GAME ENGINE
 
 Course Name & Number: DESMA 158  
@@ -86,7 +84,7 @@ Reading and lecture responses are pass/fail. As long as you thoughtfully complet
 See Submission Guidelines for more details
 ```
 
-##### PROJECT SUBMISSION
+#### PROJECT SUBMISSION
 
 Finished projects will be submitted along with:
 
@@ -95,11 +93,11 @@ Finished projects will be submitted along with:
 - A **brief** description detailing the basic premise of the game and how to play the game
 - A Windows build of your game **and** an exported package of your scenes
 
-##### DESIGN DOCUMENT
+#### DESIGN DOCUMENT
 
 Each project will begin with a short game design document detailing the concept of the game. This document will include a title, descriptions of win/lose states, the challenge of the game, inputs and controls, and illustrations of levels, characters, items, etc. We will use these as tools for developing prototypes and giving feedback as projects are developed.
 
-##### LATE WORK
+#### LATE WORK
 
 Projects are due at the beginning of class on their respective due date. After this time, a full letter grade will be deducted from the project grade for each week that the assignment is late (two weeks late == two letter grades deducted).
 
@@ -107,13 +105,13 @@ Extra time will not be given for work lost due to save issues, editor errors, co
 
 If you anticipate that you won’t be able to complete the work by the due date, please contact us **before** the due date so we can discuss options.
 
-##### ATTENDANCE
+#### ATTENDANCE
 
 Please come to class on time at **9:00am**. If you are more than 15 minutes late, you will be marked as late. Three late marks results in an unexcused absence. Any disputes should be discussed with the TA within two weeks.
 
 If you must miss class, email the TA prior to the class. Absences will not be excused after the fact except in extreme circumstances. You get **one** unexcused absence without it affecting your grade. Each unexcused absence after that will result in one full letter grade deduction from your participation / attendance score.
 
-##### APPROPRIATION, FAIR USE, AND GENERATED CONTENT
+#### APPROPRIATION, FAIR USE, AND GENERATED CONTENT
 
 Because the aim of the course is to explore the techniques and processes for using game engines, it is perfectly acceptable to use assets that you did not create yourself for developing early stage prototypes and testing mechanics. **However**, you should strive to develop your own assets for your project submissions, but if major portions of the project have been borrowed or generated, particularly audio, visual, and textual content, please discuss with us ahead of time.
 
