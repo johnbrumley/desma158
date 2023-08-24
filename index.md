@@ -18,7 +18,8 @@ Teaching Assistant: Vincent Roca (He/Him)
 Office hours & Location: Tuesdays 1-2pm Room 4240  
 Email: vroca@g.ucla.edu
 
-COURSE DESCRIPTION  
+### COURSE DESCRIPTION  
+
 This course introduces the fundamentals of programming interactive projects in game development software. Classwork focuses on familiarizing students with game engines, computer programming concepts, player experience, and other skills that are foundational to making digital games. Lectures, exercises, and class projects teach skills needed to create digital games including custom rules, interactive physics systems, vectors, generative or randomized levels, save data, custom input systems, score-keeping, and sound. This course is offered in parallel with the concurrent courses, Game Design and Interactive Animation.
 
 Going to test out a link here. Check out the [syllabus](syllabus.md) section of the website.
