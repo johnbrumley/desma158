@@ -64,7 +64,7 @@ Create a game with randomized game objects, levels, and/or dynamic or unpredicta
 > - Project 2: 30%
 > - Project 3: 30%
 > - Participation / Attendance : 20%
-> - Extra Credit ![✨](https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg)%
+> - Extra Credit !✨%
 
 ### Evaluation
 
