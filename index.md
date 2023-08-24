@@ -14,7 +14,7 @@ Instructor: John Brumley (He/Him)
 Office hours & Location: Tuesdays 1-2pm, Gamelab  
 Email: jtbrumley@g.ucla.edu
 
-Teaching Assistant: Vincent Roca  
+Teaching Assistant: Vincent Roca (He/Him)
 Office hours & Location: Tuesdays 1-2pm Room 4240  
 Email: vroca@g.ucla.edu
 
