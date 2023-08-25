@@ -12,12 +12,9 @@ Currently using the old site while waiting for the new one to go live.
 
 ## Discord
 
-[https://discord.gg/C4EzNZ6Wfv](https://discord.gg/C4EzNZ6Wfv) 
+[https://discord.gg/C4EzNZ6Wfv](https://discord.gg/C4EzNZ6Wfv)  
 
-  
 
-![](https://lh3.googleusercontent.com/DDbNNRf0VMlF3tDYc2u01355He5L-Nd5g95olGmCGlkbCv5S5A3aB39JeDq3zzfUkVbryvu6t1kOMuYH-d1s3EcixLFeAvQ9jAl6lZIp9kWmk0kl4p_pQEv0NjKxJ4kgXxFzu3KMnmGBDNrJ5TVnATU)  
-  
 
 # What’s a game engine?
 
