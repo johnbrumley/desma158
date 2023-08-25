@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: slides
 title: Day 1
 ---
 ## Week 0, Thursday
@@ -8,7 +8,7 @@ title: Day 1
 
 Currently using the old site while waiting for the new one to go live.
 
-## [Syllabus](https://classes.dma.ucla.edu/Winter23/158/index.php/spring-syllabus/), [Schedule](https://classes.dma.ucla.edu/Winter23/158/index.php/spring-schedule/) 
+## [Syllabus](syllabus.md), [Schedule](schedule.md) 
 
 ## Discord
 
@@ -21,7 +21,6 @@ Currently using the old site while waiting for the new one to go live.
 
 # What’s a game engine?
 
-  
 
 First off………. What's a game?
 
@@ -137,59 +136,36 @@ Swapping some words in Anthropy’s definition (“A game is an experience creat
 
 … through Interaction?
 
-  
-
 More pragmatically, a game engine is about reducing the friction for you, the designer, in developing interactive experiences
-
-  
 
 A game engine as a piece of software makes it easier to combine your drawings, sounds, animation, videos, photos, writing, etc. into something navigable by a player
 
-  
-
 A thing for gluing together assets into some kind of interactive / real time thing
 
-  
 
 ![](https://lh6.googleusercontent.com/cLNuCF1q8GAZL3diqsvSh__1ovMBeZ76eUvQj42gJuQSD8hTBoNtXnRLr5ya_RBZCYr7BMkiSqHFwFM_B94i5_0MgP8n7dgh1Dwn_WG1ROKBTA3cSnsZmURp3H95gmBGJSgrufGuG0P7mEzh5uhnaEA)
 
 [https://docs.unity3d.com/Manual/AssetWorkflow.html](https://docs.unity3d.com/Manual/AssetWorkflow.html) 
 
-  
-
 ## Expanding the definition
 
-  
-
 Maybe it doesn’t necessarily need to be easier. [Excel](https://youtu.be/N2QC6VQXo8U) is a game engine right? Could any software or platform work as a game engine? 
-
-  
 
 Today games continue to be released with level editors and other mod tools included. Modifying games is almost as natural as playing them. Indeed, video games lend themselves to the practice of modding in ways not seen in other media like film or literature. This is primarily due to the technical distinction between the core game engine and the specific game design and narrative contained within it. A single game engine may facilitate a wide variety of individual games. The game engine is a type of abstract core technology that, while it may exert its own personality through telltale traces of its various abilities and features … is mostly unlinked from the gameplay layered within it.
 
 Galloway in Gaming: Essays on Algorithmic Culture
-
-  
 
 Games are also game engines too. 
 
 ![](https://lh3.googleusercontent.com/CPseVU46nhOGRC4Ymjk7GMJdnzwabb2Lk6sQVhBAhNmqYKsyy3en9AxNDdjbtQlcfolRAUBCgWKIwHzYNJ6PuXCz5MU9FvaUeO9boZpEsN2_uzth6WxvCmIH_dnFWCM33oddSbb9Q0VnD8kDVLsFowY)
 
 Boluk & Lemieux. Metagaming. Introduction [https://manifold.umn.edu/read/metagaming/section/ca0c7a57-96bf-41fc-910b-3652b6872404#intro](https://manifold.umn.edu/read/metagaming/section/ca0c7a57-96bf-41fc-910b-3652b6872404#intro) 
-
-  
-
 Level editors, speedrunning categories, the chat, prizes and rankings, strategizing, the environment … referred to in the book as the messy circle rather than a magic one
 
-  
 
 ![](https://lh5.googleusercontent.com/y1EEZBmWVW4B-WAsF4CqrnwHOQasy8iInOjc4kKFPZcaApVf2_2GrbMekDApucscxrt3hn-9Yk-niBJ0JAG-8SS2qY5fDIKJsRXgWRghFq4hCxCOZ_Ma8ZfnSRxdE9EoXmSEy6LoMSy91tqU8l_q8t4)
 
 [Minecraft Earth](https://www.minecraft.net/en-us/article/minecraft-earth-coming-end)
-
-  
-  
-  
 
 Are there non-software game engines?
 
@@ -207,8 +183,6 @@ Fortunately there are a lot of options these days that are also “tuned” for 
 
 Flickgame : [https://www.flickgame.org/](https://www.flickgame.org/) 
 
-  
-
 ![](https://lh4.googleusercontent.com/LfhQeQ4lfP_vjjRurUB1569pQVs725nuSHm0wa8cqiPoV2jaVrPfDbAUbtUbaknPF4F1ON1v_OSEpclO49dnaVyC5genJU-JlSg-AadU7izcRW5Yxa6pYKVw2VzEzX1Jvdok01_sJrsLXhO4yayqB9s)
 
 Bitsy: [https://ledoux.itch.io/bitsy](https://ledoux.itch.io/bitsy) 
@@ -219,10 +193,7 @@ Sok-worlds: [https://sokpop.itch.io/sok-worlds](https://sokpop.itch.io/sok-world
 
 - Also see [https://sokpop.itch.io/](https://sokpop.itch.io/) – small team trying to release a game (roughly) monthly
     
-
-  
-
-![](https://lh5.googleusercontent.com/tQWX1A5nYM1aueN0_inYXAyBEkxUE0sM6jtLIaLFaWjgWR0FadzP3qk1sYiGg0KF0atMbbeScgzaO9lKfNu8LxG7DXyUh5pvpauzMKU90DAP_tmZSgQKp3nW4B2A07Z2F_liQHAR2xra_Xo1YJXweMc)Twine: [http://twinery.org/](http://twinery.org/)
+    ![](https://lh5.googleusercontent.com/tQWX1A5nYM1aueN0_inYXAyBEkxUE0sM6jtLIaLFaWjgWR0FadzP3qk1sYiGg0KF0atMbbeScgzaO9lKfNu8LxG7DXyUh5pvpauzMKU90DAP_tmZSgQKp3nW4B2A07Z2F_liQHAR2xra_Xo1YJXweMc)Twine: [http://twinery.org/](http://twinery.org/)
 
   
 
@@ -254,63 +225,29 @@ Other industries use Unity for things like [Architectural](https://unity.com/sol
 
 Unity also contracts with the US Department of Defense for military [training and simulation](https://www.vice.com/en/article/y3d4jy/unity-workers-question-company-ethics-as-it-expands-from-video-games-to-war)
 
-  
-  
-
 # Installing Unity
 
-  
-
 1. Download and install [Unity Hub](https://unity.com/download)
-    
 2. Open Unity Hub and create a Unity Account or log in with an existing Unity account
-    
 
-![](https://lh4.googleusercontent.com/APHs2tLEd-gZY72ls4AygAaHh37mgskH6i9_yFtLF51Qurm3SVYzi7kgLrvM69wJVHUPl0USzqoWAMAyWEvEO4yZr951ELHKjD-Q_Q6eV4LTLV3YKR8zzOXbWNWuWIfvzhkt5Q4WChHx0xLLwn6cHsE)
-
-  
+	![](https://lh4.googleusercontent.com/APHs2tLEd-gZY72ls4AygAaHh37mgskH6i9_yFtLF51Qurm3SVYzi7kgLrvM69wJVHUPl0USzqoWAMAyWEvEO4yZr951ELHKjD-Q_Q6eV4LTLV3YKR8zzOXbWNWuWIfvzhkt5Q4WChHx0xLLwn6cHsE)
 
 3. Once you’ve logged in, install the Unity Editor. I recommend installing the most recent LTS Editor. This is currently 2021.3.16. You’ll have to agree to the license, then it will start to install 
-    
 
+	![](https://lh6.googleusercontent.com/CB-AyT2AH9FayyFiBnOmZ2chD9ZwHCV4qIEtT8nroKzX5xeNnSmH1Fcxg0YhqtHWFv32IpaUwPo1N4IGzwS2FbzTxSmcqLh3tvkJXVqnXDDVnRAC6jSCNymq0pMZL3KK93PANW1b07MHXaKtQzrLN0s)
   
-
-![](https://lh6.googleusercontent.com/CB-AyT2AH9FayyFiBnOmZ2chD9ZwHCV4qIEtT8nroKzX5xeNnSmH1Fcxg0YhqtHWFv32IpaUwPo1N4IGzwS2FbzTxSmcqLh3tvkJXVqnXDDVnRAC6jSCNymq0pMZL3KK93PANW1b07MHXaKtQzrLN0s)
-
-  
-
 4. Make sure to also install Microsoft Visual studio and Windows build support. To make the submission process a bit easier, everyone should submit a Windows build of their project regardless of the OS that you are using.
-    
 
-  
-
-![](https://lh5.googleusercontent.com/gujcH0ZUGA_jq2Qd0CsADLJ76X7imXQ5i5HD3wY06q97C6onic-jFTFu7pSIBzlpyyEkP3aMnCObtwZU60sscZOnOz2X1E0cR6aYokfzzsbKa-uRVbQhqmgp6pa677atTTVo0PR27E1MLsep6nyBDvU)
-
-  
+	![](https://lh5.googleusercontent.com/gujcH0ZUGA_jq2Qd0CsADLJ76X7imXQ5i5HD3wY06q97C6onic-jFTFu7pSIBzlpyyEkP3aMnCObtwZU60sscZOnOz2X1E0cR6aYokfzzsbKa-uRVbQhqmgp6pa677atTTVo0PR27E1MLsep6nyBDvU)
 
 5. You’ll want to include tools for working with Unity. When the box below shows up during the installation, check the “Game Development with Unity” box and uncheck the “Unity Hub” box in the Installation details panel (see image below). Click the Install button to continue. Skip making an account. Close Visual Studio when finished.
-    
-
-  
-
-![](https://lh3.googleusercontent.com/DlcKNSNlT1oVUnxC95YL5NsZGosjrDLcQbSNl2sUJ1rKBKW_JSxkJHgACyTc_nwI_NhkBVbzX5nQQhgWUZXNtCwWKBQPViK6ZaJPFUJAmYScW4gUs3isp4LSI0YqvvVto6X4LkG9sq5lmjC6cPAt9_A)
-
-  
-
-Note: Unity does not come with its own code editor, so it’s necessary to install an external editor. Visual Studio is the recommended editor, but you can use other code editors that you are more familiar with (other popular editors with Unity include VS Code and JetBrains Rider). If you’re just starting out, I strongly recommend using Visual Studio because the setup is much less involved. Once we get into editing scripts, having working code completion for the Unity API will make your life so much easier.
-
-  
-
+    ![](https://lh3.googleusercontent.com/DlcKNSNlT1oVUnxC95YL5NsZGosjrDLcQbSNl2sUJ1rKBKW_JSxkJHgACyTc_nwI_NhkBVbzX5nQQhgWUZXNtCwWKBQPViK6ZaJPFUJAmYScW4gUs3isp4LSI0YqvvVto6X4LkG9sq5lmjC6cPAt9_A)
+	
+	Note: Unity does not come with its own code editor, so it’s necessary to install an external editor. Visual Studio is the recommended editor, but you can use other code editors that you are more familiar with (other popular editors with Unity include VS Code and JetBrains Rider). If you’re just starting out, I strongly recommend using Visual Studio because the setup is much less involved. Once we get into editing scripts, having working code completion for the Unity API will make your life so much easier.
+	
 6. Create a new Project. Back in Unity Hub. Select the Projects > New Project and then find the 3D URP template in the list (you may have to scroll down a bit, and you may need to click “download template”). You can name your project (consider calling it “Rollaball” because this is the first step of the homework), set the location of the project folder and click “Create Project”.
     
-
-  
-
-![](https://lh3.googleusercontent.com/5LkEQwBuOXZnX_pdFun2sqoZTd4vAJV912xBCMa8RCTexXz1TNHmlQd8wNvTzVsBeyuKbfquJO5xc4JIE-V7_Fr7Zbfuy1FAzYrw5TVSBflbNXgd8OKmRcZKK705CUtGUihxQknpq96ecIwtKiCYrAg)
-
-  
-  
-
+    ![](https://lh3.googleusercontent.com/5LkEQwBuOXZnX_pdFun2sqoZTd4vAJV912xBCMa8RCTexXz1TNHmlQd8wNvTzVsBeyuKbfquJO5xc4JIE-V7_Fr7Zbfuy1FAzYrw5TVSBflbNXgd8OKmRcZKK705CUtGUihxQknpq96ecIwtKiCYrAg)
 # Unity Hello World
 
   

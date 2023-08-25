@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<div class="slideshow">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+
+    {{ content }}
+
+  <script>
+    // look through all h1/h2 inside doc and wrap each with a div.slide
+    $("h1").each(function() {
+        $(this).nextUntil("h1").wrapAll("<div class='slide'>")
+    });
+  </script>
+  
+
+</div>
