@@ -32,26 +32,26 @@ By the end of this course, you will be able to create a real-time game with cust
 
 ## Course Outline
 
-```
-See the Schedule for a more detailed breakdown of each class.
+```text
+See the [schedule](schedule.md) for a more detailed breakdown of each class.
 ```
 
 **Weeks 1–2**  
 Introduction to game development tools, programming basics, keeping score, visual language, and level design.
 
-[Project 1: Rolling Ball Game (Due: Week 3 Tuesday)](https://classes.dma.ucla.edu/Spring23/158/?page_id=48)  
+[Project 1: Rolling Ball Game (Due: Week 2)](project-1.md)  
 Create a 3D game that uses keyboard controls to maneuver a physics-based sphere through space and gather collectables. This simple game serves as an introduction to game development tools.
 
 **Weeks 3–6**  
 A focus on vector fundamentals, physics, and persistent data.
 
-[Project 2: Arcade Game (Due: Week 6 Thursday)](https://classes.dma.ucla.edu/Spring23/158/?page_id=151)  
+[Project 2: Arcade Game (Due: Week 6)](project-2.md)  
 Remake a classic 2D arcade game, such as space invaders, pong, or breakout. Experiment with the structure of the game, apply new knowledge about interaction design, keeping score, physics, and colliders.
 
 **Weeks 7–10**  
 Using randomness, arrays and lists, and instantiating game objects.
 
-[Project 3: Generative Game (Due: Week 10 Thursday)](https://classes.dma.ucla.edu/Spring23/158/?page_id=271)  
+[Project 3: Generative Game (Due: Week 10)](project-3.md)  
 Create a game with randomized game objects, levels, and/or dynamic or unpredictable systems. Use prefabs, the instantiate function, and modular game objects.
 
 ## Assignments & Grading
@@ -80,7 +80,7 @@ Reading and lecture responses are pass/fail. As long as you thoughtfully complet
 
 ### Submitting Projects
 
-```
+```text
 See Submission Guidelines for more details
 ```
 
@@ -101,7 +101,7 @@ Each project will begin with a short game design document detailing the concept 
 
 Projects are due at the beginning of class on their respective due date. After this time, a full letter grade will be deducted from the project grade for each week that the assignment is late (two weeks late == two letter grades deducted).
 
-Extra time will not be given for work lost due to save issues, editor errors, computer crashes, etc. Unity projects are complicated and can be annoying to backup. Make sure to save often and occasionally create a backup of your scenes. I recommend [exporting a unitypackage](https://classes.dma.ucla.edu/Winter23/158/index.php/how-to-submit-projects/#exporting) of your project and storing the package on an external drive or cloud backup. If you are comfortable with version control, there are a number of options as well ([1](https://unity.com/solutions/version-control) , [2](https://youtu.be/_ewoEQFEURg)).
+Extra time will not be given for work lost due to save issues, editor errors, computer crashes, etc. Unity projects are complicated and can be annoying to backup. Make sure to save often and occasionally create a backup of your scenes. I recommend [exporting a unitypackage](how-to-submit-projects.md#Exporting%20Unity%20Packages) of your project and storing the package on an external drive or cloud backup. If you are comfortable with version control, there are a number of options as well ([1](https://unity.com/solutions/version-control) , [2](https://youtu.be/_ewoEQFEURg)).
 
 If you anticipate that you won’t be able to complete the work by the due date, please contact us **before** the due date so we can discuss options.
 

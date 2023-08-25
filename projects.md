@@ -3,4 +3,34 @@ layout: page
 title: Projects
 ---
 
-maybe return to the [index](index.md) or check out the [syllabus](syllabus.md) section
+This class is split into four sections: Introduction, Physics, Randomization, and Collections. Games will focus on different design concerns and techniques in Unity
+
+Every project will involve an initial design document to be submitted soon after starting a new section. Click on each project for more info.
+
+For info about project submission steps and guides for building and exporting, refer to this page on [how to submit your projects](how-to-submit-projects.md).
+
+Weeks 1-2:
+## [1. Rolling Ball Game](project-1.md)
+
+**DUE 10/5**: Design Document  
+**DUE 10/12**: Game
+
+---
+
+Weeks 3-6:
+## [2. Arcade Game](project-2.md)
+
+**DUE 10/19:** Design Document
+**DUE 10/26:** Prototype
+**DUE 11/7:** Game
+
+---
+
+Weeks 7-10:
+## [3. Randomized Game](project-3.md)
+
+**DUE 11/14:** Design Document
+**DUE 11/28:** Prototype 
+**DUE 12/7:** Game
+
+---
