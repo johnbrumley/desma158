@@ -32,9 +32,8 @@ By the end of this course, you will be able to create a real-time game with cust
 
 ## Course Outline
 
-```text
-See the [schedule](schedule.md) for a more detailed breakdown of each class.
-```
+>[!NOTE]
+>See the [schedule](schedule.md) for a more detailed breakdown of each class.
 
 **Weeks 1–2**  
 Introduction to game development tools, programming basics, keeping score, visual language, and level design.
@@ -80,9 +79,8 @@ Reading and lecture responses are pass/fail. As long as you thoughtfully complet
 
 ### Submitting Projects
 
-```text
-See Submission Guidelines for more details
-```
+>[!NOTE]
+>See [submission guidelines](how-to-submit-projects.md) for more details
 
 #### PROJECT SUBMISSION
 
