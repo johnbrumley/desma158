@@ -158,9 +158,9 @@ Bitsy: [https://ledoux.itch.io/bitsy](https://ledoux.itch.io/bitsy) 
 
 Sok-worlds: [https://sokpop.itch.io/sok-worlds](https://sokpop.itch.io/sok-worlds) 
 
-- Also see [https://sokpop.itch.io/](https://sokpop.itch.io/) – small team trying to release a game (roughly) monthly
-    
-    ![](https://lh5.googleusercontent.com/tQWX1A5nYM1aueN0_inYXAyBEkxUE0sM6jtLIaLFaWjgWR0FadzP3qk1sYiGg0KF0atMbbeScgzaO9lKfNu8LxG7DXyUh5pvpauzMKU90DAP_tmZSgQKp3nW4B2A07Z2F_liQHAR2xra_Xo1YJXweMc)Twine: [http://twinery.org/](http://twinery.org/)
+Also see [https://sokpop.itch.io/](https://sokpop.itch.io/) – small team trying to release a game (roughly) monthly
+
+![](https://lh5.googleusercontent.com/tQWX1A5nYM1aueN0_inYXAyBEkxUE0sM6jtLIaLFaWjgWR0FadzP3qk1sYiGg0KF0atMbbeScgzaO9lKfNu8LxG7DXyUh5pvpauzMKU90DAP_tmZSgQKp3nW4B2A07Z2F_liQHAR2xra_Xo1YJXweMc)Twine: [http://twinery.org/](http://twinery.org/)
 
 See Everest Pipkin’s [list of game engines](https://github.com/everestpipkin/tools-list#Game-Engines) (and also check out the entire list) for more!
 # Oh ya, Unity
@@ -200,6 +200,7 @@ Unity also contracts with the US Department of Defense for military [training an
 6. Create a new Project. Back in Unity Hub. Select the Projects > New Project and then find the 3D URP template in the list (you may have to scroll down a bit, and you may need to click “download template”). You can name your project (consider calling it “Rollaball” because this is the first step of the homework), set the location of the project folder and click “Create Project”.
     
     ![](https://lh3.googleusercontent.com/5LkEQwBuOXZnX_pdFun2sqoZTd4vAJV912xBCMa8RCTexXz1TNHmlQd8wNvTzVsBeyuKbfquJO5xc4JIE-V7_Fr7Zbfuy1FAzYrw5TVSBflbNXgd8OKmRcZKK705CUtGUihxQknpq96ecIwtKiCYrAg)
+
 # Unity Hello World
 
 Let’s get our bearings and talk a little bit about how the Unity Editor works
