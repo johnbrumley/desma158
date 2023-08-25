@@ -28,7 +28,7 @@ A cocktail arcade cabinet is a modular arcade cabinet shaped like a table. A gam
 
 ## 1. Game Design Document
 
-**Due by Tuesday 4/25**
+**Due by Thursday 10/19**
 
 Develop a short design document that describes your arcade game remake in in terms of both narrative theming and structural differences from the original game. This includes creating a stylized title logo and concept artwork based on arcade cabinet design. Additionally, mock up a screenshot of what the gameplay and in-game characters will look like.
 
@@ -55,7 +55,7 @@ Crystal Castles marquee artwork
 
 ## 2. Prototype It
 
-**Show in class on Tuesday 5/2**
+**Show in class on Thursday 10/26**
 
 Start by building a graybox prototype of your arcade game. Grayboxing is a level design practice where you build a rough, blocked-out version of your game using basic elements (usually gray boxes). This is a common practice for developing and debugging game mechanics, inputs, and interaction design separately from the art and sound elements of the game.
 
@@ -65,7 +65,7 @@ There is no formal submission for this stage of the project, but we will share p
 
 ## 3. Build it
 
-**Due by Thursday 5/11**
+**Due by Tuesday 11/7**
 
 [Submit Project 2: Arcade Game](https://docs.google.com/forms/d/e/1FAIpQLSf7zlSBJC49o1IzTR2iO8onocIxwaEi56OequjLAnLixXXOgw/viewform?usp=sf_link)
 

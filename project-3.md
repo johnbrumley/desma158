@@ -37,7 +37,7 @@ Consider the 10,000 bowls of oatmeal problem, described by Kate Compton:
 
 ## 1. Game Design Document
 
-**Due by Thursday 5/18**
+**Due by Tuesday 11/14**
 
 Develop a short design document that describes your randomized game. What are you generating and how do you plan to do it? How do you imagine someone viewing or interacting with it? Does the work live somewhere beyond a screen or projection? Mock up a few examples of the sorts of things you’ll be randomly generating.
 
@@ -59,7 +59,7 @@ Develop a short design document that describes your randomized game. What are yo
 
 ## 2. Prototype it
 
-**Show in class on Tuesday 5/30**
+**Show in class on Tuesday 11/28**
 
 Start by building a graybox prototype of your randomized system. Grayboxing is a level design practice where you build a rough block-out version of your level using blocks (usually gray boxes) so that you can iterate and test the layout as soon as possible.
 
@@ -69,7 +69,7 @@ There is no formal submission for this stage of the project, but we will share p
 
 ## 3. Build it
 
-**Due by Thursday 6/8**
+**Due by Thursday 12/7**
 
 [Submit Project 3: Randomized Game](https://docs.google.com/forms/d/e/1FAIpQLSfgE0gt8wHVE837ue1QGkSMilJHnCjrLHA9wEd977R89pW7Fg/viewform?usp=sf_link)
 

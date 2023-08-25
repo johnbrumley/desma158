@@ -7,7 +7,7 @@ Create a 3D game that uses keyboard controls to maneuver a physics-based sphere 
 
 ## 1. Complete Roll-a-ball
 
-**Due by Thursday 4/6**
+**Due by Tuesday 10/3**
 
 This project will build off the official Unity [Roll-a-ball tutorial](https://learn.unity.com/project/roll-a-ball), so the first step is to complete the entire tutorial and have a fully set up project ready for part 2. Everyone needs to complete this project as soon as you can!
 
@@ -15,7 +15,7 @@ This project will build off the official Unity [Roll-a-ball tutorial](https://l
 
 ## 2. Design a better version
 
-**Due by Tuesday 4/11**
+**Due by Thursday 10/5**
 
 Roll-A-Ball as it is, is not much of a “game” – you can win by collecting the pickups but you can’t really lose, there is no challenge designed into the game, and the outcome is predictable – so we want to fix all of this and make Roll-A-Ball into a good game using level design and adding a bit of risk!
 
@@ -39,7 +39,7 @@ You can submit your design document pdf and sketch via this google form:
 
 ## 3. Build it
 
-**Due by Tuesday 4/18**
+**Due by Thursday 10/12**
 
 1. Use any 3D assets you want to build a more interesting and playable game level – these assets could be made up of Unity Prefabs, your own 3D models, flat image cutouts, etc.
 2. Add in the missing game mechanics that will challenge the player and create one or more lose conditions (for example: traps that reset the game if you touch them, falling off the world, pickups that hurt you, a life bar that depletes over time, a time limit, moving gates that push you back, becoming utterly, irrevocably lost, making poor fiscal decisions, spotted by a cat….). Game should be able to restart when Win / Lose happens.
