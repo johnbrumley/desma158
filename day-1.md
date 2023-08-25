@@ -43,9 +43,9 @@ This quote is pretty broad and implies a few more important parts of games: 
 “A videogame is a hotel is a machine for framing an experience which never actually occurs. Wonderful! You climb inside the shell of someone else’s excavated and inscrutable desires, you drop off your bags, you crawl around the litter where consciousness has passed, chairs, tables, boxes, doors, and then you leave and buy a postcard to remind you where you’ve been”
 
 - Stephen “thecatamites” Gill-Murphy from [10 Beautiful Postcards](https://thecatamites.itch.io/10-beautiful-postcards)
-    
 
-# Breaking down the rules: Tag
+
+# Back to rules: Tag
 
 ![](https://lh4.googleusercontent.com/ofwgAZFPoOQjpGqPTI4S0ES92hj1UP2zaLCD8Is8UMLsjGY_vFOwyQ9wL34Dt1kCpbu16Vbju1YbC9G3GbJpqRYz2K7U8qXFC55xTkqQdhDWrsZNUKWNoKnJZNiF58rQFYNbHURsrCh1hAYwDbgkk_g)
  
@@ -71,11 +71,20 @@ What are some sentences that encapsulate games?
 
 - A plumber that jumps to defeat a large, spike-shelled, turtle?
 - A hedgehog that ...
-- 
+- ...
 
 Keep this in mind when developing your project design documents.
 
 # Verbs, verbs, and verbs: 
+
+
+![A long list of verbs written on two pages](https://www.moma.org/media/W1siZiIsIjI1MTA0OCJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA5MCAtcmVzaXplIDIwMDB4MjAwMFx1MDAzZSJdXQ.jpg?sha=1a96660a3d8ba7ab)
+*Verb List (1967) - Richard Serra*
+
+> "actions to relate to oneself, material, place, and process."
+
+How does this change when the self, material, place, and processes are all arbitrary?
+
 [game idea generator](https://orteil.dashnet.org/gamegen)
 
 ![](https://lh5.googleusercontent.com/EYZQBjTiSss2gYejhK_7CdSttNt5JkWx17hT0iSBUDP2aGHk87sJKo4B-v51iYXa6Ca9Jt66FylU-kmf0MdceuISYR2Aaa8TVsXbHJNgLwqW8w7R2e_UU4cgm7VgGbDvsJXLrJb_AKmI2IghW5EZ3VU)
