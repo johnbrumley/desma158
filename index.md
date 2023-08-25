@@ -22,12 +22,3 @@ Email: vroca@g.ucla.edu
 
 This course introduces the fundamentals of programming interactive projects in game development software. Classwork focuses on familiarizing students with game engines, computer programming concepts, player experience, and other skills that are foundational to making digital games. Lectures, exercises, and class projects teach skills needed to create digital games including custom rules, interactive physics systems, vectors, generative or randomized levels, save data, custom input systems, score-keeping, and sound. This course is offered in parallel with the concurrent courses, Game Design and Interactive Animation.
 
-Going to test out a link here. Check out the [syllabus](syllabus.md) section of the website.
-
-Read a bit more about [projects](projects.md) or some cool info on how to do [cool things](cool-things.md) 
-
-[test project](test.html) try this out
-
-
-[code-test](code-test.md) -- syntax highlight test
-
