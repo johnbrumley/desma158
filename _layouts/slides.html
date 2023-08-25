@@ -10,9 +10,10 @@ layout: default
   <script>
     // look through all h1/h2 inside doc and wrap each with a div.slide
     $("h1").each(function() {
-        $(this).nextUntil("h1").wrapAll("<div class='slide'>")
+        $(this).nextUntil("h1").addSelf().wrapAll("<div class='slide'>")
     });
   </script>
   
+  <script src="assets/js/slide.js"></script>
 
 </div>
