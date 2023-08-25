@@ -38,7 +38,7 @@ This quote is pretty broad and implies a few more important parts of games: 
 - What about the interaction between the rules?
 - What is mediating this interaction? Who keeps track of the rules?
 
-#  
+#  What else is a game
 
 “A videogame is a hotel is a machine for framing an experience which never actually occurs. Wonderful! You climb inside the shell of someone else’s excavated and inscrutable desires, you drop off your bags, you crawl around the litter where consciousness has passed, chairs, tables, boxes, doors, and then you leave and buy a postcard to remind you where you’ve been”
 
