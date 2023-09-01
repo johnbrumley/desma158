@@ -3,7 +3,7 @@ layout: page
 title: Project 1
 ---
 
-Create a 3D game that uses keyboard controls to maneuver a physics-based sphere through space and gather collectables. This simple game serves as an introduction to development with Unity.
+Create a remix of the Roll-a-ball tutorial game that explores the possibilities of spatial narrative. The Roll-a-ball tutorial serves as a quick tour of the Unity Editor, while also providing a foundation for creating something more expansive.
 
 ## 1. Complete Roll-a-ball
 
@@ -13,38 +13,36 @@ This project will build off the official Unity [Roll-a-ball tutorial](https://l
 
 ![](https://classes.dma.ucla.edu/Winter23/158/wp-content/uploads/2023/01/rollball-background-2-e1672847701440-1024x273.png)
 
-## 2. Design a better version
+## 2. Design a "better" version
 
 **Due by Thursday 10/5**
+[$SUBMIT DESIGN DOCUMENT HERE$](https://forms.gle/sKqCfzoVq4BupthbA)
 
-Roll-A-Ball as it is, is not much of a “game” – you can win by collecting the pickups but you can’t really lose, there is no challenge designed into the game, and the outcome is predictable – so we want to fix all of this and make Roll-A-Ball into a good game using level design and adding a bit of risk!
+Roll-A-Ball as it is, is not much of a “game” – you can win by collecting the pickups,  but you can’t really lose. There is no challenge or narrative designed into the game, the outcome is predictable, and the ball is confined to an empty square platform. We want to fix all of this and make Roll-A-Ball into a better, more interesting game by considering the setting, level design, and perhaps a bit of risk 👀
 
-Create a short design document illustrating an idea of how to make Roll-a-ball into a good game. Additionally create an overlay image that will function as a “title card” overlay that appears when the game loads.
+Create a short design document (PDF) illustrating how you will make Roll-a-ball into a good game. Additionally, create an overlay image that will function as a “title card” to appear when the game loads.
 
-1. PDF with a paragraph containing these elements:  
-    – How do you win this game?  
-    – How do you lose this game?  
-    – A detailed sketch or an illustration of your level design / map!  
-    – Describe (for the player to read) – what is the central challenge of this game?  
+1. A description containing these elements:  
+	– What is the premise / idea / concept of this game?
+    – What does it mean to win this game?  What about losing?
+    – Create an illustration of the space that your ball-character will traverse. Consider the scale. 
+    – Describe (for the player to read) – what is the central challenge of this game?  What should the player "do"?
     – Come up with a title for your game
-2. Overlay image (PNG) and text explaining how to play your game. This overlay will be visible when your game starts and can be toggled on and off.
+2. Overlay image (PNG) that includes the premise and controls of the game. This overlay will be visible when your game starts and can be toggled on and off.
 
 ![](https://classes.dma.ucla.edu/Winter23/158/wp-content/uploads/2023/01/envirobear-1024x771.png)
 
 Title card for Enviro-Bear 2000: [https://captaingames.itch.io/enviro-bear-2000](https://captaingames.itch.io/enviro-bear-2000)
 
-You can submit your design document pdf and sketch via this google form:
-
-[SUBMIT DESIGN DOCUMENT](https://forms.gle/sKqCfzoVq4BupthbA)
-
 ## 3. Build it
 
 **Due by Thursday 10/12**
+[~SUBMIT ROLLING BALL GAME~](https://forms.gle/Pyj6XSek5sGesqCAA)
 
-1. Use any 3D assets you want to build a more interesting and playable game level – these assets could be made up of Unity Prefabs, your own 3D models, flat image cutouts, etc.
-2. Add in the missing game mechanics that will challenge the player and create one or more lose conditions (for example: traps that reset the game if you touch them, falling off the world, pickups that hurt you, a life bar that depletes over time, a time limit, moving gates that push you back, becoming utterly, irrevocably lost, making poor fiscal decisions, spotted by a cat….). Game should be able to restart when Win / Lose happens.
+1. Use custom 3D assets to build out your world. These can include your own 3D models, found models, flat image cutouts, and more! Consider progression, distance, signposting, and other elements of level design that we cover in class. Does the level tell a story?
+2. Add game mechanics that will expand on the Roll-a-ball tutorial. Consider ways that the player could lose (e.g., falling off the world, a time limit, things that could push you, becoming utterly lost, making poor fiscal decisions, spotted by a cat….). The Game should be able to restart when Win / Lose happens. 
 3. Create a title overlay using 2D assets (Images, fonts, etc. from step 2 !😉) that has instructions for your game – this overlay should be visible when your game starts and should be able to be shown and hidden during the game by pressing the ‘q’ key.
-4. Add sound to your game! Make a looping background track, sound effects for pickups, sound effects for other events, narration.
+4. Add sound to your game! Make a looping background track, sound effects for pickups, sound effects for other events, your own narration.
 
 Please refer to the page on [preparing your game for submission](how-to-submit-projects.md) for more information on the build and documentation process.
 
@@ -60,8 +58,6 @@ Some inspirations / references:
 - [GooBall](https://youtu.be/luDwU3JGw5A) (2005) – first game built with Unity
 - [Labyrinth](https://youtu.be/T3N8vK7yDxE) (Analog toy) ([info](https://en.wikipedia.org/wiki/Labyrinth_(marble_game))) (see also – [SNAFU](https://youtu.be/26UphjKeO8M))
 
-Submit your project via this google form:
 
-[SUBMIT ROLLING BALL GAME](https://forms.gle/Pyj6XSek5sGesqCAA)
 
 ![](https://classes.dma.ucla.edu/Winter23/158/wp-content/uploads/2023/01/image.png)

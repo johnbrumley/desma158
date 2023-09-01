@@ -450,7 +450,7 @@ print(myNumbers[3]); // prints 0
 
 If you don’t know how many values you’ll need, then a list is useful as it can vary in length.
 
-To use a list, make sure you’re including the System.Collections.Generic namespace
+To use a list, make sure you’re including the *System.Collections.Generic* namespace
 
 
 ```cs

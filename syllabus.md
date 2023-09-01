@@ -35,21 +35,21 @@ By the end of this course, you will be able to create a real-time game with cust
 > See the [schedule](schedule.md) for a more detailed breakdown of each class.
 
 **Weeks 1–2**  
-Introduction to game development tools, programming basics, keeping score, visual language, and level design.
+Introduction to game development tools, Unity Editor, C# introduction, visual language, and level design.
 
-[Project 1: Rolling Ball Game (Due: Week 2)](project-1.md)  
-Create a 3D game that uses keyboard controls to maneuver a physics-based sphere through space and gather collectables. This simple game serves as an introduction to game development tools.
+[Project 1: Ball Game (Due: Week 2)](project-1.md)  
+Remix of the Roll-a-ball tutorial game that explores the possibilities of spatial narrative. Roll-a-ball is a quick tour of the Unity Editor, and also provides a foundation for creating something more expansive.
 
 **Weeks 3–6**  
-A focus on vector fundamentals, physics, and persistent data.
+Working in 2D. Creating assets/sprites. Vector fundamentals, physics, and persistent data.
 
-[Project 2: Arcade Game (Due: Week 6)](project-2.md)  
-Remake a classic 2D arcade game, such as space invaders, pong, or breakout. Experiment with the structure of the game, apply new knowledge about interaction design, keeping score, physics, and colliders.
+[Project 2: Flat Game (Due: Week 6)](project-2.md)  
+Create a 2D "zine" game based on your own life experience. Experiment with custom asset creation and collage techniques. Express ideas through game mechanics, custom inputs, and structure. Use code to incorporate vectors, physics, and collisions into your game.
 
 **Weeks 7–10**  
 Using randomness, arrays and lists, and instantiating game objects.
 
-[Project 3: Generative Game (Due: Week 10)](project-3.md)  
+[Project 3: Indeterminate Game (Due: Week 10)](project-3.md)  
 Create a game with randomized game objects, levels, and/or dynamic or unpredictable systems. Use prefabs, the instantiate function, and modular game objects.
 
 ## Assignments & Grading

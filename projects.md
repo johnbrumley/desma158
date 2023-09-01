@@ -10,7 +10,7 @@ Every project will involve an initial design document to be submitted soon after
 For info about project submission steps and guides for building and exporting, refer to this page on [how to submit your projects](how-to-submit-projects.md).
 
 Weeks 1-2:
-## [1. Rolling Ball Game](project-1.md)
+## [1. Ball Game](project-1.md)
 
 **DUE 10/5**: Design Document  
 **DUE 10/12**: Game
@@ -18,7 +18,7 @@ Weeks 1-2:
 ---
 
 Weeks 3-6:
-## [2. Arcade Game](project-2.md)
+## [2. Flat Game](project-2.md)
 
 **DUE 10/19:** Design Document
 **DUE 10/26:** Prototype
@@ -27,7 +27,7 @@ Weeks 3-6:
 ---
 
 Weeks 7-10:
-## [3. Randomized Game](project-3.md)
+## [3. Indeterminate Game](project-3.md)
 
 **DUE 11/14:** Design Document
 **DUE 11/28:** Prototype 
