@@ -11,7 +11,7 @@ Location: Broad 4240
 Day and Time: Tuesday and Thursday: 9 – 11:50am
 
 Instructor: John Brumley (He/Him)  
-Office hours & Location: Tuesdays 1-2pm / Game Lab  
+Office hours & Location: Thursdays 1-2pm / Game Lab  
 Email: jtbrumley@g.ucla.edu
 
 Teaching Assistant: Vincent Roca (He/Him)
