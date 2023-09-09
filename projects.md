@@ -27,7 +27,7 @@ Weeks 3-6:
 ---
 
 Weeks 7-10:
-## [3. Indeterminate Game](project-3.md)
+## [3. Autonomous Game](project-3.md)
 
 **DUE 11/14:** Design Document
 **DUE 11/28:** Prototype 

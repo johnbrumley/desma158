@@ -47,10 +47,10 @@ Working in 2D. Creating assets/sprites. Vector fundamentals, physics, and persis
 Create a 2D "zine" game based on your own life experience. Experiment with custom asset creation and collage techniques. Express ideas through game mechanics, custom inputs, and structure. Use code to incorporate vectors, physics, and collisions into your game.
 
 **Weeks 7–10**  
-Using randomness, arrays and lists, and instantiating game objects.
+Using randomness, instantiation, custom input, agents.
 
-[Project 3: Indeterminate Game (Due: Week 10)](project-3.md)  
-Create a game with randomized game objects, levels, and/or dynamic or unpredictable systems. Use prefabs, the instantiate function, and modular game objects.
+[Project 3: Autonomous Game (Due: Week 10)](project-3.md)  
+Create a game that moves on it's own or can be influenced by outside input. Use randomness, simulation, and generative techniques to introduce unpredictability. Consider timescale, the audience/spectator, and who or what might interact with the system.
 
 ## Assignments & Grading
 
