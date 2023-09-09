@@ -50,7 +50,7 @@ Create a 2D "zine" game based on your own life experience. Experiment with custo
 Using randomness, instantiation, custom input, agents.
 
 [Project 3: Autonomous Game (Due: Week 10)](project-3.md)  
-Create a game that moves on it's own or can be influenced by outside input. Use randomness, simulation, and generative techniques to introduce unpredictability. Consider timescale, the audience/spectator, and who or what might interact with the system.
+Create a game that runs on it's own, and optionally can be influenced via external input. Use randomness, simulation, and generative techniques to introduce unpredictability. Consider timescale, the audience/spectator, and who or what might interact with the system.
 
 ## Assignments & Grading
 
