@@ -49,8 +49,8 @@ Create a 2D "zine" game based on your own life experience. Experiment with custo
 **Weeks 7–10**  
 Using randomness, instantiation, custom input, agents.
 
-[Project 3: Autonomous Game (Due: Week 10)](project-3.md)  
-Create a game that runs on it's own, and optionally can be influenced via external input. Use randomness, simulation, and generative techniques to introduce unpredictability. Consider timescale, the audience/spectator, and who or what might interact with the system.
+[Project 3: Automatic Game (Due: Week 10)](project-3.md)  
+Create a game that can run independent of player input. Use randomness, simulation, and generative techniques to introduce unpredictability. Consider timescale, the audience/spectator, and who or what might interact with the system. Optionally, the game can also be influenced via external input from a player or environment.
 
 ## Assignments & Grading
 
