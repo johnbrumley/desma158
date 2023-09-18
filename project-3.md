@@ -7,7 +7,7 @@ title: Project 3
 
 [Proteus](https://twistedtree.itch.io/proteus): Procedurally generated island and soundscape
 
-Create a game that can run independent of player input. Use randomness, simulation, and generative techniques to introduce unpredictability. Consider timescale, the audience/spectator, and who or what might interact with the system. Optionally, the game can also be influenced via external input from a player or environment.
+Create a game that can run independent of player input. Use randomness, simulation, and generative techniques to introduce unpredictability. Consider timescale, progression, the audience/spectator, and who or what might interact with the system. Optionally, the game can also be influenced via external input from a player or environment.
 
 You may choose to make a generative landscape, a music/sound machine, a random character generator, a program that creates different buildings with modular parts, a simulation of creatures or natural systems, an abstract art generator, procedurally generated stories, or anything else that you can imagine.
 
