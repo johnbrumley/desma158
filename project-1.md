@@ -20,15 +20,15 @@ This project will build off the official Unity [Roll-a-ball tutorial](https://l
 
 Roll-A-Ball as it is, is not much of a “game” and even less of a space to explore. You can win by collecting the pickups, but you can’t really lose. There is no challenge or narrative designed into the game, the outcome is predictable, and the ball is confined to an empty square platform. We want to fix all of this and make Roll-A-Ball into a better, more interesting game by considering the setting, level design, and perhaps a bit of risk 👀
 
-Create a short design document (PDF) illustrating how you will make Roll-a-ball into a good game. Additionally, create an overlay image that will function as a “title card” to appear when the game loads.
+Develop a short document/sketch that details your plans for expanding on the Roll-a-ball demo. Additionally, create an overlay image that will function as a “title card” to appear when the game starts.
 
-1. A description containing these elements:  
-	– What is the premise / idea / concept of this game?
-    – What does it mean to win this game?  What about losing?
-    – Create an illustration of the space that your ball-character will traverse. Consider the scale. 
-    – Describe (for the player to read) – what is the central challenge of this game?  What should the player "do"?
-    – Come up with a title for your game
-2. Overlay image (PNG) that includes the premise and controls of the game. This overlay will be visible when your game starts and can be toggled on and off.
+**Be sure to include:**
+- A description containing these elements:  
+	1. A title
+	2. What is the premise / idea / concept of this game? What is the player meant to "do"?
+	3. Are there rules or mechanics that create winning or losing conditions?
+	4. The overall space that your ball-character will traverse. Consider interior or exterior, scale (of player and/or the environment), obstacles, occlusions, viewpoints, and sense of place.
+- Overlay image (PNG) that includes the premise and controls of the game. This overlay will be visible when your game starts and can be toggled on and off.
 
 ![](https://classes.dma.ucla.edu/Winter23/158/wp-content/uploads/2023/01/envirobear-1024x771.png)
 
