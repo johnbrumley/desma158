@@ -119,7 +119,8 @@ How about a boat in the ocean finding messages:
 
 Or … level design
 
-![](https://lh4.googleusercontent.com/Y0DOblhkR1-5REyZOffF7xaPjwULMeLdQse0yjbiLYKvUh2W2B3WrgsfAM_OK9QO8reSVRktMz9tyCXklIL_U52LZ_8mJnGCIjMtyqIOHScRQyn_8k7nrqY3BGK_rnaMXvhO0i8GoRBoVRfZpt3DcLc)*[A short hike](https://ashorthike.com/) (2019) - Adam Robinson-yu*
+![](https://lh4.googleusercontent.com/Y0DOblhkR1-5REyZOffF7xaPjwULMeLdQse0yjbiLYKvUh2W2B3WrgsfAM_OK9QO8reSVRktMz9tyCXklIL_U52LZ_8mJnGCIjMtyqIOHScRQyn_8k7nrqY3BGK_rnaMXvhO0i8GoRBoVRfZpt3DcLc)
+*[A short hike](https://ashorthike.com/) (2019) - Adam Robinson-yu*
 
 These are just a few strategies identified by Paolo Pedercini [here](http://mycours.es/gamestudio2022/a-pattern-language-for-expressive-environments/) (with a lot of example games to check out)
 
@@ -141,6 +142,9 @@ These are just a few strategies identified by Paolo Pedercini [here](http://myco
 
 ![](https://lh3.googleusercontent.com/OFjO-5uXiLNh2PhMr0dkuKr14PspALMk0K8ICw_x01jhNeeFieQ8gT4woHdOef21eniYe8iJs4hPmH7pQSN_G-A6_txvQ-H0YqZKs2A0ucfpEFMLFTX-MJfijEkDxbSD9F4nw6nDSQeV938_wfHFBFc)*Elden Ring (2022)*
 
+![](Pasted%20image%2020230918182728.png)
+**Denial and reward** - Add weight to a reveal, induce momentary "lostness" 
+
 **Easter eggs** - hidden objects, images, and notes elicit close focus on the environment 
 
 ![](https://lh6.googleusercontent.com/RgIJfstjkRNPUBx5KgfzMoX_WosNQWkeSDAaEEcLc7pJCHnbXmPwgHumZAruS0orDQlAaKbJlDgWzO9Blr4PtzAm7DxqrxIwcXO5BL5NPqYb_lf3ToV56ipLY-G3nHuXl3vt_FGvAEgIj0WopGbFDZw)
@@ -149,6 +153,7 @@ These are just a few strategies identified by Paolo Pedercini [here](http://myco
 **Confusion** - did I break the game? Am I supposed to be in this place? Jank can be a form of storytelling  
 
 ![](https://lh5.googleusercontent.com/who6n8QInQLEtg6N4mZqAAiSolWAm_LrChJXzhH154ypvfbJzKgyA2qadlr3u1x3NTkcDtZbusWnFKQhWs88jfaeavYLymL8rc_tCil34k2lZByi0M29lBnLrmYANN_I_VFux9GeXSgsdftPOaM0h1M)
+
 *[Oikospiel](http://www.oikospiel.com/) (2017) - David Kanaga*
 
 **Spatial sound** - a call from afar, music in the distance, something’s on the other side of the door!?!?
@@ -160,6 +165,11 @@ These are just a few strategies identified by Paolo Pedercini [here](http://myco
 
 ![](https://lh4.googleusercontent.com/D-kp8wM5Mixl0CqVAYfmfJKRGV_1Ue91F_rzszjTcCVXepQOCvIMM5tdxnnka7tl4k6buAD9Ui5xojxxKsOdKjGlaYbSX6EgwHcBlM-fq8Z6pPe6SwhhHpx_aOqLd07XsP9X6GmKow1I_BVQpFcFUik)
 *[Getting Over It with Bennett Foddy](https://youtu.be/DYjbCJXxWLg) (2017)*
+
+# Scene breakdown
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EPKRAWUtKCE?si=yf8aL5OVO4Vo3OA_&t=325" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+*54:19 - Opening section* - how many of the above techniques can you spot?
 
 # Spatial Memory
 
@@ -194,34 +204,44 @@ Read through Jenkins's essay and respond to the questions on this form:
 
 [https://forms.gle/4J1yydprV1JoFDq4A](https://forms.gle/4J1yydprV1JoFDq4A) 
 
-![](https://lh4.googleusercontent.com/kdlT22Sw7GeVRsksSd4wWdiERrfOf98XZhCkPGqWKV71QKfYjGHqYEdojLyDAhBq1PKz5FyrXZYdPzt8yPkWKWtfIDKVY0xUxtFHxnWSjYf8w46KGGu4qwGpT9FLnzuAbE4Zij5XhsLZQ8cA36SGrR0)*[What the Golf?](https://www.whatthegames.com/golf) (2019)*
+![](https://lh4.googleusercontent.com/kdlT22Sw7GeVRsksSd4wWdiERrfOf98XZhCkPGqWKV71QKfYjGHqYEdojLyDAhBq1PKz5FyrXZYdPzt8yPkWKWtfIDKVY0xUxtFHxnWSjYf8w46KGGu4qwGpT9FLnzuAbE4Zij5XhsLZQ8cA36SGrR0)
+*[What the Golf?](https://www.whatthegames.com/golf) (2019)*
+
+> All the world is an absurdist game of golf, but love is the most absurd golf game of all.
+>  - [Bo Ruberg](https://twitter.com/MyOwnVelouria/status/1640915632115027969) 
 
 # Back to Roll-a-ball
 
 Given all of these possibilities for navigating the space, what are some ways to spruce up Roll-a-ball?
 
 
-Lose Conditions:
+Lose Conditions / Challenges / Situations:
 
 1. …
-    
-2. …
-    
-3. …
-    
+2. …   
+3. …  
 
 Changing the field of play, the level, the space:
 
 1. Holes in the field (see [donut county](http://www.donutcounty.com/))
-    
-2. …
-      
+2. ...   
 # Beyond the demo
+
 Consider the definitions and expectations of the roll-a-ball demo. 
 
-Can you complicate them? 
-What are the most basic components that define the base game? 
-Does changing/removing/amplifying/negating any of those components make it more interesting? 
+What assumptions is Unity making about it's userbase and the engine itself? 
+
+What are some critiques of this demo? 
+# Rollaball as a platform 
+
+Consider the basic components that define the base game? 
+
+- Rolling
+- Platform with walls
+- Collecting
+- Winning
+
+How can you complicate these components? Does changing/removing/amplifying/negating any of these make for something more interesting?  
 
 Maybe the result isn't a “good” game, but it becomes interesting, unexpected, outrageous… 
 

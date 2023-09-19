@@ -3,22 +3,22 @@ layout: page
 title: Project 1
 ---
 
-Create a remix of the Roll-a-ball tutorial game that explores the possibilities of spatial narrative. The Roll-a-ball tutorial serves as a quick tour of the Unity Editor, while also providing a foundation for creating something more expansive.
+Create a remix of the Roll-a-ball tutorial game that explores the possibilities of spatial narrative and expands the scope of the original. The Roll-a-ball tutorial serves as a quick tour of the Unity Editor, while also providing a foundation for creating something more expansive.
 
 ## 1. Complete Roll-a-ball
 
 **Due by Tuesday 10/3**
 
-This project will build off the official Unity [Roll-a-ball tutorial](https://learn.unity.com/project/roll-a-ball), so the first step is to complete the entire tutorial and have a fully set up project ready for part 2. Everyone needs to complete this project as soon as you can!
+This project will build off the official Unity [Roll-a-ball tutorial](https://learn.unity.com/project/roll-a-ball), so the first step is to complete the entire tutorial and have a fully set up project ready for part 2. Everyone needs to complete this project! 
 
 ![](https://classes.dma.ucla.edu/Winter23/158/wp-content/uploads/2023/01/rollball-background-2-e1672847701440-1024x273.png)
 
-## 2. Design a "better" version
+## 2. Beyond Roll-a-ball
 
 **Due by Thursday 10/5**
 [$SUBMIT DESIGN DOCUMENT HERE$](https://forms.gle/sKqCfzoVq4BupthbA)
 
-Roll-A-Ball as it is, is not much of a “game” – you can win by collecting the pickups,  but you can’t really lose. There is no challenge or narrative designed into the game, the outcome is predictable, and the ball is confined to an empty square platform. We want to fix all of this and make Roll-A-Ball into a better, more interesting game by considering the setting, level design, and perhaps a bit of risk 👀
+Roll-A-Ball as it is, is not much of a “game” and even less of a space to explore. You can win by collecting the pickups, but you can’t really lose. There is no challenge or narrative designed into the game, the outcome is predictable, and the ball is confined to an empty square platform. We want to fix all of this and make Roll-A-Ball into a better, more interesting game by considering the setting, level design, and perhaps a bit of risk 👀
 
 Create a short design document (PDF) illustrating how you will make Roll-a-ball into a good game. Additionally, create an overlay image that will function as a “title card” to appear when the game loads.
 
