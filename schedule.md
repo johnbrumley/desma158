@@ -11,10 +11,10 @@ title: Schedule
 | **3**  | 10/17, 10/19 | Project 2 and 2D Workflow, template, C#, sprites              |  Scripting Movement and Triggers <br/> **Next Class:** Project 2 Sketch                              |
 | **4**  | 10/24, 10/26 | **DUE**: Project 2 Sketch <br/>Inventory and Collections                                  |  Frame animation <br/> **Next Class:** Project 2 Prototype                                          |
 | **5**  | 10/31, 11/2  | **DUE**: Project 2 Prototype <br/> Instantiate and Destroy, work on Project 2                                                          | Work on Project 2,<br/> **Next Class** Project 2 Due                                             |
-| **6**  | 11/7,  11/9  | **DUE**: Project 2, Share, Play, Crit. Project 2                                                    | Intro Project 3 <br/> Time and Randomness <br/> **Next Class:** Project 3 Sketch            |
-| **7**  | 11/14, 11/16 | **DUE**: Project 3 Sketch, Using Probuilder, Perlin noise, Navigation System                        | Randomness in particle systems, Agents and State Machines                                               |
+| **6**  | 11/7,  11/9  | **DUE**: Project 2, Share, Play, Crit. Project 2                                                    | Intro Project 3 <br/> Time and Randomness. Camera control        |
+| **7**  | 11/14, 11/16 | Using Probuilder, Perlin noise, Navigation System   <br/> **Next Class:** Project 3 Sketch                     | **DUE**: Project 3 Sketch <br/> Custom inputs                                          |
 | **8**  | 11/21, 11/23 | Work in class on prototypes. Generative sound.                                                               | Thanksgiving Break                                                                               |
-| **9**  | 11/28, 11/30 | **DUE**: Project 2 Prototype <br/> Code + UI                                                        |  Work in class.                                                                              |
+| **9**  | 11/28, 11/30 | **DUE**: Project 2 Prototype <br/> Code + UI. Particle Systems                                                        |  Work in class.                                                                              |
 | **10** | 12/5,  12/7  | Work in class. <br/> **Next Class**: Project 3 Due                                     | **DUE**: Project 3, Share, Play, Crit. Project 3                                                 |
 
 
