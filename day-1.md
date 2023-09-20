@@ -2,34 +2,20 @@
 layout: slides
 title: Day 1
 ---
-# Day 1
-Week 0, Thursday
-
-
 # Course Info
 
-Currently using the old site while waiting for the new one to go live.
+Currently, the course website is hosted at:
+https://johnbrumley.github.io/desma158/
 
+Lets take a look at the syllabus and schedule
 ## [Syllabus](syllabus.md), [Schedule](schedule.md) 
-
-## Discord
-
-[https://discord.gg/C4EzNZ6Wfv](https://discord.gg/C4EzNZ6Wfv)  
-
-
 
 # What’s a game engine?
 
-
 First off………. What's a game?
-
 # Another definition: 
 
-  
-
 ![](https://lh6.googleusercontent.com/P0KNiLz4XabFza_dIPOnA08_U6jNgOf1rfOVSNqr0q-7RmBM4_xgA3TcPyn2_l7NNtca2YsszVftd1RyDlkwMO0LeMlf8kDBVtITIOIS9H6jnHcQsLLu5-9j9PukJSO-jGdTs8GqwUzx0AZrPKvkwSs)
-
-  
 
 This quote is pretty broad and implies a few more important parts of games: 
 
@@ -40,9 +26,9 @@ This quote is pretty broad and implies a few more important parts of games: 
 
 #  What else is a game
 
-“A videogame is a hotel is a machine for framing an experience which never actually occurs. Wonderful! You climb inside the shell of someone else’s excavated and inscrutable desires, you drop off your bags, you crawl around the litter where consciousness has passed, chairs, tables, boxes, doors, and then you leave and buy a postcard to remind you where you’ve been”
+> A videogame is a hotel is a machine for framing an experience which never actually occurs. Wonderful! You climb inside the shell of someone else’s excavated and inscrutable desires, you drop off your bags, you crawl around the litter where consciousness has passed, chairs, tables, boxes, doors, and then you leave and buy a postcard to remind you where you’ve been
 
-- Stephen “thecatamites” Gill-Murphy from [10 Beautiful Postcards](https://thecatamites.itch.io/10-beautiful-postcards)
+ >- Stephen “thecatamites” Gill-Murphy from [10 Beautiful Postcards](https://thecatamites.itch.io/10-beautiful-postcards)
 
 
 # Back to rules: Tag
@@ -90,24 +76,24 @@ How does this change when the self, material, place, and processes are all arbit
 ![](https://lh5.googleusercontent.com/EYZQBjTiSss2gYejhK_7CdSttNt5JkWx17hT0iSBUDP2aGHk87sJKo4B-v51iYXa6Ca9Jt66FylU-kmf0MdceuISYR2Aaa8TVsXbHJNgLwqW8w7R2e_UU4cgm7VgGbDvsJXLrJb_AKmI2IghW5EZ3VU)
 
 [Dr. Gameshow](https://maximumfun.org/podcasts/dr-gameshow/) – call-in podcast (Originally broadcast on WMFU) with listener submitted games. Most games on the podcast are unplayable with vaguely defined rules. For instance:
-
   
 Werewolf Elton John: Contestants are given any Elton John lyrics to sing and they have to slowly transform into a werewolf while they are singing the song.
 
 # Ok …..  what about an engine?
 
-  
-
 ![](https://lh3.googleusercontent.com/vuZgcBHeLv9ETZ4N3d2DnVX_V6Lupot3MQN-sdZYeEGDW-BGUnukGigBZzp6xPRUsser2cWy3OUA1CwIQRH_ITFxMbi8xUK2ZHtVhiiO7NQh3WABugk1RWErIXXqpUcKaYTPU1bhy0rINB_QmfpmtP0)
-
-  
 
 # Now put it together
 
 ![](https://lh6.googleusercontent.com/A4N1vuZH-la7u4K4yGx_WQ8xuMgHcQ4H-sgBcIyXfAv8aBZEs1X9F9B1ZYChM9cuWgJyzrvnTpAwtK3nkujjZXrRgyNjFjf12ALegk61ChtV1QHGFirD8_NDVT8WwIOMw-lVs928ccir1P731pMxOdU)
 
+> “A thing that is the agent or instrument of a particular process” 
+ 
+sounds pretty good, but 
 
-“A thing that is the agent or instrument of a particular process” sounds pretty good, but “converting power into motion” might be even better
+> “converting power into motion”
+ 
+could also be useful with a few modifications
 # alt def
 
 Swapping some words in Anthropy’s definition (“A game is an experience created by rules”) might give us something like:
@@ -185,6 +171,20 @@ Unity also tries to avoid being aesthetically identifiable, compared to some of 
 Other industries use Unity for things like [Architectural](https://unity.com/solutions/architecture-engineering-construction) and [Auto](https://unity.com/solutions/automotive-and-transportation) rendering, [Film and TV production](https://unity.com/solutions/real-time-filmmaking-explained), [AI training](https://unity.com/products/machine-learning-agents) and [computer vision](https://unity.com/products/computer-vision) 
 
 Unity also contracts with the US Department of Defense for military [training and simulation](https://www.vice.com/en/article/y3d4jy/unity-workers-question-company-ethics-as-it-expands-from-video-games-to-war)
+
+# When should I use a game engine?
+
+![](https://lh5.googleusercontent.com/xPZHGwaWgZQ3xXFbMyVBqd8-dB_6qyS6d7RBZeyay1RR3dL2tL8moBMwmn2OjkzBfaugf3VhvykqmAoSXy6AACzcpWsCfGbYkSArmkz7AbAA4dpGlLHd5-D6Jyyx4EKla89HeGh3e8qGbYR85MLVy4c)
+
+- [http://tinysubversions.com/fuckvideogames/#slide21](http://tinysubversions.com/fuckvideogames/#slide21) - Darius Kazemi
+
+Even if games aren't your primary mode of expression, you might still find use in the engine. If you're thinking about real-time interactive work, then a game engine could prove a good fit.
+
+# A bit about how I work with game engines
+
+![](https://lh5.googleusercontent.com/ZyvqlHzFYtrC7KO9jBPX3jjI9T5Hhy6dqA-8z68vxSyME82ADqFS5m47IAuSbPYI-BKSbiby2r1SMs5wktloJgub6bkoexZybAhTPo_z-4LblJBm425O4Ko1Ci6iD2k3arKrfIw7TspwGslTPz7DQAc)
+
+I often use Unity when working with 3D space and real time interaction. [Here](https://youtube.com/playlist?list=PLAh0qds9ILIb3-qfyboZBxKdEnKzXY6gM) are some projects and sketches that were all using Unity in some capacity
 
 # Installing Unity
 
@@ -320,27 +320,5 @@ Let us know a bit more about yourself and your background.
 [https://forms.gle/f2KQzwCNfQsV9cRk8](https://forms.gle/f2KQzwCNfQsV9cRk8) 
 
 ![](https://lh5.googleusercontent.com/sW0elAs1ZrO4mrDxp_fQjRYZdjdWkW9Y2Ta64MxSzZE96f-BhEjZXQZdbvF6kAnIfXjmbRzYHKiMfu_sIQdd-NzbIwgftsYz1sgVzvqwVUU5G84R-EmToHLXZvaoe6vjip5In03_EeRYLxxQI4VRKPM)
-
   
   
-  
-  
-  
-  
-
-![](https://lh5.googleusercontent.com/xPZHGwaWgZQ3xXFbMyVBqd8-dB_6qyS6d7RBZeyay1RR3dL2tL8moBMwmn2OjkzBfaugf3VhvykqmAoSXy6AACzcpWsCfGbYkSArmkz7AbAA4dpGlLHd5-D6Jyyx4EKla89HeGh3e8qGbYR85MLVy4c)
-
-  
-
-- [http://tinysubversions.com/fuckvideogames/#slide21](http://tinysubversions.com/fuckvideogames/#slide21) - Darius Kazemi
-    
-
-## A bit about how I work with game engines
-
-  
-
-![](https://lh5.googleusercontent.com/ZyvqlHzFYtrC7KO9jBPX3jjI9T5Hhy6dqA-8z68vxSyME82ADqFS5m47IAuSbPYI-BKSbiby2r1SMs5wktloJgub6bkoexZybAhTPo_z-4LblJBm425O4Ko1Ci6iD2k3arKrfIw7TspwGslTPz7DQAc)
-
-  
-
-I often use Unity when working with 3D space and real time interaction. [Here](https://youtube.com/playlist?list=PLAh0qds9ILIb3-qfyboZBxKdEnKzXY6gM) are some projects and sketches that were all using Unity in some capacity

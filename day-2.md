@@ -2,11 +2,6 @@
 layout: slides
 title: Day 2
 ---
-
-# Day 2
-
-Week 1, Tuesday
-
   
 
 ![](https://lh6.googleusercontent.com/-ZWB8Qb-427ONlgOdWAt_Re1tn7zmf3G0rmvUmEim00qb29YLBhpgTmsRPUZP309GbSTcpOB4VSmkVNDl3tOYf-cyOHWvG0YCbjj9K8FQ3fTCWmlvDCAflSYXe7LUDwvVF4hHR1M9odZDp2Ha7v0beY)
@@ -24,9 +19,10 @@ Thoughts on Roll-a-ball, was it a nice tour of Unity? 
 
 We’ll eventually cover everything again, but are there any burning questions that you’re curious about now?
 
-# Some topics that were covered that we will get to soon:
-
+## Parts of Unity that Roll-a-ball covers
 Lighting and Materials, Rigidbody Component / Physics, Vectors, Colliders / Triggers, UI / TextMeshPro, Input System, Prefabs
+
+While the tutorial only introduces each one, we'll eventually spend more time covering each one in depth.
 
 # How can we enhance this game?
 
@@ -175,12 +171,10 @@ These are just a few strategies identified by Paolo Pedercini [here](http://myco
 
 Levels of games, virtual environments, can become part of our spatial memories.
 
-### ![](https://lh3.googleusercontent.com/ssriyAadntsgjJtXGq0fzRw-4Y9Be7ZtKh8muFnPWuuFSSYgJmw8rYyTCbQMkTiXOTVreg0_DOXn6-M6QHC9jU0wixfAo7aPOyWZj2bzhvtv3aOzZN-Oc8dzhrFnSCFSYPH6d27lUbt1D5ah7oERaJg)
+![](https://lh3.googleusercontent.com/ssriyAadntsgjJtXGq0fzRw-4Y9Be7ZtKh8muFnPWuuFSSYgJmw8rYyTCbQMkTiXOTVreg0_DOXn6-M6QHC9jU0wixfAo7aPOyWZj2bzhvtv3aOzZN-Oc8dzhrFnSCFSYPH6d27lUbt1D5ah7oERaJg)
 *[Dust](https://www.johnsto.co.uk/design/making-dust/), Counter Strike / [https://arambartholl.com/dust-1-333/](https://arambartholl.com/dust-1-333/)* 
 
 More abstractly, we all have a sense of spatial memory relating to software that isn’t necessarily meant for gaming.
-
-Draw a virtual map from memory of something you do every day on the computer / phone / internet … 
 
 # Can anyone name this map? 
 
@@ -188,13 +182,28 @@ Draw a virtual map from memory of something you do every day on the computer / p
 
 # Exercise
 
-Go to [https://noclip.website/](https://noclip.website/) and pick a map to explore. Try and find one of the above examples of environmental expression within the design of the map. What else do you notice about these maps?
+Let's try creating some maps by hand. 
+
+Consider a setting/activity/goal/history/idea and the tools of environmental expression we just discussed.
+
+In addition to the form of the map, include any other things that might live there: objects, plants, creatures, buildings, cities, planets, etc.
+
+This doesn't have to be the world you use in Project 1, but if you already have an idea feel free to work on that. 
+## Ideas, inspirations
+- Go to [https://noclip.website/](https://noclip.website/) and explore some digital versions of maps
+- Check out the [Videogame Atlas](https://www.youandpea.com/atlas) for different geographies of game levels
+- Try and re-imagine a familiar building or space, but distort the proportions and distances to represent other tangible/intangible aspects (temp, time spent, feeling, safety)
+- Draw a map from memory of something you do every day on the computer / phone / internet … how could you represent a non-spatial thing as a place to be navigated through?
+
+> "During the eight years Pnin had taught at Waindell College he had changed his lodgings... about every semester. The accumulation of consecutive rooms in his memory now resembled those displays of grouped elbow chairs on show, and beds, and lamps, and inglenooks which, ignoring all space-time distinctions, commingle in the soft light of a furniture store beyond which it snows, and the dusk deepens, and nobody really loves anybody."
+> 
+>- Nabokov, *Pnin*
 
 # Optional reading(s):
 
 [Anna Anthropy’s Level Design Lessons](https://drive.google.com/file/d/14EuDZDhZcKhtsR3nvTIGMG25DE1niqun/view?usp=share_link) - level design in a few classical 8-bit era games
 
-### EXTRA CREDIT 
+## EXTRA CREDIT 
 
 > “Game designers don't simply tell stories; they design worlds and sculpt spaces.”
 
@@ -214,7 +223,6 @@ Read through Jenkins's essay and respond to the questions on this form:
 
 Given all of these possibilities for navigating the space, what are some ways to spruce up Roll-a-ball?
 
-
 Lose Conditions / Challenges / Situations:
 
 1. …
@@ -232,7 +240,7 @@ Consider the definitions and expectations of the roll-a-ball demo.
 What assumptions is Unity making about it's userbase and the engine itself? 
 
 What are some critiques of this demo? 
-# Rollaball as a platform 
+# Roll-a-ball as a platform 
 
 Consider the basic components that define the base game? 
 
@@ -247,7 +255,7 @@ Maybe the result isn't a “good” game, but it becomes interesting, unexpected
 
 ![](https://lh6.googleusercontent.com/wq450-jMMI-b2QOuDAAuWmnnJO0Z-i8Duk4I5S6wz4k3j_-x-1z-Oudrx_DyB-KXQm2X-QG-uWSdLQU8BR50_gXuUdHjQE_2TkEQJYQS4FINS3y6kM2fORSkfByD83JEHW2nZnRhv4gcbvOtJMv5hdc)*Nicolas Collins - [Handmade Electronic Music](https://routledgetextbooks.com/textbooks/9780367210106/) (2006) - Appendix D*
 
-# Review from last class
+# Review from last class (Check out on your own)
 
 Unity Editor interface
 
@@ -300,261 +308,3 @@ What’s going on with the new input system?!?!
 
 ![](https://lh6.googleusercontent.com/Bn7Kt8rCLudlqfrWwGCPNp8djykeFOgUYHuWtnEzaXuHEO-8bYGplB26bq8IQN-8-8AsL6f8my3vTEw-txxvvxHbOy39XRHZmaKDn9iZP8O89c8PF10CSzf-k0mdlOsh8_t1zrp8H0bfqr2NpglpyvM)
 
-# C# From the basics
-
-See this [Brackeys playlist](https://youtube.com/playlist?list=PLPV2KyIb3jR4CtEelGPsmPzlvP7ISPYzR) for a tutorial on just C# without any Unity (though it’s part of a Unity channel) 
-
-Also useful to know that if you’re trying to search for help with C#, you can also search for “csharp” to get more results
-## Default template
-
-```csharp
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class MyEmptyScript : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}
-```
-
-MyEmptyScript.cs - C# files end with “.cs”
-
-# Classes 
-
-Names and File names / Uniqueness / Namespaces
-
-When you create a new C# script it automatically creates a new class with the same name as the script. It’s important to make sure that the filename and the class name are always the same. If you are copying and pasting code, you might accidentally change your class name and suddenly get a bunch of errors in the console.
-
-In a Unity project every class name must be unique. There can never be more than one class with the same name. If you see errors like:  
-
-```The namespace '<global namespace>' already contains a definition for 'PlayerController'```
-
-Then you’ll need to go in and find the other class that’s also named “PlayerController”
-
-# Namespaces
-
-Namespaces are like containers which assist in organizing classes and avoiding duplicate naming errors. 
-
-At the top of the default script you’re including a few namespaces with the “using” keyword in order to use the classes contained within them. In particular, the UnityEngine namespace allows you to use all of the classes contained within it.
-
-![](https://lh3.googleusercontent.com/vPzRgHSG2GXDDsu9muqATRA0J-eVagcuBnV15TAR4eTSwh2oygctJfsBO63IokSOkt2EQzx1-tqRGoDFKfMUVeB8lw3dkY4O16XDUGnOVmooYDa5VuzwbyuwMcOxzd7rV9FhhWTHganp_GF9WTAI2kM)
-
-[https://docs.unity3d.com/ScriptReference/](https://docs.unity3d.com/ScriptReference/) 
-
-This also helps to reduce typing. Otherwise you would have to reference the namespace and then the class (e.g. UnityEngine.GameObject vs GameObject)
-
-You can define your own namespaces by wrapping your classes with the keyword ‘namespace’ and the name of your namespace.
-
-```csharp
-namespace MyNamespace 
-{
-	class MyClass 
-      {
-          ...
-      }
-}
-```
-
-Likely, you won’t need to make a custom namespace for this class, but it’s pretty useful when collaborating with other people or creating your own plugins to share.
-# Variables
-
-A variable stores some information and the type of the variable specifies what sort of information it can store.
-
-The main types of variables in C# are:
-
-- Int - whole numbers: -1, -4, 0, 199
-- Float - decimals up to 8 digits: 3.14159
-- String - store text: “this is a string”
-- Bool - true or false
-
-Variables are declared using this structure:
-
-```Type Name = Value;```
-
-For example:
-
-```csharp
-int myInteger = 6;
-float myFloat = -5.4f;
-string myString = "hi there";
-```
-
-The naming convention for variables is to start with a non-capital letter with the first letter of each subsequent word capitalized.
-
-```csharp
-// declare a variable without assigning a value
-bool myBool;
-```
-
-You also probably noticed that some variables are also marked as public or private. When a variable is marked as public, it becomes accessible to other classes. Marking a variable as public is also a way to have it show up in the Inspector.
-
-```cs
-public float speed = 0f;
-private int count = 0;
-```
-
-The ‘f’ after a float makes sure that the variable is a float rather than a double.
-
-When using the UnityEngine namespace, there are a lot of classes that can also be declared like variables
-
-```cs
-Transform myTransform;
-Vector3 myPosition;
-Rigidbody rb;
-```
-# Conditionals
-
-Conditionals work in C# in nearly the same way as Processing and p5.js
-
-```cs
-if(numberOfEggs < 10)
-{
-   print("adding eggs");
-} else if(numberOfEggs == 10)
-{
-   print("just enough eggs");
-} else
-{
-   print("too many eggs");
-}
-```
-
-You can also create compound statements with logical operators
-
-**! - not
-&& - and 
-|| - or**
-
-```cs
-bool notscrambled = true;
-if (notscrambled && numberOfEggs > 0)
-{
-    // call scramble egg function
-    ScrambleEggs();
-}
-```
-
-# Collections
-
-Collections store groups of variables 
-## Arrays
-
-Arrays contain a fixed number of items and are declared with:
-
-```cs
-// fill an array with values directly
-type[] nameOfArray = {value, value2, value3 };
-
-// create an empty array to fill in later (maybe with a loop)
-type[] nameOfArray = new type[50];  
-```
-
-To access a member of the array you can reference it by its index, with the first index beginning at zero and the last index at one less than the length of the array.
-
-```cs
-int[] myNumbers = { -1, 2, 6, 0, 6 };
-print(myNumbers[3]); // prints 0
-```
-## Lists
-
-If you don’t know how many values you’ll need, then a list is useful as it can vary in length.
-
-To use a list, make sure you’re including the *System.Collections.Generic* namespace
-
-
-```cs
-// declare a list
-List<type> myList = new List<type>();
-// add something to the list
-myList.Add(value);
-```
-
-
-```cs
-// declare a list
-List<string> niceWords = new List<string>();
-// add something to the list
-niceWords.Add("Nice!");
-// get the number of items in the list
-niceWords.Count
-```
-
-# Loops 
-
-Repeating sections of code.
-
-For loop in C#:
-
-```cs
-for (int i = 0; i < 10; i++)
-{
-    print(i);
-}
-```
-
-This will loop until a conditional is met. In the above case, the variable ‘i’ will increment by one each loop until it is no longer less than 10.
-
-Loops are great for working with collections:
-
-```cs
-float[] lotsOfFloats = new float[1200];
-// fill the array with fives
-for (int i = 0; i < lotsOfFloats.Length; i++)
-{
-    lotsOfFloats[i] = 5f;
-}
-```
-
-When you want to iterate over an entire collection, use a foreach loop:
-
-```cs
-// calculate the average value
-float total = 0;
-foreach(float myFloat in lotsOfFloats)
-{
-    total += myFloat;
-}
-float average = total / lotsOfFloats.Length;
-```
-
-While loop in C#:
-```cs
-// infinite loop
-while (true)
-{
-
-}
-```
-  
-The loop will continue until the conditional statement becomes false.
-
-```cs
-//check if button is still pressed before each iteration
-while (buttonIsPressed)
-{
-    buttonIsPressed = IsButtonPressed();
-}
-```
-
-A bit less common is the Do loop, which evaluates the Boolean expression at the end of each iteration:
-
-```cs
-do
-{
-	buttonIsPressed = IsButtonPressed();
-	// check if the button is pressed at the end of each iteration
-} while (buttonIsPressed);
-```
-
-[To link](https://docs.google.com/document/d/1BLaqdKs6isLeA-wHElG60bSq66RHTwGTfL3u92XHlbQ/edit#heading=h.5higyay74nze)
