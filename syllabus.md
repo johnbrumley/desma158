@@ -94,14 +94,14 @@ Unity projects are complicated and can be annoying to backup. Make sure to save 
 
 #### ATTENDANCE
 
-Please come to class on time at **2:00pm**. If you are more than 15 minutes late, you will be marked as late. Three late marks results in an unexcused absence. Any disputes should be discussed with the TA within two weeks.
+Please come to class on time at **2:00pm**. If you are more than 15 minutes late, you will be marked as late. Three late marks results in an unexcused absence. **Any disputes should be discussed with the TA within two weeks.**
 
-If you must miss class, email the TA prior to the class. Absences will not be excused after the fact except in extreme circumstances. You get **one** unexcused absence without it affecting your grade. Each unexcused absence after that will result in one full letter grade deduction from your participation / attendance score.
+**If you must miss class, email the TA prior to the class.** 
+Absences will not be excused after the fact except in extreme circumstances. You get **one** unexcused absence without it affecting your grade. Each unexcused absence after that will result in one full letter grade deduction from your participation / attendance score.
 
 #### APPROPRIATION, FAIR USE, AND GENERATED CONTENT
 
-Because the aim of the course is to explore the techniques and processes for using game engines, it is perfectly acceptable to use assets that you did not create yourself for developing early stage prototypes and testing mechanics. **However**, you should strive to develop your own assets for your project submissions, but if major portions of the project have been borrowed or generated, particularly audio, visual, and textual content, please discuss with us ahead of time.
-
+You should strive to develop your own assets for your project submissions. If major portions of your project have been borrowed or generated, particularly audio, visual, and textual content, they must be conceptually significant to your project and you should be able to justify their inclusion. While developing early stage prototypes and testing mechanics, it is perfectly acceptable to use placeholder assets.
 ## Resources
 
 ### Required and Recommended Tools:
@@ -120,28 +120,36 @@ Because the aim of the course is to explore the techniques and processes for usi
 
 [Exhaustive list of cheap and free tools compiled by Everest Pipkin](https://github.com/everestpipkin/tools-list#making-assets---images-models-sound-video)
 
-### Recommended Readings
+### Required Reading
 
-There are no required readings for the course, however there may be the occasional short reading, listening, or video to check out between classes. 
+We will read a few chapters from Anna Anthropy's _Rise of the Videogame Zinesters_. We will provide excerpts of the chapters.  
 
-The official [Unity User Manual and Scripting API](https://docs.unity3d.com/Manual/index.html) is an indispensable reference, keep it handy.
+### Getting help with Unity
 
-Books about game development (we have copies!):
+There are lots of difficulties and bugs that can emerge while developing a project in Unity, and there are just as many solutions to these problems. More often than not, understanding what the problem is will point directly to the solution (so keep an eye on the console!). After you troubleshoot a problem once, you should be able to recognize and solve it the next time it appears. 
 
-- Anna Anthropy. _Rise of the Videogame Zinesters : How Freaks Normals Amateurs Artists Dreamers Dropouts Queers Housewives and People Like You Are Taking Back an Art Form_. Seven Stories Press 2012
+If you find yourself stumped by a problem, reach out to your classmates to see if someone else has experienced the same issue. We highly recommend that you, as a cohort, create a space for sharing and seeking support from each other, as many of you will share many of the same bugs, errors, and glitches.
+
+#### Online resources
+
+- The official [Unity User Manual and Scripting API](https://docs.unity3d.com/Manual/index.html) is an indispensable reference, keep it handy.
+- https://learn.unity.com/ - You'll use this for Project 1. Lots of other tutorials based on specific aspects of the engine.
+- Chatbots. ChatGPT and other bots have digested lots of Unity-related information. If you know the right way of framing your problem, a bot can provide a step-by-step tutorial for how to solve it.
+- YouTube. Here are a few channels that are usually pretty good.
+	- [Unity's official channel](https://www.youtube.com/playlist?list=PLX2vGYjWbI0RQ3O-nAuJd2LWm7lH5htrL) 
+	- [Game Maker’s Toolkit](https://youtu.be/XtQMytORBmM)
+	- [Code Monkey](https://youtube.com/playlist?list=PLzDRvYVwl53vxdAPq8OznBAdjf0eeiipT) 
+	- [Brackeys](https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA) (no longer updated)
+	- [3 Minute Game Design](https://www.youtube.com/playlist?list=PLFFUZ_uHAWMU44iAlkVoXKnsOefNYdsaK) 
+
+#### Books
+
 - Jesper Juul. _Handmade Pixels : Independent Video Games and the Quest for Authenticity_. MIT Press 2019.
 - Katie Salen Tekinbaş and Eric Zimmerman. _Rules of Play : Game Design Fundamentals_. MIT Press 2004.
 - Brian Schrank and J. David Bolter. _Avant-Garde Videogames : Playing with Technoculture_. MIT Press 2014.
 - Steve Swink. _Game Feel : A Game Designer’s Guide to Virtual Sensation_. Morgan Kaufmann Publishers/Elsevier 2009.
-
-### Programming and Unity Support
-
+- Stephanie Boluk and Patrick LeMieux. *Metagaming: Playing, Competing, Spectating, Cheating, Trading, Making, and Breaking Videogames* ([online edition](https://manifold.umn.edu/projects/metagaming))
 - Robert Nystrom – [Game Programming Patterns](https://gameprogrammingpatterns.com/contents.html) (ebook)
-- Keith Burgun – [3 Minute Game Design](https://www.youtube.com/playlist?list=PLFFUZ_uHAWMU44iAlkVoXKnsOefNYdsaK) (youtube)
-- Brackeys [Unity Tutorials](https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA) (youtube – no longer updated)
-- [Game Maker’s Toolkit](https://youtu.be/XtQMytORBmM) (youtube)
-- [Code Monkey](https://youtube.com/playlist?list=PLzDRvYVwl53vxdAPq8OznBAdjf0eeiipT) (youtube)
-- [Unity Youtube](https://www.youtube.com/playlist?list=PLX2vGYjWbI0RQ3O-nAuJd2LWm7lH5htrL)
 - [O’reilly books](https://www.oreilly.com/library-access/)
 
 ### COVID-19
