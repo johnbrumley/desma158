@@ -6,16 +6,16 @@ title: Syllabus
 
 Course Name & Number: DESMA 158  
 Course Title: Game Engine  
-Academic Term: Spring 2023  
+Academic Term: Fall 2023  
 Location: Broad 4240  
-Day and Time: Tuesday and Thursday: 9 – 11:50am
+Day and Time: Tuesday and Thursday: 2 – 4:50pm
 
 Instructor: John Brumley (He/Him)  
 Office hours & Location: Thursdays 1-2pm / Game Lab  
 Email: jtbrumley@g.ucla.edu
 
 Teaching Assistant: Vincent Roca (He/Him)
-Office hours & Location: Tuesdays 1-2pm Room 4240  
+Office hours & Location: TBA  
 Email: vroca@g.ucla.edu
 
 ## Course Description
@@ -24,11 +24,13 @@ This course introduces the fundamentals of programming interactive projects in g
 
 ## Prerequisites
 
-DESMA 24 Interactivity. Unity is a complex software that relies heavily on scripting. We will revisit many of the same concepts covered in Interactivity, but using the C# scripting language with the Unity scripting API.
+DESMA 24 Interactivity. 
+
+We will revisit many of the same concepts covered in Interactivity, while using the C# scripting language and the Unity scripting API. If you haven't taken DESMA 24, but have prior experience with Unity and C# please let me know.
 
 ## Learning Outcomes
 
-By the end of this course, you will be able to create a real-time game with custom rules, generative or randomized levels, save data, responsive controls, physics, sound, and simple animation. The skills you will learn in this class translate well to immersive media, generative animation, and other modes of human-computer expression.
+By the end of this course, you will be able to create a real-time, interactive software with custom rules, generative or randomized levels, save data, responsive controls, physics, sound, and simple animation. The skills you will learn in this class translate well to immersive media, generative animation, and other modes of human-computer expression.
 
 ## Course Outline
 
@@ -43,14 +45,14 @@ Remix of the Roll-a-ball tutorial game that explores the possibilities of spatia
 **Weeks 3–6**  
 Working in 2D. Creating assets/sprites. Vector fundamentals, physics, and persistent data.
 
-[Project 2: Flat Game (Due: Week 6)](project-2.md)  
-Create a 2D "zine" game based on your own life experience. Experiment with custom asset creation and collage techniques. Express ideas through game mechanics, custom inputs, and structure. Use code to incorporate vectors, physics, and collisions into your game.
+**Project 2: Flat Game (Due: Week 6)**  
+Create a 2D "zine-game" based on your own life experience. Experiment with custom asset creation and collage techniques. Express ideas through game mechanics, custom inputs, and structure. Use code to incorporate vectors, physics, and collisions into your game.
 
 **Weeks 7–10**  
-Using randomness, instantiation, custom input, agents.
+Remix, sampling, streaming, custom input, mods.
 
-[Project 3: Automatic Game (Due: Week 10)](project-3.md)  
-Create a game that can run independent of player input. Use randomness, simulation, and generative techniques to introduce unpredictability. Consider timescale, progression, the audience/spectator, and who or what might interact with the system. Optionally, the game can also be influenced via external input from a player or environment.
+**Project 3: Game as Engine (Due: Week 10)**  
+Use Unity and/or other tools (emulators, recording software, existing games) to create a real-time, interactive work where games become the platform for expression. 
 
 ## Assignments & Grading
 
@@ -59,12 +61,12 @@ Create a game that can run independent of player input. Use randomness, simulati
 > - Project 1: 20%
 > - Project 2: 30%
 > - Project 3: 30%
-> - Participation / Attendance : 20%
+> - Participation / Attendance / Homework : 20%
 > - Extra Credit !✨%
 
 ### Evaluation
 
-Approach each project with your own level of skill and comfort in mind. You should work to expand your technical skills, but also lean into your strengths. If you’re good at drawing, use a bunch of 2D drawings! If you’re into photography, use photocollage to build your game world!
+Approach each project with your own level of skill and comfort in mind. You should work to expand your technical skills, but also lean into your strengths. If you’re good at drawing, use a bunch of 2D drawings -- even if the world is 3D! If you’re into photography, use photocollage to build your game world!
 
 Creative projects and proposals are graded based on these parameters:
 
@@ -72,7 +74,7 @@ Creative projects and proposals are graded based on these parameters:
 - Completing project deliverables.
 - Attention to detail/craft. Does the project run? Are there unintended bugs, glitches, etc.
 - Project scope / ambition / aesthetic and technical ambition. Are you doing the bare minimum, or are you pushing yourself technically or aesthetically?
-- Creative risk taking and resourcefulness. Are you bringing something unique and fresh to your design? Sometimes a simple, hacky solution works best!
+- Creative risk taking and resourcefulness. Are you pushing the limits of the tools? Hacky solutions a perfectly acceptable!
 
 Reading and lecture responses are pass/fail. As long as you thoughtfully complete them, you’ll get full credit.
 
@@ -80,30 +82,19 @@ Reading and lecture responses are pass/fail. As long as you thoughtfully complet
 
 >See [submission guidelines](how-to-submit-projects.md) for more details
 
-#### PROJECT SUBMISSION
-
-Finished projects will be submitted along with:
-
-- At least **one** screen recording of gameplay (No desktop, no editor, only your game!)
-- At least **two** other screenshots of the project.
-- A **brief** description detailing the basic premise of the game and how to play the game
-- A Windows build of your game **and** an exported package of your scenes
-
-#### DESIGN DOCUMENT
-
-Each project will begin with a short game design document detailing the concept of the game. This document will include a title, descriptions of win/lose states, the challenge of the game, inputs and controls, and illustrations of levels, characters, items, etc. We will use these as tools for developing prototypes and giving feedback as projects are developed.
-
 #### LATE WORK
 
-Projects are due at the beginning of class on their respective due date. After this time, a full letter grade will be deducted from the project grade for each week that the assignment is late (two weeks late == two letter grades deducted).
+Projects are due prior to the beginning of class on their respective due date.
 
-Extra time will not be given for work lost due to save issues, editor errors, computer crashes, etc. Unity projects are complicated and can be annoying to backup. Make sure to save often and occasionally create a backup of your scenes. I recommend [exporting a unitypackage](how-to-submit-projects.md#Exporting%20Unity%20Packages) of your project and storing the package on an external drive or cloud backup. If you are comfortable with version control, there are a number of options as well ([1](https://unity.com/solutions/version-control) , [2](https://youtu.be/_ewoEQFEURg)).
+After this time, a third of the letter grade will be deducted for assignments submitted after class has started, and a full letter grade will be deducted from the project grade for each class day that the assignment is late. For example, if an assignment due on Tuesday is submitted the following Thursday, an A grade would become a B. If it isn't submitted till the following Tuesday, the A would be marked down to a C.
 
-If you anticipate that you won’t be able to complete the work by the due date, please contact us **before** the due date so we can discuss options.
+Unity projects are complicated and can be annoying to backup. Make sure to save often and occasionally create a backup of your scenes. I recommend [exporting a unitypackage](how-to-submit-projects.md#Exporting%20Unity%20Packages) of your project and storing the package on an external drive or cloud backup. If you are comfortable with version control, there are a number of options ([1](https://unity.com/solutions/version-control) , [2](https://youtu.be/_ewoEQFEURg)).
+
+**If you anticipate that you won’t be able to complete the work by the due date, please contact us *before* the due date so we can discuss options.**
 
 #### ATTENDANCE
 
-Please come to class on time at **9:00am**. If you are more than 15 minutes late, you will be marked as late. Three late marks results in an unexcused absence. Any disputes should be discussed with the TA within two weeks.
+Please come to class on time at **2:00pm**. If you are more than 15 minutes late, you will be marked as late. Three late marks results in an unexcused absence. Any disputes should be discussed with the TA within two weeks.
 
 If you must miss class, email the TA prior to the class. Absences will not be excused after the fact except in extreme circumstances. You get **one** unexcused absence without it affecting your grade. Each unexcused absence after that will result in one full letter grade deduction from your participation / attendance score.
 
@@ -113,15 +104,9 @@ Because the aim of the course is to explore the techniques and processes for usi
 
 ## Resources
 
-### Discord
-
-We will be using Discord as a communication channel for the class. This is a place to share links, references, ask/answer questions, and generally communicate (instead of email). Please check the discord regularly for updates and announcements.  
-  
-If you have a project-related question outside of office hours, please use the _“tech-help”_ channel of the discord rather than sending us direct messages. We can make a separate thread in the channel for each question.
-
 ### Required and Recommended Tools:
 
-- [Unity](https://unity3d.com/get-unity/update) – We recommend that you **install with Unity Hub**, and get the latest LTS version (currently 2021.3)
+- [Unity](https://unity3d.com/get-unity/update) – We recommend that you **install with Unity Hub**, and get the latest LTS version (currently 2022.3)
 - Visual Studio – **Install visual studio with unity hub while you are installing unity**. (If you already have Unity working with VS Code or another text editor / IDE, feel free to use that)
 - A three-button mouse
 - 2D and 3D production software of your choice. Some options:
@@ -137,7 +122,7 @@ If you have a project-related question outside of office hours, please use the 
 
 ### Recommended Readings
 
-There are no required readings for the course, however there may be the occasional short reading, listening, or video to check out between classes. These will be shared throughout the quarter through the discord.
+There are no required readings for the course, however there may be the occasional short reading, listening, or video to check out between classes. 
 
 The official [Unity User Manual and Scripting API](https://docs.unity3d.com/Manual/index.html) is an indispensable reference, keep it handy.
 
@@ -149,7 +134,7 @@ Books about game development (we have copies!):
 - Brian Schrank and J. David Bolter. _Avant-Garde Videogames : Playing with Technoculture_. MIT Press 2014.
 - Steve Swink. _Game Feel : A Game Designer’s Guide to Virtual Sensation_. Morgan Kaufmann Publishers/Elsevier 2009.
 
-Programming and Unity Support
+### Programming and Unity Support
 
 - Robert Nystrom – [Game Programming Patterns](https://gameprogrammingpatterns.com/contents.html) (ebook)
 - Keith Burgun – [3 Minute Game Design](https://www.youtube.com/playlist?list=PLFFUZ_uHAWMU44iAlkVoXKnsOefNYdsaK) (youtube)
