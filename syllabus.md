@@ -144,7 +144,7 @@ If you find yourself stumped by a problem, reach out to your classmates to see i
 
 #### Books
 
-- Jesper Juul. _Handmade Pixels : Independent Video Games and the Quest for Authenticity_. MIT Press 2019.
+- Jesper Juul. _Handmade Pixels : Independent Video Games and the Quest for Authenticity_. MIT Press 2019. ([online interviews](https://www.jesperjuul.net/handmadepixels/interviews/))
 - Katie Salen Tekinbaş and Eric Zimmerman. _Rules of Play : Game Design Fundamentals_. MIT Press 2004.
 - Brian Schrank and J. David Bolter. _Avant-Garde Videogames : Playing with Technoculture_. MIT Press 2014.
 - Steve Swink. _Game Feel : A Game Designer’s Guide to Virtual Sensation_. Morgan Kaufmann Publishers/Elsevier 2009.
