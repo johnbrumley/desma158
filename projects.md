@@ -18,7 +18,7 @@ Weeks 1-2:
 ---
 
 Weeks 3-6:
-## [2. Flat Game](project-2.md)
+## 2. Flat Game
 
 **DUE 10/19:** Design Document
 **DUE 10/26:** Prototype
@@ -27,7 +27,7 @@ Weeks 3-6:
 ---
 
 Weeks 7-10:
-## [3. Autonomous Game](project-3.md)
+## 3. Autonomous Game
 
 **DUE 11/14:** Design Document
 **DUE 11/28:** Prototype 
