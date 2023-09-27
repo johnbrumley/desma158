@@ -15,7 +15,7 @@ Office hours & Location: Tuesdays 1-2pm, Room 4240
 Email: jtbrumley@g.ucla.edu
 
 Teaching Assistant: Vincent Roca (He/Him) 
-Office hours & Location: Tuesdays 1-2pm Room 4240  
+Office hours & Location: TBA
 Email: vroca@g.ucla.edu
 
 ### COURSE DESCRIPTION  
