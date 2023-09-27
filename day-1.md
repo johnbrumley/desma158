@@ -193,7 +193,7 @@ I often use Unity when working with 3D space and real time interaction. [Here](h
 
 	![](https://lh4.googleusercontent.com/APHs2tLEd-gZY72ls4AygAaHh37mgskH6i9_yFtLF51Qurm3SVYzi7kgLrvM69wJVHUPl0USzqoWAMAyWEvEO4yZr951ELHKjD-Q_Q6eV4LTLV3YKR8zzOXbWNWuWIfvzhkt5Q4WChHx0xLLwn6cHsE)
 
-3. Once you’ve logged in, install the Unity Editor. I recommend installing the most recent LTS Editor. This is currently 2021.3.16. You’ll have to agree to the license, then it will start to install 
+3. Once you’ve logged in, install the Unity Editor. I recommend installing the most recent LTS Editor. This is currently 2022.3.10 (the last two numbers might be different, but that's OK) You’ll have to agree to the license, then it will start to install. Make sure to click yes to any access requests from the Unity installer.
 
 	![](https://lh6.googleusercontent.com/CB-AyT2AH9FayyFiBnOmZ2chD9ZwHCV4qIEtT8nroKzX5xeNnSmH1Fcxg0YhqtHWFv32IpaUwPo1N4IGzwS2FbzTxSmcqLh3tvkJXVqnXDDVnRAC6jSCNymq0pMZL3KK93PANW1b07MHXaKtQzrLN0s)
   
@@ -209,6 +209,7 @@ I often use Unity when working with 3D space and real time interaction. [Here](h
 6. Create a new Project. Back in Unity Hub. Select the Projects > New Project and then find the 3D URP template in the list (you may have to scroll down a bit, and you may need to click “download template”). You can name your project (consider calling it “Rollaball” because this is the first step of the homework), set the location of the project folder and click “Create Project”.
     
     ![](https://lh3.googleusercontent.com/5LkEQwBuOXZnX_pdFun2sqoZTd4vAJV912xBCMa8RCTexXz1TNHmlQd8wNvTzVsBeyuKbfquJO5xc4JIE-V7_Fr7Zbfuy1FAzYrw5TVSBflbNXgd8OKmRcZKK705CUtGUihxQknpq96ecIwtKiCYrAg)
+
 
 # Unity Hello World
 
@@ -312,6 +313,8 @@ This [Unity quickstart video](https://youtu.be/XtQMytORBmM) from Game Maker’s 
 # Next Class: Roll-a-ball Tutorial 
 
 [https://learn.unity.com/project/roll-a-ball](https://learn.unity.com/project/roll-a-ball) 
+
+*Note: this tutorial was created with Unity version 2020.3, so there may be slight differences. If you are unable to get past one of the steps of the tutorial please reach out to the TA* 
 
 # Class Survey
 
