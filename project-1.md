@@ -16,7 +16,6 @@ This project will build off the official Unity [Roll-a-ball tutorial](https://l
 ## 2. Beyond Roll-a-ball
 
 **Due by Thursday 10/5**
-[$SUBMIT DESIGN DOCUMENT HERE$](https://forms.gle/sKqCfzoVq4BupthbA)
 
 Roll-A-Ball as it is, is not much of a “game” and even less of a space to explore. You can win by collecting the pickups, but you can’t really lose. There is no challenge or narrative designed into the game, the outcome is predictable, and the ball is confined to an empty square platform. We want to fix all of this and make Roll-A-Ball into a better, more interesting game by considering the setting, level design, and perhaps a bit of risk 👀
 
@@ -37,7 +36,7 @@ Title card for Enviro-Bear 2000: [https://captaingames.itch.io/enviro-bear-2000
 ## 3. Build it
 
 **Due by Thursday 10/12**
-[~SUBMIT ROLLING BALL GAME~](https://forms.gle/Pyj6XSek5sGesqCAA)
+[~SUBMIT ROLLING BALL GAME HERE~]()
 
 1. Use custom 3D assets to build out your world. These can include your own 3D models, found models, flat image cutouts, and more! Consider progression, distance, signposting, and other elements of level design that we cover in class. Does the level tell a story?
 2. Add game mechanics that will expand on the Roll-a-ball tutorial. Consider ways that the player could lose (e.g., falling off the world, a time limit, things that could push you, becoming utterly lost, making poor fiscal decisions, spotted by a cat….). The Game should be able to restart when Win / Lose happens. 
