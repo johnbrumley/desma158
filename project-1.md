@@ -9,7 +9,9 @@ Create a remix of the Roll-a-ball tutorial game that explores the possibilities 
 
 **Due by Tuesday 10/3**
 
-This project will build off the official Unity [Roll-a-ball tutorial](https://learn.unity.com/project/roll-a-ball), so the first step is to complete the entire tutorial and have a fully set up project ready for part 2. Everyone needs to complete this project! 
+This project will build off the official Unity [Roll-a-ball tutorial](https://learn.unity.com/project/roll-a-ball) 
+
+*Complete the entire tutorial and have a fully set up project ready for part 2. Everyone needs to complete this project!* 
 
 ![](https://classes.dma.ucla.edu/Winter23/158/wp-content/uploads/2023/01/rollball-background-2-e1672847701440-1024x273.png)
 
@@ -17,17 +19,15 @@ This project will build off the official Unity [Roll-a-ball tutorial](https://l
 
 **Due by Thursday 10/5**
 
-Roll-A-Ball as it is, is not much of a “game” and even less of a space to explore. You can win by collecting the pickups, but you can’t really lose. There is no challenge or narrative designed into the game, the outcome is predictable, and the ball is confined to an empty square platform. We want to fix all of this and make Roll-A-Ball into a better, more interesting game by considering the setting, level design, and perhaps a bit of risk 👀
+*Develop 3 or more short sketches that illustrate your plans for expanding on the Roll-a-ball demo. Additionally, create an overlay image that will function as a “title card” to appear when the game starts.* 
 
-Develop a short document/sketch that details your plans for expanding on the Roll-a-ball demo. Additionally, create an overlay image that will function as a “title card” to appear when the game starts.
+Roll-A-Ball as it is, is not much of a “game” and even less of a space to explore. You can win by collecting the pickups, but you can’t really lose. There is no challenge or narrative designed into the game, the outcome is predictable, and the ball is confined to an empty square platform. We want to fix all of this and make Roll-A-Ball into something more thoughtful, expansive, and meaningful by considering the setting, level design, and perhaps a bit of risk 👀
 
-**Be sure to include:**
-- A description containing these elements:  
-	1. A title
-	2. What is the premise / idea / concept of this game? What is the player meant to "do"?
-	3. Are there rules or mechanics that create winning or losing conditions?
-	4. The overall space that your ball-character will traverse. Consider interior or exterior, scale (of player and/or the environment), obstacles, occlusions, viewpoints, and sense of place.
-- Overlay image (PNG) that includes the premise and controls of the game. This overlay will be visible when your game starts and can be toggled on and off.
+Don't worry about viability at this point. We'll meet in class to help pick one sketch, and we'll discuss how to best realize it in the time given.
+
+**Be sure to include for each sketch:**
+- A map of the overall space that your ball-character will traverse. Consider interior or exterior, scale (of player and/or the environment), obstacles, occlusions, viewpoints, other characters, and sense of place. Consider extra viewpoints, cross-sections, or cutaways to show verticality or interior/exterior transitions.
+- Overlay image / title card that includes the title, concept/premise/goal, and controls of the game. This overlay will be visible when your game starts and can be toggled on and off.
 
 ![](https://classes.dma.ucla.edu/Winter23/158/wp-content/uploads/2023/01/envirobear-1024x771.png)
 
@@ -45,7 +45,7 @@ Title card for Enviro-Bear 2000: [https://captaingames.itch.io/enviro-bear-2000
 
 Please refer to the page on [preparing your game for submission](how-to-submit-projects.md) for more information on the build and documentation process.
 
-Some inspirations / references:
+Some rolling ball inspiration:
 
 - Marble Madness (Atari 1984 Arcade game) – [play online](https://archive.org/details/arcade_marble), [arcade game info vid](https://youtu.be/HE3xhAvS8c8), [MM2 info](https://lostmediawiki.com/Marble_Man:_Marble_Madness_II_(found_unreleased_sequel_of_Atari_arcade_game;_1991)) (see also [Crystal Castles](https://youtu.be/TZBMIOMRj2k) for more isometric action)
 - [Katamari Damacy](https://youtu.be/yYypwqRnoI8) (2004)
@@ -56,6 +56,7 @@ Some inspirations / references:
 - [Super Monkey Ball](https://youtu.be/xUgYZwEd4fM) (Sega 2001)
 - [GooBall](https://youtu.be/luDwU3JGw5A) (2005) – first game built with Unity
 - [Labyrinth](https://youtu.be/T3N8vK7yDxE) (Analog toy) ([info](https://en.wikipedia.org/wiki/Labyrinth_(marble_game))) (see also – [SNAFU](https://youtu.be/26UphjKeO8M))
+- [Screwball Scramble](https://screwballscramble.net/) (browser-based version)
 
 
 
