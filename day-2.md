@@ -110,12 +110,12 @@ How about:
 "A boat in the ocean finding messages"
 [https://pirxos.itch.io/a-red-boat](https://pirxos.itch.io/a-red-boat) 
 
-![](Pasted%20image%2020230930222618.png)
+![](assets/Pasted%20image%2020230930222618.png)
 _Joust (1982)_ proposal document (Source: [Patrick Scott Patterson](https://twitter.com/OriginalPSP/status/878426207200694273))
 
 # Building your level
 
-![](Pasted%20image%2020230930223443.png)
+![](assets/Pasted%20image%2020230930223443.png)
 _Flying Fortress (1976)_ concept. (Source: [Seth at Arcade 72](https://twitter.com/arcade1972/status/989477055384444928))
 
 After creating your own modified roll-a-ball sentence, you'll need a place for it to occur. 
@@ -133,7 +133,7 @@ But the biggest question you'll need to answer before starting level layout:
 
 Think through what you're trying to do and jot down what a player should experience over the course of the level and what should they take away at the end? 
 
-![](Pasted%20image%2020230930223621.png)
+![](assets/Pasted%20image%2020230930223621.png)
 Early _Battlezone (1980)_ game description (Source: [Atari](http://www.ionpool.net/arcade/atari_docs/fpsdescription.pdf))
 
 # Parti
@@ -146,13 +146,13 @@ If you like, you could borrow an architectural term *parti* meaning the central 
 
 - Not only limited to formal aspects, parti can describe massing, zoning, community, and other concerns.
 
-![](Pasted%20image%2020230930224522.png)
+![](assets/Pasted%20image%2020230930224522.png)
 
 # Level Layout
 
 After you've nailed down what your goals and concepts for your level. you can begin sketching or laying out ideas. 
 
-![](Pasted%20image%2020230930222757.png)
+![](assets/Pasted%20image%2020230930222757.png)
 _Super Mario Bros._ (1985) planning sheet (Source: [Nintendo](https://www.youtube.com/watch?v=DLoRd6_a1CI))
 
 If you need to communicate your level to others in a team, you'll need to be more detailed and clear about your level. If it's just you, then your layout can be a sketch, scribble, or anything that will aid in planning the space.
@@ -162,6 +162,7 @@ If you need to communicate your level to others in a team, you'll need to be mor
 Or … level design. When thinking about a player's movement through your level, at both micro and macro scales, there are features to consider about the environment that can exist from intrinsic to the concept of the game to helping a player know where to go next.
 
 ![](https://lh4.googleusercontent.com/Y0DOblhkR1-5REyZOffF7xaPjwULMeLdQse0yjbiLYKvUh2W2B3WrgsfAM_OK9QO8reSVRktMz9tyCXklIL_U52LZ_8mJnGCIjMtyqIOHScRQyn_8k7nrqY3BGK_rnaMXvhO0i8GoRBoVRfZpt3DcLc)
+
 *[A short hike](https://ashorthike.com/) (2019) - Adam Robinson-yu*
 
 These are just a few strategies identified by Paolo Pedercini [here (currently broken 🦗 )](http://mycours.es/gamestudio2022/a-pattern-language-for-expressive-environments/) (with a lot of example games to check out)
@@ -169,7 +170,7 @@ These are just a few strategies identified by Paolo Pedercini [here (currently b
 ## **Choice**
 Which path to take? Is there a point where you can’t go back? [Point of](https://youtu.be/2v8YragSIuI) [no return](https://youtu.be/yavaJNXoMe8).
 
-![](Pasted%20image%2020231001120351.png)
+![](assets/Pasted%20image%2020231001120351.png)
 
 ## **Legibility** (affordances of the space)
 How does the player understand what they can do in the world. A ladder implies climbing. A door might indicate another space or goal.
@@ -188,7 +189,7 @@ A literal pathway or breadcrumbs that a player can choose to follow
 ## **Progression of different space** 
 Unlocking new areas, moving from small tunnels to open fields, different types of rooms (or a series of the same room)
 
-![](Pasted%20image%2020231001121540.png)
+![](assets/Pasted%20image%2020231001121540.png)
 [One button Nipple Golf](https://jrap.itch.io/obng)  – The concept/level reveals itself by zooming further back with each level.
 
 ## **Vistas** 
@@ -200,7 +201,7 @@ Observation points let a player set new goals, see how far they’ve come, take 
 ## **Denial and reward** 
 Add weight to a reveal, induce momentary "lostness" 
 
-![](Pasted%20image%2020230918182728.png)
+![](assets/Pasted%20image%2020230918182728.png)
 
 ## **Easter eggs** 
 Hidden objects, images, and notes elicit close focus on the environment 
