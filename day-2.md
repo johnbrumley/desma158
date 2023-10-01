@@ -106,23 +106,72 @@ There are lots of games that are more-or-less fancy variations of roll-a-ball, f
 
 ## A (noun) that (verbs) around a (noun) and (verbs) (nouns) 
 
-How about a boat in the ocean finding messages:
+How about: 
+"A boat in the ocean finding messages"
 [https://pirxos.itch.io/a-red-boat](https://pirxos.itch.io/a-red-boat) 
 
-(plug for diving more into itch.io to do gameplay research)
+![](Pasted%20image%2020230930222618.png)
+_Joust (1982)_ proposal document (Source: [Patrick Scott Patterson](https://twitter.com/OriginalPSP/status/878426207200694273))
+
+# Building your level
+
+![](Pasted%20image%2020230930223443.png)
+_Flying Fortress (1976)_ concept. (Source: [Seth at Arcade 72](https://twitter.com/arcade1972/status/989477055384444928))
+
+After creating your own modified roll-a-ball sentence, you'll need a place for it to occur. 
+
+Defined by [The Level Design Book](https://book.leveldesignbook.com/introduction) (mostly a plug for checking out this book!)
+
+> A level is a space where a game happens.
+
+But the biggest question you'll need to answer before starting level layout:
+## What is your level trying to accomplish?
+
+- Are you teaching the player a new mechanic?
+- Are you telling a story?
+- Are you making a space to hang out and relax?
+
+Think through what you're trying to do and jot down what a player should experience over the course of the level and what should they take away at the end? 
+
+![](Pasted%20image%2020230930223621.png)
+Early _Battlezone (1980)_ game description (Source: [Atari](http://www.ionpool.net/arcade/atari_docs/fpsdescription.pdf))
+
+# Parti
+
+If you like, you could borrow an architectural term *parti* meaning the central concept or organizing principle of a structure. 
+
+- Sometimes the parti can be in the form of a statement, but often is tied directly to a diagram. 
+
+- The parti can be wholly inclusive, informing all aspects of a structure from exterior and configuration down to fixtures and tile patterns. 
+
+- Not only limited to formal aspects, parti can describe massing, zoning, community, and other concerns.
+
+![](Pasted%20image%2020230930224522.png)
+
+# Level Layout
+
+After you've nailed down what your goals and concepts for your level. you can begin sketching or laying out ideas. 
+
+![](Pasted%20image%2020230930222757.png)
+_Super Mario Bros._ (1985) planning sheet (Source: [Nintendo](https://www.youtube.com/watch?v=DLoRd6_a1CI))
+
+If you need to communicate your level to others in a team, you'll need to be more detailed and clear about your level. If it's just you, then your layout can be a sketch, scribble, or anything that will aid in planning the space.
 
 # Environmental + Expressivity
 
-Or … level design
+Or … level design. When thinking about a player's movement through your level, at both micro and macro scales, there are features to consider about the environment that can exist from intrinsic to the concept of the game to helping a player know where to go next.
 
 ![](https://lh4.googleusercontent.com/Y0DOblhkR1-5REyZOffF7xaPjwULMeLdQse0yjbiLYKvUh2W2B3WrgsfAM_OK9QO8reSVRktMz9tyCXklIL_U52LZ_8mJnGCIjMtyqIOHScRQyn_8k7nrqY3BGK_rnaMXvhO0i8GoRBoVRfZpt3DcLc)
 *[A short hike](https://ashorthike.com/) (2019) - Adam Robinson-yu*
 
-These are just a few strategies identified by Paolo Pedercini [here](http://mycours.es/gamestudio2022/a-pattern-language-for-expressive-environments/) (with a lot of example games to check out)
+These are just a few strategies identified by Paolo Pedercini [here (currently broken 🦗 )](http://mycours.es/gamestudio2022/a-pattern-language-for-expressive-environments/) (with a lot of example games to check out)
 
-**Choice** - which path to take? Is there a point where you can’t go back? [Point of](https://youtu.be/2v8YragSIuI) [no return](https://youtu.be/yavaJNXoMe8).
+## **Choice**
+which path to take? Is there a point where you can’t go back? [Point of](https://youtu.be/2v8YragSIuI) [no return](https://youtu.be/yavaJNXoMe8).
 
-**Legibility** (affordances of the space) - how does the player understand what they can do in the world. A ladder implies climbing. A door might indicate another space or goal.
+![](Pasted%20image%2020231001120351.png)
+
+## **Legibility** (affordances of the space) - how does the player understand what they can do in the world. A ladder implies climbing. A door might indicate another space or goal.
 
 **Signposting** - “see that mountain…”, showing where to go with a big landmark (see [weenies](https://theoryofthemeparks.blogspot.com/2015/08/wayfinding-in-themed-design-weenie.html)) - another method can be leading using lighting (tendency to avoid darkness, trying to find a light)
 
