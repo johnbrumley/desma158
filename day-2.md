@@ -167,46 +167,66 @@ Or … level design. When thinking about a player's movement through your level,
 These are just a few strategies identified by Paolo Pedercini [here (currently broken 🦗 )](http://mycours.es/gamestudio2022/a-pattern-language-for-expressive-environments/) (with a lot of example games to check out)
 
 ## **Choice**
-which path to take? Is there a point where you can’t go back? [Point of](https://youtu.be/2v8YragSIuI) [no return](https://youtu.be/yavaJNXoMe8).
+Which path to take? Is there a point where you can’t go back? [Point of](https://youtu.be/2v8YragSIuI) [no return](https://youtu.be/yavaJNXoMe8).
 
 ![](Pasted%20image%2020231001120351.png)
 
-## **Legibility** (affordances of the space) - how does the player understand what they can do in the world. A ladder implies climbing. A door might indicate another space or goal.
+## **Legibility** (affordances of the space)
+How does the player understand what they can do in the world. A ladder implies climbing. A door might indicate another space or goal.
 
-**Signposting** - “see that mountain…”, showing where to go with a big landmark (see [weenies](https://theoryofthemeparks.blogspot.com/2015/08/wayfinding-in-themed-design-weenie.html)) - another method can be leading using lighting (tendency to avoid darkness, trying to find a light)
+## **Signposting** 
+> “See that mountain…”
+> - Todd Howard
 
-**A Trail** - a literal pathway or breadcrumbs that a player can choose to follow
+Showing where to go with a big landmark (see [weenies](https://theoryofthemeparks.blogspot.com/2015/08/wayfinding-in-themed-design-weenie.html)) - another method can be leading using lighting (tendency to avoid darkness, trying to find a light)
+
+## **A Trail** 
+A literal pathway or breadcrumbs that a player can choose to follow
 
 ![](https://lh3.googleusercontent.com/XeCGx2UOymmjLCvyTb446ZaX2zT9-gSJxO7YzIj7j4T-I3QZ1qLS3dzDZyiHpVwKi2wXms8jmJ8kUCEGI9vC6MZMM02w1x8ryI6-kIhtkhFxKeKzjFBvQZCTqZ67OCv4Z8DiHEjH4VOMVBdqp8HH4ec)*[Katamari Damacy](https://youtu.be/bKl-PMCNuCY) (2004)*
 
-**Progression of different space** - unlocking new areas, moving from small tunnels to open fields, different types of rooms (or a series of the same room)
+## **Progression of different space** 
+Unlocking new areas, moving from small tunnels to open fields, different types of rooms (or a series of the same room)
 
-[One button Nipple Golf](https://jrap.itch.io/obng)  – the level reveals itself through each action
+![](Pasted%20image%2020231001121540.png)
+[One button Nipple Golf](https://jrap.itch.io/obng)  – The concept/level reveals itself by zooming further back with each level.
 
-**Vistas** - observation points let a player set new goals, see how far they’ve come, take a break, foreshadow the next challenge
+## **Vistas** 
+Observation points let a player set new goals, see how far they’ve come, take a break, foreshadow the next challenge
 
 ![](https://lh3.googleusercontent.com/OFjO-5uXiLNh2PhMr0dkuKr14PspALMk0K8ICw_x01jhNeeFieQ8gT4woHdOef21eniYe8iJs4hPmH7pQSN_G-A6_txvQ-H0YqZKs2A0ucfpEFMLFTX-MJfijEkDxbSD9F4nw6nDSQeV938_wfHFBFc)*Elden Ring (2022)*
 
-![](Pasted%20image%2020230918182728.png)
-**Denial and reward** - Add weight to a reveal, induce momentary "lostness" 
 
-**Easter eggs** - hidden objects, images, and notes elicit close focus on the environment 
+## **Denial and reward** 
+Add weight to a reveal, induce momentary "lostness" 
+
+![](Pasted%20image%2020230918182728.png)
+
+## **Easter eggs** 
+Hidden objects, images, and notes elicit close focus on the environment 
 
 ![](https://lh6.googleusercontent.com/RgIJfstjkRNPUBx5KgfzMoX_WosNQWkeSDAaEEcLc7pJCHnbXmPwgHumZAruS0orDQlAaKbJlDgWzO9Blr4PtzAm7DxqrxIwcXO5BL5NPqYb_lf3ToV56ipLY-G3nHuXl3vt_FGvAEgIj0WopGbFDZw)
 *[Hidden Folks](https://hiddenfolks.com/) (2017)*
 
-**Confusion** - did I break the game? Am I supposed to be in this place? Jank can be a form of storytelling  
+## **Confusion** 
+Did I break the game? Am I supposed to be in this place? Jank can be a form of storytelling  
 
 ![](https://lh5.googleusercontent.com/who6n8QInQLEtg6N4mZqAAiSolWAm_LrChJXzhH154ypvfbJzKgyA2qadlr3u1x3NTkcDtZbusWnFKQhWs88jfaeavYLymL8rc_tCil34k2lZByi0M29lBnLrmYANN_I_VFux9GeXSgsdftPOaM0h1M)
 
 *[Oikospiel](http://www.oikospiel.com/) (2017) - David Kanaga*
 
-**Spatial sound** - a call from afar, music in the distance, something’s on the other side of the door!?!?
+## **Spatial sound** 
+A call from afar, music in the distance, something’s on the other side of the door!?!?
 
 ![](https://lh4.googleusercontent.com/u4fLu0lq8o30FoZAf_cpxCTDHJ_SwLS80IBbG-7ac6gZ9NmttR3dxIwF4LmdWxX9I66AY63Xnby8IVr1bsykATlVLb68IhjoiYrh1BBRKveIUVAzSdGq1adQPXEaZnIoynwFDRyrz-dQvDhqv99OX0g)
 *[Little Party](https://turnfollow.itch.io/littleparty) (2015)* 
 
-**Climbing, falling, descending, flying, etc**. – where are you taking us? Are we going down into the underworld or climbing towards heaven? How are we getting there and how does that feel
+# **Climbing, falling, descending, flying, etc**. 
+Where are you taking us? 
+
+Are we going down into the underworld or climbing towards heaven? 
+
+How are we getting there and how does that feel?
 
 ![](https://lh4.googleusercontent.com/D-kp8wM5Mixl0CqVAYfmfJKRGV_1Ue91F_rzszjTcCVXepQOCvIMM5tdxnnka7tl4k6buAD9Ui5xojxxKsOdKjGlaYbSX6EgwHcBlM-fq8Z6pPe6SwhhHpx_aOqLd07XsP9X6GmKow1I_BVQpFcFUik)
 *[Getting Over It with Bennett Foddy](https://youtu.be/DYjbCJXxWLg) (2017)*
