@@ -15,7 +15,7 @@ Office hours & Location: Thursdays 1-2pm / Game Lab
 Email: jtbrumley@g.ucla.edu
 
 Teaching Assistant: Vincent Roca (He/Him)
-Office hours & Location: TBA  
+Office hours & Location: Tuesdays 1-2pm / Game Lab   
 Email: vroca@g.ucla.edu
 
 ## Course Description
