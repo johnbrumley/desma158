@@ -211,6 +211,9 @@ Which path to take? Is there a point where you can’t go back? [Point of](https
 How does the player understand what they can do in the world. A ladder implies climbing. A door might indicate another space or goal.
 
 ## **Signposting** 
+
+![](https://3707026871-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-LtVT8pJjInrrHVCovzy%2F-M0dp-7nRNmP7a4LnyAa%2F-M0dqbQjeJos2rmJzcgM%2FLDB_SkyrimThroatOfTheWorld-DisneylandMatterhorn.jpg?alt=media&token=00d268fd-83f3-48ec-ba8c-d01ec914e1c4)
+
 > “See that mountain…”
 > - Todd Howard
 
