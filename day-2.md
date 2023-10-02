@@ -110,18 +110,20 @@ There are lots of games that are more-or-less fancy variations of roll-a-ball, f
 
 You can keep a spherical player that rolls or pick something entirely different that will move around a scene.
 
-<video loop="" autoplay="" muted="" playsinline="" poster="" class="HeroFullScreenVideo_video-without-pointer-event__EmJi7"><source src="https://media.graphassets.com/IoPFra8zQ2eH5iqGZwPS" type="video/mp4"></video>
+<video loop="" autoplay="" muted="" playsinline="" poster="" class="HeroFullScreenVideo_video-without-pointer-event__EmJi7"><source src="https://media.graphassets.com/IoPFra8zQ2eH5iqGZwPS" type="video/mp4" style="width: 100%;"></video>
 
 ## A (noun) that (verbs) around a (noun) and (verbs) (nouns) 
 
 When considering your own variations, try out different sentences that might be interesting. Jot down any ideas as short sentences or even full written-out documents.
 
 ![](assets/Pasted%20image%2020230930222618.png)
+
 _Joust (1982)_ proposal document (Source: [Patrick Scott Patterson](https://twitter.com/OriginalPSP/status/878426207200694273))
 
 # Building your level
 
 ![](assets/Pasted%20image%2020230930223443.png)
+
 _Flying Fortress (1976)_ concept. (Source: [Seth at Arcade 72](https://twitter.com/arcade1972/status/989477055384444928))
 
 After creating your own modified roll-a-ball sentence, you'll need a place for it to occur. 
@@ -140,6 +142,7 @@ But the biggest question you'll need to answer before starting level layout:
 Think through what you're trying to do and jot down what a player should experience over the course of the level and what should they take away at the end? 
 
 ![](assets/Pasted%20image%2020230930223621.png)
+
 Early _Battlezone (1980)_ game description (Source: [Atari](http://www.ionpool.net/arcade/atari_docs/fpsdescription.pdf))
 
 # Parti
@@ -175,7 +178,9 @@ Phenomenology is the philosophical study of affect, perception, and cognition—
 
 > ...all really inhabited space bears the essence of the notion of home... We shall see that the imagination functions in this direction whenever the human being has found the slightest shelter: we shall see the imagination build "walls" of impalpable shadows, comfort itself with the illusion of protection-or, just the contrary, tremble behind thick walls, mistrust the staunchest ramparts. In short, in the most interminable of dialectics, the sheltered being gives perceptible limits to his shelter. He experiences the house in its reality and in its virtuality, by means of thought and dreams. 
 > 
-> Bachelard, *The Poetics of Space*
+> Bachelard, *The Poetics of Space: the house. from cellar to garret. the significance of the hut*
+
+
 # Level Layout
 
 After you've nailed down what your goals and concepts for your level. you can begin sketching or laying out ideas. 
@@ -257,6 +262,7 @@ Did I break the game? Am I supposed to be in this place? Jank can be a form of s
 A call from afar, music in the distance, something’s on the other side of the door!?!?
 
 ![](https://lh4.googleusercontent.com/u4fLu0lq8o30FoZAf_cpxCTDHJ_SwLS80IBbG-7ac6gZ9NmttR3dxIwF4LmdWxX9I66AY63Xnby8IVr1bsykATlVLb68IhjoiYrh1BBRKveIUVAzSdGq1adQPXEaZnIoynwFDRyrz-dQvDhqv99OX0g)
+
 *[Little Party](https://turnfollow.itch.io/littleparty) (2015)* 
 
 # **Climbing, falling, descending, flying, etc**. 
