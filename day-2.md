@@ -110,7 +110,7 @@ There are lots of games that are more-or-less fancy variations of roll-a-ball, f
 
 You can keep a spherical player that rolls or pick something entirely different that will move around a scene.
 
-<video loop="" autoplay="" muted="" playsinline="" poster="" class="HeroFullScreenVideo_video-without-pointer-event__EmJi7"><source src="https://media.graphassets.com/IoPFra8zQ2eH5iqGZwPS" type="video/mp4" style="width: 100%;"></video>
+<video loop="" autoplay="" muted="" playsinline="" poster="" class="HeroFullScreenVideo_video-without-pointer-event__EmJi7" style="width: 100%;"><source src="https://media.graphassets.com/IoPFra8zQ2eH5iqGZwPS" type="video/mp4"></video>
 
 ## A (noun) that (verbs) around a (noun) and (verbs) (nouns) 
 
