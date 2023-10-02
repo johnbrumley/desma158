@@ -171,10 +171,12 @@ Phenomenology is the philosophical study of affect, perception, and cognition—
 - How does time unfold for the player?
 - How can you work *with* the imagination of the player?
 
+
 > "In a house, we all feel the need for closed doors. A closed door is before all a symbol of desire. It conceals absolutely essential mysteries. What might be behind it? What is hidden behind that secret panel, that unknowable portal? What is in the chest that my father never opened? The chest that I can never open? A closed door is given a much greater significance than an open door. Our reveries dwell on what might be behind that door, the desire to go beyond it, the feeling that certain doors are forbidden."
 
 ![](assets/Pasted%20image%2020231001151917.png)
 *Promesa*, Julian Palacios ([itch page](https://julian-palacios.itch.io/promesa))
+
 
 > ...all really inhabited space bears the essence of the notion of home... We shall see that the imagination functions in this direction whenever the human being has found the slightest shelter: we shall see the imagination build "walls" of impalpable shadows, comfort itself with the illusion of protection-or, just the contrary, tremble behind thick walls, mistrust the staunchest ramparts. In short, in the most interminable of dialectics, the sheltered being gives perceptible limits to his shelter. He experiences the house in its reality and in its virtuality, by means of thought and dreams. 
 > 
@@ -307,6 +309,8 @@ Changing the field of play, the level, the space:
 
 1. Holes in the field (see [donut county](http://www.donutcounty.com/))
 2. ...   
+
+
 # Beyond the demo
 
 Consider the definitions and expectations of the roll-a-ball demo. 
@@ -327,7 +331,9 @@ How can you complicate these components? Does changing/removing/amplifying/negat
 
 Maybe the result isn't a “good” game, but it becomes interesting, unexpected, outrageous… 
 
-![](https://lh6.googleusercontent.com/wq450-jMMI-b2QOuDAAuWmnnJO0Z-i8Duk4I5S6wz4k3j_-x-1z-Oudrx_DyB-KXQm2X-QG-uWSdLQU8BR50_gXuUdHjQE_2TkEQJYQS4FINS3y6kM2fORSkfByD83JEHW2nZnRhv4gcbvOtJMv5hdc)*Nicolas Collins - [Handmade Electronic Music](https://routledgetextbooks.com/textbooks/9780367210106/) (2006) - Appendix D*
+![](https://lh6.googleusercontent.com/wq450-jMMI-b2QOuDAAuWmnnJO0Z-i8Duk4I5S6wz4k3j_-x-1z-Oudrx_DyB-KXQm2X-QG-uWSdLQU8BR50_gXuUdHjQE_2TkEQJYQS4FINS3y6kM2fORSkfByD83JEHW2nZnRhv4gcbvOtJMv5hdc)
+
+*Nicolas Collins - [Handmade Electronic Music](https://routledgetextbooks.com/textbooks/9780367210106/) (2006) - Appendix D*
 
 # Exercise
 
@@ -343,6 +349,7 @@ This doesn't have to be the world you use in Project 1, but if you already have 
 - Check out the [Videogame Atlas](https://www.youandpea.com/atlas) for different geographies of game levels
 - Try and re-imagine a familiar building or space, but distort the proportions and distances to represent other tangible/intangible aspects (temp, time spent, feeling, safety)
 - Draw a map from memory of something you do every day on the computer / phone / internet … how could you represent a non-spatial thing as a place to be navigated through?
+
 
 > "During the eight years Pnin had taught at Waindell College he had changed his lodgings... about every semester. The accumulation of consecutive rooms in his memory now resembled those displays of grouped elbow chairs on show, and beds, and lamps, and inglenooks which, ignoring all space-time distinctions, commingle in the soft light of a furniture store beyond which it snows, and the dusk deepens, and nobody really loves anybody."
 > 
@@ -452,7 +459,7 @@ We've only scratched the surface of level design, but you should be equipped wit
 
 For now it's good to use your intuition about how things feel. After adding your player to the level and playtesting a bit, you'll realize that things are too far apart or the player moves much too slowly. 
 
-Create a new "Basic (URP)"" scene (Ctrl + N or File > New Scene) and get building!
+## Create a new "Basic (URP)"" scene (Ctrl + N or File > New Scene) and get building!
 
 ![](https://3707026871-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-LtVT8pJjInrrHVCovzy%2F-MeE6S6RE84hTY0E4Lwf%2F-MeEBQvgO3g54xMOuO9K%2FLDB_Alba_Blockout2019_Jesse_UsTwo.jpg?alt=media&token=c5e8dc22-5eef-44a8-bf25-44c3f605047f)
 
@@ -482,7 +489,7 @@ When blocking out, consider these aspects:
 
 Let's bring the titular ball from the Roll-a-ball demo into the grayboxed level.
 
-![](saving-prefab-to-another-scene.gif)
+![](assets/img/saving-prefab-to-another-scene.gif)
 
 1. To start, make a prefab of your player. In Unity, a prefab is a way to save a game object that will get reused multiple times.
 2. Save your current graybox level scene (Ctrl + S).
@@ -494,7 +501,7 @@ Let's bring the titular ball from the Roll-a-ball demo into the grayboxed level.
 
 You'll have to fix the camera in the new scene since it hasn't been set up to follow the player.
 
-![](add-camera-controller-script.gif)
+![](assets/img/add-camera-controller-script.gif)
 
 1. Select the Camera
 2. Scroll to the bottom of the Inspector and click "Add Component"
@@ -503,7 +510,7 @@ You'll have to fix the camera in the new scene since it hasn't been set up to fo
  
 Then make sure the Camera is looking at the player. Be careful about accidentally reversing the controls, the x-axis (red-arrow) should be pointing to the right.
 
-![](align-camera.gif)
+![](assets/img/align-camera.gif)
 
 1. Move the Scene Camera until it's looking exactly where you'd like the Main Camera to be. Note that the axes in the top-right of the scene view have the x-axis pointing to the right, otherwise your controls might be rotated.
 2. Select the Camera game object in the Hierarchy.
