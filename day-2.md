@@ -93,7 +93,9 @@ Think about all the different components of the demo … try and make a sentence
 
 # A ball that rolls around in a level and collects items.
 
-  
+![](https://www.ignant.com/wp-content/uploads/2019/02/ignant-art-walter-de-maria-012-1440x955.png)
+Walter De Maria, *Time / Timeless / No Time* (2004)
+
 Which words could you swap, remove, add to the phrase to make it more interesting? 
 
 What is the major challenge of roll-a-ball? 
@@ -102,13 +104,17 @@ Is winning too easy? What about losing? (does either need to exist? For project 
 
 # Variations of Roll-a-ball
 
-There are lots of games that are more-or-less fancy variations of roll-a-ball, for example this game: 
+![](assets/Pasted%20image%2020230918181701.png)
+
+There are lots of games that are more-or-less fancy variations of roll-a-ball, for example this game, [https://pirxos.itch.io/a-red-boat](https://pirxos.itch.io/a-red-boat) , could modify the roll-a-ball sentence as "A boat in the ocean finding messages"
+
+You can keep a spherical player that rolls or pick something entirely different that will move around a scene.
+
+<video loop="" autoplay="" muted="" playsinline="" poster="" class="HeroFullScreenVideo_video-without-pointer-event__EmJi7"><source src="https://media.graphassets.com/IoPFra8zQ2eH5iqGZwPS" type="video/mp4"></video>
 
 ## A (noun) that (verbs) around a (noun) and (verbs) (nouns) 
 
-How about: 
-"A boat in the ocean finding messages"
-[https://pirxos.itch.io/a-red-boat](https://pirxos.itch.io/a-red-boat) 
+When considering your own variations, try out different sentences that might be interesting. Jot down any ideas as short sentences or even full written-out documents.
 
 ![](assets/Pasted%20image%2020230930222618.png)
 _Joust (1982)_ proposal document (Source: [Patrick Scott Patterson](https://twitter.com/OriginalPSP/status/878426207200694273))
@@ -120,7 +126,7 @@ _Flying Fortress (1976)_ concept. (Source: [Seth at Arcade 72](https://twitter
 
 After creating your own modified roll-a-ball sentence, you'll need a place for it to occur. 
 
-Defined by [The Level Design Book](https://book.leveldesignbook.com/introduction) (mostly a plug for checking out this book!)
+Defined by [The Level Design Book](https://book.leveldesignbook.com/introduction) (Plug to check out this book!)
 
 > A level is a space where a game happens.
 
@@ -138,7 +144,7 @@ Early _Battlezone (1980)_ game description (Source: [Atari](http://www.ionpoo
 
 # Parti
 
-If you like, you could borrow an architectural term *parti* meaning the central concept or organizing principle of a structure. 
+If you like, you could borrow an architectural term *parti* meaning the central concept or organizing principle of a structure.
 
 - Sometimes the parti can be in the form of a statement, but often is tied directly to a diagram. 
 
@@ -147,7 +153,29 @@ If you like, you could borrow an architectural term *parti* meaning the central 
 - Not only limited to formal aspects, parti can describe massing, zoning, community, and other concerns.
 
 ![](assets/Pasted%20image%2020230930224522.png)
+# Phenomenology of the Player
 
+While parti gives primacy to the architecture of a level. The experience of the player-character and the sensual elements of the level which reveal themselves (at the discretion of you, the level designer) to the player-character during playtime are just as important and deserve equal attention.
+
+![](assets/Pasted%20image%2020231001151813.png)
+*Promesa*, Julian Palacios ([itch page](https://julian-palacios.itch.io/promesa))
+
+
+Phenomenology is the philosophical study of affect, perception, and cognition—that is, of consciousness—as experienced in the first-person. So to incorporate the phenomenological experience of the player into your design opens up more considerations:
+
+- The intentionality of the player. How does the level direct a player's experience?
+- How are objects revealed to the player. Are objects clear, blurry, blinding, loud? Do qualities of an object or place represent something about the player-character beyond the physical signifier?
+- How does time unfold for the player?
+- How can you work *with* the imagination of the player?
+
+> "In a house, we all feel the need for closed doors. A closed door is before all a symbol of desire. It conceals absolutely essential mysteries. What might be behind it? What is hidden behind that secret panel, that unknowable portal? What is in the chest that my father never opened? The chest that I can never open? A closed door is given a much greater significance than an open door. Our reveries dwell on what might be behind that door, the desire to go beyond it, the feeling that certain doors are forbidden."
+
+![](assets/Pasted%20image%2020231001151917.png)
+*Promesa*, Julian Palacios ([itch page](https://julian-palacios.itch.io/promesa))
+
+> ...all really inhabited space bears the essence of the notion of home... We shall see that the imagination functions in this direction whenever the human being has found the slightest shelter: we shall see the imagination build "walls" of impalpable shadows, comfort itself with the illusion of protection-or, just the contrary, tremble behind thick walls, mistrust the staunchest ramparts. In short, in the most interminable of dialectics, the sheltered being gives perceptible limits to his shelter. He experiences the house in its reality and in its virtuality, by means of thought and dreams. 
+> 
+> Bachelard, *The Poetics of Space*
 # Level Layout
 
 After you've nailed down what your goals and concepts for your level. you can begin sketching or laying out ideas. 
@@ -192,6 +220,9 @@ Unlocking new areas, moving from small tunnels to open fields, different types o
 ![](assets/Pasted%20image%2020231001121540.png)
 [One button Nipple Golf](https://jrap.itch.io/obng)  – The concept/level reveals itself by zooming further back with each level.
 
+![](https://knowak.typepad.com/.a/6a00d8341ca9bc53ef01156ef03f74970c-800wi)
+
+How a player experiences a space is strongly influenced by how they arrive in it. Play with dichotomies: cramped -> open, light -> dark, mundane -> sacred
 ## **Vistas** 
 Observation points let a player set new goals, see how far they’ve come, take a break, foreshadow the next challenge
 
@@ -202,6 +233,12 @@ Observation points let a player set new goals, see how far they’ve come, take 
 Add weight to a reveal, induce momentary "lostness" 
 
 ![](assets/Pasted%20image%2020230918182728.png)
+
+Alternative approaches can "teach" players to read levels differently.
+
+![](https://images.squarespace-cdn.com/content/v1/577026956a4963e88035c61f/1656435780000-RXWCZCL264FURVP5M79T/va_dps_9-scaled.jpg?format=1500w)
+Pearson & Youkhana, *Videogame Atlas: Mapping Interactive Worlds* ([link](https://www.youandpea.com/atlas))
+
 
 ## **Easter eggs** 
 Hidden objects, images, and notes elicit close focus on the environment 
@@ -235,7 +272,7 @@ How are we getting there and how does that feel?
 # Scene breakdown
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/EPKRAWUtKCE?si=yf8aL5OVO4Vo3OA_&t=325" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-*54:19 - Opening section* - how many of the above techniques can you spot?
+*54:19 - Opening section* - how many of the previously mentioned techniques can you spot?
 
 # Spatial Memory
 
@@ -249,45 +286,6 @@ More abstractly, we all have a sense of spatial memory relating to software that
 # Can anyone name this map? 
 
 ![](https://lh6.googleusercontent.com/rbp56x2gbPslLqGfUQsE8a45pwYpq-EVD0JJjBh3y53gvWRkokXFGbuzNtYkan2dg4WuiI_xp7V76jQtQSgx_BmN0M3S6mJFCpr3rOflajiJWrp369t2F-2xQWAQXZGM5yJQF4MWzqmuLI9igjdZr_g)
-
-# Exercise
-
-Let's try creating some maps by hand. 
-
-Consider a setting/activity/goal/history/idea and the tools of environmental expression we just discussed.
-
-In addition to the form of the map, include any other things that might live there: objects, plants, creatures, buildings, cities, planets, etc.
-
-This doesn't have to be the world you use in Project 1, but if you already have an idea feel free to work on that. 
-## Ideas, inspirations
-- Go to [https://noclip.website/](https://noclip.website/) and explore some digital versions of maps
-- Check out the [Videogame Atlas](https://www.youandpea.com/atlas) for different geographies of game levels
-- Try and re-imagine a familiar building or space, but distort the proportions and distances to represent other tangible/intangible aspects (temp, time spent, feeling, safety)
-- Draw a map from memory of something you do every day on the computer / phone / internet … how could you represent a non-spatial thing as a place to be navigated through?
-
-> "During the eight years Pnin had taught at Waindell College he had changed his lodgings... about every semester. The accumulation of consecutive rooms in his memory now resembled those displays of grouped elbow chairs on show, and beds, and lamps, and inglenooks which, ignoring all space-time distinctions, commingle in the soft light of a furniture store beyond which it snows, and the dusk deepens, and nobody really loves anybody."
-> 
->- Nabokov, *Pnin*
-
-# Optional reading(s):
-
-[Anna Anthropy’s Level Design Lessons](https://drive.google.com/file/d/14EuDZDhZcKhtsR3nvTIGMG25DE1niqun/view?usp=share_link) - level design in a few classical 8-bit era games
-
-## EXTRA CREDIT 
-
-> “Game designers don't simply tell stories; they design worlds and sculpt spaces.”
-
-Henry Jenkins. [Game Design as Narrative Architecture](https://web.mit.edu/~21fms/People/henry3/games&narrative.html)
-
-Read through Jenkins's essay and respond to the questions on this form:
-
-[https://forms.gle/4J1yydprV1JoFDq4A](https://forms.gle/4J1yydprV1JoFDq4A) 
-
-![](https://lh4.googleusercontent.com/kdlT22Sw7GeVRsksSd4wWdiERrfOf98XZhCkPGqWKV71QKfYjGHqYEdojLyDAhBq1PKz5FyrXZYdPzt8yPkWKWtfIDKVY0xUxtFHxnWSjYf8w46KGGu4qwGpT9FLnzuAbE4Zij5XhsLZQ8cA36SGrR0)
-*[What the Golf?](https://www.whatthegames.com/golf) (2019)*
-
-> All the world is an absurdist game of golf, but love is the most absurd golf game of all.
->  - [Bo Ruberg](https://twitter.com/MyOwnVelouria/status/1640915632115027969) 
 
 # Back to Roll-a-ball
 
@@ -325,56 +323,216 @@ Maybe the result isn't a “good” game, but it becomes interesting, unexpected
 
 ![](https://lh6.googleusercontent.com/wq450-jMMI-b2QOuDAAuWmnnJO0Z-i8Duk4I5S6wz4k3j_-x-1z-Oudrx_DyB-KXQm2X-QG-uWSdLQU8BR50_gXuUdHjQE_2TkEQJYQS4FINS3y6kM2fORSkfByD83JEHW2nZnRhv4gcbvOtJMv5hdc)*Nicolas Collins - [Handmade Electronic Music](https://routledgetextbooks.com/textbooks/9780367210106/) (2006) - Appendix D*
 
-# Review from last class (Check out on your own)
+# Exercise
 
-Unity Editor interface
+Let's try creating some maps by hand. 
+
+Consider a setting/activity/goal/history/idea and the tools of environmental expression we just discussed.
+
+In addition to the form of the map, include any other things that might live there: objects, plants, creatures, buildings, cities, planets, etc.
+
+This doesn't have to be the world you use in Project 1, but if you already have an idea feel free to work on that. 
+## Ideas, inspirations
+- Go to [https://noclip.website/](https://noclip.website/) and explore some digital versions of maps
+- Check out the [Videogame Atlas](https://www.youandpea.com/atlas) for different geographies of game levels
+- Try and re-imagine a familiar building or space, but distort the proportions and distances to represent other tangible/intangible aspects (temp, time spent, feeling, safety)
+- Draw a map from memory of something you do every day on the computer / phone / internet … how could you represent a non-spatial thing as a place to be navigated through?
+
+> "During the eight years Pnin had taught at Waindell College he had changed his lodgings... about every semester. The accumulation of consecutive rooms in his memory now resembled those displays of grouped elbow chairs on show, and beds, and lamps, and inglenooks which, ignoring all space-time distinctions, commingle in the soft light of a furniture store beyond which it snows, and the dusk deepens, and nobody really loves anybody."
+> 
+>- Nabokov, *Pnin*
+
+# Optional reading(s):
+
+[Anna Anthropy’s Level Design Lessons](https://drive.google.com/file/d/14EuDZDhZcKhtsR3nvTIGMG25DE1niqun/view?usp=share_link) - level design in a few classical 8-bit era games
+
+# Grayboxing your level in Unity
+
+Now that you've sketched out an idea for a level. Let's try and build a very low-fidelity version of that level using simple shapes, also known as Grayboxing, within Unity.
+
+# Prototyping / Gray boxing / Blocking out
+
+Check out the [level design book](https://book.leveldesignbook.com/) which contains much more thorough dives into these concepts. 
+
+![](https://lh5.googleusercontent.com/U6j7YBjswTO_LLt1dJIY9tRodGmtJmrSx2fdQ9lTBEiXdVd1kN29dgVd_MW5JKHrNaiaoIvyrw0gLT9_JLXhTpVUhhpfFHgUlLUq8XDszBhbnLqz0zPqIM1oL0DLp244VKI1OVb4VXn4YoKic3sDEsU)
+[Neon White](https://www.gameinformer.com/feature/2022/11/25/how-a-neon-white-level-is-made)
+
+When developing a level or game mechanic, it’s useful to separate the “art” (modeling, lighting, texturing, etc.) from the movement, trajectory, and feel of the game. A common technique in game development is known as "grayboxing" or "blocking out" involves this process. 
+
+![](https://lh5.googleusercontent.com/EctRimb-FLmYX7d2ZdvxqPF6bwKx08IU7KXUZyumVLksj-1SXu9-VrqxxKRMAevWQ0DoK20teMy8gMxL46OIyC-GaxeZ1K9044RZeBavN8BW2IT5nrCaOuN0jrQO9Tl23OcD5U-WkqK3xY1h8hame5M)
+
+[https://book.leveldesignbook.com/process/env-art](https://book.leveldesignbook.com/process/env-art) 
+
+You can compare this idea to wireframing a layout and using placeholder text and images. The content doesn’t need to exist before you can consider things like navigation, composition, or interaction.
+
+# Here’s the process:
+
+1. Sketch layout (Done!)
+2. Add ground plane, scale figures, walls (What we're about to do)
+3. Playtest
+4. Diverge, iterate, and playtest again
+5. Repeat step 4 until done
+
+(See here for [breakdowns](https://book.leveldesignbook.com/process/blockout#how-to-blockout) of each step )
+
+# A quick refresher on Unity
+
+Unity Editor interface, we'll mainly be working in the Hierarchy, Scene, and Inspector views for building the layout
 
 ![](https://lh3.googleusercontent.com/oiRCFcn_j7FPdPkHzJekG1GrSkXom3y-ahdUyrQn6SqOQIwPNwyXO7tOPYgAJRBohhLzGFE3KKJysh4zcmU3mXbyySeWjXit0xMK_jUvMiWZVRi6Kj6nfOwAu-AeAW39ke-kFWgNFCv-sXFWdL3WtXw)
 
-Navigating in Scene view (and a bit more about transform tools, snapping, grid, etc.)
+# Navigating in Scene view (and a bit more about transform tools, snapping, grid, etc.)
 
-- Positioning / Rotating / Scaling
-    
+Positioning / Rotating / Scaling
 
-  
+Select an object in Scene view, then:
+- W: Move Tool
+- E: Rotate Tool
+- R: Scale Tool
 
-![](https://lh3.googleusercontent.com/lIqTs5WfaYyOBa7BdSe2aS9obnI6-3iOP0Ubjpw6KR5jH5jiBbomplBS8DiwrFLWuYszKwpY3jNNmVJGAP4_p4Yz0FCvKmgw60ewblwfbfTOKgSRa7GXQZ4GriWWtS--Mmt4tuFrnI77h30-rBCgArE)![](https://lh4.googleusercontent.com/lfmbx72ArhUyd5oBzMOPce2mgQxmZdTqH5_MISX9tyhgVTL0XFQL1HQuLmYTox0UvkZI0VGgKuLLxcLlaqDdhdslx6zOWnG4uuUkhiqZhUbKp8PoGjUiv-92oAdRvdfu2jOf7-fThSy_hYgop6Zx1N8)
+![](https://lh4.googleusercontent.com/lfmbx72ArhUyd5oBzMOPce2mgQxmZdTqH5_MISX9tyhgVTL0XFQL1HQuLmYTox0UvkZI0VGgKuLLxcLlaqDdhdslx6zOWnG4uuUkhiqZhUbKp8PoGjUiv-92oAdRvdfu2jOf7-fThSy_hYgop6Zx1N8)
 
-  
+You can use the "Scene Gizmo" to quickly change the Scene Camera angle. See [Scene View Navigation](https://docs.unity3d.com/Manual/SceneViewNavigation.html) for more details.
 
-Game Objects, Transforms, Components
+![](Pasted%20image%2020231001180559.png)
+
+# Game Objects, Transforms, Components
 
 ![](https://lh4.googleusercontent.com/gc4lwjYsZXqoO0sAxUUjU9x__9LdE5u43WXgxMm-_CDYQQygKQemupr6cARltmjsuLZBeNLGvI7Buwuq55Fq2UBhSDrIO-Sc_-eoNMya8eCsbxcOaS7ACcGYyMOm7YhhOSzlukIXHlJFISREW_4DYSA)
 
-
 Making new game objects / primitives 
 
-- Duplicating, changing multiple objects, 
-    
+## Right-click or Press the '+' button in the Hierarchy to add things to the scene.
+- Select the object you want to add from the menu
+- Use Ctrl+D to duplicate objects (or right-click and select 'duplicate')
 
+![](assets/img/adding-scene-objects.gif)
 # Some extra tips
 
-Align to view: Ctrl + shift + F
-
+## Align to view: Ctrl + shift + F
 Useful for quickly setting up camera shots. 
 
 1. Select a GameObject (usually the Camera) 
 2. Move your scene view to where you want it
 3. Use the key shortcut or use Game Object > Align With View
-
-**Snap Object to Surface**: Hold Ctrl + shift while dragging the center of the object
+## Snap Object to Surface 
+Hold Ctrl + shift while dragging the center of the object
+## Vertex Snapping 
+Hold ‘v’ and select and drag a vertex of an object
 
 ![](https://lh4.googleusercontent.com/_LpScfkbui9jLyzM9otGUr35D1lnyu5MffSDKu0i-KH1uI5s1o_Ol3-qg7M99249u4rvJkq9gpiLZms_uh_14rE2uF1B4erC4D1sC4kZGA9N-OY5tSISMCbqG0CxwQTnOSABRp-dNCWW9kYv8h8RJqI)
+You can combine vertex and surface snapping by holding "v + ctrl + shift"
 
-**Vertex Snapping**: Hold ‘v’ and select and drag a vertex of an object
-# Things from Roll-a-ball
 
-Lights / materials 
+# Probuilder for Gray Boxing / Blockouts
 
-![](https://lh3.googleusercontent.com/l7lVRbEBuAsuSYKwa6429Ur0eaSEerDZGDSrkHg8zEGa83g-uJ7DT4f1RpUEqdeRqnc3ekP5lBxMXoMhoud7yRyNrmuyJeyfNFQ2WHUK3jt4YB2vFtca329tl5RWXwBOxR0D-U9_cHjOqtQgfbMCD94)
-# Input system! 
+![](https://lh4.googleusercontent.com/82f6wrh0qGImF6whoXvlUFHPxm5O5FqgcGscg6tqrvy3N5kRpBQrXqWoJCimc17eGhdDBBDy0b7KTNhStCa5FOWDWzHWpBCvd1I5irreY0gGJWoXABVXyk73gDjMmZ6FPV5-k5lD1zUMOBiHX5JeZ48)
+Unity Probuilder: [https://unity.com/features/probuilder](https://unity.com/features/probuilder)
 
-What’s going on with the new input system?!?!
+This tool adds a bit more “modeling” functionality to the Unity Editor and comes with lots of default level objects like doors, stairs, arches, etc. and more tools for editing shapes.
 
-![](https://lh6.googleusercontent.com/Bn7Kt8rCLudlqfrWwGCPNp8djykeFOgUYHuWtnEzaXuHEO-8bYGplB26bq8IQN-8-8AsL6f8my3vTEw-txxvvxHbOy39XRHZmaKDn9iZP8O89c8PF10CSzf-k0mdlOsh8_t1zrp8H0bfqr2NpglpyvM)
+![](assets/Pasted%20image%2020231001190316.png)
+# Installing ProBuilder (optional) 
+## Window > Package Manager > (Packages: Unity Registry) > ProBuilder
 
+![](assets/img/install-probuilder.gif)
+After installing, make sure you include support for your render pipeline:
+
+![](https://lh6.googleusercontent.com/9QP_f0Ggv-m45THPPUcuAKslb4aGJ29sm34iTgbhtIveThj07kViiDr9Sub2cFRB7UPN9GEBYC3HTbxCj5HmD9_2q03XPaaaBj9-C_ZbCEINdl9cCO-IoFtHwf3keG7reCvOcZhHRK2Nb-swnO4Wpgo)
+
+# Let's Prototype
+
+We've only scratched the surface of level design, but you should be equipped with enough tools to get started with building out a graybox version of your level in Unity.
+
+For now it's good to use your intuition about how things feel. After adding your player to the level and playtesting a bit, you'll realize that things are too far apart or the player moves much too slowly. 
+
+Create a new "Basic (URP)"" scene (Ctrl + N or File > New Scene) and get building!
+
+![](https://3707026871-files.gitbook.io/~/files/v0/b/gitbook-legacy-files/o/assets%2F-LtVT8pJjInrrHVCovzy%2F-MeE6S6RE84hTY0E4Lwf%2F-MeEBQvgO3g54xMOuO9K%2FLDB_Alba_Blockout2019_Jesse_UsTwo.jpg?alt=media&token=c5e8dc22-5eef-44a8-bf25-44c3f605047f)
+
+editor screenshot of an early blockout of the open world landscape in Alba; image by Jessie Van Aelst (from https://medium.com/@ustwogames/the-environment-art-of-alba-a-wildlife-adventure-6bddd8b56955) -- from [Level Design Book](https://book.leveldesignbook.com/process/blockout/massing/landscape#example-landscapes)
+
+p.s.
+
+The Level Design Book (still a work in progress, but highly useful) has some very detailed sections related to making a [Graybox or Blockout level](https://book.leveldesignbook.com/process/blockout)-- including commentary on different approaches. 
+
+From the book:
+
+When blocking out, consider these aspects:
+- [**Massing**](/process/blockout/massing) is the general sense of volume and weight conveyed by the shapes.
+    - _Is this structure thick / heavy, or thin / light? What kind of place is this?_
+    - [Landscapes](/process/blockout/massing/landscape) need special consideration.
+    - [Composition](/process/blockout/massing/composition) is currently over-emphasized in level design culture today.
+- [**Metrics**](/process/blockout/metrics) are the general scale, dimensions, and proportions of the level.
+    - _Is this area too big or small? Can the player fit in this room?_
+    - examples of useful measurements: [Doom metrics](/process/blockout/metrics/doom), [Quake metrics](/process/blockout/metrics/quake)
+- [**Wayfinding**](/process/blockout/wayfinding) is the player's navigation process for learning the map structure.
+    - _How to help the player find the_ [_critical path_](/process/layout/flow#critical-path) _/ level exit? Does the player feel too lost?_
+- [**Playtesting**](/process/blockout/playtesting) is when you run an experiment to see if the level meets its design goals.
+    - _Can most players complete the level? Do the_ [_encounters_](/process/combat/encounter) _work? Is it_ [_balanced_](/process/combat/balance)_?_
+    - Playtesting is really important. This is the whole point of making a blockout.
+
+# Add your player to the level to test
+
+Let's bring the titular ball from the Roll-a-ball demo into the grayboxed level.
+
+![](saving-prefab-to-another-scene.gif)
+
+1. To start, make a prefab of your player. In Unity, a prefab is a way to save a game object that will get reused multiple times.
+2. Save your current graybox level scene (Ctrl + S).
+3. Open the scene you built in the tutorial (probably named "minigame").
+4. Select the Player game object in the Hierarchy.
+5. Drag that game object into your Assets folder in the Project panel. This creates a prefab of the Player game object.
+6. Re-open the graybox scene.
+7. Drag the Player prefab from your Project panel into the Hierarchy of the graybox scene.
+
+You'll have to fix the camera in the new scene since it hasn't been set up to follow the player.
+
+![](add-camera-controller-script.gif)
+
+1. Select the Camera
+2. Scroll to the bottom of the Inspector and click "Add Component"
+3. Start typing "Camera" and select the "Camera Controller" script.
+4. Drag the Player into the "Player" property of the Camera Controller.
+ 
+Then make sure the Camera is looking at the player. Be careful about accidentally reversing the controls, the x-axis (red-arrow) should be pointing to the right.
+
+![](align-camera.gif)
+
+1. Move the Scene Camera until it's looking exactly where you'd like the Main Camera to be. Note that the axes in the top-right of the scene view have the x-axis pointing to the right, otherwise your controls might be rotated.
+2. Select the Camera game object in the Hierarchy.
+3. Click GameObject > Align With View.
+
+## Press play to check that everything is working and start playtesting!
+
+*Note: An error will appear in the console because we left some properties empty in the Player Controller. You can either recreate the UI system from the "minigame" scene in this scene, or you can go back and work in that scene when building out the rest of Project 1.*
+
+After you've tried out your level and made some changes, ask another person to play.
+
+# Homework
+
+## Project 1, Part 2 (due Next Class)
+[Part 2 of Project 1 is due this Thursday](https://johnbrumley.github.io/desma158/project-1.html#2-beyond-roll-a-ball) so create some more sketches (you can use the one we did in class as one of the sketches). Also include ideas for possible title cards for each sketch.
+
+## Homeplay (due Next Tuesday 10/12)
+As additional research on ways to adapt roll-a-ball, you'll be signing up in *Groups of 3* to play a game on [this list](https://docs.google.com/spreadsheets/d/1pOxYtalckwi_PykkRneQMNX_UkxH2TdFm132yvbRygg/edit?usp=sharing) for at least 2 hours. For games that cost money, we've set up a computer/console in the Print Lab lounge where you can access them. 
+
+Next Tuesday (10/12), your group will give a 5-minute Let's Play presentation to talk about how the game's themes, ideas, structure, narrative, mechanics, flow, and ideology fits into what we've been discussing in class, and show a part of the game that is especially interesting.
+
+The presentation can be done *live or using recorded gameplay with live commentary* if difficult to isolate the section of the game you want to show.
+
+## EXTRA CREDIT 
+
+> “Game designers don't simply tell stories; they design worlds and sculpt spaces.”
+
+Henry Jenkins. [Game Design as Narrative Architecture](https://web.mit.edu/~21fms/People/henry3/games&narrative.html)
+
+Read through Jenkins's essay and respond to the questions on this form:
+
+[https://forms.gle/4J1yydprV1JoFDq4A](https://forms.gle/4J1yydprV1JoFDq4A) 
+
+![](https://lh4.googleusercontent.com/kdlT22Sw7GeVRsksSd4wWdiERrfOf98XZhCkPGqWKV71QKfYjGHqYEdojLyDAhBq1PKz5FyrXZYdPzt8yPkWKWtfIDKVY0xUxtFHxnWSjYf8w46KGGu4qwGpT9FLnzuAbE4Zij5XhsLZQ8cA36SGrR0)
+*[What the Golf?](https://www.whatthegames.com/golf) (2019)*
+
+> All the world is an absurdist game of golf, but love is the most absurd golf game of all.
+>  - [Bo Ruberg](https://twitter.com/MyOwnVelouria/status/1640915632115027969) 
