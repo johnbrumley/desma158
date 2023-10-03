@@ -1,6 +1,7 @@
 
 ![](https://www.ignant.com/wp-content/uploads/2019/02/ignant-art-walter-de-maria-012-1440x955.png)
 
+scratch push test
 # post meeting todo
 
 - [ ] sprinkle in more anna anthropy readings -- maybe include responses as part of sketch? ~~Thinking Ch 3 - what is game? (proj 1)~~ not that useful after all, ch1 - personal voice (proj 2), ch 4 - hacks and mods (proj 3)?
