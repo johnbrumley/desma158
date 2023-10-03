@@ -2,6 +2,7 @@
 title: Day 3
 layout: slides
 ---
+
 ![](https://lh5.googleusercontent.com/YnKbmPuGHGN6vXswGrPDNMY4CrpQqQ82UKssuF_-uWsPafHSDErEgOSSDCCOGX7ldChVUbB1cv17HiLgCLbBdNkco4Sdd8ygNt-1CCW6aDJYoPwMjjkC0b7Zugra-1YUGoJ9-zPR8xIoQ26sL832b5I)
 
 # Spatial Narrative
@@ -98,6 +99,10 @@ So you may have an idea of how you would like things to look, but how do you des
 Using found models (the [Everything Library](https://www.davidoreilly.com/library) is a good starting place), create a still life using lights, materials, textures, and skyboxes as described in [URP Lighting and Materials](https://docs.google.com/document/d/1ZjCCffMNw-B9tR5LMDwtBYbts4SaDhWpXhwk0I_bflE/edit?usp=sharing). 
 
 Alternatively, you can focus on building out the space and atmosphere of your Project 1 scene using lights, materials, textures, and skyboxes.
+
+# Triggers, Collisions, and Events
+
+# Some helper scripts and prefab
 
 
 
