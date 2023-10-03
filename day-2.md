@@ -531,11 +531,11 @@ After you've tried out your level and made some changes, ask another person to p
 [Part 2 of Project 1 is due this Thursday](https://johnbrumley.github.io/desma158/project-1.html#2-beyond-roll-a-ball) so create some more sketches (you can use the one we did in class as one of the sketches). Also include ideas for possible title cards for each sketch.
 
 ## Homeplay (due Next Tuesday 10/12)
-As additional research on ways to adapt roll-a-ball, you'll be signing up in *Groups of 3* to play a game on [this list](https://docs.google.com/spreadsheets/d/1pOxYtalckwi_PykkRneQMNX_UkxH2TdFm132yvbRygg/edit?usp=sharing) for at least 2 hours. For games that cost money, we've set up a computer/console in the Print Lab lounge where you can access them. 
+As additional research on ways to adapt roll-a-ball, you'll be signing up in *Groups of 3* to play a game (or games) on [this list](https://docs.google.com/spreadsheets/d/1pOxYtalckwi_PykkRneQMNX_UkxH2TdFm132yvbRygg/edit?usp=sharing) for at least 1-2 hours. For games that cost money, we've set up a computer/console in the Print Lab lounge where you can access them. 
 
 Next Tuesday (10/12), your group will give a 5-minute Let's Play presentation to talk about how the game's themes, ideas, structure, narrative, mechanics, flow, and ideology fits into what we've been discussing in class, and show a part of the game that is especially interesting.
 
-The presentation can be done *live or using recorded gameplay with live commentary* if difficult to isolate the section of the game you want to show.
+The presentation can be done *live or using recorded gameplay with live commentary* if difficult to isolate the section of the game you want to show. I recommend screen recording the entire session, [OBS](https://obsproject.com/) is a very lightweight recorder, so you don't have to worry about missing any moments.
 
 ## EXTRA CREDIT 
 

@@ -283,3 +283,242 @@ I’ve saved a recorder preset that you can use for both screenshots and screen 
 Drag the file into your project’s assets and then load it using the menu next to the “Add Recorder” button.
 
 ![](https://lh3.googleusercontent.com/JmCGXZhwAmYAXk7UfqKZQ26tLC9YETwh-JgqjGoAsKUZbqkavbxkntb7bVTLy1ll2Wr39TxPgBWg2pBmlH6xLtdn1ZcVdkFfVqgc7HCIRJbAc7sLfdYu9Mh8QatwMVCb777JjgA9XaDsG1OxC8_bhZc)
+
+
+# Methods in Unity 
+
+[Official Documentation](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods)
+
+A method is an encapsulated block of code that can be called elsewhere. Some methods that are probably already familiar are Start() and Update() which are built into Unity’s [Monobehavior](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) class.
+
+The signature of a method contains the access modifier (public, private), the return value (void, int, float, Vector3), the name of the method, and any parameters that should be passed to the method when called. 
+
+Here’s an example:
+```c#
+public void SayHello() 
+{
+	print("Hello"); 
+}
+```
+
+This method doesn’t return anything and has no parameters. How about adding in a parameter and a return value:
+
+```c#
+public string SayHello(string name)  
+{  
+	print("Hello" + name);  
+	return "said hello to " + name; 
+}
+```
+
+And even more parameters:
+
+  
+
+|   |
+|---|
+|public string SayHello(string name, int numberOfTimes)  <br>{  <br>        for(int i = 0; i < numberOfTimes; i++)  <br>        {  <br>            print("Hello" + name);  <br>        }  <br>        return "said hello " + numberOfTimes + "times";  <br>}|
+
+  
+
+Call the method by its name and pass in any arguments, the return value can be used right away or stored in a variable
+
+  
+
+|   |
+|---|
+|// storing the return value in a variable  <br>string result = SayHello("Duane", 500);  <br>print(result);  <br>  <br>// or using it directly  <br>print(SayHello("Duane", 500));|
+
+  
+  
+  
+
+![](https://lh4.googleusercontent.com/upvqc4afS5bclkveJh-4HeJNtaPbGbT2Gik8Sf4t7ySNLmAfgGTN4JX2TcNbkle8pa88B7SRrCDGZGBfUfib7eWViuo2kbozVFanokvBEefZpiJ4NdRi5dGVtyY-7YdHPPX5mKHQWHJTaotRpPp4cO8)
+
+  
+# Scripting Components
+
+## Step 1: GetComponent / FindGameObjectsWithTag / FindObjectOfType / 
+
+Currently, the way we’ve been accessing other objects and components in code was to make variables public, so that the variable would appear in the inspector and the component dragged to the empty slot.
+
+  
+
+|   |
+|---|
+|public GameObject go;  <br>public Rigidbody rb;  <br>public Camera cam; // note: for the main camera use Camera.main  <br>public Light lt;  <br>public AudioSource audioSource; // can't use 'as'  <br>public ParticleSystem ps;|
+
+  
+
+### GetComponent
+
+When the component is on the same GameObject as the script, or the component is on another GameObject that the script has a reference to. You can use the GetComponent which is a method of the GameObject class.
+
+  
+
+Type name = GetComponent<Type>();
+
+  
+
+For example if you wanted to get the Rigidbody on the same game object as your script:
+
+  
+
+|   |
+|---|
+|Rigidbody rb = GetComponent<Rigidbody>();|
+
+  
+
+Or, if you have a reference to the game object you can access any of its components in the same way
+
+  
+
+|   |
+|---|
+|public GameObject go;  <br>void Start()  <br>{  <br>    Renderer renderer = go.GetComponent<Renderer>();  <br>}|
+
+  
+
+There are other variants which return multiple components as an array
+
+  
+
+|   |
+|---|
+|AudioSource[] sources = GetComponentsInChildren<AudioSource>();  <br>foreach (AudioSource source in sources)  <br>{  <br>        source.mute = true;  <br>}|
+
+  
+
+And a version to be used in conjunction with a conditional statement
+
+  
+
+|   |
+|---|
+|if (TryGetComponent(out HingeJoint hinge))  <br>{  <br>        hinge.useSpring = false;  <br>}|
+
+  
+
+### FindGameObjectsWithTag
+
+  
+
+There is another useful method when looking for tagged objects called FindGameObjectsWithTag which is used like this
+
+  
+
+GameObject[] name = FindGameObjectsWithTag(“myTagName”); 
+
+  
+
+These can be combined to quickly change a lot of things in your scene
+
+  
+
+|   |
+|---|
+|GameObject[] borts = GameObject.FindGameObjectsWithTag("bort");  <br>foreach (GameObject bort in borts)  <br>{  <br>        bort.GetComponent<Transform>().LookAt(Vector3.zero);  <br>}|
+
+  
+
+This tells any object tagged as “bort” to look at the origin (0,0,0) of the scene.
+
+  
+
+All the methods in the GameObject class here:
+
+[https://docs.unity3d.com/ScriptReference/GameObject.html](https://docs.unity3d.com/ScriptReference/GameObject.html)
+
+### FindObjectOfType
+
+A third option is to search for all loaded objects of a specific type in the scene. This is not the fastest operation, so it’s not the best idea to call it every frame. 
+
+  
+
+|   |
+|---|
+|Rotator[] rotators = FindObjectsOfType<Rotator>();  <br>// set speed of all rotators  <br>foreach (Rotator rotator in rotators)  <br>{  <br>        rotator.speed = 10f;  <br>}|
+
+  
+
+Try doing this in your own Roll-a-ball scene. You’ll need to modify the Rotator script in order for this to work.
+
+## Step 2: modify things
+
+I’ve already given away how this might work in a few of the examples above, but what if you wanted to modify a value over time from a separate script?
+
+  
+
+|   |
+|---|
+|GameObject[] iceCubes;  <br>GameObject[] fireCubes;  <br>  <br>void Start()  <br>{  <br>    iceCubes = GameObject.FindGameObjectsWithTag("ice");  <br>    fireCubes = GameObject.FindGameObjectsWithTag("fire");  <br>}  <br>  <br>void Update()  <br>{  <br>    foreach(var ice in iceCubes)  <br>    {  <br>        float valueAmount = Mathf.PingPong(Time.time, 1f);  <br>        Color iceColor = Color.HSVToRGB(0.7f, 1f, valueAmount);  <br>        ice.GetComponent<Renderer>().material.SetColor("_BaseColor", iceColor);  <br>    }  <br>  <br>    foreach(var fire in fireCubes)  <br>    {  <br>        float valueAmount = Mathf.Repeat(Time.time, 1f);  <br>        Color iceColor = Color.HSVToRGB(0f, 1f, valueAmount);  <br>        fire.GetComponent<Renderer>().material.SetColor("_BaseColor", iceColor);  <br>    }  <br>}|
+
+  
+
+More likely, it’s better to have the color changing scripts on the objects themselves. But this script covers a lot of new ground on ways to modify things including:
+
+- The [PingPong](https://docs.unity3d.com/ScriptReference/Mathf.PingPong.html) and [Repeat](https://docs.unity3d.com/ScriptReference/Mathf.Repeat.html) methods of the [Mathf](https://docs.unity3d.com/ScriptReference/Mathf.html) class
+    
+- Creating colors in scripts with the [Color](https://docs.unity3d.com/ScriptReference/Color.html) class and converting HSV to RGB
+    
+- How to access and set the color of a material with [SetColor](https://docs.unity3d.com/ScriptReference/Material.SetColor.html) (note: for URP use “_BaseColor” rather than “_Color” )
+    
+
+  
+
+In both of the cases above, Time.time was used to modify the value over time. Time.time can also be passed into the offset of a Material to create a scrolling texture
+
+  
+
+|   |
+|---|
+|using UnityEngine;  <br>public class SlideTexture : MonoBehaviour  <br>{  <br>    Material material;  <br>    void Start()  <br>    {  <br>        material = GetComponent<Renderer>().material;  <br>    }  <br>    void Update()  <br>    {  <br>        Vector2 newOffset = new Vector2(Time.time, Time.time);  <br>        material.SetTextureOffset("_BaseMap", newOffset);  <br>    }  <br>}|
+
+  
+  
+  
+
+![](https://lh3.googleusercontent.com/LTbGx8moH5WBSUvK-ZmeccD24BEzJKxOXcZ7aXxM87Fgp3cWPA5MaynBJPLEire94RS1aMT0bPORZLKqElShgbhjfH-nm8GEGGHVI41MSs8tcHvFm1D8sCeL42YqMNWVpgQnFnjFGd5nw8ytWAwkRI0)
+
+
+# Resetting a Scene
+
+After a player wins or loses, you’ll want to reset the scene so that they can try again (or allow the player to exit the game in frustration).
+
+Resetting the scene == Loading the current scene
+
+Scene loading is managed by …. the [Scene Manager](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadScene.html), which you need to import with the “using” keyword at the top of your script.
+
+Once added, loading a scene is as easy as passing in a scene name or build index to the Scene Manager’s LoadScene method. The scene name is the string that you’ve named your scene, and the build index is an integer that represents the order of scenes in your build settings:
+
+  
+
+![](https://lh4.googleusercontent.com/wzX2kwyghNN1AwZggVyxTBBr8eoPpybrP_3c64nscBxKeOVTdmGd-X1LkQ49WIsuO9k6EGcAZZEKd2-VN1qLruv4WAlG6C_X46vmXKhWatWJv8EqdGHyiEwRFu12W-s93j10mdHodTu9RWVIr7eUhCE)
+
+  
+
+Here is a short script that will reload the scene after 5 seconds:
+
+
+```c#
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class ReloadScene : MonoBehaviour
+{
+    void Update()
+    {
+        // Time.time returns the time (seconds) since the start of the game
+        if(Time.time > 5)
+        {
+            // get the current scene's build index
+            int buildIndex = SceneManager.GetActiveScene().buildIndex;
+            // load the scene using this index
+            SceneManager.LoadScene(buildIndex);
+        }
+    }
+}
+```
+
+You can load a scene from any script as long as you’ve imported the Scene Manager. For instance, if you’ve detected that the player has fallen off the playfield or gone out of bounds, you can immediately reload the scene from within the Player Controller script to reset the game.
