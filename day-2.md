@@ -535,7 +535,7 @@ As additional research on ways to adapt roll-a-ball, you'll be signing up in *Gr
 
 Next Tuesday (10/12), your group will give a 5-minute Let's Play presentation to talk about how the game's themes, ideas, structure, narrative, mechanics, flow, and ideology fits into what we've been discussing in class, and show a part of the game that is especially interesting.
 
-The presentation can be done *live or using recorded gameplay with live commentary* if difficult to isolate the section of the game you want to show. I recommend screen recording the entire session, [OBS](https://obsproject.com/) is a very lightweight recorder, so you don't have to worry about missing any moments.
+The presentation can be done *live or using recorded gameplay with live commentary* if difficult to isolate the section of the game you want to show. I recommend screen recording the entire session, [OBS](https://obsproject.com/) is a very lightweight recorder, so you don't have to worry about missing any moments. If you have more than one game, pick one to show, but plan to talk a bit about both.
 
 ## EXTRA CREDIT 
 
