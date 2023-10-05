@@ -5,6 +5,8 @@ layout: slides
 
 ![](https://lh5.googleusercontent.com/YnKbmPuGHGN6vXswGrPDNMY4CrpQqQ82UKssuF_-uWsPafHSDErEgOSSDCCOGX7ldChVUbB1cv17HiLgCLbBdNkco4Sdd8ygNt-1CCW6aDJYoPwMjjkC0b7Zugra-1YUGoJ9-zPR8xIoQ26sL832b5I)
 
+
+
 # Spatial Narrative
 
 Short review of some concepts from [Jenkin’s “Game Design as Narrative Architecture”](https://web.mit.edu/~21fms/People/henry3/games&narrative.html)
@@ -398,6 +400,13 @@ The *RestartGame* script that comes with the unitypackage has a setting that wil
 ![](assets/img/events-restart-game.gif)
 
 
+# Sketch One-on-ones
+
+We'll split up and chat with each of you for the rest of the class time. Feel free to continue to work on your project during the meetings.
 
 
 
+
+  >Everything about the site remained wrapped in blandness and littered with shiny cars—one after another they extended into a sunny nebulosity. The indifferent backs of the cars flashed and reflected the stale afternoon sun. I took a few listless, entropic snapshots of that lustrous monument. If the future is “out of date” and “old fashioned,” then I had been in the future. I had been on a planet that had a map of Passaic drawn over it, and a rather imperfect map at that. A sidereal map marked up with “lines” the size of streets, and “squares” and “blocks” the size of buildings. At any moment my feet were apt to fall through the cardboard ground. I am convinced that the future is lost somewhere in the dumps of the non-historical past; it is in yesterday’s newspapers, in the _jejune_ advertisements of science- fiction movies, in the false mirror of our rejected dreams. Time turns metaphors into _things_, and stacks them up in cold rooms, or places them in the celestial playgrounds of the suburbs.
+>
+> Smithson, Robert. "A Tour of the Monuments of Passaic, New Jersey." Originally published as "The Monuments of Passaic." Artforum Vol.6, No.4 (December, 1967).
