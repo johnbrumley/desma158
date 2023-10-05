@@ -13,7 +13,7 @@ Short review of some concepts from [Jenkin’s “Game Design as Narrative Archi
 
 [Journey (2012)](https://thatgamecompany.com/journey/)
 
-1. **Evocative Spaces** – spaces may be designed to create a certain mood or atmosphere, or to convey a sense of place or history. (Dear Esther, Firewatch, )
+1. **Evocative Spaces** – spaces may be designed to create a certain mood or atmosphere, or to convey a sense of place or history. (Dear Esther, Firewatch )
 
 2. **Enacted Stories** – scripted events and set pieces to create a narrative experience within the game world. (Uncharted, The Last of Us, Metal Gear Solid)
 
@@ -28,7 +28,7 @@ These categories are not exclusive to one another and many games contain some co
 > 
 > - Jenkins, *Game Design as Narrative Architecture*
 
-# Elements of Design
+# Thinking about visual expression, elements of design in games
 
 [![](https://lh5.googleusercontent.com/7wKIbZ6yIYl1B4vwBMs-N5p-ZgXAANINzuK0Zd8FZhHYm3jwGerODq8EkkzijuHWnNqkp_ZquOO3TTxkftIzj38OKgPMoWLIyhDTSecqvscZGxUzv4BwnXAiGSDKXR7aRpcoXHqiO4zNIfk5gNMjDGU)](https://youtu.be/CHm2d3wf8EU)
 *Cruelty Squad*
