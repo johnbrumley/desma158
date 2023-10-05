@@ -475,17 +475,17 @@ The Level Design Book (still a work in progress, but highly useful) has some ver
 From the book:
 
 When blocking out, consider these aspects:
-- [**Massing**](/process/blockout/massing) is the general sense of volume and weight conveyed by the shapes.
+- [**Massing**](https://book.leveldesignbook.com/process/blockout/massing) is the general sense of volume and weight conveyed by the shapes.
     - _Is this structure thick / heavy, or thin / light? What kind of place is this?_
-    - [Landscapes](/process/blockout/massing/landscape) need special consideration.
-    - [Composition](/process/blockout/massing/composition) is currently over-emphasized in level design culture today.
-- [**Metrics**](/process/blockout/metrics) are the general scale, dimensions, and proportions of the level.
+    - [Landscapes](https://book.leveldesignbook.com/process/blockout/massing/landscape) need special consideration.
+    - [Composition](https://book.leveldesignbook.com/process/blockout/massing/composition) is currently over-emphasized in level design culture today.
+- [**Metrics**](https://book.leveldesignbook.com/process/blockout/metrics) are the general scale, dimensions, and proportions of the level.
     - _Is this area too big or small? Can the player fit in this room?_
-    - examples of useful measurements: [Doom metrics](/process/blockout/metrics/doom), [Quake metrics](/process/blockout/metrics/quake)
-- [**Wayfinding**](/process/blockout/wayfinding) is the player's navigation process for learning the map structure.
-    - _How to help the player find the_ [_critical path_](/process/layout/flow#critical-path) _/ level exit? Does the player feel too lost?_
-- [**Playtesting**](/process/blockout/playtesting) is when you run an experiment to see if the level meets its design goals.
-    - _Can most players complete the level? Do the_ [_encounters_](/process/combat/encounter) _work? Is it_ [_balanced_](/process/combat/balance)_?_
+    - examples of useful measurements: [Doom metrics](https://book.leveldesignbook.com/process/blockout/metrics/doom), [Quake metrics](https://book.leveldesignbook.com/process/blockout/metrics/quake)
+- [**Wayfinding**](https://book.leveldesignbook.com/process/blockout/wayfinding) is the player's navigation process for learning the map structure.
+    - _How to help the player find the_ [_critical path_](https://book.leveldesignbook.com/process/layout/flow#critical-path) _/ level exit? Does the player feel too lost?_
+- [**Playtesting**](https://book.leveldesignbook.com/process/blockout/playtesting) is when you run an experiment to see if the level meets its design goals.
+    - _Can most players complete the level? Do the_ [_encounters_](https://book.leveldesignbook.com/process/combat/encounter) _work? Is it_ [_balanced_](https://book.leveldesignbook.com/process/combat/balance)_?_
     - Playtesting is really important. This is the whole point of making a blockout.
 
 # Add your player to the level to test
