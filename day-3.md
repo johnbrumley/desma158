@@ -102,7 +102,18 @@ Alternatively, you can focus on building out the space and atmosphere of your Pr
 
 # Triggers, Collisions, and Events
 
+TODO: add in collider scene. to talk about these 
+https://drive.google.com/file/d/1K1IWb5hbPH6guluZWIURVj5mGFO0T-Ys/view?usp=sharing
+
+TODO: maybe mod the collider scene with events if not already there?
+
 # Some helper scripts and prefab
+
+
+
+talk about the helper scripts and how to use them? Maybe intro importing / exporting unitypackages and create a small challenge for people to solve?
+- timer
+- 
 
 
 

@@ -45,67 +45,43 @@ You might need to close and reopen your project for the “Windows” option to 
 
 The UI system is useful for managing text, buttons, sliders, toggles and other menu related objects. Making screen overlays, HUDs, or minimaps can also be done with the UI system.
 
-  
-
 You can download this [official Unity book](https://resources.unity.com/games/user-interface-design-and-implementation-in-unity) for a thorough review of the Unity UI system. For a shorter overview of the components check out the [manual page](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIBasicLayout.html).
-
-  
 
 All UI objects must live somewhere in a [Canvas](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UICanvas.html). When creating any UI elements using “Create > UI > xxx” a Canvas will automatically be created if there is not already one in the scene. There can be multiple canvases in the scene that serve different purposes.
 
 ## Canvas Scaling
 
-  
-
 For building a UI overlay, there are a few settings that will make your life easier in the future. Both are in the Canvas Scaler component on the canvas game object:
 
-  
-
 1. UI Scale Mode – Set to “Scale with screen Size”
-    
 2. Reference Resolution – Set X to 1920 and Y to 1080
-    
 
   
 
  ![](https://lh4.googleusercontent.com/bxXC11Pe5Zf8DoC6EzvwVW3V3hECfBHXZOzvT8fB3whCP6APYfvfjHYnDUq9SHxb5WpZBR4lwRFaSt30hrl6tPIGTgROY-N3Z48fzKINTlb9PbLKDLs0D8beX5TzGmOqP6B6VLQE_hEs-FWA4WlyE4w)
 
-  
 
 It’s also good to set your Game view tab to match the resolution (or aspect ratio) of your target platform:
-
   
 
 ![](https://lh6.googleusercontent.com/ucclXhjFJFuuFfHgT1DIMUN9mG18gmf5ovZ8qNbbG0owl82zavizI-Ec9pTti5LwNute3OFWdGYEduOWpH7su41QkrLQPIw3TTSjwl2BPYacaz1kcgNINWHye14u4SV6HABoK5udUOa1Yavr574eixg)
 
   
-
 If you want to test out different resolutions and screen sizes, feel free to change your game view settings to see how the UI shifts in response to the size changes.
-
 ## Anchoring, Pivots, and Positioning
 
 UI Components (Text, Buttons, Images) all use “Rect Transform” rather than the standard Transform. Rect transform allows you to anchor objects to positions on the canvas and adapt to the size of the canvas.
 
-  
-
 A few tips:
 
 - Toggling to 2D mode helps with positioning and adjustments
-    
 - Use the Rect tool for adjusting position and size of UI elements
-    
-
 - Keep the Scale of the Rect Transform at (1, 1, 1). To change the size of a UI object use the Width and Height properties
-    
 - Anchor your objects to roughly where they should be and then position. If an object should always be relative to the top-left corner of the screen, anchor it to the top left.
-    
-
-  
 
 ## Custom fonts
 
 When using TextMeshPro. You’ll have to convert ttf files using the TextMeshPro converter. In general, it’s a good idea to use TextMeshPro UI elements over the legacy UI elements as the quality is much higher.
-
   
 
 To convert the font to be used in TextMeshPro:
