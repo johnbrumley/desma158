@@ -23,7 +23,6 @@ Short review of some concepts from [Jenkin’s “Game Design as Narrative Archi
 
 These categories are not exclusive to one another and many games contain some combination.
 
-
 > In the case of evoked narratives, spatial design can either enhance our sense of immersion within a familiar world or communicate a fresh perspective on that story through the altering of established details. In the case of enacted narratives, the story itself may be structured around the character's movement through space and the features of the environment may retard or accelerate that plot trajectory. In the case of embedded narratives, the game space becomes a memory palace whose contents must be deciphered as the player tries to reconstruct the plot and in the case of emergent narratives, game spaces are designed to be rich with narrative potential, enabling the story-constructing activity of players.
 > 
 > - Jenkins, *Game Design as Narrative Architecture*
@@ -268,14 +267,20 @@ The Unlit shader does not receive any lighting from the scene, no shadows, nothi
 
 ![](https://lh6.googleusercontent.com/WfRMvF4-trFv91Dscg6F0mjEO2jb4BZE0BW47AzDf9XrbOqGGX17zqvK1FqoCk2rgGsSXIAVPla7pfP0Hnt8X-5M8QLfHRpA2Gy7-gFAe1EMijhM3b48oU44HICX5igp5qRmQfH_cS55l82tbsCez6Q)
 
-## Shader Graph
+## Toon Shaders
+
+![](assets/Pasted%20image%2020231004235517.png)
+Lots of the effects mentioned at the start of the day can be achieved using a technique called "toon shading" that mixes elements of both lit and unlit shading. The example image above is from a free URP toon shading pack called [OToon](https://assetstore.unity.com/packages/vfx/shaders/otoon-urp-toon-shading-216102)
+
+*Note: When looking for custom assets on the Unity Asset Store (or elsewhere), check to make sure they are compatible with your render pipeline.*
+
+## Custom Shaders and Shader Graph
 
 URP (and HDRP) include a node-based editor for creating custom shaders, called “Shader Graph”
 
 ![](https://lh3.googleusercontent.com/58UHI-_EkB-Ae7hDlQBHzw7CAhow0ZTTP5ldJeC8AUP8AoIew8KIaU9ZXUGcnbFluMkKwi6nmZky1z840aYxputHjgYLRX3owJ6TjZj9w9Lwv0N1Bz3J2qzJSHMxpJCYeoE9LYsFMgHcQPgzzNSju_o)
 
 I won’t be getting into the details of custom shaders for this class. But in some cases there are simple shaders that you can build which aren’t included with URP. 
-
 ### Vertex Color Shader
 
 It is possible to include color data with the vertices of a model, known as vertex painting. For example, the models in the [Everything Library](https://www.davidoreilly.com/library) do not come with textures.
@@ -336,32 +341,63 @@ If you aren't sure how to recreate an effect, ask us and we can help.
 
 # Trigger and Collision Events
 
-We'll be diving more into Trigger and Collision events directly in Unity. Import this UnityPackage into your project to follow along:
+We'll be diving more into Trigger and Collision events directly in Unity. Import this [UnityPackage](https://drive.google.com/file/d/1VV2GHm9wLq4ipjtHp2ld7qQ_Cgldnx_I/view?usp=sharing) into your project to follow along:
+
+![](assets/Pasted%20image%2020231005000212.png)
+
+Check the [how to submit](how-to-submit-projects.md) page on the site for how to import and export unitypackages.
+
+Included with this scene are some custom scripts that will come in handy with Project 1. The next section will list a few and mention how they can be used.
+## Some helper scripts and prefab
+
+- Handling Collision and Trigger Events
+- Quit and Restart the game
+- Make a Game Object look at the Camera
+- Countdown Timer (see the Timer prefab in the unity package)
+- Attach an object to the player
+- Event on keypress
+
+## Active Game Objects 
+
+Many of these helper scripts rely on toggling the Active state of a game object. You can see the state of a game object by the checkbox next to the game object's name in the Inspector:
+
+![](assets/Pasted%20image%2020231005001738.png)
+
+This object is active, because the checkbox is checked. You can uncheck these boxes to hide a game object and all of its children from the game.
+
+Many components in Unity will do something as soon as an object becomes active. This happens as soon as the game starts, or when an object's active checkbox becomes checked.
+
+![](assets/Pasted%20image%2020231005002037.png)
+
+An audio source component has the "Play On Awake" property, which automatically plays it's audio clip as soon as the game object it is attached to becomes active.
+
+## Using Events to Set the Active State of a Game Object
+
+![](assets/Pasted%20image%2020231005002312.png)
+
+The *HandleCollisionWithTags.cs* script that comes with the unitypackage reacts with an [Event](https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html) that can send messages to any objects that subscribe to the event. In the above image, the *OnCollisionEnter()* event has two subscribers (added by clicking the '+' button at the bottom of the event's box). 
+
+Both subscribers are Game Objects which were dragged into the slot below the "Runtime Only" dropdown. The event will make one of the objects active or checked (also called 'true') when it fires, while the other object will be set to inactive or unchecked (called 'false').
+
+![](assets/img/events-set-active.gif)
+## Out of bounds lose condition
+
+Using some of these helper scripts, you can put together a lose or reset condition if a player falls off the edge of the scene.
+
+The *RestartGame* script that comes with the unitypackage has a setting that will reset the game as soon as it becomes active. So to reset the game when the player falls below the edge of the course you can follow these steps:
+
+1. Create a large Cube and place it below your level, it should cover any areas that the player could reach when falling off the course.
+2. Uncheck the MeshRenderer component to hide the mesh
+3. Make the BoxCollider component a Trigger by clicking the IsTrigger property.
+4. Click Add Component at the bottom of the Inspector and attach the *HandleCollisionWithTags* script to the game object. **Uncheck the "Use Tags" box.**
+5. Create an empty game object and Add the *RestartGame* component to the object. Check the "Restart on active" checkbox. Then set the empty game object to inactive by unchecking the box next to its name at the top of the Inspector.
+6. Select the cube game object and press the '+' button at the bottom of the *OnTriggerEnter()* collision event within the *HandleCollisionWithTags* component.
+7. Drag the game object with the *RestartGame* component into the empty slot, then click the dropdown with "No Function" and select **Game Object > SetActive(bool)**
+8. Check the checkbox below "Gameobject.SetActive"
+
+![](assets/img/events-restart-game.gif)
 
 
-
-TODO: add in collider scene. to talk about these 
-https://drive.google.com/file/d/1K1IWb5hbPH6guluZWIURVj5mGFO0T-Ys/view?usp=sharing
-
-TODO: maybe mod the collider scene with events if not already there?
-
-# Some helper scripts and prefab
-
-
-
-talk about the helper scripts and how to use them? Maybe intro importing / exporting unitypackages and create a small challenge for people to solve?
-- timer
-- 
-
-
-
-----------
-
-
-
-# Out of bounds lose condition
-
-[Detect Out of Bounds](https://docs.google.com/document/d/1XD-ZKqAWyv1OeW5CZnoeZfHkZU-D_XCxbf6z3JIclsI/edit?usp=sharing) – click to view this walkthrough.
 
 
 
