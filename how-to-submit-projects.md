@@ -42,10 +42,9 @@ Built-in OS screenshot shortcuts:
 To take a screenshot and automatically save the file, press the Windows key + PrtScn. Your screen will go dim and a screenshot of your entire screen will save to the Pictures > Screenshots folder.
 
 Also consider the snipping tool, which is a convenient way to capture a portion of your screen.
-
 ##### MAC
 
-1. To take a screenshot, press and hold these three keys together: Shift, Command, and 3.
+1. To take a screenshot, press Shift + Command + 3.
 2. If you see a thumbnail in the corner of your screen, click it to edit the screenshot. Or wait for the screenshot to save to your desktop.
 
 By default, screenshots save to your desktop with the name ”Screen Shot [date] at [time].png.”
@@ -66,7 +65,7 @@ Start by opening the build settings under File > Build Settings
 
 ![](https://classes.dma.ucla.edu/Winter23/158/wp-content/uploads/2023/01/build_settings_1.gif)
 
-Add all the scenes you want to include in your project by clicking and dragging them from your assets folder to “Scenes in Build”
+Add all the scenes you want to include in your project by clicking and dragging them from your assets folder to “Scenes in Build” (also remove any scenes you don't want to include). The topmost scene in this list will be the first to play when starting the game.
 
 ![](https://classes.dma.ucla.edu/Winter23/158/wp-content/uploads/2023/01/build_settings_2.gif)
 
