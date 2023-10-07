@@ -3,10 +3,10 @@ layout: page
 title: How To Submit Your Project
 ---
 
-- [Checklist](#submission%20checklist)
-- [Documentation](#visual%20documentation)
-- [Making a Build](#making%20a%20build)
-- [Exporting Packages](#exporting%20unity%20packages)
+- [Checklist](how-to-submit-projects.md#submission%20checklist)
+- [Documentation](how-to-submit-projects.md#visual%20documentation)
+- [Making a Build](how-to-submit-projects.md#making%20a%20build)
+- [Exporting Packages](how-to-submit-projects.md#exporting%20unity%20packages)
 
 ### IMPORTANT NOTES
 
@@ -18,20 +18,16 @@ Build early and play test your builds. Some bugs will only reveal themselves in 
 
 You should include the following documentation of your project:
 
-1. Visual documentation
-    
-    - At least ONE screen recording of gameplay. Minimum 60 seconds, but should be long enough to show off all the elements of your game.
-    
-    - At least TWO (1920×1080 minimum) screenshots of your project
-    - [optional] Animated gif of your project in motion.
-2. Project description and motivation written in complete sentences (not just bullet points)
-    - A brief description of your project adapted from your design document.
-    - Include a bit about _why_ you made the game
+1. Visual documentation:
+	- Recording of gameplay. Roughly 60 seconds, long enough to demonstrate how your game is played (1920x1080 / mp4 / h.264)  
+	- Two stills from your project (1920×1080)
+1. Text description that would be useful for someone viewing your project for the first time.
+    - What is this game about?
     - The basic premise of the game, introducing characters, motivations, challenges, things to contemplate while playing.
     - How to play the game, what buttons to press, interaction instructions
-3. Project files
-    - A [build for Windows](https://classes.dma.ucla.edu/Winter23/158/index.php/how-to-submit-projects/#building)
-    - [Exported Unity package](https://classes.dma.ucla.edu/Winter23/158/index.php/how-to-submit-projects/#exporting)
+2. Project files
+    - A [build for Windows](how-to-submit-projects.md#building)
+    - [Exported Unity package](how-to-submit-projects.md/#exporting)
 
 # Visual Documentation
 

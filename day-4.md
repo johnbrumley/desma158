@@ -4,42 +4,33 @@ title: Day 4
 ---
 
 [![](https://lh6.googleusercontent.com/6S-deENPtJMLCMIo66b09I3F8lYeiSw-2p48eI-dN-N40VXvA5T_DRR_Ggp1i6spsucLsA1rfrfSyhNAmC5mSovJQDkOUqsfnm3e9IT0D2jRgDx_FSCk1_ZTKcbpfHgkIt_rdipqD-HpZ3qbeEFX7gc)](https://youtu.be/CvlbZwoWMgA)
-
 [Marble Madness](https://youtu.be/CvlbZwoWMgA) 
 
+# Homeplay Presentations 
+
+upload to gdrive or pass around HDMI? 
+- could upload to the drive while I talk about building and submitting project 1
 # Notes on Project 1
 
 ## Things to remember for your build / exporting
 
-Check the how to submit projects page on the website: [https://classes.dma.ucla.edu/Spring23/158/?page_id=26](https://classes.dma.ucla.edu/Spring23/158/?page_id=26) 
+Check the how to submit projects page on the website: [How To Submit Projects](how-to-submit-projects.md)
 
-Check out last quarter’s roll-a-ball : [https://classes.dma.ucla.edu/Winter23/158/index.php/project-1-submissions/](https://classes.dma.ucla.edu/Winter23/158/index.php/project-1-submissions/)
-
-Remember that you need to zip all the files together for the Windows build to run on other computers.
+Remember that you need to zip all the files together for the Windows build to run on other computers:
 
 ![](https://lh5.googleusercontent.com/PLrhSXHMYkcBBPb0JfyJas_y88NPAJw01YtaNfKN1qqV0urvYbwaxBORzdavgKMLtftpZRMdQTp_LmetfhhX9rxHhrORKGuX923CoMBdQkouXvRjPU_htcZZVHeodkFnXz35syY8BILoe64a1MZ8ZRM)
-
+The exe file will not run without all of the other files and folders.
 ## For Mac Users
 
 If you’re on a Mac and didn’t add the Windows build when installing Unity. You can download and add it through Unity Hub
 
-  
-
 ![](https://lh4.googleusercontent.com/Uuj6BLzAKub7Dbm0F6GWCbibsv0Fv0AXuQrTCyr4Emb6Ox0UeHntW0IP85SKsLh_ZzM15cRIVQb-7dgzkSaen5nJeEH22QBmyZuBWyGNczw6Ii-kgDOz-HJXfyvDvkrDjjBl_1xXD6zzju1Csv8h6qM)
-
-  
 
 Select the “Add modules” button, scroll through the modules to find and add:
 
-  
+**Windows Build Support (Mono)**
 
-Windows Build Support (Mono)
-
-  
-
-You might need to close and reopen your project for the “Windows” option to appear in the Target Platform dropdown.
-
-
+You might need to close and reopen your project for the “Windows” option to appear in the Target Platform dropdown in Build Settings.
 
 # UI System Basics
 
@@ -48,313 +39,188 @@ The UI system is useful for managing text, buttons, sliders, toggles and other m
 You can download this [official Unity book](https://resources.unity.com/games/user-interface-design-and-implementation-in-unity) for a thorough review of the Unity UI system. For a shorter overview of the components check out the [manual page](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIBasicLayout.html).
 
 All UI objects must live somewhere in a [Canvas](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UICanvas.html). When creating any UI elements using “Create > UI > xxx” a Canvas will automatically be created if there is not already one in the scene. There can be multiple canvases in the scene that serve different purposes.
-
-## Canvas Scaling
+# Canvas Scaling
 
 For building a UI overlay, there are a few settings that will make your life easier in the future. Both are in the Canvas Scaler component on the canvas game object:
 
 1. UI Scale Mode – Set to “Scale with screen Size”
 2. Reference Resolution – Set X to 1920 and Y to 1080
 
-  
-
  ![](https://lh4.googleusercontent.com/bxXC11Pe5Zf8DoC6EzvwVW3V3hECfBHXZOzvT8fB3whCP6APYfvfjHYnDUq9SHxb5WpZBR4lwRFaSt30hrl6tPIGTgROY-N3Z48fzKINTlb9PbLKDLs0D8beX5TzGmOqP6B6VLQE_hEs-FWA4WlyE4w)
 
-
-It’s also good to set your Game view tab to match the resolution (or aspect ratio) of your target platform:
-  
+Set your Game view tab to match the resolution (or aspect ratio) of your target platform: 
 
 ![](https://lh6.googleusercontent.com/ucclXhjFJFuuFfHgT1DIMUN9mG18gmf5ovZ8qNbbG0owl82zavizI-Ec9pTti5LwNute3OFWdGYEduOWpH7su41QkrLQPIw3TTSjwl2BPYacaz1kcgNINWHye14u4SV6HABoK5udUOa1Yavr574eixg)
 
-  
-If you want to test out different resolutions and screen sizes, feel free to change your game view settings to see how the UI shifts in response to the size changes.
-## Anchoring, Pivots, and Positioning
+After changing these values, you may need to move your UI elements back into place. It's especially useful to make use of the anchoring system so that UI elements are always relatively positioned no matter what the screen size.
+# Anchoring, Pivots, and Positioning
 
 UI Components (Text, Buttons, Images) all use “Rect Transform” rather than the standard Transform. Rect transform allows you to anchor objects to positions on the canvas and adapt to the size of the canvas.
 
 A few tips:
 
 - Toggling to 2D mode helps with positioning and adjustments
-- Use the Rect tool for adjusting position and size of UI elements
-- Keep the Scale of the Rect Transform at (1, 1, 1). To change the size of a UI object use the Width and Height properties
+- Use the [Rect Tool](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIBasicLayout.html#the-rect-tool) for adjusting position and size of UI elements
+- Keep the Scale of the [Rect Transform](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIBasicLayout.html#rect-transform) at (1, 1, 1). To change the size of a UI object use the Width and Height properties
 - Anchor your objects to roughly where they should be and then position. If an object should always be relative to the top-left corner of the screen, anchor it to the top left.
 
-## Custom fonts
+# Custom fonts
 
 When using TextMeshPro. You’ll have to convert ttf files using the TextMeshPro converter. In general, it’s a good idea to use TextMeshPro UI elements over the legacy UI elements as the quality is much higher.
-  
 
 To convert the font to be used in TextMeshPro:
 
 1. Drag the ttf files into your Unity project. 
-    
-2. Open the Font Asset Creator tool. Window > TextMeshPro > Font Asset Creator
-    
+2. Open the Font Asset Creator tool. **Window > TextMeshPro > Font Asset Creator**
 3. Add the ttf file as the Source Font file. You can adjust any other settings as well.
-    
-4. Click Generate Font Atlas and then click Save to add it into your project.
-    
+4. Click **Generate Font Atlas** and then click **Save** to add it into your project.
 5. Now you can use this font asset inside any TextMeshPro UI objects.
-    
-
   
 
 ![](https://lh5.googleusercontent.com/aDLAiWEj9l8WKynbzw_NF6woOGYuBIQqpVtAF8SwmmvR1Pez-_vsRDtlvN2x-g9dWJI8UABKzhts23tQhKb9LvXJ5uFbqZeD6UzcH_cR73KgTBubxxNKyvvRWyf1PNcwaAIxuPemFEyQS93op6MJGA4)
 
-  
-
-## Adding an overlay image
+# Adding your overlay image to the scene
 
 For Project 1, you aren’t required to build your entire overlay with the UI system. You can have your title and instructions as an image that is displayed when the game loads.
 
-  
-
-1. To get started, drag your image into your Project, You can create a separate folder called “images” or “textures”
-    
-2. Select the image inside of Unity to bring up the import settings in the inspector. Change the texture type to “Sprite (2D and UI)" – the UI system works with sprite images rather than default. 
-    
-3. In the hierarchy of your scene, create a UI Image object. Create > UI > Image
-    
+1. To get started, drag your image into your Project, You can create a separate folder called “images” or “textures”    
+2. Select the image inside of Unity to bring up the import settings in the inspector. Change the texture type to “Sprite (2D and UI)" – the UI system works with sprite images rather than default.
+3. In the hierarchy of your scene, create a UI Image object. **Create > UI > Image**
 4. Add your sprite to the Source Image section of the Image component.
-    
-5. Let’s center the image and adjust the size. Click the square in the top left corner of the Rect Transform component to bring up the different anchor presets. Hold Alt + Shift and click the bottom-right box showing blue arrows stretching all the way to the edges.
-    
+5. Center the image and adjust the size. Click the square in the top left corner of the Rect Transform component to bring up the different anchor presets. Hold *Alt + Shift* and click the bottom-right box showing blue arrows stretching all the way to the edges.
 6. If you look at the game view, the image should be covering the entire screen. You can adjust the margin by using the Left, Top, Right, Bottom values in the Rect Transform.
-    
-
-  
 
 ![](https://lh3.googleusercontent.com/hA-_ZqUoPfsI7-qHqdv9llPK1bc3PPXGNFwOIKd6qQQOK5JUsyoN93DV4Dl7SHdiNBBm6XhWYCNx6IXZ4H0gdngYk9f5IMzVyuXdCPD5aMzYqxgrXIHz4TcXKhBaTCWPDQvjOsYssdC8DZ98mAzdfbc)
 
-  
+# Toggling the overlay
 
-## Toggling the overlay
+Using one of the scripts from the project 1 unitypackage ([download](https://drive.google.com/file/d/1VV2GHm9wLq4ipjtHp2ld7qQ_Cgldnx_I/view?usp=sharing)), it's possible to toggle the overlay on and off by pressing a key.
+## Turning off the overlay
 
-Pressing a key to show/hide the overlay
+1. Select the Overlay Image game object and add the *KeyPressEvent* component using Add Component in the Inspector.
+2. In the new component you can pick a key that will trigger the event when pressed using a dropdown next to the 'Key To Press' property. For this demo I'll use 'Q'
+3. Add a new observer to the key press event with the '+' button.
+4. Drag the Overlay Image game object into the slot. Then pick **Game Object > SetActive(bool)** in the dropdown.
+5. Leave the checkbox unchecked. This will hide the overlay game object when you press the 'Q' key --- It will also turn off the key press event component, but we'll get to that in a moment.
 
-  
+![](assets/toggle-overlay-part-1.png)
 
-1. Create a new script called ToggleGameObject.cs
-    
-2. Add the input system.
-    
+## Turning the overlay back on
 
-  
+1. Create a new empty game object inside your canvas and name it "Turn on overlay" or something similar.
+2. Add the *KeyPressEvent* component to this object.
+3. Pick the same key that you used for turning off the overlay.
+4. Add a new observer to the key press event with the '+' button.
+5. Drag the Overlay Image game object into the slot. Then pick **Game Object > SetActive(bool)** in the dropdown.
+6. This time check the box so that the overlay image turns back on when you click the button.
 
-|   |
-|---|
-|using UnityEngine.InputSystem;|
+![](assets/toggle-overlay-part-2.png)
 
-  
+This will work to toggle on and off the overlay, but there is a possibility that the two different key press event components could cancel each other out.
 
-3. Create a public variable called toggleKey. This will let you select the toggle key in the Inspector with a drop down menu.
-    
+## Making sure there aren't any bugs
 
-  
+1. Select the Overlay Image game object and add another observer to the key press event with the '+' button.
+2. Drag the "Turn on overlay" game object into this. Pick "GameObject.SetActive" and click the checkbox.
+3. Move this observer to the top of the event list, so that it runs before turning off the image overlay. If you deactivate the object first, it won't run any of the other events.
+4. Select the "Turn on overlay" game object and add another observer to the key press event.
+5. Drag the "Turn on overlay" game object into this. Pick "GameObject.SetActive" and leave the checkbox unchecked.
+6. Uncheck the "Turn on overlay" game object to make it inactive at the start of the game.
 
-|   |
-|---|
-|public Key toggleKey;|
-
-  
-
-4. Add a public GameObject for the thing you want to toggle.
-    
-
-  
-
-|   |
-|---|
-|public GameObject toggleGameObject;|
-
-  
-
-5. In the Update function, check if the toggle key was pressed
-    
-
-  
-
-|   |
-|---|
-|if (Keyboard.current[toggleKey].wasPressedThisFrame)  <br>{  <br>    // toggle the object here  <br>}|
-
-  
-
-6. In the conditional, get the active state of the object and set the object to the opposite of that state
-    
-
-  
-
-|   |
-|---|
-|// get the current state of the object  <br>bool activeState = toggleGameObject.activeSelf;  <br>// flip the state and set the object  <br>toggleGameObject.SetActive(!activeState);|
-
-  
-
-7. Save the script. Back in the Unity Editor, don’t forget to pick a key and connect the GameObject that you want to toggle on and off.
-    
-
-  
-
-![](https://lh4.googleusercontent.com/N-gvmgsjp8mHb1MaHrzqywl0VLD2Li_YSi5IzxuTI6AJuCnk-9SdyANn9LWh2efFnTknOFmKzY1aJ-kJts9lEmjB7WbGqGvt7NNYMteB568YKc9INixFebQi1YwSWfTVHvvWlTaB6FzBDYiDxp-k93U)
-
-  
-
-Here’s the full script:
-
-  
-
-|   |
-|---|
-|using UnityEngine;  <br>using UnityEngine.InputSystem;  <br>  <br>public class ToggleGameObject : MonoBehaviour  <br>{  <br>    public Key toggleKey;  <br>    public GameObject toggleGameObject;  <br>  <br>    void Update()  <br>    {  <br>        if (Keyboard.current[toggleKey].wasPressedThisFrame)  <br>        {  <br>            // get the current state of the object  <br>            bool activeState = toggleGameObject.activeSelf;  <br>            // flip the state and set the object  <br>            toggleGameObject.SetActive(!activeState);  <br>        }  <br>    }  <br>}|
-
-  
-  
-
+![](assets/toggle-overlay-part-3.png)
 # Timer Walkthrough
 
-Building a timer that includes a lose condition and a bar:  [Countdown Timer](https://docs.google.com/document/d/1IdcNhjP2OHaJNXTLdqi7Ow1tZ2fnZwifopF9y7i_1Lk/edit?usp=sharing)
+In the project 1 unitypackage there is a prefab for creating a countdown timer. This timer could be abstracted to represent any number of values from energy, oxygen, patience, etc.
 
-  
+![](assets/timer-prefab.png)
+
+In addition to managing a timed value that decreases by seconds. This prefab also demonstrates how to show a message when the timer runs out ("LoseText") and how to restart the game after a few seconds.
 
 ![](https://lh5.googleusercontent.com/D960GXGKMeddQKlHyCCzdAwqGvYU5NT_At0q9wL6hT_68QVEE51jQaYwTgkI8nQaOec1Hc5MLPe1xh27CgbLmFNlp_IW2reeVCxXIKh4GGRkV8hDCjESboiL1oi99XtdUc5Cv3iv6BdJTR_o8B4Qdlg)
 
-# Sound Scene Steps
+One thing to note is that the timer begins as soon as it becomes active, so it might also be useful to connect it to the toggle overlay so the timer only begins after the player presses a key.
 
-Building a scene with sounds. Here’s the [Unity audio reference](https://docs.unity3d.com/Manual/AudioOverview.html).
+![](assets/timer-prefab-with-overlay.png)
 
-  
+
+# Basic Animation
+
+![](https://lh5.googleusercontent.com/ZIUYBOC2Z8fzN_z1jKfAiiqVfoCE8zFhcENiVeWg9btSAY-QOOj4k4BYgWmxNT4d1BJfQqm0O5FThxC21OSHzFGIedOzBIhZnh9tcVNg5nzMQOgNqI-bPJD3nu1zdZfWGWURsEuuxBUz__4WZ2pWiLY)
+
+The [Unity animation system](https://docs.unity3d.com/Manual/AnimationOverview.html) allows you to create keyframe animations that control component properties and trigger functions. For objects that have multiple, conditional animations, there is an animation state machine.
+
+There are two aspects to working with animations in Unity:
+
+1. [Animation Clips](https://docs.unity3d.com/Manual/AnimationClips.html) - contain animation data
+2. [Animator Controller](https://docs.unity3d.com/Manual/class-AnimatorController.html) - state machine organizing animation clips
+
+Today, we will focus on creating animation clips
+
+Let’s get started by animating a sphere to move back and forth.
+
+![](assets/animation-basic-1.png)
+Starting with a new scene and add a sphere:
+
+1. Add the “Animation” tab to the editor by clicking the three dots on the top right of an existing panel, then Add Tab > Animation (you can also go to Window > Animation > Animation)
+
+![](https://lh6.googleusercontent.com/L_CaIzjs8c63VaIgSYvMyPJvb5iO-_9ia9W-YmwXvdC7szaCnIqwn7jfjLhOl8lMBwY46rl-NQUNWXL-JZLVMYduN2QvGTRV87E3_JjsY_Vz2EdJdZ58P14tuGEVPfqDXFxwIdq7j0N6qIWgGWgkl9w)
+
+2. In the Animation tab, with the Sphere selected in the Hierarchy, click "Create" and save the new animation in your assets. You can create a new folder called Animations to keep things organized.
+
+![](https://lh6.googleusercontent.com/JVhLBNiiM5hU3tPi1M3JNzWkxiD2hKubCrnxaQLxT_8Rd8BXTYbu2ayyPlrNIXcxNNA5wooMcLYv4Mb87dZRlMygTYvRmdcXBJpzn_m__swXqAlXISTweSQliecaSoRSw2oCGUNeO3XIJDyy-A-CLSk)
+
+This creates an Animation Clip and an Animator Controller in your project assets. It will also automatically add an Animator component to the Sphere game object and with the Animator Controller set in the controller property. You can leave the default settings for now.
+
+![](https://lh5.googleusercontent.com/4NHruWc1xC04PnilLmBOsqXSdASJfdKfOGzVZqSczp-SDAGdXQHd13f_hrSPrCW7rSPQR7iBEaCn2S_iZcLl4KXcPukOKMsFonI5pQzX2FpVrt5nsz4dUQDerk3_9QowRou5ojrFbyUYEf8vkaJ5noI)
+
+3. The Animation tab should now show a button that lets you assign a property to animate. Click the **Add Property** button and select **Transform > Position** to add the position property to the timeline.
+
+![](assets/animation-basic-2.png)
+
+4. Record some keyframes. Press the red, circular **Record Button** on the top left of the Animation tab. Move the sphere to a “starting position”. Since the playhead in the Animation tab is currently at frame zero of the animation this will set the object’s position at the start. 
+
+If you drag the playhead towards the end of the end of the timeline, you’ll see the position of the object animating back towards its original position. 
+
+5. Move the playhead to the halfway point and move the sphere’s position to a different position. This will add new position keyframes to the timeline. De-activate the Record Button.
+
+![](assets/animation-basic-3.png)
+6. Now select the keyframes at the starting position, copy them (*ctrl/cmd + c*), move the playhead to the final frame of the animation, and paste (*ctrl/cmd + v*) the keyframes.
+7. You should now have a looping animation. Preview it by clicking the play button on the Animation tab. The Animator Controller is also set to start the animation as soon as the object is active in the scene, so pressing the global play button also plays the animation. 
+8. You can scale the length of the animation by selecting all the keyframes and dragging on one of the ends. Dragging to the right will also expand the overall animation length.
+
+![](https://lh4.googleusercontent.com/aoayvNLuvcnG427FHcaaT9sQhMgxX53XQ0qRBTsnODvspvw2cOEzCi7xHdiF1DHrgbElxr4wyhBPI1H2xIfVUvf2jfpqH7yUoUp5lbgk5kkCXPb2slnI06swCuPcy5C-ZMXPX8r7lgf7bm9Z3dZHwAg)
+
+# Sounds
+
+Adding sounds to your scene. Here’s the [Unity audio reference](https://docs.unity3d.com/Manual/AudioOverview.html).
+
+There are three components that make up the basic parts of Unity's audio system.
+
+1. Audio Clip - these are audio files that have been imported into your project.
+2. Audio Source - component that plays Audio Clips. Can be attached to any game object.
+3. Audio Listener - component for calculating the playback volume of audio sources. 
+
+When creating new scene, the Main Camera object will have an Audio Listener. There should only be one Audio Listener in your scene at a time.
 
 ![](https://lh6.googleusercontent.com/8j-OE1ZJapG745j9EneZ59kxG5bC4Gqlt-ygwyDk5Mj9emYljyb-ELWiY7Btz-0mlJ2zr8fL5d5LQHcyEx0P0pE27gAKSDsd0TZJRqJ3aD6kmrDVKwWMy-q3E4sk66wNnvC_ZvTzFOgGuqsGZxaHnkg)
 
-  
+You can find lots of free sound effects on [https://freesound.org/](https://freesound.org/) and [https://sound-effects.bbcrewind.co.uk/](https://sound-effects.bbcrewind.co.uk/) . You can also generate sound effects using [https://sfxr.me/](https://sfxr.me/) or even use an online tracker to make your music: https://jummbus.bitbucket.io/ 
 
-This scene demonstrates creating sounds and configuring them to use 3D spatialization. You can find lots of free sound effects on [https://freesound.org/](https://freesound.org/) and [https://sound-effects.bbcrewind.co.uk/](https://sound-effects.bbcrewind.co.uk/) . You can also generate sound effects using [https://sfxr.me/](https://sfxr.me/) 
-
-  
-
+0. Drag some audio files into your project panel, this will convert them to audio clips.
 1. Create a new scene File > New Scene.
-    
-2. You can build a small environment (Right click in the Hierarchy then 3D Object > Cube you can duplicate objects with ctrl/cmd + d), creating and resizing cubes. (this isn’t absolutely necessary for the sound part)
-    
-3. Select the Main Camera game object and remove the Audio Listener component. Right click the title bar of the component and select Remove Component.
-    
-4. Create a cube game object and name it “Player”. In my scene, this is the large cube. Attach an Audio Listener component to the player by selecting the game object and in the Inspector click Add Component and select the Audio Listener. You can start typing the name of the component to quickly find it. 
-    
-5. Create a new game object with an Audio Source component. A quick way is to drag an audio file in your assets on to the hierarchy. 
-    
-6. Configure the Audio Source component settings to turn Loop on and set the Spatial Blend to 3D. You can play with the 3D Sound Settings to make adjustments to the rolloff style, min distance, and max distance.
-    
-7. When happy with the settings. Drag the game object from the Hierarchy panel into your Assets to create a Prefab of the game object. You can use this prefab to create duplicates.
-    
-8. To edit all of the duplicated prefabs, double-click on the prefab in your Assets and the scene view will change to show only your prefab. In this example, I added a sphere as a child of the sound game object and added a green material to the sphere.
-    
-
-  
+2. You can build a small environment (Right click in the Hierarchy then **3D Object > Cube** you can duplicate objects with *ctrl/cmd + d*), creating and resizing cubes. (this isn’t absolutely necessary for the sound part)
+3. Create a new game object with an **Audio Source** component. A quick way is to drag an Audio Clip from your Project panel into the Hierarchy. 
+4. Configure the Audio Source component settings. Play on Awake. Loop. Volume. Pitch. Spatial Blend.
 
 ![](https://lh5.googleusercontent.com/kfFF774uEtYqve5fq5vD4ZDH8JDwHTsuUd5bPNpv4slyKnVXW7fTMPGXmcFxnlSw8PVyFsdV9hxI23ii7cb9G-pyixj9XZCOikc24Kr9hXmK5rYicHFQ59Hju8wcDXY3p6pzDhb9RVi6TzEqdbjP0Fc)
 
-  
 
-9. Press the Play button at the top of the window to start the scene. If the game view is empty, you might need to adjust the position of the Main Camera. Go back to the Scene view and manually move the Player around the sound objects to adjust the mix of the sounds. You can play with different sounds on each of the objects to experiment with different mixes.
-    
+# Notes on Building
 
-# Methods and UnityEvents
 
-  
 
-[Check the document from the previous class for the section on methods](https://docs.google.com/document/d/1pObyXIoZC0qpyYcBhvbr6CFH0ElAPucznw0NtvaezOk/edit#heading=h.3fd8aagxob6a)
 
-  
-
-In C#, events allow a class to notify other parts of the program when something has happened (see also [observer pattern](https://en.wikipedia.org/wiki/Observer_pattern)). The “publisher” of the event is the class that signals that something happened, and any “subscribers” to the event will be triggered.
-
-  
-
-C# has its own [event system](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/events/), but Unity has an event system called [UnityEvents](https://docs.unity3d.com/Manual/UnityEvents.html) that integrates  with the Inspector and is a bit more friendly to use. In fact, most of the UI system already makes use of UnityEvents.
-
-  
-
-To create a UnityEvent, add the UnityEngine.Events namespace and then declare the UnityEvent as public:
-
-  
-
-|   |
-|---|
-|using UnityEngine;  <br>using UnityEngine.Events;  <br>  <br>public class EventTesting : MonoBehaviour  <br>{  <br>    public UnityEvent myBigEvent;  <br>  <br>    void Update()  <br>    {  <br>         <br>    }  <br>}|
-
-When you save the script and attach it to a GameObject, you’ll see a place to add subscribers to your event.
-
-  
-
-![](https://lh4.googleusercontent.com/HXUxvPuwgik5of1Fe6zgQFCfcvhbjLv17ed0A2cyc8nsZoOX-beOAJeBkg4Yj0U80StgIfk-zpLTwUrFwKwn0t-eP3l5MCxsI3iOgrKIMFP37SneOa_3_jlmAdN9xSzKB-x3OJaPpSPZFsrNMdBYMkI)
-
-  
-
-Pressing the ‘+’ button will add a new subscriber to the list, but the slot will be empty. Drag in a GameObject to the list. The function dropdown will now display all the components that have functions which can be called when the event fires.
-
-  
-
-![](https://lh4.googleusercontent.com/vBBsd-0IIoVjVAwvVDNaF7a_CFtd1LiJ-a80n14N7Y9TGiVHsVXjz28fvo2wI54ug6zkMSY534XMXNqTJFFXkCVaygEg0l2R8BsgaenpUyGfSSDYe4AB_fV8hSSND7w8XpgqHGl_zNQrsli56B837Rs)
-
-  
-
-In this case, you could use the event to call the SetActive function on the GameObject in order to show or hide it when invoking the event. 
-
-  
-
-![](https://lh4.googleusercontent.com/WlclFa_G7wfuQQ4hzPaJsRx6U-lodV9MBlsS3mPaezY0bVOrHJkAhSgiVg4LbjkwPrDatGDzAomKmwOWaYjfMPnjk5t84PycT6L6nnAjZIOMK6Vh3usTeRQpcGcU-D7leM_E2OnneeQ3nInIanwQ92Y)
-
-  
-
-The checkbox underneath controls whether set active is sent true (checked) or false (unchecked)
-
-  
-
-The event still isn’t doing anything though. To trigger the event, call the UnityEvent’s Invoke method:
-
-  
-
-|   |
-|---|
-|using UnityEngine;  <br>using UnityEngine.Events;  <br>using UnityEngine.InputSystem;  <br>  <br>public class EventTesting : MonoBehaviour  <br>{  <br>    public UnityEvent myBigEvent;  <br>  <br>    void Update()  <br>    {  <br>        // use the input system to listen for the spacebar  <br>        if(Keyboard.current.spaceKey.wasPressedThisFrame)  <br>        {  <br>            myBigEvent.Invoke();  <br>        }  <br>    }  <br>}|
-
-When playing the scene, pressing the spacebar will cause the Cube to appear (if it was not active in the scene yet)
-
-  
-
-You might want something more sophisticated to happen when an event occurs. You can call any methods that are set to public as long as they match the signature of the event. The default UnityEvent does not send any values, so any methods that are called should have no parameters.
-
-  
-
-Attach this script, called SubscriberTesting.cs, to an empty GameObject named “subscriber”: 
-
-  
-
-|   |
-|---|
-|using UnityEngine;  <br>  <br>public class SubscriberTesting : MonoBehaviour  <br>{  <br>    public void ShutdownComputer()  <br>    {  <br>        print("shutting down computer");  <br>        // how to close the program  <br>        Application.Quit();  <br>    }  <br>}|
-
-  
-
-Select the GameObject with the event publisher script and use the ‘+’ button to add another subscriber to the event. Then drag the GameObject to the empty slot.
-
-  
-
-![](https://lh4.googleusercontent.com/aMypx9LVX5O_2x2ONH7RERXypj9hWSmDBtdpGa5u2u2ksoF6d0RoAjyXMapiwWxPBOa3NOsV1Mj6jKe_-ORVzdSS7hlD0owNTMQZn3Z1qt37cNTJVdJ_85HVJsJGs5jAE_J_yHa09l2KLaSxpKQqz9c)
-
-  
-
-Now, when pressing the spacebar, the cube will appear and the ShutdownComputer() method will be called. Fortunately Application.Quit() only works in the build of the game.
-
-  
-
-By default, UI Buttons have an OnClick event that you can subscribe to. For instance, if you wanted to reset the game using an on-screen button, you could write public methods with the reset game code. Then connect the script to the OnClick event by dragging the component onto the UI reset button.
-
-  
 
 ![](https://lh5.googleusercontent.com/kwh2jZ8lPt3eBx75nXI4m-Czk4NMQZjL438wZOoAuoaPxQIfR371LOvx9mfQSZJ8s-NZFYCGrOR59omG2Zaxjo9_UDXy8VUXpN7X6IdR0L5iJqndrXdXORyz5xNzMthKA5IqxDJ47vnu1oWnqOuzQfk)
 
 [Biisuke Ball’s Big Adventure](https://youtu.be/YR-jLbdwLzg)
-
-**
