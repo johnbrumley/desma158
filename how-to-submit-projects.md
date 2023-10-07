@@ -3,10 +3,10 @@ layout: page
 title: How To Submit Your Project
 ---
 
-- [Checklist](how-to-submit-projects.md#submission%20checklist)
-- [Documentation](how-to-submit-projects.md#visual%20documentation)
-- [Making a Build](how-to-submit-projects.md#making%20a%20build)
-- [Exporting Packages](how-to-submit-projects.md#exporting%20unity%20packages)
+- [Checklist](how-to-submit-projects.md#submission-checklist)
+- [Documentation](how-to-submit-projects.md#visual-documentation)
+- [Making a Build](how-to-submit-projects.md#making-a-build)
+- [Exporting Packages](how-to-submit-projects.md#exporting-unity-packages)
 
 ### IMPORTANT NOTES
 
@@ -26,8 +26,8 @@ You should include the following documentation of your project:
     - The basic premise of the game, introducing characters, motivations, challenges, things to contemplate while playing.
     - How to play the game, what buttons to press, interaction instructions
 2. Project files
-    - A [build for Windows](how-to-submit-projects.md#building)
-    - [Exported Unity package](how-to-submit-projects.md/#exporting)
+    - A [build for Windows](how-to-submit-projects.md#making-a-build)
+    - [Exported Unity package](how-to-submit-projects.md#exporting-unity-packages)
 
 # Visual Documentation
 
