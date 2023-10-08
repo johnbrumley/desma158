@@ -217,8 +217,7 @@ You can find lots of free sound effects on [https://freesound.org/](https://free
 
 # Notes on Building
 
-
-
+Let's take a look at [How To Submit Projects](how-to-submit-projects.md) for more details on building your games. We can also walk through an initial build, though you should have already done this in the roll-a-ball tutorial so it shouldn't be entirely new.
 
 
 ![](https://lh5.googleusercontent.com/kwh2jZ8lPt3eBx75nXI4m-Czk4NMQZjL438wZOoAuoaPxQIfR371LOvx9mfQSZJ8s-NZFYCGrOR59omG2Zaxjo9_UDXy8VUXpN7X6IdR0L5iJqndrXdXORyz5xNzMthKA5IqxDJ47vnu1oWnqOuzQfk)
