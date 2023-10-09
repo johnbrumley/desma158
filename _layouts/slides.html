@@ -19,14 +19,22 @@ layout: default
   
   <script src="assets/js/slide.js"></script>
 
+
+  <div class="outline"></div>
+
   <script>
     // adding links to jump to headings
 
     $(function(){
-
       // loop through all the headers
-      $('h1,h2').each(function(index) {
+      $('h1').each(function(index) {
         console.log($(this).text());
+        // create new link from header text
+        let url = $(this).text();
+        url = url.replace(/\s+/g, '-').toLowerCase();
+        url = '#' + url;
+
+        $(`<p><a href="${url}">${$(this).text()}</a></p>`).appendTo('.outline');
       });
 
 

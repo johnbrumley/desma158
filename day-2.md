@@ -437,6 +437,7 @@ Hold Ctrl + shift while dragging the center of the object
 Hold ‘v’ and select and drag a vertex of an object
 
 ![](https://lh4.googleusercontent.com/_LpScfkbui9jLyzM9otGUr35D1lnyu5MffSDKu0i-KH1uI5s1o_Ol3-qg7M99249u4rvJkq9gpiLZms_uh_14rE2uF1B4erC4D1sC4kZGA9N-OY5tSISMCbqG0CxwQTnOSABRp-dNCWW9kYv8h8RJqI)
+
 You can combine vertex and surface snapping by holding "v + ctrl + shift"
 
 
