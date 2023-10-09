@@ -24,7 +24,7 @@ Lighting and Materials, Rigidbody Component / Physics, Vectors, Colliders / Trig
 
 While the tutorial only introduces each one, we'll eventually spend more time covering each one in depth.
 
-# How can we enhance this game?
+# How can we enhance this game
 
 Think about all the different components of the demo … try and make a sentence that encapsulates the game
 .
@@ -91,7 +91,7 @@ Think about all the different components of the demo … try and make a sentence
 
 ….
 
-# A ball that rolls around in a level and collects items.
+# A ball that rolls around in a level and collects items
 
 ![](https://www.ignant.com/wp-content/uploads/2019/02/ignant-art-walter-de-maria-012-1440x955.png)
 Walter De Maria, *Time / Timeless / No Time* (2004)
