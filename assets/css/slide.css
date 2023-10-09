@@ -47,6 +47,9 @@ h1 {
   margin: 20px;
   font-size: 0.8em;
   line-height: 1;
+  background-color: #181818;
+  outline: 1px solid;
+  padding: 15px;
 }
 
 .outline::-webkit-scrollbar { /* WebKit */

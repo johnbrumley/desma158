@@ -20,7 +20,9 @@ layout: default
   <script src="assets/js/slide.js"></script>
 
 
-  <div class="outline"></div>
+  <div class="outline">
+    <div class="outline-list"></div>
+  </div>
 
   <script>
     // adding links to jump to headings
@@ -35,12 +37,16 @@ layout: default
         url = '#' + url;
 
         let linkText = $(this).text();
-        let maxLength = 20;
+        let maxLength = 35;
         linkText = (linkText.length > maxLength) ? 
           linkText.substring(0,maxLength - 3) + "..." :
           linkText;
 
-        $(`<p><a href="${url}">${linkText}</a></p>`).appendTo('.outline');
+        $(`<p><a href="${url}">${linkText}</a></p>`).appendTo('.outline-list');
+      });
+
+      $('<h1>></h1>').appendTo('.outline').on('click', function() {
+        $('outline-list').toggle();
       });
 
 

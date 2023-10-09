@@ -192,7 +192,7 @@ _Super Mario Bros._ (1985) planning sheet (Source: [Nintendo](https://www.yout
 
 If you need to communicate your level to others in a team, you'll need to be more detailed and clear about your level. If it's just you, then your layout can be a sketch, scribble, or anything that will aid in planning the space.
 
-# Environmental + Expressivity
+# Environmental Expressivity
 
 Or … level design. When thinking about a player's movement through your level, at both micro and macro scales, there are features to consider about the environment that can exist from intrinsic to the concept of the game to helping a player know where to go next.
 
@@ -270,7 +270,7 @@ A call from afar, music in the distance, something’s on the other side of the 
 
 *[Little Party](https://turnfollow.itch.io/littleparty) (2015)* 
 
-# **Climbing, falling, descending, flying, etc**. 
+## **Climbing, falling, descending, flying, etc**
 Where are you taking us? 
 
 Are we going down into the underworld or climbing towards heaven? 
@@ -294,7 +294,7 @@ Levels of games, virtual environments, can become part of our spatial memories.
 
 More abstractly, we all have a sense of spatial memory relating to software that isn’t necessarily meant for gaming.
 
-# Can anyone name this map? 
+# Can anyone name this map
 
 ![](https://lh6.googleusercontent.com/rbp56x2gbPslLqGfUQsE8a45pwYpq-EVD0JJjBh3y53gvWRkokXFGbuzNtYkan2dg4WuiI_xp7V76jQtQSgx_BmN0M3S6mJFCpr3rOflajiJWrp369t2F-2xQWAQXZGM5yJQF4MWzqmuLI9igjdZr_g)
 
@@ -358,7 +358,7 @@ This doesn't have to be the world you use in Project 1, but if you already have 
 > 
 >- Nabokov, *Pnin*
 
-# Optional reading(s):
+# Optional reading
 
 [Anna Anthropy’s Level Design Lessons](https://drive.google.com/file/d/14EuDZDhZcKhtsR3nvTIGMG25DE1niqun/view?usp=share_link) - level design in a few classical 8-bit era games
 
@@ -366,7 +366,7 @@ This doesn't have to be the world you use in Project 1, but if you already have 
 
 Now that you've sketched out an idea for a level. Let's try and build a very low-fidelity version of that level using simple shapes, also known as Grayboxing, within Unity.
 
-# Prototyping / Gray boxing / Blocking out
+# Prototyping, Gray boxing, Blocking out
 
 Check out the [level design book](https://book.leveldesignbook.com/) which contains much more thorough dives into these concepts. 
 
@@ -381,7 +381,7 @@ When developing a level or game mechanic, it’s useful to separate the “art�
 
 You can compare this idea to wireframing a layout and using placeholder text and images. The content doesn’t need to exist before you can consider things like navigation, composition, or interaction.
 
-# Here’s the process:
+# Here’s the process
 
 1. Sketch layout (Done!)
 2. Add ground plane, scale figures, walls (What we're about to do)
@@ -397,7 +397,7 @@ Unity Editor interface, we'll mainly be working in the Hierarchy, Scene, and Ins
 
 ![](https://lh3.googleusercontent.com/oiRCFcn_j7FPdPkHzJekG1GrSkXom3y-ahdUyrQn6SqOQIwPNwyXO7tOPYgAJRBohhLzGFE3KKJysh4zcmU3mXbyySeWjXit0xMK_jUvMiWZVRi6Kj6nfOwAu-AeAW39ke-kFWgNFCv-sXFWdL3WtXw)
 
-# Navigating in Scene view (and a bit more about transform tools, snapping, grid, etc.)
+# Navigating in Scene view
 
 Positioning / Rotating / Scaling
 
@@ -449,7 +449,8 @@ Unity Probuilder: [https://unity.com/features/probuilder](https://unity.com/feat
 This tool adds a bit more “modeling” functionality to the Unity Editor and comes with lots of default level objects like doors, stairs, arches, etc. and more tools for editing shapes.
 
 ![](assets/Pasted%20image%2020231001190316.png)
-# Installing ProBuilder (optional) 
+# Installing ProBuilder
+(optional)
 ## Window > Package Manager > (Packages: Unity Registry) > ProBuilder
 
 ![](assets/img/install-probuilder.gif)
