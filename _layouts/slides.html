@@ -46,9 +46,9 @@ layout: default
       });
 
       // toggle the thing
-      let clicker = $('<h1>></h1>').prependTo('.outline');
+      $('<h1 class=".clicker">></h1>').prependTo('.outline');
 
-      clicker.on('click', function() {
+      $('.clicker').on('click', function() {
         $('outline-list').toggle();
       });
 
