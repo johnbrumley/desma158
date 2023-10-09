@@ -45,7 +45,10 @@ layout: default
         $(`<p><a href="${url}">${linkText}</a></p>`).appendTo('.outline-list');
       });
 
-      $('<h1>></h1>').appendTo('.outline').on('click', function() {
+      // toggle the thing
+      let clicker = $('<h1>></h1>').prependTo('.outline');
+
+      clicker.on('click', function() {
         $('outline-list').toggle();
       });
 
