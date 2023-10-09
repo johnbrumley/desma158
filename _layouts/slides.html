@@ -34,7 +34,13 @@ layout: default
         url = url.replace(/\s+/g, '-').toLowerCase();
         url = '#' + url;
 
-        $(`<p><a href="${url}">${$(this).text()}</a></p>`).appendTo('.outline');
+        let linkText = $(this).text();
+        let maxLength = 20;
+        linkText = (linkText.length > maxLength) ? 
+          linkText.substring(0,maxLength - 3) + "..." :
+          linkText;
+
+        $(`<p><a href="${url}">${linkText}</a></p>`).appendTo('.outline');
       });
 
 

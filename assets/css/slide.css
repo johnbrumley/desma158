@@ -37,12 +37,21 @@ h1 {
 .outline {
   position: fixed;
   top: 0;
-  right: -200px;
+  right: 0;
   width: 200px;
   height: 400px;
   overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
   overflow-x: hidden;
-  margin: 50px;
+  margin: 20px;
+  font-size: 0.8em;
+  line-height: 1;
+}
+
+.outline::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
 }
 
 .hidden {
