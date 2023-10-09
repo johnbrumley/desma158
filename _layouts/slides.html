@@ -33,7 +33,7 @@ layout: default
         console.log($(this).text());
         // create new link from header text
         let url = $(this).text();
-        url = url.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+        url = url.replace(/[?'.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
         url = url.replace(/\s+/g, '-').toLowerCase();
         url = '#' + url;
 
