@@ -60,8 +60,13 @@ p1 todo (days 1-5)
 p2 todo (days 6-12)
 - [ ] Insert photo workshop thing
 
-1. day 6: intro project 2 and demo the project template (include platforme char controller for wkshp? or should we build these out?), talk more about collage things demo postcard game (in-class?) or workshop? what other games would be good? c# basics here also (sandwich between fun stuff)
-2. day 7: sketch due so meetings for at least half of class-- we do that on 6 and start covering triggers, collisions, vector movement?
+1. day 6: 
+	1. intro project 2
+	2. demo the project template (include platforme char controller for wkshp? or should we build these out?), 
+	3. talk more about collage things demo postcard game (in-class?) or workshop? what other games would be good? 
+	4. C# scripting basics here also (sandwich between fun stuff)
+2. day 7: 
+	1. sketch due so meetings for at least half of class-- we do that on 6 and start covering triggers, collisions, vector movement?
 3. day 8: collectibles and inventory,, thinking about objects, maybe also doors -- carrier bag theory (inventories) -- https://otherfutures.nl/uploads/documents/le-guin-the-carrier-bag-theory-of-fiction.pdf 
 4. day 9: prototype due -- Unity animator and frame animations with sprites
 5. day 10: Creating Destroying
