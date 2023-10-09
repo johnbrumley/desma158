@@ -34,8 +34,10 @@ layout: default
         // create new link from header text
         let url = $(this).text();
         url = url.replace(/\s+/g, '-').toLowerCase();
+        url = url.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
         url = '#' + url;
 
+        // trim the link text
         let linkText = $(this).text();
         let maxLength = 35;
         linkText = (linkText.length > maxLength) ? 
