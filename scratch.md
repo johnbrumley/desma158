@@ -63,11 +63,17 @@ p2 todo (days 6-12)
 1. day 6: 
 	1. intro project 2
 	2. demo the project template (include platforme char controller for wkshp? or should we build these out?), 
-	3. talk more about collage things demo postcard game (in-class?) or workshop? what other games would be good? 
 	4. C# scripting basics here also (sandwich between fun stuff)
+	5. Homeplay Assignment
+	6. Reading? Ch. 1 of Anthropy (maybe an excerpt)
 2. day 7: 
-	1. sketch due so meetings for at least half of class-- we do that on 6 and start covering triggers, collisions, vector movement?
-3. day 8: collectibles and inventory,, thinking about objects, maybe also doors -- carrier bag theory (inventories) -- https://otherfutures.nl/uploads/documents/le-guin-the-carrier-bag-theory-of-fiction.pdf 
+	1. Start covering how to script triggers, collisions, vector movement? maybe inventories here.
+	2. talk more about collage things demo postcard game (in-class?) 
+	3. workshop... could also be good to talk about sprites? what other games would be good? 
+3. day 8: 
+	1. sketch due so meetings for about half of class 
+	2. collectibles and inventory,, thinking about objects, maybe also doors -- 
+	3. carrier bag theory (inventories) -- https://otherfutures.nl/uploads/documents/le-guin-the-carrier-bag-theory-of-fiction.pdf 
 4. day 9: prototype due -- Unity animator and frame animations with sprites
 5. day 10: Creating Destroying
 6. day 11: Working in class, final touches
