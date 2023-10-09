@@ -39,23 +39,33 @@ h1 {
   top: 0;
   right: 0;
   width: 200px;
-  height: 400px;
-  overflow-y: scroll;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  overflow-x: hidden;
   margin: 20px;
   font-size: 0.8em;
   line-height: 1;
   background-color: #181818;
-  outline: 1px solid;
-  padding: 15px;
 }
 
-.outline::-webkit-scrollbar { /* WebKit */
+.outline-list {
+  height: 400px;
+  margin: 5px;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  overflow-x: hidden;
+}
+
+.outline-list::-webkit-scrollbar { /* WebKit */
   width: 0;
   height: 0;
 }
+
+.clicker {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: cornflowerblue;
+}
+
 
 .hidden {
   opacity: 0;
