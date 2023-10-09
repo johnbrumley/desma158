@@ -7,11 +7,11 @@ title: Day 5
 
 [Clay ball on a hill](https://youtu.be/m-D-Lx4kzLM)
 
-# Project 1: Rolling Ball Game showcase 
+# Project 1: Ball Game Showcase 
 
 Share, Play, Crit
 
-We’ll be playing each other’s games in groups in a round-robin format. I’ll use this sheet to randomize group placement:
+We’ll be playing each other’s projects in groups in a round-robin format. I’ll use this sheet to randomize group placement:
 
 https://docs.google.com/spreadsheets/d/12DIl5YXCTtO3jYa7o7E0Xi7hJJhUat2IrI8ZMPjVVVs/edit?usp=sharing
 
