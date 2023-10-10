@@ -214,6 +214,10 @@ You can find lots of free sound effects on [https://freesound.org/](https://free
 
 ![](https://lh5.googleusercontent.com/kfFF774uEtYqve5fq5vD4ZDH8JDwHTsuUd5bPNpv4slyKnVXW7fTMPGXmcFxnlSw8PVyFsdV9hxI23ii7cb9G-pyixj9XZCOikc24Kr9hXmK5rYicHFQ59Hju8wcDXY3p6pzDhb9RVi6TzEqdbjP0Fc)
 
+You can also directly link to the Play method of an Audio Source to a collision or trigger event:
+
+
+![](assets/collision-event-play-sound.png)
 
 # Notes on Building
 
