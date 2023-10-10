@@ -65,7 +65,6 @@ public class EventTesting : MonoBehaviour
 }
 ```
 
-
 Try controlling the light with this script instead of the Button. You can also connect to public methods inside of your other scripts.  
 
 Note: this script has to be attached to the same game object as a Light component.
@@ -81,7 +80,6 @@ public class ChangeLightColor : MonoBehaviour
     }
 }
 ```
-
 
 # Intro to Project 2: 2D Arcade Game
 
