@@ -535,7 +535,7 @@ After you've tried out your level and made some changes, ask another person to p
 ## Homeplay (due Next Tuesday 10/10)
 As additional research on ways to adapt roll-a-ball, you'll be signing up in *Groups of 3* to play a game (or games) on [this list](https://docs.google.com/spreadsheets/d/1pOxYtalckwi_PykkRneQMNX_UkxH2TdFm132yvbRygg/edit?usp=sharing) for at least 1-2 hours. For games that cost money, we've set up a computer/console in the Print Lab lounge where you can access them. 
 
-Next Tuesday (10/10), your group will give a 5-minute Let's Play presentation to talk about how the game's themes, ideas, structure, narrative, mechanics, flow, and ideology fits into what we've been discussing in class, and show a part of the game that is especially interesting.
+Next Tuesday (10/10), your group will give a 5-minute Let's Play presentation to talk about how the game's themes, ideas, structure, narrative, mechanics, flow, and/or ideology fits into what we've been discussing in class, and show a part of the game that is especially interesting.
 
 The presentation can be done *live or using recorded gameplay with live commentary* if difficult to isolate the section of the game you want to show. I recommend screen recording the entire session, [OBS](https://obsproject.com/) is a very lightweight recorder, so you don't have to worry about missing any moments. If you have more than one game, pick one to show, but plan to talk a bit about both.
 
