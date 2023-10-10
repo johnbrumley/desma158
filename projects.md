@@ -12,25 +12,25 @@ For info about project submission steps and guides for building and exporting, r
 Weeks 1-2:
 ## [1. Ball Game](project-1.md)
 
-### **DUE 10/5**: Sketch  
-### **DUE 10/12**: Game
+#### **DUE 10/5**: Sketch  
+#### **DUE 10/12**: Game
 
 ---
 
 Weeks 3-6:
 ## 2. Flat Game
 
-### **DUE 10/24:** Sketch
-### **DUE 10/31:** Prototype
-### **DUE 11/7:** Game
+#### **DUE 10/24:** Sketch
+#### **DUE 10/31:** Prototype
+#### **DUE 11/7:** Game
 
 ---
 
 Weeks 7-10:
 ## 3. Game as Engine
 
-### **DUE 11/16:** Sketch
-### **DUE 11/28:** Prototype 
-### **DUE 12/7:** Game
+#### **DUE 11/16:** Sketch
+#### **DUE 11/28:** Prototype 
+#### **DUE 12/7:** Game
 
 ---
