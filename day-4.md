@@ -8,8 +8,8 @@ title: Day 4
 
 # Homeplay Presentations 
 
-upload to gdrive or pass around HDMI? 
-- could upload to the drive while I talk about building and submitting project 1
+We'll try and be efficient about switching over between groups, so be ready to present. You can either plug directly into the projector or drop any files into [this folder](https://drive.google.com/drive/folders/1Bha8xe9p8I5mMotWAwaaNpOaji0Opi2n?usp=sharing) for me to show.
+
 # Notes on Project 1
 
 ## Things to remember for your build / exporting
