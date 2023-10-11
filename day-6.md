@@ -7,7 +7,7 @@ title: Day 6
 
 # TODO
 
-- [ ] Rewrite intro to Project 2 section, need to do a bit more research on Zine games, maybe bring in a zine? Talk a bit more about inventories and objects -- maybe le guin's essay?
+- [ ] Rewrite intro to Project 2 section,  Zine games, maybe bring in a zine? Talk a bit more about inventories and objects -- maybe le guin's essay?
 - [ ] Change reading section to anthropy
 - [ ] Move in the C# basics section -- need to check if there should be more editing
 - [ ] Put together the template based on Nick's class
