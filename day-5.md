@@ -18,8 +18,8 @@ https://docs.google.com/spreadsheets/d/12DIl5YXCTtO3jYa7o7E0Xi7hJJhUat2IrI8ZMPjV
 Here are the rules:
 
 1. The first student of each group will present their game at their group’s ”play station”.  
-2. The rest of the group will playtest and give feedback for 10 minutes.
-3. With the presenting students staying in place, the rest of the group will rotate to the next play station and have another 10 minute playtest. 
+2. The rest of the group will playtest and give feedback for 6 minutes.
+3. With the presenting students staying in place, the rest of the group will rotate to the next play station and have another 6 minute playtest. 
 4. This repeats until everyone has returned to their original station.
 5. Then the second student of each group will set up their game, and the entire process will repeat.
 
