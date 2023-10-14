@@ -18,7 +18,7 @@ Weeks 1-2:
 ---
 
 Weeks 3-6:
-## 2. Flat Game
+## 2. [Flat Game](project-2)
 
 #### **DUE 10/24:** Sketch
 #### **DUE 10/31:** Prototype
