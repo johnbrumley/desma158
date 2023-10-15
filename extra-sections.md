@@ -96,53 +96,48 @@ Currently, the way we’ve been accessing other objects and components in code w
 
 ### GetComponent
 
-When the component is on the same GameObject as the script, or the component is on another GameObject that the script has a reference to. You can use the GetComponent which is a method of the GameObject class.
+When a component that you need is on the same GameObject as your script (or the component is on another GameObject that the script has a reference to), you can use *GetComponent* to get and store the needed component.
 
-  
-
+```csharp
 Type name = GetComponent<Type>();
-
-  
+```
 
 For example if you wanted to get the Rigidbody on the same game object as your script:
 
-  
 
-|   |
-|---|
-|Rigidbody rb = GetComponent<Rigidbody>();|
-
-  
+```csharp
+Rigidbody rb = GetComponent<Rigidbody>();
+```
 
 Or, if you have a reference to the game object you can access any of its components in the same way
 
-  
-
-|   |
-|---|
-|public GameObject go;  <br>void Start()  <br>{  <br>    Renderer renderer = go.GetComponent<Renderer>();  <br>}|
-
-  
+```csharp
+public GameObject go;
+void Start()
+{ 
+	Renderer renderer = go.GetComponent<Renderer>(); 
+}
+```
 
 There are other variants which return multiple components as an array
 
-  
-
-|   |
-|---|
-|AudioSource[] sources = GetComponentsInChildren<AudioSource>();  <br>foreach (AudioSource source in sources)  <br>{  <br>        source.mute = true;  <br>}|
-
-  
+```csharp
+AudioSource[] sources = GetComponentsInChildren<AudioSource>(); 
+foreach (AudioSource source in sources)  
+{  
+	source.mute = true; 
+}
+```
 
 And a version to be used in conjunction with a conditional statement
 
-  
+```csharp
+if (TryGetComponent(out HingeJoint hinge)) 
+{  
+	hinge.useSpring = false;  
+}
+```
 
-|   |
-|---|
-|if (TryGetComponent(out HingeJoint hinge))  <br>{  <br>        hinge.useSpring = false;  <br>}|
-
-  
 
 ### FindGameObjectsWithTag
 
