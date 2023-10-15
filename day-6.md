@@ -422,8 +422,70 @@ public class DrawVelocity : MonoBehaviour
 This is for a 3D vector, what about drawing vectors in a 2D game?
 
 
+# Making a simple 2D Player Controller
 
+If you haven't yet downloaded the [flat game template unitypackage](https://drive.google.com/file/d/1wl8eYa-01PaycjSLsaZzSBzm7S1s59S3/view?usp=sharing), please do!
 
+Open up a new scene and create a 2D primitive to become a stand-in for the player.
+
+1. Right-click in the hierarchy. **2D Object > Sprites > Circle** (or whichever shape you'd like to make)
+2. Add a *Rigidbody 2D* to the player. Note the 2D!
+3. In the Rigidbody 2D, set gravity to zero and Freeze the rotation (you might have to expand "Constraints").
+4. Now create a new C# script called "PlayerController2D" and open it in your code editor.
+
+I'll walk through how the script is built, but the complete version of the script is below
 
 
 ![](https://lh5.googleusercontent.com/CunfAVcjZrHkl1iT0ngEa3AqiGeqDBUGTcUgEp3XRf8Cb9rRA_ciftsSHEpQbZq4eQwLmUGzIE7rp31UBc_reqys0xqueE-i9RwNetNjz8nGPyrELR090UPb9Uau053klhNcGlsrzz3rL71IyNnPwLw)
+
+
+PlayerController2D:
+
+```csharp
+using UnityEngine;
+
+public class PlayerController2D : MonoBehaviour
+{
+	Rigidbody2D rb; // reference to this GameObject's Rigidbody
+	Vector2 direction; // a place to store the movement direction 
+	
+	void Start()
+	{
+		// this gets the rigidbody without having to drag it in the inspector
+		rb = GetComponent<Rigidbody2D>();
+	}
+
+	// Update for Physics
+	void FixedUpdate()
+	{
+		// calculate the next movement position
+		Vector2 newPosition = rb.position + direction * Time.deltaTime;
+		// move the game object via the rigidbody
+		rb.MovePosition(newPosition);
+	}
+	
+	void Update()
+	{
+		// using the old input system for getting values
+		float xMove = Input.GetAxis("Horizontal");
+		float yMove = Input.GetAxis("Vertical");
+		// set the direction based on the input values
+		direction = new Vector2(xMove, yMove);
+	}
+}
+```
+
+# Workshop
+
+Let's change out the character for a custom sprite and give them a space to walk around in. But for this workshop, the rule is that your sprite images can only come from things in this classroom (that already exist). 
+
+Take photos, feel free to crop/trim (save as PNG if you want transparency), import them into unity and add the new sprites to your scene. Create a level from these photos to walk around in. Replace the 2D primitive on the player with something from this room as well.
+
+Try finding angles and orientations of objects that might create a pathway or level. Or create a collage of objects that might be interesting to traverse as your player.
+
+![](https://static1.srcdn.com/wordpress/wp-content/uploads/2022/01/The-Campus-Level-of-the-Pedestrian.jpg )
+*The Pedestrian*
+
+![](https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-witness/d/d5/Gate_1_-_Shadow_Trees_3.jpg)
+*The Witness*
+
