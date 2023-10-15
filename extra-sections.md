@@ -308,81 +308,88 @@ C# has its own [event system](https://learn.microsoft.com/en-us/dotnet/csharp/pr
 
 To create a UnityEvent, add the UnityEngine.Events namespace and then declare the UnityEvent as public:
 
-using UnityEngine;  <br>using UnityEngine.Events;  <br>  <br>public class EventTesting : MonoBehaviour  <br>{  <br>    public UnityEvent myBigEvent;  <br>  <br>    void Update()  <br>    {  <br>         <br>    }  <br>}
+```csharp
+using UnityEngine;
+using UnityEngine.Events;
+public class EventTesting : MonoBehaviour
+{
+	public UnityEvent myBigEvent;
+	void Update()
+	{
+	
+	}
+}
+```
 
 When you save the script and attach it to a GameObject, you’ll see a place to add subscribers to your event.
-
   
 
 ![](https://lh4.googleusercontent.com/HXUxvPuwgik5of1Fe6zgQFCfcvhbjLv17ed0A2cyc8nsZoOX-beOAJeBkg4Yj0U80StgIfk-zpLTwUrFwKwn0t-eP3l5MCxsI3iOgrKIMFP37SneOa_3_jlmAdN9xSzKB-x3OJaPpSPZFsrNMdBYMkI)
 
   
-
 Pressing the ‘+’ button will add a new subscriber to the list, but the slot will be empty. Drag in a GameObject to the list. The function dropdown will now display all the components that have functions which can be called when the event fires.
-
-  
 
 ![](https://lh4.googleusercontent.com/vBBsd-0IIoVjVAwvVDNaF7a_CFtd1LiJ-a80n14N7Y9TGiVHsVXjz28fvo2wI54ug6zkMSY534XMXNqTJFFXkCVaygEg0l2R8BsgaenpUyGfSSDYe4AB_fV8hSSND7w8XpgqHGl_zNQrsli56B837Rs)
 
-  
 
 In this case, you could use the event to call the SetActive function on the GameObject in order to show or hide it when invoking the event. 
 
-  
 
 ![](https://lh4.googleusercontent.com/WlclFa_G7wfuQQ4hzPaJsRx6U-lodV9MBlsS3mPaezY0bVOrHJkAhSgiVg4LbjkwPrDatGDzAomKmwOWaYjfMPnjk5t84PycT6L6nnAjZIOMK6Vh3usTeRQpcGcU-D7leM_E2OnneeQ3nInIanwQ92Y)
 
-  
 
 The checkbox underneath controls whether set active is sent true (checked) or false (unchecked)
 
-  
-
 The event still isn’t doing anything though. To trigger the event, call the UnityEvent’s Invoke method:
 
-  
+```csharp
+using UnityEngine;  
+using UnityEngine.Events;  
+using UnityEngine.InputSystem;  
 
-using UnityEngine;  <br>using UnityEngine.Events;  <br>using UnityEngine.InputSystem;  <br>  <br>public class EventTesting : MonoBehaviour  <br>{  <br>    public UnityEvent myBigEvent;  <br>  <br>    void Update()  <br>    {  <br>        // use the input system to listen for the spacebar  <br>        if(Keyboard.current.spaceKey.wasPressedThisFrame)  <br>        {  <br>            myBigEvent.Invoke();  <br>        }  <br>    }  <br>}
+public class EventTesting : MonoBehaviour  
+{  
+	public UnityEvent myBigEvent;  
+	void Update()  
+	{  
+		// use the input system to listen for the spacebar  
+		if(Keyboard.current.spaceKey.wasPressedThisFrame)  
+		{  
+			myBigEvent.Invoke();  
+		}  
+	}  
+}
+```
 
 When playing the scene, pressing the spacebar will cause the Cube to appear (if it was not active in the scene yet)
 
-  
-
 You might want something more sophisticated to happen when an event occurs. You can call any methods that are set to public as long as they match the signature of the event. The default UnityEvent does not send any values, so any methods that are called should have no parameters.
-
-  
 
 Attach this script, called SubscriberTesting.cs, to an empty GameObject named “subscriber”: 
 
-  
-
-
+```csharp
 using UnityEngine;  
-public class SubscriberTesting : MonoBehaviour  {      public void ShutdownComputer()  <br>    {  <br>        print("shutting down computer");  <br>        // how to close the program  <br>        Application.Quit();  <br>    }  <br>}
-
-  
+public class SubscriberTesting : MonoBehaviour  {      
+	public void ShutdownComputer()  
+	{  
+		print("shutting down game");  
+		// how to close the program  
+		Application.Quit();  
+	}  
+}
+```
 
 Select the GameObject with the event publisher script and use the ‘+’ button to add another subscriber to the event. Then drag the GameObject to the empty slot.
 
-  
-
 ![](https://lh4.googleusercontent.com/aMypx9LVX5O_2x2ONH7RERXypj9hWSmDBtdpGa5u2u2ksoF6d0RoAjyXMapiwWxPBOa3NOsV1Mj6jKe_-ORVzdSS7hlD0owNTMQZn3Z1qt37cNTJVdJ_85HVJsJGs5jAE_J_yHa09l2KLaSxpKQqz9c)
 
-  
 
 Now, when pressing the spacebar, the cube will appear and the ShutdownComputer() method will be called. Fortunately Application.Quit() only works in the build of the game.
 
-  
-
 By default, UI Buttons have an OnClick event that you can subscribe to. For instance, if you wanted to reset the game using an on-screen button, you could write public methods with the reset game code. Then connect the script to the OnClick event by dragging the component onto the UI reset button.
-
-
-
 # More UI System
 
 [official Unity book](https://resources.unity.com/games/user-interface-design-and-implementation-in-unity) for a thorough review of the Unity UI system. For a shorter overview of the components check out the [manual page](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIBasicLayout.html).
-
-  
 
 ![](https://lh5.googleusercontent.com/5jS-h8b9Kpt86-0V5fDiloyGQ_XqE_jCmJLmrurDT7oLsgLtPvai7fpIoXvfGAY5emzJsNE1xXXJwt-EVt9A3EzQFRp3sK8kLAmopu-gdC-EATKWN9yZ5D1dRoKqqNuWoXwpgTJntpLSP436RSrVWvc)
 
@@ -514,5 +521,3 @@ Once you’ve decided on the arcade game you would like to remake, the next step
 
 ![](https://lh4.googleusercontent.com/JoMH78oM_vGvnoqpew1oQBXBPVGaisdYL5fTPnpzEpchhvUkIgUBs7D56hGb1jInUiI_ZlWjvx8j0vvXjEY__IMh7GSl6gBhKA4tMcXtEaSecBuIebr563Gmc9lex_A_uF_7T20i8goqiY1PdRSL5UA)
 
-  
-**
