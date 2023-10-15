@@ -33,26 +33,24 @@ Read Chapter 1 of Anthropy's [*Rise of the Videogame Zinesters*](https://drive.g
 
 ![](https://lh6.googleusercontent.com/unfOlX2v2XHJhDAVkgyIhvs_sDELxtuPogUeVhO5rkJCI7rZ-n0rNG4YwHL1TuDCFqpxTTHcSikOA-AsFVHI_GSD4hypm2NnDfwjuY5FbsrdP1ror-I-fr2dCGK-xSOpjucvvwfCm3TakRiSXzI_AjA)
 
-We have cocktail cabinets that you can design your game to be played on.
+We have cocktail cabinets that you can design your game to be played on. With a few things to be aware of:
+- Different inputs: No mouse, joysticks (switch-based, not analog).
+- Screen is in the table, players have to sit.
 
-# Multiplayer
+## Multiplayer
 
 Consider the affordances of an arcade machine: games situated in a particular place on a particular machine, in a particular social context.
 
 Traditional arcade games offer multiplayer in two flavors:
 
-1. Direct competition (fighting games, racing games, etc)
-2. Indirect competition (high score tables etc)
+1. Direct competition (fighting games, racing games, etc.)
+2. Indirect competition (high score tables etc.)
 
 Consider blending other genres / ways of playing
 
 - Asynchronous multiplayer: players can affect the experiences of future players by changing the environment or leaving messages behind. ([FromSoft](https://youtu.be/ci5bleu3bGg), [Animal Crossing letters](https://youtu.be/KUzOOx6PDc0))
-
 - Sandbox / simulation: there are no prescribed goals, but the state of the game world is persistent between play sessions. Gardening games, Minecraft, etc. 
-
 - Asynchronous co-op: players play at different times but work together towards a common goal (perhaps unlocking new areas to explore or better powers?) ([Noby Noby boy](https://youtu.be/B0TdTe6-6ns))
-
-  
 
 ![](https://lh3.googleusercontent.com/yavatKxLkAZsKckj5qGonsDazOvL4m9vjmsX0-BKcE4O7hggYQPeeSpI787nyOddyRidJbSu_qWsgj1yGR3_o7uowwlEHHIw6XDhYJ3I9D6ycPDXQwjIgxw4mind_9kTFbieRlQxutuAUe7QEcUM9GA)
 
@@ -60,17 +58,13 @@ Consider blending other genres / ways of playing
 
 Let’s create a new 2D project in Unity using one of the 2D templates.
 
-  
-
 ![](https://lh3.googleusercontent.com/RJUqsW2UJwIQHmJhMrnj3Qvms9ymFOFBHTZfQCPMVmhYKT7Sq8h4O8jRVX_fShBq_8c5TSEH4Uhk76oUKqCd3uln1XnlGDxx_jrvCEaGxFtWp1pi5oEPGw9DziQEF1IMfVqa3VYsskjSddr7K58O-KQ)
 
-  
-
-Using the template will install a bunch of useful 2D packages from the package manager. If you create a project without the template, you can always install the packages manually.
-
-  
+Using the template will install a bunch of useful 2D packages from the package manager. If you create a project without the template, you can always install the packages manually.  
 
 ![](https://lh3.googleusercontent.com/3IeOb_HRLMdzImNJI2YqFV8jBtOke4j9CFCIDYqeVsb7az9hsLex0bqXhAXjr65q6gQlan7wa5GMguYD35UgYbIGvmeqWCNrGMmj_hRRJzZOez3avNYxPcNHEtm3UfN6dvtjbtoozJDN1D9vYtWU8fA)
+
+After your project has started up, you can check out this [unitypackage template](https://drive.google.com/file/d/1wl8eYa-01PaycjSLsaZzSBzm7S1s59S3/view?usp=sharing) with a few scripts and things that might come in handy. We'll be adding more things to this template in the next few weeks.
 
 # Sprites
 
@@ -107,14 +101,24 @@ void OnTriggerEnter2D(Collider2D col)
 }
 ```
 
-
-
 # C Sharp From the basics
 
-See this [Brackeys playlist](https://youtube.com/playlist?list=PLPV2KyIb3jR4CtEelGPsmPzlvP7ISPYzR) for a tutorial on just C# without any Unity (though it’s part of a Unity channel) 
+If you're interested in C# without any Unity, you can take a look at this [Brackeys playlist](https://youtube.com/playlist?list=PLPV2KyIb3jR4CtEelGPsmPzlvP7ISPYzR) (though it’s part of a Unity channel) 
 
-Also useful to know that if you’re trying to search for help with C#, you can also search for “csharp” to get more results
+Also useful to know that if you’re trying to search for help with C#, you can also search for “csharp” to get more results.
+## Creating a new script in Unity
+
+There are two common ways to make a new script in Unity:
+
+1. Right-click in the Project panel and select Create > C# Script. Type the name of the new script and press enter.
+2. Adding one directly to a Game Object by clicking "Add Component" in the Inspector, typing the script's name into the search bar, clicking "New Script", then clicking "Create and Add"
+
+Both methods will create a new ".cs" file in your project folder. The first method will be in whichever folder you right-clicked, while the second method will create the script at the top level of the Assets folder.
+
+Double-click the script to bring it open in your code editor. You should see the default template for new Unity scripts.
 ## Default template
+
+Here is a quick tour of all the components of the default template.
 
 ```csharp
 using System.Collections;
@@ -147,7 +151,9 @@ When you create a new C# script it automatically creates a new class with the sa
 
 In a Unity project every class name must be unique. There can never be more than one class with the same name. If you see errors like:  
 
-```The namespace '<global namespace>' already contains a definition for 'PlayerController'```
+```
+The namespace '<global namespace>' already contains a definition for 'PlayerController'
+```
 
 Then you’ll need to go in and find the other class that’s also named “PlayerController”
 
@@ -176,7 +182,7 @@ namespace MyNamespace
 ```
 
 Likely, you won’t need to make a custom namespace for this class, but it’s pretty useful when collaborating with other people or creating your own plugins to share.
-# Variables
+# Variables in C Sharp
 
 A variable stores some information and the type of the variable specifies what sort of information it can store.
 
@@ -215,7 +221,7 @@ private int count = 0;
 
 The ‘f’ after a float makes sure that the variable is a float rather than a double.
 
-When using the UnityEngine namespace, there are a lot of classes that can also be declared like variables
+When using the UnityEngine namespace, there are a [lot of classes](https://docs.unity3d.com/Manual/ScriptingImportantClasses.html) that can also be declared like variables
 
 ```cs
 Transform myTransform;
@@ -367,52 +373,15 @@ do
 ```
 
 
-
-
-
-
-# Prototyping / Gray boxing / White boxing
-
-Check out the [level design book](https://book.leveldesignbook.com/) which contains much more thorough dives into these concepts. 
-
-![](https://lh4.googleusercontent.com/sF8YEpDvs7smkncnXwYV-nmZ5HliR7c4CePWcETY0HYEzZMaRPfaV4hRzMBRqCWCAJyxbC-Lm3Il3ExVAUQM9NMtN84quGXsClr_QWDoB--jIYyl36pE3kiDsTRvDeF5oH6yqbDd7EpMaQtYuUoqRlU)
-
-[Neon White](https://www.gameinformer.com/feature/2022/11/25/how-a-neon-white-level-is-made)
-
-Now that you know a bit about 2D in Unity, and you’ve had a taste of a few arcade games. You’re ready to start prototyping and considering how you’ll put together your game. 
-
-When developing a level or game mechanic, it’s useful to separate the “art” (modeling, lighting, texturing, etc.) from the movement, trajectory, and feel of the game. A common technique in game development is known as Gray boxing (White boxing) or blocking out involves this process. 
-
-![](https://lh5.googleusercontent.com/J1Yq-cvwAAlvtkR2WFJrGaqC_Ud6Zgo_CRH76vUeLzh4crrqs1i2Lh1lwhMpZ8eiE-g5tqfdMvLjbyEmClNf07ZFKderYzcHEyoLeEiMgChodJBewCRaigFqTqDdLUAM9T7t3DsOABgiMpZn9lszY08)
-
-[https://book.leveldesignbook.com/process/env-art](https://book.leveldesignbook.com/process/env-art) 
-
-You can compare this idea to adding placeholder text and images for getting a sense of page layout. The content doesn’t need to exist before you can consider things like navigation, composition, or interaction.
-
-Here’s the process:
-
-1. Sketch layout
-2. Add ground plane, scale figures, walls
-3. Playtest
-4. Diverge, iterate, and playtest again
-5. Repeat step 4 until done
-
-(See here for [breakdowns](https://book.leveldesignbook.com/process/blockout#how-to-blockout) of each step )
-
-The design doc portion of Project 1 asked you to do a very informal version of the first step. For Project 2 and Project 3. We will focus on building out the prototypes of the projects before integrating the art assets. 
-
-![](https://lh5.googleusercontent.com/kZJbt3qJV8NG-pgClRaIRxmPRp9_7_8TpX6Rb6Gx_WSFUlpTbQJYwTuuL3VwxXzkndZyhZfKK3LAMtoqqzp1MaAn5HeLmgeBXbeqfI_G_hfMSWTps8HPBAPdLVqIaqc46uCFG8VTDN8UXliltmvfAGo)
-
-
-Once you’ve decided on the arcade game you would like to remake, the next step is to try and create the game using just basic shapes with simple colors. This way you can focus on solving all the design issues related to interaction and feel.
-
 # Vectors
 
-Generally a vector is simply a quantity with both magnitude and direction. This can be represented by an ordered list of numbers, where each represents the magnitude of the vector in a specific direction.![](https://lh3.googleusercontent.com/kjc3h4m3qWclTa_D5mhIxw9tyinJ1XDwKABSUBfQFG_fpGNHb5rW7bcNOv8g-S2_xioHhTiHjDkRXx8Bm70Xhr4ZbVqsk1SUIT0srh7Bs5nsqGeodrZjrrcWCPs_OfoELhENJfj9W-a6OkB-KaDVee0)
+Generally a vector is simply a quantity with both magnitude and direction. This can be represented by an ordered list of numbers, where each represents the magnitude of the vector in a specific direction.
+
+![](https://lh3.googleusercontent.com/kjc3h4m3qWclTa_D5mhIxw9tyinJ1XDwKABSUBfQFG_fpGNHb5rW7bcNOv8g-S2_xioHhTiHjDkRXx8Bm70Xhr4ZbVqsk1SUIT0srh7Bs5nsqGeodrZjrrcWCPs_OfoELhENJfj9W-a6OkB-KaDVee0)
 
 Each number represents a dimension of the “space” that the vector occupies. In 2D space, you would use two values, X and Y, to describe a vector. In 3D space, X, Y, and Z. And so on.  
 
-In Unity, a vector is a mathematical object that represents a quantity with both magnitude and direction. Vectors are used to represent all sorts of quantities including:
+In Unity, a vector is an object that represents a quantity with both magnitude and direction. Vectors are used to represent all sorts of quantities including:
 
 - Position and Movement (Transform)
 - Velocity and Acceleration (RigidBody / RigidBody2D)
@@ -450,5 +419,10 @@ public class DrawVelocity : MonoBehaviour
 ```
 
 This is for a 3D vector, what about drawing vectors in a 2D game?
+
+
+
+
+
 
 ![](https://lh5.googleusercontent.com/CunfAVcjZrHkl1iT0ngEa3AqiGeqDBUGTcUgEp3XRf8Cb9rRA_ciftsSHEpQbZq4eQwLmUGzIE7rp31UBc_reqys0xqueE-i9RwNetNjz8nGPyrELR090UPb9Uau053klhNcGlsrzz3rL71IyNnPwLw)

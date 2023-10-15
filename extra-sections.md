@@ -438,3 +438,39 @@ The first part of Chapter 1 (pp 19-26 of the PDF) provides a nice introduction t
 We’ll talk more about arcades next Tuesday.
 
 EXTRA CREDIT: Read the whole chapter and answer [a few questions on this form](https://docs.google.com/forms/d/e/1FAIpQLSdJADTcUzpFJTNJvHeIjAPWUlRsWRuO18xbYcn74RSr3dFJ-Q/viewform?usp=sf_link)
+
+
+# Prototyping / Gray boxing / White boxing (from old version of Day 6)
+
+Check out the [level design book](https://book.leveldesignbook.com/) which contains much more thorough dives into these concepts. 
+
+![](https://lh4.googleusercontent.com/sF8YEpDvs7smkncnXwYV-nmZ5HliR7c4CePWcETY0HYEzZMaRPfaV4hRzMBRqCWCAJyxbC-Lm3Il3ExVAUQM9NMtN84quGXsClr_QWDoB--jIYyl36pE3kiDsTRvDeF5oH6yqbDd7EpMaQtYuUoqRlU)
+
+[Neon White](https://www.gameinformer.com/feature/2022/11/25/how-a-neon-white-level-is-made)
+
+Now that you know a bit about 2D in Unity, and you’ve had a taste of a few arcade games. You’re ready to start prototyping and considering how you’ll put together your game. 
+
+When developing a level or game mechanic, it’s useful to separate the “art” (modeling, lighting, texturing, etc.) from the movement, trajectory, and feel of the game. A common technique in game development is known as Gray boxing (White boxing) or blocking out involves this process. 
+
+![](https://lh5.googleusercontent.com/J1Yq-cvwAAlvtkR2WFJrGaqC_Ud6Zgo_CRH76vUeLzh4crrqs1i2Lh1lwhMpZ8eiE-g5tqfdMvLjbyEmClNf07ZFKderYzcHEyoLeEiMgChodJBewCRaigFqTqDdLUAM9T7t3DsOABgiMpZn9lszY08)
+
+[https://book.leveldesignbook.com/process/env-art](https://book.leveldesignbook.com/process/env-art) 
+
+You can compare this idea to adding placeholder text and images for getting a sense of page layout. The content doesn’t need to exist before you can consider things like navigation, composition, or interaction.
+
+Here’s the process:
+
+1. Sketch layout
+2. Add ground plane, scale figures, walls
+3. Playtest
+4. Diverge, iterate, and playtest again
+5. Repeat step 4 until done
+
+(See here for [breakdowns](https://book.leveldesignbook.com/process/blockout#how-to-blockout) of each step )
+
+The design doc portion of Project 1 asked you to do a very informal version of the first step. For Project 2 and Project 3. We will focus on building out the prototypes of the projects before integrating the art assets. 
+
+![](https://lh5.googleusercontent.com/kZJbt3qJV8NG-pgClRaIRxmPRp9_7_8TpX6Rb6Gx_WSFUlpTbQJYwTuuL3VwxXzkndZyhZfKK3LAMtoqqzp1MaAn5HeLmgeBXbeqfI_G_hfMSWTps8HPBAPdLVqIaqc46uCFG8VTDN8UXliltmvfAGo)
+
+
+Once you’ve decided on the arcade game you would like to remake, the next step is to try and create the game using just basic shapes with simple colors. This way you can focus on solving all the design issues related to interaction and feel.
