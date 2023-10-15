@@ -375,9 +375,10 @@ do
 
 # Vectors
 
-Generally a vector is simply a quantity with both magnitude and direction. This can be represented by an ordered list of numbers, where each represents the magnitude of the vector in a specific direction.
+Generally a vector is simply a quantity with both magnitude and direction. This can be represented by an ordered list of numbers, where each represents the magnitude of the vector in a specific direction. </br>
 
 ![](https://lh3.googleusercontent.com/kjc3h4m3qWclTa_D5mhIxw9tyinJ1XDwKABSUBfQFG_fpGNHb5rW7bcNOv8g-S2_xioHhTiHjDkRXx8Bm70Xhr4ZbVqsk1SUIT0srh7Bs5nsqGeodrZjrrcWCPs_OfoELhENJfj9W-a6OkB-KaDVee0)
+</br>
 
 Each number represents a dimension of the “space” that the vector occupies. In 2D space, you would use two values, X and Y, to describe a vector. In 3D space, X, Y, and Z. And so on.  
 
