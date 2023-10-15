@@ -59,9 +59,16 @@ And even more parameters:
 
   
 
-|   |
-|---|
-|public string SayHello(string name, int numberOfTimes)  <br>{  <br>        for(int i = 0; i < numberOfTimes; i++)  <br>        {  <br>            print("Hello" + name);  <br>        }  <br>        return "said hello " + numberOfTimes + "times";  <br>}|
+```csharp
+public string SayHello(string name, int numberOfTimes)  
+{  
+for(int i = 0; i < numberOfTimes; i++)  
+{  
+print("Hello" + name);  
+}  
+return "said hello " + numberOfTimes + "times";  
+}
+```
 
   
 
@@ -69,9 +76,14 @@ Call the method by its name and pass in any arguments, the return value can be u
 
   
 
-|   |
-|---|
-|// storing the return value in a variable  <br>string result = SayHello("Duane", 500);  <br>print(result);  <br>  <br>// or using it directly  <br>print(SayHello("Duane", 500));|
+```csharp
+// storing the return value in a variable  
+string result = SayHello("Duane", 500);  
+print(result);  
+
+// or using it directly  
+print(SayHello("Duane", 500));|
+```
 
   
   
@@ -86,14 +98,14 @@ Call the method by its name and pass in any arguments, the return value can be u
 
 Currently, the way we’ve been accessing other objects and components in code was to make variables public, so that the variable would appear in the inspector and the component dragged to the empty slot.
 
-  
-
-|   |
-|---|
-|public GameObject go;  <br>public Rigidbody rb;  <br>public Camera cam; // note: for the main camera use Camera.main  <br>public Light lt;  <br>public AudioSource audioSource; // can't use 'as'  <br>public ParticleSystem ps;|
-
-  
-
+```csharp
+public GameObject go;  
+public Rigidbody rb;  
+public Camera cam; // note: for the main camera use Camera.main  
+public Light lt;  
+public AudioSource audioSource; // can't use 'as'  
+public ParticleSystem ps;
+```
 ### GetComponent
 
 When a component that you need is on the same GameObject as your script (or the component is on another GameObject that the script has a reference to), you can use *GetComponent* to get and store the needed component.
@@ -141,30 +153,25 @@ if (TryGetComponent(out HingeJoint hinge))
 
 ### FindGameObjectsWithTag
 
-  
 
 There is another useful method when looking for tagged objects called FindGameObjectsWithTag which is used like this
 
-  
-
+```csharp
 GameObject[] name = FindGameObjectsWithTag(“myTagName”); 
-
-  
+```
 
 These can be combined to quickly change a lot of things in your scene
 
-  
-
-|   |
-|---|
-|GameObject[] borts = GameObject.FindGameObjectsWithTag("bort");  <br>foreach (GameObject bort in borts)  <br>{  <br>        bort.GetComponent<Transform>().LookAt(Vector3.zero);  <br>}|
-
-  
+```csharp
+GameObject[] borts = GameObject.FindGameObjectsWithTag("bort");  
+foreach (GameObject bort in borts)  
+{  
+bort.GetComponent<Transform>().LookAt(Vector3.zero);  
+}
+```
 
 This tells any object tagged as “bort” to look at the origin (0,0,0) of the scene.
-
   
-
 All the methods in the GameObject class here:
 
 [https://docs.unity3d.com/ScriptReference/GameObject.html](https://docs.unity3d.com/ScriptReference/GameObject.html)
@@ -173,13 +180,14 @@ All the methods in the GameObject class here:
 
 A third option is to search for all loaded objects of a specific type in the scene. This is not the fastest operation, so it’s not the best idea to call it every frame. 
 
-  
-
-|   |
-|---|
-|Rotator[] rotators = FindObjectsOfType<Rotator>();  <br>// set speed of all rotators  <br>foreach (Rotator rotator in rotators)  <br>{  <br>        rotator.speed = 10f;  <br>}|
-
-  
+```csharp
+Rotator[] rotators = FindObjectsOfType<Rotator>();  
+// set speed of all rotators  
+foreach (Rotator rotator in rotators)  
+{  
+	rotator.speed = 10f;  
+}
+```
 
 Try doing this in your own Roll-a-ball scene. You’ll need to modify the Rotator script in order for this to work.
 
@@ -189,33 +197,60 @@ I’ve already given away how this might work in a few of the examples above, bu
 
   
 
-|   |
-|---|
-|GameObject[] iceCubes;  <br>GameObject[] fireCubes;  <br>  <br>void Start()  <br>{  <br>    iceCubes = GameObject.FindGameObjectsWithTag("ice");  <br>    fireCubes = GameObject.FindGameObjectsWithTag("fire");  <br>}  <br>  <br>void Update()  <br>{  <br>    foreach(var ice in iceCubes)  <br>    {  <br>        float valueAmount = Mathf.PingPong(Time.time, 1f);  <br>        Color iceColor = Color.HSVToRGB(0.7f, 1f, valueAmount);  <br>        ice.GetComponent<Renderer>().material.SetColor("_BaseColor", iceColor);  <br>    }  <br>  <br>    foreach(var fire in fireCubes)  <br>    {  <br>        float valueAmount = Mathf.Repeat(Time.time, 1f);  <br>        Color iceColor = Color.HSVToRGB(0f, 1f, valueAmount);  <br>        fire.GetComponent<Renderer>().material.SetColor("_BaseColor", iceColor);  <br>    }  <br>}|
+```csharp
+GameObject[] iceCubes;  
+GameObject[] fireCubes;  
+
+void Start()  
+{  
+	iceCubes = GameObject.FindGameObjectsWithTag("ice");  
+	fireCubes = GameObject.FindGameObjectsWithTag("fire");  
+}  
+
+void Update()  
+{  
+	foreach(var ice in iceCubes)  
+	{  
+		float valueAmount = Mathf.PingPong(Time.time, 1f);  
+		Color iceColor = Color.HSVToRGB(0.7f, 1f, valueAmount);  
+		ice.GetComponent<Renderer>().material.SetColor("_BaseColor", iceColor);  
+	}  
+	foreach(var fire in fireCubes)  
+	{  
+		float valueAmount = Mathf.Repeat(Time.time, 1f);  
+		Color iceColor = Color.HSVToRGB(0f, 1f, valueAmount);  
+		fire.GetComponent<Renderer>().material.SetColor("_BaseColor", iceColor);  
+	}  
+}
+```
 
   
 
 More likely, it’s better to have the color changing scripts on the objects themselves. But this script covers a lot of new ground on ways to modify things including:
 
 - The [PingPong](https://docs.unity3d.com/ScriptReference/Mathf.PingPong.html) and [Repeat](https://docs.unity3d.com/ScriptReference/Mathf.Repeat.html) methods of the [Mathf](https://docs.unity3d.com/ScriptReference/Mathf.html) class
-    
 - Creating colors in scripts with the [Color](https://docs.unity3d.com/ScriptReference/Color.html) class and converting HSV to RGB
-    
 - How to access and set the color of a material with [SetColor](https://docs.unity3d.com/ScriptReference/Material.SetColor.html) (note: for URP use “_BaseColor” rather than “_Color” )
-    
-
-  
 
 In both of the cases above, Time.time was used to modify the value over time. Time.time can also be passed into the offset of a Material to create a scrolling texture
 
-  
+```csharp
+using UnityEngine;  
+public class SlideTexture : MonoBehaviour  
+{  
+	Material material;  
+	void Start()  
+	{  
+		material = GetComponent<Renderer>().material;  
+	}  
+	void Update()  
+	{  
+		Vector2 newOffset = new Vector2(Time.time, Time.time);  
+		material.SetTextureOffset("_BaseMap", newOffset);  
+	}  
+}
+```
 
-|   |
-|---|
-|using UnityEngine;  <br>public class SlideTexture : MonoBehaviour  <br>{  <br>    Material material;  <br>    void Start()  <br>    {  <br>        material = GetComponent<Renderer>().material;  <br>    }  <br>    void Update()  <br>    {  <br>        Vector2 newOffset = new Vector2(Time.time, Time.time);  <br>        material.SetTextureOffset("_BaseMap", newOffset);  <br>    }  <br>}|
-
-  
-  
   
 
 ![](https://lh3.googleusercontent.com/LTbGx8moH5WBSUvK-ZmeccD24BEzJKxOXcZ7aXxM87Fgp3cWPA5MaynBJPLEire94RS1aMT0bPORZLKqElShgbhjfH-nm8GEGGHVI41MSs8tcHvFm1D8sCeL42YqMNWVpgQnFnjFGd5nw8ytWAwkRI0)
@@ -273,9 +308,7 @@ C# has its own [event system](https://learn.microsoft.com/en-us/dotnet/csharp/pr
 
 To create a UnityEvent, add the UnityEngine.Events namespace and then declare the UnityEvent as public:
 
-|   |
-|---|
-|using UnityEngine;  <br>using UnityEngine.Events;  <br>  <br>public class EventTesting : MonoBehaviour  <br>{  <br>    public UnityEvent myBigEvent;  <br>  <br>    void Update()  <br>    {  <br>         <br>    }  <br>}|
+using UnityEngine;  <br>using UnityEngine.Events;  <br>  <br>public class EventTesting : MonoBehaviour  <br>{  <br>    public UnityEvent myBigEvent;  <br>  <br>    void Update()  <br>    {  <br>         <br>    }  <br>}
 
 When you save the script and attach it to a GameObject, you’ll see a place to add subscribers to your event.
 
@@ -309,9 +342,7 @@ The event still isn’t doing anything though. To trigger the event, call the Un
 
   
 
-|   |
-|---|
-|using UnityEngine;  <br>using UnityEngine.Events;  <br>using UnityEngine.InputSystem;  <br>  <br>public class EventTesting : MonoBehaviour  <br>{  <br>    public UnityEvent myBigEvent;  <br>  <br>    void Update()  <br>    {  <br>        // use the input system to listen for the spacebar  <br>        if(Keyboard.current.spaceKey.wasPressedThisFrame)  <br>        {  <br>            myBigEvent.Invoke();  <br>        }  <br>    }  <br>}|
+using UnityEngine;  <br>using UnityEngine.Events;  <br>using UnityEngine.InputSystem;  <br>  <br>public class EventTesting : MonoBehaviour  <br>{  <br>    public UnityEvent myBigEvent;  <br>  <br>    void Update()  <br>    {  <br>        // use the input system to listen for the spacebar  <br>        if(Keyboard.current.spaceKey.wasPressedThisFrame)  <br>        {  <br>            myBigEvent.Invoke();  <br>        }  <br>    }  <br>}
 
 When playing the scene, pressing the spacebar will cause the Cube to appear (if it was not active in the scene yet)
 
@@ -327,7 +358,7 @@ Attach this script, called SubscriberTesting.cs, to an empty GameObject named �
 
 
 using UnityEngine;  
-public class SubscriberTesting : MonoBehaviour  {      public void ShutdownComputer()  <br>    {  <br>        print("shutting down computer");  <br>        // how to close the program  <br>        Application.Quit();  <br>    }  <br>}|
+public class SubscriberTesting : MonoBehaviour  {      public void ShutdownComputer()  <br>    {  <br>        print("shutting down computer");  <br>        // how to close the program  <br>        Application.Quit();  <br>    }  <br>}
 
   
 
@@ -469,3 +500,19 @@ The design doc portion of Project 1 asked you to do a very informal version of t
 
 
 Once you’ve decided on the arcade game you would like to remake, the next step is to try and create the game using just basic shapes with simple colors. This way you can focus on solving all the design issues related to interaction and feel.
+
+
+# A bit more arcade cabinet artwork
+
+![](https://lh6.googleusercontent.com/yt0XFgjqOw3T11fpvfdL3g0stA183OTNzM5X9MgbnNAH3mVU0-PSYT_AaxNvEVKxAvDNrbplzgyo_At92W-No_D4uaCg4WVxMRtCdkelJkiz8UGZGkcSkT18A25Eul4JceasLgEmcq_vSPZak5_SzgA)
+
+  
+
+![](https://lh5.googleusercontent.com/1xWZIj5GK5eyv2WqM3KRRgr6GrC-0_RsxLxp1UBx3Q0wngjwUsS02uP5GeaPs4y1AMttV9CYy_2QzPTBLWLV1ttIzxmYUztoC8EWEAQZ27CSZfY8nAPBf02kEfn_ysRMNgO_HV2hQ26lsJHT_jiaEf0)
+
+![](https://lh6.googleusercontent.com/C15BsnmCiw3NK2nqNy5fMLf-a9EktDCaSWc2qS0rn_D2w9JY0Jt6yQMGp_Q1O9_fgSKY9vPPFmZOZvBMcx5d9JHURKAio-NnLy33fuSXlDT7C-WBu0FnAsUiCxV6ek-z7hxCW-ao7mKU-iPd9K9qrsE)
+
+![](https://lh4.googleusercontent.com/JoMH78oM_vGvnoqpew1oQBXBPVGaisdYL5fTPnpzEpchhvUkIgUBs7D56hGb1jInUiI_ZlWjvx8j0vvXjEY__IMh7GSl6gBhKA4tMcXtEaSecBuIebr563Gmc9lex_A_uF_7T20i8goqiY1PdRSL5UA)
+
+  
+**
