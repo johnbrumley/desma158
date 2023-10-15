@@ -29,10 +29,11 @@ List of [Southern California zine events](https://www.johndishwasher.org/zinefes
 ### **Extra Credit**
 Read Chapter 1 of Anthropy's [*Rise of the Videogame Zinesters*](https://drive.google.com/drive/folders/1sKj5MXsl1mBbyfCE_4lRQEAUbggBm7Ld?usp=sharing)
 
+# Some notes on Arcade Cabinets and multiplayer
 
 ![](https://lh6.googleusercontent.com/unfOlX2v2XHJhDAVkgyIhvs_sDELxtuPogUeVhO5rkJCI7rZ-n0rNG4YwHL1TuDCFqpxTTHcSikOA-AsFVHI_GSD4hypm2NnDfwjuY5FbsrdP1ror-I-fr2dCGK-xSOpjucvvwfCm3TakRiSXzI_AjA)
 
-
+We have cocktail cabinets that you can design your game to be played on.
 
 # Multiplayer
 
