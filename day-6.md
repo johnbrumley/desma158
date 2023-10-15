@@ -2,109 +2,37 @@
 layout: slides
 title: Day 6
 ---
+![](https://img.itch.zone/aW1hZ2UvMTE2MTU4LzY5NzA0OC5wbmc=/original/pfo1%2FO.png)
 
-![](https://lh5.googleusercontent.com/CunfAVcjZrHkl1iT0ngEa3AqiGeqDBUGTcUgEp3XRf8Cb9rRA_ciftsSHEpQbZq4eQwLmUGzIE7rp31UBc_reqys0xqueE-i9RwNetNjz8nGPyrELR090UPb9Uau053klhNcGlsrzz3rL71IyNnPwLw)
+# Project 2
 
-# TODO
+Let's take a look at [Project 2](project-2.md) and think about why a game might make a good zine.
 
-- [ ] Rewrite intro to Project 2 section,  Zine games, maybe bring in a zine? Talk a bit more about inventories and objects -- maybe le guin's essay?
-- [ ] Change reading section to anthropy
-- [ ] Move in the C# basics section -- need to check if there should be more editing
-- [ ] Put together the template based on Nick's class
-- [ ] Remove grayboxing section from this one
+![](assets/zines.png)
 
-# Project 1 thoughts?
+From Anthropy's book:
 
-Takeaways, difficulties, format 
+>...what I want from videogames is a plurality of voices. I want games to come from a wider set of experiences and present a wider range of perspectives. I can imagine—you are invited to imagine with me—a world in which digital games are not manufactured by publishers for the same small audience, but one in which games are authored by you and me for the benefit of our peers.
 
-## More UI System
+Why not write a story, make a comic, or livestream? What are things that games can express a lot better than other forms of media?
 
-[official Unity book](https://resources.unity.com/games/user-interface-design-and-implementation-in-unity) for a thorough review of the Unity UI system. For a shorter overview of the components check out the [manual page](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIBasicLayout.html).
+![](https://assetsio.reedpopcdn.com/paper06.jpg?width=1920&height=1920&fit=bounds&quality=80&format=jpg&auto=webp)
 
-  
+*Papers, Please*. Lucas Pope (2013)
 
-![](https://lh5.googleusercontent.com/5jS-h8b9Kpt86-0V5fDiloyGQ_XqE_jCmJLmrurDT7oLsgLtPvai7fpIoXvfGAY5emzJsNE1xXXJwt-EVt9A3EzQFRp3sK8kLAmopu-gdC-EATKWN9yZ5D1dRoKqqNuWoXwpgTJntpLSP436RSrVWvc)
+Systems? Dynamics? Relationships? Role Playing?
 
-1. Rendering order 
-2. Turning off raycast target for non-interactable things
-3. Interaction, triggering Events (See below)
-## UnityEvents and UI
+Some other zine things:
+[Zines at UCLA Library](https://guides.library.ucla.edu/c.php?g=1046263&p=7591800)
+List of [Southern California zine events](https://www.johndishwasher.org/zinefestsofsocal.html) 
 
-In programming, events allow one part of a program to notify other parts of the program when something has happened. You can define an event and add “subscribers” which will be notified when that event is invoked.
+### **Extra Credit**
+Read Chapter 1 of Anthropy's [*Rise of the Videogame Zinesters*](https://drive.google.com/drive/folders/1sKj5MXsl1mBbyfCE_4lRQEAUbggBm7Ld?usp=sharing)
 
-![](https://lh5.googleusercontent.com/-tpAU-bRuM-xQjD2hp1kNJgP_FQ4_0sjqJPre1KdZxe49EyI0ypYVO99lA9AgofmygD3Fz_-Eh5yycLBaXU3amX0oDwiYF5MzqnvTjmsLcdPgTpOHqJ-CNwlVO27RxJeV74e5L4JhtuSLNr4YZiJCmQ)
-
-Let’s build a lightswitch:
-
-1. Create a UI Button to toggle the lights on or off (you could also create a Toggle)
-2. Create a Light
-3. Connect the light to the button’s OnClick event
-4. Press play and see if it works!
-
-Have this button turn other things on or off. 
-
-This technique only works for connecting to components that expose an event in the inspector. You can create events in your own scripts that can also create the same interface in the inspector.
-
-This is a small script that triggers an event called OffEvent after two seconds:
-
-```csharp
-using UnityEngine;
-using UnityEngine.Events;
-
-public class EventTesting : MonoBehaviour
-{
-    public UnityEvent OffEvent;
-
-    void Update()
-    {
-        if(Time.time > 2)
-        {
-            OffEvent.Invoke();
-        }
-    }
-}
-```
-
-Try controlling the light with this script instead of the Button. You can also connect to public methods inside of your other scripts.  
-
-Note: this script has to be attached to the same game object as a Light component.
-
-```csharp
-using UnityEngine;
-
-public class ChangeLightColor : MonoBehaviour
-{
-    public void ChangeColor()
-    {
-        GetComponent<Light>().color = Color.green;
-    }
-}
-```
-
-# Intro to Project 2: 2D Arcade Game
 
 ![](https://lh6.googleusercontent.com/unfOlX2v2XHJhDAVkgyIhvs_sDELxtuPogUeVhO5rkJCI7rZ-n0rNG4YwHL1TuDCFqpxTTHcSikOA-AsFVHI_GSD4hypm2NnDfwjuY5FbsrdP1ror-I-fr2dCGK-xSOpjucvvwfCm3TakRiSXzI_AjA)
 
-Play some [classic 2D arcade games](https://classes.dma.ucla.edu/Spring23/158/?page_id=151) and consider one that you would like to remake
-# Let’s play some arcade games 
 
-Search through the internet archive’s [internet arcade](https://archive.org/details/internetarcade?tab=about). I’ve also brought in an atari emulator for another set of games.
-
-As you’re testing out different games, what are your initial impressions? What are similarities between the games? How long is the gameplay loop? 
-# Reading Material
-
-  
-![](https://lh6.googleusercontent.com/If83rrqLEE11N91-tZgIATLhpEQiqur_XElizVBMo3RzF80oLbxP_tQbLQDI-ZWMY4rDFDTUsIF0Wk-z5UPnQhTzBktZQSaHya-HHY-vVG4IxrTg2DNCjbAXp-cuyKGLuzAWcW9uprqXvciU9TOZonA)
-
-You can read more about the development of arcades in this book:  
-  
-[Coin-operated Americans: Rebooting Boyhood at the Video Game Arcade](https://drive.google.com/file/d/1flXi70BMFY6IZFfmwa4JCK5rn0HeY8g6/view?usp=share_link)
-
-The first part of Chapter 1 (pp 19-26 of the PDF) provides a nice introduction to arcade culture in the 70s/80s. 
-
-We’ll talk more about arcades next Tuesday.
-
-EXTRA CREDIT: Read the whole chapter and answer [a few questions on this form](https://docs.google.com/forms/d/e/1FAIpQLSdJADTcUzpFJTNJvHeIjAPWUlRsWRuO18xbYcn74RSr3dFJ-Q/viewform?usp=sf_link)
 
 # Multiplayer
 
@@ -521,3 +449,5 @@ public class DrawVelocity : MonoBehaviour
 ```
 
 This is for a 3D vector, what about drawing vectors in a 2D game?
+
+![](https://lh5.googleusercontent.com/CunfAVcjZrHkl1iT0ngEa3AqiGeqDBUGTcUgEp3XRf8Cb9rRA_ciftsSHEpQbZq4eQwLmUGzIE7rp31UBc_reqys0xqueE-i9RwNetNjz8nGPyrELR090UPb9Uau053klhNcGlsrzz3rL71IyNnPwLw)

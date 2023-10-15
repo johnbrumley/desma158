@@ -330,9 +330,9 @@ Attach this script, called SubscriberTesting.cs, to an empty GameObject named �
 
   
 
-|   |
-|---|
-|using UnityEngine;  <br>  <br>public class SubscriberTesting : MonoBehaviour  <br>{  <br>    public void ShutdownComputer()  <br>    {  <br>        print("shutting down computer");  <br>        // how to close the program  <br>        Application.Quit();  <br>    }  <br>}|
+
+using UnityEngine;  
+public class SubscriberTesting : MonoBehaviour  {      public void ShutdownComputer()  <br>    {  <br>        print("shutting down computer");  <br>        // how to close the program  <br>        Application.Quit();  <br>    }  <br>}|
 
   
 
@@ -350,4 +350,91 @@ Now, when pressing the spacebar, the cube will appear and the ShutdownComputer()
 
 By default, UI Buttons have an OnClick event that you can subscribe to. For instance, if you wanted to reset the game using an on-screen button, you could write public methods with the reset game code. Then connect the script to the OnClick event by dragging the component onto the UI reset button.
 
+
+
+# More UI System
+
+[official Unity book](https://resources.unity.com/games/user-interface-design-and-implementation-in-unity) for a thorough review of the Unity UI system. For a shorter overview of the components check out the [manual page](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIBasicLayout.html).
+
   
+
+![](https://lh5.googleusercontent.com/5jS-h8b9Kpt86-0V5fDiloyGQ_XqE_jCmJLmrurDT7oLsgLtPvai7fpIoXvfGAY5emzJsNE1xXXJwt-EVt9A3EzQFRp3sK8kLAmopu-gdC-EATKWN9yZ5D1dRoKqqNuWoXwpgTJntpLSP436RSrVWvc)
+
+1. Rendering order 
+2. Turning off raycast target for non-interactable things
+3. Interaction, triggering Events (See below)
+# UnityEvents and UI
+
+In programming, events allow one part of a program to notify other parts of the program when something has happened. You can define an event and add “subscribers” which will be notified when that event is invoked.
+
+![](https://lh5.googleusercontent.com/-tpAU-bRuM-xQjD2hp1kNJgP_FQ4_0sjqJPre1KdZxe49EyI0ypYVO99lA9AgofmygD3Fz_-Eh5yycLBaXU3amX0oDwiYF5MzqnvTjmsLcdPgTpOHqJ-CNwlVO27RxJeV74e5L4JhtuSLNr4YZiJCmQ)
+
+Let’s build a lightswitch:
+
+1. Create a UI Button to toggle the lights on or off (you could also create a Toggle)
+2. Create a Light
+3. Connect the light to the button’s OnClick event
+4. Press play and see if it works!
+
+Have this button turn other things on or off. 
+
+This technique only works for connecting to components that expose an event in the inspector. You can create events in your own scripts that can also create the same interface in the inspector.
+
+This is a small script that triggers an event called OffEvent after two seconds:
+
+```csharp
+using UnityEngine;
+using UnityEngine.Events;
+
+public class EventTesting : MonoBehaviour
+{
+    public UnityEvent OffEvent;
+
+    void Update()
+    {
+        if(Time.time > 2)
+        {
+            OffEvent.Invoke();
+        }
+    }
+}
+```
+
+Try controlling the light with this script instead of the Button. You can also connect to public methods inside of your other scripts.  
+
+Note: this script has to be attached to the same game object as a Light component.
+
+```csharp
+using UnityEngine;
+
+public class ChangeLightColor : MonoBehaviour
+{
+    public void ChangeColor()
+    {
+        GetComponent<Light>().color = Color.green;
+    }
+}
+```
+
+# Arcade Things, Old Project 2
+
+Play some [classic 2D arcade games](https://classes.dma.ucla.edu/Spring23/158/?page_id=151) and consider one that you would like to remake
+# Let’s play some arcade games 
+
+Search through the internet archive’s [internet arcade](https://archive.org/details/internetarcade?tab=about). I’ve also brought in an atari emulator for another set of games.
+
+As you’re testing out different games, what are your initial impressions? What are similarities between the games? How long is the gameplay loop? 
+# Reading Material
+
+  
+![](https://lh6.googleusercontent.com/If83rrqLEE11N91-tZgIATLhpEQiqur_XElizVBMo3RzF80oLbxP_tQbLQDI-ZWMY4rDFDTUsIF0Wk-z5UPnQhTzBktZQSaHya-HHY-vVG4IxrTg2DNCjbAXp-cuyKGLuzAWcW9uprqXvciU9TOZonA)
+
+You can read more about the development of arcades in this book:  
+  
+[Coin-operated Americans: Rebooting Boyhood at the Video Game Arcade](https://drive.google.com/file/d/1flXi70BMFY6IZFfmwa4JCK5rn0HeY8g6/view?usp=share_link)
+
+The first part of Chapter 1 (pp 19-26 of the PDF) provides a nice introduction to arcade culture in the 70s/80s. 
+
+We’ll talk more about arcades next Tuesday.
+
+EXTRA CREDIT: Read the whole chapter and answer [a few questions on this form](https://docs.google.com/forms/d/e/1FAIpQLSdJADTcUzpFJTNJvHeIjAPWUlRsWRuO18xbYcn74RSr3dFJ-Q/viewform?usp=sf_link)
