@@ -34,7 +34,6 @@ For games that will be played on the Game Lab cocktail cabinets, so take the for
 ## 1. Project Sketch
 
 **Due by Tuesday 10/24**
-[Submit Design Document Here](https://docs.google.com/forms/d/e/1FAIpQLSfC-MyUZH-5k8RSjd2rfzjLXk0CtlFezffXzD_CppeippeSSQ/viewform?usp=sf_link)
 
 *Develop 3 or more short sketches that illustrate your videogame "zine". What you want a player to experience, learn, explore, enjoy, etc.? What sort of images, sounds, videos, texts, and/or animations will you use and how will you create or collect them?*
 
