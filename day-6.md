@@ -30,7 +30,7 @@ Some other zine things:
 List of [Southern California zine events](https://www.johndishwasher.org/zinefestsofsocal.html) 
 
 ### **Extra Credit**
-Read Chapter 1 of Anthropy's [*Rise of the Videogame Zinesters*](https://drive.google.com/drive/folders/1sKj5MXsl1mBbyfCE_4lRQEAUbggBm7Ld?usp=sharing)
+Read Chapter 1 of Anthropy's [*Rise of the Videogame Zinesters*](https://drive.google.com/drive/folders/1sKj5MXsl1mBbyfCE_4lRQEAUbggBm7Ld?usp=sharing) and respond to the questions in [this form](https://docs.google.com/forms/d/e/1FAIpQLScUZiLp0FAe1t6nAJhu3Raz-qey8cA41IGMN1hK06TYx0HVWg/viewform?usp=sf_link).
 
 # Some notes on Arcade Cabinets and multiplayer
 
