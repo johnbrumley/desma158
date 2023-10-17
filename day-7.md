@@ -105,7 +105,7 @@ The ZX Spectrum from 1981 for about $200 (~$688), while other personal computers
 
 [Download Cocktail Input Asset](https://drive.google.com/file/d/1YVcr7K-cj00N_OxzMZAMPesqlxzEWfb2/view?usp=sharing) , also be sure to install the input system package for your 2D project. The template does not come with the input system package.  
 
-NOTE: We are using Unity’s newer [Input System package](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.5/manual/index.html) for this project (just like we did for roll-a-ball). So if you are trying to do Input.GetKeyDown("space") then you’re using the old system and the following info won’t work. If you want to use the older version, you’ll have to manually map the keys!
+NOTE: This technique uses Unity’s newer [Input System package](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.5/manual/index.html)  (just like roll-a-ball). So if you are trying to do Input.GetKeyDown("space") then you’re using the old system and the following info won’t work. If you want to use the older version, you’ll have to manually map the keys!
 
 Currently the default input system uses “Actions” that are mapped to specific words like “Move” and “Fire”
 
@@ -360,3 +360,156 @@ if(onTriggerEnter != null) onTriggerEnter.Invoke();
 In the updated version, I'll revert back to this more explicit version of a null-check.
 ## Converting to 2D Physics
 
+Adapting the script to [2D physics](https://docs.unity3d.com/Manual/Physics2DReference.html) requires switching out the enter, stay, and exit script to the 2D versions of those functions… which usually just involves add "2D" to the end:
+
+```csharp
+using UnityEngine;
+using UnityEngine.Events;
+
+public class HandleTrigger : MonoBehaviour
+{
+    public UnityEvent onTriggerEnter;
+    public UnityEvent onTriggerStay;
+    public UnityEvent onTriggerExit;
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(onTriggerEnter != null) onTriggerEnter.Invoke();
+    }
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if(onTriggerStay != null) onTriggerEnter.Invoke();
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if(onTriggerExit != null) onTriggerEnter.Invoke();
+    }
+}
+```
+
+The names of the UnityEvent variables don't have to be changed, they can be named whatever you like.
+
+## Make things talk
+
+Let's write a script that uses a trigger to show dialogue when your player is nearby. 
+This works very much the same way that we've used triggers to turn on/off game objects, but (almost) entirely inside of a script.
+
+1. Make a new script called "ShowDialogue". Add in the methods for trigger enter and trigger exit. You can also remove unused namespaces and methods. 
+
+```csharp
+using UnityEngine;
+
+public class ShowDialogue : MonoBehaviour
+{
+
+	void Start()
+	{
+	    
+	}
+	
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        
+    }
+}
+```
+
+2. Add a public GameObject variable for the dialogue that we'll show/hide. This variable belongs to this class and is used by both trigger methods, so it should be declared in the scope of the class, but outside the trigger methods.
+3. In each of the methods, set the active state of this variable to either true or false using the Game Object's *SetActive* method. In the following script, the game object is hidden right at the start, then activated when something enters the trigger area, and hidden again when something leaves the trigger area.
+
+```csharp
+using UnityEngine;
+
+public class ShowDialogue : MonoBehaviour
+{
+    public GameObject dialogueObject;
+
+    void Start()
+    {
+        dialogueObject.SetActive(false);
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        dialogueObject.SetActive(true);
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        dialogueObject.SetActive(false);
+    }
+}
+```
+
+4. Since anything with a collider could turn the dialogue on or off, make the script only respond to the Player by checking the tag of the incoming/outgoing collider.
+
+```csharp
+using UnityEngine;
+
+public class ShowDialogue : MonoBehaviour
+{
+	// game object to show / hide
+    public GameObject dialogueObject;
+
+    void Start()
+    {
+	    // make sure object starts out hidden
+        dialogueObject.SetActive(false);
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+	    // check if collider is attached to player and show object
+        if (collision.gameObject.CompareTag("Player"))
+            dialogueObject.SetActive(true);
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+	    // check if collider is attached to player and hide object
+        if (collision.gameObject.CompareTag("Player"))
+            dialogueObject.SetActive(false);
+    }
+}
+```
+
+5. Save the script and go back to the Unity Editor. 
+6. Find something that could say something to the player and attach a Collider2D (whichever shape you like) and check the "Is Trigger" box. Expand the collider to represent the area where dialogue should appear when the player enters.
+7. Create a new game object to hold the text of the dialogue. In the Hierarchy, right-click and select *3D Object > Text - Text Mesh Pro*. For now we'll use this, but you could make a much more complex hierarchy of game objects that include text boxes, character portraits, sounds, etc.
+8. If the text is not showing, you may need to update the sort order of the text. This can be found in the TextMeshPro-Text component under Extra Settings > Order in Layer. Increasing this number will draw the text in front of other things on the same layer.
+9. Make this new text object a child of the game object you added the collider to. 
+
+![](assets/square-dialogue.png)
+
+10. Add the ShowDialogue script to your talking game object.
+11. Drag the dialogue game object into the dialogueObject slot of the script.
+12. Press play and move your player near the object to see if they talk to you.
+
+If nobody is talking to your player, here is a checklist of things of common problems:
+
+1. No Collider on the Player.
+2. No Rigidbody on the Player.
+3. Player tag is not set to "Player"
+4. Not using 2D versions of colliders and rigidbodies
+5. Dialogue is behind another sprite (check sort order or z-axis)
+6. Errors in the ShowDialogue script or other errors in console.
+
+## Talkin workShop
+
+Take the scene with all of the found sprites and make objects in the scene say things when the player is nearby. You can have characters appear in different areas to say different things. 
+
+![10 Beautiful Postcards](https://img.itch.zone/aW1hZ2UvNDI3ODMxLzIxMzk5MzEucG5n/original/P8LqAl.png)
+
+Some Challenges:
+
+- Add boxes around the text.
+- Have things make sounds instead of showing dialogue
+- Give characters multiple lines of text, each time you walk close to a character they say the next line.
+- Do the above, but instead of re-triggering the next line, let the player press a button to show the next line of text.

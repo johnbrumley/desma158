@@ -20,8 +20,7 @@ Why not write a story, make a comic, or livestream? What are things that games c
 
 *Papers, Please*. Lucas Pope (2013)
 
-Systems? Dynamics? Relationships? Role Playing? Alt Spaces?
-
+Systems and dynamics? Relationships? Choices and  consequences? Role playing? Alt spaces?
 
 ![](assets/newnewwight.png)
 [New New Wight Gallery](https://projects.dma.ucla.edu/exhibitions/thegalleryisnaked/)
