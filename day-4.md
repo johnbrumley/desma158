@@ -78,49 +78,32 @@ A few tips:
 - Use the Rect tool for adjusting position and size of UI elements
 - Keep the Scale of the Rect Transform at (1, 1, 1). To change the size of a UI object use the Width and Height properties
 - Anchor your objects to roughly where they should be and then position. If an object should always be relative to the top-left corner of the screen, anchor it to the top left.
-
 ## Custom fonts
 
 When using TextMeshPro. You’ll have to convert ttf files using the TextMeshPro converter. In general, it’s a good idea to use TextMeshPro UI elements over the legacy UI elements as the quality is much higher.
-  
 
 To convert the font to be used in TextMeshPro:
 
 1. Drag the ttf files into your Unity project. 
-    
 2. Open the Font Asset Creator tool. Window > TextMeshPro > Font Asset Creator
-    
 3. Add the ttf file as the Source Font file. You can adjust any other settings as well.
-    
 4. Click Generate Font Atlas and then click Save to add it into your project.
-    
 5. Now you can use this font asset inside any TextMeshPro UI objects.
-    
 
   
 
 ![](https://lh5.googleusercontent.com/aDLAiWEj9l8WKynbzw_NF6woOGYuBIQqpVtAF8SwmmvR1Pez-_vsRDtlvN2x-g9dWJI8UABKzhts23tQhKb9LvXJ5uFbqZeD6UzcH_cR73KgTBubxxNKyvvRWyf1PNcwaAIxuPemFEyQS93op6MJGA4)
 
-  
-
 ## Adding an overlay image
 
 For Project 1, you aren’t required to build your entire overlay with the UI system. You can have your title and instructions as an image that is displayed when the game loads.
 
-  
-
 1. To get started, drag your image into your Project, You can create a separate folder called “images” or “textures”
-    
 2. Select the image inside of Unity to bring up the import settings in the inspector. Change the texture type to “Sprite (2D and UI)" – the UI system works with sprite images rather than default. 
-    
 3. In the hierarchy of your scene, create a UI Image object. Create > UI > Image
-    
 4. Add your sprite to the Source Image section of the Image component.
-    
 5. Let’s center the image and adjust the size. Click the square in the top left corner of the Rect Transform component to bring up the different anchor presets. Hold Alt + Shift and click the bottom-right box showing blue arrows stretching all the way to the edges.
-    
 6. If you look at the game view, the image should be covering the entire screen. You can adjust the margin by using the Left, Top, Right, Bottom values in the Rect Transform.
-    
 
   
 
@@ -132,40 +115,29 @@ For Project 1, you aren’t required to build your entire overlay with the UI sy
 
 Pressing a key to show/hide the overlay
 
-  
-
 1. Create a new script called ToggleGameObject.cs
-    
 2. Add the input system.
-    
-
   
 
-|   |
-|---|
-|using UnityEngine.InputSystem;|
+```c#
+using UnityEngine.InputSystem; 
+```
 
-  
 
 3. Create a public variable called toggleKey. This will let you select the toggle key in the Inspector with a drop down menu.
-    
-
   
-
-|   |
-|---|
-|public Key toggleKey;|
-
-  
+```c#
+public Key toggleKey;|
+```
 
 4. Add a public GameObject for the thing you want to toggle.
-    
 
-  
-
+```c#
+public GameObject toggleGameObject;
+```
 |   |
 |---|
-|public GameObject toggleGameObject;|
+||
 
   
 
