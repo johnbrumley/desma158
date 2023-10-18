@@ -4,262 +4,6 @@ While I'm re-organizing tutorials, I'll put any stray sections here. Maybe I can
 
 we'll convert any existing "how-to's" into a unitypackage so people can incorporate into their own projects (and see how things are constructed)
 
-# C# From the basics
-
-See this [Brackeys playlist](https://youtube.com/playlist?list=PLPV2KyIb3jR4CtEelGPsmPzlvP7ISPYzR) for a tutorial on just C# without any Unity (though it’s part of a Unity channel) 
-
-Also useful to know that if you’re trying to search for help with C#, you can also search for “csharp” to get more results
-## Default template
-
-```csharp
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class MyEmptyScript : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-}
-```
-
-MyEmptyScript.cs - C# files end with “.cs”
-
-# Classes 
-
-Names and File names / Uniqueness / Namespaces
-
-When you create a new C# script it automatically creates a new class with the same name as the script. It’s important to make sure that the filename and the class name are always the same. If you are copying and pasting code, you might accidentally change your class name and suddenly get a bunch of errors in the console.
-
-In a Unity project every class name must be unique. There can never be more than one class with the same name. If you see errors like:  
-
-```The namespace '<global namespace>' already contains a definition for 'PlayerController'```
-
-Then you’ll need to go in and find the other class that’s also named “PlayerController”
-
-# Namespaces
-
-Namespaces are like containers which assist in organizing classes and avoiding duplicate naming errors. 
-
-At the top of the default script you’re including a few namespaces with the “using” keyword in order to use the classes contained within them. In particular, the UnityEngine namespace allows you to use all of the classes contained within it.
-
-![](https://lh3.googleusercontent.com/vPzRgHSG2GXDDsu9muqATRA0J-eVagcuBnV15TAR4eTSwh2oygctJfsBO63IokSOkt2EQzx1-tqRGoDFKfMUVeB8lw3dkY4O16XDUGnOVmooYDa5VuzwbyuwMcOxzd7rV9FhhWTHganp_GF9WTAI2kM)
-
-[https://docs.unity3d.com/ScriptReference/](https://docs.unity3d.com/ScriptReference/) 
-
-This also helps to reduce typing. Otherwise you would have to reference the namespace and then the class (e.g. UnityEngine.GameObject vs GameObject)
-
-You can define your own namespaces by wrapping your classes with the keyword ‘namespace’ and the name of your namespace.
-
-```csharp
-namespace MyNamespace 
-{
-	class MyClass 
-      {
-          ...
-      }
-}
-```
-
-Likely, you won’t need to make a custom namespace for this class, but it’s pretty useful when collaborating with other people or creating your own plugins to share.
-# Variables
-
-A variable stores some information and the type of the variable specifies what sort of information it can store.
-
-The main types of variables in C# are:
-
-- Int - whole numbers: -1, -4, 0, 199
-- Float - decimals up to 8 digits: 3.14159
-- String - store text: “this is a string”
-- Bool - true or false
-
-Variables are declared using this structure:
-
-```Type Name = Value;```
-
-For example:
-
-```csharp
-int myInteger = 6;
-float myFloat = -5.4f;
-string myString = "hi there";
-```
-
-The naming convention for variables is to start with a non-capital letter with the first letter of each subsequent word capitalized.
-
-```csharp
-// declare a variable without assigning a value
-bool myBool;
-```
-
-You also probably noticed that some variables are also marked as public or private. When a variable is marked as public, it becomes accessible to other classes. Marking a variable as public is also a way to have it show up in the Inspector.
-
-```cs
-public float speed = 0f;
-private int count = 0;
-```
-
-The ‘f’ after a float makes sure that the variable is a float rather than a double.
-
-When using the UnityEngine namespace, there are a lot of classes that can also be declared like variables
-
-```cs
-Transform myTransform;
-Vector3 myPosition;
-Rigidbody rb;
-```
-# Conditionals
-
-Conditionals work in C# in nearly the same way as Processing and p5.js
-
-```cs
-if(numberOfEggs < 10)
-{
-   print("adding eggs");
-} else if(numberOfEggs == 10)
-{
-   print("just enough eggs");
-} else
-{
-   print("too many eggs");
-}
-```
-
-You can also create compound statements with logical operators
-
-**! - not
-&& - and 
-|| - or**
-
-```cs
-bool notscrambled = true;
-if (notscrambled && numberOfEggs > 0)
-{
-    // call scramble egg function
-    ScrambleEggs();
-}
-```
-
-# Collections
-
-Collections store groups of variables 
-## Arrays
-
-Arrays contain a fixed number of items and are declared with:
-
-```cs
-// fill an array with values directly
-type[] nameOfArray = {value, value2, value3 };
-
-// create an empty array to fill in later (maybe with a loop)
-type[] nameOfArray = new type[50];  
-```
-
-To access a member of the array you can reference it by its index, with the first index beginning at zero and the last index at one less than the length of the array.
-
-```cs
-int[] myNumbers = { -1, 2, 6, 0, 6 };
-print(myNumbers[3]); // prints 0
-```
-## Lists
-
-If you don’t know how many values you’ll need, then a list is useful as it can vary in length.
-
-To use a list, make sure you’re including the *System.Collections.Generic* namespace
-
-
-```cs
-// declare a list
-List<type> myList = new List<type>();
-// add something to the list
-myList.Add(value);
-```
-
-
-```cs
-// declare a list
-List<string> niceWords = new List<string>();
-// add something to the list
-niceWords.Add("Nice!");
-// get the number of items in the list
-niceWords.Count
-```
-
-# Loops 
-
-Repeating sections of code.
-
-For loop in C#:
-
-```cs
-for (int i = 0; i < 10; i++)
-{
-    print(i);
-}
-```
-
-This will loop until a conditional is met. In the above case, the variable ‘i’ will increment by one each loop until it is no longer less than 10.
-
-Loops are great for working with collections:
-
-```cs
-float[] lotsOfFloats = new float[1200];
-// fill the array with fives
-for (int i = 0; i < lotsOfFloats.Length; i++)
-{
-    lotsOfFloats[i] = 5f;
-}
-```
-
-When you want to iterate over an entire collection, use a foreach loop:
-
-```cs
-// calculate the average value
-float total = 0;
-foreach(float myFloat in lotsOfFloats)
-{
-    total += myFloat;
-}
-float average = total / lotsOfFloats.Length;
-```
-
-While loop in C#:
-```cs
-// infinite loop
-while (true)
-{
-
-}
-```
-  
-The loop will continue until the conditional statement becomes false.
-
-```cs
-//check if button is still pressed before each iteration
-while (buttonIsPressed)
-{
-    buttonIsPressed = IsButtonPressed();
-}
-```
-
-A bit less common is the Do loop, which evaluates the Boolean expression at the end of each iteration:
-
-```cs
-do
-{
-	buttonIsPressed = IsButtonPressed();
-	// check if the button is pressed at the end of each iteration
-} while (buttonIsPressed);
-```
 
 [To link](https://docs.google.com/document/d/1BLaqdKs6isLeA-wHElG60bSq66RHTwGTfL3u92XHlbQ/edit#heading=h.5higyay74nze)
 
@@ -315,9 +59,16 @@ And even more parameters:
 
   
 
-|   |
-|---|
-|public string SayHello(string name, int numberOfTimes)  <br>{  <br>        for(int i = 0; i < numberOfTimes; i++)  <br>        {  <br>            print("Hello" + name);  <br>        }  <br>        return "said hello " + numberOfTimes + "times";  <br>}|
+```csharp
+public string SayHello(string name, int numberOfTimes)  
+{  
+for(int i = 0; i < numberOfTimes; i++)  
+{  
+print("Hello" + name);  
+}  
+return "said hello " + numberOfTimes + "times";  
+}
+```
 
   
 
@@ -325,9 +76,14 @@ Call the method by its name and pass in any arguments, the return value can be u
 
   
 
-|   |
-|---|
-|// storing the return value in a variable  <br>string result = SayHello("Duane", 500);  <br>print(result);  <br>  <br>// or using it directly  <br>print(SayHello("Duane", 500));|
+```csharp
+// storing the return value in a variable  
+string result = SayHello("Duane", 500);  
+print(result);  
+
+// or using it directly  
+print(SayHello("Duane", 500));|
+```
 
   
   
@@ -342,90 +98,80 @@ Call the method by its name and pass in any arguments, the return value can be u
 
 Currently, the way we’ve been accessing other objects and components in code was to make variables public, so that the variable would appear in the inspector and the component dragged to the empty slot.
 
-  
-
-|   |
-|---|
-|public GameObject go;  <br>public Rigidbody rb;  <br>public Camera cam; // note: for the main camera use Camera.main  <br>public Light lt;  <br>public AudioSource audioSource; // can't use 'as'  <br>public ParticleSystem ps;|
-
-  
-
+```csharp
+public GameObject go;  
+public Rigidbody rb;  
+public Camera cam; // note: for the main camera use Camera.main  
+public Light lt;  
+public AudioSource audioSource; // can't use 'as'  
+public ParticleSystem ps;
+```
 ### GetComponent
 
-When the component is on the same GameObject as the script, or the component is on another GameObject that the script has a reference to. You can use the GetComponent which is a method of the GameObject class.
+When a component that you need is on the same GameObject as your script (or the component is on another GameObject that the script has a reference to), you can use *GetComponent* to get and store the needed component.
 
-  
-
+```csharp
 Type name = GetComponent<Type>();
-
-  
+```
 
 For example if you wanted to get the Rigidbody on the same game object as your script:
 
-  
 
-|   |
-|---|
-|Rigidbody rb = GetComponent<Rigidbody>();|
-
-  
+```csharp
+Rigidbody rb = GetComponent<Rigidbody>();
+```
 
 Or, if you have a reference to the game object you can access any of its components in the same way
 
-  
-
-|   |
-|---|
-|public GameObject go;  <br>void Start()  <br>{  <br>    Renderer renderer = go.GetComponent<Renderer>();  <br>}|
-
-  
+```csharp
+public GameObject go;
+void Start()
+{ 
+	Renderer renderer = go.GetComponent<Renderer>(); 
+}
+```
 
 There are other variants which return multiple components as an array
 
-  
-
-|   |
-|---|
-|AudioSource[] sources = GetComponentsInChildren<AudioSource>();  <br>foreach (AudioSource source in sources)  <br>{  <br>        source.mute = true;  <br>}|
-
-  
+```csharp
+AudioSource[] sources = GetComponentsInChildren<AudioSource>(); 
+foreach (AudioSource source in sources)  
+{  
+	source.mute = true; 
+}
+```
 
 And a version to be used in conjunction with a conditional statement
 
-  
+```csharp
+if (TryGetComponent(out HingeJoint hinge)) 
+{  
+	hinge.useSpring = false;  
+}
+```
 
-|   |
-|---|
-|if (TryGetComponent(out HingeJoint hinge))  <br>{  <br>        hinge.useSpring = false;  <br>}|
-
-  
 
 ### FindGameObjectsWithTag
 
-  
 
 There is another useful method when looking for tagged objects called FindGameObjectsWithTag which is used like this
 
-  
-
+```csharp
 GameObject[] name = FindGameObjectsWithTag(“myTagName”); 
-
-  
+```
 
 These can be combined to quickly change a lot of things in your scene
 
-  
-
-|   |
-|---|
-|GameObject[] borts = GameObject.FindGameObjectsWithTag("bort");  <br>foreach (GameObject bort in borts)  <br>{  <br>        bort.GetComponent<Transform>().LookAt(Vector3.zero);  <br>}|
-
-  
+```csharp
+GameObject[] borts = GameObject.FindGameObjectsWithTag("bort");  
+foreach (GameObject bort in borts)  
+{  
+bort.GetComponent<Transform>().LookAt(Vector3.zero);  
+}
+```
 
 This tells any object tagged as “bort” to look at the origin (0,0,0) of the scene.
-
   
-
 All the methods in the GameObject class here:
 
 [https://docs.unity3d.com/ScriptReference/GameObject.html](https://docs.unity3d.com/ScriptReference/GameObject.html)
@@ -434,13 +180,14 @@ All the methods in the GameObject class here:
 
 A third option is to search for all loaded objects of a specific type in the scene. This is not the fastest operation, so it’s not the best idea to call it every frame. 
 
-  
-
-|   |
-|---|
-|Rotator[] rotators = FindObjectsOfType<Rotator>();  <br>// set speed of all rotators  <br>foreach (Rotator rotator in rotators)  <br>{  <br>        rotator.speed = 10f;  <br>}|
-
-  
+```csharp
+Rotator[] rotators = FindObjectsOfType<Rotator>();  
+// set speed of all rotators  
+foreach (Rotator rotator in rotators)  
+{  
+	rotator.speed = 10f;  
+}
+```
 
 Try doing this in your own Roll-a-ball scene. You’ll need to modify the Rotator script in order for this to work.
 
@@ -450,33 +197,60 @@ I’ve already given away how this might work in a few of the examples above, bu
 
   
 
-|   |
-|---|
-|GameObject[] iceCubes;  <br>GameObject[] fireCubes;  <br>  <br>void Start()  <br>{  <br>    iceCubes = GameObject.FindGameObjectsWithTag("ice");  <br>    fireCubes = GameObject.FindGameObjectsWithTag("fire");  <br>}  <br>  <br>void Update()  <br>{  <br>    foreach(var ice in iceCubes)  <br>    {  <br>        float valueAmount = Mathf.PingPong(Time.time, 1f);  <br>        Color iceColor = Color.HSVToRGB(0.7f, 1f, valueAmount);  <br>        ice.GetComponent<Renderer>().material.SetColor("_BaseColor", iceColor);  <br>    }  <br>  <br>    foreach(var fire in fireCubes)  <br>    {  <br>        float valueAmount = Mathf.Repeat(Time.time, 1f);  <br>        Color iceColor = Color.HSVToRGB(0f, 1f, valueAmount);  <br>        fire.GetComponent<Renderer>().material.SetColor("_BaseColor", iceColor);  <br>    }  <br>}|
+```csharp
+GameObject[] iceCubes;  
+GameObject[] fireCubes;  
+
+void Start()  
+{  
+	iceCubes = GameObject.FindGameObjectsWithTag("ice");  
+	fireCubes = GameObject.FindGameObjectsWithTag("fire");  
+}  
+
+void Update()  
+{  
+	foreach(var ice in iceCubes)  
+	{  
+		float valueAmount = Mathf.PingPong(Time.time, 1f);  
+		Color iceColor = Color.HSVToRGB(0.7f, 1f, valueAmount);  
+		ice.GetComponent<Renderer>().material.SetColor("_BaseColor", iceColor);  
+	}  
+	foreach(var fire in fireCubes)  
+	{  
+		float valueAmount = Mathf.Repeat(Time.time, 1f);  
+		Color iceColor = Color.HSVToRGB(0f, 1f, valueAmount);  
+		fire.GetComponent<Renderer>().material.SetColor("_BaseColor", iceColor);  
+	}  
+}
+```
 
   
 
 More likely, it’s better to have the color changing scripts on the objects themselves. But this script covers a lot of new ground on ways to modify things including:
 
 - The [PingPong](https://docs.unity3d.com/ScriptReference/Mathf.PingPong.html) and [Repeat](https://docs.unity3d.com/ScriptReference/Mathf.Repeat.html) methods of the [Mathf](https://docs.unity3d.com/ScriptReference/Mathf.html) class
-    
 - Creating colors in scripts with the [Color](https://docs.unity3d.com/ScriptReference/Color.html) class and converting HSV to RGB
-    
 - How to access and set the color of a material with [SetColor](https://docs.unity3d.com/ScriptReference/Material.SetColor.html) (note: for URP use “_BaseColor” rather than “_Color” )
-    
-
-  
 
 In both of the cases above, Time.time was used to modify the value over time. Time.time can also be passed into the offset of a Material to create a scrolling texture
 
-  
+```csharp
+using UnityEngine;  
+public class SlideTexture : MonoBehaviour  
+{  
+	Material material;  
+	void Start()  
+	{  
+		material = GetComponent<Renderer>().material;  
+	}  
+	void Update()  
+	{  
+		Vector2 newOffset = new Vector2(Time.time, Time.time);  
+		material.SetTextureOffset("_BaseMap", newOffset);  
+	}  
+}
+```
 
-|   |
-|---|
-|using UnityEngine;  <br>public class SlideTexture : MonoBehaviour  <br>{  <br>    Material material;  <br>    void Start()  <br>    {  <br>        material = GetComponent<Renderer>().material;  <br>    }  <br>    void Update()  <br>    {  <br>        Vector2 newOffset = new Vector2(Time.time, Time.time);  <br>        material.SetTextureOffset("_BaseMap", newOffset);  <br>    }  <br>}|
-
-  
-  
   
 
 ![](https://lh3.googleusercontent.com/LTbGx8moH5WBSUvK-ZmeccD24BEzJKxOXcZ7aXxM87Fgp3cWPA5MaynBJPLEire94RS1aMT0bPORZLKqElShgbhjfH-nm8GEGGHVI41MSs8tcHvFm1D8sCeL42YqMNWVpgQnFnjFGd5nw8ytWAwkRI0)
@@ -522,3 +296,228 @@ public class ReloadScene : MonoBehaviour
 ```
 
 You can load a scene from any script as long as you’ve imported the Scene Manager. For instance, if you’ve detected that the player has fallen off the playfield or gone out of bounds, you can immediately reload the scene from within the Player Controller script to reset the game.
+
+
+# Methods and UnityEvents
+
+[Check the document from the previous class for the section on methods](https://docs.google.com/document/d/1pObyXIoZC0qpyYcBhvbr6CFH0ElAPucznw0NtvaezOk/edit#heading=h.3fd8aagxob6a)
+
+In C#, events allow a class to notify other parts of the program when something has happened (see also [observer pattern](https://en.wikipedia.org/wiki/Observer_pattern)). The “publisher” of the event is the class that signals that something happened, and any “subscribers” to the event will be triggered.
+
+C# has its own [event system](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/events/), but Unity has an event system called [UnityEvents](https://docs.unity3d.com/Manual/UnityEvents.html) that integrates  with the Inspector and is a bit more friendly to use. In fact, most of the UI system already makes use of UnityEvents.  
+
+To create a UnityEvent, add the UnityEngine.Events namespace and then declare the UnityEvent as public:
+
+```csharp
+using UnityEngine;
+using UnityEngine.Events;
+public class EventTesting : MonoBehaviour
+{
+	public UnityEvent myBigEvent;
+	void Update()
+	{
+	
+	}
+}
+```
+
+When you save the script and attach it to a GameObject, you’ll see a place to add subscribers to your event.
+  
+
+![](https://lh4.googleusercontent.com/HXUxvPuwgik5of1Fe6zgQFCfcvhbjLv17ed0A2cyc8nsZoOX-beOAJeBkg4Yj0U80StgIfk-zpLTwUrFwKwn0t-eP3l5MCxsI3iOgrKIMFP37SneOa_3_jlmAdN9xSzKB-x3OJaPpSPZFsrNMdBYMkI)
+
+  
+Pressing the ‘+’ button will add a new subscriber to the list, but the slot will be empty. Drag in a GameObject to the list. The function dropdown will now display all the components that have functions which can be called when the event fires.
+
+![](https://lh4.googleusercontent.com/vBBsd-0IIoVjVAwvVDNaF7a_CFtd1LiJ-a80n14N7Y9TGiVHsVXjz28fvo2wI54ug6zkMSY534XMXNqTJFFXkCVaygEg0l2R8BsgaenpUyGfSSDYe4AB_fV8hSSND7w8XpgqHGl_zNQrsli56B837Rs)
+
+
+In this case, you could use the event to call the SetActive function on the GameObject in order to show or hide it when invoking the event. 
+
+
+![](https://lh4.googleusercontent.com/WlclFa_G7wfuQQ4hzPaJsRx6U-lodV9MBlsS3mPaezY0bVOrHJkAhSgiVg4LbjkwPrDatGDzAomKmwOWaYjfMPnjk5t84PycT6L6nnAjZIOMK6Vh3usTeRQpcGcU-D7leM_E2OnneeQ3nInIanwQ92Y)
+
+
+The checkbox underneath controls whether set active is sent true (checked) or false (unchecked)
+
+The event still isn’t doing anything though. To trigger the event, call the UnityEvent’s Invoke method:
+
+```csharp
+using UnityEngine;  
+using UnityEngine.Events;  
+using UnityEngine.InputSystem;  
+
+public class EventTesting : MonoBehaviour  
+{  
+	public UnityEvent myBigEvent;  
+	void Update()  
+	{  
+		// use the input system to listen for the spacebar  
+		if(Keyboard.current.spaceKey.wasPressedThisFrame)  
+		{  
+			myBigEvent.Invoke();  
+		}  
+	}  
+}
+```
+
+When playing the scene, pressing the spacebar will cause the Cube to appear (if it was not active in the scene yet)
+
+You might want something more sophisticated to happen when an event occurs. You can call any methods that are set to public as long as they match the signature of the event. The default UnityEvent does not send any values, so any methods that are called should have no parameters.
+
+Attach this script, called SubscriberTesting.cs, to an empty GameObject named “subscriber”: 
+
+```csharp
+using UnityEngine;  
+public class SubscriberTesting : MonoBehaviour  {      
+	public void ShutdownComputer()  
+	{  
+		print("shutting down game");  
+		// how to close the program  
+		Application.Quit();  
+	}  
+}
+```
+
+Select the GameObject with the event publisher script and use the ‘+’ button to add another subscriber to the event. Then drag the GameObject to the empty slot.
+
+![](https://lh4.googleusercontent.com/aMypx9LVX5O_2x2ONH7RERXypj9hWSmDBtdpGa5u2u2ksoF6d0RoAjyXMapiwWxPBOa3NOsV1Mj6jKe_-ORVzdSS7hlD0owNTMQZn3Z1qt37cNTJVdJ_85HVJsJGs5jAE_J_yHa09l2KLaSxpKQqz9c)
+
+
+Now, when pressing the spacebar, the cube will appear and the ShutdownComputer() method will be called. Fortunately Application.Quit() only works in the build of the game.
+
+By default, UI Buttons have an OnClick event that you can subscribe to. For instance, if you wanted to reset the game using an on-screen button, you could write public methods with the reset game code. Then connect the script to the OnClick event by dragging the component onto the UI reset button.
+# More UI System
+
+[official Unity book](https://resources.unity.com/games/user-interface-design-and-implementation-in-unity) for a thorough review of the Unity UI system. For a shorter overview of the components check out the [manual page](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIBasicLayout.html).
+
+![](https://lh5.googleusercontent.com/5jS-h8b9Kpt86-0V5fDiloyGQ_XqE_jCmJLmrurDT7oLsgLtPvai7fpIoXvfGAY5emzJsNE1xXXJwt-EVt9A3EzQFRp3sK8kLAmopu-gdC-EATKWN9yZ5D1dRoKqqNuWoXwpgTJntpLSP436RSrVWvc)
+
+1. Rendering order 
+2. Turning off raycast target for non-interactable things
+3. Interaction, triggering Events (See below)
+# UnityEvents and UI
+
+In programming, events allow one part of a program to notify other parts of the program when something has happened. You can define an event and add “subscribers” which will be notified when that event is invoked.
+
+![](https://lh5.googleusercontent.com/-tpAU-bRuM-xQjD2hp1kNJgP_FQ4_0sjqJPre1KdZxe49EyI0ypYVO99lA9AgofmygD3Fz_-Eh5yycLBaXU3amX0oDwiYF5MzqnvTjmsLcdPgTpOHqJ-CNwlVO27RxJeV74e5L4JhtuSLNr4YZiJCmQ)
+
+Let’s build a lightswitch:
+
+1. Create a UI Button to toggle the lights on or off (you could also create a Toggle)
+2. Create a Light
+3. Connect the light to the button’s OnClick event
+4. Press play and see if it works!
+
+Have this button turn other things on or off. 
+
+This technique only works for connecting to components that expose an event in the inspector. You can create events in your own scripts that can also create the same interface in the inspector.
+
+This is a small script that triggers an event called OffEvent after two seconds:
+
+```csharp
+using UnityEngine;
+using UnityEngine.Events;
+
+public class EventTesting : MonoBehaviour
+{
+    public UnityEvent OffEvent;
+
+    void Update()
+    {
+        if(Time.time > 2)
+        {
+            OffEvent.Invoke();
+        }
+    }
+}
+```
+
+Try controlling the light with this script instead of the Button. You can also connect to public methods inside of your other scripts.  
+
+Note: this script has to be attached to the same game object as a Light component.
+
+```csharp
+using UnityEngine;
+
+public class ChangeLightColor : MonoBehaviour
+{
+    public void ChangeColor()
+    {
+        GetComponent<Light>().color = Color.green;
+    }
+}
+```
+
+# Arcade Things, Old Project 2
+
+Play some [classic 2D arcade games](https://classes.dma.ucla.edu/Spring23/158/?page_id=151) and consider one that you would like to remake
+# Let’s play some arcade games 
+
+Search through the internet archive’s [internet arcade](https://archive.org/details/internetarcade?tab=about). I’ve also brought in an atari emulator for another set of games.
+
+As you’re testing out different games, what are your initial impressions? What are similarities between the games? How long is the gameplay loop? 
+# Reading Material
+
+  
+![](https://lh6.googleusercontent.com/If83rrqLEE11N91-tZgIATLhpEQiqur_XElizVBMo3RzF80oLbxP_tQbLQDI-ZWMY4rDFDTUsIF0Wk-z5UPnQhTzBktZQSaHya-HHY-vVG4IxrTg2DNCjbAXp-cuyKGLuzAWcW9uprqXvciU9TOZonA)
+
+You can read more about the development of arcades in this book:  
+  
+[Coin-operated Americans: Rebooting Boyhood at the Video Game Arcade](https://drive.google.com/file/d/1flXi70BMFY6IZFfmwa4JCK5rn0HeY8g6/view?usp=share_link)
+
+The first part of Chapter 1 (pp 19-26 of the PDF) provides a nice introduction to arcade culture in the 70s/80s. 
+
+We’ll talk more about arcades next Tuesday.
+
+EXTRA CREDIT: Read the whole chapter and answer [a few questions on this form](https://docs.google.com/forms/d/e/1FAIpQLSdJADTcUzpFJTNJvHeIjAPWUlRsWRuO18xbYcn74RSr3dFJ-Q/viewform?usp=sf_link)
+
+
+# Prototyping / Gray boxing / White boxing (from old version of Day 6)
+
+Check out the [level design book](https://book.leveldesignbook.com/) which contains much more thorough dives into these concepts. 
+
+![](https://lh4.googleusercontent.com/sF8YEpDvs7smkncnXwYV-nmZ5HliR7c4CePWcETY0HYEzZMaRPfaV4hRzMBRqCWCAJyxbC-Lm3Il3ExVAUQM9NMtN84quGXsClr_QWDoB--jIYyl36pE3kiDsTRvDeF5oH6yqbDd7EpMaQtYuUoqRlU)
+
+[Neon White](https://www.gameinformer.com/feature/2022/11/25/how-a-neon-white-level-is-made)
+
+Now that you know a bit about 2D in Unity, and you’ve had a taste of a few arcade games. You’re ready to start prototyping and considering how you’ll put together your game. 
+
+When developing a level or game mechanic, it’s useful to separate the “art” (modeling, lighting, texturing, etc.) from the movement, trajectory, and feel of the game. A common technique in game development is known as Gray boxing (White boxing) or blocking out involves this process. 
+
+![](https://lh5.googleusercontent.com/J1Yq-cvwAAlvtkR2WFJrGaqC_Ud6Zgo_CRH76vUeLzh4crrqs1i2Lh1lwhMpZ8eiE-g5tqfdMvLjbyEmClNf07ZFKderYzcHEyoLeEiMgChodJBewCRaigFqTqDdLUAM9T7t3DsOABgiMpZn9lszY08)
+
+[https://book.leveldesignbook.com/process/env-art](https://book.leveldesignbook.com/process/env-art) 
+
+You can compare this idea to adding placeholder text and images for getting a sense of page layout. The content doesn’t need to exist before you can consider things like navigation, composition, or interaction.
+
+Here’s the process:
+
+1. Sketch layout
+2. Add ground plane, scale figures, walls
+3. Playtest
+4. Diverge, iterate, and playtest again
+5. Repeat step 4 until done
+
+(See here for [breakdowns](https://book.leveldesignbook.com/process/blockout#how-to-blockout) of each step )
+
+The design doc portion of Project 1 asked you to do a very informal version of the first step. For Project 2 and Project 3. We will focus on building out the prototypes of the projects before integrating the art assets. 
+
+![](https://lh5.googleusercontent.com/kZJbt3qJV8NG-pgClRaIRxmPRp9_7_8TpX6Rb6Gx_WSFUlpTbQJYwTuuL3VwxXzkndZyhZfKK3LAMtoqqzp1MaAn5HeLmgeBXbeqfI_G_hfMSWTps8HPBAPdLVqIaqc46uCFG8VTDN8UXliltmvfAGo)
+
+
+Once you’ve decided on the arcade game you would like to remake, the next step is to try and create the game using just basic shapes with simple colors. This way you can focus on solving all the design issues related to interaction and feel.
+
+
+# A bit more arcade cabinet artwork
+
+![](https://lh6.googleusercontent.com/yt0XFgjqOw3T11fpvfdL3g0stA183OTNzM5X9MgbnNAH3mVU0-PSYT_AaxNvEVKxAvDNrbplzgyo_At92W-No_D4uaCg4WVxMRtCdkelJkiz8UGZGkcSkT18A25Eul4JceasLgEmcq_vSPZak5_SzgA)
+
+  
+
+![](https://lh5.googleusercontent.com/1xWZIj5GK5eyv2WqM3KRRgr6GrC-0_RsxLxp1UBx3Q0wngjwUsS02uP5GeaPs4y1AMttV9CYy_2QzPTBLWLV1ttIzxmYUztoC8EWEAQZ27CSZfY8nAPBf02kEfn_ysRMNgO_HV2hQ26lsJHT_jiaEf0)
+
+![](https://lh6.googleusercontent.com/C15BsnmCiw3NK2nqNy5fMLf-a9EktDCaSWc2qS0rn_D2w9JY0Jt6yQMGp_Q1O9_fgSKY9vPPFmZOZvBMcx5d9JHURKAio-NnLy33fuSXlDT7C-WBu0FnAsUiCxV6ek-z7hxCW-ao7mKU-iPd9K9qrsE)
+
+![](https://lh4.googleusercontent.com/JoMH78oM_vGvnoqpew1oQBXBPVGaisdYL5fTPnpzEpchhvUkIgUBs7D56hGb1jInUiI_ZlWjvx8j0vvXjEY__IMh7GSl6gBhKA4tMcXtEaSecBuIebr563Gmc9lex_A_uF_7T20i8goqiY1PdRSL5UA)
+

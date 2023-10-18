@@ -24,7 +24,7 @@ Lighting and Materials, Rigidbody Component / Physics, Vectors, Colliders / Trig
 
 While the tutorial only introduces each one, we'll eventually spend more time covering each one in depth.
 
-# How can we enhance this game?
+# How can we enhance this game
 
 Think about all the different components of the demo … try and make a sentence that encapsulates the game
 .
@@ -91,7 +91,7 @@ Think about all the different components of the demo … try and make a sentence
 
 ….
 
-# A ball that rolls around in a level and collects items.
+# A ball that rolls around in a level and collects items
 
 ![](https://www.ignant.com/wp-content/uploads/2019/02/ignant-art-walter-de-maria-012-1440x955.png)
 Walter De Maria, *Time / Timeless / No Time* (2004)
@@ -192,7 +192,7 @@ _Super Mario Bros._ (1985) planning sheet (Source: [Nintendo](https://www.yout
 
 If you need to communicate your level to others in a team, you'll need to be more detailed and clear about your level. If it's just you, then your layout can be a sketch, scribble, or anything that will aid in planning the space.
 
-# Environmental + Expressivity
+# Environmental Expressivity
 
 Or … level design. When thinking about a player's movement through your level, at both micro and macro scales, there are features to consider about the environment that can exist from intrinsic to the concept of the game to helping a player know where to go next.
 
@@ -270,7 +270,7 @@ A call from afar, music in the distance, something’s on the other side of the 
 
 *[Little Party](https://turnfollow.itch.io/littleparty) (2015)* 
 
-# **Climbing, falling, descending, flying, etc**. 
+## **Climbing, falling, descending, flying, etc**
 Where are you taking us? 
 
 Are we going down into the underworld or climbing towards heaven? 
@@ -294,7 +294,7 @@ Levels of games, virtual environments, can become part of our spatial memories.
 
 More abstractly, we all have a sense of spatial memory relating to software that isn’t necessarily meant for gaming.
 
-# Can anyone name this map? 
+# Can anyone name this map
 
 ![](https://lh6.googleusercontent.com/rbp56x2gbPslLqGfUQsE8a45pwYpq-EVD0JJjBh3y53gvWRkokXFGbuzNtYkan2dg4WuiI_xp7V76jQtQSgx_BmN0M3S6mJFCpr3rOflajiJWrp369t2F-2xQWAQXZGM5yJQF4MWzqmuLI9igjdZr_g)
 
@@ -358,7 +358,7 @@ This doesn't have to be the world you use in Project 1, but if you already have 
 > 
 >- Nabokov, *Pnin*
 
-# Optional reading(s):
+# Optional reading
 
 [Anna Anthropy’s Level Design Lessons](https://drive.google.com/file/d/14EuDZDhZcKhtsR3nvTIGMG25DE1niqun/view?usp=share_link) - level design in a few classical 8-bit era games
 
@@ -366,7 +366,7 @@ This doesn't have to be the world you use in Project 1, but if you already have 
 
 Now that you've sketched out an idea for a level. Let's try and build a very low-fidelity version of that level using simple shapes, also known as Grayboxing, within Unity.
 
-# Prototyping / Gray boxing / Blocking out
+# Prototyping, Gray boxing, Blocking out
 
 Check out the [level design book](https://book.leveldesignbook.com/) which contains much more thorough dives into these concepts. 
 
@@ -381,7 +381,7 @@ When developing a level or game mechanic, it’s useful to separate the “art�
 
 You can compare this idea to wireframing a layout and using placeholder text and images. The content doesn’t need to exist before you can consider things like navigation, composition, or interaction.
 
-# Here’s the process:
+# Here’s the process
 
 1. Sketch layout (Done!)
 2. Add ground plane, scale figures, walls (What we're about to do)
@@ -397,7 +397,7 @@ Unity Editor interface, we'll mainly be working in the Hierarchy, Scene, and Ins
 
 ![](https://lh3.googleusercontent.com/oiRCFcn_j7FPdPkHzJekG1GrSkXom3y-ahdUyrQn6SqOQIwPNwyXO7tOPYgAJRBohhLzGFE3KKJysh4zcmU3mXbyySeWjXit0xMK_jUvMiWZVRi6Kj6nfOwAu-AeAW39ke-kFWgNFCv-sXFWdL3WtXw)
 
-# Navigating in Scene view (and a bit more about transform tools, snapping, grid, etc.)
+# Navigating in Scene view
 
 Positioning / Rotating / Scaling
 
@@ -437,6 +437,7 @@ Hold Ctrl + shift while dragging the center of the object
 Hold ‘v’ and select and drag a vertex of an object
 
 ![](https://lh4.googleusercontent.com/_LpScfkbui9jLyzM9otGUr35D1lnyu5MffSDKu0i-KH1uI5s1o_Ol3-qg7M99249u4rvJkq9gpiLZms_uh_14rE2uF1B4erC4D1sC4kZGA9N-OY5tSISMCbqG0CxwQTnOSABRp-dNCWW9kYv8h8RJqI)
+
 You can combine vertex and surface snapping by holding "v + ctrl + shift"
 
 
@@ -448,7 +449,8 @@ Unity Probuilder: [https://unity.com/features/probuilder](https://unity.com/feat
 This tool adds a bit more “modeling” functionality to the Unity Editor and comes with lots of default level objects like doors, stairs, arches, etc. and more tools for editing shapes.
 
 ![](assets/Pasted%20image%2020231001190316.png)
-# Installing ProBuilder (optional) 
+# Installing ProBuilder
+(optional)
 ## Window > Package Manager > (Packages: Unity Registry) > ProBuilder
 
 ![](assets/img/install-probuilder.gif)
@@ -475,17 +477,17 @@ The Level Design Book (still a work in progress, but highly useful) has some ver
 From the book:
 
 When blocking out, consider these aspects:
-- [**Massing**](/process/blockout/massing) is the general sense of volume and weight conveyed by the shapes.
+- [**Massing**](https://book.leveldesignbook.com/process/blockout/massing) is the general sense of volume and weight conveyed by the shapes.
     - _Is this structure thick / heavy, or thin / light? What kind of place is this?_
-    - [Landscapes](/process/blockout/massing/landscape) need special consideration.
-    - [Composition](/process/blockout/massing/composition) is currently over-emphasized in level design culture today.
-- [**Metrics**](/process/blockout/metrics) are the general scale, dimensions, and proportions of the level.
+    - [Landscapes](https://book.leveldesignbook.com/process/blockout/massing/landscape) need special consideration.
+    - [Composition](https://book.leveldesignbook.com/process/blockout/massing/composition) is currently over-emphasized in level design culture today.
+- [**Metrics**](https://book.leveldesignbook.com/process/blockout/metrics) are the general scale, dimensions, and proportions of the level.
     - _Is this area too big or small? Can the player fit in this room?_
-    - examples of useful measurements: [Doom metrics](/process/blockout/metrics/doom), [Quake metrics](/process/blockout/metrics/quake)
-- [**Wayfinding**](/process/blockout/wayfinding) is the player's navigation process for learning the map structure.
-    - _How to help the player find the_ [_critical path_](/process/layout/flow#critical-path) _/ level exit? Does the player feel too lost?_
-- [**Playtesting**](/process/blockout/playtesting) is when you run an experiment to see if the level meets its design goals.
-    - _Can most players complete the level? Do the_ [_encounters_](/process/combat/encounter) _work? Is it_ [_balanced_](/process/combat/balance)_?_
+    - examples of useful measurements: [Doom metrics](https://book.leveldesignbook.com/process/blockout/metrics/doom), [Quake metrics](https://book.leveldesignbook.com/process/blockout/metrics/quake)
+- [**Wayfinding**](https://book.leveldesignbook.com/process/blockout/wayfinding) is the player's navigation process for learning the map structure.
+    - _How to help the player find the_ [_critical path_](https://book.leveldesignbook.com/process/layout/flow#critical-path) _/ level exit? Does the player feel too lost?_
+- [**Playtesting**](https://book.leveldesignbook.com/process/blockout/playtesting) is when you run an experiment to see if the level meets its design goals.
+    - _Can most players complete the level? Do the_ [_encounters_](https://book.leveldesignbook.com/process/combat/encounter) _work? Is it_ [_balanced_](https://book.leveldesignbook.com/process/combat/balance)_?_
     - Playtesting is really important. This is the whole point of making a blockout.
 
 # Add your player to the level to test
@@ -530,10 +532,10 @@ After you've tried out your level and made some changes, ask another person to p
 ## Project 1, Part 2 (due Next Class)
 [Part 2 of Project 1 is due this Thursday](https://johnbrumley.github.io/desma158/project-1.html#2-beyond-roll-a-ball) so create some more sketches (you can use the one we did in class as one of the sketches). Also include ideas for possible title cards for each sketch.
 
-## Homeplay (due Next Tuesday 10/12)
+## Homeplay (due Next Tuesday 10/10)
 As additional research on ways to adapt roll-a-ball, you'll be signing up in *Groups of 3* to play a game (or games) on [this list](https://docs.google.com/spreadsheets/d/1pOxYtalckwi_PykkRneQMNX_UkxH2TdFm132yvbRygg/edit?usp=sharing) for at least 1-2 hours. For games that cost money, we've set up a computer/console in the Print Lab lounge where you can access them. 
 
-Next Tuesday (10/12), your group will give a 5-minute Let's Play presentation to talk about how the game's themes, ideas, structure, narrative, mechanics, flow, and ideology fits into what we've been discussing in class, and show a part of the game that is especially interesting.
+Next Tuesday (10/10), your group will give a 5-minute Let's Play presentation to talk about how the game's themes, ideas, structure, narrative, mechanics, flow, and/or ideology fits into what we've been discussing in class, and show a part of the game that is especially interesting.
 
 The presentation can be done *live or using recorded gameplay with live commentary* if difficult to isolate the section of the game you want to show. I recommend screen recording the entire session, [OBS](https://obsproject.com/) is a very lightweight recorder, so you don't have to worry about missing any moments. If you have more than one game, pick one to show, but plan to talk a bit about both.
 

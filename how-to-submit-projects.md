@@ -3,10 +3,10 @@ layout: page
 title: How To Submit Your Project
 ---
 
-- [Checklist](#submission%20checklist)
-- [Documentation](#visual%20documentation)
-- [Making a Build](#making%20a%20build)
-- [Exporting Packages](#exporting%20unity%20packages)
+- [Checklist](how-to-submit-projects.md#submission-checklist)
+- [Documentation](how-to-submit-projects.md#visual-documentation)
+- [Making a Build](how-to-submit-projects.md#making-a-build)
+- [Exporting Packages](how-to-submit-projects.md#exporting-unity-packages)
 
 ### IMPORTANT NOTES
 
@@ -18,20 +18,16 @@ Build early and play test your builds. Some bugs will only reveal themselves in 
 
 You should include the following documentation of your project:
 
-1. Visual documentation
-    
-    - At least ONE screen recording of gameplay. Minimum 60 seconds, but should be long enough to show off all the elements of your game.
-    
-    - At least TWO (1920×1080 minimum) screenshots of your project
-    - [optional] Animated gif of your project in motion.
-2. Project description and motivation written in complete sentences (not just bullet points)
-    - A brief description of your project adapted from your design document.
-    - Include a bit about _why_ you made the game
+1. Visual documentation:
+	- Recording of gameplay. Roughly 60 seconds, long enough to demonstrate how your game is played (1920x1080 / mp4 / h.264)  
+	- Two stills from your project (1920×1080)
+1. Text description that would be useful for someone viewing your project for the first time.
+    - What is this game about?
     - The basic premise of the game, introducing characters, motivations, challenges, things to contemplate while playing.
     - How to play the game, what buttons to press, interaction instructions
-3. Project files
-    - A [build for Windows](https://classes.dma.ucla.edu/Winter23/158/index.php/how-to-submit-projects/#building)
-    - [Exported Unity package](https://classes.dma.ucla.edu/Winter23/158/index.php/how-to-submit-projects/#exporting)
+2. Project files
+    - A [build for Windows](how-to-submit-projects.md#making-a-build)
+    - [Exported Unity package](how-to-submit-projects.md#exporting-unity-packages)
 
 # Visual Documentation
 
@@ -46,10 +42,9 @@ Built-in OS screenshot shortcuts:
 To take a screenshot and automatically save the file, press the Windows key + PrtScn. Your screen will go dim and a screenshot of your entire screen will save to the Pictures > Screenshots folder.
 
 Also consider the snipping tool, which is a convenient way to capture a portion of your screen.
-
 ##### MAC
 
-1. To take a screenshot, press and hold these three keys together: Shift, Command, and 3.
+1. To take a screenshot, press Shift + Command + 3.
 2. If you see a thumbnail in the corner of your screen, click it to edit the screenshot. Or wait for the screenshot to save to your desktop.
 
 By default, screenshots save to your desktop with the name ”Screen Shot [date] at [time].png.”
@@ -70,7 +65,7 @@ Start by opening the build settings under File > Build Settings
 
 ![](https://classes.dma.ucla.edu/Winter23/158/wp-content/uploads/2023/01/build_settings_1.gif)
 
-Add all the scenes you want to include in your project by clicking and dragging them from your assets folder to “Scenes in Build”
+Add all the scenes you want to include in your project by clicking and dragging them from your assets folder to “Scenes in Build” (also remove any scenes you don't want to include). The topmost scene in this list will be the first to play when starting the game.
 
 ![](https://classes.dma.ucla.edu/Winter23/158/wp-content/uploads/2023/01/build_settings_2.gif)
 

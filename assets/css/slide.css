@@ -34,6 +34,40 @@ h1 {
   display: none;
 }
 
+.outline {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  font-size: 0.8em;
+  line-height: 1;
+  background-color: #181818;
+}
+
+.outline-list {
+  height: 400px;
+  margin: 5px;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  overflow-x: hidden;
+  display: none;
+}
+
+.outline-list::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+.clicker {
+  margin: 0;
+  padding: 1px;
+  width: 100%;
+  background-color: cornflowerblue;
+  cursor: pointer;
+}
+
+
 .hidden {
   opacity: 0;
 }

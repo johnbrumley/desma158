@@ -19,4 +19,45 @@ layout: default
   
   <script src="assets/js/slide.js"></script>
 
+
+  <div class="outline">
+    <div class="outline-list"></div>
+  </div>
+
+  <script>
+    // adding links to jump to headings
+
+    $(function(){
+      // loop through all the headers
+      $('h1').each(function(index) {
+        console.log($(this).text());
+        // create new link from header text
+        let url = $(this).text();
+        url = url.replace(/[?\'.,\/#!$%\^&\*;:{}=\-_`~()]/g,"");
+        url = url.trim();
+        url = url.replace(/\s+/g, '-').toLowerCase();
+        url = '#' + url;
+
+        // trim the link text
+        let linkText = $(this).text();
+        let maxLength = 35;
+        linkText = (linkText.length > maxLength) ? 
+          linkText.substring(0,maxLength - 3) + "..." :
+          linkText;
+
+        $(`<p><a href="${url}">${linkText}</a></p>`).appendTo('.outline-list');
+      });
+
+      // toggle the thing
+      $('<h1 class="clicker">_</h1>').prependTo('.outline');
+
+      $( ".clicker" ).on( "click", function() {
+        $( ".outline-list" ).toggle();
+      } );
+
+
+    });
+    
+  </script>
+
 </div>
