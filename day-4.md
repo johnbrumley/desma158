@@ -71,63 +71,126 @@ When using TextMeshPro. You’ll have to convert ttf files using the TextMeshPro
 To convert the font to be used in TextMeshPro:
 
 1. Drag the ttf files into your Unity project. 
-2. Open the Font Asset Creator tool. **Window > TextMeshPro > Font Asset Creator**
+    
+2. Open the Font Asset Creator tool. Window > TextMeshPro > Font Asset Creator
+    
 3. Add the ttf file as the Source Font file. You can adjust any other settings as well.
-4. Click **Generate Font Atlas** and then click **Save** to add it into your project.
+    
+4. Click Generate Font Atlas and then click Save to add it into your project.
+    
 5. Now you can use this font asset inside any TextMeshPro UI objects.
+    
+
   
 
 ![](https://lh5.googleusercontent.com/aDLAiWEj9l8WKynbzw_NF6woOGYuBIQqpVtAF8SwmmvR1Pez-_vsRDtlvN2x-g9dWJI8UABKzhts23tQhKb9LvXJ5uFbqZeD6UzcH_cR73KgTBubxxNKyvvRWyf1PNcwaAIxuPemFEyQS93op6MJGA4)
 
-# Adding your overlay image to the scene
+  
+
+## Adding an overlay image
 
 For Project 1, you aren’t required to build your entire overlay with the UI system. You can have your title and instructions as an image that is displayed when the game loads.
 
-1. To get started, drag your image into your Project, You can create a separate folder called “images” or “textures”    
-2. Select the image inside of Unity to bring up the import settings in the inspector. Change the texture type to “Sprite (2D and UI)" – the UI system works with sprite images rather than default.
-3. In the hierarchy of your scene, create a UI Image object. **Create > UI > Image**
+1. To get started, drag your image into your Project, You can create a separate folder called “images” or “textures”
+    
+2. Select the image inside of Unity to bring up the import settings in the inspector. Change the texture type to “Sprite (2D and UI)" – the UI system works with sprite images rather than default. 
+    
+3. In the hierarchy of your scene, create a UI Image object. Create > UI > Image
+    
 4. Add your sprite to the Source Image section of the Image component.
-5. Center the image and adjust the size. Click the square in the top left corner of the Rect Transform component to bring up the different anchor presets. Hold *Alt + Shift* and click the bottom-right box showing blue arrows stretching all the way to the edges.
+    
+5. Let’s center the image and adjust the size. Click the square in the top left corner of the Rect Transform component to bring up the different anchor presets. Hold Alt + Shift and click the bottom-right box showing blue arrows stretching all the way to the edges.
+    
 6. If you look at the game view, the image should be covering the entire screen. You can adjust the margin by using the Left, Top, Right, Bottom values in the Rect Transform.
+    
+
+  
 
 ![](https://lh3.googleusercontent.com/hA-_ZqUoPfsI7-qHqdv9llPK1bc3PPXGNFwOIKd6qQQOK5JUsyoN93DV4Dl7SHdiNBBm6XhWYCNx6IXZ4H0gdngYk9f5IMzVyuXdCPD5aMzYqxgrXIHz4TcXKhBaTCWPDQvjOsYssdC8DZ98mAzdfbc)
 
 # Toggling the overlay
 
-Using one of the scripts from the project 1 unitypackage ([download](https://drive.google.com/file/d/1VV2GHm9wLq4ipjtHp2ld7qQ_Cgldnx_I/view?usp=sharing)), it's possible to toggle the overlay on and off by pressing a key.
-## Turning off the overlay
+Pressing a key to show/hide the overlay
 
-1. Select the Overlay Image game object and add the *KeyPressEvent* component using Add Component in the Inspector.
-2. In the new component you can pick a key that will trigger the event when pressed using a dropdown next to the 'Key To Press' property. For this demo I'll use 'Q'
-3. Add a new observer to the key press event with the '+' button.
-4. Drag the Overlay Image game object into the slot. Then pick **Game Object > SetActive(bool)** in the dropdown.
-5. Leave the checkbox unchecked. This will hide the overlay game object when you press the 'Q' key --- It will also turn off the key press event component, but we'll get to that in a moment.
+  
 
-![](assets/toggle-overlay-part-1.png)
+1. Create a new script called ToggleGameObject.cs
+    
+2. Add the input system.
+    
 
-## Turning the overlay back on
+  
 
-1. Create a new empty game object inside your canvas and name it "Turn on overlay" or something similar.
-2. Add the *KeyPressEvent* component to this object.
-3. Pick the same key that you used for turning off the overlay.
-4. Add a new observer to the key press event with the '+' button.
-5. Drag the Overlay Image game object into the slot. Then pick **Game Object > SetActive(bool)** in the dropdown.
-6. This time check the box so that the overlay image turns back on when you click the button.
+|   |
+|---|
+|using UnityEngine.InputSystem;|
 
-![](assets/toggle-overlay-part-2.png)
+  
 
-This will work to toggle on and off the overlay, but there is a possibility that the two different key press event components could cancel each other out.
+3. Create a public variable called toggleKey. This will let you select the toggle key in the Inspector with a drop down menu.
+    
 
-## Making sure there aren't any bugs
+  
 
-1. Select the Overlay Image game object and add another observer to the key press event with the '+' button.
-2. Drag the "Turn on overlay" game object into this. Pick "GameObject.SetActive" and click the checkbox.
-3. Move this observer to the top of the event list, so that it runs before turning off the image overlay. If you deactivate the object first, it won't run any of the other events.
-4. Select the "Turn on overlay" game object and add another observer to the key press event.
-5. Drag the "Turn on overlay" game object into this. Pick "GameObject.SetActive" and leave the checkbox unchecked.
-6. Uncheck the "Turn on overlay" game object to make it inactive at the start of the game.
+|   |
+|---|
+|public Key toggleKey;|
 
-![](assets/toggle-overlay-part-3.png)
+  
+
+4. Add a public GameObject for the thing you want to toggle.
+    
+
+  
+
+|   |
+|---|
+|public GameObject toggleGameObject;|
+
+  
+
+5. In the Update function, check if the toggle key was pressed
+    
+
+  
+
+|   |
+|---|
+|if (Keyboard.current[toggleKey].wasPressedThisFrame)  <br>{  <br>    // toggle the object here  <br>}|
+
+  
+
+6. In the conditional, get the active state of the object and set the object to the opposite of that state
+    
+
+  
+
+|   |
+|---|
+|// get the current state of the object  <br>bool activeState = toggleGameObject.activeSelf;  <br>// flip the state and set the object  <br>toggleGameObject.SetActive(!activeState);|
+
+  
+
+7. Save the script. Back in the Unity Editor, don’t forget to pick a key and connect the GameObject that you want to toggle on and off.
+    
+
+  
+
+![](https://lh4.googleusercontent.com/N-gvmgsjp8mHb1MaHrzqywl0VLD2Li_YSi5IzxuTI6AJuCnk-9SdyANn9LWh2efFnTknOFmKzY1aJ-kJts9lEmjB7WbGqGvt7NNYMteB568YKc9INixFebQi1YwSWfTVHvvWlTaB6FzBDYiDxp-k93U)
+
+  
+
+Here’s the full script:
+
+  
+
+|   |
+|---|
+|using UnityEngine;  <br>using UnityEngine.InputSystem;  <br>  <br>public class ToggleGameObject : MonoBehaviour  <br>{  <br>    public Key toggleKey;  <br>    public GameObject toggleGameObject;  <br>  <br>    void Update()  <br>    {  <br>        if (Keyboard.current[toggleKey].wasPressedThisFrame)  <br>        {  <br>            // get the current state of the object  <br>            bool activeState = toggleGameObject.activeSelf;  <br>            // flip the state and set the object  <br>            toggleGameObject.SetActive(!activeState);  <br>        }  <br>    }  <br>}|
+
+  
+  
+
 # Timer Walkthrough
 
 In the project 1 unitypackage there is a prefab for creating a countdown timer. This timer could be abstracted to represent any number of values from energy, oxygen, patience, etc.
