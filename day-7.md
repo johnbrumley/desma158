@@ -2,6 +2,17 @@
 layout: slides
 title: Day 7
 ---
+# Homeplay 2 (Due 10/26)
+
+As some inspiration and research on Project 2, you'll be signing up in *Groups of 3* to play a game (or games) for 1-2 hours. 
+## Sign up for games on: [this list](https://docs.google.com/spreadsheets/d/1MRMqrETqoTgZWNNtvUkijmwZi4IVVnIBXls-KrXs-Oo/edit?usp=sharing) 
+
+For games that cost money, we've set up a computer (no consoles this time) in the Print Lab lounge where you can access them. 
+
+Next **Thursday (10/26)**, your group will give a short, 5-minute Let's Play demo to talk about how the game, or group of games, has themes, ideas, structure, narrative, mechanics, flow, and/or ideology fits into what we've been discussing in class. Highlight part of the game that is especially relevant. If you have more than one game, pick one to focus on, but be prepared to talk about the others. 
+
+The presentation can be done *live or using recorded gameplay with live commentary* if difficult to isolate the section of the game you want to show. [OBS](https://obsproject.com/) is a very lightweight recorder that works on all platforms. 
+
 
 ![](https://lh3.googleusercontent.com/ZuUKbB1ZEY1_ffcOgGuapQRolUWAX3CUIkL6an8eNhdHEQmLawNf5LUj5Y8G8SHblZzECsq5qVJNn_2LS91JBB2AklY1_ylqJ9esku0xYIZOiLS4O2M6cMqA8so9CKBc19XrJHCgAqOs2uJKy_J3MyQ)
 
@@ -9,7 +20,7 @@ title: Day 7
 
 Imaginary video games via only titles and screenshots – still very connected to the era / medium (made on an Amiga)
 
-# Early Video Games and Arcades
+# Arcade games, culture, manipulation
 
 ![](https://lh5.googleusercontent.com/gsaZUx36KbxLLWSAoWesvTp5QGIFm3nY5OyXASw3m0nV5lfXf2MIQijHZoUMXjzB_I5tNv8WDczTLQ7XMfbAk-HYixk4m9Sz8Mn_sOCC0n0LEcmU7z-4PhWea7uU8qGIc_X4_DO1Gm9EEtlC55MZ9Pw)
 
@@ -24,21 +35,28 @@ Devices that could fit into a cabinet were often found in bars and halls, more a
 Pinball was banned from the 1940s to 1976 in New York City by Mayor LaGuardia due to the association with gambling and moral depravity. ([playfield of this game](https://www.ipdb.org/showpic.pl?id=2460&picno=59496))
 
 Ultimately, with the addition of flipper mechanisms, it was demonstrated to be a game of skill and no longer outlawed.
-  
 
 ![](https://lh5.googleusercontent.com/CcZvDFKNpIv2R56LMkHwqh6imW2pARbaYZjwl4G9oNwNmOi3IE6y9A0GjPuvAXSKZAzyLqARnQ-LX34VLyN64gOGY30xstsi1u232y_mPe9AhGn9TESVFAVGe5S4Lkij7QQrgKYLE9yrAWTFlzrIynE)
 
 Pong was introduced by Atari (Bushnell and Dabney) in 1972
 
-…”arcade games train players in gaming behaviors by rewarding them through points, game time, and the ability to access subsequent levels, or by explicitly ranking them against other players on top score lists”
+>…arcade games train players in gaming behaviors by rewarding them through points, game time, and the ability to access subsequent levels, or by explicitly ranking them against other players on top score lists
+>
+> While video games are frequently understood as simulations, the arcade itself can also be seen as a simulation of emergent economic values and practices that have persisted long past the eclipse of the arcade’s zenith.
+> 
+> - Kocurek, Coin-operated Americans 
 
-“While video games are frequently understood as simulations, the arcade itself can also be seen as a simulation of emergent economic values and practices that have persisted long past the eclipse of the arcade’s zenith.”
+Before the magic lantern, you needed to go to a church or visit a wealthy acquaintance in order to see a large picture (i.e. a large painting). 
 
-Kocurek, Coin-operated Americans 
+![](https://www.holytrinitybutte.org/images/frescoes.jpg)
 
-Before the magic lantern, in order to see a large picture, you needed to go to a church or a rich person’s house … in the late 60s you would have had to visit a research lab if you wanted to see a video game, until 1972 when the first arcade machine was introduced.
+In the late 60s you would have had to visit a research lab if you wanted to see a video game, until 1972 when the first arcade machine was introduced.
 
-Arcades in the 1970s and early 80s were characterized by a few features:
+![DEC PDP-1, Soroban console typewriter, Type 30 CRT display.](https://www.masswerk.at/spacewar/images/dec-pdp1-computer.jpg)
+
+Video arcades existed as locations where people would need to go in order to access these experiences (for a price). 
+
+In the 1970s and early 80s were characterized by a few features:
 
 ## Access to technology 
 
@@ -50,15 +68,14 @@ Part of the economics of the arcade meant that games needed to be finished quick
 
 Arcade games are generally linear, “games of progression” with strict ways that the game is intended to be played. This results in a model of mastery of a particular rule set.  
 
-“challenges [are] presented serially by way of special-case rules.” - Juul. Half-Real
-
-![](https://lh6.googleusercontent.com/rcVYTUXUOqQzQ0bBWXR_dymnb_lwXDKfbpR0XRJr_X_w4R2E6dh0udnmHs-YuE8JgAf8rZqNHpMtc4FyoPy8a_Eg9YxHEbzQARtk3Jyy6CAxWlH-AvLPoRRKzRqr-37QYuH0QHPfowa-2DXqgI2EfCc)
+> challenges [are] presented serially by way of special-case rules. 
+> - Juul. Half-Real
 
 A game like Pong is considered more of an emergent game, though the coin-operated nature of the arcade version, as opposed to a home version, doesn’t reward experimentation.
 
 ![](https://lh6.googleusercontent.com/_JJvAxI02RAiF2MG8j992z5nYUGRwLETJApRLS0dnII6iUvRduIZyYkhkqhL3uTrq2Sxl30jeoHmw0duos8IrMEs5qlxSXqttJaUZXxQ4AO3_hOCA1JL6YU4hlj42ZTmCvDKUF4Kn7uoXc5anDm4Xsg)
 
-Arcade cabinets existed outside of the Arcade proper (where one would go with the intent to play games). In restaurants, waiting rooms, laundromats, bus stations, etc. one could have a more incidental encounter with a machine without needing to be considered a gamer. As mobile gaming emerged, and duplicating many classic arcade games, there was even less incentive to   
+Arcade cabinets existed outside of the Arcade proper (where one would go with the intent to play games). In restaurants, waiting rooms, laundromats, bus stations, etc. one could have a more incidental encounter with a machine without needing to be considered a gamer. As mobile gaming emerged, and duplicating many classic arcade games, there was no longer any need to put quarters into a machine for gaming experiences.
 
 Industry point of view - [https://departmentofplay.net/building-successful-games-6-lessons-from-arcades-heritage/](https://departmentofplay.net/building-successful-games-6-lessons-from-arcades-heritage/) 
 
@@ -213,19 +230,20 @@ public class InputTesting : MonoBehaviour
 {
 	public float speed = 10f;  													
 	public Rigidbody2D rb;
-	private Vector2 movement;  
+	private Vector2 direction;  
 	
 	void FixedUpdate()
 	{
-		Vector2 newPosition = rb.position + movement * Time.fixedDeltaTime;  
+		Vector2 newPosition = rb.position + direction * Time.deltaTime;  
 		rb.MovePosition(newPosition);  
 	} 
 
 	void OnMove(InputValue moveValue)  
 	{
-		movement = moveValue.Get<Vector2>() * speed;  
+		direction = moveValue.Get<Vector2>() * speed;  
 	}
 
+	// testing the rest of the buttons
 	void OnButton1() { print("button1"); }
 	void OnButton2() { print("button2"); }
 	void OnButton3() { print("button3"); }
@@ -240,72 +258,6 @@ This is what the component setup would look like for one player:
 ![](https://lh5.googleusercontent.com/30y4oQCJ29eu2FloKPNqYrxoj5AmWNYKT4Q_goR6NJJ3PebnFuyuROdkR0ESWp6L-qADElBhMrB0G11IjihGeNXo3WFKPO66_LicmeutnJJGlUL6rpWXOmrcnU6aLRvleVq1TAWF9k4SEhl2n_fRg4I)
 
 Try duplicating the object and setting the map to Player2.
-# Vector Talk
-
-Let’s talk a bit more about vectors and ways to get information about your game using vectors.
-
-## Magnitude 
-
-… is the length of the vector
-
-![](https://lh6.googleusercontent.com/7hX82MkM_bWGy2nxLChrY1NbkU6Ja239dmU41_U2wl3GI36cEG83amz8LLg3AWlIe_ZGHKU21731pQ8zYSZQoy4C1ZA66A03yYqvuN6aodVwp17ZixUjHQ7aGniCxnXW6NSKu0ZDvomeA32rPGQYZGA)
-
-You can get the magnitude of a vector in Unity like this:
-
-```csharp
-Vector3 myVector = new Vector3(2.5f, -4f, 6f);  
-float mag = myVector.magnitude;
-```
-## Distance
-
-Calculating the direction and distance between two points can be done with subtraction and taking the magnitude of the resulting vector.
-
-  
-```csharp
-// Gets a vector that points from the player's position to the target's.
-// Both variables are Transforms, so access the position property to
-// get the vector.  
-Vector3 heading = target.position - player.position;  
-// get the length of the vector (distance between the two points) 
-float distance = heading.magnitude;  
-// Vector3 also has a distance method 
-float distance2 = Vector3.Distance(target.position, player.position);
-```
-
-## Normalize a vector 
-
-To normalize a vector is to keep the same heading, but with a magnitude scaled to one (often called a unit vector). Useful when you want to re-scale or limit the length of a vector but maintain its direction.
-
-Here’s an example where the velocity of a rigidbody (rb) is modified:
-
-```csharp
-// get velocity and normalize
-Vector3 myVelocity = rb.velocity;
-Vector3 normalizedVelocity = myVelocity.normalized;  
-// set a new velocity with scalar multiplication
-float speed = 10f;
-rb.velocity = speed * normalizedVelocity;
-```
-## Reflecting a vector
-
-I mentioned reflection in class today. Here’s an example of how you can use Vector2.Reflect to change the velocity of a rigidbody when it collides with something:
-
-```csharp
-// changing the velocity by using reflection
-private void OnCollisionEnter2D(Collision2D collision)
-{        
-// get the normal vector        
-Vector2 normal = collision.contacts[0].normal;        
-// create the reflection        
-Vector2 newVelocity = Vector2.Reflect(rb.velocity, normal);        
-// set the new velocity        
-rb.velocity = newVelocity;
-}
-```
-
-You could use this to make a custom screensaver:
-
-![](https://lh5.googleusercontent.com/rvTGPibz4r10UnZk5VUjpPKAuG19JfeIg4TiFqP467ISHwQYXE10ItS8mTFkaltZNblUUtbX84t4ZYvChLogHO8ialtzXRTMkoojWV8Q4vlja2VHwlFgiPVbcMQnU0aXAAR2UydqLFDdGv0dYAofZ90)
 
 # Scripting Triggers and Collisions in 2D
 
@@ -507,9 +459,79 @@ Take the scene with all of the found sprites and make objects in the scene say t
 
 ![10 Beautiful Postcards](https://img.itch.zone/aW1hZ2UvNDI3ODMxLzIxMzk5MzEucG5n/original/P8LqAl.png)
 
+*10 Beautiful Postcards*
+
 Some Challenges:
 
 - Add boxes around the text.
 - Have things make sounds instead of showing dialogue
 - Give characters multiple lines of text, each time you walk close to a character they say the next line.
 - Do the above, but instead of re-triggering the next line, let the player press a button to show the next line of text.
+
+
+# Vector Talk
+
+Let’s talk a bit more about vectors and ways to get information about your game using vectors.
+
+## Magnitude 
+
+… is the length of the vector
+
+![](https://lh6.googleusercontent.com/7hX82MkM_bWGy2nxLChrY1NbkU6Ja239dmU41_U2wl3GI36cEG83amz8LLg3AWlIe_ZGHKU21731pQ8zYSZQoy4C1ZA66A03yYqvuN6aodVwp17ZixUjHQ7aGniCxnXW6NSKu0ZDvomeA32rPGQYZGA)
+
+You can get the magnitude of a vector in Unity like this:
+
+```csharp
+Vector3 myVector = new Vector3(2.5f, -4f, 6f);  
+float mag = myVector.magnitude;
+```
+## Distance
+
+Calculating the direction and distance between two points can be done with subtraction and taking the magnitude of the resulting vector.
+
+  
+```csharp
+// Gets a vector that points from the player's position to the target's.
+// Both variables are Transforms, so access the position property to
+// get the vector.  
+Vector3 heading = target.position - player.position;  
+// get the length of the vector (distance between the two points) 
+float distance = heading.magnitude;  
+// Vector3 also has a distance method 
+float distance2 = Vector3.Distance(target.position, player.position);
+```
+
+## Normalize a vector 
+
+To normalize a vector is to keep the same heading, but with a magnitude scaled to one (often called a unit vector). Useful when you want to re-scale or limit the length of a vector but maintain its direction.
+
+Here’s an example where the velocity of a rigidbody (rb) is modified:
+
+```csharp
+// get velocity and normalize
+Vector3 myVelocity = rb.velocity;
+Vector3 normalizedVelocity = myVelocity.normalized;  
+// set a new velocity with scalar multiplication
+float speed = 10f;
+rb.velocity = speed * normalizedVelocity;
+```
+## Reflecting a vector
+
+I mentioned reflection in class today. Here’s an example of how you can use Vector2.Reflect to change the velocity of a rigidbody when it collides with something:
+
+```csharp
+// changing the velocity by using reflection
+private void OnCollisionEnter2D(Collision2D collision)
+{        
+// get the normal vector        
+Vector2 normal = collision.contacts[0].normal;        
+// create the reflection        
+Vector2 newVelocity = Vector2.Reflect(rb.velocity, normal);        
+// set the new velocity        
+rb.velocity = newVelocity;
+}
+```
+
+You could use this to make a custom screensaver:
+
+![](https://lh5.googleusercontent.com/rvTGPibz4r10UnZk5VUjpPKAuG19JfeIg4TiFqP467ISHwQYXE10ItS8mTFkaltZNblUUtbX84t4ZYvChLogHO8ialtzXRTMkoojWV8Q4vlja2VHwlFgiPVbcMQnU0aXAAR2UydqLFDdGv0dYAofZ90)
