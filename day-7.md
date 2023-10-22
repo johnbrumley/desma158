@@ -20,6 +20,8 @@ The presentation can be done *live or using recorded gameplay with live commenta
 
 Imaginary video games via only titles and screenshots – still very connected to the era / medium (made on an Amiga)
 
+See also: [A Game By It's Cover](https://itch.io/jam/a-game-by-its-cover-2023) game jam based on [fictional game cartridge](https://famicase.com/23/index.html) art.
+
 # Arcade games, culture, manipulation
 
 ![](https://lh5.googleusercontent.com/gsaZUx36KbxLLWSAoWesvTp5QGIFm3nY5OyXASw3m0nV5lfXf2MIQijHZoUMXjzB_I5tNv8WDczTLQ7XMfbAk-HYixk4m9Sz8Mn_sOCC0n0LEcmU7z-4PhWea7uU8qGIc_X4_DO1Gm9EEtlC55MZ9Pw)
