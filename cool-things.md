@@ -1,0 +1,165 @@
+<div id="projects"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+    <style>
+        div#projects {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 200px;
+            column-gap: 10px;
+            row-gap: 10px;
+        }
+        div.project {
+            max-width: 200px;
+            border: solid 1px;
+        }
+
+        div.project h3,h5{
+            position: relative;
+            margin:5px; 
+            padding: 2px; 
+            line-height: 1; 
+            background: white;
+        }
+
+        div.project img {
+            position: absolute;
+            width:200px;
+            height: 200px;
+            object-fit: cover; 
+        }
+
+        div.project h3,h5 {font-size: 1.2em;}
+        div.project h5 {font-size: 0.8em;}
+    </style>
+
+    <script>
+        // helper function for converting table
+        function convertArrayTable(tableData) {
+            // assign first row to header and rest to rows
+            const [header, ...rows] = tableData;
+
+            // output array
+            var finalArr = [];
+
+            for (var vals = 0; vals < rows.length; vals++) {
+                // grab the values from the row
+                var row = rows[vals]
+                // create empty object
+                var tableObj = {};
+
+                // create key value pairs for each header name and connected value
+                for (var key = 0; key < header.length; key++) {
+                    tableObj[header[key]] = row[key]
+                }
+
+                // add object to the output array
+                finalArr.push(tableObj);
+            }
+
+            return finalArr;
+        }
+
+        // helper for building img element
+        function convertLinkToImgElement(link) {
+            // <img width="300px" src="https://drive.google.com/uc?export=view&id=1I4nGP6g1UOYo1dy3FY8dSXjkb-kPIWgj">
+
+            // extract id
+            const id = link.substring(33);
+            // build working src url
+            const src = 'https://drive.google.com/uc?export=view&id=' + id;
+            // create element in jquery and return it
+            return $(`<img src=${src} width="640"/>`);
+        }
+
+        function convertLinkToThumbnail(link) {
+            // <img width="300px" src="https://drive.google.com/uc?export=view&id=1I4nGP6g1UOYo1dy3FY8dSXjkb-kPIWgj">
+
+            // extract id
+            const id = link.substring(33);
+            // build working src url
+            const src = 'https://drive.google.com/thumbnail?export=view&id=' + id;
+            // create element in jquery and return it
+            return $(`<img src=${src} width="200"/>`);
+        }
+
+        // helper for building video element
+        function convertLinkToVideoElement(link) {
+            // <iframe src="https://drive.google.com/file/d/1onC-JHWuZZRIEK6pT_e2ibdkFAK31Pzh/preview" width="640" height="480"></iframe>
+
+            // extract id
+            const id = link.substring(33);
+            // build url
+            const src = `https://drive.google.com/file/d/${id}/preview`;
+            // return element
+            return $(`<iframe src=${src} width="640" height="480"></iframe>`);
+        }
+
+
+        $(function() {
+
+        // pull down code from google sheet
+        let url = "https://sheets.googleapis.com/v4/spreadsheets/1egMhLyfP7HZ5jKYo7wrbYN-WfhMGy583KkxkHPn2Pq0/values/responses?key=AIzaSyBPleutaYjG1yiDKjAQzE1Xxq_V5xEM5rc";
+
+        $.getJSON( url, function( data ) {
+            console.log(data);
+            var items = [];
+
+            table = [];
+            $.each( data, function( key, val ) {
+                // values contains everything as an array with first 
+                if(key === 'values'){
+                    table = convertArrayTable(val);
+                }
+                // items.push( "<li id=" + key + ">" + val + "</li>" ); 
+            });
+
+            // remove dupes (I might do this manually)
+
+            // create title, image, author for each game
+
+            // need to resolve how to link things
+
+            for (const row of table) {
+                // create URL (remove special characters, convert lower case, replace space with dash)
+                // https://classes.dma.ucla.edu/Winter23/158/index.php/2023/02/09/roll-a-ball-hell/
+
+                let title = row["Game Title"].toString();
+
+                // skip if title has special char
+                if(title[0] === '~') continue;
+
+                // build URL for project page
+                let urlTitle = title.toLowerCase();
+                urlTitle = urlTitle.replace(/[^a-zA-Z0-9 ]/g, "");
+                urlTitle = urlTitle.replace(/[\s;]+/g, "-");
+                const baseURL = "https://classes.dma.ucla.edu/Winter23/158/index.php/";
+
+                const url = baseURL + urlTitle;
+
+                // create game container
+                let $Project = $('<div class="project"></div>');
+                $Project.append(convertLinkToThumbnail(row['Screenshot 1']));
+                $Project.append(`<h3 class="link-${urlTitle}">${title}</h3>`);
+                $Project.append(`<h5 class="link-${urlTitle}">${row["Student's Name"]}</h5>`);
+                // $Project.append(`<a href=${url}>View</a>`);
+                // $(`.link-${urlTitle}`).wrap(`<a href=${baseURL + urlTitle}></a>`);
+
+                // add to grid
+                $('#projects').append($Project);
+
+
+                // wrap everything with the link
+                $(`.link-${urlTitle}`).wrapAll(`<a href=${url}></a>`);
+
+
+            }
+
+        });
+    }); 
+    </script>
+
+
+    
