@@ -59,6 +59,8 @@ TODO testing
 
 <script>
 
+  let projectID = "Project 1";
+
   // getting started
   $(async function () {
     // get the spreadsheet data
@@ -67,7 +69,16 @@ TODO testing
     // process it
     const data = convertArrayTable(response.values);
 
-    let searchParams = new URLSearchParams(window.location.search)
+    let searchParams = new URLSearchParams(window.location.search);
+    if(searchParams.has('p')) {
+      let id = searchParams.get('p');
+      switch(id) {
+        case(1): projectID = "Project 1"; break;
+        case(2): projectID = "Project 2"; break;
+        case(3): projectID = "Project 3"; break;
+      }
+    }
+    
     if (searchParams.has('projectTitle')) {
       // build single project
       const title = searchParams.get('projectTitle');
@@ -127,6 +138,9 @@ TODO testing
       // skip if title has special char
       if (title[0] === '~' || title == undefined) continue;
 
+      // skip if wrong project
+      if(row["Project"] != projectID) continue;
+
       // build URL for project page
       let urlTitle = FormatProjectTitle(title);
       const baseURL = "https://classes.dma.ucla.edu/Winter23/158/index.php/";
@@ -140,13 +154,10 @@ TODO testing
       // add to grid
       $('#projects').append($Project);
 
-
-
-
       // wrap everything with the same project link
       // add on the url title to parse this one
       const postID = $("#projects").data("post");
-      const postURL = `https://classes.dma.ucla.edu/Spring23/158/?p=${postID}&projectTitle=${urlTitle}`;
+      const postURL = `https://johnbrumley.github.io/desma158/test.html?p=${postID}&projectTitle=${urlTitle}`;
       $(`.link-${urlTitle}`).wrapAll(`<a href=${postURL}></a>`);
     }
   }
@@ -179,8 +190,6 @@ TODO testing
       // set title of page
       $('#single-project').append(`<h1>${project["Title"]}</h1>`);
       $('#single-project').append(`<h3>${project["Name"]}</h3>`);
-
-
 
       // screen recording
       $('#single-project').append(convertLinkToVideoElement(project['Video']));
