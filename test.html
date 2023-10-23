@@ -2,6 +2,16 @@
 layout: default
 ---
 
+<!-- 
+TODO testing
+
+- add in the correct sheet to pull from 
+- filter based on project number column
+- change the sheet to "responses"
+
+-  -->
+
+
 <!-- This one goes creates the project grid. Don't forget to rename the google docs sheet "responses"-->
 
 <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
@@ -65,8 +75,11 @@ $(async function() {
 
 function GetData(){
     // select the URL based on the project number used in the div
-    const numString = $("#projects").data("project");
-    const id = $("#projects").data("id");
+    // const numString = $("#projects").data("project");
+    // const id = $("#projects").data("id");
+
+    // using same sheet for all projects 
+    const id = "1IhypYh0cD04c9u6uUn1xC4v8rK7YoIfoGtR_OyF3E6U";
 
     // const projectNumber = parseInt(numString);
     
