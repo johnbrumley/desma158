@@ -14,39 +14,46 @@ TODO testing
 
 <!-- This one goes creates the project grid. Don't forget to rename the google docs sheet "responses"-->
 
-<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 
 <style>
-    div#projects {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 200px;
-        column-gap: 10px;
-        row-gap: 10px;
-    }
-    div.project {
-        max-width: 200px;
-        border: solid 1px;
-    }
+  div#projects {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
 
-    div.project :is(h3, h5) {
-        position: relative;
-        margin:5px; 
-        padding: 2px; 
-        line-height: 1; 
-        background: white;
-    }
+  div.project {
+    max-width: 200px;
+    border: solid 1px;
+  }
 
-    div.project img {
-        position: absolute;
-        width:200px;
-        height: 200px;
-        object-fit: cover; 
-    }
+  div.project :is(h3, h5) {
+    position: relative;
+    margin: 5px;
+    padding: 2px;
+    line-height: 1;
+    background: white;
+  }
 
-    div.project h3 {font-size: 1.2em;}
-    div.project h5 {font-size: 0.8em;}
+  div.project img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  div.project h3 {
+    font-size: 1.2em;
+  }
+
+  div.project h5 {
+    font-size: 0.8em;
+  }
 </style>
 
 
@@ -54,8 +61,8 @@ TODO testing
 
 <script>
 
-// getting started
-$(async function() {
+  // getting started
+  $(async function () {
     // get the spreadsheet data
     const response = await GetData();
 
@@ -63,17 +70,17 @@ $(async function() {
     const data = convertArrayTable(response.values);
 
     let searchParams = new URLSearchParams(window.location.search)
-    if(searchParams.has('projectTitle')){
-        // build single project
-        const title = searchParams.get('projectTitle');
-        BuildSingleProject(title, data);
+    if (searchParams.has('projectTitle')) {
+      // build single project
+      const title = searchParams.get('projectTitle');
+      BuildSingleProject(title, data);
     } else {
-        // build project grid
-        BuildProjectGrid(data);
+      // build project grid
+      BuildProjectGrid(data);
     }
-}); 
+  });
 
-function GetData(){
+  function GetData() {
     // select the URL based on the project number used in the div
     // const numString = $("#projects").data("project");
     // const id = $("#projects").data("id");
@@ -82,7 +89,7 @@ function GetData(){
     const id = "1IhypYh0cD04c9u6uUn1xC4v8rK7YoIfoGtR_OyF3E6U";
 
     // const projectNumber = parseInt(numString);
-    
+
     const key = "AIzaSyBPleutaYjG1yiDKjAQzE1Xxq_V5xEM5rc";
 
     // switch (projectNumber) {
@@ -104,67 +111,74 @@ function GetData(){
 
     const url = `https://sheets.googleapis.com/v4/spreadsheets/${id}/values/responses?key=${key}`;
 
-    return $.getJSON( url);
-}
+    return $.getJSON(url);
+  }
 
 
 
-// build the grid
-function BuildProjectGrid(data){
+  // build the grid
+  function BuildProjectGrid(data) {
+    // create projects div here
+
+
+    console.log(data);
+
     for (const row of data) {
-        let title = row["Title"].toString();
+      let title = row["Title"].toString();
 
-        // skip if title has special char
-        if(title[0] === '~') continue;
+      // skip if title has special char
+      if (title[0] === '~') continue;
 
-        // build URL for project page
-        let urlTitle = FormatProjectTitle(title);
-        const baseURL = "https://classes.dma.ucla.edu/Winter23/158/index.php/";
+      // build URL for project page
+      let urlTitle = FormatProjectTitle(title);
+      const baseURL = "https://classes.dma.ucla.edu/Winter23/158/index.php/";
 
-        // create game container
-        let $Project = $('<div class="project"></div>');
-        $Project.append(convertLinkToThumbnail(row['Image 1']));
-        $Project.append(`<h3 class="link-${urlTitle}">${title}</h3>`);
-        $Project.append(`<h5 class="link-${urlTitle}">${row["Name"]}</h5>`);
+      // create game container
+      let $Project = $('<div class="project"></div>');
+      $Project.append(convertLinkToThumbnail(row['Image 1']));
+      $Project.append(`<h3 class="link-${urlTitle}">${title}</h3>`);
+      $Project.append(`<h5 class="link-${urlTitle}">${row["Name"]}</h5>`);
 
-        // add to grid
-        $('#projects').append($Project);
+      // add to grid
+      $('#projects').append($Project);
 
-        // wrap everything with the same project link
-        // add on the url title to parse this one
-        const postID = $("#projects").data("post");
-        const postURL = `https://classes.dma.ucla.edu/Spring23/158/?p=${postID}&projectTitle=${urlTitle}`;
-        $(`.link-${urlTitle}`).wrapAll(`<a href=${postURL}></a>`);
+      // wrap everything with the same project link
+      // add on the url title to parse this one
+      const postID = $("#projects").data("post");
+      const postURL = `https://classes.dma.ucla.edu/Spring23/158/?p=${postID}&projectTitle=${urlTitle}`;
+      $(`.link-${urlTitle}`).wrapAll(`<a href=${postURL}></a>`);
     }
-}
+  }
 
-function BuildSingleProject(title, data){
+  function BuildSingleProject(title, data) {
+
+
 
     // try and find the project
     const project = data.find(row => {
-        let gameTitle = row["Title"].toString();
+      let gameTitle = row["Title"].toString();
 
-        if(gameTitle[0] === "~") {
-            return false;
-        } else {
-            // both strings should be run through the formatter
-            gameTitle = FormatProjectTitle(gameTitle);
-            return gameTitle === title;
-        }
+      if (gameTitle[0] === "~") {
+        return false;
+      } else {
+        // both strings should be run through the formatter
+        gameTitle = FormatProjectTitle(gameTitle);
+        return gameTitle === title;
+      }
     });
 
-    if(project) {
-        console.log(project);
-        // set title of page
-        $('h1.wp-block-post-title').text(project["Title"]);
-        $('#single-project').append(`<h3>${project["Name"]}</h3>`);
+    if (project) {
+      console.log(project);
+      // set title of page
+      $('h1.wp-block-post-title').text(project["Title"]);
+      $('#single-project').append(`<h3>${project["Name"]}</h3>`);
 
-        
 
-        // screen recording
-        $('#single-project').append(convertLinkToVideoElement(project['Video']));
-        // window build
-        $('#single-project').append(`
+
+      // screen recording
+      $('#single-project').append(convertLinkToVideoElement(project['Video']));
+      // window build
+      $('#single-project').append(`
             <div class="is-content-justification-center is-layout-flex wp-block-buttons">
                 <div class="wp-block-button">
                     <a class="wp-block-button__link wp-element-button" href="${project["Windows Build"]}">
@@ -174,38 +188,38 @@ function BuildSingleProject(title, data){
             </br>
         `);
 
-        $('#single-project').append(`<p>${project["Description"]}</p>`);
+      $('#single-project').append(`<p>${project["Description"]}</p>`);
 
-        // in case I mess up the name
-        let controls = project["Controls"];
-        if(!controls){
-            controls = project["Controls"];
-        }
-        $('#single-project').append(`<p>${controls}</p>`); 
+      // in case I mess up the name
+      let controls = project["Controls"];
+      if (!controls) {
+        controls = project["Controls"];
+      }
+      $('#single-project').append(`<p>${controls}</p>`);
 
-        // $('#single-project').append("<h5>Screen Recording</h5>");
-        
-        $('#single-project').append("<h5>Screenshots</h5>");
-        $('#single-project').append(convertLinkToImgElement(project['Image 1']));
-        $('#single-project').append(convertLinkToImgElement(project['Image 2']));
+      // $('#single-project').append("<h5>Screen Recording</h5>");
 
-        // gif
-        if(project['[Optional] Animated GIF']) {
-            const gif = convertLinkToImgElement(project['[Optional] Animated GIF']);
-            console.log(gif);
-            // check that it's actually a gif?
-            // students were uploading single frame gifs ... so not sure how to check
-            $('#single-project').append(gif);
-        }
+      $('#single-project').append("<h5>Screenshots</h5>");
+      $('#single-project').append(convertLinkToImgElement(project['Image 1']));
+      $('#single-project').append(convertLinkToImgElement(project['Image 2']));
+
+      // gif
+      if (project['[Optional] Animated GIF']) {
+        const gif = convertLinkToImgElement(project['[Optional] Animated GIF']);
+        console.log(gif);
+        // check that it's actually a gif?
+        // students were uploading single frame gifs ... so not sure how to check
+        $('#single-project').append(gif);
+      }
 
 
     } else {
-        console.log("Couldn't find project for: " + title);
+      console.log("Couldn't find project for: " + title);
     }
-}
+  }
 
-// helper function for converting table
-function convertArrayTable(tableData) {
+  // helper function for converting table
+  function convertArrayTable(tableData) {
     // assign first row to header and rest to rows
     const [header, ...rows] = tableData;
 
@@ -213,25 +227,25 @@ function convertArrayTable(tableData) {
     var finalArr = [];
 
     for (var vals = 0; vals < rows.length; vals++) {
-        // grab the values from the row
-        var row = rows[vals]
-        // create empty object
-        var tableObj = {};
+      // grab the values from the row
+      var row = rows[vals]
+      // create empty object
+      var tableObj = {};
 
-        // create key value pairs for each header name and connected value
-        for (var key = 0; key < header.length; key++) {
-            tableObj[header[key]] = row[key]
-        }
+      // create key value pairs for each header name and connected value
+      for (var key = 0; key < header.length; key++) {
+        tableObj[header[key]] = row[key]
+      }
 
-        // add object to the output array
-        finalArr.push(tableObj);
+      // add object to the output array
+      finalArr.push(tableObj);
     }
 
     return finalArr;
-}
+  }
 
-// helper for building img element
-function convertLinkToImgElement(link) {
+  // helper for building img element
+  function convertLinkToImgElement(link) {
     // <img width="300px" src="https://drive.google.com/uc?export=view&id=1I4nGP6g1UOYo1dy3FY8dSXjkb-kPIWgj">
 
     // extract id
@@ -240,9 +254,9 @@ function convertLinkToImgElement(link) {
     const src = 'https://drive.google.com/uc?export=view&id=' + id;
     // create element in jquery and return it
     return $(`<img src=${src} width="640"/>`);
-}
+  }
 
-function convertLinkToThumbnail(link) {
+  function convertLinkToThumbnail(link) {
     // <img width="300px" src="https://drive.google.com/uc?export=view&id=1I4nGP6g1UOYo1dy3FY8dSXjkb-kPIWgj">
 
     // extract id
@@ -251,10 +265,10 @@ function convertLinkToThumbnail(link) {
     const src = 'https://drive.google.com/thumbnail?export=view&id=' + id;
     // create element in jquery and return it
     return $(`<img src=${src} width="200"/>`);
-}
+  }
 
-// helper for building video element
-function convertLinkToVideoElement(link) {
+  // helper for building video element
+  function convertLinkToVideoElement(link) {
     // <iframe src="https://drive.google.com/file/d/1onC-JHWuZZRIEK6pT_e2ibdkFAK31Pzh/preview" width="640" height="480"></iframe>
 
     // extract id
@@ -263,15 +277,15 @@ function convertLinkToVideoElement(link) {
     const src = `https://drive.google.com/file/d/${id}/preview`;
     // return element
     return $(`<iframe src=${src} width="640" height="480"></iframe>`);
-}
+  }
 
-function FormatProjectTitle(title) {
+  function FormatProjectTitle(title) {
     let simpleTitle = title.toLowerCase();
     simpleTitle = simpleTitle.replace(/[^a-zA-Z0-9 ]/g, "");
     simpleTitle = simpleTitle.replace(/[\s;]+/g, "-");
 
     return simpleTitle;
-}
+  }
 
 </script>
 
