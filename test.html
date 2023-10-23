@@ -150,6 +150,13 @@ TODO testing
       // create game container
       let $Project = $('<div class="project"></div>');
       $Project.append(convertLinkToThumbnail(row['Image 1']));
+
+      // trim title
+      title = 
+        title.length > 25 ? 
+        title.substring(0, 25 - 3) + "..." : 
+        title;
+
       $Project.append(`<h3 class="link-${urlTitle}">${title}</h3>`);
       $Project.append(`<h5 class="link-${urlTitle}">${row["Name"]}</h5>`);
 
