@@ -232,7 +232,7 @@ You can add as many `TMP_Text` variables to the script as you have items in your
 
 ![](https://img.itch.zone/aW1hZ2UvMTI5MDkwLzU5MzM5OC5wbmc=/original/Rzs2wl.png)
 
-Let's see who can open a door faster. 
+Let's see who can open a door the fastest!
 
 Split up into small teams (at least 2) and build:
 
@@ -241,8 +241,9 @@ Split up into small teams (at least 2) and build:
 3. A way for the player to pick up the key.
 4. A way for the key to open the door.
 
+See if you can build the door and open it before we can open the door in the game [You Have 293 Keys](https://14hourlunchbreak.itch.io/you-have-293-keys)
 
-
+![](https://img.itch.zone/aW1hZ2UvMTI5MDkwLzU5MzM3OC5wbmc=/original/lNkSqe.png)
 
 # Character Controller 2D
 
