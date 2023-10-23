@@ -58,7 +58,7 @@ TODO testing
 
 
 <script>
-
+  let searchParams;
   let projectID = "Project 1";
 
   // getting started
@@ -69,7 +69,7 @@ TODO testing
     // process it
     const data = convertArrayTable(response.values);
 
-    let searchParams = new URLSearchParams(window.location.search);
+    searchParams = new URLSearchParams(window.location.search);
     if(searchParams.has('p')) {
       let id = searchParams.get('p');
       switch(id) {
