@@ -112,7 +112,7 @@ function GetData(){
 // build the grid
 function BuildProjectGrid(data){
     for (const row of data) {
-        let title = row["Game Title"].toString();
+        let title = row["Title"].toString();
 
         // skip if title has special char
         if(title[0] === '~') continue;
@@ -123,9 +123,9 @@ function BuildProjectGrid(data){
 
         // create game container
         let $Project = $('<div class="project"></div>');
-        $Project.append(convertLinkToThumbnail(row['Screenshot 1']));
+        $Project.append(convertLinkToThumbnail(row['Image 1']));
         $Project.append(`<h3 class="link-${urlTitle}">${title}</h3>`);
-        $Project.append(`<h5 class="link-${urlTitle}">${row["Student Name"]}</h5>`);
+        $Project.append(`<h5 class="link-${urlTitle}">${row["Name"]}</h5>`);
 
         // add to grid
         $('#projects').append($Project);
@@ -142,7 +142,7 @@ function BuildSingleProject(title, data){
 
     // try and find the project
     const project = data.find(row => {
-        let gameTitle = row["Game Title"].toString();
+        let gameTitle = row["Title"].toString();
 
         if(gameTitle[0] === "~") {
             return false;
@@ -156,38 +156,38 @@ function BuildSingleProject(title, data){
     if(project) {
         console.log(project);
         // set title of page
-        $('h1.wp-block-post-title').text(project["Game Title"]);
-        $('#single-project').append(`<h3>${project["Student Name"]}</h3>`);
+        $('h1.wp-block-post-title').text(project["Title"]);
+        $('#single-project').append(`<h3>${project["Name"]}</h3>`);
 
         
 
         // screen recording
-        $('#single-project').append(convertLinkToVideoElement(project['Screen Recording']));
+        $('#single-project').append(convertLinkToVideoElement(project['Video']));
         // window build
         $('#single-project').append(`
             <div class="is-content-justification-center is-layout-flex wp-block-buttons">
                 <div class="wp-block-button">
-                    <a class="wp-block-button__link wp-element-button" href="${project["Windows Build (Zip File)"]}">
+                    <a class="wp-block-button__link wp-element-button" href="${project["Windows Build"]}">
                     Windows Build</a>
                 </div>
             </div>
             </br>
         `);
 
-        $('#single-project').append(`<p>${project["Project Description"]}</p>`);
+        $('#single-project').append(`<p>${project["Description"]}</p>`);
 
         // in case I mess up the name
-        let controls = project["Controls / Additional Notes"];
+        let controls = project["Controls"];
         if(!controls){
-            controls = project["Game Controls / Additional Notes"];
+            controls = project["Controls"];
         }
         $('#single-project').append(`<p>${controls}</p>`); 
 
         // $('#single-project').append("<h5>Screen Recording</h5>");
         
         $('#single-project').append("<h5>Screenshots</h5>");
-        $('#single-project').append(convertLinkToImgElement(project['Screenshot 1']));
-        $('#single-project').append(convertLinkToImgElement(project['Screenshot 2']));
+        $('#single-project').append(convertLinkToImgElement(project['Image 1']));
+        $('#single-project').append(convertLinkToImgElement(project['Image 2']));
 
         // gif
         if(project['[Optional] Animated GIF']) {
