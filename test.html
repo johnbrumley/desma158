@@ -5,9 +5,7 @@ layout: default
 <!-- 
 TODO testing
 
-- add in the correct sheet to pull from 
 - filter based on project number column
-- change the sheet to "responses"
 
 -  -->
 
@@ -142,6 +140,9 @@ TODO testing
       // add to grid
       $('#projects').append($Project);
 
+
+
+
       // wrap everything with the same project link
       // add on the url title to parse this one
       const postID = $("#projects").data("post");
@@ -152,7 +153,7 @@ TODO testing
 
   function BuildSingleProject(title, data) {
 
-
+    console.log("Building single project");
 
     // try and find the project
     const project = data.find(row => {
@@ -166,6 +167,8 @@ TODO testing
         return gameTitle === title;
       }
     });
+
+    console.log(project);
 
     if (project) {
       console.log(project);
