@@ -234,11 +234,12 @@ You can add as many `TMP_Text` variables to the script as you have items in your
 
 Let's see who can open a door faster. 
 
-## Building the door
+Split up into small teams (at least 2) and build:
 
-vs 
-
-## Finding the key
+1. A key
+2. A locked door
+3. A way for the player to pick up the key.
+4. A way for the key to open the door.
 
 
 
