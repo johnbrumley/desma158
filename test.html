@@ -142,7 +142,7 @@ TODO testing
       if(row["Project"] != projectID) continue;
 
       // build URL for project page
-      let urlTitle = FormatProjectTitle(title);
+      let urlTitle = FormatProjectTitle(title) + '-' + FormatProjectTitle(row["Name"]);
       const baseURL = "https://classes.dma.ucla.edu/Winter23/158/index.php/";
 
       // create game container
