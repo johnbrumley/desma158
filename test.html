@@ -35,7 +35,7 @@ TODO testing
     margin: 5px;
     padding: 2px;
     line-height: 1;
-    background: white;
+    background: #526d54;
   }
 
   div.project img {
@@ -142,7 +142,9 @@ TODO testing
       if(row["Project"] != projectID) continue;
 
       // build URL for project page
-      let urlTitle = FormatProjectTitle(title) + '-' + FormatProjectTitle(row["Name"]);
+      const projTitle = FormatProjectTitle(title);
+      const studentName = FormatProjectTitle(row["Name"]);
+      let urlTitle = projTitle + '-' + studentName;
       const baseURL = "https://classes.dma.ucla.edu/Winter23/158/index.php/";
 
       // create game container
@@ -157,7 +159,7 @@ TODO testing
       // wrap everything with the same project link
       // add on the url title to parse this one
       const postID = $("#projects").data("post");
-      const postURL = `https://johnbrumley.github.io/desma158/test.html?p=${postID}&projectTitle=${urlTitle}`;
+      const postURL = `https://johnbrumley.github.io/desma158/test.html?name=${studentName}&projectTitle=${projTitle}`;
       $(`.link-${urlTitle}`).wrapAll(`<a href=${postURL}></a>`);
     }
   }
@@ -166,6 +168,12 @@ TODO testing
 
     console.log("Building single project");
 
+    let name;
+    // also grab student name
+    if (searchParams.has('studentName')) {
+      name = searchParams.get('studentName');
+    }
+
     // create projects div here
     $('<div id="single-project"></div>').appendTo('.page-content .wrapper');
 
@@ -173,13 +181,22 @@ TODO testing
     // try and find the project
     const project = data.find(row => {
       let gameTitle = row["Title"].toString();
+      let currentName = row["Name"].toString();
 
       if (gameTitle[0] === "~") {
         return false;
       } else {
         // both strings should be run through the formatter
         gameTitle = FormatProjectTitle(gameTitle);
-        return gameTitle === title;
+
+        if(gameTitle === title) {
+          // check name in case of dupe project names
+          currentName = FormatProjectTitle(currentName);
+          return name === currentName;
+
+        } else {
+          return false;
+        }
       }
     });
 
