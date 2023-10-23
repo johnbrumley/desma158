@@ -155,6 +155,10 @@ TODO testing
 
     console.log("Building single project");
 
+    // create projects div here
+    $('<div id="single-project"></div>').appendTo('.wrapper');
+
+
     // try and find the project
     const project = data.find(row => {
       let gameTitle = row["Title"].toString();
@@ -171,10 +175,10 @@ TODO testing
     console.log(project);
 
     if (project) {
-      console.log(project);
+      
       // set title of page
-      $('h1.wp-block-post-title').text(project["Title"]);
-      $('#single-project').append(`<h3>${project["Name"]}</h3>`);
+      // $('h1.wp-block-post-title').text(project["Title"]);
+      $('#single-project').append(`<h1>${project["Name"]}</h1>`);
 
 
 
