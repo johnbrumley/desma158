@@ -117,7 +117,7 @@ TODO testing
   // build the grid
   function BuildProjectGrid(data) {
     // create projects div here
-    $('<div id="projects"></div>').appendTo('.wrapper');
+    $('<div id="projects"></div>').appendTo('.page-content .wrapper');
 
     console.log(data);
 
@@ -156,7 +156,7 @@ TODO testing
     console.log("Building single project");
 
     // create projects div here
-    $('<div id="single-project"></div>').appendTo('.wrapper');
+    $('<div id="single-project"></div>').appendTo('.page-content .wrapper');
 
 
     // try and find the project
@@ -177,8 +177,8 @@ TODO testing
     if (project) {
       
       // set title of page
-      // $('h1.wp-block-post-title').text(project["Title"]);
-      $('#single-project').append(`<h1>${project["Name"]}</h1>`);
+      $('#single-project').append(`<h1>${project["Title"]}</h1>`);
+      $('#single-project').append(`<h3>${project["Name"]}</h3>`);
 
 
 
