@@ -92,7 +92,7 @@ And then you’ll need to organize groupings of sprites in your Unity project us
 
 ## Sprite sheets
 
-The sprite atlas above is a way to combine all of the individual sprites onto a single texture for more efficient loading and unloading of texture files. 
+The sprite atlas mentioned above is a way to combine all of the individual sprites onto a single texture for more efficient loading and unloading of texture files. This is known as a sprite sheet.
 
 It is not uncommon to create the sprite sheet within another program and exporting all your sprites as a single image file.
 
@@ -106,6 +106,8 @@ Here's the sliced up grid for the previous sprite:
 ![](assets/sprite-slice.png)
 
 We'll get into the details of the sprite importing process after talking about another method for importing sprites.
+
+[Spriters-resource](https://www.spriters-resource.com/) is a good place to see lots of examples of sprite sheets from lots of games.
 ## Directly importing sprites from photoshop
 
 But, when using the 2D (URP) template, Unity includes a number of 2D specific packages that might be useful to reduce importing headaches.
