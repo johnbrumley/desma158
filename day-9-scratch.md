@@ -7,70 +7,49 @@ title: Day 9
 
 ![](https://lh6.googleusercontent.com/4fIB1J9hAEj79oc2I_l9iKXzStuF3ngOfjMfM_I7pRbSJR_z9cayNIyk2OkXvx0uO2FXPf1xaHzYbQ-bEo9saSrxL5Uh1NKoNwCz5LpojiqPdFKRcKKWASbysOkrNRQoZqtAxpwGgWT8q81ePZHZgGE)
 
-  
 
 If you’re using software (or a plugin) that exports to a sprite sheet (i.e. packing multiple sprites into a single image file), then you don’t need to worry as much about exporting techniques. If not, there are some things you can consider when authoring your sprites to make things easier down the line.
 
-  
 
 ![](https://lh6.googleusercontent.com/T_52H5dOKJ8OEuA8Wo6_QIkL5Mf8LBwe2lYLXUq4XE-UMTdgdNz9Ss3y87YSRSoIZIM9zlKkcRltP66qF9DKb2cH7V1PXwkxVvVbSiiWvVclpXVXwmWpVuVqmyC4S_HIzL41MfXid-SGV8OQeD6_kpM)
 
-  
+*Sprite sheet for Sonic the Hedgehog character animations.*
 
 # Animation in Unity
 
 ![](https://lh6.googleusercontent.com/TkAIDFea7mw0182Qx3ZVgRp4sZvcAhJyMan85L5JkBfJoDKB1FK4GDa0eRdvy4kD473Bky_1EiggA8lJWq_oxoXGXKLJTzkweFhJKA1fGwrFqGhV9seGfa6PYdgbs6soE58I4BO1CEyfYBPhh4x5CDM)
 
-  
-
 Not just limited to frame-animations in sprites, the Unity animation system allows you to create keyframe animations that control component properties and trigger functions. For objects that have multiple animations that need to be triggered based on the conditions of the scene, the system comes with a state machine to manage triggering animations.
 
-  
+## Keyframe animation with properties
 
 Let’s get started by animating a circle to move back and forth on the screen.
 
-  
-
 ![](https://lh5.googleusercontent.com/uAzf9lEEf8bfiODs7g9XA061qU0vbFtplZMSP4dLniffiUi7PLV_39ayeLM0C6LuhvkveojNShGYe1M8T3WFz140ysGAEDG4AmAY8U7jdp-MrE04H1czwXHDkBi8L_z9lk2hekrKQnHcU_R4q4GeWag)
-
-  
 
 Starting with an empty scene and a 2D circle sprite:
 
 1. Add the “Animation” tab to the editor by clicking the three dots on the top right of an existing panel, then Add Tab > Animation (you can also go to Window > Animation > Animation)
-    
-
-  
 
 ![](https://lh4.googleusercontent.com/MH4BNHmnzwP-eSsNa0KtXZIfLrT2OJqSmPzbEYi1F8DsXFfzB8WYK7MLUU57Ut5n9q_0KdgU7-cho5vD_qee7N9ujTQUvqsEUk7e4_Yax-E2DyOlN8iTnKhuLYPPbHXNcgItZpO-h2YYXLri-U2xTFs)
 
-  
 
 2. In the Animation tab, with the Circle selected in the hierarchy, click Create and save the new animation in your assets.
-    
-
-  
 
 ![](https://lh5.googleusercontent.com/08H0hD30kbKPePn97K1bG_XD7DwfqOom53KLlWDIXhQpWatRkIxCLGbjyhKXoWFznW04H53xnAWKacuWE2w7HsUPimBYn4nSRpC1pWXO7MHAKYk-4AR0HkB9bzvksM61m7TSXWo2ohlTGv2e_kG5Zok)
 
-  
-
-This will create an Animation Clip and an Animator Controller in your project assets. It will also automatically add an Animator component to the Circle gameobject and with the Animator Controller set in the controller property. You can leave the default settings for now.
-
+This will create an Animation Clip and an Animator Controller in your project assets. It will also automatically add an Animator component to the Circle game object and with the Animator Controller set in the controller property. You can leave the default settings for now.
   
 
 ![](https://lh6.googleusercontent.com/DGwkK4FvqLykPi27XqNhXrw1alQjMLVATjTJ752UvLaofHivzsfotWkajjDNaE4i88P6EK2bzqX0byNLLtnZ8kDfcq_7376_jUGIKPZ6tLGcRqr_Yzb24882gyDr0g9Oarod8pIAvhZuZAfOLxXi6II)
 
-  
 
 3. The Animation tab should now show a button that lets you assign a property to animate. Click the Add Property button and select Transform > Position to add the position property to the timeline.
 
-  
 
 ![](https://lh3.googleusercontent.com/xVXIqFWPyTdhpJUCNjDvWAbfmitx-dwOxeU3O86vMAp5asWM1fijOkrCyrPnHU6Q7rEzUutVSiAOWjkt1X87suliAvgNET6LEhT7QYBZOQ8vhQKSUeqU0TTegpFRn9MkAz5vLXOowSY8HnPFd873cO4)
 
   
-
 If you click off the Circle game object, you’ll notice that the Animation tab goes back to the empty state from Step 2. Make sure that you have the object you want to animate selected.
 
 4. Record some keyframes. Press the red Record Button on the top left of the Animation tab. Move the circle to a “starting position”. Since the playhead in the Animation tab is currently at frame zero of the animation this will set the object’s position at the start. 
@@ -95,11 +74,13 @@ There is only one clip for this controller, so there isn’t much to see. But yo
 
 ![](https://lh3.googleusercontent.com/qrLu031c1gvTlEQZU94F-p7saXjXYsNPjK5sQmAijbRFvgYuWqV0zhApVmPzC_LI6uUOD3Ymu-PqIE-xQjNiNBS2tjzJ6_5Ip4Apzl9ywYmuBtU-9cCKc4Hn1HVUIBFndyrq4RH48WPY_QDGyLT7JB8)
 
-# Exporting sprites from Photoshop
+# Frame Animation with sprites
+
+By animating which sprite is displayed in the SpriteRenderer component, you can create frame animations of sprites.
+
+## Exporting individual sprites
 
 The most common workflow for generating your sprites is to have each individual sprite on a separate layer in photoshop and then to export each layer as a separate PNG file. This is done using Export > Layers to Files…
-
-  
 
 ![](https://lh3.googleusercontent.com/K_oOwAWMZLWKRN07PAh9sTScw6-hSxRXjnlf7Clvtwk09ZHzREFm-nduBHXxRZr2H1K4khvVKEaxfzotl45JzOn5VbcQIYUx9YVWXsXfkXj__a00DE4Y7Y2YlI9Rd7fZiTOl8gdoW2ReEA6YONi3LCI)
 
@@ -108,6 +89,24 @@ You’ll end up with something like this:
 ![](https://lh4.googleusercontent.com/grGOc8ORWOW85kgjCvGE2oqwTTxijYISEnlB8xnThaOw9O0E7JYwTzjpfWDYLvrRnb5jpEDLbJ3LJ8NtCd14sP3uxqoWLkNIBR9l4MG0Lh-MxZz-LngtTZARDcV_IuSnwtJznLqVf4GZnTfQpNSuVk0)
 
 And then you’ll need to organize groupings of sprites in your Unity project using folders or repacking sprites using an [atlas](https://docs.unity.cn/2021.1/Documentation/Manual/class-SpriteAtlas.html) .
+
+## Sprite sheets
+
+The sprite atlas above is a way to combine all of the individual sprites onto a single texture for more efficient loading and unloading of texture files. 
+
+It is not uncommon to create the sprite sheet within another program and exporting all your sprites as a single image file.
+
+![](https://www.spriters-resource.com/resources/sheets/179/182528.png?updated=1697299846)
+
+
+Usually sprites are packed into a grid. When importing into Unity, you'll set the sprite import settings to read the file as "multiple" in order to chop up the single file into individual sprites. 
+
+Here's the sliced up grid for the previous sprite:
+
+![](assets/sprite-slice.png)
+
+We'll get into the details of the sprite importing process after talking about another method for importing sprites.
+## Directly importing sprites from photoshop
 
 But, when using the 2D (URP) template, Unity includes a number of 2D specific packages that might be useful to reduce importing headaches.
   
