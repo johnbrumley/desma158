@@ -15,6 +15,8 @@ Weeks 1-2:
 #### **DUE 10/5**: Sketch  
 #### **DUE 10/12**: Game
 
+[View Project 1 Submissions](project-submissions.html?p=1)
+
 ---
 
 Weeks 3-6:
