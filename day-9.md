@@ -2,11 +2,18 @@
 layout: slides
 title: Day 9
 ---
-# Importing sprites, Animation / Frame animation
+# Plan for today
+
+1. Homeplay 2 Presentations
+2. [Animation](#importing-sprites-animation-frame-animation)
+3. [Miscellany](#mouse-interaction-dragging-snapping)
+4. Visiting UCLADMAMFAFS2023 
+
+# Importing sprites, Animation, Frame animation
 
 
 ![](https://lh6.googleusercontent.com/4fIB1J9hAEj79oc2I_l9iKXzStuF3ngOfjMfM_I7pRbSJR_z9cayNIyk2OkXvx0uO2FXPf1xaHzYbQ-bEo9saSrxL5Uh1NKoNwCz5LpojiqPdFKRcKKWASbysOkrNRQoZqtAxpwGgWT8q81ePZHZgGE)
-
+*Mini Metro*, 2015
 
 If you’re using software (or a plugin) that exports to a sprite sheet (i.e. packing multiple sprites into a single image file), then you don’t need to worry as much about exporting techniques. If not, there are some things you can consider when authoring your sprites to make things easier down the line.
 
@@ -119,17 +126,13 @@ The 2D PSD Importer package helps out with mapping Photoshop layers to sprites, 
 
 [Here is a very good overview](https://youtu.be/b2bIh8WPsi4) of what the package is capable of. For this demo, we’ll only be bringing in sprites for use in frame animations. 
 
-With the importer package, you don’t need to manually create a tiled sprite sheet, where each frame of the animation is placed on a grid (see sonic above). Instead, create each sprite on its own layer and Unity will handle how the sprite should be broken up in the import settings.
+With the importer package, you don’t need to manually create a tiled sprite sheet, where each frame of the animation is placed on a grid (see above sheets). Instead, create each sprite on its own layer and Unity will handle how the sprite should be broken up in the import settings.
 
 1. Create a simple character with a two-frame idle animation. Place each frame in a separate layer. You can group the layers and name them based on the animation type. Unity will bring over these names. 
 
 Important: Make sure all layer names are unique (even hidden ones).
 
-  
-
 ![](https://lh6.googleusercontent.com/jWbzNwKUFw1UUMU7RAyTx1oHSVT2Aw0imBiY2-uH52JP4RP7RMhxhhq_i9Z6q-FDWEYmS5AdS5nFnD-__f5icMz9Ju2HknfdJDCZT4yEEZYac6I0UefcdHR-69SpQIqRxfRR_n4ifMsDd-tddFUj7l0)
-
-  
 
 2. Save the entire scene as a PSB file. This is nearly identical to a PSD file, but can handle larger files. Unity will only import these types of files. You can save it directly to your project’s assets folder.
 
@@ -140,12 +143,10 @@ Save as type > Large Document Format (*.PSB)
 3. Back in Unity, click on the PSB file in the Project tab to bring up the import settings in the Inspector.
 4. Make sure to have the following settings
 	1. Sprite Mode: Multiple
-	2. Pixels Per Unit: 100
+	2. Pixels Per Unit: 100 (this depends on what resolution you are working at)
 	3. Import Mode: Individual Sprites (Mosaic)
 	4. Use as Rig: False (unchecked)
 	5. Filter Mode: Point (no filter) – this is if you want crisp pixel edges
-
-  
 
 ![](https://lh3.googleusercontent.com/PxfLSvS5TbXlHXlIui1pSnVp7IbeeEmo7DtpRsHQ6WG8tk9GXQFv9FW7c9OYvyVuhOAiAxg9XRphG8-CcGF6dlEZiGA8ZfOrmQyA9bV1POhMuxj0Ut4tU1J7eZsbVlAMa3DNRUKLl4xK5bLuKIFgbL4)
 
@@ -177,8 +178,6 @@ Adding the idle animation to the character.
 
 ![](https://lh3.googleusercontent.com/z9NKlQ178g0W8SvFdjXH1ql7l3BR2RKIKO4E1Jnw5plZ-1Gbrbyt-_xeFMEFkNsbGzW6BuVhdgoT7yWITQvwjFldKyaL9IFrp7xYCo09c1ir9AhSQex37l4jPU_r0ZksPYa5o0g5ErQ0EVHxreqxIGc) 
 
-  
-
 4. In the Animation window, click “Create” and save the new animation as “player_idle” (It’s a good idea to create an Animation folder to store all of the animation clips and controllers). There should now be an Animator component on the Player GameObject.
 5. With the Animation window still open, select all the frames of the idle animation in the Project tab and drag them into the timeline of the Animation window. You should see a keyframe for each of the sprites. 
 
@@ -189,21 +188,110 @@ Adding the idle animation to the character.
 ![](https://lh6.googleusercontent.com/nAmCRef_px0aDn7Y7pvcUjctp37p6hQtBnVHfxJWbrEj6Yt28dHrCYaH5qRdFwFTlgN2fblfBe9KnovNY0dEwOVZZvgosO5W5wkT0V2To_uaVdTBDMBhdhhFKSFTC6Shm4_0gwN7wVrcXWU7JplolT4)
 
 7. The character should now have an idle animation. Press play in the scene view and the animation will start with the scene.
-  
+
+# Mouse interaction, dragging, snapping
+
+I've put together a script called `MouseDrag` that you can attach to objects you'd like to test out with mouse interactions. UI Buttons are already set up for receiving mouse inputs, so you don't need to add this script to those.
+
+Create a new script called `MouseDrag` in your scene. 
+
+> Note: Mouse events work in both 2D and 3D, but the snapping on this script is only set up for 2D (using Physics2D and Collider2D)
+
+```csharp
+using UnityEngine;
+
+public class MouseDrag : MonoBehaviour
+{
+    // toggle whether to use snapping
+    public bool snapToPosition = false;
+    // radius to check for finding snap points
+    public float snapRadius = 1f;
+    // use a layer mask to filter unwanted colliders
+    public LayerMask snapLayer; 
+
+    // reference to our camera
+    Camera cam;
+
+    void Start()
+    {
+        // shorthand for grabbing the main camera
+        cam = Camera.main;
+    }
+
+    // do something on mouse click
+    void OnMouseDown()
+    {
+        print("mouse pressed");
+    }
+
+    // do something while mouse is clicked and held (every frame)
+    void OnMouseDrag()
+    {
+        // move object to position of mouse
+        Vector2 mousePos = Input.mousePosition; // using old input system
+
+        // convert from screen space (mouse coords) to world space (game coords)
+        Vector3 newPos = cam.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 10f));
+
+        // set the position
+        transform.position = newPos; 
+    }
+
+    // do something when mouse released
+    void OnMouseUp()
+    {
+        if (snapToPosition)
+        {
+            // use an overlap to check for nearby objects 
+            Collider2D collider = Physics2D.OverlapCircle(transform.position, snapRadius, snapLayer);
+            // if another collider was found, snap to that object
+            if(collider != null)
+            {
+                transform.position = collider.transform.position;
+            }
+        }
+    }
+}
+
+```
+
+You can attach this script to a game object that you'd like to drag around. 
+
+The only caveat is that **the object needs to have a collider** ([documentation](https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnMouseDrag.html)).
+
+The `OnMouseDown` method is empty, but this can be used if you only care about whether an object has been clicked. `OnMouseUp` is only used for snapping.
+
+## How snapping works
+
+When you release the mouse on the dragged game object, `OnMouseUp` will run. 
+
+After checking for whether `snapToPosition` is true or false, the script will use an overlap, specifically [OverlapCircle](https://docs.unity3d.com/ScriptReference/Physics2D.OverlapCircle.html), which temporarily creates a circle at a position with a specified radius and will return the first collider that overlaps with the circle. 
+
+Here, the script uses the position of the game object which is being dragged as the center of the circle and a radius specified by the `snapRadius` variable. Additionally, the `snapLayer` layermask will filter out any colliders that aren't on the layers we're interested in.
+
+If the returned collider exists (i.e. is not null), the script will set the dragged object's position equal to the position of the collider object.
+
+![](assets/snap-points.png)
+The snap point requires only a **Transform** and a **Collider2D** to work. In the above image, I've used a sprite renderer to make it easier to spot the point. 
+
+Additionally, I've placed these snap points on a [Layer](https://docs.unity3d.com/Manual/Layers.html) called 'snap' so that the `snapLayer` property of the `MouseDrag` script can be used to ignore all colliders not on this layer.[ Adding a new layer](https://docs.unity3d.com/Manual/create-layers.html) to your project is done by clicking on the layer dropdown and selecting *Add Layer...*. After adding a new one by typing the name into one of the empty slots, you'll have to go back to the object and set it to the newly added layer.
+
+![](assets/draggable-object.png)
+
+The draggable object now has the `MouseDrag` script with snapping set to true and the `snapLayer` set to 'snap'. 
 # Joytokey config
+
+For those that might want to test the cocktail cabinet inputs by plugging them directly into your computer. You can download the [JoyToKey](https://joytokey.net/en/) config file (you'll also need to download JoyToKey): 
 
 [https://drive.google.com/file/d/1eRSZgUk_XG248zJ_lDLOb1Vf2FHsWwJD/view?usp=share_link](https://drive.google.com/file/d/1eRSZgUk_XG248zJ_lDLOb1Vf2FHsWwJD/view?usp=share_link)
 
-
-# Character Controller 2D
+# 2D Platformer Package
 
 ![](https://lh4.googleusercontent.com/a3eFBqz2M1djEJb7lQ0yRjeK0_1l4aqcZtdht00yuYqCsdfQ0sjl1zHl6wH330NbI229mABaRCxAv0xZIQRZBRxDwt_xc_PvoM9Ad7proYUBGMExbirZRNwSgDkwzUgZWZrQri01ibaeyJQFmNKHOtI)
 
-  
+So you don't need to try and roll-your-own 2D character controller. I’ve made a demo that shows how to connect this [2D Character Controller script](https://github.com/Brackeys/2D-Character-Controller)  with the newer input system, specifically the one used by the game lab arcade machines.
 
-I’ve made a demo that shows how to connect this [2D Character Controller script](https://github.com/Brackeys/2D-Character-Controller)  with the newer input system, specifically the one used by the game lab arcade machines.
-
-Download the [demo unitypackage](https://drive.google.com/file/d/1S6yiQkYKszEhflPx9v4Gd7ZkwB8Nx8oH/view?usp=share_link) and test it out.
+Download the [demo unitypackage](https://drive.google.com/file/d/17CZ3ogYZOAYwsJTV8AN-7D53HzC9NNmg/view?usp=drive_link) and test it out.
 
 You can watch a video walkthrough of the original script [here](https://www.youtube.com/watch?v=dwcT-Dch0bA).
 
