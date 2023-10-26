@@ -37,45 +37,40 @@ Let’s get started by animating a circle to move back and forth on the screen.
 Starting with an empty scene and a 2D circle sprite:
 
 1. Add the “Animation” tab to the editor by clicking the three dots on the top right of an existing panel, then Add Tab > Animation (you can also go to Window > Animation > Animation)
-
-![](https://lh4.googleusercontent.com/MH4BNHmnzwP-eSsNa0KtXZIfLrT2OJqSmPzbEYi1F8DsXFfzB8WYK7MLUU57Ut5n9q_0KdgU7-cho5vD_qee7N9ujTQUvqsEUk7e4_Yax-E2DyOlN8iTnKhuLYPPbHXNcgItZpO-h2YYXLri-U2xTFs)
-
-
+   
+   ![](https://lh4.googleusercontent.com/MH4BNHmnzwP-eSsNa0KtXZIfLrT2OJqSmPzbEYi1F8DsXFfzB8WYK7MLUU57Ut5n9q_0KdgU7-cho5vD_qee7N9ujTQUvqsEUk7e4_Yax-E2DyOlN8iTnKhuLYPPbHXNcgItZpO-h2YYXLri-U2xTFs)
+   
 2. In the Animation tab, with the Circle selected in the hierarchy, click Create and save the new animation in your assets.
-
-![](https://lh5.googleusercontent.com/08H0hD30kbKPePn97K1bG_XD7DwfqOom53KLlWDIXhQpWatRkIxCLGbjyhKXoWFznW04H53xnAWKacuWE2w7HsUPimBYn4nSRpC1pWXO7MHAKYk-4AR0HkB9bzvksM61m7TSXWo2ohlTGv2e_kG5Zok)
-
-This will create an Animation Clip and an Animator Controller in your project assets. It will also automatically add an Animator component to the Circle game object and with the Animator Controller set in the controller property. You can leave the default settings for now.
-  
-
-![](https://lh6.googleusercontent.com/DGwkK4FvqLykPi27XqNhXrw1alQjMLVATjTJ752UvLaofHivzsfotWkajjDNaE4i88P6EK2bzqX0byNLLtnZ8kDfcq_7376_jUGIKPZ6tLGcRqr_Yzb24882gyDr0g9Oarod8pIAvhZuZAfOLxXi6II)
+   
+   ![](https://lh5.googleusercontent.com/08H0hD30kbKPePn97K1bG_XD7DwfqOom53KLlWDIXhQpWatRkIxCLGbjyhKXoWFznW04H53xnAWKacuWE2w7HsUPimBYn4nSRpC1pWXO7MHAKYk-4AR0HkB9bzvksM61m7TSXWo2ohlTGv2e_kG5Zok)
+   
+   This will create an Animation Clip and an Animator Controller in your project assets. It will also automatically add an Animator component to the Circle game object and with the Animator Controller set in the controller property. You can leave the default settings for now.
+  ![](https://lh6.googleusercontent.com/DGwkK4FvqLykPi27XqNhXrw1alQjMLVATjTJ752UvLaofHivzsfotWkajjDNaE4i88P6EK2bzqX0byNLLtnZ8kDfcq_7376_jUGIKPZ6tLGcRqr_Yzb24882gyDr0g9Oarod8pIAvhZuZAfOLxXi6II)
 
 
 3. The Animation tab should now show a button that lets you assign a property to animate. Click the Add Property button and select Transform > Position to add the position property to the timeline.
-
-
-![](https://lh3.googleusercontent.com/xVXIqFWPyTdhpJUCNjDvWAbfmitx-dwOxeU3O86vMAp5asWM1fijOkrCyrPnHU6Q7rEzUutVSiAOWjkt1X87suliAvgNET6LEhT7QYBZOQ8vhQKSUeqU0TTegpFRn9MkAz5vLXOowSY8HnPFd873cO4)
-
-  
-If you click off the Circle game object, you’ll notice that the Animation tab goes back to the empty state from Step 2. Make sure that you have the object you want to animate selected.
+   
+   ![](https://lh3.googleusercontent.com/xVXIqFWPyTdhpJUCNjDvWAbfmitx-dwOxeU3O86vMAp5asWM1fijOkrCyrPnHU6Q7rEzUutVSiAOWjkt1X87suliAvgNET6LEhT7QYBZOQ8vhQKSUeqU0TTegpFRn9MkAz5vLXOowSY8HnPFd873cO4)
+   
+   If you click off the Circle game object, you’ll notice that the Animation tab goes back to the empty state from Step 2. Make sure that you have the object you want to animate selected.
 
 4. Record some keyframes. Press the red Record Button on the top left of the Animation tab. Move the circle to a “starting position”. Since the playhead in the Animation tab is currently at frame zero of the animation this will set the object’s position at the start. 
-
-If you drag the playhead towards the end of the end of the timeline, you’ll see the position of the object animating back towards its original position.
+   
+   If you drag the playhead towards the end of the end of the timeline, you’ll see the position of the object animating back towards its original position.
 
 5. Move the playhead to the halfway point and move the circle’s position to a different position. This will add new position keyframes to the timeline. De-activate the Record Button.
-
-![](https://lh6.googleusercontent.com/v28d7stkMHOK6_KjSVwWqEIiPVGxv5eo0VIpKTfUSZ0ClZN637QAQdZui0R_0i3ZldbXqXkhIgK6x8V9iKxGdkqTXEeDd46l-u4tPv1HUamukf4--nTyE-yn0iijUl7gJblzFBLCl_FtRYMjJGSo6Vk)
+   
+   ![](https://lh6.googleusercontent.com/v28d7stkMHOK6_KjSVwWqEIiPVGxv5eo0VIpKTfUSZ0ClZN637QAQdZui0R_0i3ZldbXqXkhIgK6x8V9iKxGdkqTXEeDd46l-u4tPv1HUamukf4--nTyE-yn0iijUl7gJblzFBLCl_FtRYMjJGSo6Vk)
 
 6. Now select the keyframes at the starting position, copy them (ctrl/cmd + c), move the playhead to the final frame of the animation, and paste (ctrl/cmd + v) the keyframes.
 7. You should now have a looping animation. Preview it by clicking the play button on the Animation tab. The Animator Controller is also set to start the animation as soon as the object is active in the scene, so pressing the global play button also plays the animation. 
 8. You can scale the length of the animation by selecting all the keyframes and dragging on one of the ends. Dragging to the right will also expand the overall animation length.
-
-![](https://lh5.googleusercontent.com/LlMUvuo3gU-97_w9d3ux1eVOiHxbeom9qNvopVy9FNl_fSpWWzfLj_06o2aT9pCjIlI--_M7w5tGtocYjpmDr4UeIh60kfB2ELZ5hhMezABSWrHjNeajelObVmXCJ_1Qf9e5rVijCrUyjNAD0ycuvmk)
+   
+   ![](https://lh5.googleusercontent.com/LlMUvuo3gU-97_w9d3ux1eVOiHxbeom9qNvopVy9FNl_fSpWWzfLj_06o2aT9pCjIlI--_M7w5tGtocYjpmDr4UeIh60kfB2ELZ5hhMezABSWrHjNeajelObVmXCJ_1Qf9e5rVijCrUyjNAD0ycuvmk)
 
 9. You can view the Animation Controller in the Animator window by double clicking the “Circle” animation controller in the Project tab. Or with the Circle selected in the hierarchy, you can open the Animator window with Window > Animation > Animator
-
-![](https://lh5.googleusercontent.com/K8zG8cs8AoT8aAprnGxp3OBS1qf_gZa4xETjs0aBdlRIoSsoo11eWCn_24LxKexn_Nz3sdMIjog6_DMhytoaOtMlBpd8sgw88ikzYdP5sprOwMiWICdu9cbxWe5M3FbnkR-XQyUkQGKE26qQDQOKofI)
+   
+   ![](https://lh5.googleusercontent.com/K8zG8cs8AoT8aAprnGxp3OBS1qf_gZa4xETjs0aBdlRIoSsoo11eWCn_24LxKexn_Nz3sdMIjog6_DMhytoaOtMlBpd8sgw88ikzYdP5sprOwMiWICdu9cbxWe5M3FbnkR-XQyUkQGKE26qQDQOKofI)
 
 There is only one clip for this controller, so there isn’t much to see. But you can select the clip and modify its settings in the inspector (for instance scaling the speed of the clip).
 
@@ -128,35 +123,30 @@ The 2D PSD Importer package helps out with mapping Photoshop layers to sprites, 
 
 With the importer package, you don’t need to manually create a tiled sprite sheet, where each frame of the animation is placed on a grid (see above sheets). Instead, create each sprite on its own layer and Unity will handle how the sprite should be broken up in the import settings.
 
-1. Create a simple character with a two-frame idle animation. Place each frame in a separate layer. You can group the layers and name them based on the animation type. Unity will bring over these names. 
-
-Important: Make sure all layer names are unique (even hidden ones).
-
-![](https://lh6.googleusercontent.com/jWbzNwKUFw1UUMU7RAyTx1oHSVT2Aw0imBiY2-uH52JP4RP7RMhxhhq_i9Z6q-FDWEYmS5AdS5nFnD-__f5icMz9Ju2HknfdJDCZT4yEEZYac6I0UefcdHR-69SpQIqRxfRR_n4ifMsDd-tddFUj7l0)
+1. Create a simple character with a two-frame idle animation. Place each frame in a separate layer. You can group the layers and name them based on the animation type. Unity will bring over these names. **Important**: Make sure all layer names are unique (even hidden ones).
+   ![](https://lh6.googleusercontent.com/jWbzNwKUFw1UUMU7RAyTx1oHSVT2Aw0imBiY2-uH52JP4RP7RMhxhhq_i9Z6q-FDWEYmS5AdS5nFnD-__f5icMz9Ju2HknfdJDCZT4yEEZYac6I0UefcdHR-69SpQIqRxfRR_n4ifMsDd-tddFUj7l0)
 
 2. Save the entire scene as a PSB file. This is nearly identical to a PSD file, but can handle larger files. Unity will only import these types of files. You can save it directly to your project’s assets folder.
-
-Save as type > Large Document Format (*.PSB)
-
-![](https://lh3.googleusercontent.com/45uevjmaM54SZYKVAinlFXVlPW13x9zL1J_ykJi3LQuURmwSxHCmz4dlrug13MpC9wJxRRa4HCzYMorHRzmF6zUqI5NlapvhSHbl9uGAfXKlDiXeX9nKTaoKNe2FVhrTgwHpBYaB87w4LMDAmTgiHic)
+   
+   Save as type > Large Document Format (*.PSB)
+   
+   ![](https://lh3.googleusercontent.com/45uevjmaM54SZYKVAinlFXVlPW13x9zL1J_ykJi3LQuURmwSxHCmz4dlrug13MpC9wJxRRa4HCzYMorHRzmF6zUqI5NlapvhSHbl9uGAfXKlDiXeX9nKTaoKNe2FVhrTgwHpBYaB87w4LMDAmTgiHic)
 
 3. Back in Unity, click on the PSB file in the Project tab to bring up the import settings in the Inspector.
-4. Make sure to have the following settings
+4. Make sure to have the following settings:
 	1. Sprite Mode: Multiple
 	2. Pixels Per Unit: 100 (this depends on what resolution you are working at)
 	3. Import Mode: Individual Sprites (Mosaic)
 	4. Use as Rig: False (unchecked)
 	5. Filter Mode: Point (no filter) – this is if you want crisp pixel edges
-
-![](https://lh3.googleusercontent.com/PxfLSvS5TbXlHXlIui1pSnVp7IbeeEmo7DtpRsHQ6WG8tk9GXQFv9FW7c9OYvyVuhOAiAxg9XRphG8-CcGF6dlEZiGA8ZfOrmQyA9bV1POhMuxj0Ut4tU1J7eZsbVlAMa3DNRUKLl4xK5bLuKIFgbL4)
+	   
+	   ![](https://lh3.googleusercontent.com/PxfLSvS5TbXlHXlIui1pSnVp7IbeeEmo7DtpRsHQ6WG8tk9GXQFv9FW7c9OYvyVuhOAiAxg9XRphG8-CcGF6dlEZiGA8ZfOrmQyA9bV1POhMuxj0Ut4tU1J7eZsbVlAMa3DNRUKLl4xK5bLuKIFgbL4)
 
 5. Hit “Apply” and then click on the Open Sprite Editor to see how your sprite was imported.
 6. You should see bounding boxes around each separate sprite. For a character like this, it’s important to have the pivot at the base of the sprite. Select each box and change the pivot to Bottom Center. For other sprites you’ll want to keep the pivot in the center or move it to another part of the sprite.
-  
-
-![](https://lh5.googleusercontent.com/4S0elu05MVyKWMSTD0clPgu9kn0msGUrvrhDw2GMPKel_xeSrKwDO8cg8i6CYptA0OmgIXPZMefB_2m4u5TMDNu6dytax0Zg_ZRiT5n4tvJdP1uX1a4ujWpw0nvRAXJ3LKn3Ksf6DFY-IjPivk9JO-8)
-
-  
+   
+   ![](https://lh5.googleusercontent.com/4S0elu05MVyKWMSTD0clPgu9kn0msGUrvrhDw2GMPKel_xeSrKwDO8cg8i6CYptA0OmgIXPZMefB_2m4u5TMDNu6dytax0Zg_ZRiT5n4tvJdP1uX1a4ujWpw0nvRAXJ3LKn3Ksf6DFY-IjPivk9JO-8)
+   
 7. Import some more sprites that you might want to include in your scene. I found some clouds. Because we started the Project in the 2D template, all images will be imported as sprites by default. You can import new sprites separately or play with packing similar sprites into a single PSB file.
 
 Here’s an example of a bunch of different clouds all imported together and how the resulting sprite sheet turned out:
