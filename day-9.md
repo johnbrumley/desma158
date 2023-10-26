@@ -9,6 +9,41 @@ title: Day 9
 3. [Miscellany](#mouse-interaction-dragging-snapping)
 4. Visiting UCLADMAMFAFS2023 
 
+
+# Upcoming Events
+
+## TOMORROW!
+
+![](https://media.discordapp.net/attachments/820103095991795772/1164337502191108096/Fall2023_PechaKucha_Banner.png?ex=654c134c&is=65399e4c&hm=822d55e220a00783b9865bc9489473e273c76fa9571b132b72e5a6055c1ce06a&=&width=1025&height=442)
+
+**Friday, October 27 
+Time: 1:00pm - 3:00pm 
+Location: UCLA Game Lab Broad Art Center Room 3252**
+
+PechaKucha presentations featuring our very own faculty, staff and students! PechaKucha (Japanese for 'chitchat') is a "show-and-tell" presentation format which uses 10 - 20 slides of images/videos, with only up to 20 - 40 seconds of commentary per slide. In short, each presentation should be no longer than a total of 400 seconds. 
+
+Anyone who'd like to share their game-related work to sign up as a presenter! 'Work' in this context is loosely defined — show us your completed / upcoming game project, your research notes, game art you've made, etc. 
+
+Tell us a bit about yourself, your ideas, and your interests in a casual format! Everyone is welcome to present, but not everyone attending has to present something—it's okay to just watch/listen!
+
+Anyone interested in attending the event, whether as a presenter or an audience member, please RSVP for this meeting using the following link: [https://forms.gle/n7XVzjaHS9Am9wAZ8](https://forms.gle/n7XVzjaHS9Am9wAZ8 "https://forms.gle/n7XVzjaHS9Am9wAZ8")    
+
+## Next Tuesday (Oct 31st) 
+
+![](https://media.discordapp.net/attachments/820103095991795772/1166042775872090142/JaroslavSvelch_banner.png?ex=65490cf5&is=653697f5&hm=613dcb47a9dcc71640bcf4d05547457d2df5a666bf16a3a8e70d68ba180aa426&=&width=1025&height=442)
+
+The Making and Breaking of Video Game Monsters Tuesday
+
+**October 31st, 2023 
+12:30 p.m - 1:45 p.m. @ UCLA GAME LAB
+Broad Art Center, Room 3252 **
+
+Based on Švelch’s recent book Player vs. Monster (MIT Press), this talk will explore the history of video game monsters as well as contemporary examples. While scholars of both myth and horror think of monstrosity as sublime and unspeakable, games often portray monsters as predictable targets of player action. While acknowledging the appeal of such simplistic representations, the talk will also explore how the medium can present more nuanced depictions of monstrosity. Join us this Halloween! 
+
+Jaroslav Švelch, Ph.D., is an associate professor in the Faculty of Social Sciences at Charles University in Prague. He is head of the Prague Game Production Studies group and chair of the DiGRA Central and Eastern Europe Chapter Executive Board. 
+
+RSVP for this meeting using the following link: [https://forms.gle/JEqxpTrNdkYyhfB6A](https://forms.gle/JEqxpTrNdkYyhfB6A "https://forms.gle/JEqxpTrNdkYyhfB6A")
+
 # Importing sprites, Animation, Frame animation
 
 
