@@ -23,10 +23,10 @@ GameObject newObject = Instantiate(prefab);
 To instantiate an object, you first need to create a Prefab of that object:
 ## Design a prefab
 
-1. Create a 2D circle in the scene Hierarchy. Create > 2D Object > Sprites > Circle.
-2. Resize it using the Rect Tool and change the color in the Sprite Renderer.
-3. Add a Rigidbody 2D. Leave the gravity scale at 1. Change Collision Detection to “Continuous”. (this isn’t totally necessary, but should be used for high speed objects)
-4. Add a Circle Collider 2D.
+1. Create a 2D circle in the scene Hierarchy. **Create > 2D Object > Sprites > Circle**.
+2. Resize it using the *Rect Tool* and change the color in the Sprite Renderer.
+3. Add a **Rigidbody 2D**. Leave the gravity scale at 1. Change Collision Detection to “Continuous”. (this isn’t totally necessary, but should be used for high speed objects)
+4. Add a **Circle Collider 2D**.
 5. Create a new folder in the Project tab called “Prefabs”.
 6. Select the GameObject in the Hierarchy and drag it into the Prefabs folder in the Project tab. You’ll notice that the icon next to the game object becomes solid blue to indicate that it’s a prefab.
    >Note: You can click the arrow to the right of the prefab in the Hierarchy to enter prefab editing mode in the Scene view. Double-clicking on the prefab in the Project folder will also open the prefab editor. Editing the prefab here will change all instances of the prefab. The Hierarchy will change to reflect the structure of the prefab which can contain multiple child objects. Clicking on the left arrow takes you back to the normal Scene view.
@@ -37,7 +37,6 @@ To instantiate an object, you first need to create a Prefab of that object:
 2. Add a Player Input component to the spawner game object and drag the GamelabCocktailCabinetControls into the Actions property.
 3. Create a new script called “SpawnObject”
 4. Open the script and add this code:
-
 ```csharp
 using UnityEngine;  
 using UnityEngine.InputSystem;  
@@ -45,13 +44,12 @@ using UnityEngine.InputSystem;
 public class SpawnObject : MonoBehaviour  
 {  
 	public GameObject prefab;  
-	// Spawn every time Button1 is pressed    
+	// Spawn every time Button1 is pressed, feel free to use your own input action    
 	void OnButton1() {        
 		Instantiate(prefab, transform.position, transform.rotation);    
 	}
 }
 ```
-
 5. Save it and return to the editor.
 6. Drag the prefab from before into the Prefab property of the script.
 
@@ -76,7 +74,6 @@ public class DestroyObject : MonoBehaviour
 	}
 }
 ```
-
 
 Destroy allows you to add a delay before the object is removed. Press play and spawn objects, then keep an eye on the hierarchy and notice the objects disappearing.
 ## Build a playfield
