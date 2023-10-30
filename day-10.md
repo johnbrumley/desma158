@@ -95,6 +95,9 @@ Also lots of examples on the [Internet Pinball Database](https://www.ipdb.org/se
 Extra things to try:
 
 1. Spawning objects and adding forces to them 
+2. Bumpers (i.e. add force to the object when it collides with specific objects)
+3. Multiple spawn points that use different inputs to spawn
+4. Points
 
 Hint: 
 
@@ -121,9 +124,6 @@ public class SpawnObject : MonoBehaviour
 }
 ```
 
-2. Bumpers (i.e. add force to the object when it collides with specific objects)
-3. Multiple spawn points that use different inputs to spawn
-4. Points
 # Scripting Animations
 
 To control different aspects of the animator inside of a script, you can get a reference to the component using the **GetComponent** method.  
