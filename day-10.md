@@ -378,3 +378,19 @@ public class AnimateOnClick : MonoBehaviour
 ```
 
 
+# Yarn Spinner resources
+
+![](https://307131674-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MUzduXovTOfMmBpZ0Wi%2Fuploads%2Fgit-blob-59beacc727f86016ffafad8aa1c402892857c4e3%2FScreen%20Shot%202022-01-28%20at%201.38.03%20pm.png?alt=media&token=232ec76d-78a1-4523-a1a9-e5412b13b587)
+
+For those wanting to write dialogue in the style of [Twine](https://twinery.org/) or [Ren'Py](https://www.renpy.org/), Yarn Spinner is likely the best *free* plugin for Unity. There are very capable[ paid assets ](https://www.pixelcrushers.com/dialogue-system/) as well if you find yourself in need of something with many more features.
+
+> Note: Yarn Spinner can be quick to set up using its default components, but making the UI look good or adding other custom functions will require customization
+
+The [Yarn Spinner documentation website](https://docs.yarnspinner.dev/) is the place to get started. You can also find a specific tutorial for [installing and setting up Yarn Spinner with Unity](https://docs.yarnspinner.dev/beginners-guide/using-a-game-engine/yarn-spinner-for-unity). 
+
+Dialogues are written in the Yarn language, so you'll need to get a sense of what the syntax is like. You can [read about all the basics in the documentation](https://docs.yarnspinner.dev/beginners-guide/syntax-basics) and [try it out directly in the browser](https://try.yarnspinner.dev/). Yarn Spinner has an official add-on for VS Code if you want code completion and syntax highlighting in your yarn files.
+
+The [FAQ on the website](https://docs.yarnspinner.dev/using-yarnspinner-with-unity/faq) is also a good way to see how the developers suggest using Yarn Spinner
+
+Finally, the Yarn Spinner unity package comes with a bunch of samples that you can use as a template for the type of dialogue that you're trying to make. There is a samples tab in the package manager where you can download and try them out.
+
