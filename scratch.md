@@ -4,11 +4,12 @@
 scratch push test
 # post meeting todo
 
-- [ ] sprinkle in more anna anthropy readings -- maybe include responses as part of sketch? ~~Thinking Ch 3 - what is game? (proj 1)~~ not that useful after all, ch1 - personal voice (proj 2), ch 4 - hacks and mods (proj 3)?
-- [ ] d3: NEED TO IMPORT URP LIGHTS AND MATS
-- [ ] d3: CREATE SECTION COVERING TRIGGERS AND COLLISIONS (lightswitch demo)
-- [ ] d3: ADD SECTION TO SHOW PREMADE SCRIPTS AND THINGS
-- [ ] d2: (only if there's time) add in a section on what the goal of the level is ... intro a mechanic? (demo Portal), tell a history? (Season) talk about the state of a character? (Celeste?)
+- [ ] sprinkle in more anna anthropy readings -- maybe include responses as part of sketch? ~~Thinking Ch 3 - what is game? (proj 1)~~ not that useful after all, ch1 - personal voice (proj 2), 
+- [ ] Anthropy - ch 4 - hacks and mods (proj 3)?
+- [x] d3: NEED TO IMPORT URP LIGHTS AND MATS
+- [x] d3: CREATE SECTION COVERING TRIGGERS AND COLLISIONS (lightswitch demo)
+- [x] d3: ADD SECTION TO SHOW PREMADE SCRIPTS AND THINGS
+- [x] d2: (only if there's time) add in a section on what the goal of the level is ... intro a mechanic? (demo Portal), tell a history? (Season) talk about the state of a character? (Celeste?)
 - [x] create demo/templates for
 	- [x] d3/4: replacing ball with other thing, but keep motion
 	- [x] d3: collisions and triggers -- also a general walkthrough of those
