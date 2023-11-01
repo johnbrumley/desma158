@@ -1033,3 +1033,126 @@ Collider2D allOfThem = Physics2D.OverlapCircleAll(center, radius);
   
 
 Check out the [Physics2D](https://docs.unity3d.com/ScriptReference/Physics2D.html) page to see all the operations.
+
+# Pausing physics
+
+![](https://lh7-us.googleusercontent.com/zYjJVbcDE6OzttvhozcfQkd2jHxaM0lzi7S7xgLh1Y2QCkU2Do0ZWwmuxQY0XgYqGGJCryXs2xE-CVBWxRWWu8dLSRJfHcd6fRIb4WvDnrqSRGkqBRmsIB7w_0fEWAEKaC0quFs8jIcIEHUUtYuSF99m0BxacVZew_0rdRkpy6GFOQL2xvb89mng9vK-AA)
+
+[https://superhotgame.com/](https://superhotgame.com/) 
+
+
+![](https://lh7-us.googleusercontent.com/KXSGc52CAVvZo1JYzVuWa7ItC_mKWRhi5yg29-zkGKfy6YXQ8G8Ll4v4L2YlXGyh3VVjPmW4CqGpYIKArCD-UO296dXv4YsOVhO0ai3rXJ4u_oG4Kqya0Gm8LAmtL2OrifHt4TAU3ZEKwtb9kk-aKo79LuaGxPpskE-aA1e3XTIhAnWcjfyp6abzZKwrCw)
+
+In Project Settings > Time, you can manually control the global Time Scale of your game. At a value of one, the time proceeds normally, at 0.5 the game runs at half speed, and at 2 the game moves at double the speed. You can set the time scale to zero to pause the game (this pauses FixedUpdate completely).
+
+To set the time scale in a script, you can use the Time.timeScale property
+
+```csharp
+Time.timeScale = 1.0f;
+```
+
+For doing physics calculations, it’s also important to scale the FixedUpdate delta time with the time scale. This makes sure that the number of physics calculations per Update frame stays the same.
+
+```csharp
+Time.fixedDeltaTime = this.fixedDeltaTime * Time.timeScale;
+```
+
+For a bit more info and a good demo of the Unity physics system, check out the [Unity Physics Playground](https://resources.unity.com/unitenow/onlinesessions/prototype-series-physics-playground-slow-motion-and-gravity)
+
+# Flow, Difficulty, Progression 
+
+  
+
+![](https://lh7-us.googleusercontent.com/nUN8tchpkhkSaWAEsstsLM7g4tn3Nx_pPE8mfubzC68ifu95CYC80-qCF2_hrG1roWh_iidemqufjyPZ8_GR5bW38GG2vbAx2jkhWdPfHQn9YutfIUKVWMspDZuFJdZGsSmDcwporAsJ9YuEFruMmvUozntqvxuM5JmQ0mc1ljHVWHQynUW0DMIuM2OJig)
+
+The four levels of Donkey Kong
+
+A large part of keeping players engaged with a game (or an app, service, job) is to create an experience that balances skill and challenge. As a player’s skill increases, the challenge should increase as well. Conversely, a player without experience should be able to get started without hitting a wall of difficulty.
+
+![](https://lh7-us.googleusercontent.com/LBkZNzQGtLrM7hGaSs8WiL7K_1IUjJdd5CL3Yb3xaM_QvuUlfzMOunmAD9K2AHESS1tXad7Fvgp1qN-MKe8CChl-49RwTTVJ3i5QIMb5kR7Gmaq-dE8wCDtMVeLz0-dviN5qgbbMjmO31IRqIM_DeyksyRUfoR0KQqQ3iqYKOoduIxAj6JfYBrLdPBFG0Q)
+
+Csikszentmihalyi playing a game with his dog  
+  
+From his book "Flow: The Psychology of Optimal Experience"
+
+In this game, the dog would bark and run away, encouraging Csikszentmihalyi to chase it. The game involved a sense of playful challenge, with the dog trying to stay just out of reach while still maintaining a connection with Csikszentmihalyi.
+
+If he was tired and not keeping up, the dog would circle a bit closer. This allowed him to get closer, enticing him to maintain the chase. His dog, Hussar, would also speed up when Csikszentmihalyi was more active, always keeping the game interesting. 
+
+According to Csikszentmihalyi, the escape and pursuit game can be a way to achieve flow, as it involves a balance between challenge and skill. The dog was able to adjust its movements and actions in response to Csikszentmihalyi's pursuit, creating a dynamic and engaging experience for both of them.
+
+![](https://lh7-us.googleusercontent.com/8jgsuz-74nm2m1RleCi7SZhRa3XmJafddzKSyAZ8TnD75rZfU7X9KI_Vllk8aU0bArHHINV9JXC4jmLcKXSNWC8pIuSqc3kpGgXm99eFYLVqJsxYCLvnO3NmeSqOqAHwaeSr6WohsWelIepmPLJD10jaOW6GEFU0pQtC3Jlri6XJm8RlBNXwkx3qBxFVmQ)
+
+Typically, a flow-producing activity: 
+- balances an individual’s skills with the activity’s challenges
+- presents clear goals and feedback toward achieving these goals
+- allows a feeling of control when awareness merges with action. 
+
+Then, according to Csikszentmihalyi, self-consciousness disappears and one’s awareness of time and its passing melts away.
+
+![](https://lh7-us.googleusercontent.com/mN4eu-9wnEwRAstfzAZDZyq5WE2ZHUBgt6QMzirRqmqkCP_9jN_HND2mLw1HTNvCZ0Oe17OIyXh8Nb5OKr0823ORQfpou5Pv54QrqwoQOE4hRBO2iKUJz7FFQXvSzUjIhf57MzXaIPM618B4v2IbHLeTWmrsO96wXAsrmA_n9XmWIGLRuiZ1wVyg9-vPIQ)
+
+“flow theory has also been applied to just about everything else, from workplace satisfaction to education to spirituality”  – Ian Bogost, [Play Anything](https://bogost.com/books/play-anything/)
+
+“However, flow is not an uncomplicated, straightforward solution to the problem of alienation. It is not simply a natural psychological state or experience; flow theory uses the concept as an ideology, one that privileges individuality over social collectivities, growth and accumulation over equilibrium and sustainability, self-determination over the idea that external forces shape human consciousness, and action over critical examination.”
+
+[https://mitpress.mit.edu/9780262045506/against-flow/](https://mitpress.mit.edu/9780262045506/against-flow/)
+
+
+![](https://lh7-us.googleusercontent.com/bbTcHZ49G_IWTSi-YfgWWHjxi0GsszWxMrX8SGKu6LwrKTSvjDn0ztxj4l0bR2uJNoGCNldMNXARPYGtsayp6zdvlvBVG1Tf-Dm9YOHKicYOF8O50BSJSHVvP1ECHGfEna1ZAVkhdqUFivAZlScMJLx-sVfcRBMrRIZ0o_X5BgjxmgDvQyHGZamYoItOsw)
+
+[https://pippinbarr.com/itisasifyouweredoingwork/](https://pippinbarr.com/itisasifyouweredoingwork/) 
+
+Flow-inducing techniques can give the impression of autonomy or skill while actually guiding your behavior towards the interests of another person/group/business (see also behavioral economics – [1](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow) [2](https://en.wikipedia.org/wiki/Nudge_(book)))
+
+## What are some of the techniques used in games?
+
+![](https://lh7-us.googleusercontent.com/Yk9wV1Y3taImmIvkmREzgfYbmkwO5YbW_wfDnK_bm5tRDe3_vbxow6DGnnXwsWH0SWP8DHodfba3m3u9XE33j6sY_uH2QwcWjW-tcnb1u9hQh3uMMK3blg0aKqDSSpoM0T1exvUriTqlfln5RhsNM2nbjHIuarING433aVCqmRYomeu-l-oZMEdn79WNgQ)
+
+*Banding* - Mario Kart and other arcade racing games
+*Assist Mode* - Mario Odyssey, Control, Celeste – see also accessibility [modes](https://youtu.be/W7ExSsmJssQ) 
+*Dynamic Difficulty Adjustment* - Resident Evil 4, Left 4 Dead
+*Multiple pathways / Open world* - Breath of the Wild, Metal Gear Solid 5, Elden Ring 
+*Ranked Matchmaking* - most competitive online video games 
+  
+Non-video-game examples?
+- Apps?
+
+![](https://lh7-us.googleusercontent.com/AHU_EfzE1qipC0mspxY0aC1jo_TLLzHBYuRkWXZEGgtF5pU0ozOaS8nVXcJ1ldfLiHQlSbS1cA0yItwnnwWpH-1gia_Z2BlrHiTLRac1OwkZdLWGm5ppLe3cPqIVjfGf6RuFk2L-Oa_HErRGdgUO4U6PoPPRtV8h3Hz6CzKj7va6GGOan07-0OGJaDak1w)
+
+[https://press.princeton.edu/books/paperback/9780691160887/addiction-by-design](https://press.princeton.edu/books/paperback/9780691160887/addiction-by-design) 
+
+“What we didn’t get at the beginning is that people don’t really want to be entertained. Our best customers are not interested in entertainment—they want to be totally absorbed, they want to get into a rhythm.”
+
+“The aesthetics of many video games are monopolized by their attempt to produce flow, and that flow has a monopoly on mainstream games.”
+
+
+![](https://lh7-us.googleusercontent.com/Q1bHX_tcUKiKNNGu2cHVnHHfQju_EEKpqoSScFb2Ug-TfCQOj9Qz9COwWPDvrBjDSE9aRdpyDTJFBRbgbyza8yG2zt3wCeYKvW8PGUUgKxX2Qg_WgJgJ3ZgWe_2seR3IduhmgyRUYMSSFAewTZaouHaz5BV5Vviwg6aZIgRad0JO9OWarSGdgkILunXW_A)
+
+[https://thatgamecompany.com/flow/](https://thatgamecompany.com/flow/) 
+
+## Alternatives… play and flow
+
+“There are … plenty of video games that eschew the absorption of flow and its challenge-based immersion to explore the variety of human affect and experience (for example,... “anxiety” and “boredom”...). Moreover, video games may bring flow to the masses, but the masses are not docile subjects so easily forced into flow. The unruly, unpredictable, and often subversive agency of players can take a game that privileges flow and transgress it, mutate it, queer it, subvert it, unplay it, and trifle with it.”
+
+![](https://lh7-us.googleusercontent.com/hC3KBkUtEgWFeXZJzlabh3oYnrDyGBJhrYE6UTalSCw9gMnMzVOdUlHZ-5m-bpEiPIJGPfQbwT-bwke4nOMTQYM_JHerdfVIM6R9wZMA6NcwOGr55LjTIcE7kB7K8E-rfbobBda5gpppaTiuALzou6Wz7AELKmuA50YGR2yIhedvmKGi-IpcJ9KbkGaj0Q)
+
+[Dys41a](https://archive.org/details/dys41a) - Anna Anthropy
+
+![](https://lh7-us.googleusercontent.com/-f9cX4CIYKziMx2YPeIJCHkNkNVZRHLob1g87QGZTAKdYrkkULu7QE6R0rgm1LlY1gRgalR-aKru9NL7Bn6ZfzlQicXm1RazuOHT7ooXPGm_CWJTVK33H4eCgtCQS5Rfcibh4rskuNiAYsQJP__pIgH7pAaYwhqBKuY6vh2jcuIZvAZGOYs8w5bvYFst3A)
+
+[Realistic kissing simulator](http://jimmylands.com/experiments/kissing/) - Jimmy Andrews and Loren Schmidt
+
+![](https://lh7-us.googleusercontent.com/0SKQid1oDN8oBncQyC73MAH6XEWliPM_Vu7ca6jA2P2S--JGJfawmWIm86fGDJdN6oM-jijKWhxqdrLOKGgqZ5qFFVTRlwzxXTZXMM3O9FlhFO3lBzObd3J15Zho1eqo1hbtr1Snjt8zA11gx1ozvFhQSZBlkKYuCpMO1GEzsZueWuuSa9LYGjMG4m5HJA)
+
+[Octodad](https://octodad.com/) - Young Horses
+
+![](https://lh7-us.googleusercontent.com/eqR6O4t1CRVDldpkfYLbusAYypsP_yigm7qIItIDEph_RHmRYzymdzWL_YTqhpB751aQ2vHU1A7XYewNu5L1xKSfn6v1n5EuOG_GdQDYa0O9KU7KHuBsfPlE6gSTpvLGlLuh3rAAorgpPIfwdnqJSfbzqg1VohmDyxRavbTgLA2yC3MHLuIIgxQ4p2dj-Q)
+
+Caillois: 
+
+play is “an occasion of pure waste: waste of time, energy, ingenuity, skill, and often of money”. 
+
+> Play resists demands for productivity. 
+
+But flow is a psychological experience of enjoyable action that can accompany any activity whatsoever (even productive work).
