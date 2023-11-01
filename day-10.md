@@ -31,12 +31,14 @@ To instantiate an object, you first need to create a Prefab of that object:
 6. Select the GameObject in the Hierarchy and drag it into the Prefabs folder in the Project tab. You’ll notice that the icon next to the game object becomes solid blue to indicate that it’s a prefab.
    >Note: You can click the arrow to the right of the prefab in the Hierarchy to enter prefab editing mode in the Scene view. Double-clicking on the prefab in the Project folder will also open the prefab editor. Editing the prefab here will change all instances of the prefab. The Hierarchy will change to reflect the structure of the prefab which can contain multiple child objects. Clicking on the left arrow takes you back to the normal Scene view.
 7. Delete the Projectile from the Hierarchy.
+
 ## Build the Spawner
 
 1. Add an empty Game Object to the scene. Name it “Spawner”.
 2. Add a Player Input component to the spawner game object and drag the GamelabCocktailCabinetControls into the Actions property.
 3. Create a new script called “SpawnObject”
 4. Open the script and add this code:
+
 ```csharp
 using UnityEngine;  
 using UnityEngine.InputSystem;  
@@ -50,6 +52,7 @@ public class SpawnObject : MonoBehaviour
 	}
 }
 ```
+
 5. Save it and return to the editor.
 6. Drag the prefab from before into the Prefab property of the script.
 
