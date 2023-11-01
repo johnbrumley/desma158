@@ -146,7 +146,7 @@ public static List<HighScore> LoadHighScores()
 
 # Scenes, Loading, Changing, Managing
 
-This demo heavily references [this demo game](https://drive.google.com/file/d/1hBL7aww-pa3cSKZHSHBiVD8_bAXoOkC_/view?usp=share_link). But most concepts will work with the Flat Game Template file from a few classes ago. 
+This demo heavily references [this demo game](https://drive.google.com/file/d/1hBL7aww-pa3cSKZHSHBiVD8_bAXoOkC_/view?usp=share_link). But most concepts will work with the [Flat Game Template](https://drive.google.com/file/d/1wl8eYa-01PaycjSLsaZzSBzm7S1s59S3/view?usp=sharing) from a few classes ago. 
 
 If you want another Unity project to pick apart, feel free to download the other demo package and import it into your existing 2D unity project or a new project (2D URP template, add input system package)
 
@@ -190,7 +190,21 @@ namespace DesmaDemos
 }
 ```
 
-How about the demo game?
+Changing scenes involves the [Unity Scene Manager](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.html) which requires
+
+```csharp
+Using UnityEngine.SceneManagement;
+```
+
+Scenes can be loaded by name `SceneManager.LoadScene("StartScene");` or by their build index (as above). Scenes need to be added to the build before they can be loaded by the scene manager
+
+Open the Build Settings (File > Build Settings) and drag the scenes you would like to include with the game into the Scenes In Build section
+
+![](https://lh5.googleusercontent.com/X3lERYJOPnKlP_Zpqba4lG2Wzj1lZZwRIEccXUEGXBqWFXt9rYAYVehRbpBSlvYrbpyP84gb2HRId1aI0c6fBGM3kQZBMMPeMCi1R4ykghljN5TvWh4k7BIe6FCVip2NJWYfE5qPJnhwwXglvmITkO8)
+
+The build index for each scene is listed on the right side.
+
+How is the demo game using this?
 
 ![](https://lh4.googleusercontent.com/q3KKJFjVeXRvY3vzPSOujir4AU0ZnLckxpgUQlO7h2nj0EynNDWzmMKJMJf2SPhptYZz_mjvlFTZxONbP0rFAL7bAZLsxycOh2fH7FmL9vHFvkqcVPRauZrKxnlJHCdcYpeh_ZGM22W7HlV45Yj1P6Y)
 
@@ -210,20 +224,6 @@ public class StartGame : MonoBehaviour
 	}
 }
 ```
-
-Changing scenes involves the [Unity Scene Manager](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.html) which requires
-
-```csharp
-Using UnityEngine.SceneManagement;
-```
-
-Scenes can be loaded by name or by their build index (as above). Scenes need to be added to the build before they can be loaded by the scene manager
-
-Open the Build Settings (File > Build Settings) and drag the scenes you would like to include with the game into the Scenes In Build section
-
-![](https://lh5.googleusercontent.com/X3lERYJOPnKlP_Zpqba4lG2Wzj1lZZwRIEccXUEGXBqWFXt9rYAYVehRbpBSlvYrbpyP84gb2HRId1aI0c6fBGM3kQZBMMPeMCi1R4ykghljN5TvWh4k7BIe6FCVip2NJWYfE5qPJnhwwXglvmITkO8)
-
-The build index for each scene is listed on the right side.
 
 ### A Game Manager and DontDestroyOnLoad
 
@@ -339,14 +339,34 @@ public class GameManager : MonoBehaviour
 }
 ```
 
-
 Aside from the Singleton code in the Awake section, the manager doesn’t do very much. There is a score variable that can be updated with the AddToScore method and methods for changing to different scenes depending on whether the player achieved a high score.
 
 The version in the demo has a few extra things related to background music.
-
 ## Level 1 or Main game scene
 
-In the flat game template, this scene is completely empty aside from a main camera and a canvas. We'll need to add in a script that will tell the game to load the next scene (either the ending scene or another level). Ultimately 
+In the flat game template, this scene is completely empty aside from a main camera and a canvas. We'll need to add in a script that will tell the game to load the next scene (either the ending scene or another level). You'll need to decide what the condition is for entering the next level: a button click, a trigger entered, number of objects collected, a timer finished, etc.
+
+When your condition is met, you'll use the same technique from starting the game.
+
+Import the scene management namespace:
+
+```csharp
+using UnityEngine.SceneManagement;
+```
+
+Tell the scene manager to load a new scene:
+
+```csharp
+SceneManager.LoadScene(Name-Or-Index-Of-The-Scene-You-Want-To-Load);
+// i.e.
+SceneManager.LoadScene("Level-2");
+// or
+SceneManager.LoadScene(2);
+```
+
+
+![](https://lh7-us.googleusercontent.com/xowJmf58-Z2ZQDY91yU5Yo0nz6vLSFUaA1m2inWdAob5RdkSTzsfL4G1D3A3HD17ecJBU-jQiHciCsvs706mK-_igz67T1thYK7zXkvNVvLpGOXCm_SaIa9qkdDi62rgorKYiP7_7kEwd-_YWiDkTO0)
+
 
 The demo has a very simple game that just requires the player to place sunglasses on another character’s face:
 
@@ -375,17 +395,114 @@ There is an additional UnityEvent that lets the timer know that it should stop a
 
 ## End Scene or High score scene
 
-The name entry scene is a bit more complicated. The important thing is that it uses [PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html) to load and save high score information. Which we will talk about next. Otherwise it takes in the data and then tells the GameManager to reset back to the title screen with this line:
-
-  
+The flat game template has an EndScene scene, which is just text and an AnyKeyToRetry script that returns to the StartScene (using the build index)
 
 ```csharp
-GameManager.Instance.ReturnToTitle();
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+namespace DesmaDemos
+{
+    public class AnyKeyToRetry : MonoBehaviour
+    {
+        void Update()
+        {
+            if (Input.anyKeyDown)
+            {
+                SceneManager.LoadScene(0);
+            }
+        }
+    }
+}
+```
+
+Again, you can decide if you want to use something like this for returning to the beginning. Or you can also call `Application.Quit()` to fully close the program.
+
+![](assets/hi-score-scene.png)
+
+The demo game has a high score entry which is slightly more complicated. The important thing is that it uses [PlayerPrefs](https://docs.unity3d.com/ScriptReference/PlayerPrefs.html) to load and save high score information. The GameManager keeps track of the high score, so the script to assign the new high score to the text element isn't calling PlayerPrefs but rather getting the score from the game manager:
+
+```csharp
+using UnityEngine;
+using TMPro;
+
+public class SetScoreValue : MonoBehaviour
+{
+    public TMP_Text highScoreValue;
+
+    void Start()
+    {
+        highScoreValue.text = GameManager.Instance.highScore.ToString();
+    }
+}
+```
+
+The manager stores the high score in the EndGame method:
+
+```csharp
+public void EndGame()
+{
+
+    // check if there's a high score
+    if (score > highScore)
+    {
+        // store the new high score
+        highScore = score;
+        PlayerPrefs.SetInt("hi-score", score);
+
+        // New high score screen
+        StartCoroutine(DelaySceneLoad(2, 2));
+    }
+    else
+    {
+        ReturnToTitle();
+    }
+}
+```
+
+And gets the current high score as soon as the game loads in the awake section:
+
+```csharp
+public int highScore { get; private set; }
+void Awake()
+{
+	 // singleton things 
+     if (Instance != null && Instance != this)
+     {
+         Destroy(gameObject);
+     }
+     else
+     {
+         Instance = this;
+
+         // keep object around between scene changes
+         DontDestroyOnLoad(gameObject);
+     }
+     // end singleton things
+
+     // get the current high score
+     highScore = PlayerPrefs.GetInt("hi-score", 2);   
+}
 ```
 
 
+The call to reset the game is also inside of a keypress script and uses the game manager to return to the first scene
 
+```csharp
+using UnityEngine;
+using UnityEngine.InputSystem;
 
+public class InputRestart : MonoBehaviour
+{
+    void Update()
+    {
+        if (Keyboard.current.anyKey.wasPressedThisFrame)
+        {
+            GameManager.Instance.ReturnToTitle();
+        }
+    }
+}
+```
   
 # Game Feel – Juice It or Lose It
 
