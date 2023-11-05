@@ -7,9 +7,24 @@ title: Project 3
 
 [Proteus](https://twistedtree.itch.io/proteus): Procedurally generated island and soundscape
 
-Create a game that can run independent of player input. Use randomness, simulation, and generative techniques to introduce unpredictability. Consider timescale, progression, the audience/spectator, and who or what might interact with the system. Optionally, the game can also be influenced via external input from a player or environment.
+# Game as Engine
 
-You may choose to make a generative landscape, a music/sound machine, a random character generator, a program that creates different buildings with modular parts, a simulation of creatures or natural systems, an abstract art generator, procedurally generated stories, or anything else that you can imagine.
+What is a game engine? Project 3 is about considering the potential for games, systems, and other digital objects to act as generative engines for ideas, experiences, arguments, perspectives, subversions, meditations, and everything in between.
+
+So far in this class, you've been learning to build projects using the Unity game engine. For this project, you will explore both Unity and other forms of game engines to build a meta-game, that is, something which is aware of games, sampling from or even built upon existing games, but also consciously outside of its referent. 
+
+> Prepositions are to parts of speech as _metagames_ are to games. A signifier for everything occurring before, after, between, and during games as well as everything located in, on, around, and beyond games, the metagame anchors the game in time and space.
+
+[*Metagaming: Playing, Competing, Spectating, Cheating, Trading, Making, and Breaking Videogames*. ](https://manifold.umn.edu/read/metagaming)Stephanie Boluk and Patrick LeMieux. 2017
+
+There are lots of options for what you can make, and we'll cover a few possibilities in class (simulation, music, alternative inputs, sampling other games). But there are many more techniques than we can cover in class, especially when it comes to modding or hacking a specific media source.
+
+## Feeling stuck? 
+Here is one option based around simulation:
+
+Create a game that can run independent of player input. Use randomness, simulation, and generative techniques to introduce unpredictability. Consider timescale, progression, the audience/spectator, and who or what might interact with the system. Optionally, the game can be influenced, but only minimally, via external input from a player or environmental sensors.
+
+You might choose to make a generative landscape, a music/sound machine, a random character generator, a program that creates different buildings with modular parts, a simulation of creatures or natural systems, an abstract art generator, procedurally generated stories, or anything else that you can imagine.
 
 When building your game, especially one that involves generative objects, sounds, paintings, animals, worlds, etc., consider the 10,000 bowls of oatmeal problem, described by Kate Compton:
 
@@ -18,9 +33,8 @@ When building your game, especially one that involves generative objects, sounds
 > Kate Compton. [So you want to build a generator](https://galaxykate0.tumblr.com/post/139774965871/so-you-want-to-build-a-generator)
 # Deliverables
 
-- **Automatic.** The game should run/proceed/progress on it's own, meaning that things should happen even if nobody is around to press any buttons.
-- **Non-deterministic**. The game should not run the same way twice. The output and combinations should be varied enough that repetition is rare. How much time should be spent with the work?
-- **Consideration of inputs**. A player doesn’t need to interact directly with the work, but consider the player/spectator and how they should view the work. Is it meant to be meditative, overwhelming, funny? Should it run ambiently in the background, should it run on extended cycles (hours, days, seasons, lifetimes, every rainy day, etc.), should it use external sensors or react to network data?
+- **Consideration of engine.** What runs the game and how does the game relate to the things "in, around, and beyond" it?
+- **Consideration of inputs**. Does a player need to interact directly with the work? Consider the player/spectator and how they should view the work. Is it meant to be meditative, overwhelming, funny? Should it run ambiently in the background, should it run on extended cycles (hours, days, seasons, lifetimes, every rainy day, etc.), should it use external sensors or react to network data?
 - **2D, 3D, XD**. No restrictions on the format.
 
 ![](https://bwatanabe.com/images/img_wanderingDeer_02.jpg)
@@ -30,23 +44,22 @@ When building your game, especially one that involves generative objects, sounds
 # 1. Sketches of ideas
 **Due by Tuesday 11/14**
 
-Develop a short document that outlines your game. What are you creating and how will it run? How do you imagine someone viewing or interacting with it? Does the work live somewhere beyond a screen or projection? Mock up a few examples of what you want to create.
+Develop a short sketch that outlines your game. What are you creating and how will it run? How do you imagine someone viewing or interacting with it? Does the work live somewhere beyond a screen or projection? Mock up a few examples of what you want to create.
 ### Be sure to include:
 1. Possible titles
-2. What is being created, explored, revealed, etc. Is there a story behind the process? 
-3. How should a person view or interact with the game? Is there a form of input or external influence that affects the game?
-4. Drawings. Sketch what your work might look like at key moments. Consider the extremes of what might be generated. This should reflect the scope of what might be possible in your project. It might be useful to refer back to [Kate Compton’s “So you want to build a generator…”](https://galaxykate0.tumblr.com/post/139774965871/so-you-want-to-build-a-generator) and consider the properties, constraints, and methods you'll be using.
+2. What is the Engine?
+3. What is being created, explored, revealed, etc. Is there a story behind the process? 
+4. How should a person view or interact with the game? Is there a form of input or external influence that affects the game?
+5. Drawings. Sketch what your work might look like at key moments. Does it involve other games? Reflect the scope of what might be possible in your project.
 
 ![](https://www.mokafolio.de/thumbs/works/BlockBills/01-1200x766.jpg)
 
 [Block Bills](https://www.mokafolio.de/works/BlockBills). Matthias Dörfelt
 
-# 2. Prototype it
+# 2. Prototype
 **Show in class on Tuesday 11/28**
 
-Start by building a graybox prototype of your randomized system. Grayboxing is a level design practice where you build a rough block-out version of your level using blocks (usually gray boxes) so that you can iterate and test the layout as soon as possible.
-
-Build as much of your game as you can while focusing on solely the mechanics, systems, and behaviors. Use built-in Unity assets or placeholders for any art elements (graphics, sounds, text). You’ll be able to focus on art, writing, sound, and other game polish in the third part of the assignment.
+Build as much of your game as you can while focusing on solely the mechanics, systems, and behaviors. Try and mock up individual components of the system. If using custom inputs, show how they will work. It's ok to use placeholders for any art elements (graphics, sounds, text). 
 
 We will share prototypes in class. It is important to have a working (or partially working) prototype so we can give feedback and support.
 
@@ -69,18 +82,21 @@ Please refer to the page on [preparing your game for submission](how-to-submit-
 
 Just a small selection of examples. Most games include some degree of random generation in character spawning, random variation in damage, enemy AI, etc.
 
-- [No Man’s Sky](https://www.nomanssky.com/) – world generation
-- [Minecraft](https://www.minecraft.net/es-es/article/minecraft-x-crocs) – world generation
+- [Minecraft](https://www.minecraft.net/es-es/article/minecraft-x-crocs) – world generation, large meta-community
 - [Dwarf Fortress](http://www.bay12games.com/dwarves/) – world generation, simulation — see [Wiley’s page](https://wileywiggins.com/dorf.html)
 - [BOB](http://iancheng.com/BOB) (Bag of Beliefs) – Ian Cheng – artificial lifeform
-- [Bad North](https://www.badnorth.com/) – island generation (wave function collapse)
-- [Spelunky](https://www.spelunkyworld.com/) – [roguelike](https://en.wikipedia.org/wiki/Rogue_(video_game)) – random level generation
-- [Proteus](https://twistedtree.itch.io/proteus) – sound generation, world generation
-- [Shadows of Doubt](https://colepowered.com/shadows-of-doubt/) – immersive sim detective story
+- [Proteus](https://twistedtree.itch.io/proteus) – sound generation, world generation -- also [Purgateus](https://wiki.xxiivv.com/site/purgateus.html) as a remix of the original
 - Many Kate Compton [projects](http://www.galaxykate.com/#apps)
+- Some Darius Kazemi [projects](https://tinysubversions.com/)
 - [Radicalization Pipeline](https://slimetech.org/works/radicalization-pipeline) – Theo Trian – live simulation
-- [Spore](https://www.spore.com/) – creature creation -simulation
 - [Mountain](https://www.davidoreilly.com/mountain) – mountain generation
 - [A Travel Guide](https://a-travel-guide.decontextualize.com/) – generative text, also many other works by [Allison Parrish](https://www.decontextualize.com/)
+- [Plunderludics](https://plunderludics.github.io/) - sampling, remixing, collaging videogames
+- [Art After Videogames](https://timeline.manetas.com/works/videos/aftervideogames/) - Miltos Manetas
+- Lots of [works](https://vimeo.com/10646976) by JODI
+- [Velvet Strike](https://opensorcery.net/velvet-strike/)- Anne-Marie Schleiner
+- [Tekken Torture Tournament](https://eddostern.com/works/tekken-torture-tournament/)Eddo Stern and Mark Allen
+- [Mario Clouds](https://coryarcangel.com/things-i-made/2002-001-super-mario-clouds) and other mods by Corey Arcangel
+- [Multibowl](https://www.foddy.net/2016/08/multibowl/) -- Bennett Foddy and AP Thomson
 
 ![](https://classes.dma.ucla.edu/Winter23/158/wp-content/uploads/2023/02/image-1.png)

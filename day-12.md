@@ -18,7 +18,7 @@ We're going to try out a different format for playtesting Project 2.
 - What parts do players respond to? Which parts of the game did you spend the most time working on? Does the game feel zine-like in any of the ways we've discussed in class?
 - How do the mechanics (interaction, loop, challenges, etc.) align with the concepts, themes, and ideas within the game?
 - Does the game allow for player expression? Do players feel agency while playing, or is the game meant to be a linear experience?
-- What are ways to improve, balance, expand? Is there one aspect that feels very rich, but underutilized? 
+- What are ways to improve, balance, expand? Is there one aspect that feels very rich, but underutilized?
 
 
 ![](https://lh7-us.googleusercontent.com/CTQUJGmgfVJPiz6jObNYdQSJs1mCMh_qVcpBaJUiHaFb6xCNBvLWD_Tdmhwc5zVJLiAUi2SPSduTVtNLqAEXB69U3X2p1iMrjNbNuq4Asqsgk0RD7va5bLCyeGijP_JQLK5az4whn6rci-xKBOtGSWE)

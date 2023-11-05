@@ -1156,3 +1156,10 @@ play is “an occasion of pure waste: waste of time, energy, ingenuity, skill, a
 > Play resists demands for productivity. 
 
 But flow is a psychological experience of enjoyable action that can accompany any activity whatsoever (even productive work).
+
+# Old Project 3 Deliverables
+
+- **Automatic.** The game should run/proceed/progress on it's own, meaning that things should happen even if nobody is around to press any buttons.
+- **Non-deterministic**. The game should not run the same way twice. The output and combinations should be varied enough that repetition is rare. How much time should be spent with the work?
+- **Consideration of inputs**. A player doesn’t need to interact directly with the work, but consider the player/spectator and how they should view the work. Is it meant to be meditative, overwhelming, funny? Should it run ambiently in the background, should it run on extended cycles (hours, days, seasons, lifetimes, every rainy day, etc.), should it use external sensors or react to network data?
+- **2D, 3D, XD**. No restrictions on the format.
