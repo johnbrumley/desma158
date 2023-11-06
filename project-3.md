@@ -74,10 +74,9 @@ We will share prototypes in class. It is important to have a working (or partial
 
 Please refer to the page on [preparing your game for submission](how-to-submit-projects.md) for more information on the build and documentation process.
 
-![](https://classes.dma.ucla.edu/Winter23/158/wp-content/uploads/2023/02/image-1024x576.png)
+![](https://media.wired.com/photos/604ff96cf65a735f26384354/master/w_1600,c_limit/games_blaseball_map.jpg)
 
-[No Man’s Sky](https://www.nomanssky.com/)
-
+*Blaseball* (2020 - 2023) - A game that primarily existed in the meta of a fantasy baseball simulation. ([brief overview](https://youtu.be/Y5t8DwnDE1k?si=Q2O1hAXpyxpwbnWQ))
 ## Some Games/Projects for reference:
 
 Just a small selection of examples. Most games include some degree of random generation in character spawning, random variation in damage, enemy AI, etc.
