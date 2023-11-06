@@ -47,7 +47,10 @@ Fourth wall breaking in Metal Gear Solid (1998)
 # Mapping Metagames
 ![](https://storage.googleapis.com/nianticweb-media/v1/img/posts/PokemonGO2.png)
 
-*Pokemon Go*. Niantic/Google (2016) -- see also *Ingress* from the same company
+*Pokemon GO*. Niantic/Google (2016) -- see also *Ingress* from the same company
+
+> Importantly, though, it \[Pokemon GO\] is less about monitoring where individuals go and more about developing the capacity to direct people where it wants them to move.
+*The Playstation Dreamworld* Alfie Bown (2017)
 
 
 ![](assets/geoguessr.png)
