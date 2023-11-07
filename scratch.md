@@ -82,7 +82,7 @@ p2 todo (days 6-12)
 7. day 12: DUE
 
 p3 todo (days 13-20)
-1. day 13: intro project 3, randomness with instantiation
+1. day 13: intro project 3, cameras, cam control, randomness with instantiation
 2. day 14: sketch due, 
 3. day 15:
 4. day 16:
