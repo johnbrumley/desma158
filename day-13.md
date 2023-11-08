@@ -63,13 +63,12 @@ Let's consider Google Maps as a Game Engine and take a look at ways that it has 
 ![](assets/geoguessr.png)
 [Geoguessr](https://www.geoguessr.com/) , making a more literal game out of google maps
 
-![](http://clementvalla.com/wp-content/uploads/2013/09/redmon-800x460.jpg)
+![](assets/postcards-valla.png)
 
 *[Postcards from Google Earth](http://www.postcards-from-google-earth.com/)*. Clement Valla (2010-ongoing)
 
-> ... these images are not glitches. They are the absolute logical result of the system
-> 
-
+> ... these images are not glitches. They are the absolute logical result of the system 
+> - Clement Valla 
 
 
 ![](https://digitalartarchive.at/fileadmin/user_upload/Virtualart/Images/wizard/449_GEO%20GOO_2.jpeg)
@@ -114,22 +113,164 @@ Some Questions to ask:
 
 ![](https://lh7-us.googleusercontent.com/ETFB2EPiwbF1bnHWMmGPD-Bz2d_7TcGEudbTe2V2m6PqdDr26tfh5YCRT-H3o2HlN_EAWv6VT87Nm-EsHC3XPWZt6FAqzkVhG4h3WT-BJsV_af0y5047ZIDMvg9UPBX6a4A_me9EwJQQHbxQCgkUkNY)
 
-[https://www.mokafolio.de/works/YuccaRidicula](https://www.mokafolio.de/works/YuccaRidicula) 
 
-[http://okfoc.us/seapunknames/](http://okfoc.us/seapunknames/) 
+# Camera Tools
+
+![](https://cdn.cloudflare.steamstatic.com/steam/apps/1202900/ss_fd6b98c41553fd1579b535f0d5c92d4aebaa772e.1920x1080.jpg?t=1692002567)
+
+[Assemble with Care](https://www.assemblegame.com/)
+
+Knowing a bit more about working with cameras in Unity can be especially useful when it comes to building projects that sample, recombine, or display live, external imagery.
+
+I'll cover some important tools to know about and a few tricks:
+
+# Camera component
+
+The Camera ([Standard](https://docs.unity3d.com/Manual/class-Camera.html)) ([URP](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@17.0/manual/camera-component-reference.html)) 
+
+![](https://docs.unity3d.com/uploads/Main/InspectorCamera35.png)
+
+A Standard Render Pipeline camera component
+
+![](assets/urp-camera.png)
+URP Camera component
+
+The URP camera adds a significant number of options compared to the default camera component. It can be good to glance at the [documentation](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@17.0/manual/camera-component-reference.html) to see what everything does, but some settings are much more commonly used than others:
+
+- **Projection**: Change camera between Perspective and Orthographic
+- **Field of view (FOV)**: How wide (or tall) of an area is visible to the camera. Larger FOV means you can see more.
+
+![](https://cdn.cloudflare.steamstatic.com/steam/apps/1743850/extras/HyperDemonPhantasmagoria.gif?t=1675218040)
+
+[Hyper Demon](https://hyprd.mn/) is a game that encourages high FOV to keep track of everything around you.
+
+- **Clipping planes**: What are the closest and farthest distances that a camera can "see"
+- **Post Processing**: Check the box if you want to use post processing effects (global volume)
+- **Anti-aliasing**: Smooths out any "jaggy" lines. Can be heavy on processing
+- **Culling Mask**: Control which layers that the camera can see
+- **Occlusion Culling**: hide objects that the camera can't see
+- **Background Type**: What is drawn behind everything (like background in p5)
+- **Output Texture**: Important if you want to use the camera with a [Render Texture](https://docs.unity3d.com/Manual/class-RenderTexture.html)
+- **Target Display**: Control where the camera displays, can use for multi-screen output
+- **Viewport Rect**: Control how much of the camera view is rendered to the screen (useful for split screen)
 
 
+![](https://catlikecoding.com/unity/tutorials/advanced-rendering/fxaa/setting-the-scene/aliased.png)
 
-# Randomness and things
+Some intense aliasing
+# Render Texture
 
-Any time for this?
+Camera output isn't limited to a display. You can add the output to other objects in the scene using a [Render Texture](https://docs.unity3d.com/Manual/class-RenderTexture.html)
 
-# Cameras Workshop
+Here's a short setup step-by-step for connecting a camera output to a material using a render texture:
 
-1. talk about cameras in unity, how to use multiple cameras. Things like layer masks, clear flags, render textures. -- Maybe I can show the 
-2. Introduce cinemachine, show how to download and create a virtual camera (talk about relationship of main cam to vcam)
-3. Rapid proto a scene for cam playing
-4. Have groups investigate different types of vcam setups, aim properties, body properties, multicam things?-- 
+1. In the Project Panel: **Create > Render Texture** 
+2. By default these are 256x256. It's a good idea to only increase the texture size based on where it's being used. If the texture is looking too low-res, try increasing the dimensions.
+3. In the Hierarchy of your scene, add a new camera: **Create > Camera**
+4. Drag the Render Texture to the new Camera's **Output Texture** property.
+5. Create a new Material and drag the Render Texture into the "BaseMap" property (you could also experiment with using the render texture elsewhere).
+6. Attach the material to an object, plane, UI element (Raw Image)
+7. Press play and the output of the camera should appear on the object.
+
+![](assets/render-texture.png)
+
+Output of camera attached to a cube using a Render Texture
+
+# Webcam input
+
+Getting the input from a webcam uses a slightly different type of texture called a [WebCamTexture](https://docs.unity3d.com/ScriptReference/WebCamTexture.html)  
+
+The demo script from [this page](https://docs.unity3d.com/ScriptReference/WebCamTexture.Play.html) is a fast way to get webcam input into Unity:
+
+```csharp
+// Starts the default camera and assigns the texture to the current renderer
+using UnityEngine;
+using System.Collections;  
+  
+public class GetWebCam : MonoBehaviour
+{
+    void Start()
+    {
+       WebCamTexture webcamTexture = new WebCamTexture();
+       Renderer renderer = GetComponent<Renderer>();
+       renderer.material.mainTexture = webcamTexture;
+       webcamTexture.Play();
+    }
+}
+```
+
+Attach this script to an object in your scene and it will replace the BaseMap color of the material with the WebCamTexture
+
+# Virtual Webcam Input
+
+If I want to route video from another program on my computer, I can create a "Virtual Webcam" to pass the input into Unity using the WebCamTexture.
+
+I like to use [OBS](https://obsproject.com/) to capture a screen or window and then start up a Virtual Webcam. In Unity, you'll need to tell the WebCamTexture to use that device. There are other ways of routing video within a computer ([syphon](https://syphon.github.io/) for mac, [spout](https://spout.zeal.co/) for windows)
+
+In the controls section of OBS you can start/stop the virtual camera:
+
+![](webcam-obs-vcam.png)
+
+Because the script above will always pick the first camera, you'll need to modify it a bit to figure out which camera is the OBS virtual camera:
+
+```csharp
+// Starts the default camera and assigns the texture to the current renderer
+using UnityEngine;
+using System.Collections;
+
+public class GetWebCam : MonoBehaviour
+{
+    void Start()
+    {
+        WebCamDevice[] devices = WebCamTexture.devices;
+        WebCamTexture webcamTexture = new WebCamTexture();
+
+        if (devices.Length > 0)
+        {
+            // print names of all connected devices
+            foreach (var d in devices) print(d.name);
+            // set the device
+            webcamTexture.deviceName = devices[0].name;
+
+            Renderer renderer = GetComponent<Renderer>();
+            renderer.material.mainTexture = webcamTexture;
+
+            webcamTexture.Play();
+        }
+    }
+}
+```
+
+If you run the game with the updated script, you'll see the names of the devices in the console. I can see that OBS is the second device:
+
+![](assets/webcam-device-names.png)
+
+You can directly set the device name in the script, 
+
+```csharp
+webcamTexture.deviceName = "OBS Virtual Camera";
+```
+
+or I can change the index of the webcam device from 0 to 1
+
+```csharp
+webcamTexture.deviceName = devices[1].name;
+```
+
+![](assets/webcam-vcam-texture.png)
+
+Applying the virtual camera input as a texture on an object
+
+# Reading Pixels
+
+For grabbing pixels off a Camera or Render Texture see [ReadPixels](https://docs.unity3d.com/ScriptReference/Texture2D.ReadPixels.html)
+
+WebCamTexture has it's own 
+
+9. talk about cameras in unity, how to use multiple cameras. Things like layer masks, clear flags, render textures. -- Maybe I can show the 
+10. Introduce cinemachine, show how to download and create a virtual camera (talk about relationship of main cam to vcam)
+11. Rapid proto a scene for cam playing
+12. Have groups investigate different types of vcam setups, aim properties, body properties, multicam things?-- 
 	1. https://docs.unity3d.com/Packages/com.unity.cinemachine@2.9/manual/CinemachineManagerCameras.html
 	2. maybe this is too much, but should be having students do their own research -- know how to navigate docs
-5. 
+13. 
