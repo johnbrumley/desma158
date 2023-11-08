@@ -110,6 +110,8 @@ Some Questions to ask:
 
 [*Metagaming*. ](https://manifold.umn.edu/read/metagaming)Boluk and LeMieux. 2017
 
+![](https://youtu.be/14wqBA5Q1yc?si=hJAU016UQMu6spdk)
+
 
 ![](https://lh7-us.googleusercontent.com/ETFB2EPiwbF1bnHWMmGPD-Bz2d_7TcGEudbTe2V2m6PqdDr26tfh5YCRT-H3o2HlN_EAWv6VT87Nm-EsHC3XPWZt6FAqzkVhG4h3WT-BJsV_af0y5047ZIDMvg9UPBX6a4A_me9EwJQQHbxQCgkUkNY)
 
