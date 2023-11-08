@@ -110,7 +110,18 @@ Some Questions to ask:
 
 [*Metagaming*. ](https://manifold.umn.edu/read/metagaming)Boluk and LeMieux. 2017
 
-![](https://youtu.be/14wqBA5Q1yc?si=hJAU016UQMu6spdk)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/14wqBA5Q1yc?si=wTSl82oPB4f_EOox" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+When playing a game, we don't really think of ourselves as manipulating and executing code as much as attempting to "play" within the constraints or rules dictated by the designer/programmer and enforced by the computer. 
+
+Moving from playing games to designing games, the computation aspect becomes more apparent even while a Game Engine abstracts the low level puttering involved in the staging and display of the game. But as a designer, there is no the that the player can ultimately become a programmer and rewrite your own game.
+
+Speedrunning is another form of hacking, but only with in-universe tools.
+
+> You can go anywhere you want in gamespace, but you can never leave it.
+> 
+> *[Gamer Theory](https://futureofthebook.org/gamertheory2.0/)*. Mackenzie Wark (2007)
+
 
 
 ![](https://lh7-us.googleusercontent.com/ETFB2EPiwbF1bnHWMmGPD-Bz2d_7TcGEudbTe2V2m6PqdDr26tfh5YCRT-H3o2HlN_EAWv6VT87Nm-EsHC3XPWZt6FAqzkVhG4h3WT-BJsV_af0y5047ZIDMvg9UPBX6a4A_me9EwJQQHbxQCgkUkNY)
@@ -267,12 +278,117 @@ Applying the virtual camera input as a texture on an object
 
 For grabbing pixels off a Camera or Render Texture see [ReadPixels](https://docs.unity3d.com/ScriptReference/Texture2D.ReadPixels.html)
 
-WebCamTexture has it's own 
+WebCamTexture has it's own version of reading pixels called [GetPixels](https://docs.unity3d.com/ScriptReference/WebCamTexture.GetPixels.html)
 
-9. talk about cameras in unity, how to use multiple cameras. Things like layer masks, clear flags, render textures. -- Maybe I can show the 
-10. Introduce cinemachine, show how to download and create a virtual camera (talk about relationship of main cam to vcam)
-11. Rapid proto a scene for cam playing
-12. Have groups investigate different types of vcam setups, aim properties, body properties, multicam things?-- 
-	1. https://docs.unity3d.com/Packages/com.unity.cinemachine@2.9/manual/CinemachineManagerCameras.html
-	2. maybe this is too much, but should be having students do their own research -- know how to navigate docs
-13. 
+In both cases, you'll be writing the output to a new texture or material rather than editing the pixels of the texture before it is passed to a display.
+
+Here's an example of reading the pixel array from a webcam input (extending the previous webcam code from above):
+
+```csharp
+using UnityEngine;
+using System.Collections;
+
+public class GetWebCam : MonoBehaviour
+{
+    WebCamTexture webcamTexture;
+    Color[] data; // use Color32[] if you need better performance
+    Material averageMaterial;
+    
+    void Start()
+    {
+        WebCamDevice[] devices = WebCamTexture.devices;
+        webcamTexture = new WebCamTexture();
+
+        if (devices.Length > 0)
+        {
+            // print names of all connected devices
+            foreach (var d in devices) print(d.name);
+
+            webcamTexture.deviceName = devices[0].name;
+
+            // store the material to change later
+            Renderer renderer = GetComponent<Renderer>();
+            averageMaterial = renderer.material;
+
+            webcamTexture.Play();
+        }
+    }
+
+    void Update()
+    {
+        data = webcamTexture.GetPixels();
+        
+        // e.g. find the average color
+        float r = 0f;
+        float g = 0f;
+        float b = 0f;
+        foreach(var col in data)
+        {
+            r += col.r;
+            b += col.b;
+            g += col.g;
+        }
+
+        int len = data.Length;
+        Color avgColor = new Color(r/len, g/len, b/len);
+
+        // set the color of the material
+        averageMaterial.SetColor("_BaseColor", avgColor);
+    }
+}
+```
+
+This begins to encroach into the territory of shaders (or shader graphs) -- URP has a built-in [Fullscreen Shader Graph](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@16.0/manual/post-processing/post-processing-custom-effect-low-code.html) that can be used to design custom post processing effects.
+
+# Decal Projectors
+
+It is not uncommon to add complexity, shadows, markings, logos, etc. to surfaces without wanting to create a custom texture. This can be achieved using a [decal projector](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@17.0/manual/renderer-feature-decal.html)
+
+![](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@17.0/manual/images/decal/decal-projector-bounding-box.png)
+
+For URP, you can add a decal projector to your scene by right-clicking in the hierarchy and selecting **Rendering > URP Decal Projector**.
+
+In order to use the decal projector, you'll need to add the decal projector [render feature](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@17.0/manual/urp-renderer-feature-how-to-add.html) to your URP settings. Conveniently, Unity tells you that you need to add it and gives you a link:
+
+![](assets/urp-decal-projector-add-feature-button.png)
+
+Click "open" to change the view of the inspector and then find "Add Renderer Feature > Decal"
+
+![](assets/urp-add-decal.png)
+
+This should reload the scene and the decal projector will be available to use. URP decal projectors use a custom shader found in Shader Graphs/ Decal:
+
+![](assets/urp-decal-shader.png)
+
+The decal projector, depending on the width, height, and projection depth settings in the component will apply a texture (and/or normal map) onto a surface based on it's forward z-direction:
+
+![](assets/urp-decal-example.png)
+# Boring Challenge
+
+Set up a live mini map using an overhead camera, render texture, and a UI Raw Image. For an extra challenge, use culling layers on the cameras to have the character look different on the mini map.
+
+> Hint: You need to use an unlit UI material on the RawImage
+
+![](assets/render-texture-minimap.png)
+
+# Better Challenge
+
+Using camera techniques from above, mix together video from inside and outside Unity. Create video feedback loops. Mash up multiple video sources and project them onto 3D objects. Add yourself to the mix with a webcam. Add remote performers from zoom using virtual cameras. Anything can become a source from inside and outside of Unity.
+
+![](https://lh7-us.googleusercontent.com/3Talx6Im5upG_4u5cj4UZWv8QiD1SQwLW_PhvqeEPoKodqUSE5gxDe_9e3a_PoxkSh-qMu1ORfttcu4pbXKsrpor9rvtIy2BdO_CSwFzWwm2XiJ8VtQUPegRy0Lvc8ra-OEhorhpMHNbkTcRY9aHbFs)
+
+[Let’s Paint, Exercise & Blend Drinks](https://youtu.be/PvbL_5rH1QQ) - public access television
+
+![](sam-rolfes.png)
+[Sam Rolfes](https://www.instagram.com/sam.rolfes/)
+
+![](assets/graham-akins-visites-nocturnes.png)
+[Graham Akins](https://www.instagram.com/p/BxYggXolojv/?hl=en&img_index=1)
+
+![](whispering-pines-shana-moulton.png)
+[Shana Moulton](https://www.whisperingpines10.com/)
+
+![](https://www.istanbulmodern.org/pic_lib/bigSize/icerikler/267/ryan_trecartin_267_5280534.jpg)
+
+[Ryan Trecartin & Lizzie Fitch](https://www.instagram.com/ryantrecartin/?hl=en)
+
