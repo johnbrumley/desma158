@@ -382,6 +382,10 @@ Using camera techniques from above, mix together video from inside and outside U
 ![](sam-rolfes.png)
 [Sam Rolfes](https://www.instagram.com/sam.rolfes/)
 
+![](https://miro.medium.com/v2/resize:fit:640/format:webp/0*8_UfVZasQq0803SR.jpg)
+
+*TV Buddha*. Nam June Paik (1974)
+
 ![](assets/graham-akins-visites-nocturnes.png)
 [Graham Akins](https://www.instagram.com/p/BxYggXolojv/?hl=en&img_index=1)
 
@@ -392,3 +396,6 @@ Using camera techniques from above, mix together video from inside and outside U
 
 [Ryan Trecartin & Lizzie Fitch](https://www.instagram.com/ryantrecartin/?hl=en)
 
+![](https://www.phaidon.com/resource/1970corridor.jpg)
+
+*Corridor Installation (Nick Wilder Installation)* Bruce Nauman (1970)
