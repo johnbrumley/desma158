@@ -46,6 +46,9 @@ Fourth wall breaking in Metal Gear Solid (1998)
 
 Read Ch 4, "Changing the Game" of *Rise of the Videogame Zinesters* ([pdf](https://drive.google.com/file/d/1_Xy_K0T7GHnaOLjsjEUpHlG7ShGXlp0F/view?usp=drive_link)) and respond to the questions in this [form](https://forms.gle/8TeLm7JJH42XU82V7) 
 
+<iframe src="https://player.vimeo.com/video/17789896?h=a2a3fb7480" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+[Modern Warfare](https://vimeo.com/17789896). Claire L. Evans (2010)
+
 # Mapping Metagames
 
 Let's consider Google Maps as a Game Engine and take a look at ways that it has been approached: 
