@@ -114,7 +114,7 @@ Some Questions to ask:
 
 When playing a game, we don't really think of ourselves as manipulating and executing code as much as attempting to "play" within the constraints or rules dictated by the designer/programmer and enforced by the computer. 
 
-Moving from playing games to designing games, the computation aspect becomes more apparent even while a Game Engine abstracts the low level puttering involved in the staging and display of the game. But as a designer, there is no the that the player can ultimately become a programmer and rewrite your own game.
+Moving from playing games to designing games, the computation aspect becomes more apparent even while a Game Engine abstracts the low level puttering involved in the staging and display of the game. But as a designer, there is no expectation the that the player could themselves become a programmer and rewrite your own game.
 
 Speedrunning is another form of hacking, but only with in-universe tools.
 
