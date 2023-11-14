@@ -31,7 +31,7 @@ Weeks 3-6:
 Weeks 7-10:
 ## 3. [Game as Engine](project-3.md)
 
-#### **DUE 11/16:** Sketch
+#### **DUE 11/14:** Sketch
 #### **DUE 11/28:** Prototype 
 #### **DUE 12/7:** Game
 
