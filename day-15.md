@@ -50,8 +50,8 @@ Ultimately, the combination of inputs, sensors/transducers, hardware and softwar
 
 LASP is a plugin for routing audio directly into Unity. It also comes with some useful tools for controlling Unity properties with the incoming audio. 
 
-LASP can be found here:
-https://github.com/keijiro/Lasp
+LASP can be found here: [https://github.com/keijiro/Lasp](https://github.com/keijiro/Lasp)
+
 
 > Secret Tip: [Keijiro](https://github.com/keijiro) is a prolific developer of Unity plugins. Check out their github for all sorts of things
 > 
@@ -211,7 +211,7 @@ Keijiro describes all the scenes in the github along with some nice gifs:
 
 Last year the UCLA Laboratory of Game put on a small [workshop](https://docs.google.com/presentation/d/1Ao0IEBOSMtFcjHfaE6MB1gL6tPvWausfL0rmZfB68tM/edit?usp=sharing) about the possibility of a game engine becoming a musical engine.
 
-There's a whole unitypackage of scenes developed for the workshop. Lots of examples use Unity's physics and input systems for generating alternative musical instruments.
+There's a whole [unitypackage](https://drive.google.com/file/d/1Cl2icx8AOoimZ4VekdTNyZC9ygZsMZxx/view?usp=drive_link) of scenes developed for the workshop. Lots of examples use Unity's physics and input systems for generating alternative musical instruments.
 
 ![](https://lh7-us.googleusercontent.com/8HufAjjjKtdNkX7CtcZbHnduc7QYyXLX60udz27Hnuwn3xGGnyGCLV9aaVs8afSltc4ez92kkQXTGvPKOB6DHx6tJlku3piA1i3UYyG5pMchnkdPeEBONZ5kQvpNsYdROYK5RCbnkxIADDFlH468sHkPzg=s2048)
 
@@ -231,16 +231,16 @@ Click on hinged keys that play a sample when crossing the center line.
 
 If you need to route audio between two programs you can create a virtual audio cable. This is great for quickly grabbing samples!
 
-Soundflower (mac)  :: https://github.com/mattingalls/Soundflower
-VB Audio Cable (win) :: https://vb-audio.com/Cable/ 
+Soundflower (mac)  :: [https://github.com/mattingalls/Soundflower](https://github.com/mattingalls/Soundflower)
+VB Audio Cable (win) :: [https://vb-audio.com/Cable/ ](https://vb-audio.com/Cable/ )
 
 ## Other things
 [BBC](https://sound-effects.bbcrewind.co.uk/) [FreeSound](https://freesound.org/) [GDCAudioLib](https://sonniss.com/gameaudiogdc) 
 
 Browser based SFX Generator
-https://sfbgames.itch.io/chiptone https://sfxr.me/ (others / all a bit similar)
+[https://sfbgames.itch.io/chiptone](https://sfbgames.itch.io/chiptone) [https://sfxr.me/](https://sfxr.me/) (others / all a bit similar)
 
 Browser based audio tracker
-https://jummbus.bitbucket.io/ 
+[https://jummbus.bitbucket.io/ ](https://jummbus.bitbucket.io/ )
 
-More thing (EP’s Tools List) – https://github.com/everestpipkin/tools-list#Sound-music
+More thing (EP’s Tools List) – [https://github.com/everestpipkin/tools-list#Sound-music](https://jummbus.bitbucket.io/ )

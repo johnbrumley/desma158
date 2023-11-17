@@ -222,7 +222,7 @@ I like to use [OBS](https://obsproject.com/) to capture a screen or window and t
 
 In the controls section of OBS you can start/stop the virtual camera:
 
-![](webcam-obs-vcam.png)
+![](assets/webcam-obs-vcam.png)
 
 Because the script above will always pick the first camera, you'll need to modify it a bit to figure out which camera is the OBS virtual camera:
 
