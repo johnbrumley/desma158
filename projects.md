@@ -26,6 +26,8 @@ Weeks 3-6:
 #### **DUE 10/31:** Prototype
 #### **DUE 11/7:** Game
 
+[View Project 2 Submissions](project-submissions.html?p=2)
+
 ---
 
 Weeks 7-10:
