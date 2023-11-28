@@ -46,7 +46,7 @@ Unity 
 
 A traditional T-pose
 
-# Part 1: Scan Yourselves!
+# 1: Scan Yourselves!
 
 1. Use a 3D scanning / photogrammetry app on your cell phone to scan yourself and your partners in a [T-Pose](https://youtu.be/7nD9H6__29A?si=Dis7N7wG-6UZleo5) (see reference image)    
 2. Export as **fbx** OR **obj** file. Depending on the service, you may need to 
@@ -55,7 +55,7 @@ A traditional T-pose
 
 ![](https://lh7-us.googleusercontent.com/9uyIqdCne5bpENc6XEMsq0yjuAICUaJzbU2OGLdF_NyaBjc9VutOBoaHXz7pieb6Ueaqug7eDr32MZASE_rfO6RJat5yxX5YizI4wPkehHOnBj-ZI5whlR575Wc1bz_iTeuCElAo6y7AAY4aNkeDI0E)
 
-## 2 Capture Some Motion!
+# 2: Capture Some Motion!
 
 1. Setup [Rokoko](https://vision.rokoko.com/) and create an account  
 2. Create a motion file using your cellphone or an existing video recording   
@@ -65,7 +65,7 @@ A traditional T-pose
   
 ![](https://lh7-us.googleusercontent.com/QBTf8MSmKE94v1-nTK9XEyz8JNO2ThUL8mYb3BdV1mwi_rASwJSrCzxs9dXg-CZncl6ssghaHGaD5sq3nVEwOgROJOTC7k3IGHfuHMKiOWfTOn38nhs2SMaSB9JfvIiD4tpk0W0uZV_1jLOC64BkDcc)
 
-# 3 Rig
+# 3: Rig
 
 1. Once you have a 3D model of one of you (or both) go to Mixamo to create a digital skeleton for your skin. https://www.mixamo.com/#/ (login with you adobe ID)
 2. Follow the step by step instructions on the website for how to Upload a character model and then rig it using Auto Rigger: 
@@ -82,7 +82,7 @@ A traditional T-pose
 ![](https://lh7-us.googleusercontent.com/5O5IlH3Zwto72L_Yi8mtUi5iXo97aeaHG6Op_5RsJLWCpe2JvJEFecSEP1_9VJeQ8pLoY6t5yFF6sj4VsBmMFH9IOW9DDHBPfglaYVam3CpFpmQmKkxAWIqku4uL4x72nwYOxf65QaRlNaPXk_GeF20)
 
 
-## 4 Combine in Unity
+# 4: Combine in Unity
 
   
 6. After you've completed both your rigging and motion capture process, export file as an .fbx
@@ -114,3 +114,4 @@ A traditional T-pose
 # Extra Challenge
 
 Create walk, run, and idle animations for yourself and connect them to the[ Unity Third Person Controller](https://assetstore.unity.com/packages/essentials/starter-assets-thirdperson-updates-in-new-charactercontroller-pa-196526) -- Note that this is a URP component
+
