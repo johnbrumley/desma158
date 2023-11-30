@@ -13,9 +13,9 @@ title: Schedule
 | **5**  | 10/31, 11/2  | **DUE**: Project 2 Prototype <br/> [Instantiate and Destroy, work on Project 2](day-10.md)                          | [Work on Project 2](day-11.md),<br/> **Next Class** Project 2 Due                                                            |
 | **6**  | 11/7,  11/9  | **DUE**: [Project 2, Share, Play, Crit. Project 2](day-12.md)                                                       | [Intro Project 3 <br/> Camera controls](day-13.md) <br/> **Next Class:** Project 3 Sketch due                                |
 | **7**  | 11/14, 11/16 | **DUE:** Project 3 Sketch <br/> [Simulations, Particles, Perlin noise](day-14.md)                                   | [Sound as Input](day-15.md)                                                                                                  |
-| **8**  | 11/21, 11/23 | [Work in class on prototypes.](day-16.md)                                                                                        | Thanksgiving                                                                                                           |
-| **9**  | 11/28, 11/30 | **DUE**: Project 2 Prototype. [Rigging, Animation tools](day-17.md)<br/> **Next Class:** Homeplay 3       | **Due: Homeplay 3** <br/> Work in class.                                                                                     |
-| **10** | 12/5,  12/7  | Work in class. <br/> **Next Class**: Project 3 Due                                                                  | **DUE**: Project 3, Share, Play, Crit.                                                                             |
+| **8**  | 11/21, 11/23 | [Work in class on prototypes.](day-16.md)                                                                           | Thanksgiving                                                                                                                 |
+| **9**  | 11/28, 11/30 | **DUE**: Project 2 Prototype. [Rigging, Animation tools](day-17.md)<br/> **Next Class:** Homeplay 3                 | **Due: Homeplay 3** <br/> Work in class. <br/> **Next Week**: We'll be showing Project 3 in class.                           |
+| **10** | 12/5,  12/7  | Project 3: Share. Play. Crit. Part 1 <br/> **Thursday**: Project 3 Due by end of day.                               | Project 3: Share, Play, Crit. Part 2. <br/> **DUE**: Project 3 Due by end of day.                                            |
 
 
 
