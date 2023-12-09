@@ -66,9 +66,9 @@ We will share prototypes in class. It is important to have a working (or partial
 # 3. Build it
 **Due by Thursday 12/7**
 
-[Submit Project 3: Automatic Game](https://docs.google.com/forms/d/e/1FAIpQLSfgE0gt8wHVE837ue1QGkSMilJHnCjrLHA9wEd977R89pW7Fg/viewform?usp=sf_link)
+[Submit Project 3: Game As Engine](https://docs.google.com/forms/d/e/1FAIpQLScf0BCxuv03V0W_HngS1RunHHZAP5oOLWLjxDtktjOd_K07dQ/viewform?usp=sf_link)
 
-1. Build your game. It should be able to run on it's own.
+1. Build your game. It should be able to run without crashing, bugs, etc.
 2. If you have an alternative outputs or inputs (custom controllers/sensors, external data, prints, artifacts, etc.) Please include documentation in the screen shots.
 3. Document the context of the game, that is, how should it be viewed. As a website, downloaded and run on a laptop/desktop (full screen or windowed), projected on a wall, sound only, or some other context.
 
