@@ -6,17 +6,17 @@ title: Syllabus
 
 Course Name & Number: DESMA 158  
 Course Title: Game Engine  
-Academic Term: Fall 2023  
+Academic Term: Spring 2024  
 Location: Broad 4240  
-Day and Time: Tuesday and Thursday: 2 – 4:50pm
+Day and Time: Tuesday and Thursday: 9 – 11:50am
 
-Instructor: John Brumley (He/Him)  
-Office hours & Location: Thursdays 1-2pm / Room 4240  
+Instructor: John Brumley (he/him)  
+Office hours & Location: Thursdays 12-1pm / Room 4240  
 Email: jtbrumley@g.ucla.edu
 
-Teaching Assistant: Vincent Roca (He/Him)
-Office hours & Location: Thursdays 1-2pm /  Room 4240
-Email: vroca@g.ucla.edu
+Teaching Assistant: Hua Chai (they/he)
+Office hours & Location: TBA
+Email: chai.callmehua@gmail.com
 
 ## Course Description
 
@@ -106,7 +106,7 @@ You should strive to develop your own assets for your project submissions. If ma
 
 ### Required and Recommended Tools:
 
-- [Unity](https://unity3d.com/get-unity/update) – We recommend that you **install with Unity Hub**, and get the latest LTS version (currently 2022.3)
+- [Unity](https://unity3d.com/get-unity/update) – We strongly recommend that you **install using Unity Hub**, and get the latest **LTS** version (currently 2022.3)
 - Visual Studio – **Install visual studio with unity hub while you are installing unity**. (If you already have Unity working with VS Code or another text editor / IDE, feel free to use that)
 - A three-button mouse
 - 2D and 3D production software of your choice. Some options:
