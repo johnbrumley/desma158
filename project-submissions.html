@@ -294,7 +294,9 @@ TODO testing
     // extract id
     const id = link.substring(33);
     // build working src url
-    const src = 'https://drive.google.com/uc?export=view&id=' + id;
+    // const src = 'https://drive.google.com/uc?export=view&id=' + id;
+    // fix 1
+    const src = 'https://lh3.google.com/u/0/d/' + id;
     // create element in jquery and return it
     return $(`<img src=${src} width="640"/>`);
   }
