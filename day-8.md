@@ -39,7 +39,7 @@ We'll be a bit more strict about time, since there are other things to get to to
 
 *Stardew Valley (2016)* - More information about items, detailed images, hints on what to use them for.
 
-![](https://static.gosunoob.com/img/1/2015/04/a-call-beyond-stats.jpg)
+![](assets/Pasted%20image%2020240323121034.png)
 
 *Bloodborne (2015)* - Worldbuilding lore, filling in details and connections.
 
