@@ -14,8 +14,8 @@ Instructor: John Brumley (he/him)
 Office hours & Location: Thursdays 12-1pm / Room 4240  
 Email: jtbrumley@g.ucla.edu
 
-Teaching Assistant: Hua Chai (they/he)
-Office hours & Location: TBA
+Teaching Assistant: Hua Chai (they/he) 
+Office hours & Location: TBA 
 Email: chai.callmehua@gmail.com
 
 ## Course Description
