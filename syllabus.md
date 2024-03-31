@@ -26,7 +26,7 @@ This course introduces the fundamentals of programming interactive projects in g
 
 DESMA 24 Interactivity. 
 
-We will revisit many of the same concepts covered in Interactivity, while using the C# scripting language and the Unity scripting API. If you haven't taken DESMA 24, but have prior experience with Unity and C# please let me know.
+We will revisit many of the same concepts covered in Interactivity, but using the C# scripting language and the Unity scripting API. If you haven't taken DESMA 24, but have prior experience with Unity and C# please let me know.
 
 ## Learning Outcomes
 
@@ -34,25 +34,31 @@ By the end of this course, you will be able to create a real-time, interactive s
 
 ## Course Outline
 
-> See the [schedule](schedule.md) for a more detailed breakdown of each class.
+> See the [schedule](schedule.md) for a more detailed breakdown of each class. Note: Schedule and daily contents are subject to change!
 
 **Weeks 1–2**  
 Introduction to game development tools, Unity Editor, C# introduction, visual language, and level design.
 
-[Project 1: Ball Game (Due: Week 2)](project-1.md)  
-Remix of the Roll-a-ball tutorial game that explores the possibilities of spatial narrative. Roll-a-ball is a quick tour of the Unity Editor, and also provides a foundation for creating something more expansive.
+[Project 1: Environment (Due: Week 3)](project-1.md)  
+Remix of the Roll-a-ball tutorial game that explores the possibilities of environment and spatial narrative. Roll-a-ball is a quick tour of the Unity Editor, but also provides the foundation for something more expansive.
 
 **Weeks 3–6**  
-Working in 2D. Creating assets/sprites. Vector fundamentals, physics, and persistent data.
+Alternative Engines. Working in 2D. Creating assets/sprites. Vector fundamentals, physics, and persistent data.
 
-**Project 2: Flat Game (Due: Week 6)**  
-Create a 2D "zine-game" based on your own life experience. Experiment with custom asset creation and collage techniques. Express ideas through game mechanics, custom inputs, and structure. Use code to incorporate vectors, physics, and collisions into your game.
+**Project 2: Zine (Due: Week 6)**  
+Create a zine using Unity or an alternative game engine. Experiment with custom asset creation and collage techniques. Express ideas through game mechanics, assets, text, and structure.
 
 **Weeks 7–10**  
-Remix, sampling, streaming, custom input, mods.
+Refinement, remix, sampling, streaming, custom input, mods.
 
 **Project 3: Game as Engine (Due: Week 10)**  
-Use Unity and/or other tools (emulators, recording software, existing games) to create a real-time, interactive work where games become the platform for expression. 
+Starting with either a previous project or a completely new idea, consider alternative ways of engaging with the project using novel input systems, custom graphics/shaders/vfx, cameras, multiple players, sound, procedurally generated content, etc.
+
+**Readings and Homeplays**
+In addition to readings that we will discuss in class, you will be assigned games to play outside of class which are relevant to the our projects. 
+
+**Micro Jam**
+We will have at least one micro jam where teams will attempt to create an entire game within a single class period.
 
 ## Assignments & Grading
 
@@ -61,22 +67,22 @@ Use Unity and/or other tools (emulators, recording software, existing games) to 
 > - Project 1: 20%
 > - Project 2: 30%
 > - Project 3: 30%
-> - Participation / Attendance / Homework : 20%
+> - Participation / Attendance / Readings: 20%
 > - Extra Credit !✨%
 
 ### Evaluation
 
-Approach each project with your own level of skill and comfort in mind. You should work to expand your technical skills, but also lean into your strengths. If you’re good at drawing, use a bunch of 2D drawings -- even if the world is 3D! If you’re into photography, use photocollage to build your game world!
+Approach each project with your own level of skill and comfort in mind. You should work to expand your technical skills, but also **lean into your strengths**. If you’re good at drawing, use a bunch of 2D drawings - even if the world is 3D! If you’re into photography, use photocollage to build your game world!
 
 Creative projects and proposals are graded based on these parameters:
 
-- Submitting on time.
-- Completing project deliverables.
-- Attention to detail/craft. Does the project run? Are there unintended bugs, glitches, etc.
-- Project scope / ambition / aesthetic and technical ambition. Are you doing the bare minimum, or are you pushing yourself technically or aesthetically?
-- Creative risk taking and resourcefulness. Are you pushing the limits of the tools? Hacky solutions a perfectly acceptable!
+- **Submitting on time**.
+- **Completing project deliverables**.
+- **Attention to detail/craft**. Does the project run? Are there unintended bugs, glitches, etc.
+- **Project scope / ambition / aesthetic and technical ambition**. Are you doing the bare minimum, or are you pushing yourself technically or aesthetically?
+- **Creative risk taking and resourcefulness**. Are you pushing the limits of the tools? Hacky solutions a perfectly acceptable and encouraged!
 
-Reading and lecture responses are pass/fail. As long as you thoughtfully complete them, you’ll get full credit.
+Reading and homeplay responses are pass/fail. As long as you thoughtfully complete/participate you’ll get full credit.
 
 ### Submitting Projects
 
@@ -84,9 +90,9 @@ Reading and lecture responses are pass/fail. As long as you thoughtfully complet
 
 #### LATE WORK
 
-Projects are due prior to the beginning of class on their respective due date.
+Projects should be ready to play prior to the beginning of class on their respective due date. The submission of the documentation of the project can be done by midnight of the due date.
 
-After this time, a third of the letter grade will be deducted for assignments submitted after class has started, and a full letter grade will be deducted from the project grade for each class day that the assignment is late. For example, if an assignment due on Tuesday is submitted the following Thursday, an A grade would become a B. If it isn't submitted till the following Tuesday, the A would be marked down to a C.
+After this, a full letter grade will be deducted from the project grade for each class day that the assignment is late. For example, if an assignment due on Tuesday is submitted the following Thursday, an A grade would become a B. If it isn't submitted till the following Tuesday, the A would be marked down to a C.
 
 Unity projects are complicated and can be annoying to backup. Make sure to save often and occasionally create a backup of your scenes. I recommend [exporting a unitypackage](how-to-submit-projects.md#Exporting%20Unity%20Packages) of your project and storing the package on an external drive or cloud backup. If you are comfortable with version control, there are a number of options ([1](https://unity.com/solutions/version-control) , [2](https://youtu.be/_ewoEQFEURg)).
 
@@ -94,7 +100,7 @@ Unity projects are complicated and can be annoying to backup. Make sure to save 
 
 #### ATTENDANCE
 
-Please come to class on time at **2:00pm**. If you are more than 15 minutes late, you will be marked as late. Three late marks results in an unexcused absence. **Any disputes should be discussed with the TA within two weeks.**
+Please come to class on time at **9:00am**. If you are more than 15 minutes late, you will be marked as late. Three late marks results in an unexcused absence. **Any disputes should be discussed with the TA within two weeks.**
 
 **If you must miss class, email the TA prior to the class.** 
 Absences will not be excused after the fact except in extreme circumstances. You get **one** unexcused absence without it affecting your grade. Each unexcused absence after that will result in one full letter grade deduction from your participation / attendance score.
@@ -122,13 +128,15 @@ You should strive to develop your own assets for your project submissions. If ma
 
 ### Required Reading
 
-We will read a few chapters from Anna Anthropy's _Rise of the Videogame Zinesters_. We will provide excerpts of the chapters.  
+We will read a few chapters from Anna Anthropy's _Rise of the Videogame Zinesters_ and other articles. All texts will be provided.
 
 ### Getting help with Unity
 
-There are lots of difficulties and bugs that can emerge while developing a project in Unity, and there are just as many solutions to these problems. More often than not, understanding what the problem is will point directly to the solution (so keep an eye on the console!). After you troubleshoot a problem once, you should be able to recognize and solve it the next time it appears. 
+There are lots of difficulties and bugs that can emerge while developing a project in Unity, and there are just as many solutions to these problems. More often than not, understanding what the problem is will point directly to the solution (keep an eye on that console!). After you troubleshoot a problem once, you should be able to recognize and solve it the next time it appears. 
 
 If you find yourself stumped by a problem, reach out to your classmates to see if someone else has experienced the same issue. We highly recommend that you, as a cohort, create a space for sharing and seeking support from each other, as many of you will share many of the same bugs, errors, and glitches.
+
+We have set aside studio time during class for working on projects. If you are feeling a bit shaky with any concepts or technical hurdles, this is the perfect time to get help.
 
 #### Online resources
 
@@ -144,21 +152,15 @@ If you find yourself stumped by a problem, reach out to your classmates to see i
 
 #### Books
 
-- Jesper Juul. _Handmade Pixels : Independent Video Games and the Quest for Authenticity_. MIT Press 2019. ([online interviews](https://www.jesperjuul.net/handmadepixels/interviews/))
+These books aren't required, but can be especially useful if you want to take a deeper dive.
+
 - Katie Salen Tekinbaş and Eric Zimmerman. _Rules of Play : Game Design Fundamentals_. MIT Press 2004.
+- Jesper Juul. _Handmade Pixels : Independent Video Games and the Quest for Authenticity_. MIT Press 2019. ([online interviews](https://www.jesperjuul.net/handmadepixels/interviews/))
 - Brian Schrank and J. David Bolter. _Avant-Garde Videogames : Playing with Technoculture_. MIT Press 2014.
 - Steve Swink. _Game Feel : A Game Designer’s Guide to Virtual Sensation_. Morgan Kaufmann Publishers/Elsevier 2009.
 - Stephanie Boluk and Patrick LeMieux. *Metagaming: Playing, Competing, Spectating, Cheating, Trading, Making, and Breaking Videogames* ([online edition](https://manifold.umn.edu/projects/metagaming))
 - Robert Nystrom – [Game Programming Patterns](https://gameprogrammingpatterns.com/contents.html) (ebook)
-- [O’reilly books](https://www.oreilly.com/library-access/)
-
-### COVID-19
-
-It is important that everyone stay safe and avoid coming to class if you have any concerns about your health status.  
-  
-If you find that external struggles and/or COVID related challenges are affecting your ability to attend class, please reach out to us. We want you to be successful in the class, but we care about your wellbeing more than anything else. Open communication with us is most important in this regard, and we will be very open to accommodating every reasonable request.
-
-Students must adhere to the current campus directives related to COVID-19 mitigation, and refusal to do so may result in the student being asked to leave the classroom or referred to the Dean of Students. For more information about COVID-19 requirements on campus, please visit: [https://covid-19.ucla.edu/information-for-students/](https://covid-19.ucla.edu/information-for-students/). 
+- [O’reilly books](https://www.oreilly.com/library-access/) has many books on programming and other technical guides. The online collection is free through UCLA!
 
 ### Land Acknowledgement
 
@@ -167,6 +169,14 @@ The University of California, Los Angeles occupies the ancestral, traditional, a
 ### Commitment to Diversity & Safer Spaces:
 
 We understand the classroom as a space for practicing freedom; where one may challenge psychic, social, and cultural borders and create meaningful artistic expressions. To do so we must acknowledge and embrace the different identities and backgrounds we inhabit. This means that we will use preferred pronouns, respect self-identifications, and be mindful of special needs. Disagreement is encouraged and supported, however our differences affect our conceptualization and experience of reality, and it is extremely important to remember that certain gender, race, sex, and class identities are more privileged while others are undermined and marginalized. Consequently, this makes some people feel more protected or vulnerable during debates and discussions. A collaborative effort between the students, TA, and instructor is needed to create a supportive learning environment. While everyone should feel free to experiment creatively and conceptually, if a class member points out that something you have said or shared with the group is offensive, avoid being defensive; instead approach the discussion as a valuable opportunity for us to grow and learn from one another. Alternatively, if you feel that something said in discussion or included in a piece of work is harmful, you are encouraged to speak with the instructor or TA. _*Statement adopted from voidLab at:_ [_https://github.com/voidlab/diversity-statement_](https://github.com/voidlab/diversity-statement) 
+
+### COVID-19
+
+It is important that everyone stay safe and avoid coming to class if you have any concerns about your health status.  
+  
+If you find that external struggles and/or COVID related challenges are affecting your ability to attend class, please reach out to us. We want you to be successful in the class, but we care about your wellbeing more than anything else. Open communication with us is most important in this regard, and we will be very open to accommodating every reasonable request.
+
+Students must adhere to the current campus directives related to COVID-19 mitigation, and refusal to do so may result in the student being asked to leave the classroom or referred to the Dean of Students. For more information about COVID-19 requirements on campus, please visit: [https://covid-19.ucla.edu/information-for-students/](https://covid-19.ucla.edu/information-for-students/). 
 
 ### Center for Accessible Education (CAE)
 
