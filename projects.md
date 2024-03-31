@@ -10,7 +10,7 @@ Every project will involve an initial design document to be submitted soon after
 For info about project submission steps and guides for building and exporting, refer to this page on [how to submit your projects](how-to-submit-projects.md).
 
 Weeks 1-2:
-## [1. Ball Game](project-1.md)
+## [1. Environment](project-1.md)
 
 #### **DUE 4/9**: Sketch  
 #### **DUE 4/16**: Project
@@ -20,20 +20,20 @@ Weeks 1-2:
 ---
 
 Weeks 3-6:
-## 2. [Flat Game](project-2)
+## 2. Zine
 
 #### **DUE 4/25:** Sketch
-#### **DUE 5/2:** Prototype
-#### **DUE 5/9:** Project
+#### **DUE 5/7:** Prototype
+#### **DUE 5/14:** Project
 
 <!-- [View Project 2 Submissions](project-submissions.html?p=2) -->
 
 ---
 
 Weeks 7-10:
-## 3. [Game as Engine](project-3.md)
+## 3. Game as Engine
 
-#### **DUE 5/16:** Sketch
+#### **DUE 5/21:** Sketch
 #### **DUE 5/28:** Prototype 
 #### **DUE 6/4:** Project
 
