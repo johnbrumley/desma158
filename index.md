@@ -10,7 +10,7 @@ layout: home
 Location: Broad 4240  
 Day and Time: Tuesday and Thursday: 9 – 11:50am
 
-Instructor: John Brumley (he/him) <br/> Office hours & Location: Thursdays 12-1pm, Room 4240 <br/> Email: jtbrumley@g.ucla.edu <br/>
+Instructor: John Brumley (he/him) <br/> Office hours & Location: Tuesdays 12-1pm, Room 4240 <br/> Email: jtbrumley@g.ucla.edu <br/>
 
 Teaching Assistant: Hua Chai (they/he)  <br/> Office hours & Location: TBA <br/> Email: chai.callmehua@gmail.com <br/>
 
