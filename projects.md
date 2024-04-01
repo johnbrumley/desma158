@@ -10,7 +10,7 @@ Every project will involve an initial design document to be submitted soon after
 For info about project submission steps and guides for building and exporting, refer to this page on [how to submit your projects](how-to-submit-projects.md).
 
 Weeks 1-2:
-## [1. Environment](project-1.md)
+## [1. Worlding](project-1.md)
 
 #### **DUE 4/9**: Sketch  
 #### **DUE 4/16**: Project

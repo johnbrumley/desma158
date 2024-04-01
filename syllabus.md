@@ -39,7 +39,7 @@ By the end of this course, you will be able to create a real-time, interactive s
 **Weeks 1–2**  
 Introduction to game development tools, Unity Editor, C# introduction, visual language, and level design.
 
-[Project 1: Environment (Due: Week 3)](project-1.md)  
+[Project 1: Worlding (Due: Week 3)](project-1.md)  
 Remix of the Roll-a-ball tutorial game that explores the possibilities of environment and spatial narrative. Roll-a-ball is a quick tour of the Unity Editor, but also provides the foundation for something more expansive.
 
 **Weeks 3–6**  
