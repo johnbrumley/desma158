@@ -7,7 +7,7 @@ title: Day 1
 Currently, the course website is hosted at:
 https://johnbrumley.github.io/desma158/
 
-Lets take a look at the syllabus and schedule
+First, let's take a look at the syllabus and schedule to get a sense of what we'll be doing in the class.
 ## [Syllabus](syllabus.md), [Schedule](schedule.md) 
 
 # What’s a game engine?
@@ -83,18 +83,17 @@ Werewolf Elton John: Contestants are given any Elton John lyrics to sing and the
 
 ![](https://lh3.googleusercontent.com/vuZgcBHeLv9ETZ4N3d2DnVX_V6Lupot3MQN-sdZYeEGDW-BGUnukGigBZzp6xPRUsser2cWy3OUA1CwIQRH_ITFxMbi8xUK2ZHtVhiiO7NQh3WABugk1RWErIXXqpUcKaYTPU1bhy0rINB_QmfpmtP0)
 
-# Now put it together
-
-![](https://lh6.googleusercontent.com/A4N1vuZH-la7u4K4yGx_WQ8xuMgHcQ4H-sgBcIyXfAv8aBZEs1X9F9B1ZYChM9cuWgJyzrvnTpAwtK3nkujjZXrRgyNjFjf12ALegk61ChtV1QHGFirD8_NDVT8WwIOMw-lVs928ccir1P731pMxOdU)
-
 > “A thing that is the agent or instrument of a particular process” 
  
 sounds pretty good, but 
 
 > “converting power into motion”
  
-could also be useful with a few modifications
-# alt def
+This notion of a "converter" between two things is a nice way to characterize an engine ... and it works well in non-mechanical contexts
+
+# Combining games and engines
+
+![](https://lh6.googleusercontent.com/A4N1vuZH-la7u4K4yGx_WQ8xuMgHcQ4H-sgBcIyXfAv8aBZEs1X9F9B1ZYChM9cuWgJyzrvnTpAwtK3nkujjZXrRgyNjFjf12ALegk61ChtV1QHGFirD8_NDVT8WwIOMw-lVs928ccir1P731pMxOdU)
 
 Swapping some words in Anthropy’s definition (“A game is an experience created by rules”) might give us something like:
 
@@ -115,17 +114,20 @@ A thing for gluing together assets into some kind of interactive / real time thi
 
 # Expanding the definition
 
-Maybe it doesn’t necessarily need to be easier. [Excel](https://youtu.be/N2QC6VQXo8U) is a game engine right? Could any software or platform work as a game engine? 
+Maybe an engine doesn’t necessarily need to make things easier. [Excel](https://youtu.be/N2QC6VQXo8U) is a game engine right? Could any software or platform work as a game engine? 
 
-> Today games continue to be released with level editors and other mod tools included. Modifying games is almost as natural as playing them. Indeed, video games lend themselves to the practice of modding in ways not seen in other media like film or literature. This is primarily due to the technical distinction between the core game engine and the specific game design and narrative contained within it. A single game engine may facilitate a wide variety of individual games. The game engine is a type of abstract core technology that, while it may exert its own personality through telltale traces of its various abilities and features … is mostly unlinked from the gameplay layered within it.
+Games themselves often include level editors, consoles, and other means for creating mods. Many popular games began as mods (e.g. CS, DOTA).
 
-Galloway in Gaming: Essays on Algorithmic Culture
+> A single game engine may facilitate a wide variety of individual games. The game engine is a type of abstract core technology that, while it may exert its own personality through telltale traces of its various abilities and features … is mostly unlinked from the gameplay layered within it.
+
+Galloway in *Gaming: Essays on Algorithmic Culture*
 
 # Games are also game engines too. 
 
 ![](https://lh3.googleusercontent.com/CPseVU46nhOGRC4Ymjk7GMJdnzwabb2Lk6sQVhBAhNmqYKsyy3en9AxNDdjbtQlcfolRAUBCgWKIwHzYNJ6PuXCz5MU9FvaUeO9boZpEsN2_uzth6WxvCmIH_dnFWCM33oddSbb9Q0VnD8kDVLsFowY)
 
-Boluk & Lemieux. Metagaming. Introduction [https://manifold.umn.edu/read/metagaming/section/ca0c7a57-96bf-41fc-910b-3652b6872404#intro](https://manifold.umn.edu/read/metagaming/section/ca0c7a57-96bf-41fc-910b-3652b6872404#intro) 
+Boluk & Lemieux. [Metagaming. Introduction](https://manifold.umn.edu/read/metagaming/section/ca0c7a57-96bf-41fc-910b-3652b6872404#intro) 
+
 Level editors, speedrunning categories, the chat, prizes and rankings, strategizing, the environment … referred to in the book as the messy circle rather than a magic one
 
 
@@ -133,7 +135,7 @@ Level editors, speedrunning categories, the chat, prizes and rankings, strategiz
 
 [Minecraft Earth](https://www.minecraft.net/en-us/article/minecraft-earth-coming-end)
 
-Are there non-software game engines?
+From this standpoint, are there non-software game engines?
 
 # Different Engines Power Things Differently or Am I Using the Right Engine?
 
@@ -172,19 +174,27 @@ Other industries use Unity for things like [Architectural](https://unity.com/sol
 
 Unity also contracts with the US Department of Defense for military [training and simulation](https://www.vice.com/en/article/y3d4jy/unity-workers-question-company-ethics-as-it-expands-from-video-games-to-war)
 
-# When should I use a game engine?
+# But I don't really make games
+
+The "game" in "game engine" makes many people assume that they have to go down the route of building something that looks and behaves like a game. 
+
+In this class, we touch on many parts that will be useful for those who might want to develop a game, but we're more interested in how to use a game engine for building a wider variety of projects.
 
 ![](https://lh5.googleusercontent.com/xPZHGwaWgZQ3xXFbMyVBqd8-dB_6qyS6d7RBZeyay1RR3dL2tL8moBMwmn2OjkzBfaugf3VhvykqmAoSXy6AACzcpWsCfGbYkSArmkz7AbAA4dpGlLHd5-D6Jyyx4EKla89HeGh3e8qGbYR85MLVy4c)
 
 - [http://tinysubversions.com/fuckvideogames/#slide21](http://tinysubversions.com/fuckvideogames/#slide21) - Darius Kazemi
 
-Even if games aren't your primary mode of expression, you might still find use in the engine. If you're thinking about real-time interactive work, then a game engine could prove a good fit.
+Even if games aren't your primary mode of expression, you might still find use in the engine. If you're thinking about real-time interactive (or non-interactive) work, then a game engine could prove a good fit.
 
 # A bit about how I work with game engines
 
-![](https://lh5.googleusercontent.com/ZyvqlHzFYtrC7KO9jBPX3jjI9T5Hhy6dqA-8z68vxSyME82ADqFS5m47IAuSbPYI-BKSbiby2r1SMs5wktloJgub6bkoexZybAhTPo_z-4LblJBm425O4Ko1Ci6iD2k3arKrfIw7TspwGslTPz7DQAc)
+With this in mind, I might talk a bit about how I use game engines in my own work. I'm usually not making games, but I'm often using Unity to make things.
+
+**![](https://lh7-us.googleusercontent.com/8yjJkELqNP7AO6vQIdem1AEN8sYZLzQj4nE4Ht7N72hV9CYAo5siZILuz9a3hi54DIThC7xRu0ZeD3lHbCAYlxqiszEGUULSeEqhWuj7B3lpinJQHndVw87YoJ935vjw5OmmI1sxilc_fo-q40RgkRBjyg=s2048)**
 
 I often use Unity when working with 3D space and real time interaction. [Here](https://youtube.com/playlist?list=PLAh0qds9ILIb3-qfyboZBxKdEnKzXY6gM) are some projects and sketches that were all using Unity in some capacity
+
+![](https://lh5.googleusercontent.com/ZyvqlHzFYtrC7KO9jBPX3jjI9T5Hhy6dqA-8z68vxSyME82ADqFS5m47IAuSbPYI-BKSbiby2r1SMs5wktloJgub6bkoexZybAhTPo_z-4LblJBm425O4Ko1Ci6iD2k3arKrfIw7TspwGslTPz7DQAc)
 
 # Installing Unity
 
@@ -193,7 +203,7 @@ I often use Unity when working with 3D space and real time interaction. [Here](h
 
 	![](https://lh4.googleusercontent.com/APHs2tLEd-gZY72ls4AygAaHh37mgskH6i9_yFtLF51Qurm3SVYzi7kgLrvM69wJVHUPl0USzqoWAMAyWEvEO4yZr951ELHKjD-Q_Q6eV4LTLV3YKR8zzOXbWNWuWIfvzhkt5Q4WChHx0xLLwn6cHsE)
 
-3. Once you’ve logged in, install the Unity Editor. I recommend installing the most recent LTS Editor. This is currently 2022.3.10 (the last two numbers might be different, but that's OK) You’ll have to agree to the license, then it will start to install. Make sure to click yes to any access requests from the Unity installer.
+3. Once you’ve logged in, install the Unity Editor. I recommend installing the most recent LTS Editor. This is currently 2022.3.XX You’ll have to agree to the license, then it will start to install. Make sure to click yes to any access requests from the Unity installer.
 
 	![](https://lh6.googleusercontent.com/CB-AyT2AH9FayyFiBnOmZ2chD9ZwHCV4qIEtT8nroKzX5xeNnSmH1Fcxg0YhqtHWFv32IpaUwPo1N4IGzwS2FbzTxSmcqLh3tvkJXVqnXDDVnRAC6jSCNymq0pMZL3KK93PANW1b07MHXaKtQzrLN0s)
   
