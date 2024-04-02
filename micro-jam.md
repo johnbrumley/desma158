@@ -3,7 +3,7 @@ layout: page
 title: Micro Jam
 ---
 
-| time | activity                              |
+| Time | Activity                              |
 | ---- | ------------------------------------- |
 | 0900 | Intro - Theme and engine reveal       |
 | 0905 | Short guide to the engine             |
