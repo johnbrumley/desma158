@@ -16,5 +16,13 @@ Since Project 1 involves expanding on the world of roll-a-ball, we've compiled g
 
 # How to access games
 
-Most game files are available on
+PC game files are available on the computer in the "undergrad lounge" on the fourth floor (Turn right after exiting the elevators). 
+
+After logging into the computer, they can be found in the folder "C:\\Desma158\\homeplay1". You can play the games directly on the PC or put them on your own computer. If your game is available for mac and need the file, let us know.
+
+![[assets/Pasted image 20240404124705.png]]
+
+![[assets/Pasted image 20240404124626.png]]
+
+For games that require a console, we are currently setting up a checkout system. This should be resolved very soon!
 
