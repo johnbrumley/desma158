@@ -12,4 +12,4 @@ Group 2 will read Alenda Y. Chang's [_Rambunctious Games: A Manifesto for Enviro
 
 You'll be in Group 1 if the first number of your student ID is even, and Group 2 if it is odd.
 
-Click the links to find a form with a link to the reading. Take a look at the questions and keep them in mind while reading. You don't need to write long responses to the answers, use them like short notes that you can reference when we talk about them on Tuesday. 
+Click the links to find a form with a link to the reading. Take a look at the questions and keep them in mind while reading. You don't need to write long responses to the answers, use them like short notes that you can reference when we talk about them on Tuesday.  
