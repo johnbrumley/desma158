@@ -20,7 +20,12 @@ Thoughts on Roll-a-ball, was it a nice tour of Unity? 
 We’ll eventually cover everything again, but are there any burning questions that you’re curious about now?
 
 ## Parts of Unity that Roll-a-ball covers
-Lighting and Materials, Rigidbody Component / Physics, Vectors, Colliders / Triggers, UI / TextMeshPro, Input System, Prefabs
+- Lighting and Materials 
+- Rigidbody Component / Physics
+- Vectors, Colliders 
+- Triggers, UI
+- TextMeshPro
+- Input System, Prefabs
 
 While the tutorial only introduces each one, we'll eventually spend more time covering each one in depth.
 

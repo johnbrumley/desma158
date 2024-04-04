@@ -15,17 +15,17 @@ This project will build off the official Unity [Roll-a-ball tutorial](https://l
 
 ![](https://classes.dma.ucla.edu/Winter23/158/wp-content/uploads/2023/01/rollball-background-2-e1672847701440-1024x273.png)
 
-## 2. Beyond Roll-a-ball
+## 2. Sketch: Beyond Roll-a-ball
 
 **Due by Tuesday 4/9**
 
-*Develop 3 short sketches illustrating ideas for expanding on the Roll-a-ball demo. Create an overlay image that will function as a “title card” when the game starts.* 
+*Develop 2 short sketches illustrating ideas for expanding on the Roll-a-ball demo. Consider an overlay image that will function as a “title card” when the game starts.* 
 
 Roll-A-Ball as it is, is not much of a “game” and even less of a space to explore. You can win by collecting the pickups, but you can’t really lose. There is no challenge or narrative designed into the game, the outcome is predictable, and the ball is confined to an empty square platform floating in the default skybox. We want to fix all of this and make Roll-A-Ball into something more thoughtful, expansive, and meaningful by considering the setting, level design, and perhaps a bit of risk 👀
 
-Don't worry about viability at this point. We'll meet in class to help pick one sketch, and we'll discuss how to best realize it in the time given. One of the challenges of this project is work within the limitations of the camera and controls of roll-a-ball. 
+The only limitation for this project is that you have to keep the player movement script. Consider the possibilities of "rolling"  existing ball mechanics and how rolling influences the design of the level. It is OK to swap the model of the character, as long as the player character still rolls.
 
-Don't simply swap out the ball for a "proper" character controller. Consider the affordances of the existing ball mechanics and how it can relate to your world.
+Don't worry about viability at this point. We'll meet in class to help pick one sketch, and we'll discuss how to best realize it in the time given. One of the challenges of this project is work within the limitations of the camera and controls of roll-a-ball. 
 
 **Be sure to include for each sketch:**
 - A map of the overall space that your ball-character will traverse. Consider interior or exterior, scale (of player and/or the environment), obstacles, occlusions, viewpoints, other characters, and sense of place. Consider additional viewpoints, cross-sections, or cutaways to show verticality or interior/exterior transitions.
