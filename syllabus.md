@@ -18,6 +18,10 @@ Teaching Assistant: Hua Chai (they/he) <br/>
 Office hours & Location: Tuesdays 12-1pm <br/>
 Email: chai.callmehua@gmail.com <br/>
 
+## Online Spaces
+[Discord]([https://discord.gg/HrdwJFss](https://discord.gg/HrdwJFss))
+[GroupMe]([https://groupme.com/join_group/100159958/fa7Ot7HG](https://groupme.com/join_group/100159958/fa7Ot7HG))
+
 ## Course Description
 
 This course introduces the fundamentals of programming interactive projects in game development software. Classwork focuses on familiarizing students with game engines, computer programming concepts, player experience, and other skills that are foundational to making digital games. Lectures, exercises, and class projects teach skills needed to create digital games including custom rules, interactive physics systems, vectors, generative or randomized levels, save data, custom input systems, score-keeping, and sound. This course is offered in parallel with the concurrent courses, Game Design and Interactive Animation.

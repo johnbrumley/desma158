@@ -11,9 +11,7 @@ title: Day 2
 
 In the not so distant future, Project 1 will be due. 
 
-So let’s chat about Roll-a-ball.
-
-[Project 1 Info](project-1.md) 
+So let’s chat about Roll-a-ball and Project 1
 
 Thoughts on Roll-a-ball, was it a nice tour of Unity? 
 
@@ -28,7 +26,15 @@ We’ll eventually cover everything again, but are there any burning questions t
 - Input System, Prefabs
 
 While the tutorial only introduces each one, we'll eventually spend more time covering each one in depth.
+# Beyond the demo
 
+Consider the definitions and expectations of the roll-a-ball demo. 
+
+What assumptions is Unity making about it's userbase and the engine itself? 
+
+What are some critiques of this demo? 
+
+[Project 1 Info](project-1.md) 
 # How can we enhance this game
 
 Think about all the different components of the demo … try and make a sentence that encapsulates the game
@@ -105,7 +111,7 @@ Which words could you swap, remove, add to the phrase to make it more interestin
 
 What is the major challenge of roll-a-ball? 
 
-Is winning too easy? What about losing? (does either need to exist? For project 1: yes)
+Is winning too easy? What about losing? What about the platform and collectibles?
 
 # Variations of Roll-a-ball
 
@@ -113,10 +119,9 @@ Is winning too easy? What about losing? (does either need to exist? For project 
 
 There are lots of games that are more-or-less fancy variations of roll-a-ball, for example this game, [https://pirxos.itch.io/a-red-boat](https://pirxos.itch.io/a-red-boat) , could modify the roll-a-ball sentence as "A boat in the ocean finding messages"
 
-You can keep a spherical player that rolls or pick something entirely different that will move around a scene.
-
+<!--
 <video loop="" autoplay="" muted="" playsinline="" poster="" class="HeroFullScreenVideo_video-without-pointer-event__EmJi7" style="width: 100%;"><source src="https://media.graphassets.com/IoPFra8zQ2eH5iqGZwPS" type="video/mp4"></video>
-
+-->
 ## A (noun) that (verbs) around a (noun) and (verbs) (nouns) 
 
 When considering your own variations, try out different sentences that might be interesting. Jot down any ideas as short sentences or even full written-out documents.
@@ -135,6 +140,8 @@ After creating your own modified roll-a-ball sentence, you'll need a place for i
 
 Defined by [The Level Design Book](https://book.leveldesignbook.com/introduction) (Plug to check out this book!)
 
+![](level-design-shirt.png)
+
 > A level is a space where a game happens.
 
 But the biggest question you'll need to answer before starting level layout:
@@ -146,11 +153,20 @@ But the biggest question you'll need to answer before starting level layout:
 
 Think through what you're trying to do and jot down what a player should experience over the course of the level and what should they take away at the end? 
 
+### Quick Exercise! (for later today)
+
+Think of an idea for what a potential level might be in your improved roll-a-ball game. Write it down and keep it in mind while we talk about different aspects of level design.
+
+
 ![](assets/Pasted%20image%2020230930223621.png)
 
 Early _Battlezone (1980)_ game description (Source: [Atari](http://www.ionpool.net/arcade/atari_docs/fpsdescription.pdf))
 
 # Parti
+
+![](https://lattice.tools/memoryChip_Web/BrennaMurphy_memoryChip1.jpg)
+
+Brenna Murphy. [*Memory Chips*](https://lattice.tools/memoryChip) (2019)
 
 If you like, you could borrow an architectural term *parti* meaning the central concept or organizing principle of a structure.
 
@@ -176,6 +192,8 @@ Phenomenology is the philosophical study of affect, perception, and cognition—
 - How does time unfold for the player?
 - How can you work *with* the imagination of the player?
 
+In many video games, experience is often split. One is that of the person playing/viewing the game. The other is the character in the game who the player is controller. The distance between these two can vary depending on how much the player identifies and embodies the character in the game.
+
 
 > "In a house, we all feel the need for closed doors. A closed door is before all a symbol of desire. It conceals absolutely essential mysteries. What might be behind it? What is hidden behind that secret panel, that unknowable portal? What is in the chest that my father never opened? The chest that I can never open? A closed door is given a much greater significance than an open door. Our reveries dwell on what might be behind that door, the desire to go beyond it, the feeling that certain doors are forbidden."
 
@@ -190,7 +208,7 @@ Phenomenology is the philosophical study of affect, perception, and cognition—
 
 # Level Layout
 
-After you've nailed down what your goals and concepts for your level. you can begin sketching or laying out ideas. 
+After you've nailed down what your goals and concepts are for your level. you can begin sketching or laying out ideas. 
 
 ![](assets/Pasted%20image%2020230930222757.png)
 _Super Mario Bros._ (1985) planning sheet (Source: [Nintendo](https://www.youtube.com/watch?v=DLoRd6_a1CI))
@@ -199,7 +217,7 @@ If you need to communicate your level to others in a team, you'll need to be mor
 
 # Environmental Expressivity
 
-Or … level design. When thinking about a player's movement through your level, at both micro and macro scales, there are features to consider about the environment that can exist from intrinsic to the concept of the game to helping a player know where to go next.
+Environmental Expressivity could be another term for level design. When thinking about a player's movement through your level, at both micro and macro scales, there are features to consider about the environment that can exist from intrinsic to the concept of the game to helping a player know where to go next.
 
 ![](https://lh4.googleusercontent.com/Y0DOblhkR1-5REyZOffF7xaPjwULMeLdQse0yjbiLYKvUh2W2B3WrgsfAM_OK9QO8reSVRktMz9tyCXklIL_U52LZ_8mJnGCIjMtyqIOHScRQyn_8k7nrqY3BGK_rnaMXvhO0i8GoRBoVRfZpt3DcLc)
 
@@ -285,11 +303,6 @@ How are we getting there and how does that feel?
 ![](https://lh4.googleusercontent.com/D-kp8wM5Mixl0CqVAYfmfJKRGV_1Ue91F_rzszjTcCVXepQOCvIMM5tdxnnka7tl4k6buAD9Ui5xojxxKsOdKjGlaYbSX6EgwHcBlM-fq8Z6pPe6SwhhHpx_aOqLd07XsP9X6GmKow1I_BVQpFcFUik)
 *[Getting Over It with Bennett Foddy](https://youtu.be/DYjbCJXxWLg) (2017)*
 
-# Scene breakdown
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EPKRAWUtKCE?si=yf8aL5OVO4Vo3OA_&t=325" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-*54:19 - Opening section* - how many of the previously mentioned techniques can you spot?
-
 # Spatial Memory
 
 Levels of games, virtual environments, can become part of our spatial memories.
@@ -299,9 +312,15 @@ Levels of games, virtual environments, can become part of our spatial memories.
 
 More abstractly, we all have a sense of spatial memory relating to software that isn’t necessarily meant for gaming.
 
-# Can anyone name this map
-
+Can anyone name this map:
 ![](https://lh6.googleusercontent.com/rbp56x2gbPslLqGfUQsE8a45pwYpq-EVD0JJjBh3y53gvWRkokXFGbuzNtYkan2dg4WuiI_xp7V76jQtQSgx_BmN0M3S6mJFCpr3rOflajiJWrp369t2F-2xQWAQXZGM5yJQF4MWzqmuLI9igjdZr_g)
+
+
+# Scene breakdown
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EPKRAWUtKCE?si=yf8aL5OVO4Vo3OA_&t=325" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+*54:19 - Opening section* - how many of the previously mentioned techniques can you spot?
+
 
 # Back to Roll-a-ball
 
@@ -318,14 +337,6 @@ Changing the field of play, the level, the space:
 1. Holes in the field (see [donut county](http://www.donutcounty.com/))
 2. ...   
 
-
-# Beyond the demo
-
-Consider the definitions and expectations of the roll-a-ball demo. 
-
-What assumptions is Unity making about it's userbase and the engine itself? 
-
-What are some critiques of this demo? 
 # Roll-a-ball as a platform 
 
 Consider the basic components that define the base game? 
@@ -347,15 +358,22 @@ Maybe the result isn't a “good” game, but it becomes interesting, unexpected
 
 Let's try creating some maps by hand. 
 
+Go back to the level idea that you wrote down earlier and sketch out a level for the ball.
+
 Consider a setting/activity/goal/history/idea and the tools of environmental expression we just discussed.
+
+You can use additional verbs to expand on what the ball is doing. A ball that rolls to explore/investigate/decompress/etc
 
 In addition to the form of the map, include any other things that might live there: objects, plants, creatures, buildings, cities, planets, etc.
 
 This doesn't have to be the world you use in Project 1, but if you already have an idea feel free to work on that. 
+
+
 ## Ideas, inspirations
 - Go to [https://noclip.website/](https://noclip.website/) and explore some digital versions of maps
 - Check out the [Videogame Atlas](https://www.youandpea.com/atlas) for different geographies of game levels
 - Try and re-imagine a familiar building or space, but distort the proportions and distances to represent other tangible/intangible aspects (temp, time spent, feeling, safety)
+- Adapt another piece of media into a level. A chapter of a book. A song. 
 - Draw a map from memory of something you do every day on the computer / phone / internet … how could you represent a non-spatial thing as a place to be navigated through?
 
 
@@ -366,6 +384,8 @@ This doesn't have to be the world you use in Project 1, but if you already have 
 # Optional reading
 
 [Anna Anthropy’s Level Design Lessons](https://drive.google.com/file/d/14EuDZDhZcKhtsR3nvTIGMG25DE1niqun/view?usp=share_link) - level design in a few classical 8-bit era games
+
+
 
 # Grayboxing your level in Unity
 
@@ -396,7 +416,7 @@ You can compare this idea to wireframing a layout and using placeholder text and
 
 (See here for [breakdowns](https://book.leveldesignbook.com/process/blockout#how-to-blockout) of each step )
 
-# A quick refresher on Unity
+# A quick refresher for navigating and working in the Unity Editor
 
 Unity Editor interface, we'll mainly be working in the Hierarchy, Scene, and Inspector views for building the layout
 
@@ -537,10 +557,15 @@ After you've tried out your level and made some changes, ask another person to p
 ## Project 1, Part 2 (due Next Class)
 [Part 2 of Project 1 is due this Thursday](https://johnbrumley.github.io/desma158/project-1.html#2-beyond-roll-a-ball) so create some more sketches (you can use the one we did in class as one of the sketches). Also include ideas for possible title cards for each sketch.
 
-## Homeplay (due Next Tuesday 10/10)
+## Reading
+
+
+
+## [Homeplay](homeplays.md) (due Next Thursday 04/11)
+
 As additional research on ways to adapt roll-a-ball, you'll be signing up in *Groups of 3* to play a game (or games) on [this list](https://docs.google.com/spreadsheets/d/1pOxYtalckwi_PykkRneQMNX_UkxH2TdFm132yvbRygg/edit?usp=sharing) for at least 1-2 hours. For games that cost money, we've set up a computer/console in the Print Lab lounge where you can access them. 
 
-Next Tuesday (10/10), your group will give a 5-minute Let's Play presentation to talk about how the game's themes, ideas, structure, narrative, mechanics, flow, and/or ideology fits into what we've been discussing in class, and show a part of the game that is especially interesting.
+Next Thursday (4/11), your group will give a 5-minute Let's Play presentation to talk about how the game's themes, ideas, structure, narrative, mechanics, flow, and/or ideology fits into what we've been discussing in class, and show a part of the game that is especially interesting.
 
 The presentation can be done *live or using recorded gameplay with live commentary* if difficult to isolate the section of the game you want to show. I recommend screen recording the entire session, [OBS](https://obsproject.com/) is a very lightweight recorder, so you don't have to worry about missing any moments. If you have more than one game, pick one to show, but plan to talk a bit about both.
 
