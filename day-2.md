@@ -554,33 +554,32 @@ After you've tried out your level and made some changes, ask another person to p
 
 # Homework
 
-## Project 1, Part 2 (due Next Class)
+## Project 1 Sketch (Next Class)
 [Part 2 of Project 1 is due this Thursday](https://johnbrumley.github.io/desma158/project-1.html#2-beyond-roll-a-ball) so create some more sketches (you can use the one we did in class as one of the sketches). Also include ideas for possible title cards for each sketch.
 
-## Reading
+## Reading (Next Class)
 
-
-
-## [Homeplay](homeplays.md) (due Next Thursday 04/11)
-
-As additional research on ways to adapt roll-a-ball, you'll be signing up in *Groups of 3* to play a game (or games) on [this list](https://docs.google.com/spreadsheets/d/1pOxYtalckwi_PykkRneQMNX_UkxH2TdFm132yvbRygg/edit?usp=sharing) for at least 1-2 hours. For games that cost money, we've set up a computer/console in the Print Lab lounge where you can access them. 
-
-Next Thursday (4/11), your group will give a 5-minute Let's Play presentation to talk about how the game's themes, ideas, structure, narrative, mechanics, flow, and/or ideology fits into what we've been discussing in class, and show a part of the game that is especially interesting.
-
-The presentation can be done *live or using recorded gameplay with live commentary* if difficult to isolate the section of the game you want to show. I recommend screen recording the entire session, [OBS](https://obsproject.com/) is a very lightweight recorder, so you don't have to worry about missing any moments. If you have more than one game, pick one to show, but plan to talk a bit about both.
-
-## EXTRA CREDIT 
+Take a look at the [readings](readings.md) page to find out which article you'll be reading. We'll be having a short discussion about them next Tuesday.
 
 > “Game designers don't simply tell stories; they design worlds and sculpt spaces.”
 
 Henry Jenkins. [Game Design as Narrative Architecture](https://web.mit.edu/~21fms/People/henry3/games&narrative.html)
 
-Read through Jenkins's essay and respond to the questions on this form:
+## Homeplay (Next Thursday 4/11)
+Check out the [homeplays](homeplays.md) page where you'll find a link to a sign-up sheet.
 
-[https://forms.gle/4J1yydprV1JoFDq4A](https://forms.gle/4J1yydprV1JoFDq4A) 
+Next Thursday, we'll share a bit about the different games and how the each game's themes, ideas, structure, narrative, mechanics, flow, and/or ideology fits into what we've been discussing in class. 
 
-![](https://lh4.googleusercontent.com/kdlT22Sw7GeVRsksSd4wWdiERrfOf98XZhCkPGqWKV71QKfYjGHqYEdojLyDAhBq1PKz5FyrXZYdPzt8yPkWKWtfIDKVY0xUxtFHxnWSjYf8w46KGGu4qwGpT9FLnzuAbE4Zij5XhsLZQ8cA36SGrR0)
-*[What the Golf?](https://www.whatthegames.com/golf) (2019)*
+For games that cost money, we've set up a computer/console in the Print Lab lounge where you can access them. 
+
+I'll have some video documentation of most games that we can reference, but if your group has a specific section of the game that you want to share, you can make your own screenshots or recordings. 
+
+If you're worried that you might miss something in the game, I recommend screen recording the entire session ([OBS](https://obsproject.com/) is a very lightweight recorder) to go back and clip any sections.
+
+
 
 > All the world is an absurdist game of golf, but love is the most absurd golf game of all.
 >  - [Bo Ruberg](https://twitter.com/MyOwnVelouria/status/1640915632115027969) 
+
+![](https://lh4.googleusercontent.com/kdlT22Sw7GeVRsksSd4wWdiERrfOf98XZhCkPGqWKV71QKfYjGHqYEdojLyDAhBq1PKz5FyrXZYdPzt8yPkWKWtfIDKVY0xUxtFHxnWSjYf8w46KGGu4qwGpT9FLnzuAbE4Zij5XhsLZQ8cA36SGrR0)
+*[What the Golf?](https://www.whatthegames.com/golf) (2019)*
