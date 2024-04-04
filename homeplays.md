@@ -14,3 +14,7 @@ title: Homeplays
 Since Project 1 involves expanding on the world of roll-a-ball, we've compiled games that take different approaches to player movement, time, and level design. When playing these games consider the decisions made by the developers, the intentional use of friction, and if the concept and narrative of the game aligns with the mechanics of the game.
 ## [Sign Up Sheet](https://docs.google.com/spreadsheets/d/1e2qF0M1XdieTpN7LVPfbTePcivtsTklvOts_C5FfSLU/edit?usp=sharing)
 
+# How to access games
+
+Most game files are available on
+
