@@ -211,34 +211,35 @@ Let’s get started by animating a sphere to move back and forth.
 Starting with a new scene and add a sphere:
 
 1. Add the “Animation” tab to the editor by clicking the three dots on the top right of an existing panel, then Add Tab > Animation (you can also go to Window > Animation > Animation)
-
-![](https://lh6.googleusercontent.com/L_CaIzjs8c63VaIgSYvMyPJvb5iO-_9ia9W-YmwXvdC7szaCnIqwn7jfjLhOl8lMBwY46rl-NQUNWXL-JZLVMYduN2QvGTRV87E3_JjsY_Vz2EdJdZ58P14tuGEVPfqDXFxwIdq7j0N6qIWgGWgkl9w)
+   
+   ![](https://lh6.googleusercontent.com/L_CaIzjs8c63VaIgSYvMyPJvb5iO-_9ia9W-YmwXvdC7szaCnIqwn7jfjLhOl8lMBwY46rl-NQUNWXL-JZLVMYduN2QvGTRV87E3_JjsY_Vz2EdJdZ58P14tuGEVPfqDXFxwIdq7j0N6qIWgGWgkl9w)
 
 2. In the Animation tab, with the Sphere selected in the Hierarchy, click "Create" and save the new animation in your assets. You can create a new folder called Animations to keep things organized.
-
-![](https://lh6.googleusercontent.com/JVhLBNiiM5hU3tPi1M3JNzWkxiD2hKubCrnxaQLxT_8Rd8BXTYbu2ayyPlrNIXcxNNA5wooMcLYv4Mb87dZRlMygTYvRmdcXBJpzn_m__swXqAlXISTweSQliecaSoRSw2oCGUNeO3XIJDyy-A-CLSk)
-
-This creates an Animation Clip and an Animator Controller in your project assets. It will also automatically add an Animator component to the Sphere game object and with the Animator Controller set in the controller property. You can leave the default settings for now.
-
-![](https://lh5.googleusercontent.com/4NHruWc1xC04PnilLmBOsqXSdASJfdKfOGzVZqSczp-SDAGdXQHd13f_hrSPrCW7rSPQR7iBEaCn2S_iZcLl4KXcPukOKMsFonI5pQzX2FpVrt5nsz4dUQDerk3_9QowRou5ojrFbyUYEf8vkaJ5noI)
-
+   
+   ![](https://lh6.googleusercontent.com/JVhLBNiiM5hU3tPi1M3JNzWkxiD2hKubCrnxaQLxT_8Rd8BXTYbu2ayyPlrNIXcxNNA5wooMcLYv4Mb87dZRlMygTYvRmdcXBJpzn_m__swXqAlXISTweSQliecaSoRSw2oCGUNeO3XIJDyy-A-CLSk)
+   
+   This creates an Animation Clip and an Animator Controller in your project assets. It will also automatically add an Animator component to the Sphere game object and with the Animator Controller set in the controller property. You can leave the default settings for now.
+   
+   ![](https://lh5.googleusercontent.com/4NHruWc1xC04PnilLmBOsqXSdASJfdKfOGzVZqSczp-SDAGdXQHd13f_hrSPrCW7rSPQR7iBEaCn2S_iZcLl4KXcPukOKMsFonI5pQzX2FpVrt5nsz4dUQDerk3_9QowRou5ojrFbyUYEf8vkaJ5noI)
+   
 3. The Animation tab should now show a button that lets you assign a property to animate. Click the **Add Property** button and select **Transform > Position** to add the position property to the timeline.
-
-![](assets/animation-basic-2.png)
-
+   
+   ![](assets/animation-basic-2.png)
+   
 4. Record some keyframes. Press the red, circular **Record Button** on the top left of the Animation tab. Move the sphere to a “starting position”. Since the playhead in the Animation tab is currently at frame zero of the animation this will set the object’s position at the start. 
-
-If you drag the playhead towards the end of the end of the timeline, you’ll see the position of the object animating back towards its original position. 
+   
+   If you drag the playhead towards the end of the end of the timeline, you’ll see the position of the object animating back towards its original position. 
 
 5. Move the playhead to the halfway point and move the sphere’s position to a different position. This will add new position keyframes to the timeline. De-activate the Record Button.
-
-![](assets/animation-basic-3.png)
+   
+   ![](assets/animation-basic-3.png)
+   
 6. Now select the keyframes at the starting position, copy them (*ctrl/cmd + c*), move the playhead to the final frame of the animation, and paste (*ctrl/cmd + v*) the keyframes.
 7. You should now have a looping animation. Preview it by clicking the play button on the Animation tab. The Animator Controller is also set to start the animation as soon as the object is active in the scene, so pressing the global play button also plays the animation. 
 8. You can scale the length of the animation by selecting all the keyframes and dragging on one of the ends. Dragging to the right will also expand the overall animation length.
-
-![](https://lh4.googleusercontent.com/aoayvNLuvcnG427FHcaaT9sQhMgxX53XQ0qRBTsnODvspvw2cOEzCi7xHdiF1DHrgbElxr4wyhBPI1H2xIfVUvf2jfpqH7yUoUp5lbgk5kkCXPb2slnI06swCuPcy5C-ZMXPX8r7lgf7bm9Z3dZHwAg)
-
+   
+   ![](https://lh4.googleusercontent.com/aoayvNLuvcnG427FHcaaT9sQhMgxX53XQ0qRBTsnODvspvw2cOEzCi7xHdiF1DHrgbElxr4wyhBPI1H2xIfVUvf2jfpqH7yUoUp5lbgk5kkCXPb2slnI06swCuPcy5C-ZMXPX8r7lgf7bm9Z3dZHwAg)
+   
 # Sounds
 
 Adding sounds to your scene. Here’s the [Unity audio reference](https://docs.unity3d.com/Manual/AudioOverview.html).
