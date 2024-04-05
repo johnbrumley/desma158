@@ -24,12 +24,11 @@ After logging into the computer, they can be found in the folder "C:\\Desma158\\
 
 This is the room where you can find the computer:
 
-![[assets/Pasted image 20240404124705.png]]
+![](Pasted%20image%2020240404124705.png)
 
 And here is the specific computer:
 
-![[assets/Pasted image 20240404124626.png]]
-
+![](Pasted%20image%2020240404124626.png)
 ## Console Games
 
 For games that require a console (highlighted in magenta on the sheet), you can go to the print lab desk and let the attendant know that you want to check out a game for DESMA 158. 
