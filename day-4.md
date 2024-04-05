@@ -112,85 +112,71 @@ For Project 1, you aren’t required to build your entire overlay with the UI sy
 
 Pressing a key to show/hide the overlay
 
-  
-
 1. Create a new script called ToggleGameObject.cs
-    
 2. Add the input system.
-    
 
-  
-
-|   |
-|---|
-|using UnityEngine.InputSystem;|
-
-  
+```csharp
+using UnityEngine.InputSystem;
+```
 
 3. Create a public variable called toggleKey. This will let you select the toggle key in the Inspector with a drop down menu.
-    
-
   
-
-|   |
-|---|
-|public Key toggleKey;|
-
-  
+```csharp
+public Key toggleKey;
+```  
 
 4. Add a public GameObject for the thing you want to toggle.
-    
 
-  
-
-|   |
-|---|
-|public GameObject toggleGameObject;|
-
-  
+```csharp
+public GameObject toggleGameObject;
+```
 
 5. In the Update function, check if the toggle key was pressed
-    
 
-  
-
-|   |
-|---|
-|if (Keyboard.current[toggleKey].wasPressedThisFrame)  <br>{  <br>    // toggle the object here  <br>}|
-
-  
-
+```csharp
+if (Keyboard.current[toggleKey].wasPressedThisFrame)  
+{  
+    // toggle the object here  
+}
+```
 6. In the conditional, get the active state of the object and set the object to the opposite of that state
-    
 
-  
-
-|   |
-|---|
-|// get the current state of the object  <br>bool activeState = toggleGameObject.activeSelf;  <br>// flip the state and set the object  <br>toggleGameObject.SetActive(!activeState);|
-
-  
+```csharp
+// get the current state of the object  
+bool activeState = toggleGameObject.activeSelf;  
+// flip the state and set the object  
+toggleGameObject.SetActive(!activeState);
+```  
 
 7. Save the script. Back in the Unity Editor, don’t forget to pick a key and connect the GameObject that you want to toggle on and off.
-    
-
   
 
 ![](https://lh4.googleusercontent.com/N-gvmgsjp8mHb1MaHrzqywl0VLD2Li_YSi5IzxuTI6AJuCnk-9SdyANn9LWh2efFnTknOFmKzY1aJ-kJts9lEmjB7WbGqGvt7NNYMteB568YKc9INixFebQi1YwSWfTVHvvWlTaB6FzBDYiDxp-k93U)
 
-  
 
 Here’s the full script:
 
+```csharp
+using UnityEngine;  
+using UnityEngine.InputSystem;  
   
-
-|   |
-|---|
-|using UnityEngine;  <br>using UnityEngine.InputSystem;  <br>  <br>public class ToggleGameObject : MonoBehaviour  <br>{  <br>    public Key toggleKey;  <br>    public GameObject toggleGameObject;  <br>  <br>    void Update()  <br>    {  <br>        if (Keyboard.current[toggleKey].wasPressedThisFrame)  <br>        {  <br>            // get the current state of the object  <br>            bool activeState = toggleGameObject.activeSelf;  <br>            // flip the state and set the object  <br>            toggleGameObject.SetActive(!activeState);  <br>        }  <br>    }  <br>}|
-
+public class ToggleGameObject : MonoBehaviour  
+{  
+    public Key toggleKey;  
+    public GameObject toggleGameObject;  
   
-  
-
+    void Update()  
+    {  
+        if (Keyboard.current[toggleKey].wasPressedThisFrame)  
+        {  
+            // get the current state of the object  
+            bool activeState = toggleGameObject.activeSelf;  
+            // flip the state and set the object  
+            toggleGameObject.SetActive(!activeState);  
+        }  
+    }  
+}
+```
 # Timer Walkthrough
 
 In the project 1 unitypackage there is a prefab for creating a countdown timer. This timer could be abstracted to represent any number of values from energy, oxygen, patience, etc.
