@@ -26,6 +26,8 @@ header_pages:
 - syllabus.md
 - schedule.md
 - projects.md
+- readings.md
+- homeplays.md
 
 # Build settings
 theme: minima
