@@ -114,10 +114,9 @@ Pressing a key to show/hide the overlay
 
 1. Create a new script called ToggleGameObject.cs
 2. Add the input system.
-
-```csharp
-using UnityEngine.InputSystem;
-```
+	```csharp
+	using UnityEngine.InputSystem;
+	```
 
 3. Create a public variable called toggleKey. This will let you select the toggle key in the Inspector with a drop down menu.
   
