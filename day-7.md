@@ -2,7 +2,7 @@
 layout: slides
 title: Day 7
 ---
-# Homeplay 2 (Due 10/26)
+# Homeplay 2 (Due in a week!)
 
 As some inspiration and research on Project 2, you'll be signing up in *Groups of 3* to play a game (or games) for 1-2 hours. 
 ## Sign up for games on: [this list](https://docs.google.com/spreadsheets/d/1MRMqrETqoTgZWNNtvUkijmwZi4IVVnIBXls-KrXs-Oo/edit?usp=sharing) 
@@ -351,97 +351,97 @@ Let's write a script that uses a trigger to show dialogue when your player is ne
 This works very much the same way that we've used triggers to turn on/off game objects, but (almost) entirely inside of a script.
 
 1. Make a new script called "ShowDialogue". Add in the methods for trigger enter and trigger exit. You can also remove unused namespaces and methods. 
-
-```csharp
-using UnityEngine;
-
-public class ShowDialogue : MonoBehaviour
-{
-
-	void Start()
-	{
-	    
-	}
 	
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        
-    }
-
-    void OnTriggerExit2D(Collider2D collision)
-    {
-        
-    }
-}
-```
+	```csharp
+	using UnityEngine;
+	
+	public class ShowDialogue : MonoBehaviour
+	{
+	
+		void Start()
+		{
+		    
+		}
+		
+	    void OnTriggerEnter2D(Collider2D collision)
+	    {
+	        
+	    }
+	
+	    void OnTriggerExit2D(Collider2D collision)
+	    {
+	        
+	    }
+	}
+	```
 
 2. Add a public GameObject variable for the dialogue that we'll show/hide. This variable belongs to this class and is used by both trigger methods, so it should be declared in the scope of the class, but outside the trigger methods.
 3. In each of the methods, set the active state of this variable to either true or false using the Game Object's *SetActive* method. In the following script, the game object is hidden right at the start, then activated when something enters the trigger area, and hidden again when something leaves the trigger area.
-
-```csharp
-using UnityEngine;
-
-public class ShowDialogue : MonoBehaviour
-{
-    public GameObject dialogueObject;
-
-    void Start()
-    {
-        dialogueObject.SetActive(false);
-    }
-
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        dialogueObject.SetActive(true);
-    }
-
-    void OnTriggerExit2D(Collider2D collision)
-    {
-        dialogueObject.SetActive(false);
-    }
-}
-```
+	
+	```csharp
+	using UnityEngine;
+	
+	public class ShowDialogue : MonoBehaviour
+	{
+	    public GameObject dialogueObject;
+	
+	    void Start()
+	    {
+	        dialogueObject.SetActive(false);
+	    }
+	
+	    void OnTriggerEnter2D(Collider2D collision)
+	    {
+	        dialogueObject.SetActive(true);
+	    }
+	
+	    void OnTriggerExit2D(Collider2D collision)
+	    {
+	        dialogueObject.SetActive(false);
+	    }
+	}
+	```
 
 4. Since anything with a collider could turn the dialogue on or off, make the script only respond to the Player by checking the tag of the incoming/outgoing collider.
-
-```csharp
-using UnityEngine;
-
-public class ShowDialogue : MonoBehaviour
-{
-	// game object to show / hide
-    public GameObject dialogueObject;
-
-    void Start()
-    {
-	    // make sure object starts out hidden
-        dialogueObject.SetActive(false);
-    }
-
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-	    // check if collider is attached to player and show object
-        if (collision.gameObject.CompareTag("Player"))
-            dialogueObject.SetActive(true);
-    }
-
-    void OnTriggerExit2D(Collider2D collision)
-    {
-	    // check if collider is attached to player and hide object
-        if (collision.gameObject.CompareTag("Player"))
-            dialogueObject.SetActive(false);
-    }
-}
-```
-
+   
+	```csharp
+	using UnityEngine;
+	
+	public class ShowDialogue : MonoBehaviour
+	{
+		// game object to show / hide
+	    public GameObject dialogueObject;
+	
+	    void Start()
+	    {
+		    // make sure object starts out hidden
+	        dialogueObject.SetActive(false);
+	    }
+	
+	    void OnTriggerEnter2D(Collider2D collision)
+	    {
+		    // check if collider is attached to player and show object
+	        if (collision.gameObject.CompareTag("Player"))
+	            dialogueObject.SetActive(true);
+	    }
+	
+	    void OnTriggerExit2D(Collider2D collision)
+	    {
+		    // check if collider is attached to player and hide object
+	        if (collision.gameObject.CompareTag("Player"))
+	            dialogueObject.SetActive(false);
+	    }
+	}
+	```
+	
 5. Save the script and go back to the Unity Editor. 
 6. Find something that could say something to the player and attach a Collider2D (whichever shape you like) and check the "Is Trigger" box. Expand the collider to represent the area where dialogue should appear when the player enters.
 7. Create a new game object to hold the text of the dialogue. In the Hierarchy, right-click and select *3D Object > Text - Text Mesh Pro*. For now we'll use this, but you could make a much more complex hierarchy of game objects that include text boxes, character portraits, sounds, etc.
 8. If the text is not showing, you may need to update the sort order of the text. This can be found in the TextMeshPro-Text component under Extra Settings > Order in Layer. Increasing this number will draw the text in front of other things on the same layer.
 9. Make this new text object a child of the game object you added the collider to. 
-
-![](assets/square-dialogue.png)
-
+   
+   ![](assets/square-dialogue.png)
+   
 10. Add the ShowDialogue script to your talking game object.
 11. Drag the dialogue game object into the dialogueObject slot of the script.
 12. Press play and move your player near the object to see if they talk to you.
