@@ -8,21 +8,24 @@ title: Day 4
 
 # Homeplay Presentations 
 
-We'll try and be efficient about switching over between groups, so be ready to present. You can either plug directly into the projector or drop any files into [this folder](https://drive.google.com/drive/folders/1Bha8xe9p8I5mMotWAwaaNpOaji0Opi2n?usp=sharing) for me to show.
+We'll try and be efficient with covering the games each group played. If you have any visual aids, make sure you've got them ready or share them with us to put on the screen.
 
-# Notes on Project 1
+# Building your projects
 
-## Things to remember for your build / exporting
+You should try making a preliminary build as soon as possible to see if there are any weird issues! Some issues will only show up in the build! Particularly UI and resolution problems. 
 
 Check the how to submit projects page on the website: [How To Submit Projects](how-to-submit-projects.md)
 
-Remember that you need to zip all the files together for the Windows build to run on other computers:
+Remember that you need to zip all the files together for the Windows build to run on other computers.
+
+**All of these files need to be in the zip:**
 
 ![](https://lh5.googleusercontent.com/PLrhSXHMYkcBBPb0JfyJas_y88NPAJw01YtaNfKN1qqV0urvYbwaxBORzdavgKMLtftpZRMdQTp_LmetfhhX9rxHhrORKGuX923CoMBdQkouXvRjPU_htcZZVHeodkFnXz35syY8BILoe64a1MZ8ZRM)
+
 The exe file will not run without all of the other files and folders.
 ## For Mac Users
 
-If you’re on a Mac and didn’t add the Windows build when installing Unity. You can download and add it through Unity Hub
+If you’re on a Mac and didn’t add the Windows build when installing Unity. You can download and add it through Unity Hub.
 
 ![](https://lh4.googleusercontent.com/Uuj6BLzAKub7Dbm0F6GWCbibsv0Fv0AXuQrTCyr4Emb6Ox0UeHntW0IP85SKsLh_ZzM15cRIVQb-7dgzkSaen5nJeEH22QBmyZuBWyGNczw6Ii-kgDOz-HJXfyvDvkrDjjBl_1xXD6zzju1Csv8h6qM)
 
@@ -38,10 +41,19 @@ The UI system is useful for managing text, buttons, sliders, toggles and other m
 
 You can download this [official Unity book](https://resources.unity.com/games/user-interface-design-and-implementation-in-unity) for a thorough review of the Unity UI system. For a shorter overview of the components check out the [manual page](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIBasicLayout.html).
 
-All UI objects must live somewhere in a [Canvas](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UICanvas.html). When creating any UI elements using “Create > UI > xxx” a Canvas will automatically be created if there is not already one in the scene. There can be multiple canvases in the scene that serve different purposes.
-# Canvas Scaling
+## Canvas
 
-For building a UI overlay, there are a few settings that will make your life easier in the future. Both are in the Canvas Scaler component on the canvas game object:
+All UI objects must live somewhere in a [Canvas](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UICanvas.html). 
+
+When creating any UI elements using “Create > UI > xxx” a Canvas will *automatically be created* if there is not already one in the scene. An EventSystem game object will also be created.
+
+There can be multiple canvases in the scene that serve different purposes.
+
+## Canvas Scaling
+
+For building a UI overlay, there are a few settings that will make your life easier in the future. 
+
+Both are in the Canvas Scaler component on the canvas game object:
 
 1. UI Scale Mode – Set to “Scale with screen Size”
 2. Reference Resolution – Set X to 1920 and Y to 1080
@@ -53,7 +65,7 @@ Set your Game view tab to match the resolution (or aspect ratio) of your target 
 ![](https://lh6.googleusercontent.com/ucclXhjFJFuuFfHgT1DIMUN9mG18gmf5ovZ8qNbbG0owl82zavizI-Ec9pTti5LwNute3OFWdGYEduOWpH7su41QkrLQPIw3TTSjwl2BPYacaz1kcgNINWHye14u4SV6HABoK5udUOa1Yavr574eixg)
 
 After changing these values, you may need to move your UI elements back into place. It's especially useful to make use of the anchoring system so that UI elements are always relatively positioned no matter what the screen size.
-# Anchoring, Pivots, and Positioning
+## Anchoring, Pivots, and Positioning
 
 UI Components (Text, Buttons, Images) all use “Rect Transform” rather than the standard Transform. Rect transform allows you to anchor objects to positions on the canvas and adapt to the size of the canvas.
 
@@ -64,51 +76,39 @@ A few tips:
 - Keep the Scale of the [Rect Transform](https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UIBasicLayout.html#rect-transform) at (1, 1, 1). To change the size of a UI object use the Width and Height properties
 - Anchor your objects to roughly where they should be and then position. If an object should always be relative to the top-left corner of the screen, anchor it to the top left.
 
-# Custom fonts
+## Custom fonts
 
 When using TextMeshPro. You’ll have to convert ttf files using the TextMeshPro converter. In general, it’s a good idea to use TextMeshPro UI elements over the legacy UI elements as the quality is much higher.
 
 To convert the font to be used in TextMeshPro:
 
 1. Drag the ttf files into your Unity project. 
-    
 2. Open the Font Asset Creator tool. Window > TextMeshPro > Font Asset Creator
-    
 3. Add the ttf file as the Source Font file. You can adjust any other settings as well.
-    
 4. Click Generate Font Atlas and then click Save to add it into your project.
-    
 5. Now you can use this font asset inside any TextMeshPro UI objects.
-    
-
   
 
 ![](https://lh5.googleusercontent.com/aDLAiWEj9l8WKynbzw_NF6woOGYuBIQqpVtAF8SwmmvR1Pez-_vsRDtlvN2x-g9dWJI8UABKzhts23tQhKb9LvXJ5uFbqZeD6UzcH_cR73KgTBubxxNKyvvRWyf1PNcwaAIxuPemFEyQS93op6MJGA4)
 
   
+# Overlay Image
 
+One requirement for Project 1 is to have an overlay title card, so let's add one.
 ## Adding an overlay image
 
 For Project 1, you aren’t required to build your entire overlay with the UI system. You can have your title and instructions as an image that is displayed when the game loads.
 
 1. To get started, drag your image into your Project, You can create a separate folder called “images” or “textures”
-    
 2. Select the image inside of Unity to bring up the import settings in the inspector. Change the texture type to “Sprite (2D and UI)" – the UI system works with sprite images rather than default. 
-    
 3. In the hierarchy of your scene, create a UI Image object. Create > UI > Image
-    
 4. Add your sprite to the Source Image section of the Image component.
-    
 5. Let’s center the image and adjust the size. Click the square in the top left corner of the Rect Transform component to bring up the different anchor presets. Hold Alt + Shift and click the bottom-right box showing blue arrows stretching all the way to the edges.
-    
 6. If you look at the game view, the image should be covering the entire screen. You can adjust the margin by using the Left, Top, Right, Bottom values in the Rect Transform.
-    
-
-  
 
 ![](https://lh3.googleusercontent.com/hA-_ZqUoPfsI7-qHqdv9llPK1bc3PPXGNFwOIKd6qQQOK5JUsyoN93DV4Dl7SHdiNBBm6XhWYCNx6IXZ4H0gdngYk9f5IMzVyuXdCPD5aMzYqxgrXIHz4TcXKhBaTCWPDQvjOsYssdC8DZ98mAzdfbc)
 
-# Toggling the overlay
+## Toggling the overlay
 
 Pressing a key to show/hide the overlay
 
@@ -179,7 +179,9 @@ public class ToggleGameObject : MonoBehaviour
 ```
 # Timer Walkthrough
 
-In the project 1 unitypackage there is a prefab for creating a countdown timer. This timer could be abstracted to represent any number of values from energy, oxygen, patience, etc.
+In the [unitypackage from Tuesday](https://drive.google.com/file/d/1V2kN7fv_UETnup2BQt0p8uhgGOF8LgxR/view?usp=sharing) there is a prefab for creating a countdown timer. This timer could represent any number of values from energy, oxygen, patience, etc.
+
+The script also connects to a bar (slider component) that visually shows the amount of time left. This is also something to keep in mind for making other types of display meters.
 
 ![](assets/timer-prefab.png)
 
@@ -192,7 +194,7 @@ One thing to note is that the timer begins as soon as it becomes active, so it m
 ![](assets/timer-prefab-with-overlay.png)
 
 
-# Basic Animation
+# Animation Basics
 
 ![](https://lh5.googleusercontent.com/ZIUYBOC2Z8fzN_z1jKfAiiqVfoCE8zFhcENiVeWg9btSAY-QOOj4k4BYgWmxNT4d1BJfQqm0O5FThxC21OSHzFGIedOzBIhZnh9tcVNg5nzMQOgNqI-bPJD3nu1zdZfWGWURsEuuxBUz__4WZ2pWiLY)
 
@@ -269,9 +271,10 @@ You can also directly link to the Play method of an Audio Source to a collision 
 
 ![](assets/collision-event-play-sound.png)
 
-# Notes on Building
+# Let's spend some time working on Project 1 in class
+Please let us know about any questions or issues as soon as possible
 
-Let's take a look at [How To Submit Projects](how-to-submit-projects.md) for more details on building your games. We can also walk through an initial build, though you should have already done this in the roll-a-ball tutorial so it shouldn't be entirely new.
+## Frequently 
 
 
 ![](https://lh5.googleusercontent.com/kwh2jZ8lPt3eBx75nXI4m-Czk4NMQZjL438wZOoAuoaPxQIfR371LOvx9mfQSZJ8s-NZFYCGrOR59omG2Zaxjo9_UDXy8VUXpN7X6IdR0L5iJqndrXdXORyz5xNzMthKA5IqxDJ47vnu1oWnqOuzQfk)
