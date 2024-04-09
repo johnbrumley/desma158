@@ -39,15 +39,15 @@ use the line numbers on the left hand side to find where your error is
 
 # The Most Common Compiler Errors
 
-## **; expected**
+## ; expected
 
-![https://lh5.googleusercontent.com/4F49xw_lC8YDF8ytntR_AaQ08GAmXaWHKyN1ca7nfb1IFhb8rDm8IGjuFtqPN5KECUDtQ6UKVaUaPhckU53uQuu_BV_2abO5OYP7h0DztENpaVDp9SgKm3F-kumWeu2IV6Afib3QvZ0Aq0__](https://lh5.googleusercontent.com/4F49xw_lC8YDF8ytntR_AaQ08GAmXaWHKyN1ca7nfb1IFhb8rDm8IGjuFtqPN5KECUDtQ6UKVaUaPhckU53uQuu_BV_2abO5OYP7h0DztENpaVDp9SgKm3F-kumWeu2IV6Afib3QvZ0Aq0__)
+![](https://lh5.googleusercontent.com/4F49xw_lC8YDF8ytntR_AaQ08GAmXaWHKyN1ca7nfb1IFhb8rDm8IGjuFtqPN5KECUDtQ6UKVaUaPhckU53uQuu_BV_2abO5OYP7h0DztENpaVDp9SgKm3F-kumWeu2IV6Afib3QvZ0Aq0__)
 
 Somewhere in your script, you are missing a semicolon (;)
 
 Each statement you make in a script must be followed by a semicolon; think of it as the coding equivalent of the period (.)
 
-EXCEPT: never put a semicolon after curly braces {}
+**EXCEPT** never put a semicolon after curly braces {}
 
 ## The name X does not exist in the current context
 
@@ -68,6 +68,7 @@ On line 11, I am then able to refer to the variable by only its name.
 <aside> ⚠️ Because I declared this integer inside the Start() function, I may only use it inside the Start() function.
 
 </aside>
+
 
 ![https://lh6.googleusercontent.com/Lnucn8VhMaQxGR3Djc-zsI23j826O2nHL_Jq_Uh2UDtsdrwYoqbkevCPAVZ3Aum8WJEh0AJwlCldWRjZwRXLY9g-HAthL891WcvGuGXrtQLnkZjIH7vRLRoFMIaIN49Uw6wSGujDfR4g-KMp](https://lh6.googleusercontent.com/Lnucn8VhMaQxGR3Djc-zsI23j826O2nHL_Jq_Uh2UDtsdrwYoqbkevCPAVZ3Aum8WJEh0AJwlCldWRjZwRXLY9g-HAthL891WcvGuGXrtQLnkZjIH7vRLRoFMIaIN49Uw6wSGujDfR4g-KMp)
 
@@ -135,18 +136,6 @@ This error usually means that visual studio has automatically added a line near 
 
 ![https://lh6.googleusercontent.com/Q56NWO8hNs-hMH6TyScbt7nT-3smz5KhJpDRm9U6cuKqfmdvtPqKDP9JlBuzM0Mfu7CM0-F2GiUDtINxtUOOfzPgrML_zZ9W-m-7YFgnzYLETFQkOte__npwmhBXoA2nCqUV3K0mQnJsiXCY](https://lh6.googleusercontent.com/Q56NWO8hNs-hMH6TyScbt7nT-3smz5KhJpDRm9U6cuKqfmdvtPqKDP9JlBuzM0Mfu7CM0-F2GiUDtINxtUOOfzPgrML_zZ9W-m-7YFgnzYLETFQkOte__npwmhBXoA2nCqUV3K0mQnJsiXCY)
 
-Delete this line,
+Delete this line.
 
-Then, to keep Visual Studio from adding this again, select Tools>Options
-
-![https://lh4.googleusercontent.com/glTDsP9HBVm1YzvuX7RWvTao6XCkzaCqsiqFB-RmLVbX1de6vqJIdgB_s-OFjrnDWGtfOj-vUhxJVkz9THrHsLm6vxASKEhF2fpXhQV4CqCSt9L13baM-A_sksFJ2SxnxUn-YUQo3UZOCGpB](https://lh4.googleusercontent.com/glTDsP9HBVm1YzvuX7RWvTao6XCkzaCqsiqFB-RmLVbX1de6vqJIdgB_s-OFjrnDWGtfOj-vUhxJVkz9THrHsLm6vxASKEhF2fpXhQV4CqCSt9L13baM-A_sksFJ2SxnxUn-YUQo3UZOCGpB)
-
-Find the panel on the left side of the options menu and scroll down until you see “Text Editor”. Open Text Editor > C# > IntelliSense
-
-![https://lh3.googleusercontent.com/usdvHps1Z7SydHOs2d9I5OY6Aj6MWOc8jqQmWuPS8-pun0rfz3KwAes4BTIesvdBZnfKpuZ77i0hi6w2dVgH7Qj5WOWjiz9V4IrqkBPJ4LKzDA6K0vDqRNfxq5eT75r7jj-86xuxfhJRQMge](https://lh3.googleusercontent.com/usdvHps1Z7SydHOs2d9I5OY6Aj6MWOc8jqQmWuPS8-pun0rfz3KwAes4BTIesvdBZnfKpuZ77i0hi6w2dVgH7Qj5WOWjiz9V4IrqkBPJ4LKzDA6K0vDqRNfxq5eT75r7jj-86xuxfhJRQMge)
-
-At the bottom of these options you will most likely see a checkbox that says something like “show options from libraries that are not included (experimental)”
-
-I am not sure of the exact wording as I don’t have this setting on my version of Visual Studio, and in my research all I could find was a blog post in a language I don’t understand that solved it, but it should be the last checkbox.
-
-Make sure this checkbox is NOT checked, and click ‘OK’
+Visual Studio 2022 can be very insistent about adding references to things that might cause problems later on. If your build is failing, this might be one of the reasons!

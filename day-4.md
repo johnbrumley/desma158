@@ -274,7 +274,14 @@ You can also directly link to the Play method of an Audio Source to a collision 
 # Let's spend some time working on Project 1 in class
 Please let us know about any questions or issues as soon as possible
 
-## Frequently 
+If you experience some errors and aren't sure what to do. The first thing to do is to check for errors (red messages) in the console. Warnings (the yellow messages) might exist, but usually those aren't the culprit. There is often a message with the error that might tell you exactly what is wrong.
+
+Also, take a look at this [page with common error messages](common-errors.md), and how to deal with them.
+
+If you find yourself completely stuck and need to send a message to us. Make sure you also send info to help us diagnose what might be going wrong. This includes copying any error message text, taking screenshots, and telling us about what you've already tried.  
+
+Finally, there are situations where a project can crash and you might lose a lot of work. Make sure to save often! You can also make unitypackages of the whole project, so even if the project becomes corrupted and won't open (yes, that can happen to), you'll be able to import all your assets and scenes into a fresh new project.
+
 
 
 ![](https://lh5.googleusercontent.com/kwh2jZ8lPt3eBx75nXI4m-Czk4NMQZjL438wZOoAuoaPxQIfR371LOvx9mfQSZJ8s-NZFYCGrOR59omG2Zaxjo9_UDXy8VUXpN7X6IdR0L5iJqndrXdXORyz5xNzMthKA5IqxDJ47vnu1oWnqOuzQfk)
