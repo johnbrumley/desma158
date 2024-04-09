@@ -311,9 +311,9 @@ To reset the game when the player falls below the edge, you can follow these ste
 ![](assets/img/events-restart-game.gif)
 
 
-# Sketch One-on-ones
+# Sketch Meetings
 
-We'll split up and chat with each of you for the rest of the class time. Feel free to work on your project during the meetings.
+Let's chat your sketches the rest of the class time. Feel free to work on your project during the meetings.
 
 
 > Everything about the site remained wrapped in blandness and littered with shiny cars—one after another they extended into a sunny nebulosity. The indifferent backs of the cars flashed and reflected the stale afternoon sun. I took a few listless, entropic snapshots of that lustrous monument. If the future is “out of date” and “old fashioned,” then I had been in the future. I had been on a planet that had a map of Passaic drawn over it, and a rather imperfect map at that. A sidereal map marked up with “lines” the size of streets, and “squares” and “blocks” the size of buildings. At any moment my feet were apt to fall through the cardboard ground. I am convinced that the future is lost somewhere in the dumps of the non-historical past; it is in yesterday’s newspapers, in the _jejune_ advertisements of science- fiction movies, in the false mirror of our rejected dreams. Time turns metaphors into _things_, and stacks them up in cold rooms, or places them in the celestial playgrounds of the suburbs.
