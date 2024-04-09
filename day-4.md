@@ -271,7 +271,7 @@ You can also directly link to the Play method of an Audio Source to a collision 
 
 ![](assets/collision-event-play-sound.png)
 
-# Let's spend some time working on Project 1 in class
+# Project 1 Studio Time
 Please let us know about any questions or issues as soon as possible
 
 If you experience some errors and aren't sure what to do. The first thing to do is to check for errors (red messages) in the console. Warnings (the yellow messages) might exist, but usually those aren't the culprit. There is often a message with the error that might tell you exactly what is wrong.
