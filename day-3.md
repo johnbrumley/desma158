@@ -79,11 +79,11 @@ Baked lighting is when Unity performs lighting calculations in advance and saves
 
 In Unity, your Project can use real-time lighting, baked lighting, or a mix of the two.
 
-## For now we’ll stick with real-time lighting and we will introduce baked lighting another time.
+For now we’ll stick with real-time lighting and we will introduce baked lighting another time.
 
 # Lights in URP
 
-[https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@14.0/manual/light-component.html](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@14.0/manual/light-component.html)
+URP lighting component documentation: [https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@14.0/manual/light-component.html](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@14.0/manual/light-component.html)
 
 ![](https://lh4.googleusercontent.com/He1HOdYZPssDHT9B1FiA9sc_W0BZFdW05zlqtYhORE4IZOJmT_SV0_6lln5_01LAmaFP34uXmDl-kN6mV0HBSx-B5uhYOz1YCrJJ4LOLdloytoc5Up9U94tFMuKKmhMCXdp4PpWtVoaJNBGxSazuaPA)
 
@@ -243,7 +243,9 @@ There are also shaders that can procedurally generate skyboxes and other colors.
 
 # Rigidbodies, Collisions, and Triggers
 
-We'll be diving more into Trigger and Collision events directly in Unity. Import this [UnityPackage](https://drive.google.com/file/d/1V2kN7fv_UETnup2BQt0p8uhgGOF8LgxR/view?usp=sharing) into your project to follow along:
+We'll be diving more into Trigger and Collision events directly in Unity. 
+
+**Import this [UnityPackage](https://drive.google.com/file/d/1V2kN7fv_UETnup2BQt0p8uhgGOF8LgxR/view?usp=sharing) into your project to follow along:**
 
 ![](assets/Pasted%20image%2020231005000212.png)
 
@@ -258,6 +260,8 @@ Included with this scene are some custom scripts that might come in handy with P
 - Countdown Timer (see the Timer prefab in the unity package)
 - Attach an object to the player
 - Event on keypress
+
+
 ## Triggers
 
 Open up the [collision and trigger demo unitypackage](https://drive.google.com/file/d/1V2kN7fv_UETnup2BQt0p8uhgGOF8LgxR/view?usp=sharing) for a live demo on collisions and triggers using rigidbody physics.
