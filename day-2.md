@@ -563,10 +563,6 @@ After you've tried out your level and made some changes, ask another person to p
 
 Take a look at the [readings](readings.md) page to find out which article you'll be reading. We'll be having a short discussion about them next Tuesday.
 
-> “Game designers don't simply tell stories; they design worlds and sculpt spaces.”
-
-Henry Jenkins. [Game Design as Narrative Architecture](https://web.mit.edu/~21fms/People/henry3/games&narrative.html)
-
 ## Homeplay (Next Thursday 4/11)
 Check out the [homeplays](homeplays.md) page where you'll find a link to a sign-up sheet.
 

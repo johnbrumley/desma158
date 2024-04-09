@@ -7,91 +7,33 @@ layout: slides
 
 
 
-# Spatial Narrative
+# Reading: Jenkins and Chang
 
-Short review of some concepts from [Jenkin’s “Game Design as Narrative Architecture”](https://web.mit.edu/~21fms/People/henry3/games&narrative.html)
+Let's talk a bit about Jenkins’s [_Game Design as Narrative Architecture_](https://docs.google.com/forms/d/e/1FAIpQLSc1ZLvixfA21bt_kRndowxsdlBaY-MnXRQyjz5l445WW4OCIg/viewform?usp=sf_link) and  Chang's [Rambunctious Games: A Manifesto for Environmental Game Design
+
+> “Game designers don't simply tell stories; they design worlds and sculpt spaces.”
+> - Henry Jenkins. *Game Design as Narrative Architecture*
+
+> The landscapes we inhabit are in part a product of our representations...
+> - Chang, *Rambunctious Games* (2020)
 
 ![](https://lh3.googleusercontent.com/0V23e7lkF8EG2Npp7lmF9UGh7BgAL9YQ1bX5Z0zF64oU6gsyExQUYANe1foLt0OERse-7IN49fl3Z7o8tUF5fcXKfJ32OLMcADXJCYYLFVZdzvIKKMqY4iYVnLxXQtRs7dcC3lkDAXri2UTZ85O4mOM)
 
 [Journey (2012)](https://thatgamecompany.com/journey/)
 
-1. **Evocative Spaces** – spaces may be designed to create a certain mood or atmosphere, or to convey a sense of place or history. (Dear Esther, Firewatch )
+A bit of summarizing both:
 
-2. **Enacted Stories** – scripted events and set pieces to create a narrative experience within the game world. (Uncharted, The Last of Us, Metal Gear Solid)
-
-3. **Embedded Narratives** – environmental storytelling to convey a game's backstory or lore. (Myst, Bioshock, Gone Home)
-
-4. **Emergent Narratives** – narratives are not predetermined, but instead emerge from the player's choices and interactions with the game environment. (Minecraft, The Sims)
-
-These categories are not exclusive to one another and many games contain some combination.
-
+Jenkins:
 > In the case of evoked narratives, spatial design can either enhance our sense of immersion within a familiar world or communicate a fresh perspective on that story through the altering of established details. In the case of enacted narratives, the story itself may be structured around the character's movement through space and the features of the environment may retard or accelerate that plot trajectory. In the case of embedded narratives, the game space becomes a memory palace whose contents must be deciphered as the player tries to reconstruct the plot and in the case of emergent narratives, game spaces are designed to be rich with narrative potential, enabling the story-constructing activity of players.
 > 
 > - Jenkins, *Game Design as Narrative Architecture*
 
-# Thinking about visual expression, elements of design in games
-
-[![](https://lh5.googleusercontent.com/7wKIbZ6yIYl1B4vwBMs-N5p-ZgXAANINzuK0Zd8FZhHYm3jwGerODq8EkkzijuHWnNqkp_ZquOO3TTxkftIzj38OKgPMoWLIyhDTSecqvscZGxUzv4BwnXAiGSDKXR7aRpcoXHqiO4zNIfk5gNMjDGU)](https://youtu.be/CHm2d3wf8EU)
-*Cruelty Squad*
-
-Take each of these into consideration when designing the visual features of your project. How are you approaching a particular element? What does it communicate? How does one element relate to other visual, mechanical, textual, sonic, etc. elements of the work?
-
-It can be useful to look online (or use a virtual assistant) on how to achieve the "look" from an existing game in Unity. Try including the term "shader" or "material", e.g.  "zelda shader in Unity"
-# Line
-Horizontal, vertical, diagonal, straight, curved, dotted, broken, thick, thin. 
-
-[![](https://lh3.googleusercontent.com/B312KoDC4ofrUSBQx7OgWpsN6EOLKDrJC8dEEEYg4Co6biCJD3NHc1Gj7hcM6v2U_BdivWcCMaHYXkXq6bRNlBfiCmV4M6BmHoo-WsvH65-XwUc9XQSTJ1YXBuBiYc6heU5v1C5Cz6RvhhhAVnNjdRk)](https://nikitadiakur.com/)
-*Nikita Diakur*
-
-Roller Drome - [https://youtu.be/G1NY0LKDqJo](https://youtu.be/G1NY0LKDqJo) 
-# Color
-The wavelength of light. Hue, value, intensity, and temperature.  
-
-[![](https://lh4.googleusercontent.com/_KYd_SE2MxOeby-x4UCYigqzECMEFh2N-EXE15P7mNF5uWX1oOdVlH5gnMJ2o3d6lyjddQayRCJWT2196O4Qc6G4hsCPHJYPTkN1sWvmFyAY0usZEZbJ3bnmOFp9lJASWeKn9hqvbwYJbziZhOkepbA)](https://www.youtube.com/watch?v=1b9kVuavlqA)
-*Shim*
-# Shape – 2D, flat, geometric, organic
-
-  
-
-[![](https://lh3.googleusercontent.com/cjH5nRkVm6HeyS_Ft9nQ3DDfmJMxgX7ZB2cRxVL4RL-HiUPjoqvQxd3oV6X7z9WXT1c-Prkqhju-e-dL55PPOXVpGvpCMsxfV5-tmZkbW7UzxY6Cc7klcBnY5s6Xt8MYVFNkzS4xulyVxccPberMCB0)](https://www.facebook.com/GazelliArtHouse/videos/peter-burr-dirtscraper-live/566167464450625/)
-*Peter Burr*
-# Form
-3D, Geometric, organic
-
-[![](https://lh6.googleusercontent.com/D-Ql7leOim7zk3n_20AguviEbXcgxpo2kCFs8vXWgybzicoh-InlkXYFLOPyVAc3ZDoa_X8Z9oDSH7obtGiSc44AvfZHhCyhEDIKsoe6ex71PxONm5R7ueiFs4vCFCuz66CSim3urbqHImI7YC6Zv_k)](http://iancheng.com/)
-*Ian Cheng*
-
-[![](https://lh3.googleusercontent.com/cH-Rv0kZxhw1KjqGpDFdLiP7TGdwF5LwHuuoACThYj6KMQ1t1f7ya9HwxAzKzTEZTSHBO--DH4ToqWdjEHSuNHjoW2-E0zDAGIM86yBOIsUGh056K9g3HL3uunlRapwHt8iuUpJk4UCwFczk2r77z08)](https://www.instagram.com/soft_baroque/?hl=en)
-*Soft Baroque*
-
-[![](https://lh5.googleusercontent.com/71hbKLnv4cUMcYTTQj5AckEaSSO5FBwTku9nNYxcA9v6y8OZQfv23vQLojwlZEapxXfoE4WinpcBh5BrDfneZ2pc6gU4ttHKfp0wIpFraT7zbNLeg3OSjw1y3_BBG8B4JO7-2QwI0VM5xBaOn4e2UsQ)](https://www.yonk.online/)
-*Yonk*
-# Value
-The lightness or darkness of an image
-
-[![](https://lh6.googleusercontent.com/ApmbPlNqwY_qXvZSSs4J5sX82CJaBYz21zdv7s2tM1G91zGtiMZPrGzPYZz--WlU6W70HtqPDgu8z20B6dt-Huhiludo9pa03np26N_3QSCm9KyNaLyxQiDSgIgxYkAdz4Y5X1buIKITdTiI1Ixt4WQ)](https://www.youtube.com/watch?v=Y4HSyVXKYz8)
-*Limbo*
-
-# Space
-The area around, within, or between images. +/- space. Composition.
-
-[![](https://lh4.googleusercontent.com/lumKMVCkO9qEF9JtOldS_W2wV6hAe4rfeyNtczQhFLgIuV2Ooi8rOqvYAmOa7jHun4RS2o_K5PEMZk5K9XbtmNGpXbV6Ws9k3F45hQJoU5BNiDMlQbnOOpTR0sMv2DhPDJcDziKrG8OPycT33koM3-8)](https://www.youtube.com/watch?v=sBmBFN4A_mM)
-*Kentucky Route Zero*
-
-[![](https://lh6.googleusercontent.com/ApzgdRymI-s-_HUwTibUrsOJtbuvLQHKrkeVE2iRoIXOCKSKK5oLEyh8-I8fe5PtX01Z1aFHYs_PLijGLD9wYHXLq_2pDzVIGzjM5hTMAH7kaNx4WWO1S2-ux36eR5fwy34MXiBLwLPo_AvpR_bx4iU)](https://www.youtube.com/watch?v=NAhrOoNR4ng)
-*Oxenfree*
-
-# Texture
-The feel, appearance, thickness, or stickiness of a surface (smooth, rough, silky, furry)  
-
-[![](https://lh4.googleusercontent.com/F0o8h_YsBO8sUyBHwCBlpOyD9PRLa3HRorKxK_SrwlgSX2YT9hIIF4XqzE9E4dVFF6F2ljxZ-Swl0grO887jReVZsQqoPdEorTk8S2566WXhTQggUE1HYTR2thKo4vZJfsDjFhtet0FIE9KPhzTOtIw)](https://www.youtube.com/watch?v=dVlyy0Wnx1Y)
-*Hatoful Boyfriend*
-
-For a ton of insightful opinions and examples – references within and beyond games – definitely check out this blog post on [Real Time 3D Imagery](https://startingoverinraccooncity.blogspot.com/2021/02/preferences-and-proposals-for-real-time.html)  
-
-# Universal Render Pipeline, Lights, Materials, Shaders
-
-So you may have an idea of how you would like things to look, but how do you design visual elements within Unity?
+Chang:
+> With \[Emma\] Marris’s rambunctious gardens in mind, I argue in the following deliberately polemical theses that not only should we learn to study and play games while attuned to their environmental content, but also we should design games in an environmentally conscious fashion.... 
+> 
+> ...to create more rambunctious games, or to play more rambunctiously, to slough off the illusion of control and dwell deeply in the precarity common to our post-400-parts-permillion (of CO2) times
+> 
+> - Chang, *Rambunctious Games*
 
 # Universal Render Pipeline
 
@@ -111,11 +53,15 @@ After introducing SRP, Unity also released two prebuilt render pipelines aimed a
 
 Depending on the lighting, material, and postprocessing needs in your scene. You might choose one pipeline over another. See this [comparison](https://docs.unity3d.com/Manual/render-pipelines-feature-comparison.html) for details.
 
-We’ll be using URP for this class, but if you find that you need to change pipelines let us know.
+**We’ll be using URP for this class**, but if you find that you need to change pipelines let us know.
 
 # Lighting in Unity 
 
-See Unity’s general introduction to lighting here: [https://docs.unity3d.com/Manual/LightingOverview.html](https://docs.unity3d.com/Manual/LightingOverview.html) 
+All the shadows, highlights, colors, etc. need to be calculated based on the lights, skybox, and other things within a scene. Let's take a quick and more general look at how lighting is done in Unity.
+
+See Official Unity documentation:
+- Manual: [https://docs.unity3d.com/Manual/LightingOverview.html](https://docs.unity3d.com/Manual/LightingOverview.html) 
+- URP e-book; https://unity.com/resources/introduction-universal-render-pipeline-for-advanced-unity-creators
 
 ## Direct and indirect lighting
 
@@ -127,15 +73,14 @@ Direct light is light that is emitted, hits a surface once, and is then reflecte
 
 ![](https://lh4.googleusercontent.com/7sNDEpTIahigKUs31OT45gO8V1qGDFPwxwyaopTjbjHf6DxzSMGm0Q8JwcGrPw_8RxNWSNN8TCayKR9E8HJhMla01j28bMjbCPCtZngKcRgKM12TD9HjZ1_1QE3wBNuXDvFdBtX00mGOVwUyCCnAZpE)
 
-Real-time lighting is when Unity calculates lighting at runtime. Baked lighting is when Unity performs lighting calculations in advance and saves the results as lighting data, which is then applied at runtime. In Unity, your Project can use real-time lighting, baked lighting, or a mix of the two (called mixed lighting).
+Real-time lighting is when Unity calculates lighting at runtime. 
 
-For now we’ll stick with real-time lighting and we will introduce baked lighting another time.
+Baked lighting is when Unity performs lighting calculations in advance and saves the results as lighting data, which is then applied at runtime. 
 
-## Global illumination
+In Unity, your Project can use real-time lighting, baked lighting, or a mix of the two.
 
-![](https://lh6.googleusercontent.com/lfrfA4iPe9KvfuoDjLmWQkm6m18Og0GTD9Vue3pF22E0p95UMjrB_D3sZnWVLUHI_Zi_ZvwF84FjyZ4nAG4lmKs_PsQJC8eNwd2VZvDG6bb29KWr1zm1G3S7EUeXysIL9yKY7oIWjEYJlowxIzCsL3g)![](https://lh6.googleusercontent.com/lfrfA4iPe9KvfuoDjLmWQkm6m18Og0GTD9Vue3pF22E0p95UMjrB_D3sZnWVLUHI_Zi_ZvwF84FjyZ4nAG4lmKs_PsQJC8eNwd2VZvDG6bb29KWr1zm1G3S7EUeXysIL9yKY7oIWjEYJlowxIzCsL3g)
+## For now we’ll stick with real-time lighting and we will introduce baked lighting another time.
 
-Global illumination is a group of techniques that model both direct and indirect lighting to provide realistic lighting results. Unity has systems for both baked and real time global illumination. In URP, real-time global illumination is not turned on by default ([more info](https://docs.unity3d.com/Manual/realtime-gi-using-enlighten.html))
 # Lights in URP
 
 [https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@14.0/manual/light-component.html](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@14.0/manual/light-component.html)
@@ -165,50 +110,23 @@ The two that you’ll want to focus on are the Lit and Unlit shaders. After crea
 
 ![](https://lh4.googleusercontent.com/Zo5Ne4QuuvFTkox0b1bduoUNCsomOVqkpUwjbuII_LfOS03bVhoBL8bGX0X9AXNNMClveAxc9UhTZztnxnANVT_0pnugA_HyKGuM-5yjpzEXH62nCtvE9IFrYR1QnomTC7uqV8sRMLjb9726dFTyP-o)
 
-## PBR
+## URP Unlit Shader: 
 
-Physically Based Rendering – provides a more accurate representation of how light reacts to different material properties (color, roughness, metallic, shininess, bumpiness, etc.). The URP Lit shader uses different maps or textures to define these properties. 
+[https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@12.1/manual/unlit-shader.html](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@12.1/manual/unlit-shader.html) 
 
-Maps are 2D image files that are mapped onto a 3D surface based on UV coordinates.
-
-![](https://lh4.googleusercontent.com/JhH-g3q6OEBBLzsSavudkoNYlDIFEtpMZ5NHCfkxo2lE5u5sVP3YxiKPj0o1w8uCWPKWMW4k2yO5TP0wdZyteWM_rCcY-R7zKH3bSewPGOfOhYHlKkizuECV6ADhHzB2kviLnedFEvrExP-V7ZsQqZE)
-
-The following model uses a number of maps to achieve a realistic look even though the complexity of the geometry is not very high
-
-Here is the untextured model
-![](https://lh4.googleusercontent.com/1YKFjSh_asTLrgFjlX_YFZnNqrsOxMiQiAW9PoqRSiqa64qxUuJ0rFK2hPRIpqTXSl8-zk_CONo3HftMi1w_mjMtCB42JkQcogKjIdlHio7-EVZrZv6-WigiHJ7xtN55cc7xoAfcQ0pv9XRn1B2cf88)
-
-Untextured Model
   
-  
-![](https://lh4.googleusercontent.com/iaOtasfcwc2wLKZgZu61olon52BQanRhBdrtXG_5m4RSpJZosCNzt0afSKy-TTwwVLOy6atk2-pEc3aSUzZY5P2TrrblyEUosEY1b6No5b8T1rdP0HgzleqKckFlrm4yQS1gZ6VXdUgTdy20tU6MZYo)
+![](https://lh4.googleusercontent.com/beFCx0mJ6oDd3uvqLwdKGyF8ldGh5YdvqDWcP2de3cuD-jxiFXT-xJ4vln42_3_IMy--VRZCS36e8CGrQEBwQNVGaOsXWggoiqbOVxWlxbWFQTfuE2zpC2MWkW5oq5RTbDkp3OVvIET9GNOvbZc55Hg)  
 
-This is the Base Map – The underlying color also known as Albedo 
+The Unlit shader does not receive any lighting from the scene, no shadows, nothing. Can be useful for creating certain effects. Also a good material for video playback if you want the video to maintain full brightness (as if it were on a bright screen).
 
+- Surface Type: Opaque vs Transparent, when transparent there are options for alpha blending.
+- Base Map: The underlying color and image texture.
+- Tiling: The scale of the texture as it’s mapped across the surface on the UV axis.
+- Offset: The position of the texture along the UV axis. 
 
-![](https://lh6.googleusercontent.com/Nt2FxrJ8xTxuHAiplV0_yRtYd9deoO1gYjFqEc8HJ_5Z2mQdNjpyq7E33AeSmRyoPMBkJxVp9NtVl_ZvghE1PViThv1Vpng0UD_On3SyyVNX7lHlHvyag73j7CjE0-d4HLILxxszIoa7fTKEQHM3NZw)
-
-This is the normal map – Adds surface details which react to lighting as if they were part of the mesh. Creates the impression of a higher resolution mesh.
-
-
-![](https://lh4.googleusercontent.com/UKYhzkW-7rQpoxpAyUjLSTri9tSnCpYHeNc9hEo-upZe5fwjdt-PhP1Q-hlNMSlIWUznm8f-jBmLvfi-6OjEHYSeqUR2-3aolmtkOyNdrJ2yQz7X9l7Dseosl29khdUQdfj9oMX5oh60uCOyc6rnnnY)
-
-This is the specular/metallic map – How smooth / shiny your surface is. The map can control which parts are metallic (R channel usually) and smooth (alpha channel)  
-
-The maps are all used by the shader to determine how the light will react to different parts of the surface of the object. Here is the combined result:
-
-![](https://lh6.googleusercontent.com/oe5kP5aLwye1zds4pcCSzrqSc9ymqcHnmiGwbldze6YBzXVJ-pkmFUAJRXg7gu0fJkX5iSzyKXY9sBJ70hejVAVZtTtxdTuNZmqels-8AwgtuScrMKeWXy4aV4WO8Mr-0ny4TmKNEXYK_6aEoANylQk)
-
-Different programs use different types of maps and may separate maps into separate textures or combine multiple maps into channels of a single texture. It’s good to know about the different types of maps, so you can decide where to apply the maps to your materials.
-
-![](https://lh3.googleusercontent.com/J27nu0n6qOT7uf9Td0em14arDvRVTNK18XV4uAzwQrzHiFZOF1H5CnZTcCIJVhbStNrC7ufYuUUNIuXg5UiUDfip4SXXHDjdz0uEnSh6x-4lhg59JclgM5z_shonQK2d3J_804UE0s1VaIf1t8Hi-ts)
-
-Adobe's Substance Painter export options have a template for Unity URP.
-
-Good resource for grabbing materials / maps: [https://ambientcg.com/](https://ambientcg.com/)
+![](https://lh6.googleusercontent.com/WfRMvF4-trFv91Dscg6F0mjEO2jb4BZE0BW47AzDf9XrbOqGGX17zqvK1FqoCk2rgGsSXIAVPla7pfP0Hnt8X-5M8QLfHRpA2Gy7-gFAe1EMijhM3b48oU44HICX5igp5qRmQfH_cS55l82tbsCez6Q)
 
 ## URP Lit Shader:
-
 [https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@12.1/manual/lit-shader.html](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@12.1/manual/lit-shader.html) 
 
   
@@ -231,11 +149,9 @@ Some properties to pay attention to:
 Also see the [Simple Lit](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@12.1/manual/simple-lit-shader.html) shader for a less features but less graphically intense materials.
 
 Base Map
-
 ![](https://lh4.googleusercontent.com/I_hFYDIa1a10mBLJ_pPR951oK_vWflHUqyEEoLeg4roSAlS3QFrDjS7EjIJjzYi4VefHpKQ9rIVyot6fL3QYedtqRrFKEKlDX8D9gDbCvoMknlNVGI92x1rg3ZKYJkNiMd-PMZlBTIzgtT_tvbYwYeE)
 
 Specular
-
 ![](https://lh6.googleusercontent.com/Nsw5F67qlR3bWl1mfLydpfpekL_srLwimIIwvst13S7s_ZTBwyUU5N9GLUAp-ZC8ML1bKs2dkAZ9bGC2qwffx9t4CWe4R3_Zs-ulsznUiWqBLAhTsorAyWFpsrY29NUMAypgZZLcG005nq_bgzDno40)
 
 Metallic
@@ -253,51 +169,54 @@ Height / Displacement
 Ambient Occlusion
 ![](https://lh3.googleusercontent.com/XCPqWo3ApYH7d23RzmqNVyNfoIPckfa6rGK_ybbtKG9GZTgv4ePtKtrxk7gvz-EqOAebpSsblqO3GhvGU-bK5Z_wdBaAqpqdDX0vSSCpPvD6IGxmjfA0N68zbe3aG33fR4HeoYHuDV0Z3LwzcYKjz4E)
 
-## URP Unlit Shader: 
+## PBR
 
-[https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@12.1/manual/unlit-shader.html](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@12.1/manual/unlit-shader.html) 
+Physically Based Rendering – provides a more accurate representation of how light reacts to different material properties (color, roughness, metallic, shininess, bumpiness, etc.). 
 
+The URP Lit shader uses different *maps*, sometimes called textures, to define these properties. Today we will only looks at some of the more common ones.
+
+Feel free to grab a material from here: [https://ambientcg.com/](https://ambientcg.com/), you can follow along with adding the maps to a model using a URP Lit material.
+
+**Maps** are 2D image files that are mapped onto a 3D surface based on UV coordinates.
+
+![](https://lh4.googleusercontent.com/JhH-g3q6OEBBLzsSavudkoNYlDIFEtpMZ5NHCfkxo2lE5u5sVP3YxiKPj0o1w8uCWPKWMW4k2yO5TP0wdZyteWM_rCcY-R7zKH3bSewPGOfOhYHlKkizuECV6ADhHzB2kviLnedFEvrExP-V7ZsQqZE)
+
+The following model uses a number of maps to achieve a realistic look even though the complexity of the geometry is not very high
+
+Here is the untextured model:
+
+![](https://lh4.googleusercontent.com/1YKFjSh_asTLrgFjlX_YFZnNqrsOxMiQiAW9PoqRSiqa64qxUuJ0rFK2hPRIpqTXSl8-zk_CONo3HftMi1w_mjMtCB42JkQcogKjIdlHio7-EVZrZv6-WigiHJ7xtN55cc7xoAfcQ0pv9XRn1B2cf88)
+
+This is the Base Map – The underlying color also known as Albedo 
   
-![](https://lh4.googleusercontent.com/beFCx0mJ6oDd3uvqLwdKGyF8ldGh5YdvqDWcP2de3cuD-jxiFXT-xJ4vln42_3_IMy--VRZCS36e8CGrQEBwQNVGaOsXWggoiqbOVxWlxbWFQTfuE2zpC2MWkW5oq5RTbDkp3OVvIET9GNOvbZc55Hg)  
+  
+![](https://lh4.googleusercontent.com/iaOtasfcwc2wLKZgZu61olon52BQanRhBdrtXG_5m4RSpJZosCNzt0afSKy-TTwwVLOy6atk2-pEc3aSUzZY5P2TrrblyEUosEY1b6No5b8T1rdP0HgzleqKckFlrm4yQS1gZ6VXdUgTdy20tU6MZYo)
 
-The Unlit shader does not receive any lighting from the scene, no shadows, nothing. Can be useful for creating certain effects. Also a good material for video playback if you want the video to maintain full brightness (as if it were on a bright screen).
+This is the normal map – Adds surface details which react to lighting as if they were part of the mesh. Creates the impression of a higher resolution mesh.
 
-- Surface Type: Opaque vs Transparent, when transparent there are options for alpha blending.
-- Base Map: The underlying color and image texture.
-- Tiling: The scale of the texture as it’s mapped across the surface on the UV axis.
-- Offset: The position of the texture along the UV axis. 
 
-![](https://lh6.googleusercontent.com/WfRMvF4-trFv91Dscg6F0mjEO2jb4BZE0BW47AzDf9XrbOqGGX17zqvK1FqoCk2rgGsSXIAVPla7pfP0Hnt8X-5M8QLfHRpA2Gy7-gFAe1EMijhM3b48oU44HICX5igp5qRmQfH_cS55l82tbsCez6Q)
+![](https://lh6.googleusercontent.com/Nt2FxrJ8xTxuHAiplV0_yRtYd9deoO1gYjFqEc8HJ_5Z2mQdNjpyq7E33AeSmRyoPMBkJxVp9NtVl_ZvghE1PViThv1Vpng0UD_On3SyyVNX7lHlHvyag73j7CjE0-d4HLILxxszIoa7fTKEQHM3NZw)
 
-## Toon Shaders
+This is the specular/metallic map – How smooth / shiny your surface is. The map can control which parts are metallic (R channel usually) and smooth (alpha channel)  
 
-![](assets/Pasted%20image%2020231004235517.png)
-Lots of the effects mentioned at the start of the day can be achieved using a technique called "toon shading" that mixes elements of both lit and unlit shading. The example image above is from a free URP toon shading pack called [OToon](https://assetstore.unity.com/packages/vfx/shaders/otoon-urp-toon-shading-216102)
+![](https://lh4.googleusercontent.com/UKYhzkW-7rQpoxpAyUjLSTri9tSnCpYHeNc9hEo-upZe5fwjdt-PhP1Q-hlNMSlIWUznm8f-jBmLvfi-6OjEHYSeqUR2-3aolmtkOyNdrJ2yQz7X9l7Dseosl29khdUQdfj9oMX5oh60uCOyc6rnnnY)
 
-*Note: When looking for custom assets on the Unity Asset Store (or elsewhere), check to make sure they are compatible with your render pipeline.*
 
-## Custom Shaders and Shader Graph
+The maps are all used by the shader to determine how the light will react to different parts of the surface of the object. Here is the combined result:
 
-URP (and HDRP) include a node-based editor for creating custom shaders, called “Shader Graph”
+![](https://lh6.googleusercontent.com/oe5kP5aLwye1zds4pcCSzrqSc9ymqcHnmiGwbldze6YBzXVJ-pkmFUAJRXg7gu0fJkX5iSzyKXY9sBJ70hejVAVZtTtxdTuNZmqels-8AwgtuScrMKeWXy4aV4WO8Mr-0ny4TmKNEXYK_6aEoANylQk)
 
-![](https://lh3.googleusercontent.com/58UHI-_EkB-Ae7hDlQBHzw7CAhow0ZTTP5ldJeC8AUP8AoIew8KIaU9ZXUGcnbFluMkKwi6nmZky1z840aYxputHjgYLRX3owJ6TjZj9w9Lwv0N1Bz3J2qzJSHMxpJCYeoE9LYsFMgHcQPgzzNSju_o)
+Different programs use different types of maps and may separate maps into separate textures or combine multiple maps into channels of a single texture. It’s good to know about the different types of maps, so you can decide where to apply the maps to your materials.
 
-I won’t be getting into the details of custom shaders for this class. But in some cases there are simple shaders that you can build which aren’t included with URP. 
-### Vertex Color Shader
+Adobe's Substance Painter export options have a template for Unity URP:
 
-It is possible to include color data with the vertices of a model, known as vertex painting. For example, the models in the [Everything Library](https://www.davidoreilly.com/library) do not come with textures.
+![](https://lh3.googleusercontent.com/J27nu0n6qOT7uf9Td0em14arDvRVTNK18XV4uAzwQrzHiFZOF1H5CnZTcCIJVhbStNrC7ufYuUUNIuXg5UiUDfip4SXXHDjdz0uEnSh6x-4lhg59JclgM5z_shonQK2d3J_804UE0s1VaIf1t8Hi-ts)
 
-![](https://lh4.googleusercontent.com/oIJEA3aYyrHjiiG3JqIHvgGxz60VQspLtydGWZCl7qR814M8Z3uUvkYJQAxbcaMVhFoyv2UCpr1Z1qxyHvktLd9O0NQuOqrOkVwIXYDSz2QCBHciQ39dX8UG7yraUFYffGiuhoQwEBGb0u2DCJSL5HM)
 
-To display the colors of the models, you need to use a material that uses a shader to convert the vertex colors of the model to the colors. This is pretty easy to make using a shader graph.
 
-![](https://lh3.googleusercontent.com/Hgh7992lEGI_lvgMEVv_J8mfGyToasJ9P16CKPvjx9Wi_fecdlbufz4EJZN9jls2F9ecNQ1AIxcQZA8kLXQq_t_nYVK2EmyTNAUuYecKmk-LfrKv47II280cRxSnkUDYnGwpeNeAP7i1rioMWBmIbu4)
 
-You can then create a material that uses this shader graph, and apply it to the material of an object that has vertex colors:  
 
-![](https://lh6.googleusercontent.com/1XTsb8eNj7gpeXpFcGwPaB7K7514WRcMBON2gb8EhuCI3ABGNPdcDX2OCpUuV0aEOR4Kp4EnsLnr18b-TtHkDESLkNvEFtQjKV2D59d2YSBP0M0qdtepEfJAO05X-Wg4DbuMsFZ7PzAjud_t_Tz-bQg)
-
-# Skyboxes
+## Skyboxes
 
 The skybox itself is a material that uses a special type of shader to create the impression of an image or color that surrounds the entire scene.
 
@@ -322,35 +241,16 @@ Cubemap
 
 There are also shaders that can procedurally generate skyboxes and other colors.
 
-# Post-processing
+# Rigidbodies, Collisions, and Triggers
 
-URP uses **Volumes** for adding post-processing effects to the scene. When a camera is within a volume, all overrides will be applied to the scene. 
-
-1. Enable “Post Processing” in the Camera
-2. Create a Volume Game Object and then create a Profile
-3. Add in any overrides that you’d like to include in your scene
-
-![](https://lh4.googleusercontent.com/sm1cjQ5nPucXWSn-htBTXzZVJ3Mvo1srIBJoMGZ1gIDQU110ZrW4TOO7ycWin-CoGETJI4iIV-ui6vFXOI7auRd45e2DU32YJqfSXlMdVUaHhOMMiWNEtbyGn_rBBckMONHPy2_fVuE_Q91bwORsIxE)
-
-## Exercise
-
-![](https://d7hftxdivxxvm.cloudfront.net/?quality=80&resize_to=width&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FaFR2A_1SkjNf3nza0_oWyA%2Fnormalized.jpg&width=910)
-*Object*. Méret Oppenheim (1936)
-
-Search online for a 3D model of a piece of furniture (the [Everything Library](https://davidoreilly.itch.io/everything-library-furnishings) is a good starting place). Change the material of this object into something impossible or unexpected. Create a composition around the object by using only Unity's default primitives. Frame the scene with the Main Camera object. Use the skybox, lights, and post-processing to enhance the scene.
-
-If you aren't sure how to recreate an effect, ask us and we can help.
-
-# Trigger and Collision Events
-
-We'll be diving more into Trigger and Collision events directly in Unity. Import this [UnityPackage](https://drive.google.com/file/d/1VV2GHm9wLq4ipjtHp2ld7qQ_Cgldnx_I/view?usp=sharing) into your project to follow along:
+We'll be diving more into Trigger and Collision events directly in Unity. Import this [UnityPackage](https://drive.google.com/file/d/1V2kN7fv_UETnup2BQt0p8uhgGOF8LgxR/view?usp=sharing) into your project to follow along:
 
 ![](assets/Pasted%20image%2020231005000212.png)
 
 Check the [how to submit](how-to-submit-projects.md) page on the site for how to import and export unitypackages.
 
-Included with this scene are some custom scripts that will come in handy with Project 1. The next section will list a few and mention how they can be used.
-## Some helper scripts and prefab
+Included with this scene are some custom scripts that might come in handy with Project 1. The next section will cover how they work internally and how they can be used.
+## Some helper scripts and prefabs
 
 - Handling Collision and Trigger Events
 - Quit and Restart the game
@@ -358,6 +258,9 @@ Included with this scene are some custom scripts that will come in handy with Pr
 - Countdown Timer (see the Timer prefab in the unity package)
 - Attach an object to the player
 - Event on keypress
+## Triggers
+
+Open up the [collision and trigger demo unitypackage](https://drive.google.com/file/d/1V2kN7fv_UETnup2BQt0p8uhgGOF8LgxR/view?usp=sharing) for a live demo on collisions and triggers using rigidbody physics.
 
 ## Active Game Objects 
 
@@ -365,7 +268,9 @@ Many of these helper scripts rely on toggling the Active state of a game object.
 
 ![](assets/Pasted%20image%2020231005001738.png)
 
-This object is active, because the checkbox is checked. You can uncheck these boxes to hide a game object and all of its children from the game.
+This object is active, because the checkbox is checked. 
+
+You can uncheck these boxes to hide a game object and all of its children from the game.
 
 Many components in Unity will do something as soon as an object becomes active. This happens as soon as the game starts, or when an object's active checkbox becomes checked.
 
@@ -373,9 +278,13 @@ Many components in Unity will do something as soon as an object becomes active. 
 
 An audio source component has the "Play On Awake" property, which automatically plays it's audio clip as soon as the game object it is attached to becomes active.
 
-## Using Events to Set the Active State of a Game Object
+## Events
+
+Using Events to Set the Active State of a Game Object
 
 ![](assets/Pasted%20image%2020231005002312.png)
+
+One way to connect or relate game objects to one another, is to use **events**
 
 The *HandleCollisionWithTags.cs* script that comes with the unitypackage reacts with an [Event](https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html) that can send messages to any objects that subscribe to the event. In the above image, the *OnCollisionEnter()* event has two subscribers (added by clicking the '+' button at the bottom of the event's box). 
 
@@ -386,7 +295,9 @@ Both subscribers are Game Objects which were dragged into the slot below the "Ru
 
 Using some of these helper scripts, you can put together a lose or reset condition if a player falls off the edge of the scene.
 
-The *RestartGame* script that comes with the unitypackage has a setting that will reset the game as soon as it becomes active. So to reset the game when the player falls below the edge of the course you can follow these steps:
+The *RestartGame* script that comes with today's unitypackage has a setting that will reset the game as soon as it becomes active. 
+
+To reset the game when the player falls below the edge, you can follow these steps:
 
 1. Create a large Cube and place it below your level, it should cover any areas that the player could reach when falling off the course.
 2. Uncheck the MeshRenderer component to hide the mesh
@@ -402,8 +313,9 @@ The *RestartGame* script that comes with the unitypackage has a setting that wil
 
 # Sketch One-on-ones
 
-We'll split up and chat with each of you for the rest of the class time. Feel free to continue to work on your project during the meetings.
+We'll split up and chat with each of you for the rest of the class time. Feel free to work on your project during the meetings.
+
 
 > Everything about the site remained wrapped in blandness and littered with shiny cars—one after another they extended into a sunny nebulosity. The indifferent backs of the cars flashed and reflected the stale afternoon sun. I took a few listless, entropic snapshots of that lustrous monument. If the future is “out of date” and “old fashioned,” then I had been in the future. I had been on a planet that had a map of Passaic drawn over it, and a rather imperfect map at that. A sidereal map marked up with “lines” the size of streets, and “squares” and “blocks” the size of buildings. At any moment my feet were apt to fall through the cardboard ground. I am convinced that the future is lost somewhere in the dumps of the non-historical past; it is in yesterday’s newspapers, in the _jejune_ advertisements of science- fiction movies, in the false mirror of our rejected dreams. Time turns metaphors into _things_, and stacks them up in cold rooms, or places them in the celestial playgrounds of the suburbs.
 > 
-> Smithson, Robert. "A Tour of the Monuments of Passaic, New Jersey." Originally published as "The Monuments of Passaic." Artforum Vol.6, No.4 (December, 1967).
+> Smithson, Robert. "[A Tour of the Monuments of Passaic, New Jersey](https://holtsmithsonfoundation.org/tour-monuments-passaic-new-jersey)." Originally published as "The Monuments of Passaic." Artforum Vol.6, No.4 (December, 1967).

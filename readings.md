@@ -6,7 +6,7 @@ title: Readings
 
 For the first reading, we will have two groups:
 
-Group 1 will read Henry Jenkins' [_Game Design as Narrative Architecture_](https://docs.google.com/forms/d/e/1FAIpQLSc1ZLvixfA21bt_kRndowxsdlBaY-MnXRQyjz5l445WW4OCIg/viewform?usp=sf_link) 
+Group 1 will read Henry Jenkins's [_Game Design as Narrative Architecture_](https://docs.google.com/forms/d/e/1FAIpQLSc1ZLvixfA21bt_kRndowxsdlBaY-MnXRQyjz5l445WW4OCIg/viewform?usp=sf_link) 
 
 Group 2 will read Alenda Y. Chang's [_Rambunctious Games: A Manifesto for Environmental Game Design_](https://docs.google.com/forms/d/e/1FAIpQLScwgTGhoZcYTPWxaqenQXgsB6i__YpqTOidfp-dTJ3Rk9Jrvg/viewform?usp=sf_link) 
 

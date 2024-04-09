@@ -7,7 +7,7 @@ title: Day 9
 1. Homeplay 2 Presentations
 2. [Animation](#importing-sprites-animation-frame-animation)
 3. [Miscellany](#mouse-interaction-dragging-snapping)
-4. Visiting UCLA DMA MFA FS2023 
+4. Visiting UCLA DMA MFA 2024 
 
 # Importing sprites, Animation, Frame animation
 

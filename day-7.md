@@ -22,6 +22,126 @@ Imaginary video games via only titles and screenshots – still very connected t
 
 See also: [A Game By It's Cover](https://itch.io/jam/a-game-by-its-cover-2023) game jam based on [fictional game cartridge](https://famicase.com/23/index.html) art.
 
+
+# Thinking about visual expression, elements of design in games
+
+[![](https://lh5.googleusercontent.com/7wKIbZ6yIYl1B4vwBMs-N5p-ZgXAANINzuK0Zd8FZhHYm3jwGerODq8EkkzijuHWnNqkp_ZquOO3TTxkftIzj38OKgPMoWLIyhDTSecqvscZGxUzv4BwnXAiGSDKXR7aRpcoXHqiO4zNIfk5gNMjDGU)](https://youtu.be/CHm2d3wf8EU)
+*Cruelty Squad*
+
+Take each of these into consideration when designing the visual features of your project. How are you approaching a particular element? What does it communicate? How does one element relate to other visual, mechanical, textual, sonic, etc. elements of the work?
+
+It can be useful to look online (or use a virtual assistant) on how to achieve the "look" from an existing game in Unity. Try including the term "shader" or "material", e.g.  "zelda shader in Unity"
+# Line
+Horizontal, vertical, diagonal, straight, curved, dotted, broken, thick, thin. 
+
+[![](https://lh3.googleusercontent.com/B312KoDC4ofrUSBQx7OgWpsN6EOLKDrJC8dEEEYg4Co6biCJD3NHc1Gj7hcM6v2U_BdivWcCMaHYXkXq6bRNlBfiCmV4M6BmHoo-WsvH65-XwUc9XQSTJ1YXBuBiYc6heU5v1C5Cz6RvhhhAVnNjdRk)](https://nikitadiakur.com/)
+*Nikita Diakur*
+
+Roller Drome - [https://youtu.be/G1NY0LKDqJo](https://youtu.be/G1NY0LKDqJo) 
+# Color
+The wavelength of light. Hue, value, intensity, and temperature.  
+
+[![](https://lh4.googleusercontent.com/_KYd_SE2MxOeby-x4UCYigqzECMEFh2N-EXE15P7mNF5uWX1oOdVlH5gnMJ2o3d6lyjddQayRCJWT2196O4Qc6G4hsCPHJYPTkN1sWvmFyAY0usZEZbJ3bnmOFp9lJASWeKn9hqvbwYJbziZhOkepbA)](https://www.youtube.com/watch?v=1b9kVuavlqA)
+*Shim*
+# Shape – 2D, flat, geometric, organic
+
+  
+
+[![](https://lh3.googleusercontent.com/cjH5nRkVm6HeyS_Ft9nQ3DDfmJMxgX7ZB2cRxVL4RL-HiUPjoqvQxd3oV6X7z9WXT1c-Prkqhju-e-dL55PPOXVpGvpCMsxfV5-tmZkbW7UzxY6Cc7klcBnY5s6Xt8MYVFNkzS4xulyVxccPberMCB0)](https://www.facebook.com/GazelliArtHouse/videos/peter-burr-dirtscraper-live/566167464450625/)
+*Peter Burr*
+# Form
+3D, Geometric, organic
+
+[![](https://lh6.googleusercontent.com/D-Ql7leOim7zk3n_20AguviEbXcgxpo2kCFs8vXWgybzicoh-InlkXYFLOPyVAc3ZDoa_X8Z9oDSH7obtGiSc44AvfZHhCyhEDIKsoe6ex71PxONm5R7ueiFs4vCFCuz66CSim3urbqHImI7YC6Zv_k)](http://iancheng.com/)
+*Ian Cheng*
+
+[![](https://lh3.googleusercontent.com/cH-Rv0kZxhw1KjqGpDFdLiP7TGdwF5LwHuuoACThYj6KMQ1t1f7ya9HwxAzKzTEZTSHBO--DH4ToqWdjEHSuNHjoW2-E0zDAGIM86yBOIsUGh056K9g3HL3uunlRapwHt8iuUpJk4UCwFczk2r77z08)](https://www.instagram.com/soft_baroque/?hl=en)
+*Soft Baroque*
+
+[![](https://lh5.googleusercontent.com/71hbKLnv4cUMcYTTQj5AckEaSSO5FBwTku9nNYxcA9v6y8OZQfv23vQLojwlZEapxXfoE4WinpcBh5BrDfneZ2pc6gU4ttHKfp0wIpFraT7zbNLeg3OSjw1y3_BBG8B4JO7-2QwI0VM5xBaOn4e2UsQ)](https://www.yonk.online/)
+*Yonk*
+# Value
+The lightness or darkness of an image
+
+[![](https://lh6.googleusercontent.com/ApmbPlNqwY_qXvZSSs4J5sX82CJaBYz21zdv7s2tM1G91zGtiMZPrGzPYZz--WlU6W70HtqPDgu8z20B6dt-Huhiludo9pa03np26N_3QSCm9KyNaLyxQiDSgIgxYkAdz4Y5X1buIKITdTiI1Ixt4WQ)](https://www.youtube.com/watch?v=Y4HSyVXKYz8)
+*Limbo*
+
+# Space
+The area around, within, or between images. +/- space. Composition.
+
+[![](https://lh4.googleusercontent.com/lumKMVCkO9qEF9JtOldS_W2wV6hAe4rfeyNtczQhFLgIuV2Ooi8rOqvYAmOa7jHun4RS2o_K5PEMZk5K9XbtmNGpXbV6Ws9k3F45hQJoU5BNiDMlQbnOOpTR0sMv2DhPDJcDziKrG8OPycT33koM3-8)](https://www.youtube.com/watch?v=sBmBFN4A_mM)
+*Kentucky Route Zero*
+
+[![](https://lh6.googleusercontent.com/ApzgdRymI-s-_HUwTibUrsOJtbuvLQHKrkeVE2iRoIXOCKSKK5oLEyh8-I8fe5PtX01Z1aFHYs_PLijGLD9wYHXLq_2pDzVIGzjM5hTMAH7kaNx4WWO1S2-ux36eR5fwy34MXiBLwLPo_AvpR_bx4iU)](https://www.youtube.com/watch?v=NAhrOoNR4ng)
+*Oxenfree*
+
+# Texture
+The feel, appearance, thickness, or stickiness of a surface (smooth, rough, silky, furry)  
+
+[![](https://lh4.googleusercontent.com/F0o8h_YsBO8sUyBHwCBlpOyD9PRLa3HRorKxK_SrwlgSX2YT9hIIF4XqzE9E4dVFF6F2ljxZ-Swl0grO887jReVZsQqoPdEorTk8S2566WXhTQggUE1HYTR2thKo4vZJfsDjFhtet0FIE9KPhzTOtIw)](https://www.youtube.com/watch?v=dVlyy0Wnx1Y)
+*Hatoful Boyfriend*
+
+For a ton of insightful opinions and examples – references within and beyond games – definitely check out this blog post on [Real Time 3D Imagery](https://startingoverinraccooncity.blogspot.com/2021/02/preferences-and-proposals-for-real-time.html)  
+
+## Toon Shaders
+
+![](assets/Pasted%20image%2020231004235517.png)
+Lots of the effects mentioned at the start of the day can be achieved using a technique called "toon shading" that mixes elements of both lit and unlit shading. The example image above is from a free URP toon shading pack called [OToon](https://assetstore.unity.com/packages/vfx/shaders/otoon-urp-toon-shading-216102)
+
+*Note: When looking for custom assets on the Unity Asset Store (or elsewhere), check to make sure they are compatible with your render pipeline.*
+
+## Custom Shaders and Shader Graph
+
+URP (and HDRP) include a node-based editor for creating custom shaders, called “Shader Graph”
+
+![](https://lh3.googleusercontent.com/58UHI-_EkB-Ae7hDlQBHzw7CAhow0ZTTP5ldJeC8AUP8AoIew8KIaU9ZXUGcnbFluMkKwi6nmZky1z840aYxputHjgYLRX3owJ6TjZj9w9Lwv0N1Bz3J2qzJSHMxpJCYeoE9LYsFMgHcQPgzzNSju_o)
+
+I won’t be getting into the details of custom shaders for this class. But in some cases there are simple shaders that you can build which aren’t included with URP. 
+### Vertex Color Shader
+
+It is possible to include color data with the vertices of a model, known as vertex painting. For example, the models in the [Everything Library](https://www.davidoreilly.com/library) do not come with textures.
+
+![](https://lh4.googleusercontent.com/oIJEA3aYyrHjiiG3JqIHvgGxz60VQspLtydGWZCl7qR814M8Z3uUvkYJQAxbcaMVhFoyv2UCpr1Z1qxyHvktLd9O0NQuOqrOkVwIXYDSz2QCBHciQ39dX8UG7yraUFYffGiuhoQwEBGb0u2DCJSL5HM)
+
+To display the colors of the models, you need to use a material that uses a shader to convert the vertex colors of the model to the colors. This is pretty easy to make using a shader graph.
+
+![](https://lh3.googleusercontent.com/Hgh7992lEGI_lvgMEVv_J8mfGyToasJ9P16CKPvjx9Wi_fecdlbufz4EJZN9jls2F9ecNQ1AIxcQZA8kLXQq_t_nYVK2EmyTNAUuYecKmk-LfrKv47II280cRxSnkUDYnGwpeNeAP7i1rioMWBmIbu4)
+
+You can then create a material that uses this shader graph, and apply it to the material of an object that has vertex colors:  
+
+![](https://lh6.googleusercontent.com/1XTsb8eNj7gpeXpFcGwPaB7K7514WRcMBON2gb8EhuCI3ABGNPdcDX2OCpUuV0aEOR4Kp4EnsLnr18b-TtHkDESLkNvEFtQjKV2D59d2YSBP0M0qdtepEfJAO05X-Wg4DbuMsFZ7PzAjud_t_Tz-bQg)
+
+
+# ???? Universal Render Pipeline, Lights, Materials, Shaders
+
+So you may have an idea of how you would like things to look, but how do you design visual elements within Unity?
+
+# Post-processing
+
+URP uses **Volumes** for adding post-processing effects to the scene. When a camera is within a volume, all overrides will be applied to the scene. 
+
+1. Enable “Post Processing” in the Camera
+2. Create a Volume Game Object and then create a Profile
+3. Add in any overrides that you’d like to include in your scene
+
+![](https://lh4.googleusercontent.com/sm1cjQ5nPucXWSn-htBTXzZVJ3Mvo1srIBJoMGZ1gIDQU110ZrW4TOO7ycWin-CoGETJI4iIV-ui6vFXOI7auRd45e2DU32YJqfSXlMdVUaHhOMMiWNEtbyGn_rBBckMONHPy2_fVuE_Q91bwORsIxE)
+
+
+## Global illumination
+
+![](https://lh6.googleusercontent.com/lfrfA4iPe9KvfuoDjLmWQkm6m18Og0GTD9Vue3pF22E0p95UMjrB_D3sZnWVLUHI_Zi_ZvwF84FjyZ4nAG4lmKs_PsQJC8eNwd2VZvDG6bb29KWr1zm1G3S7EUeXysIL9yKY7oIWjEYJlowxIzCsL3g)![](https://lh6.googleusercontent.com/lfrfA4iPe9KvfuoDjLmWQkm6m18Og0GTD9Vue3pF22E0p95UMjrB_D3sZnWVLUHI_Zi_ZvwF84FjyZ4nAG4lmKs_PsQJC8eNwd2VZvDG6bb29KWr1zm1G3S7EUeXysIL9yKY7oIWjEYJlowxIzCsL3g)
+
+Global illumination is a group of techniques that model both direct and indirect lighting to provide realistic lighting results. Unity has systems for both baked and real time global illumination. In URP, real-time global illumination is not turned on by default ([more info](https://docs.unity3d.com/Manual/realtime-gi-using-enlighten.html))
+
+## Exercise
+
+![](https://d7hftxdivxxvm.cloudfront.net/?quality=80&resize_to=width&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FaFR2A_1SkjNf3nza0_oWyA%2Fnormalized.jpg&width=910)
+*Object*. Méret Oppenheim (1936)
+
+Search online for a 3D model of a piece of furniture (the [Everything Library](https://davidoreilly.itch.io/everything-library-furnishings) is a good starting place). Change the material of this object into something impossible or unexpected. Create a composition around the object by using only Unity's default primitives. Frame the scene with the Main Camera object. Use the skybox, lights, and post-processing to enhance the scene.
+
+If you aren't sure how to recreate an effect, ask us and we can help.
+
 # Arcade games, culture, manipulation
 
 ![](https://lh5.googleusercontent.com/gsaZUx36KbxLLWSAoWesvTp5QGIFm3nY5OyXASw3m0nV5lfXf2MIQijHZoUMXjzB_I5tNv8WDczTLQ7XMfbAk-HYixk4m9Sz8Mn_sOCC0n0LEcmU7z-4PhWea7uU8qGIc_X4_DO1Gm9EEtlC55MZ9Pw)
