@@ -192,7 +192,34 @@ In addition to managing a timed value that decreases by seconds. This prefab als
 One thing to note is that the timer begins as soon as it becomes active, so it might also be useful to connect it to the toggle overlay so the timer only begins after the player presses a key.
 
 ![](assets/timer-prefab-with-overlay.png)
+# Sounds
 
+Adding sounds to your scene. Here’s the [Unity audio reference](https://docs.unity3d.com/Manual/AudioOverview.html).
+
+There are three components that make up the basic parts of Unity's audio system.
+
+1. Audio Clip - these are audio files that have been imported into your project.
+2. Audio Source - component that plays Audio Clips. Can be attached to any game object.
+3. Audio Listener - component for calculating the playback volume of audio sources. 
+
+When creating new scene, the Main Camera object will have an Audio Listener. There should only be one Audio Listener in your scene at a time.
+
+![](https://lh6.googleusercontent.com/8j-OE1ZJapG745j9EneZ59kxG5bC4Gqlt-ygwyDk5Mj9emYljyb-ELWiY7Btz-0mlJ2zr8fL5d5LQHcyEx0P0pE27gAKSDsd0TZJRqJ3aD6kmrDVKwWMy-q3E4sk66wNnvC_ZvTzFOgGuqsGZxaHnkg)
+
+You can find lots of free sound effects on [https://freesound.org/](https://freesound.org/) and [https://sound-effects.bbcrewind.co.uk/](https://sound-effects.bbcrewind.co.uk/) . You can also generate sound effects using [https://sfxr.me/](https://sfxr.me/) or even use an online tracker to make your music: https://jummbus.bitbucket.io/ 
+
+0. Drag some audio files into your project panel, this will convert them to audio clips.
+1. Create a new scene File > New Scene.
+2. You can build a small environment (Right click in the Hierarchy then **3D Object > Cube** you can duplicate objects with *ctrl/cmd + d*), creating and resizing cubes. (this isn’t absolutely necessary for the sound part)
+3. Create a new game object with an **Audio Source** component. A quick way is to drag an Audio Clip from your Project panel into the Hierarchy. 
+4. Configure the Audio Source component settings. Play on Awake. Loop. Volume. Pitch. Spatial Blend.
+
+![](https://lh5.googleusercontent.com/kfFF774uEtYqve5fq5vD4ZDH8JDwHTsuUd5bPNpv4slyKnVXW7fTMPGXmcFxnlSw8PVyFsdV9hxI23ii7cb9G-pyixj9XZCOikc24Kr9hXmK5rYicHFQ59Hju8wcDXY3p6pzDhb9RVi6TzEqdbjP0Fc)
+
+You can also directly link to the Play method of an Audio Source to a collision or trigger event:
+
+
+![](assets/collision-event-play-sound.png)
 
 # Animation Basics
 
@@ -242,34 +269,6 @@ Starting with a new scene and add a sphere:
    
    ![](https://lh4.googleusercontent.com/aoayvNLuvcnG427FHcaaT9sQhMgxX53XQ0qRBTsnODvspvw2cOEzCi7xHdiF1DHrgbElxr4wyhBPI1H2xIfVUvf2jfpqH7yUoUp5lbgk5kkCXPb2slnI06swCuPcy5C-ZMXPX8r7lgf7bm9Z3dZHwAg)
    
-# Sounds
-
-Adding sounds to your scene. Here’s the [Unity audio reference](https://docs.unity3d.com/Manual/AudioOverview.html).
-
-There are three components that make up the basic parts of Unity's audio system.
-
-1. Audio Clip - these are audio files that have been imported into your project.
-2. Audio Source - component that plays Audio Clips. Can be attached to any game object.
-3. Audio Listener - component for calculating the playback volume of audio sources. 
-
-When creating new scene, the Main Camera object will have an Audio Listener. There should only be one Audio Listener in your scene at a time.
-
-![](https://lh6.googleusercontent.com/8j-OE1ZJapG745j9EneZ59kxG5bC4Gqlt-ygwyDk5Mj9emYljyb-ELWiY7Btz-0mlJ2zr8fL5d5LQHcyEx0P0pE27gAKSDsd0TZJRqJ3aD6kmrDVKwWMy-q3E4sk66wNnvC_ZvTzFOgGuqsGZxaHnkg)
-
-You can find lots of free sound effects on [https://freesound.org/](https://freesound.org/) and [https://sound-effects.bbcrewind.co.uk/](https://sound-effects.bbcrewind.co.uk/) . You can also generate sound effects using [https://sfxr.me/](https://sfxr.me/) or even use an online tracker to make your music: https://jummbus.bitbucket.io/ 
-
-0. Drag some audio files into your project panel, this will convert them to audio clips.
-1. Create a new scene File > New Scene.
-2. You can build a small environment (Right click in the Hierarchy then **3D Object > Cube** you can duplicate objects with *ctrl/cmd + d*), creating and resizing cubes. (this isn’t absolutely necessary for the sound part)
-3. Create a new game object with an **Audio Source** component. A quick way is to drag an Audio Clip from your Project panel into the Hierarchy. 
-4. Configure the Audio Source component settings. Play on Awake. Loop. Volume. Pitch. Spatial Blend.
-
-![](https://lh5.googleusercontent.com/kfFF774uEtYqve5fq5vD4ZDH8JDwHTsuUd5bPNpv4slyKnVXW7fTMPGXmcFxnlSw8PVyFsdV9hxI23ii7cb9G-pyixj9XZCOikc24Kr9hXmK5rYicHFQ59Hju8wcDXY3p6pzDhb9RVi6TzEqdbjP0Fc)
-
-You can also directly link to the Play method of an Audio Source to a collision or trigger event:
-
-
-![](assets/collision-event-play-sound.png)
 
 # Project 1 Studio Time
 Please let us know about any questions or issues as soon as possible

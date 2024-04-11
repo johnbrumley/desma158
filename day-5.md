@@ -15,7 +15,7 @@ We’ll be playing each other’s projects in groups in a round-robin format. I�
 
 https://docs.google.com/spreadsheets/d/12DIl5YXCTtO3jYa7o7E0Xi7hJJhUat2IrI8ZMPjVVVs/edit?usp=sharing
 
-Here are the rules:
+# Here are the rules:
 
 1. The first student of each group will present their game at their group’s ”play station”.  
 2. The rest of the group will playtest and give feedback for 6 minutes.
@@ -23,7 +23,7 @@ Here are the rules:
 4. This repeats until everyone has returned to their original station.
 5. Then the second student of each group will set up their game, and the entire process will repeat.
 
-While not playing the games, take notes and provide feedback. Here are some questions to consider:
+# While not playing the games, take notes and provide feedback. Here are some questions to consider:
 - How does the game innovate on the roll-a-ball demo? Winning / losing mechanic? Story? Subversion? 
 - Was the objective of the game clear? Did the rules and mechanics support the objective?
 - Was the game easy to learn and understand? Were the instructions clear and concise?
