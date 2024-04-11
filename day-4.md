@@ -10,6 +10,8 @@ title: Day 4
 
 We'll try and be efficient with covering the games each group played. If you have any visual aids, make sure you've got them ready or share them with us to put on the screen.
 
+I've grabbed [playthroughs](https://youtube.com/playlist?list=PLAh0qds9ILIYNxxPLDOsaA7LGHwyKrfj0&si=Lf7XSy0eyjip9s-D) for many of the games for reference. 
+
 # Building your projects
 
 You should try making a preliminary build as soon as possible to see if there are any weird issues! Some issues will only show up in the build! Particularly UI and resolution problems. 
