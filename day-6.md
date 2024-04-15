@@ -438,10 +438,6 @@ Open up a new scene and create a 2D primitive to become a stand-in for the playe
 
 I'll walk through how the script is built, but the complete version of the script is below
 
-
-![](https://lh5.googleusercontent.com/CunfAVcjZrHkl1iT0ngEa3AqiGeqDBUGTcUgEp3XRf8Cb9rRA_ciftsSHEpQbZq4eQwLmUGzIE7rp31UBc_reqys0xqueE-i9RwNetNjz8nGPyrELR090UPb9Uau053klhNcGlsrzz3rL71IyNnPwLw)
-
-
 PlayerController2D:
 
 ```csharp
@@ -492,3 +488,6 @@ Try finding angles and orientations of objects that might create a pathway or le
 ![](https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-witness/d/d5/Gate_1_-_Shadow_Trees_3.jpg)
 *The Witness*
 
+
+
+![](https://lh5.googleusercontent.com/CunfAVcjZrHkl1iT0ngEa3AqiGeqDBUGTcUgEp3XRf8Cb9rRA_ciftsSHEpQbZq4eQwLmUGzIE7rp31UBc_reqys0xqueE-i9RwNetNjz8nGPyrELR090UPb9Uau053klhNcGlsrzz3rL71IyNnPwLw)

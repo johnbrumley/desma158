@@ -20,9 +20,9 @@ Weeks 1-2:
 ---
 
 Weeks 3-6:
-## 2. Zine
+## [2. Zine](project-2.md)
 
-#### **DUE 4/25:** Sketch
+#### **DUE 4/30:** Sketch
 #### **DUE 5/7:** Prototype
 #### **DUE 5/14:** Project
 
