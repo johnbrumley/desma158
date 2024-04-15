@@ -39,7 +39,7 @@ For games that will be played on the Game Lab cocktail cabinets, so take the for
 
 ## 1. Project Sketch
 
-**Due by Thursday 4/25**
+**Due by Tuesday 4/30**
 
 *Develop 2 (or more) sketches that illustrate your zine. What you want a player to experience, learn, explore, enjoy, etc.? What sort of images, sounds, videos, texts, and/or animations will you use and how will you create or collect them?*
 
