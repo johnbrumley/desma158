@@ -49,7 +49,7 @@ Traditional arcade games offer multiplayer in two flavors:
 1. Direct competition (fighting games, racing games, etc.)
 2. Indirect competition (high score tables etc.)
 
-Consider blending other genres / ways of playing
+Consider blending other genres / ways of playing 
 
 - Asynchronous multiplayer: players can affect the experiences of future players by changing the environment or leaving messages behind. ([FromSoft](https://youtu.be/ci5bleu3bGg), [Animal Crossing letters](https://youtu.be/KUzOOx6PDc0))
 - Sandbox / simulation: there are no prescribed goals, but the state of the game world is persistent between play sessions. Gardening games, Minecraft, etc. 
