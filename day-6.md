@@ -29,20 +29,21 @@ Some other zine things:
 [Zines at UCLA Library](https://guides.library.ucla.edu/c.php?g=1046263&p=7591800)
 List of [Southern California zine events](https://www.johndishwasher.org/zinefestsofsocal.html) 
 
-### **Extra Credit**
-Read Chapter 1 of Anthropy's [*Rise of the Videogame Zinesters*](https://drive.google.com/drive/folders/1sKj5MXsl1mBbyfCE_4lRQEAUbggBm7Ld?usp=sharing) and respond to the questions in [this form](https://docs.google.com/forms/d/e/1FAIpQLScUZiLp0FAe1t6nAJhu3Raz-qey8cA41IGMN1hK06TYx0HVWg/viewform?usp=sf_link).
-
-# Some notes on Arcade Cabinets and multiplayer
+# Cabinets and multiplayer
 
 ![](https://lh6.googleusercontent.com/unfOlX2v2XHJhDAVkgyIhvs_sDELxtuPogUeVhO5rkJCI7rZ-n0rNG4YwHL1TuDCFqpxTTHcSikOA-AsFVHI_GSD4hypm2NnDfwjuY5FbsrdP1ror-I-fr2dCGK-xSOpjucvvwfCm3TakRiSXzI_AjA)
 
 We have cocktail cabinets that you can design your game to be played on. With a few things to be aware of:
-- Different inputs: No mouse, joysticks (switch-based, not analog).
+- Inputs: No mouse, joysticks (switch-based, not analog).
 - Screen is in the table, players have to sit.
 
 ## Multiplayer
 
-Consider the affordances of an arcade machine: games situated in a particular place on a particular machine, in a particular social context.
+Consider the affordances of a public arcade machine: games can be situated in a particular place on a particular cabinet, in a particular social context... 
+
+![](assets/Pasted%20image%2020240417214808.png)
+
+Before ubiquitous computing, arcade machines were prevalent in places where you might find yourself waiting with nothing to do. An arcade machine which is available to many people creates possibilities for multiplayer experiences.
 
 Traditional arcade games offer multiplayer in two flavors:
 
@@ -67,7 +68,7 @@ Using the template will install a bunch of useful 2D packages from the package m
 
 ![](https://lh3.googleusercontent.com/3IeOb_HRLMdzImNJI2YqFV8jBtOke4j9CFCIDYqeVsb7az9hsLex0bqXhAXjr65q6gQlan7wa5GMguYD35UgYbIGvmeqWCNrGMmj_hRRJzZOez3avNYxPcNHEtm3UfN6dvtjbtoozJDN1D9vYtWU8fA)
 
-After your project has started up, you can check out this [unitypackage template](https://drive.google.com/file/d/1wl8eYa-01PaycjSLsaZzSBzm7S1s59S3/view?usp=sharing) with a few scripts and things that might come in handy. We'll be adding more things to this template in the next few weeks.
+After your project has started up, you can check out this [unitypackage template](https://drive.google.com/file/d/1wl8eYa-01PaycjSLsaZzSBzm7S1s59S3/view?usp=sharing) with a few scripts and other things that might come in handy. We'll be adding more things to this template in the next few weeks.
 
 # Sprites
 
@@ -436,7 +437,7 @@ Open up a new scene and create a 2D primitive to become a stand-in for the playe
 3. In the Rigidbody 2D, set gravity to zero and Freeze the rotation (you might have to expand "Constraints").
 4. Now create a new C# script called "PlayerController2D" and open it in your code editor.
 
-I'll walk through how the script is built, but the complete version of the script is below
+I'll walk through how the script is built. The complete version of the script is below (note that this script uses the older input system ... how might you update it for the new system?)
 
 PlayerController2D:
 
@@ -488,6 +489,11 @@ Try finding angles and orientations of objects that might create a pathway or le
 ![](https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-witness/d/d5/Gate_1_-_Shadow_Trees_3.jpg)
 *The Witness*
 
+# Reading (Due 4/25)
 
+Check out the [readings](readings.md) page to see more info about the next set of readings.
+
+
+Bonus Rolling Ball image:
 
 ![](https://lh5.googleusercontent.com/CunfAVcjZrHkl1iT0ngEa3AqiGeqDBUGTcUgEp3XRf8Cb9rRA_ciftsSHEpQbZq4eQwLmUGzIE7rp31UBc_reqys0xqueE-i9RwNetNjz8nGPyrELR090UPb9Uau053klhNcGlsrzz3rL71IyNnPwLw)
