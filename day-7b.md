@@ -106,7 +106,7 @@ Behind the scenes, bitsy is just storing everything as text.
 
 Take a look at the "Game Data" tool. If you scroll around (or search for names), you'll be able to find the data connected with your sprite / room / color palette 
 
-## Try copying and pasting things from one game data file to another. 
+## You can copy and paste things from one game data file to another. 
 
 If you've decided to use any hacks or plugins this might be a bit more tricky.
 
@@ -129,6 +129,34 @@ You can also upload it [directly to itch.io](https://itch.io/docs/creators/html5
 ![](assets/endless-scroll.gif)
 
 [endless scroll - cecile richard](https://haraiva.itch.io/endless-scroll)
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
