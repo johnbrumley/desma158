@@ -4,7 +4,7 @@ title: Day 7
 ---
 # Micro JAM
 
-<iframe src="one_tuesday_morning_in_april.html"></iframe>
+<iframe src="one_tuesday_morning_in_april.html" style="height:512px; width:512px;"></iframe>
 
 # Schedule
 
