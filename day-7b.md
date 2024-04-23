@@ -14,10 +14,19 @@ This engine was made by Adam Le Doux who writes:
 > hi! bitsy is a little editor for little games or worlds. the goal is to make it easy to make games where you can walk around and talk to people and be somewhere.
 
 ![what lies underneath - andrea bly](assets/what-lies-underneath.gif)
+
 [What Lies Underneath](https://andreablythe.itch.io/what-lies-underneath) - Andrea Bly
 # Schedule
 
 We "Gotta Go Fast"™ to give enough time to work on things in class and present at the end. So let's take a look at the schedule:
+
+| Time | Activity                        |
+| ---- | ------------------------------- |
+| 0900 | Intro - Theme and engine reveal |
+|      |                                 |
+|      |                                 |
+|      |                                 |
+
 
 | Time | Activity                              |
 | ---- | ------------------------------------- |
@@ -31,7 +40,10 @@ We "Gotta Go Fast"™ to give enough time to work on things in class and present
 | 1150 | Finished!                             |
 # Theme
 
-The theme for the jam is ***combinations*** 
+## The theme for the jam is ***combinations*** 
+
+![parsley bonsoir](assets/parsleybonsoir-newseason.gif)
+Parsley Bonsoir
 
 Generate your bitsy game ideas with an open prompt that allows you to create new story combinations between different things. 
 
@@ -67,16 +79,16 @@ You've gotten a quick taste of the engine, so let's come up with some ideas!
 
 ![](window.gif)
 
-# Choosing some ideas
+# Narrowing down
 
 Each person gets ***Three votes***
 
 ![](assets/start-line.gif)
-## Take a few minutes to read the ideas and add a star ✰ on your favorite ideas.
+## Read through the ideas. Draw a star ✰ on your favorite ones.
 
 ![](assets/start-line.gif)
 
-
+We'll take the top 4-5 ideas to form groups
 
 # Groups
 
@@ -106,4 +118,3 @@ https://zcmag.xyz/zine-idea-generator/?type=132&action=34&topic=294&nomature=0&p
 
 ![](assets/bitsy_snip.gif)
 
-![parsley bonsoir](assets/parsleybonsoir-newseason.gif)
