@@ -54,18 +54,18 @@ Here it is:
 We'll return to this in a moment. But first how do you do things in bitsy?
 # Bitsy
 
-Get to the engine here: https://make.bitsy.org/
+Get to the engine here: [https://make.bitsy.org/](https://make.bitsy.org/)
 
 We'll take a stroll through the engine using this [bitsy pdf handout](https://zeroday.camp/wp-content/uploads/2018/09/Bitsy-Guides.pdf) 
 
-Look at what others have made: https://itch.io/games/tag-bitsy
+Look at what others have made: [https://itch.io/games/tag-bitsy](https://itch.io/games/tag-bitsy)
 
 ![](assets/Pasted%20image%2020240422204510.png)
 
 If you want to look at even more tutorials / info / hacks/ etc...
-Another tutorial (also in [Chinese](https://zhuanlan.zhihu.com/p/527178844) and [Japanese](https://gamewriter.jp/?p=4874)): https://www.shimmerwitch.space/bitsyTutorial.html
-bitsy handout: https://rahji.github.io/bitsy-handout/web/
-bitsy tools map: https://haraiva.neocities.org/bitsytools#1,4
+Another tutorial (also in [Chinese](https://zhuanlan.zhihu.com/p/527178844) and [Japanese](https://gamewriter.jp/?p=4874)): [https://www.shimmerwitch.space/bitsyTutorial.html](https://www.shimmerwitch.space/bitsyTutorial.html)
+bitsy handout: [https://rahji.github.io/bitsy-handout/web/](https://rahji.github.io/bitsy-handout/web/)
+bitsy tools map: [https://haraiva.neocities.org/bitsytools#1,4](https://haraiva.neocities.org/bitsytools#1,4)
 
 # Brainstorming
 
@@ -76,10 +76,12 @@ You've gotten a quick taste of the engine, so let's come up with some ideas!
    > a (noun) is wandering in (a place). upon (arriving at / encountering) (a specific location / object / person in the place), a story about (a topic) unfolds.
 3. When you're done. Put your paper on the designated idea table.
 
+![](assets/bitsy_snip.gif)
 
-![](window.gif)
 
-# Narrowing down
+![](assets/window.gif)
+
+## Voting
 
 Each person gets ***Three votes***
 
@@ -97,6 +99,7 @@ We'll take the top 4-5 ideas to form groups
 
 
 ![](assets/endless-scroll.gif)
+
 [endless scroll - cecile richard](https://haraiva.itch.io/endless-scroll)
 
 
@@ -104,8 +107,9 @@ We'll take the top 4-5 ideas to form groups
 
 
 ![](assets/Pasted%20image%2020240422204651.png)
+
 [flirting - josie brechner](https://visager.itch.io/flirting)
-# Bitsy resources!
+
 
 # Jam Ideas
 
@@ -116,5 +120,5 @@ Zine Idea Generator
 https://zcmag.xyz/zine-idea-generator/?type=132&action=34&topic=294&nomature=0&plainmode=0&classroom=null
 
 
-![](assets/bitsy_snip.gif)
+
 
