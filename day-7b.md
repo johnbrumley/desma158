@@ -96,6 +96,35 @@ We'll take the top 4-5 ideas and write them on the board!
 - Workshop the idea, make a sketch, storyboard, plan what you'll make (remember that your game can be small)
 - Divide up the work if needed. (writing, drawing, sounds, bitsy assembly)
 
+![](assets/Pasted%20image%2020240422204651.png)
+
+[flirting - josie brechner](https://visager.itch.io/flirting)
+
+
+# Notes on sharing between Bitsy
+
+Behind the scenes, bitsy is just storing everything as text.
+
+Take a look at the "Game Data" tool. If you scroll around (or search for names), you'll be able to find the data connected with your sprite / room / color palette 
+
+## Try copying and pasting things from one game data file to another. 
+
+If you've decided to use any hacks or plugins this might be a bit more tricky.
+
+![](assets/Pasted%20image%2020240422213846.png)
+
+
+# Exporting and sharing the game
+
+From the "Download" tool you can export your game as an HTML file. You can embed it using an iframe:
+
+```html
+<iframe src="path/to/my-fancy-bitsy.html"></iframe>
+```
+
+You can also upload it [directly to itch.io](https://itch.io/docs/creators/html5#getting-started) and make a project page!
+
+
 
 
 ![](assets/endless-scroll.gif)
@@ -103,21 +132,10 @@ We'll take the top 4-5 ideas and write them on the board!
 [endless scroll - cecile richard](https://haraiva.itch.io/endless-scroll)
 
 
+
+
 ![parsley bonsoir](assets/parsleybonsoir.gif)
 
-
-![](assets/Pasted%20image%2020240422204651.png)
-
-[flirting - josie brechner](https://visager.itch.io/flirting)
-
-
-# Jam Ideas
-
-Jam Themes
-https://gist.github.com/le-doux/3ae97d4bfc21ea3db6c87b29bf6c0bdc
-
-Zine Idea Generator
-https://zcmag.xyz/zine-idea-generator/?type=132&action=34&topic=294&nomature=0&plainmode=0&classroom=null
 
 
 
