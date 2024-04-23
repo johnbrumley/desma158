@@ -41,7 +41,7 @@ We "Gotta Go Fast"™ to give enough time to work on things in class and present
 
 Parsley Bonsoir
 
-Generate your bitsy game ideas with an open prompt that allows you to create new story combinations between different things. 
+## Generate your bitsy game ideas with an open prompt that allows you to create new story combinations between different things. 
 
 Here's the prompt we'll use:
 
@@ -77,7 +77,6 @@ You've gotten a quick taste of the engine, so let's come up with some ideas!
    > a (noun) is wandering in (a place). upon (arriving at / encountering) (a specific location / object / person in the place), a story about (a topic) unfolds.
 3. When you're done. Put your paper on the designated idea table.
 
-![](assets/window.gif)
 
 ## Voting
 
