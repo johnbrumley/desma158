@@ -12,9 +12,16 @@ title: Homeplays
 # Homeplay 1: Spatial Narrative and Environment
 
 **Due Thursday 4/11**
+## [Sign Up Sheet](https://docs.google.com/spreadsheets/d/1e2qF0M1XdieTpN7LVPfbTePcivtsTklvOts_C5FfSLU/edit?usp=sharing)
 
 Since Project 1 involves expanding on the world of roll-a-ball, we've compiled games that take different approaches to player movement, time, and level design. When playing these games consider the decisions made by the developers, the intentional use of friction, and if the concept and narrative of the game aligns with the mechanics of the game.
-## [Sign Up Sheet](https://docs.google.com/spreadsheets/d/1e2qF0M1XdieTpN7LVPfbTePcivtsTklvOts_C5FfSLU/edit?usp=sharing)
+
+# Homeplay 2: Zine Games
+
+**Due Thursday 5/2**
+## [Sign Up Sheet](https://docs.google.com/spreadsheets/d/14kOv_xSNhkepKPpY2UnbCaPIO0EFnPUjPxB1MTFWm7o/edit?usp=sharing) 
+
+When playing these games consider what might make them zine-like. Consider looking into other works by the developer or group. Are there formal, conceptual, or metatextual aspects to these games that would place them in a different category to mainstream games? What about "indie" games? 
 
 # How to access games
 

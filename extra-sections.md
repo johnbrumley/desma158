@@ -29,61 +29,6 @@ Drag the file into your project’s assets and then load it using the menu next 
 ![](https://lh3.googleusercontent.com/JmCGXZhwAmYAXk7UfqKZQ26tLC9YETwh-JgqjGoAsKUZbqkavbxkntb7bVTLy1ll2Wr39TxPgBWg2pBmlH6xLtdn1ZcVdkFfVqgc7HCIRJbAc7sLfdYu9Mh8QatwMVCb777JjgA9XaDsG1OxC8_bhZc)
 
 
-# Methods in Unity 
-
-[Official Documentation](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods)
-
-A method is an encapsulated block of code that can be called elsewhere. Some methods that are probably already familiar are Start() and Update() which are built into Unity’s [Monobehavior](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) class.
-
-The signature of a method contains the access modifier (public, private), the return value (void, int, float, Vector3), the name of the method, and any parameters that should be passed to the method when called. 
-
-Here’s an example:
-```c#
-public void SayHello() 
-{
-	print("Hello"); 
-}
-```
-
-This method doesn’t return anything and has no parameters. How about adding in a parameter and a return value:
-
-```c#
-public string SayHello(string name)  
-{  
-	print("Hello" + name);  
-	return "said hello to " + name; 
-}
-```
-
-And even more parameters:
-
-  
-
-```csharp
-public string SayHello(string name, int numberOfTimes)  
-{  
-for(int i = 0; i < numberOfTimes; i++)  
-{  
-print("Hello" + name);  
-}  
-return "said hello " + numberOfTimes + "times";  
-}
-```
-
-  
-
-Call the method by its name and pass in any arguments, the return value can be used right away or stored in a variable
-
-  
-
-```csharp
-// storing the return value in a variable  
-string result = SayHello("Duane", 500);  
-print(result);  
-
-// or using it directly  
-print(SayHello("Duane", 500));|
-```
 
   
   

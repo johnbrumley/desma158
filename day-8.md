@@ -1,17 +1,10 @@
 ---
 layout: slides
-title: Day 7
+title: Day 8
 ---
-# Homeplay 2 (Due in a week!)
+# Homeplay 2 (Due next Thursday!)
 
-As some inspiration and research on Project 2, you'll be signing up in *Groups of 3* to play a game (or games) for 1-2 hours. 
-## Sign up for games on: [this list](https://docs.google.com/spreadsheets/d/1MRMqrETqoTgZWNNtvUkijmwZi4IVVnIBXls-KrXs-Oo/edit?usp=sharing) 
-
-For games that cost money, we've set up a computer (no consoles this time) in the Print Lab lounge where you can access them. 
-
-Next **Thursday (10/26)**, your group will give a short, 5-minute Let's Play demo to talk about how the game, or group of games, has themes, ideas, structure, narrative, mechanics, flow, and/or ideology fits into what we've been discussing in class. Highlight part of the game that is especially relevant. If you have more than one game, pick one to focus on, but be prepared to talk about the others. 
-
-The presentation can be done *live or using recorded gameplay with live commentary* if difficult to isolate the section of the game you want to show. [OBS](https://obsproject.com/) is a very lightweight recorder that works on all platforms. 
+As some inspiration and research on Project 2, you'll be signing up in *Groups of 3* to play some zine game(s). Check out the [homeplays](homeplays.md) page for more details and the sign up sheet.
 
 
 ![](https://lh3.googleusercontent.com/ZuUKbB1ZEY1_ffcOgGuapQRolUWAX3CUIkL6an8eNhdHEQmLawNf5LUj5Y8G8SHblZzECsq5qVJNn_2LS91JBB2AklY1_ylqJ9esku0xYIZOiLS4O2M6cMqA8so9CKBc19XrJHCgAqOs2uJKy_J3MyQ)
@@ -22,125 +15,9 @@ Imaginary video games via only titles and screenshots – still very connected t
 
 See also: [A Game By It's Cover](https://itch.io/jam/a-game-by-its-cover-2023) game jam based on [fictional game cartridge](https://famicase.com/23/index.html) art.
 
+# Let's talk reading 2
 
-# Thinking about visual expression, elements of design in games
-
-[![](https://lh5.googleusercontent.com/7wKIbZ6yIYl1B4vwBMs-N5p-ZgXAANINzuK0Zd8FZhHYm3jwGerODq8EkkzijuHWnNqkp_ZquOO3TTxkftIzj38OKgPMoWLIyhDTSecqvscZGxUzv4BwnXAiGSDKXR7aRpcoXHqiO4zNIfk5gNMjDGU)](https://youtu.be/CHm2d3wf8EU)
-*Cruelty Squad*
-
-Take each of these into consideration when designing the visual features of your project. How are you approaching a particular element? What does it communicate? How does one element relate to other visual, mechanical, textual, sonic, etc. elements of the work?
-
-It can be useful to look online (or use a virtual assistant) on how to achieve the "look" from an existing game in Unity. Try including the term "shader" or "material", e.g.  "zelda shader in Unity"
-# Line
-Horizontal, vertical, diagonal, straight, curved, dotted, broken, thick, thin. 
-
-[![](https://lh3.googleusercontent.com/B312KoDC4ofrUSBQx7OgWpsN6EOLKDrJC8dEEEYg4Co6biCJD3NHc1Gj7hcM6v2U_BdivWcCMaHYXkXq6bRNlBfiCmV4M6BmHoo-WsvH65-XwUc9XQSTJ1YXBuBiYc6heU5v1C5Cz6RvhhhAVnNjdRk)](https://nikitadiakur.com/)
-*Nikita Diakur*
-
-Roller Drome - [https://youtu.be/G1NY0LKDqJo](https://youtu.be/G1NY0LKDqJo) 
-# Color
-The wavelength of light. Hue, value, intensity, and temperature.  
-
-[![](https://lh4.googleusercontent.com/_KYd_SE2MxOeby-x4UCYigqzECMEFh2N-EXE15P7mNF5uWX1oOdVlH5gnMJ2o3d6lyjddQayRCJWT2196O4Qc6G4hsCPHJYPTkN1sWvmFyAY0usZEZbJ3bnmOFp9lJASWeKn9hqvbwYJbziZhOkepbA)](https://www.youtube.com/watch?v=1b9kVuavlqA)
-*Shim*
-# Shape – 2D, flat, geometric, organic
-
-  
-
-[![](https://lh3.googleusercontent.com/cjH5nRkVm6HeyS_Ft9nQ3DDfmJMxgX7ZB2cRxVL4RL-HiUPjoqvQxd3oV6X7z9WXT1c-Prkqhju-e-dL55PPOXVpGvpCMsxfV5-tmZkbW7UzxY6Cc7klcBnY5s6Xt8MYVFNkzS4xulyVxccPberMCB0)](https://www.facebook.com/GazelliArtHouse/videos/peter-burr-dirtscraper-live/566167464450625/)
-*Peter Burr*
-# Form
-3D, Geometric, organic
-
-[![](https://lh6.googleusercontent.com/D-Ql7leOim7zk3n_20AguviEbXcgxpo2kCFs8vXWgybzicoh-InlkXYFLOPyVAc3ZDoa_X8Z9oDSH7obtGiSc44AvfZHhCyhEDIKsoe6ex71PxONm5R7ueiFs4vCFCuz66CSim3urbqHImI7YC6Zv_k)](http://iancheng.com/)
-*Ian Cheng*
-
-[![](https://lh3.googleusercontent.com/cH-Rv0kZxhw1KjqGpDFdLiP7TGdwF5LwHuuoACThYj6KMQ1t1f7ya9HwxAzKzTEZTSHBO--DH4ToqWdjEHSuNHjoW2-E0zDAGIM86yBOIsUGh056K9g3HL3uunlRapwHt8iuUpJk4UCwFczk2r77z08)](https://www.instagram.com/soft_baroque/?hl=en)
-*Soft Baroque*
-
-[![](https://lh5.googleusercontent.com/71hbKLnv4cUMcYTTQj5AckEaSSO5FBwTku9nNYxcA9v6y8OZQfv23vQLojwlZEapxXfoE4WinpcBh5BrDfneZ2pc6gU4ttHKfp0wIpFraT7zbNLeg3OSjw1y3_BBG8B4JO7-2QwI0VM5xBaOn4e2UsQ)](https://www.yonk.online/)
-*Yonk*
-# Value
-The lightness or darkness of an image
-
-[![](https://lh6.googleusercontent.com/ApmbPlNqwY_qXvZSSs4J5sX82CJaBYz21zdv7s2tM1G91zGtiMZPrGzPYZz--WlU6W70HtqPDgu8z20B6dt-Huhiludo9pa03np26N_3QSCm9KyNaLyxQiDSgIgxYkAdz4Y5X1buIKITdTiI1Ixt4WQ)](https://www.youtube.com/watch?v=Y4HSyVXKYz8)
-*Limbo*
-
-# Space
-The area around, within, or between images. +/- space. Composition.
-
-[![](https://lh4.googleusercontent.com/lumKMVCkO9qEF9JtOldS_W2wV6hAe4rfeyNtczQhFLgIuV2Ooi8rOqvYAmOa7jHun4RS2o_K5PEMZk5K9XbtmNGpXbV6Ws9k3F45hQJoU5BNiDMlQbnOOpTR0sMv2DhPDJcDziKrG8OPycT33koM3-8)](https://www.youtube.com/watch?v=sBmBFN4A_mM)
-*Kentucky Route Zero*
-
-[![](https://lh6.googleusercontent.com/ApzgdRymI-s-_HUwTibUrsOJtbuvLQHKrkeVE2iRoIXOCKSKK5oLEyh8-I8fe5PtX01Z1aFHYs_PLijGLD9wYHXLq_2pDzVIGzjM5hTMAH7kaNx4WWO1S2-ux36eR5fwy34MXiBLwLPo_AvpR_bx4iU)](https://www.youtube.com/watch?v=NAhrOoNR4ng)
-*Oxenfree*
-
-# Texture
-The feel, appearance, thickness, or stickiness of a surface (smooth, rough, silky, furry)  
-
-[![](https://lh4.googleusercontent.com/F0o8h_YsBO8sUyBHwCBlpOyD9PRLa3HRorKxK_SrwlgSX2YT9hIIF4XqzE9E4dVFF6F2ljxZ-Swl0grO887jReVZsQqoPdEorTk8S2566WXhTQggUE1HYTR2thKo4vZJfsDjFhtet0FIE9KPhzTOtIw)](https://www.youtube.com/watch?v=dVlyy0Wnx1Y)
-*Hatoful Boyfriend*
-
-For a ton of insightful opinions and examples – references within and beyond games – definitely check out this blog post on [Real Time 3D Imagery](https://startingoverinraccooncity.blogspot.com/2021/02/preferences-and-proposals-for-real-time.html)  
-
-## Toon Shaders
-
-![](assets/Pasted%20image%2020231004235517.png)
-Lots of the effects mentioned at the start of the day can be achieved using a technique called "toon shading" that mixes elements of both lit and unlit shading. The example image above is from a free URP toon shading pack called [OToon](https://assetstore.unity.com/packages/vfx/shaders/otoon-urp-toon-shading-216102)
-
-*Note: When looking for custom assets on the Unity Asset Store (or elsewhere), check to make sure they are compatible with your render pipeline.*
-
-## Custom Shaders and Shader Graph
-
-URP (and HDRP) include a node-based editor for creating custom shaders, called “Shader Graph”
-
-![](https://lh3.googleusercontent.com/58UHI-_EkB-Ae7hDlQBHzw7CAhow0ZTTP5ldJeC8AUP8AoIew8KIaU9ZXUGcnbFluMkKwi6nmZky1z840aYxputHjgYLRX3owJ6TjZj9w9Lwv0N1Bz3J2qzJSHMxpJCYeoE9LYsFMgHcQPgzzNSju_o)
-
-I won’t be getting into the details of custom shaders for this class. But in some cases there are simple shaders that you can build which aren’t included with URP. 
-### Vertex Color Shader
-
-It is possible to include color data with the vertices of a model, known as vertex painting. For example, the models in the [Everything Library](https://www.davidoreilly.com/library) do not come with textures.
-
-![](https://lh4.googleusercontent.com/oIJEA3aYyrHjiiG3JqIHvgGxz60VQspLtydGWZCl7qR814M8Z3uUvkYJQAxbcaMVhFoyv2UCpr1Z1qxyHvktLd9O0NQuOqrOkVwIXYDSz2QCBHciQ39dX8UG7yraUFYffGiuhoQwEBGb0u2DCJSL5HM)
-
-To display the colors of the models, you need to use a material that uses a shader to convert the vertex colors of the model to the colors. This is pretty easy to make using a shader graph.
-
-![](https://lh3.googleusercontent.com/Hgh7992lEGI_lvgMEVv_J8mfGyToasJ9P16CKPvjx9Wi_fecdlbufz4EJZN9jls2F9ecNQ1AIxcQZA8kLXQq_t_nYVK2EmyTNAUuYecKmk-LfrKv47II280cRxSnkUDYnGwpeNeAP7i1rioMWBmIbu4)
-
-You can then create a material that uses this shader graph, and apply it to the material of an object that has vertex colors:  
-
-![](https://lh6.googleusercontent.com/1XTsb8eNj7gpeXpFcGwPaB7K7514WRcMBON2gb8EhuCI3ABGNPdcDX2OCpUuV0aEOR4Kp4EnsLnr18b-TtHkDESLkNvEFtQjKV2D59d2YSBP0M0qdtepEfJAO05X-Wg4DbuMsFZ7PzAjud_t_Tz-bQg)
-
-
-# ???? Universal Render Pipeline, Lights, Materials, Shaders
-
-So you may have an idea of how you would like things to look, but how do you design visual elements within Unity?
-
-# Post-processing
-
-URP uses **Volumes** for adding post-processing effects to the scene. When a camera is within a volume, all overrides will be applied to the scene. 
-
-1. Enable “Post Processing” in the Camera
-2. Create a Volume Game Object and then create a Profile
-3. Add in any overrides that you’d like to include in your scene
-
-![](https://lh4.googleusercontent.com/sm1cjQ5nPucXWSn-htBTXzZVJ3Mvo1srIBJoMGZ1gIDQU110ZrW4TOO7ycWin-CoGETJI4iIV-ui6vFXOI7auRd45e2DU32YJqfSXlMdVUaHhOMMiWNEtbyGn_rBBckMONHPy2_fVuE_Q91bwORsIxE)
-
-
-## Global illumination
-
-![](https://lh6.googleusercontent.com/lfrfA4iPe9KvfuoDjLmWQkm6m18Og0GTD9Vue3pF22E0p95UMjrB_D3sZnWVLUHI_Zi_ZvwF84FjyZ4nAG4lmKs_PsQJC8eNwd2VZvDG6bb29KWr1zm1G3S7EUeXysIL9yKY7oIWjEYJlowxIzCsL3g)![](https://lh6.googleusercontent.com/lfrfA4iPe9KvfuoDjLmWQkm6m18Og0GTD9Vue3pF22E0p95UMjrB_D3sZnWVLUHI_Zi_ZvwF84FjyZ4nAG4lmKs_PsQJC8eNwd2VZvDG6bb29KWr1zm1G3S7EUeXysIL9yKY7oIWjEYJlowxIzCsL3g)
-
-Global illumination is a group of techniques that model both direct and indirect lighting to provide realistic lighting results. Unity has systems for both baked and real time global illumination. In URP, real-time global illumination is not turned on by default ([more info](https://docs.unity3d.com/Manual/realtime-gi-using-enlighten.html))
-
-## Exercise
-
-![](https://d7hftxdivxxvm.cloudfront.net/?quality=80&resize_to=width&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FaFR2A_1SkjNf3nza0_oWyA%2Fnormalized.jpg&width=910)
-*Object*. Méret Oppenheim (1936)
-
-Search online for a 3D model of a piece of furniture (the [Everything Library](https://davidoreilly.itch.io/everything-library-furnishings) is a good starting place). Change the material of this object into something impossible or unexpected. Create a composition around the object by using only Unity's default primitives. Frame the scene with the Main Camera object. Use the skybox, lights, and post-processing to enhance the scene.
-
-If you aren't sure how to recreate an effect, ask us and we can help.
+What did those of you who read Chapter 1 think? How about Chapter 5? 
 
 # Arcade games, culture, manipulation
 
@@ -190,7 +67,7 @@ Part of the economics of the arcade meant that games needed to be finished quick
 
 Arcade games are generally linear, “games of progression” with strict ways that the game is intended to be played. This results in a model of mastery of a particular rule set.  
 
-> challenges [are] presented serially by way of special-case rules. 
+> challenges \[are\] presented serially by way of special-case rules. 
 > - Juul. Half-Real
 
 A game like Pong is considered more of an emergent game, though the coin-operated nature of the arcade version, as opposed to a home version, doesn’t reward experimentation.
@@ -201,7 +78,7 @@ Arcade cabinets existed outside of the Arcade proper (where one would go with th
 
 Industry point of view - [https://departmentofplay.net/building-successful-games-6-lessons-from-arcades-heritage/](https://departmentofplay.net/building-successful-games-6-lessons-from-arcades-heritage/) 
 
-![](https://lh5.googleusercontent.com/OBgL7BBNEteq8_r886stEWH2w8ZoZZidxerl00z0XmsEnMdkrZnmNz-7WBD8C9PMHFOtEFoXV5p0aGce4Pgxx6GJiNrwSHzCBIf0n98-mteZYY39gOX1B5LreN4JKT_O96-fJEIKOW3IBmXswiFRB4I)
+![](assets/Pasted%20image%2020240424172216.png)
 
 [Ninja Baseball Bat Man](https://youtu.be/JpBysvAbnbs) (1993)
 
@@ -240,11 +117,62 @@ The ZX Spectrum from 1981 for about $200 (~$688), while other personal computers
 ![Can of Worms](http://www.melcroucher.net/img/can-of-worms.jpg)
 
 *Can of Worms*. Mel Croucher (1981) -- "10 games for 3 quid"
+
+# Methods in Unity 
+
+[Official Documentation](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods)
+
+A method is an encapsulated block of code that can be called elsewhere. Some methods that are probably already familiar are Start() and Update() which are built into Unity’s [Monobehavior](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) class.
+
+The signature of a method contains the access modifier (public, private), the return value (void, int, float, Vector3), the name of the method, and any parameters that should be passed to the method when called. 
+
+Here’s an example:
+```c#
+public void SayHello() 
+{
+	print("Hello"); 
+}
+```
+
+This method doesn’t return anything and has no parameters. How about adding in a parameter and a return value:
+
+```c#
+public string SayHello(string name)  
+{  
+	print("Hello" + name);  
+	return "said hello to " + name; 
+}
+```
+
+And even more parameters and this one returns a value:
+
+```csharp
+public string SayHello(string name, int numberOfTimes)  
+{  
+	for(int i = 0; i < numberOfTimes; i++)  
+	{  
+		print("Hello" + name);  
+	}  
+	return "said hello " + numberOfTimes + "times";  
+}
+```
+
+Call the method by its name and pass in any arguments, the return value can be used right away or stored in a variable
+
+```csharp
+// storing the return value in a variable  
+string result = SayHello("Duane", 500);  
+print(result);  
+
+// or using it directly  
+print(SayHello("Duane", 500));
+```
+
 # Cocktail Cabinet Input System
 
 [Download Cocktail Input Asset](https://drive.google.com/file/d/1YVcr7K-cj00N_OxzMZAMPesqlxzEWfb2/view?usp=sharing) , also be sure to install the input system package for your 2D project. The template does not come with the input system package.  
 
-NOTE: This technique uses Unity’s newer [Input System package](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.5/manual/index.html)  (just like roll-a-ball). So if you are trying to do Input.GetKeyDown("space") then you’re using the old system and the following info won’t work. If you want to use the older version, you’ll have to manually map the keys!
+> NOTE: This technique uses Unity’s newer [Input System package](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.5/manual/index.html)  (just like roll-a-ball). So if you are trying to do Input.GetKeyDown("space") then you’re using the old system and the following info won’t work. If you want to use the older version, you’ll have to manually map the keys!
 
 Currently the default input system uses “Actions” that are mapped to specific words like “Move” and “Fire”
 
@@ -264,9 +192,9 @@ After the import, you’ll see a new folder in your Project tab called “Inputs
 
 Notice that there are also separate action maps for each player.
 
-Next, attach a Player Input component to the object you want to control with your inputs. Then drag the GamelabCocktailCabinetControls into the Actions property.
+Next, attach a **Player Input** component to the object you want to control with your inputs. Then drag the **GamelabCocktailCabinetControls** into the Actions property.
 
-When using the default Player Input component, the names of the actions are mapped to callback functions:
+When using the *Default* Player Input component, the names of the actions are mapped to callback functions:
 
 Move → OnMove
 Fire → OnFire
@@ -276,7 +204,7 @@ You can see a list of the callback functions at the bottom of the component:
 
 ![](https://lh3.googleusercontent.com/gIfeMxNrR0jPotrO5643U99AT47TZQ4XjYEvEnEU51sz-FvNTCxVhmk4O39cVcXkfBe1cVO5-WgtNT_Hoav6H4f94P2fQd0fWJGIDqkSsS4a1S16RkOwpdZ7xqYlWWLcuRRpTJuO2h8kxmS4416VYeQ)
 
-With scripting, “Move” stays exactly the same between the two input action sets:
+When inside of a script, the “Move” message is exactly the same between the two input action sets, it becomes *OnMove*:
 
 ```csharp
 void OnMove(InputValue moveValue)  
@@ -309,7 +237,7 @@ In the player input component, you can modify which player is being controlled w
 
 ![](https://lh3.googleusercontent.com/g64asx6kseFTeb5d8rA6wq_svFLPeAv6vRhfb1GwRQjGbvsLi-DqQtaIEG8AzOuV0SG5745Nuyik7UrfhXc5xZbsM2smbMFfbeAqKE9CKId9-iHylsDdjFsFvFuyASDJ2M2Dm-JBfPIZNwOi9CfbIL8)
 
-## Modify existing functions
+## Modify existing input methods
 
 To use the Button1 inputs rather than something like Fire or Jump, you can change the name of the method in the script.
 
@@ -381,13 +309,15 @@ This is what the component setup would look like for one player:
 
 Try duplicating the object and setting the map to Player2.
 
-# Scripting Triggers and Collisions in 2D
+# Scripting Triggers and Collisions (in 2D)
 
-You've used the standard trigger and collision functions in the Rolling Ball demo. There's also the *HandleTriggerWithTags* and *HandleCollisionWithTags* scripts to hook different objects into both trigger and collision events.
+You've used the standard trigger and collision methods in the Rolling Ball demo. We will now return to Triggers and Collisions in the context of scripting. It might be good to revisit [Day 3](day-3.md) and take a look at the demo scene.
 
-But due to the physics system in 2D changing (Rigidbody2D, Collider2D, etc.), these won't work anymore. Let's take a look at how the scripts would change and how to write custom trigger and collision methods.
+Because of the physics system in 2D changing (Rigidbody2D, Collider2D, etc.), our old collision and trigger scripts won't work anymore. 
 
-Here's a simplified *HandleTrigger* script, which just removes the tag checks from *HandleTriggerWithTags*:
+Let's take a look at how the scripts would change and how to write custom trigger and collision methods.
+
+Here's a script that handles the three different forms of a Trigger event:
 
 ```csharp
 using UnityEngine;
@@ -399,19 +329,28 @@ public class HandleTrigger : MonoBehaviour
     public UnityEvent onTriggerStay;
     public UnityEvent onTriggerExit;
 
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        onTriggerEnter?.Invoke();
+        if(onTriggerEnter != null) 
+        {
+	        onTriggerEnter.Invoke();
+        }
     }
 
-    private void OnTriggerStay(Collider other)
+    void OnTriggerStay(Collider other)
     {
-        onTriggerStay?.Invoke();
+        if(onTriggerStay != null) 
+        {
+	        onTriggerStay.Invoke();
+	    }
     }
 
-    private void OnTriggerExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
-        onTriggerExit?.Invoke();
+        if(onTriggerExit != null) 
+        {
+	        onTriggerExit.Invoke();
+	    }
     }
 }
 ```
@@ -421,17 +360,11 @@ Note that there are three different methods based on the state that a Trigger mi
 2. Stay - a collider is currently in this trigger (called every frame)
 3. Exit - a collider just left this trigger
 
-The `public UnityEvent` variables create the event slots in the Inspector that you can connect objects to. There are other ways of setting up events in C# (delegates, actions) and are all connected to a common programming design pattern called Observer. [This blog](https://gamedevbeginner.com/events-and-delegates-in-unity/) has a good breakdown of the different types you could use in Unity.
+The `public UnityEvent` variables create the event slots in the Inspector that you can connect objects to. There are other ways of setting up events in C# (delegates, actions) and are all connected to a common programming design pattern called Observer. [This blog](https://gamedevbeginner.com/events-and-delegates-in-unity/) has a good breakdown of the different types of event "signals" you could use in Unity (and C#).
 
 ![](assets/Pasted%20image%2020231005002312.png)
 
-Another curiosity might be the '?' before each event is invoked. This is a "null-conditional" operator in C# ([documentation](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/member-access-operators#null-conditional-operators--and-)) and can be thought of as shorthand for writing:
 
-```csharp
-if(onTriggerEnter != null) onTriggerEnter.Invoke();
-```
-
-In the updated version, I'll revert back to this more explicit version of a null-check.
 ## Converting to 2D Physics
 
 Adapting the script to [2D physics](https://docs.unity3d.com/Manual/Physics2DReference.html) requires switching out the enter, stay, and exit script to the 2D versions of those functions… which usually just involves add "2D" to the end:
@@ -440,7 +373,7 @@ Adapting the script to [2D physics](https://docs.unity3d.com/Manual/Physics2DRef
 using UnityEngine;
 using UnityEngine.Events;
 
-public class HandleTrigger : MonoBehaviour
+public class HandleTrigger2D : MonoBehaviour
 {
     public UnityEvent onTriggerEnter;
     public UnityEvent onTriggerStay;
@@ -453,12 +386,12 @@ public class HandleTrigger : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if(onTriggerStay != null) onTriggerEnter.Invoke();
+        if(onTriggerStay != null) onTriggerStay.Invoke();
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if(onTriggerExit != null) onTriggerEnter.Invoke();
+        if(onTriggerExit != null) onTriggerExit.Invoke();
     }
 }
 ```
@@ -467,8 +400,9 @@ The names of the UnityEvent variables don't have to be changed, they can be name
 
 ## Make things talk
 
-Let's write a script that uses a trigger to show dialogue when your player is nearby. 
-This works very much the same way that we've used triggers to turn on/off game objects, but (almost) entirely inside of a script.
+Let's write a script that uses a trigger to show dialogue when your player is nearby. Kind of like Bitsy, but a bit different.
+
+This works very much the same way that we've used triggers to turn on/off game objects, but (almost) entirely will happen inside of a script.
 
 1. Make a new script called "ShowDialogue". Add in the methods for trigger enter and trigger exit. You can also remove unused namespaces and methods. 
 	
@@ -495,7 +429,7 @@ This works very much the same way that we've used triggers to turn on/off game o
 	}
 	```
 
-2. Add a public GameObject variable for the dialogue that we'll show/hide. This variable belongs to this class and is used by both trigger methods, so it should be declared in the scope of the class, but outside the trigger methods.
+2. Add a `public GameObject` variable for the dialogue that we'll show/hide. This variable belongs to this class and is used by both trigger methods, so it should be declared in the scope of the class, but outside the trigger methods.
 3. In each of the methods, set the active state of this variable to either true or false using the Game Object's *SetActive* method. In the following script, the game object is hidden right at the start, then activated when something enters the trigger area, and hidden again when something leaves the trigger area.
 	
 	```csharp
@@ -566,7 +500,7 @@ This works very much the same way that we've used triggers to turn on/off game o
 11. Drag the dialogue game object into the dialogueObject slot of the script.
 12. Press play and move your player near the object to see if they talk to you.
 
-If nobody is talking to your player, here is a checklist of things of common problems:
+If nobody is talking to your player, here is a checklist of some common problems:
 
 1. No Collider on the Player.
 2. No Rigidbody on the Player.
@@ -577,7 +511,7 @@ If nobody is talking to your player, here is a checklist of things of common pro
 
 ## Talkin workShop
 
-Take the scene with all of the found sprites and make objects in the scene say things when the player is nearby. You can have characters appear in different areas to say different things. 
+Import some images into your project to use as sprites and make objects in the scene say things when your player is nearby. You can have characters appear in different areas to say different things. 
 
 ![10 Beautiful Postcards](https://img.itch.zone/aW1hZ2UvNDI3ODMxLzIxMzk5MzEucG5n/original/P8LqAl.png)
 
@@ -597,11 +531,11 @@ Let’s talk a bit more about vectors and ways to get information about your gam
 
 ## Magnitude 
 
-… is the length of the vector
+… is the length of the vector. This often corresponds to some amount. For instance a force Vector2 of (3,4) would have a magnitude of 5: 
 
 ![](https://lh6.googleusercontent.com/7hX82MkM_bWGy2nxLChrY1NbkU6Ja239dmU41_U2wl3GI36cEG83amz8LLg3AWlIe_ZGHKU21731pQ8zYSZQoy4C1ZA66A03yYqvuN6aodVwp17ZixUjHQ7aGniCxnXW6NSKu0ZDvomeA32rPGQYZGA)
 
-You can get the magnitude of a vector in Unity like this:
+Fortunately, Unity can handle this calculation. You can get the magnitude of a vector in Unity like this:
 
 ```csharp
 Vector3 myVector = new Vector3(2.5f, -4f, 6f);  
@@ -609,8 +543,7 @@ float mag = myVector.magnitude;
 ```
 ## Distance
 
-Calculating the direction and distance between two points can be done with subtraction and taking the magnitude of the resulting vector.
-
+If your vectors are positions in space, calculating the direction and distance between two points can be done with subtraction and taking the magnitude of the resulting vector. Unity also has a handy Distance method:
   
 ```csharp
 // Gets a vector that points from the player's position to the target's.
@@ -625,7 +558,7 @@ float distance2 = Vector3.Distance(target.position, player.position);
 
 ## Normalize a vector 
 
-To normalize a vector is to keep the same heading, but with a magnitude scaled to one (often called a unit vector). Useful when you want to re-scale or limit the length of a vector but maintain its direction.
+To normalize a vector is to keep the same heading/direction, but with a magnitude scaled to one (often called a unit vector). Useful when you want to re-scale or limit the length of a vector but maintain its direction.
 
 Here’s an example where the velocity of a rigidbody (rb) is modified:
 
