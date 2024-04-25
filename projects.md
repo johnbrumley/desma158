@@ -15,7 +15,7 @@ Weeks 1-2:
 #### **DUE 4/9**: Sketch  
 #### **DUE 4/16**: Project
 
-<!-- [View Project 1 Submissions](project-submissions.html?p=1) -->
+[View Project 1 Submissions](project-submissions.html?p=1) 
 
 ---
 
