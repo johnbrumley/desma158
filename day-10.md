@@ -2,398 +2,307 @@
 layout: slides
 title: Day 10
 ---
-# Today
+# Plan for today
 
-1. [Instantiate and Destroy](#instantiate-and-destroy)
-2. [Animation and scripting](#scripting-animations)
-3. Prototypes and Work
-# Instantiate and Destroy
+1. Homeplay 2 Presentations
+2. [Animation](#importing-sprites-animation-frame-animation)
+3. [Miscellany](#mouse-interaction-dragging-snapping)
 
-While the game is in play mode you can create game objects in the scene using the [Instantiate](https://docs.unity3d.com/ScriptReference/Object.Instantiate.html) method. If you want to fully remove a game object from the scene, use the [Destroy](https://docs.unity3d.com/ScriptReference/Object.Destroy.html) method.
+# Importing sprites, Animation, Frame animation
 
-```csharp
-// a few ways of instantiating a prefab  
-Instantiate(prefab);  
-Instantiate(prefab, position, rotation);  
-Instantiate(prefab, position, rotation, parent);  
-// instantiate returns the newly created object  
-GameObject newObject = Instantiate(prefab);
-```
 
-To instantiate an object, you first need to create a Prefab of that object:
-## Design a prefab
+![](https://lh6.googleusercontent.com/4fIB1J9hAEj79oc2I_l9iKXzStuF3ngOfjMfM_I7pRbSJR_z9cayNIyk2OkXvx0uO2FXPf1xaHzYbQ-bEo9saSrxL5Uh1NKoNwCz5LpojiqPdFKRcKKWASbysOkrNRQoZqtAxpwGgWT8q81ePZHZgGE)
+*Mini Metro*, 2015
 
-1. Create a 2D circle in the scene Hierarchy. **Create > 2D Object > Sprites > Circle**.
-2. Resize it using the *Rect Tool* and change the color in the Sprite Renderer.
-3. Add a **Rigidbody 2D**. Leave the gravity scale at 1. Change Collision Detection to “Continuous”. (this isn’t totally necessary, but should be used for high speed objects)
-4. Add a **Circle Collider 2D**.
-5. Create a new folder in the Project tab called “Prefabs”.
-6. Select the GameObject in the Hierarchy and drag it into the Prefabs folder in the Project tab. You’ll notice that the icon next to the game object becomes solid blue to indicate that it’s a prefab.
-   >Note: You can click the arrow to the right of the prefab in the Hierarchy to enter prefab editing mode in the Scene view. Double-clicking on the prefab in the Project folder will also open the prefab editor. Editing the prefab here will change all instances of the prefab. The Hierarchy will change to reflect the structure of the prefab which can contain multiple child objects. Clicking on the left arrow takes you back to the normal Scene view.
-7. Delete the Projectile from the Hierarchy.
+If you’re using software (or a plugin) that exports to a sprite sheet (i.e. packing multiple sprites into a single image file), then you don’t need to worry as much about exporting techniques. If not, there are some things you can consider when authoring your sprites to make things easier down the line.
 
-## Build the Spawner
 
-1. Add an empty Game Object to the scene. Name it “Spawner”.
-2. Add a Player Input component to the spawner game object and drag the GamelabCocktailCabinetControls into the Actions property.
-3. Create a new script called “SpawnObject”
-4. Open the script and add this code:
+![](https://lh6.googleusercontent.com/T_52H5dOKJ8OEuA8Wo6_QIkL5Mf8LBwe2lYLXUq4XE-UMTdgdNz9Ss3y87YSRSoIZIM9zlKkcRltP66qF9DKb2cH7V1PXwkxVvVbSiiWvVclpXVXwmWpVuVqmyC4S_HIzL41MfXid-SGV8OQeD6_kpM)
 
-```csharp
-using UnityEngine;  
-using UnityEngine.InputSystem;  
+*Sprite sheet for Sonic the Hedgehog character animations.*
 
-public class SpawnObject : MonoBehaviour  
-{  
-	public GameObject prefab;  
-	// Spawn every time Button1 is pressed, feel free to use your own input action    
-	void OnButton1() {        
-		Instantiate(prefab, transform.position, transform.rotation);    
-	}
-}
-```
+# Animation in Unity
 
-5. Save it and return to the editor.
-6. Drag the prefab from before into the Prefab property of the script.
+![](https://lh6.googleusercontent.com/TkAIDFea7mw0182Qx3ZVgRp4sZvcAhJyMan85L5JkBfJoDKB1FK4GDa0eRdvy4kD473Bky_1EiggA8lJWq_oxoXGXKLJTzkweFhJKA1fGwrFqGhV9seGfa6PYdgbs6soE58I4BO1CEyfYBPhh4x5CDM)
 
-Press play and try spawning some objects. Notice that new objects are added to the hierarchy with “(clone)” added to the end of the name. Even though the objects fall off the bottom of the screen, they still exist in the scene. Let’s get rid of the objects.
+Not just limited to frame-animations in sprites, the Unity animation system allows you to create keyframe animations that control component properties and trigger functions. For objects that have multiple animations that need to be triggered based on the conditions of the scene, the system comes with a state machine to manage triggering animations.
 
-The script uses the position of the GameObject as the position where the object will be instantiated (as well as the rotation). If you don’t add a position and rotation, Instantiate will use the transform values stored in the prefab.
-## Destroy the objects
+## Keyframe animation with properties
 
-1. Open the prefab editor by double clicking on the prefab in the Project tab.
-2. Add a new script to the prefab. Call it “DestroyObject”. Add this code to the script. Save the script.
+Let’s get started by animating a circle to move back and forth on the screen.
 
-```csharp
-using UnityEngine;  
+![](https://lh5.googleusercontent.com/uAzf9lEEf8bfiODs7g9XA061qU0vbFtplZMSP4dLniffiUi7PLV_39ayeLM0C6LuhvkveojNShGYe1M8T3WFz140ysGAEDG4AmAY8U7jdp-MrE04H1czwXHDkBi8L_z9lk2hekrKQnHcU_R4q4GeWag)
 
-public class DestroyObject : MonoBehaviour  
-{  
-	public float delayTime = 1f;  
-	void Start()  
-	{  
-		// destroy after a delay        
-		Destroy(gameObject, delayTime);    
-	}
-}
-```
+Starting with an empty scene and a 2D circle sprite:
 
-Destroy allows you to add a delay before the object is removed. Press play and spawn objects, then keep an eye on the hierarchy and notice the objects disappearing.
-## Build a playfield
+1. Add the “Animation” tab to the editor by clicking the three dots on the top right of an existing panel, then Add Tab > Animation (you can also go to Window > Animation > Animation)
+   
+   ![](https://lh4.googleusercontent.com/MH4BNHmnzwP-eSsNa0KtXZIfLrT2OJqSmPzbEYi1F8DsXFfzB8WYK7MLUU57Ut5n9q_0KdgU7-cho5vD_qee7N9ujTQUvqsEUk7e4_Yax-E2DyOlN8iTnKhuLYPPbHXNcgItZpO-h2YYXLri-U2xTFs)
+   
+2. In the Animation tab, with the Circle selected in the hierarchy, click Create and save the new animation in your assets.
+   
+   ![](https://lh5.googleusercontent.com/08H0hD30kbKPePn97K1bG_XD7DwfqOom53KLlWDIXhQpWatRkIxCLGbjyhKXoWFznW04H53xnAWKacuWE2w7HsUPimBYn4nSRpC1pWXO7MHAKYk-4AR0HkB9bzvksM61m7TSXWo2ohlTGv2e_kG5Zok)
+   
+   This will create an Animation Clip and an Animator Controller in your project assets. It will also automatically add an Animator component to the Circle game object and with the Animator Controller set in the controller property. You can leave the default settings for now.
+  ![](https://lh6.googleusercontent.com/DGwkK4FvqLykPi27XqNhXrw1alQjMLVATjTJ752UvLaofHivzsfotWkajjDNaE4i88P6EK2bzqX0byNLLtnZ8kDfcq_7376_jUGIKPZ6tLGcRqr_Yzb24882gyDr0g9Oarod8pIAvhZuZAfOLxXi6II)
 
-Try creating a small level for the spawned objects to fall through. Consider classic pinball and pachinko machines. Use basic 2D sprites and colliders.
 
-![](https://lh3.googleusercontent.com/JnDA81bzLabt-fvpHIkUyIr3b3MaYu3oyVTqYu7uabuIKu1LEzARSCeEx8H8LZf1L-Cwrz-t804a1qZeyetmvUBCfm5bw2h6nFUZpX9abhTu2I4z4ONiRSDkf0dNvmUtWjQHUiXnDXWGkfXQT-1KIn8)
+3. The Animation tab should now show a button that lets you assign a property to animate. Click the Add Property button and select Transform > Position to add the position property to the timeline.
+   
+   ![](https://lh3.googleusercontent.com/xVXIqFWPyTdhpJUCNjDvWAbfmitx-dwOxeU3O86vMAp5asWM1fijOkrCyrPnHU6Q7rEzUutVSiAOWjkt1X87suliAvgNET6LEhT7QYBZOQ8vhQKSUeqU0TTegpFRn9MkAz5vLXOowSY8HnPFd873cO4)
+   
+   If you click off the Circle game object, you’ll notice that the Animation tab goes back to the empty state from Step 2. Make sure that you have the object you want to animate selected.
 
-![](https://lh6.googleusercontent.com/XoEDf-y1HQSV0RJyBI1G8oVX2KtTzKS8FiIklDI6WcB7Lx-1lf5eR1aN7uB6AZanRVYCi0vdVo4V2_ugZ8_6H8hTASrfxg_0n8YwfMb08WSJpTVKISA5DZcQ3bcVw8DpJ6bH2p4JzSApbckgde3lmQ0)
+4. Record some keyframes. Press the red Record Button on the top left of the Animation tab. Move the circle to a “starting position”. Since the playhead in the Animation tab is currently at frame zero of the animation this will set the object’s position at the start. 
+   
+   If you drag the playhead towards the end of the end of the timeline, you’ll see the position of the object animating back towards its original position.
 
-[Catalog of Vintage Nishijin Machines](https://docs.google.com/viewerng/viewer?url=http://www.pachinkoboy.com/wp-content/uploads/2020/09/Nishijin-Vintage-Machine-Catalog.pdf&hl=en) 
+5. Move the playhead to the halfway point and move the circle’s position to a different position. This will add new position keyframes to the timeline. De-activate the Record Button.
+   
+   ![](https://lh6.googleusercontent.com/v28d7stkMHOK6_KjSVwWqEIiPVGxv5eo0VIpKTfUSZ0ClZN637QAQdZui0R_0i3ZldbXqXkhIgK6x8V9iKxGdkqTXEeDd46l-u4tPv1HUamukf4--nTyE-yn0iijUl7gJblzFBLCl_FtRYMjJGSo6Vk)
+
+6. Now select the keyframes at the starting position, copy them (ctrl/cmd + c), move the playhead to the final frame of the animation, and paste (ctrl/cmd + v) the keyframes.
+7. You should now have a looping animation. Preview it by clicking the play button on the Animation tab. The Animator Controller is also set to start the animation as soon as the object is active in the scene, so pressing the global play button also plays the animation. 
+8. You can scale the length of the animation by selecting all the keyframes and dragging on one of the ends. Dragging to the right will also expand the overall animation length.
+   
+   ![](https://lh5.googleusercontent.com/LlMUvuo3gU-97_w9d3ux1eVOiHxbeom9qNvopVy9FNl_fSpWWzfLj_06o2aT9pCjIlI--_M7w5tGtocYjpmDr4UeIh60kfB2ELZ5hhMezABSWrHjNeajelObVmXCJ_1Qf9e5rVijCrUyjNAD0ycuvmk)
+
+9. You can view the Animation Controller in the Animator window by double clicking the “Circle” animation controller in the Project tab. Or with the Circle selected in the hierarchy, you can open the Animator window with Window > Animation > Animator
+   
+   ![](https://lh5.googleusercontent.com/K8zG8cs8AoT8aAprnGxp3OBS1qf_gZa4xETjs0aBdlRIoSsoo11eWCn_24LxKexn_Nz3sdMIjog6_DMhytoaOtMlBpd8sgw88ikzYdP5sprOwMiWICdu9cbxWe5M3FbnkR-XQyUkQGKE26qQDQOKofI)
+
+There is only one clip for this controller, so there isn’t much to see. But you can select the clip and modify its settings in the inspector (for instance scaling the speed of the clip).
+
+![](https://lh3.googleusercontent.com/qrLu031c1gvTlEQZU94F-p7saXjXYsNPjK5sQmAijbRFvgYuWqV0zhApVmPzC_LI6uUOD3Ymu-PqIE-xQjNiNBS2tjzJ6_5Ip4Apzl9ywYmuBtU-9cCKc4Hn1HVUIBFndyrq4RH48WPY_QDGyLT7JB8)
+
+# Frame Animation with sprites
+
+By animating which sprite is displayed in the SpriteRenderer component, you can create frame animations of sprites.
+
+## Exporting individual sprites
+
+The most common workflow for generating your sprites is to have each individual sprite on a separate layer in photoshop and then to export each layer as a separate PNG file. This is done using Export > Layers to Files…
+
+![](https://lh3.googleusercontent.com/K_oOwAWMZLWKRN07PAh9sTScw6-hSxRXjnlf7Clvtwk09ZHzREFm-nduBHXxRZr2H1K4khvVKEaxfzotl45JzOn5VbcQIYUx9YVWXsXfkXj__a00DE4Y7Y2YlI9Rd7fZiTOl8gdoW2ReEA6YONi3LCI)
+
+You’ll end up with something like this:
+
+![](https://lh4.googleusercontent.com/grGOc8ORWOW85kgjCvGE2oqwTTxijYISEnlB8xnThaOw9O0E7JYwTzjpfWDYLvrRnb5jpEDLbJ3LJ8NtCd14sP3uxqoWLkNIBR9l4MG0Lh-MxZz-LngtTZARDcV_IuSnwtJznLqVf4GZnTfQpNSuVk0)
+
+And then you’ll need to organize groupings of sprites in your Unity project using folders or repacking sprites using an [atlas](https://docs.unity.cn/2021.1/Documentation/Manual/class-SpriteAtlas.html) .
+
+## Sprite sheets
+
+The sprite atlas mentioned above is a way to combine all of the individual sprites onto a single texture for more efficient loading and unloading of texture files. This is known as a sprite sheet.
+
+It is not uncommon to create the sprite sheet within another program and exporting all your sprites as a single image file.
+
+![](https://www.spriters-resource.com/resources/sheets/179/182528.png?updated=1697299846)
+
+
+Usually sprites are packed into a grid. When importing into Unity, you'll set the sprite import settings to read the file as "multiple" in order to chop up the single file into individual sprites. 
+
+Here's the sliced up grid for the previous sprite:
+
+![](assets/sprite-slice.png)
+
+We'll get into the details of the sprite importing process after talking about another method for importing sprites.
+
+[Spriters-resource](https://www.spriters-resource.com/) is a good place to see lots of examples of sprite sheets from lots of games.
+## Directly importing sprites from photoshop
+
+But, when using the 2D (URP) template, Unity includes a number of 2D specific packages that might be useful to reduce importing headaches.
   
 
-![](https://lh4.googleusercontent.com/YDEVeYrvfGbV0tm5j-_1eUsAKOH--vwt3Ni0BRMD7hUK3Qgk4SrBYp1Ug4BSKzC2Ox1p1n4mqVthsirIomXPa04XoFTi7IxhIEk2KNAmc6_BPQjL0d7T41da-rRtZ8Baw2BBpzNjaxhlZtuqgjlqZmI)
+![](https://lh6.googleusercontent.com/ZFU6OTwrFU-5mJ8LIsIulD7ymxYknpupHkTYe0di088MRJNVQnh1Y4ejMnXs39Te-W_eKeIQCb8bTNj6C7pyV29wcyU3sSw3YNAXhKseMvd8cwb__s4pA5hAMMRNAsMMw-xg4WxibgZ6qXT9W3hU4K4)
 
+The 2D PSD Importer package helps out with mapping Photoshop layers to sprites, for both generating sprite sheets and rigged characters.
 
-Also lots of examples on the [Internet Pinball Database](https://www.ipdb.org/search.pl)
+[Here is a very good overview](https://youtu.be/b2bIh8WPsi4) of what the package is capable of. For this demo, we’ll only be bringing in sprites for use in frame animations. 
 
-Extra things to try:
+With the importer package, you don’t need to manually create a tiled sprite sheet, where each frame of the animation is placed on a grid (see above sheets). Instead, create each sprite on its own layer and Unity will handle how the sprite should be broken up in the import settings.
 
-1. Spawning objects and adding forces to them 
-2. Bumpers (i.e. add force to the object when it collides with specific objects)
-3. Multiple spawn points that use different inputs to spawn
-4. Points
+1. Create a simple character with a two-frame idle animation. Place each frame in a separate layer. You can group the layers and name them based on the animation type. Unity will bring over these names. **Important**: Make sure all layer names are unique (even hidden ones).
+   ![](https://lh6.googleusercontent.com/jWbzNwKUFw1UUMU7RAyTx1oHSVT2Aw0imBiY2-uH52JP4RP7RMhxhhq_i9Z6q-FDWEYmS5AdS5nFnD-__f5icMz9Ju2HknfdJDCZT4yEEZYac6I0UefcdHR-69SpQIqRxfRR_n4ifMsDd-tddFUj7l0)
 
-Hint: 
-
-```csharp
-var obj = Instantiate(prefab, transform.position, transform.rotation);
-obj.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 5);
-```
-
-```csharp
-using UnityEngine;  
-using UnityEngine.InputSystem;  
-
-public class SpawnObject : MonoBehaviour  
-{  
-	public GameObject prefab;  
-	// Spawn every time Button1 is pressed  
-	void OnButton1()  
-	{  
-		GameObject obj = Instantiate(prefab, transform.position, transform.rotation); 
-		obj.GetComponent<DestroyObject>().delayTime = Random.Range(0.5f, 5);  
-		Rigidbody2D rb2d = obj.GetComponent<Rigidbody2D>();  
-		rb2d.AddForce(new Vector2(1,1) * 5f, ForceMode2D.Impulse);  
-	}  
-}
-```
-
-# Scripting Animations
-
-To control different aspects of the animator inside of a script, you can get a reference to the component using the **GetComponent** method.  
-
-In addition to the public properties on the Animator component in the Inspector, the Animator allows you to control which animations are playing, the speed of the animations, and user-defined parameters within the Animation controller.
-
-For some tests, open a scene that has an animated object (any of the examples from last class will work).
-## Changing the speed
-
-Create a new script called **AnimationController** and add it to the object being animated. Rather than making the animator variable public and connecting the component to the script in the inspector, we’ll use **GetComponent** to automatically find and connect the animator.
-
-  
-
-![](https://lh7-us.googleusercontent.com/stQ1xbsO036T-4rY2DmpzMWJMzQnbzL8ObU856vTAjVNtjaU8m2MkN4Sqa32gSAXDgj67VaedoHkbGFPwV7bOmV95uJElLJ0FfWYEhLHCB0KRZ3VwDZ_YWEvpIuXbvo6TqZ7ZQwP8WveMfZay3M1_x8)
-
-
-Copy and paste this code into the script:
-
-```csharp
-using UnityEngine;  
-
-public class AnimationController : MonoBehaviour  
-{  
-	public float speed = 1f;  
-	private Animator animator;  
-	void Start()  
-	{  
-		// get the animator  
-		animator = GetComponent<Animator>();  
-	}  
-	
-	void Update()  
-	{  
-		animator.speed = speed;  
-	}  
-}
-```
-
-
-Try playing the game. You can change the speed of the animation directly from the inspector. You could modify this script to have the speed change over time:  
-
-```csharp
-animator.speed = speed + Time.time;
-```
-
-## Delaying Animation
-
-An animator component will immediately start playing as soon as the object is awake (and the component is enabled). Generally, activating the game object with the animator component is the easiest way to control when an animation will start. 
-
-The following script uses a [coroutine](https://docs.unity3d.com/Manual/Coroutines.html) to toggle the animator component in order to control when the animation starts. You can replace (or combine) the previous script with the following:
-
-
-```csharp
-using System.Collections;  
-using UnityEngine;  
-
-public class AnimationController : MonoBehaviour  
-{  
-	public float delayTime = 2f;  
-	private Animator animator;  
-	
-	void Start()  
-	{  
-		// get the animator  
-		animator = GetComponent<Animator>();  
-		
-		// turn off the component  
-		animator.enabled = false;  
-		
-		// use a coroutine to delay  
-		StartCoroutine(RunAfterDelay(delayTime));  
-	}  
-	
-	IEnumerator RunAfterDelay(float delay)  
-	{  
-		// wait a moment  
-		yield return new WaitForSeconds(delay);  
-		// turn on component  
-		animator.enabled = true;  
-	}  
-}
-```
-
-
-This script also demonstrates how to pass a value to a coroutine if you wanted to reuse the `RunAfterDelay` method with a different value.
-
-Coroutines can be useful any time that you need to do a task over the course of multiple frames or if you need to pause the execution of some code without pausing the entire game.
-
-## Triggering an animation (Animator State Machine)
-
-Rather than relying on the auto-play feature of the animator, it’s possible to create a trigger parameter that will tell the animator controller to change from one animation state to another. Let’s recreate the animation delay, but using an animation trigger.
-
-1. Start by opening the **Animator** window either by double-clicking on the controller in the project tab or going to **Window > Animation > Animator**
-   ![](https://lh7-us.googleusercontent.com/5izT62J-sRaJBp79Ss4mvzJNih4d9b61DUouI9oUWOyrvrEp3QZb-OZEfR1oZBIArzAJIDcw8E1UadkIYK_lGg5DLKlnz5JedqlsCyJ5vAiMB2SSuoMokSjsxXvr1Z0117FzFjxI0XYAZaIPu2uR5iw)
+2. Save the entire scene as a PSB file. This is nearly identical to a PSD file, but can handle larger files. Unity will only import these types of files. You can save it directly to your project’s assets folder.
    
-2. There should be a few different boxes which represent the current state of the Animator. Lines represent transitions between the states, with the arrows showing the direction of the transition. The Entry state will always transition to a “Default State” when the component becomes active. Because there is only one animation clip in the controller, that animation will always start playing immediately.
-3. Create a new, empty state to use as an intermediate state. Right-click in an empty part of the state machine area. Select Create State > Empty   
+   Save as type > Large Document Format (*.PSB)
    
-   ![](https://lh7-us.googleusercontent.com/wqQEuSplgax-lj_B1aTkq_JSZNHF-li57cGrWsV--m5xxlYB1RUCG-Ju6eblREhLc6rjCl6UuyVRu6nGhlmQXMMsm2veII-ZziK45MjLBav7cjsiIV3FqF2y-PyvVMA2KyqHGtcCIpcqqgzlPz-XjgA) 
-4. A “New State” box will appear. Selecting it will bring up the state's properties in the inspector window. You can modify the name of the state there or add an animation clip to the state on the Motion parameter.
-5. Right-click on the new empty state and select “Set as Layer Default State” the transition from Empty will now go to the empty state.
+   ![](https://lh3.googleusercontent.com/45uevjmaM54SZYKVAinlFXVlPW13x9zL1J_ykJi3LQuURmwSxHCmz4dlrug13MpC9wJxRRa4HCzYMorHRzmF6zUqI5NlapvhSHbl9uGAfXKlDiXeX9nKTaoKNe2FVhrTgwHpBYaB87w4LMDAmTgiHic)
+
+3. Back in Unity, click on the PSB file in the Project tab to bring up the import settings in the Inspector.
+4. Make sure to have the following settings:
+	1. Sprite Mode: Multiple
+	2. Pixels Per Unit: 100 (this depends on what resolution you are working at)
+	3. Import Mode: Individual Sprites (Mosaic)
+	4. Use as Rig: False (unchecked)
+	5. Filter Mode: Point (no filter) – this is if you want crisp pixel edges
+	   
+	   ![](https://lh3.googleusercontent.com/PxfLSvS5TbXlHXlIui1pSnVp7IbeeEmo7DtpRsHQ6WG8tk9GXQFv9FW7c9OYvyVuhOAiAxg9XRphG8-CcGF6dlEZiGA8ZfOrmQyA9bV1POhMuxj0Ut4tU1J7eZsbVlAMa3DNRUKLl4xK5bLuKIFgbL4)
+
+5. Hit “Apply” and then click on the Open Sprite Editor to see how your sprite was imported.
+6. You should see bounding boxes around each separate sprite. For a character like this, it’s important to have the pivot at the base of the sprite. Select each box and change the pivot to Bottom Center. For other sprites you’ll want to keep the pivot in the center or move it to another part of the sprite.
    
-   ![](https://lh7-us.googleusercontent.com/nFCW9yoB3qTIDKRKcsPEeTrF6FJsNxLVvIMol0Td0P_FP_zce99tXved93Xl8KShoJjwNSTIgmHmHP8Njj0hVDFQ8qe184zcddjNvjsvZgJTpfCEAR4iODFvYi6LDC1995hpGFPmnUX42I9IX3IOkV0)
+   ![](https://lh5.googleusercontent.com/4S0elu05MVyKWMSTD0clPgu9kn0msGUrvrhDw2GMPKel_xeSrKwDO8cg8i6CYptA0OmgIXPZMefB_2m4u5TMDNu6dytax0Zg_ZRiT5n4tvJdP1uX1a4ujWpw0nvRAXJ3LKn3Ksf6DFY-IjPivk9JO-8)
    
-   ![](https://lh7-us.googleusercontent.com/EFoAGIoDVMgIq2nx1E_G15mGolVc32lJsLxNnZ6gyj7Gh09A6RVXtMN-MB2MWeZi2x5h_ACq_z3vdxlY3u7H-pqpMpNKDkxTiTrrPxnBn0wjJTeub1XFogcq93lhnkAohQRlV2kiQTA1_Gv_Tc3ccMY)
+7. Import some more sprites that you might want to include in your scene. I found some clouds. Because we started the Project in the 2D template, all images will be imported as sprites by default. You can import new sprites separately or play with packing similar sprites into a single PSB file.
+
+Here’s an example of a bunch of different clouds all imported together and how the resulting sprite sheet turned out:
+
+![](https://lh5.googleusercontent.com/decjD3NU32zwL3Bk6iuy9rZR_CWOVtQgqdyKRL6Jj0q5vtBYsZRvHdffDsteSXlviugIMt_UbEaClanLeqjfuWfsr3lQe685Mf13Z4MppAZClolI16-81Pqex7t45mKAXtLhtsSYUbGVk45qjgxzcgE)
 
   
 
-6. Now create a new transition from the new state to the other animation clip in the controller. Right-click on the empty state and select “Make Transition” and then click on the other animation clip.
-   ![](https://lh7-us.googleusercontent.com/E5KKWGqFsZ9f1nMY8zALxNEGGDQKqyrikE3_vzBV16Toa04ewALM2MEK3a1V_DjJYQlP9_IPMEDdLmno63vzB3pjtx8JpbLhVRxFEkKRo2ey7vx9eTewPuE4b1P5vSNkXUot99s797XBr8ZoEQ8h6-s)
-   
-   ![](https://lh7-us.googleusercontent.com/8VLI1dEG2orQnV69Pqi_Vl2GV62PQ9E6krVyxRx9ZOB_4BgWuMrzSxBkWYl3eIek16bujDTkYqf_06ylVSHg_lodGmNEmGLIoaP4r1nR2_DXdCQGm-Y4MOMToWBspVJYjlAkskL-VnTbk0WCM-nmOAY)
+![](https://lh5.googleusercontent.com/ykjKmdMCIk1K0ilh_0Lpw_Wnp-olN-MkpQew8kWA5dHLP3SSydN2_NNQDROwYpCj9Y_K6dWNySC44XV0fXUTWIQrzVonSkKG8IWwgY5uA9bo_n8Xzi5GAcB4L7Hw-6PBEgLhZOlTJM7qlWnClBevBBA)
 
-7. If you were to press play now, the animation would wait a moment in the empty state and then immediately transition to the next state. To turn off the automatic transition, select the Transition and in the inspector uncheck the “Has Exit Time” box.
-   
-   ![](https://lh7-us.googleusercontent.com/_nPVcl_037erjMP6oKnbIknHKfkCqUhm_z0R2s9XPC5EPNLnZLtiCtQmRPm8H8sOatDaKM5GzhG40vkBskzRexao_m6MAB4nO6ZQCpTLoMQvqBXxwZJRqJbWcasnAgo2eUaw4w8Q1hkYUDvSDH-hhzI)
 
-8. Now create a trigger parameter that will tell the controller when to transition from the empty state to the animation state. At the top left of the Animator window, change to the Parameters tab and click + > Trigger to create a trigger parameter. Name it “start”.
-9. Select the Transition again and in the inspector under Conditions, click the “+” button. This should automatically add the start trigger to the transition condition.
-10. If you press play and keep the Animator window open you can click on the circle next to the trigger parameter to transition from the empty state to the animation state.
-12. With the trigger set up, we can now modify the delay script to control the transition automatically using the SetTrigger method of the Animator class.
+# Creating Idle animation with Sprites
 
-```csharp
-using System.Collections;  
-using UnityEngine;  
+Adding the idle animation to the character.
 
-public class AnimationController : MonoBehaviour  
-{  
-	public float delayTime = 1f;  
-	private Animator animator;  
-	
-	void Start()  
-	{  
-		// get the animator  
-		animator = GetComponent<Animator>();  
-		
-		// use coroutine to create the delay  
-		StartCoroutine(RunAfterDelay(delayTime));  
-	}  
-	
-	IEnumerator RunAfterDelay(float delay)  
-	{  
-		// wait a moment  
-		yield return new WaitForSeconds(delay);  
-		// trigger the animation  
-		animator.SetTrigger("start");  
-	}  
-}
-```
+1. Drag the first sprite of the character into the scene (or grab a 2D sprite sheet elsewhere).
+2. Name this GameObject “Player”
+3. With the GameObject selected in the Hierarchy, open the Animation tab Window > Animation > Animation.
 
-The function can take in the name or id of the parameter containing the parameter you would like to trigger.
+![](https://lh3.googleusercontent.com/z9NKlQ178g0W8SvFdjXH1ql7l3BR2RKIKO4E1Jnw5plZ-1Gbrbyt-_xeFMEFkNsbGzW6BuVhdgoT7yWITQvwjFldKyaL9IFrp7xYCo09c1ir9AhSQex37l4jPU_r0ZksPYa5o0g5ErQ0EVHxreqxIGc) 
 
-# Animation triggers and properties in other situations
+4. In the Animation window, click “Create” and save the new animation as “player_idle” (It’s a good idea to create an Animation folder to store all of the animation clips and controllers). There should now be an Animator component on the Player GameObject.
+5. With the Animation window still open, select all the frames of the idle animation in the Project tab and drag them into the timeline of the Animation window. You should see a keyframe for each of the sprites. 
 
-## Going from Idle to Walk and back. 
+![](https://lh3.googleusercontent.com/WHASKDWHWGFnQbSloJbEzGKc7W3uDWlIXgcZ6CuUoVlMckIksQyHf4kEc2a4v-QdYkMLfN8u1fcPA6Gg457Wn24TVE2nv6lLfOMZPCIXG84GLwHmeQoQRhUPCHezJZ8waT_aVexVwTFF4WZbOaHqNkA)
 
-For this example I’m adding the animation to the player character sprite.
+6. Preview the animation by pressing the Play button in the Animation window. It will be really fast. You can slow down the animation by reducing the Samples value to 5 or less. If you don’t see the Samples area, click the three dots on the right side of the Animation window timeline and select “Show Sample Rate”
 
-1. Select the player game object and open the Animation window. Click the “create” button if there aren’t any animations yet.
-2. Create another clip so that there are two animations associated with this controller. You can add the keyframes for each animation later.
-   ![](https://lh7-us.googleusercontent.com/i6HmiFyDSOtBUCtJe1pNp31DCrNEHFSVNJQRlwsv5uWOQVPPk-l49f2DOK1Czk3vec00iX9gDNibSdlVC_SiuMwEFBJ8ixLN-LMfNNdyHDDday1StwRYtpwFU6MEKVDvjwabWN_GfP4OEhoG8AeUCi4)
+![](https://lh6.googleusercontent.com/nAmCRef_px0aDn7Y7pvcUjctp37p6hQtBnVHfxJWbrEj6Yt28dHrCYaH5qRdFwFTlgN2fblfBe9KnovNY0dEwOVZZvgosO5W5wkT0V2To_uaVdTBDMBhdhhFKSFTC6Shm4_0gwN7wVrcXWU7JplolT4)
 
-3. Open the Animator window (Window > Animation > Animator). Make sure that the Idle animation has the transition from the “Entry” node. 
-4. Create a transition from Idle to Walk and another transition from Walk to Idle. 
-5. Click the “Parameters” tab and click the ‘+’ button to add a new Bool parameter called “moving” 
-   ![](https://lh7-us.googleusercontent.com/cAE300Zp2jDjXTLhT0OCaVfyraoF05XAkgP_U1GUku7_8nuVVBH5Mnw7VSLJwSan5KceB-g3yYIwvcmZHYlDhUwERSGFtfE14JtSXKnZFKnq1t5STiZLDZr8PGI6TUSV5Q5rLok5xzwwGT_s-R70U4Q)
-   
-6. Select each transition and add a new condition in the inspector. For idle to walk, the condition is “moving: true” and walk to idle will be “moving: false”. You can also turn off any transition timing so that the animations will change immediately.
-   ![](https://lh7-us.googleusercontent.com/GzikGTNdKKj9oB976Xd0kiLBi6IOmqOxWHUpReV4efwLp_smnTrUkOhVZNYmL_M-TYzbpCuhusNF75RSqcri2i1_t6yOFcmugl9CYM0IYPZATyV1nN0fC2VBxO2_SryfV4bTdezmdp2N_Vfse4-eyrE)
+7. The character should now have an idle animation. Press play in the scene view and the animation will start with the scene.
 
-7. Now open up your player movement / player controller script. You’ll need to add in a new variable for the Animator and get the Animator component in the Start method.
-8. Next you’ll check if the direction is zero and you’ll set the “moving” Animator Parameter using the [SetBool](https://docs.unity3d.com/ScriptReference/Animator.SetBool.html) method.
+# Mouse interaction, dragging, snapping
 
-Here's an example of a PlayerController script that sets the animation parameter inside the Update function, the script also shows another way to connect Inputs to callback methods:
+I've put together a script called `MouseDrag` that you can attach to objects you'd like to test out with mouse interactions. UI Buttons are already set up for receiving mouse inputs, so you don't need to add this script to those.
+
+Create a new script called `MouseDrag` in your scene. 
+
+> Note: Mouse events work in both 2D and 3D, but the snapping on this script is only set up for 2D (using Physics2D and Collider2D)
 
 ```csharp
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-public class SimplePlayerController : MonoBehaviour
+public class MouseDrag : MonoBehaviour
 {
-    public float speed = 1f;
+    // toggle whether to use snapping
+    public bool snapToPosition = false;
+    // radius to check for finding snap points
+    public float snapRadius = 1f;
+    // use a layer mask to filter unwanted colliders
+    public LayerMask snapLayer; 
 
-    Vector2 direction;
-    Rigidbody2D rb;
-    Animator anim;
+    // reference to our camera
+    Camera cam;
 
     void Start()
     {
-        // shortcut for getting the current map of input actions
-        var map = GetComponent<PlayerInput>().currentActionMap;
-        // bind the movement to the "performed" -- similar to keydown
-        map["Move"].performed += ctx => direction = ctx.ReadValue<Vector2>();
-        // reset direction when button released
-        map["Move"].canceled += ctx => direction = Vector2.zero;
-
-        // get rigidbody
-        rb = GetComponent<Rigidbody2D>();
-
-        // get the animator
-        anim = GetComponent<Animator>();
-    }
-    void FixedUpdate()
-    {
-        // move the player
-        Vector2 newPosition = rb.position + direction * Time.deltaTime * speed;
-        rb.MovePosition(newPosition);
+        // shorthand for grabbing the main camera
+        cam = Camera.main;
     }
 
-    void Update()
+    // do something on mouse click
+    void OnMouseDown()
     {
-        // change animation based on movement
-        if(direction == Vector2.zero)
+        print("mouse pressed");
+    }
+
+    // do something while mouse is clicked and held (every frame)
+    void OnMouseDrag()
+    {
+        // move object to position of mouse
+        Vector2 mousePos = Input.mousePosition; // using old input system
+
+        // convert from screen space (mouse coords) to world space (game coords)
+        Vector3 newPos = cam.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 10f));
+
+        // set the position
+        transform.position = newPos; 
+    }
+
+    // do something when mouse released
+    void OnMouseUp()
+    {
+        if (snapToPosition)
         {
-            anim.SetBool("moving", false);
-        } else
-        {
-            anim.SetBool("moving", true);
+            // use an overlap to check for nearby objects 
+            Collider2D collider = Physics2D.OverlapCircle(transform.position, snapRadius, snapLayer);
+            // if another collider was found, snap to that object
+            if(collider != null)
+            {
+                transform.position = collider.transform.position;
+            }
         }
     }
 }
+
 ```
 
-## Playing Animation On Mouse Click
+You can attach this script to a game object that you'd like to drag around. 
 
-You can use a Trigger parameter to transition. The set up will be like a combined version of the initial state machine example and the idle-to-walk example
+The only caveat is that **the object needs to have a collider** ([documentation](https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnMouseDrag.html)).
 
-1. First, create an object which can react to a click event (has a trigger collider) and which also has an Animator component.   
-   ![](https://lh7-us.googleusercontent.com/dTm3hdeLmKduBvStioYjFN_0kHodb19GQiGe_DRdd_7W3-SEfOpk4f7xPRM_-fLcP5i4JQHyf-OxThfkYHW6vCK0VHlPCV7yM-tdsxQGY95SE5ELsteB9Ric9YFEcRoLs-4Vn0UE2xqOUCkkgU1kXGE)
-2. Next, open the Animator window and create a Trigger parameter called "play". Then set an empty clip to be the Default State and a transition to the animation clip. Add a condition to this transition and by default the condition will be set to "play". Create another transition back to the empty clip without any conditions. This will automatically return to the empty state when the animation is finished.
-   ![](https://lh7-us.googleusercontent.com/zIVRRsjxNT4PmYzVlNfA1RHtoX_slKeqbSx-txtq0uHWc_2efSj_aF9ev0v3CmnmBQwuWH5Ij6eQe6AGXj7dCKha_zWeNf1mNmGxvJmGn8f_ctNhh9fCvIkuI-mqGfZy7Ojm2EpQ2aUf98kSnCgJBt4)
-3. Now add a script to the game object which will trigger the "play" parameter as soon as the object is clicked.
+The `OnMouseDown` method is empty, but this can be used if you only care about whether an object has been clicked. `OnMouseUp` is only used for snapping.
+
+## How snapping works
+
+When you release the mouse on the dragged game object, `OnMouseUp` will run. 
+
+After checking for whether `snapToPosition` is true or false, the script will use an overlap, specifically [OverlapCircle](https://docs.unity3d.com/ScriptReference/Physics2D.OverlapCircle.html), which temporarily creates a circle at a position with a specified radius and will return the first collider that overlaps with the circle. 
+
+Here, the script uses the position of the game object which is being dragged as the center of the circle and a radius specified by the `snapRadius` variable. Additionally, the `snapLayer` layermask will filter out any colliders that aren't on the layers we're interested in.
+
+If the returned collider exists (i.e. is not null), the script will set the dragged object's position equal to the position of the collider object.
+
+![](assets/snap-points.png)
+The snap point requires only a **Transform** and a **Collider2D** to work. In the above image, I've used a sprite renderer to make it easier to spot the point. 
+
+Additionally, I've placed these snap points on a [Layer](https://docs.unity3d.com/Manual/Layers.html) called 'snap' so that the `snapLayer` property of the `MouseDrag` script can be used to ignore all colliders not on this layer.[ Adding a new layer](https://docs.unity3d.com/Manual/create-layers.html) to your project is done by clicking on the layer dropdown and selecting *Add Layer...*. After adding a new one by typing the name into one of the empty slots, you'll have to go back to the object and set it to the newly added layer.
+
+![](assets/draggable-object.png)
+
+The draggable object now has the `MouseDrag` script with snapping set to true and the `snapLayer` set to 'snap'. 
+# Joytokey config
+
+For those that might want to test the cocktail cabinet inputs by plugging them directly into your computer. You can download the [JoyToKey](https://joytokey.net/en/) config file (you'll also need to download JoyToKey): 
+
+[https://drive.google.com/file/d/1eRSZgUk_XG248zJ_lDLOb1Vf2FHsWwJD/view?usp=share_link](https://drive.google.com/file/d/1eRSZgUk_XG248zJ_lDLOb1Vf2FHsWwJD/view?usp=share_link)
+
+# 2D Platformer Package
+
+![](https://lh4.googleusercontent.com/a3eFBqz2M1djEJb7lQ0yRjeK0_1l4aqcZtdht00yuYqCsdfQ0sjl1zHl6wH330NbI229mABaRCxAv0xZIQRZBRxDwt_xc_PvoM9Ad7proYUBGMExbirZRNwSgDkwzUgZWZrQri01ibaeyJQFmNKHOtI)
+
+So you don't need to try and roll-your-own 2D character controller. I’ve made a demo that shows how to connect this [2D Character Controller script](https://github.com/Brackeys/2D-Character-Controller)  with the newer input system, specifically the one used by the game lab arcade machines.
+
+Download the [demo unitypackage](https://drive.google.com/file/d/17CZ3ogYZOAYwsJTV8AN-7D53HzC9NNmg/view?usp=drive_link) and test it out.
+
+You can watch a video walkthrough of the original script [here](https://www.youtube.com/watch?v=dwcT-Dch0bA).
+
+If you want to allow for the character to crouch properly, you will need to modify the “Interactions” section of the input actions:
+
+
+![](https://lh4.googleusercontent.com/3ONCsb-IGzJjWnEkX5VljcKfyd3Y7yZm8lW2G1-JB8wIFxCax_T6dawDNfXyhFtnvKd887IO84c9MNWywPZYN8uOpqVC8UvHNRDpf4Tv2FWyEpbd0fTjzSTv7cv02aRph1Dltt6NBYMamKzFX7saLNw)
+
+  
+
+This allows the OnButton2 to trigger on both press and release. You can check the state by testing the input value:
 
 ```csharp
-using UnityEngine;
-
-public class AnimateOnClick : MonoBehaviour
+void OnButton2(InputValue value)
 {
-    // reference to the game object's animator
-    Animator animator;
-    void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
-
-    void OnMouseDown()
-    {
-        // trigger animation
-        animator.SetTrigger("play");
-    }
+	if (value.isPressed)
+	{
+		crouch = true;
+	} 
+	else
+	{
+		crouch = false;
+	}       
 }
 ```
-
-
-# Yarn Spinner resources
-
-![](https://307131674-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MUzduXovTOfMmBpZ0Wi%2Fuploads%2Fgit-blob-59beacc727f86016ffafad8aa1c402892857c4e3%2FScreen%20Shot%202022-01-28%20at%201.38.03%20pm.png?alt=media&token=232ec76d-78a1-4523-a1a9-e5412b13b587)
-
-For those wanting to write dialogue in the style of [Twine](https://twinery.org/) or [Ren'Py](https://www.renpy.org/), Yarn Spinner is likely the best *free* plugin for Unity. There are very capable[ paid assets ](https://www.pixelcrushers.com/dialogue-system/) as well if you find yourself in need of something with many more features.
-
-> Note: Yarn Spinner can be quick to set up using its default components, but making the UI look good or adding other custom functions will require customization
-
-The [Yarn Spinner documentation website](https://docs.yarnspinner.dev/) is the place to get started. You can also find a specific tutorial for [installing and setting up Yarn Spinner with Unity](https://docs.yarnspinner.dev/beginners-guide/using-a-game-engine/yarn-spinner-for-unity). 
-
-Dialogues are written in the Yarn language, so you'll need to get a sense of what the syntax is like. You can [read about all the basics in the documentation](https://docs.yarnspinner.dev/beginners-guide/syntax-basics) and [try it out directly in the browser](https://try.yarnspinner.dev/). Yarn Spinner has an official add-on for VS Code if you want code completion and syntax highlighting in your yarn files.
-
-The [FAQ on the website](https://docs.yarnspinner.dev/using-yarnspinner-with-unity/faq) is also a good way to see how the developers suggest using Yarn Spinner
-
-Finally, the Yarn Spinner unity package comes with a bunch of samples that you can use as a template for the type of dialogue that you're trying to make. There is a samples tab in the package manager where you can download and try them out.
-
