@@ -8,6 +8,8 @@ title: Day 9
 2. [Inventories and Keys](#inventories)
 
 Also the [Microjam Bitseum](micro-jam-museum.html) is now up! If I have the wrong version of your group's game let me know!
+
+**Template**: If you haven't yet downloaded the [flat game template unitypackage](https://drive.google.com/file/d/1wl8eYa-01PaycjSLsaZzSBzm7S1s59S3/view?usp=sharing), please do!
 # Project Sketch Meetings
 
 Add your name to the list on the board for meetings. 
@@ -59,7 +61,7 @@ Beyond running, jumping, and touching, items complicate how players interact wit
 
 # Picking up an item and holding on
 
-You've already built a pickup in roll-a-ball. But what about different types of pickups? How do you use them later?
+You've already built a pickup in roll-a-ball. But what about different types of pickups? How do you keep track of what's been picked up? How do you use an item later?
 ## Pickup Prep
 
 Start with the same setup as the roll-a-ball pickup (i.e. an object with a trigger).
@@ -94,7 +96,7 @@ public class Inventory : MonoBehaviour
 Next add a script to the object being collected. This script will:
 
 1. Use OnTriggerEnter2D to detect when something collides with it.
-2. Check if that object has an Inventory.
+2. Check if the incoming collider has an Inventory script attached to it.
 4. Add itself to the inventory when it gets picked up.
 5. Destroy the collectible game object.
 
@@ -122,7 +124,7 @@ Test it out. When moving the player over the pickup, the object should disappear
 
 ## Using items
 
-For now, our scripts will automatically check for things in the player's inventory. Doing this is pretty similar to the collectible script above.
+We can write a script to automatically check for an item in the player's inventory. Doing this is pretty similar to the collectible script above.
 
 To start, you'll need to create another object in the scene for the player to interact with and also give it a trigger collider. Then add a script to this object, which will:
 
@@ -167,7 +169,7 @@ Since I add the fixed quilt to the player's inventory, I could have the player b
 
 ## Inventory UI
 
-For showing the inventory, there needs to be a connection made between the values of the Inventory script and the text (TMP_Text) values of UI elements.
+For showing the inventory, a connection must be made between the values of the Inventory script and the text (TMP_Text) values of UI elements.
 
 Make sure there's a UI element in the scene that you're working on. If you're in the flat game template. There is a UI element in the "Scene1" scene which is a child of the Canvas element.
 
