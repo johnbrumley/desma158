@@ -24,7 +24,7 @@ Beyond running, jumping, and touching, items complicate how players interact wit
 
 ![](https://collectionapi.metmuseum.org/api/collection/v1/iiif/322613/1568266/main-image)<br/>*Items and a bag (here, a bucket) for carrying*
 
-Through prosthetic extension of the player character's form (whether human, animal, or ball), they change how a player engages with the surrounding territory. 
+## Through prosthetic extension of the player character's form (whether human, animal, or ball), they change how a player engages with the surrounding territory. 
 
 ![](https://lh5.googleusercontent.com/0cwOyzl1id8-sxFHP5YVAyNFosKMW50vYkgy6kdOZOPK09MKI3sKlJTvnRmoTU_hQWRB5vFUflFFJgR223Ne-9jeGc5vOcpVhN3EEGjoKW3UQDtiU6XV_WlH_wbv0I218o9TwgnOn2qyRka-NU4d0mg)<br/>*Zork (1977)* - Simply a list of the items you've picked up.
 
@@ -36,11 +36,11 @@ Through prosthetic extension of the player character's form (whether human, anim
 
 ![](https://lh5.googleusercontent.com/tT3S7CFiecAFI-Jx3JjUYT2dMLjVcXldpvwL6im-5354uBr_MIhhcHT42yOX6TcK-d-PIq_V2OaeP2kjl4ew2j4eRHJGRL0zPBtzrTgLXrh-LVBY5FAETjJBF5Rn7uQDATjwdM0YudmgVJeZB3Q-kfI)<br/>*Stardew Valley (2016)* - More information about items, detailed images, hints on what to use them for.
 
-Through design they carry meaning, further solidifying an invented world, elaborating on relationships, alluding to narrative futures.
+## Through design they carry meaning, further solidifying an invented world, elaborating on relationships, alluding to narrative futures.
 
 ![](assets/Pasted%20image%2020240323121034.png)<br/>*Bloodborne (2015)* - Worldbuilding lore, filling in details and connections.
 
-While a jump is immediate, items have potential and an inventory holds the branching possibilities from which your player-character can select.
+## While a jump is immediate, items have potential and an inventory holds the branching possibilities from which your player-character can select.
 
 ![](https://lh3.googleusercontent.com/CWu4ne1hFx9d0TuFchNEK-DrrzcCkHyO9uUGH26nsmamhfUWpXAC1zjaVZlTAbWGtzTXscJQPtyMQ0-2szTeqifa1uYUkJM48vczKQY0Hxfl65701gXxHFsKjTSp9Yx6BfrxmK89dIHpObopkc6ZBzE)<br/>*[Grotto](https://www.mudroom.rip/) (2023)* – Items, world, and more are generated from lineage. Sometimes items are just to help with getting around.
 
@@ -48,7 +48,7 @@ While a jump is immediate, items have potential and an inventory holds the branc
 
 ![](https://static.cornerhousepublications.org/app/uploads/2020/02/9783903320291_ST_spread04.jpg)
 
-The inventory as metaphor or device for storytelling can be seen as an alternative and, as Le Guin argues, precursor to linear, heroic modes of fiction. 
+## The inventory as metaphor or device for storytelling can be seen as an alternative and, as Le Guin argues, precursor to linear, heroic modes of fiction. 
 
 > If it is a human thing to do to put something you want, because it's useful, edible, or beautiful, into a bag, or a basket, or a bit of rolled bark or leaf, or a net woven of your own hair, or what have you, and then take it home with you, home being another, larger kind of pouch or bag, a container for people, and then later on you take it out and eat it or share it or store it up for winter in a solider container or put it in the medicine bundle or the shrine or the museum, the holy place, the area that contains what is sacred, and then next day you probably do much the same again--if to do that is human, if that's what it takes, then I am a human being after all. Fully, freely, gladly, for the first time. 
 >
