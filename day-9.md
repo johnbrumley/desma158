@@ -12,53 +12,41 @@ Also the [Microjam Bitseum](micro-jam-museum.html) is now up! If I have the wron
 
 Add your name to the list on the board for meetings. 
 
-We'll be a bit more strict about time, since there are other things to get to today.
+
+
 
 ![](https://lh5.googleusercontent.com/9HuGByqdSc6-Y9enCRzPqFax40GrpryxBdmM1GVrE3Oy71B3oiMYOs4NfTA-PsZC0d2GyWRrxCdBsYJe1X6LDLJ3jQDHxEREsQtxMtVXdo_qzwZIiavi2o0nZo57o4IZw0VW8MLJ6Oh2UYx3n1t-2ac)
 
 
 # Inventories
 
-![](https://collectionapi.metmuseum.org/api/collection/v1/iiif/322613/1568266/main-image)
+Beyond running, jumping, and touching, items complicate how players interact with the world. 
 
-*Items and a bag (here, a bucket) for carrying*
+![](https://collectionapi.metmuseum.org/api/collection/v1/iiif/322613/1568266/main-image)<br/>*Items and a bag (here, a bucket) for carrying*
 
+Through prosthetic extension of the player character's form (whether human, animal, or ball), they change how a player engages with the surrounding territory. 
 
-![](https://lh5.googleusercontent.com/0cwOyzl1id8-sxFHP5YVAyNFosKMW50vYkgy6kdOZOPK09MKI3sKlJTvnRmoTU_hQWRB5vFUflFFJgR223Ne-9jeGc5vOcpVhN3EEGjoKW3UQDtiU6XV_WlH_wbv0I218o9TwgnOn2qyRka-NU4d0mg)
-
-*Zork (1977)* - Simply a list of the items you've picked up.
-
-  
-
-![](https://lh4.googleusercontent.com/_ZgZd8eshlzRuhqIPKKGi1f4V6SjNAqcKcs4UqMJBnu06GPlJxU6_zoyTnaZ-z8FxXdclC_vzQg-83znnZMxigQ4ztcdAFZlozSy-PBMi5Hy0NieT-5dZGh__pehPeO1_LfH4Z2dVJWoZMukaBTERQ8)
-
-*Resident Evil 4 (2005)* - Limited carrying space, optimizing your carrying case.
+![](https://lh5.googleusercontent.com/0cwOyzl1id8-sxFHP5YVAyNFosKMW50vYkgy6kdOZOPK09MKI3sKlJTvnRmoTU_hQWRB5vFUflFFJgR223Ne-9jeGc5vOcpVhN3EEGjoKW3UQDtiU6XV_WlH_wbv0I218o9TwgnOn2qyRka-NU4d0mg)<br/>*Zork (1977)* - Simply a list of the items you've picked up.
 
   
 
-![](https://lh5.googleusercontent.com/tT3S7CFiecAFI-Jx3JjUYT2dMLjVcXldpvwL6im-5354uBr_MIhhcHT42yOX6TcK-d-PIq_V2OaeP2kjl4ew2j4eRHJGRL0zPBtzrTgLXrh-LVBY5FAETjJBF5Rn7uQDATjwdM0YudmgVJeZB3Q-kfI)
+![](https://lh4.googleusercontent.com/_ZgZd8eshlzRuhqIPKKGi1f4V6SjNAqcKcs4UqMJBnu06GPlJxU6_zoyTnaZ-z8FxXdclC_vzQg-83znnZMxigQ4ztcdAFZlozSy-PBMi5Hy0NieT-5dZGh__pehPeO1_LfH4Z2dVJWoZMukaBTERQ8)<br/>*Resident Evil 4 (2005)* - Limited carrying space, optimizing your carrying case.
 
-*Stardew Valley (2016)* - More information about items, detailed images, hints on what to use them for.
+  
 
-![](assets/Pasted%20image%2020240323121034.png)
+![](https://lh5.googleusercontent.com/tT3S7CFiecAFI-Jx3JjUYT2dMLjVcXldpvwL6im-5354uBr_MIhhcHT42yOX6TcK-d-PIq_V2OaeP2kjl4ew2j4eRHJGRL0zPBtzrTgLXrh-LVBY5FAETjJBF5Rn7uQDATjwdM0YudmgVJeZB3Q-kfI)<br/>*Stardew Valley (2016)* - More information about items, detailed images, hints on what to use them for.
 
-*Bloodborne (2015)* - Worldbuilding lore, filling in details and connections.
+Through design they carry meaning, further solidifying an invented world, elaborating on relationships, alluding to narrative futures.
 
-![](https://lh3.googleusercontent.com/CWu4ne1hFx9d0TuFchNEK-DrrzcCkHyO9uUGH26nsmamhfUWpXAC1zjaVZlTAbWGtzTXscJQPtyMQ0-2szTeqifa1uYUkJM48vczKQY0Hxfl65701gXxHFsKjTSp9Yx6BfrxmK89dIHpObopkc6ZBzE)
+![](assets/Pasted%20image%2020240323121034.png)<br/>*Bloodborne (2015)* - Worldbuilding lore, filling in details and connections.
 
-*[Grotto](https://www.mudroom.rip/) (2023)* – Items, world, and more are generated from lineage. Sometimes items are just to help with getting around.
+While a jump is immediate, items have potential and an inventory holds the branching possibilities from which your player-character can select.
+
+![](https://lh3.googleusercontent.com/CWu4ne1hFx9d0TuFchNEK-DrrzcCkHyO9uUGH26nsmamhfUWpXAC1zjaVZlTAbWGtzTXscJQPtyMQ0-2szTeqifa1uYUkJM48vczKQY0Hxfl65701gXxHFsKjTSp9Yx6BfrxmK89dIHpObopkc6ZBzE)<br/>*[Grotto](https://www.mudroom.rip/) (2023)* – Items, world, and more are generated from lineage. Sometimes items are just to help with getting around.
 
 # Carrier Bag Theory of Fiction
 
 ![](https://static.cornerhousepublications.org/app/uploads/2020/02/9783903320291_ST_spread04.jpg)
-
-Beyond running, jumping, and touching, items complicate how players interact with the world. 
-
-Through prosthetic extension of the player character's form (whether human, animal, or ball), they change how a player engages with the surrounding territory. 
-
-Through design they carry meaning, further solidifying an invented world, elaborating on relationships, alluding to narrative futures.
-
-While a jump is immediate, items have potential and an inventory holds the branching possibilities from which your player-character can select.
 
 The inventory as metaphor or device for storytelling can be seen as an alternative and, as Le Guin argues, precursor to linear, heroic modes of fiction. 
 
@@ -110,7 +98,7 @@ Next add a script to the object being collected. This script will:
 4. Add itself to the inventory when it gets picked up.
 5. Destroy the collectible game object.
 
-For getting started, you can make a script for each collectible object. Here's one called `CollectibleScrap` for the scrapsOfCloth variable that was defined in the inventory above: 
+For getting started, you can make a script for each type of collectible object. Here's one called `CollectibleScrap` for the scrapsOfCloth variable that was defined in the inventory above: 
 
 ```csharp
 using UnityEngine;
