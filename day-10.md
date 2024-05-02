@@ -4,9 +4,9 @@ title: Day 10
 ---
 # Plan for today
 
-1. Homeplay 2 Presentations
+1. Homeplay 2 Presentations (Moved to Tuesday with the Prototype)
 2. [Animation](#importing-sprites-animation-frame-animation)
-3. [Miscellany](#mouse-interaction-dragging-snapping)
+3. [Scene Changes](#scenes-loading-changing)
 
 # Importing sprites, Animation, Frame animation
 
@@ -178,131 +178,86 @@ Adding the idle animation to the character.
 
 7. The character should now have an idle animation. Press play in the scene view and the animation will start with the scene.
 
-# Mouse interaction, dragging, snapping
 
-I've put together a script called `MouseDrag` that you can attach to objects you'd like to test out with mouse interactions. UI Buttons are already set up for receiving mouse inputs, so you don't need to add this script to those.
+# Scenes, Loading, Changing
 
-Create a new script called `MouseDrag` in your scene. 
+This demo heavily references [this demo game](https://drive.google.com/file/d/1hBL7aww-pa3cSKZHSHBiVD8_bAXoOkC_/view?usp=share_link). But most concepts will work with the [Flat Game Template](https://drive.google.com/file/d/1wl8eYa-01PaycjSLsaZzSBzm7S1s59S3/view?usp=sharing) from a few classes ago. 
 
-> Note: Mouse events work in both 2D and 3D, but the snapping on this script is only set up for 2D (using Physics2D and Collider2D)
+If you want another Unity project to pick apart, feel free to download the other demo package and import it into your existing 2D unity project or a new project (2D URP template, add input system package)
+
+![](https://lh4.googleusercontent.com/PYnNLwxj5vHIZDYpw1UPhS4InxTHvrT3f4nx9FcNizkT_D0ON00AMi2QjX-ujN0rsYXaY7tbMj1qryTD0g1VXwRD1J-9cHRgx-5y4ImTOMgLpfCmNeqtGyI34bcWI9TsceO1wiFQlxVaEt2nxAilgxk)
+
+Here is an overview of the different scenes and how they are connected.
+## Start Screen or Title screen
+
+![](https://www.syfy.com/sites/syfy/files/super-mario-64-hero.jpg)
+
+People have made [web-based versions](https://sm64.gitlab.io/) of just the SM64 title screen.
+
+This can be any sort of text and image combination. You really can include whatever you would like in this scene (a player controller, video, animation, a mini-game).
+
+In the example game, I’ve set it to check the current high score and blink some text. In the Flat Game Template, there's just some text and a script which makes other text fade in and out. 
+
+Both demos have a way to detect a key input and change scenes. Let's take a look at how it works.
+
+![](assets/any-key-to-play.png)
+Flat Game Template start screen - The AnyKeyToPlay Script is attached to the Canvas game object. It only detects the space bar, so we can change it to work with any key using the new input system.
+
+The AnyKeyToPlay script directly loads the next scene in the build settings:
 
 ```csharp
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class MouseDrag : MonoBehaviour
+namespace DesmaDemos
 {
-    // toggle whether to use snapping
-    public bool snapToPosition = false;
-    // radius to check for finding snap points
-    public float snapRadius = 1f;
-    // use a layer mask to filter unwanted colliders
-    public LayerMask snapLayer; 
-
-    // reference to our camera
-    Camera cam;
-
-    void Start()
+    public class AnyKeyToPlay : MonoBehaviour
     {
-        // shorthand for grabbing the main camera
-        cam = Camera.main;
-    }
-
-    // do something on mouse click
-    void OnMouseDown()
-    {
-        print("mouse pressed");
-    }
-
-    // do something while mouse is clicked and held (every frame)
-    void OnMouseDrag()
-    {
-        // move object to position of mouse
-        Vector2 mousePos = Input.mousePosition; // using old input system
-
-        // convert from screen space (mouse coords) to world space (game coords)
-        Vector3 newPos = cam.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 10f));
-
-        // set the position
-        transform.position = newPos; 
-    }
-
-    // do something when mouse released
-    void OnMouseUp()
-    {
-        if (snapToPosition)
+        void Update()
         {
-            // use an overlap to check for nearby objects 
-            Collider2D collider = Physics2D.OverlapCircle(transform.position, snapRadius, snapLayer);
-            // if another collider was found, snap to that object
-            if(collider != null)
+	        // note that this is for space bar only
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                transform.position = collider.transform.position;
+                SceneManager.LoadScene(1);
             }
         }
     }
 }
-
 ```
 
-You can attach this script to a game object that you'd like to drag around. 
-
-The only caveat is that **the object needs to have a collider** ([documentation](https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnMouseDrag.html)).
-
-The `OnMouseDown` method is empty, but this can be used if you only care about whether an object has been clicked. `OnMouseUp` is only used for snapping.
-
-## How snapping works
-
-When you release the mouse on the dragged game object, `OnMouseUp` will run. 
-
-After checking for whether `snapToPosition` is true or false, the script will use an overlap, specifically [OverlapCircle](https://docs.unity3d.com/ScriptReference/Physics2D.OverlapCircle.html), which temporarily creates a circle at a position with a specified radius and will return the first collider that overlaps with the circle. 
-
-Here, the script uses the position of the game object which is being dragged as the center of the circle and a radius specified by the `snapRadius` variable. Additionally, the `snapLayer` layermask will filter out any colliders that aren't on the layers we're interested in.
-
-If the returned collider exists (i.e. is not null), the script will set the dragged object's position equal to the position of the collider object.
-
-![](assets/snap-points.png)
-The snap point requires only a **Transform** and a **Collider2D** to work. In the above image, I've used a sprite renderer to make it easier to spot the point. 
-
-Additionally, I've placed these snap points on a [Layer](https://docs.unity3d.com/Manual/Layers.html) called 'snap' so that the `snapLayer` property of the `MouseDrag` script can be used to ignore all colliders not on this layer.[ Adding a new layer](https://docs.unity3d.com/Manual/create-layers.html) to your project is done by clicking on the layer dropdown and selecting *Add Layer...*. After adding a new one by typing the name into one of the empty slots, you'll have to go back to the object and set it to the newly added layer.
-
-![](assets/draggable-object.png)
-
-The draggable object now has the `MouseDrag` script with snapping set to true and the `snapLayer` set to 'snap'. 
-# Joytokey config
-
-For those that might want to test the cocktail cabinet inputs by plugging them directly into your computer. You can download the [JoyToKey](https://joytokey.net/en/) config file (you'll also need to download JoyToKey): 
-
-[https://drive.google.com/file/d/1eRSZgUk_XG248zJ_lDLOb1Vf2FHsWwJD/view?usp=share_link](https://drive.google.com/file/d/1eRSZgUk_XG248zJ_lDLOb1Vf2FHsWwJD/view?usp=share_link)
-
-# 2D Platformer Package
-
-![](https://lh4.googleusercontent.com/a3eFBqz2M1djEJb7lQ0yRjeK0_1l4aqcZtdht00yuYqCsdfQ0sjl1zHl6wH330NbI229mABaRCxAv0xZIQRZBRxDwt_xc_PvoM9Ad7proYUBGMExbirZRNwSgDkwzUgZWZrQri01ibaeyJQFmNKHOtI)
-
-So you don't need to try and roll-your-own 2D character controller. I’ve made a demo that shows how to connect this [2D Character Controller script](https://github.com/Brackeys/2D-Character-Controller)  with the newer input system, specifically the one used by the game lab arcade machines.
-
-Download the [demo unitypackage](https://drive.google.com/file/d/17CZ3ogYZOAYwsJTV8AN-7D53HzC9NNmg/view?usp=drive_link) and test it out.
-
-You can watch a video walkthrough of the original script [here](https://www.youtube.com/watch?v=dwcT-Dch0bA).
-
-If you want to allow for the character to crouch properly, you will need to modify the “Interactions” section of the input actions:
-
-
-![](https://lh4.googleusercontent.com/3ONCsb-IGzJjWnEkX5VljcKfyd3Y7yZm8lW2G1-JB8wIFxCax_T6dawDNfXyhFtnvKd887IO84c9MNWywPZYN8uOpqVC8UvHNRDpf4Tv2FWyEpbd0fTjzSTv7cv02aRph1Dltt6NBYMamKzFX7saLNw)
-
-  
-
-This allows the OnButton2 to trigger on both press and release. You can check the state by testing the input value:
+Changing scenes involves the [Unity Scene Manager](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.html) which requires
 
 ```csharp
-void OnButton2(InputValue value)
+Using UnityEngine.SceneManagement;
+```
+
+Scenes can be loaded by name `SceneManager.LoadScene("StartScene");` or by their build index (as above). Scenes need to be added to the build before they can be loaded by the scene manager
+
+Open the Build Settings (File > Build Settings) and drag the scenes you would like to include with the game into the Scenes In Build section
+
+![](https://lh5.googleusercontent.com/X3lERYJOPnKlP_Zpqba4lG2Wzj1lZZwRIEccXUEGXBqWFXt9rYAYVehRbpBSlvYrbpyP84gb2HRId1aI0c6fBGM3kQZBMMPeMCi1R4ykghljN5TvWh4k7BIe6FCVip2NJWYfE5qPJnhwwXglvmITkO8)
+
+The build index for each scene is listed on the right side.
+
+How is the demo game using this?
+
+![](https://lh4.googleusercontent.com/q3KKJFjVeXRvY3vzPSOujir4AU0ZnLckxpgUQlO7h2nj0EynNDWzmMKJMJf2SPhptYZz_mjvlFTZxONbP0rFAL7bAZLsxycOh2fH7FmL9vHFvkqcVPRauZrKxnlJHCdcYpeh_ZGM22W7HlV45Yj1P6Y)
+
+The demo game has the StartGame script which begins the game using a GameManager (more on this in a second) script. It detects keyboard input using the new input system:
+
+```csharp
+using UnityEngine;
+using UnityEngine.InputSystem;
+public class StartGame : MonoBehaviour
 {
-	if (value.isPressed)
+	void Update()
 	{
-		crouch = true;
-	} 
-	else
-	{
-		crouch = false;
-	}       
+		if (Keyboard.current.anyKey.wasPressedThisFrame)
+		{
+			GameManager.Instance.StartGame();
+		}
+	}
 }
 ```
+
+
