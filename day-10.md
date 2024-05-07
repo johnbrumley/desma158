@@ -4,7 +4,7 @@ title: Day 10
 ---
 # Plan for today
 
-1. Homeplay 2 Presentations (Moved to Tuesday with the Prototype)
+1. Homeplay 2 Presentations
 2. [Animation](#importing-sprites-animation-frame-animation)
 3. [Scene Changes](#scenes-loading-changing)
 
@@ -109,6 +109,7 @@ Here's the sliced up grid for the previous sprite:
 We'll get into the details of the sprite importing process after talking about another method for importing sprites.
 
 [Spriters-resource](https://www.spriters-resource.com/) is a good place to see lots of examples of sprite sheets from lots of games.
+
 ## Directly importing sprites from photoshop
 
 But, when using the 2D (URP) template, Unity includes a number of 2D specific packages that might be useful to reduce importing headaches.
@@ -118,7 +119,7 @@ But, when using the 2D (URP) template, Unity includes a number of 2D specific pa
 
 The 2D PSD Importer package helps out with mapping Photoshop layers to sprites, for both generating sprite sheets and rigged characters.
 
-[Here is a very good overview](https://youtu.be/b2bIh8WPsi4) of what the package is capable of. For this demo, we’ll only be bringing in sprites for use in frame animations. 
+[Here is a quick overview](https://youtu.be/b2bIh8WPsi4) of what the package is capable of. For this demo, we’ll only be bringing in sprites for use in frame animations. 
 
 With the importer package, you don’t need to manually create a tiled sprite sheet, where each frame of the animation is placed on a grid (see above sheets). Instead, create each sprite on its own layer and Unity will handle how the sprite should be broken up in the import settings.
 
@@ -138,6 +139,7 @@ With the importer package, you don’t need to manually create a tiled sprite sh
 	3. Import Mode: Individual Sprites (Mosaic)
 	4. Use as Rig: False (unchecked)
 	5. Filter Mode: Point (no filter) – this is if you want crisp pixel edges
+	6. Compression: None (fixes color issues – for very low res pixel art)
 	   
 	   ![](https://lh3.googleusercontent.com/PxfLSvS5TbXlHXlIui1pSnVp7IbeeEmo7DtpRsHQ6WG8tk9GXQFv9FW7c9OYvyVuhOAiAxg9XRphG8-CcGF6dlEZiGA8ZfOrmQyA9bV1POhMuxj0Ut4tU1J7eZsbVlAMa3DNRUKLl4xK5bLuKIFgbL4)
 
