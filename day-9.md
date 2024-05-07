@@ -7,7 +7,7 @@ title: Day 9
 1. [Project 2 Sketch Meetings](#project-sketch-meetings)
 2. [Inventories and Keys](#inventories)
 
-Also the [Microjam Bitseum](micro-jam-museum.html) is now up! If I have the wrong version of your group's game let me know!
+Also the [Microjam Bitseum](micro-jam-museum/index.html) is now up! If I have the wrong version of your group's game let me know!
 
 **Template**: If you haven't yet downloaded the [flat game template unitypackage](https://drive.google.com/file/d/1wl8eYa-01PaycjSLsaZzSBzm7S1s59S3/view?usp=sharing), please do!
 # Project Sketch Meetings
