@@ -19,23 +19,22 @@ Weeks 1-2:
 
 ---
 
-Weeks 3-6:
+Weeks 3-7:
 ## [2. Zine](project-2.md)
 
 #### **DUE 4/30:** Sketch
 #### **DUE 5/7:** Prototype
-#### **DUE 5/14:** Project
+#### **DUE 5/21:** Project
 
 <!-- [View Project 2 Submissions](project-submissions.html?p=2) -->
 
 ---
 
-Weeks 7-10:
+Weeks 8-10:
 ## 3. Game as Engine
 
-#### **DUE 5/21:** Sketch
-#### **DUE 5/28:** Prototype 
-#### **DUE 6/4:** Project
+#### **DUE 5/28:** Sketch Prototype
+#### **DUE 6/6:** Project
 
 <!-- [View Project 3 Submissions](project-submissions.html?p=3) -->
 

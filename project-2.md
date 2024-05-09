@@ -62,7 +62,7 @@ If the zine is primarily about the art assets, use quick sketches or rough appro
 
 The prototype should be playable within the editor, even if just a small portion, so we can give feedback.
 ## 3. Build it
-**Due by Tuesday 5/14**
+**Due by Tuesday 5/21**
 [Submit Project 2: Flat Game](https://docs.google.com/forms/d/e/1FAIpQLScf0BCxuv03V0W_HngS1RunHHZAP5oOLWLjxDtktjOd_K07dQ/viewform?usp=sf_link)
 
 1. **Build your zine**. 
