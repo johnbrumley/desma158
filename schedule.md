@@ -17,4 +17,3 @@ title: Schedule
 | **10** | 6/4, 6/6<br>   | Project 3: Share. Play. Crit. Part 1 <br/> **DUE**: Project 3 Due by end of day<br>                                              | <!--[Course Evals!](https://be.my.ucla.edu/directlink.aspx?featureID=161&src=r0) <br/>-->Project 3: Share, Play, Crit. Part 2                  |
 
 
-
