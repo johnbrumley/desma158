@@ -38,6 +38,7 @@ This script references a UI Text element that displays the current high score. A
 using UnityEngine;
 using TMPro;
 public class SimpleHighScore : MonoBehaviour
+public class SimpleHighScore : MonoBehaviour
 {
 	public TMP_Text highScore;
 	
