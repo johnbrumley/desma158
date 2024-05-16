@@ -63,10 +63,10 @@ If the zine is primarily about the art assets, use quick sketches or rough appro
 The prototype should be playable within the editor, even if just a small portion, so we can give feedback.
 ## 3. Build it
 **Due by Tuesday 5/21**
-[Submit Project 2: Flat Game](https://docs.google.com/forms/d/e/1FAIpQLScf0BCxuv03V0W_HngS1RunHHZAP5oOLWLjxDtktjOd_K07dQ/viewform?usp=sf_link)
+[~SUBMIT PROJECT 2 HERE~](https://docs.google.com/forms/d/e/1FAIpQLSejeM6w6u5Onp2Z1QTFU8pg3D8PQrr8qToizsXeZBDg3WAx5Q/viewform?usp=sf_link)
 
 1. **Build your zine**. 
-2. Include at least **Start Scene** that shows when a player opens the project. You can also have multiple scenes, an ending scene, and more. 
+2. Include at least **Start Scene** that shows when a player opens the project followed by another scene. You can have as many additional scenes as you like including an ending scene, secret scenes, and more! 
 3. **Custom character and world assets.** Photographs, sketches, screenshots, writing, or anything that can be turned into a 2D image can become part of your zine. Combine, collage, and experiment.
 4. Add in game feel elements. Background music, sound effects, animations, and more!
 5. *Optional:* Create **persistent data**. This could be a scoring system, an image, messages, or something else that gets stored across playthroughs.
