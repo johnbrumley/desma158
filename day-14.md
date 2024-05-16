@@ -8,12 +8,12 @@ Take a quick look at the [Project 2 page](project-2.md) to make sure that you ar
 
 We can also revisit any concepts from the last few weeks that might feel a bit shaky:
 - [Input System](day-8.md#cocktail-cabinet-input-system)
-- Triggers, Dialogue
-- Inventory
-- Animation / Scripting animation
-- Changing scenes
-- Game Manager
-- Instantiation and Destruction
+- [Triggers, Dialogue](day-8.md#scripting-triggers-and-collisions-in-2d)
+- [Inventory](day-9.md#picking-up-an-item-and-holding-on)
+- [Animation](day-10.md#importing-sprites-animation-frame-animation) / [Scripting animation](day-13.md#animation-scripting)
+- [Changing scenes](day-10.md#scenes-loading-changing)
+- [Game Manager](day-12.md#a-game-manager-and-dontdestroyonload)
+- [Instantiation and Destruction](day-11.md#instantiate-and-destroy)
 
 Or go over some ways to integrate other elements with the above concepts:
 - Sounds
@@ -78,3 +78,4 @@ Careful though, it can be easy to “over-juice” a game and make players a bit
 
 # Studio Time
 
+![](assets/Pasted%20image%2020240515222303.png)
