@@ -26,8 +26,8 @@ Or go over some ways to integrate other elements with the above concepts:
 - Or anything else!
 
 Some bonus things:
-https://downpour.games/ -- mobile app game engine
-https://alienmelon.itch.io/electric-zine-maker -- digital tool for making zines
+[https://downpour.games/](https://downpour.games/) -- mobile app game engine
+[https://alienmelon.itch.io/electric-zine-maker](https://alienmelon.itch.io/electric-zine-maker) -- digital tool for making zines
 
 # Testing on the cabinet
 
