@@ -2,6 +2,10 @@
 layout: slides
 title: Day 14
 ---
+
+![[assets/MFAShow_UPDATEDWebBanner_001.png]]
+
+Check out the DESMA MFA 2024 exhibition tonight!
 # Project 2 info
 
 Take a quick look at the [Project 2 page](project-2.md) to make sure that you aren't forgetting anything.
