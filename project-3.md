@@ -11,7 +11,7 @@ title: Project 3
 
 What is a game engine? Project 3 is about considering the potential for games, systems, and other digital objects to act as generative engines for ideas, experiences, arguments, perspectives, subversions, meditations, and everything in between.
 
-So far in this class, you've been learning to build projects using the Unity game engine. For this project, you will explore both Unity and other forms of game engines to build a meta-game, that is, something which is aware of games, sampling from or even built upon existing games, but also consciously outside of its referent. 
+So far in this class, you've been learning to build projects using the Unity game engine. For project 3, you will explore other aspects of what a game engine can do. These can be techniques for creating games, focusing on aspects of gameplay and interaction outside of the game engine, or even remixing existing games.
 
 > Prepositions are to parts of speech as _metagames_ are to games. A signifier for everything occurring before, after, between, and during games as well as everything located in, on, around, and beyond games, the metagame anchors the game in time and space.
 
@@ -36,32 +36,27 @@ When building your game, especially one that involves generative objects, sounds
 - **Consideration of engine.** What runs the game and how does the game relate to the things "in, around, and beyond" it?
 - **Consideration of inputs**. Does a player need to interact directly with the work? Consider the player/spectator and how they should view the work. Is it meant to be meditative, overwhelming, funny? Should it run ambiently in the background, should it run on extended cycles (hours, days, seasons, lifetimes, every rainy day, etc.), should it use external sensors or react to network data?
 - **2D, 3D, XD**. No restrictions on the format.
+- You can freely use any projects you've already done in class, or make something entirely new!
 
 ![](https://bwatanabe.com/images/img_wanderingDeer_02.jpg)
 
 [San Andreas Streaming Deer Cam](http://sanandreasanimalcams.com/). Brent Watanabe
 
-# 1. Sketches of ideas
-**Due by Tuesday 11/14**
+# 1. Early Experiments
+**Due by Tuesday 5/28**
 
-Develop a short sketch that outlines your game. What are you creating and how will it run? How do you imagine someone viewing or interacting with it? Does the work live somewhere beyond a screen or projection? Mock up a few examples of what you want to create.
-### Be sure to include:
-1. Possible titles
-2. What is the Engine?
-3. What is being created, explored, revealed, etc. Is there a story behind the process? 
-4. How should a person view or interact with the game? Is there a form of input or external influence that affects the game?
-5. Drawings. Sketch what your work might look like at key moments. Does it involve other games? Reflect the scope of what might be possible in your project.
+What are you creating and how will it run? How do you imagine someone viewing or interacting with it? Does the work live somewhere beyond a screen or projection?
+
+Make a simple experiment in Unity that shows a simplified version of what you're trying to do. 
+
+For example:
+- You want to use sound as an input:  Show that you can connect a microphone to Unity.
+- You want to build a custom controller, show that you're able to receive inputs in Unity or construct a simple version of the hardware.
 
 ![](https://www.mokafolio.de/thumbs/works/BlockBills/01-1200x766.jpg)
 
 [Block Bills](https://www.mokafolio.de/works/BlockBills). Matthias Dörfelt
 
-# 2. Prototype
-**Show in class on Tuesday 11/28**
-
-Build as much of your game as you can while focusing on solely the mechanics, systems, and behaviors. Try and mock up individual components of the system. If using custom inputs, show how they will work. It's ok to use placeholders for any art elements (graphics, sounds, text). 
-
-We will share prototypes in class. It is important to have a working (or partially working) prototype so we can give feedback and support.
 
 # 3. Build it
 **Due by Thursday 12/7**
