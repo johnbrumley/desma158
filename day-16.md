@@ -11,7 +11,7 @@ title: Day 16
 
 Let's take a look at the [Project 3 page](project-3.md) and start thinking about ideas for the project. Take a look at some examples on that page or check out some of these projects for ideas:
 
-|                |                                                                                                                                                                      |
+| test           | test                                                                                                                                                                 |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Angela Washko  | [https://angelawashko.com/section/289333-Gaming%20Interventions.html](https://angelawashko.com/section/289333-Gaming%20Interventions.html)                           |
 | Cory Arcangel  | [https://coryarcangel.com/things-i-made/](https://coryarcangel.com/things-i-made/)                                                                                   |
@@ -21,6 +21,21 @@ Let's take a look at the [Project 3 page](project-3.md) and start thinking about
 | Pippin Barr    | [https://pippinbarr.com/tags/top-five/](https://pippinbarr.com/tags/top-five/)                                                                                       |
 | Total Refusal  | [https://totalrefusal.com/](https://totalrefusal.com/)                                                                                                               |
 | Zach Gage      | [http://www.stfj.net/index2.php](http://www.stfj.net/index2.php)                                                                                                     |
+|                |                                                                                                                                                                      |
+
+| name           | project                                                                                                                                                              |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Angela Washko  | [https://angelawashko.com/section/289333-Gaming%20Interventions.html](https://angelawashko.com/section/289333-Gaming%20Interventions.html)                           |
+| Cory Arcangel  | [https://coryarcangel.com/things-i-made/](https://coryarcangel.com/things-i-made/)                                                                                   |
+| Everest Pipkin | [https://everest-pipkin.com/](https://everest-pipkin.com/)                                                                                                           |
+| Ian Cheng      | [http://iancheng.com/](http://iancheng.com/) , [emmisaries guide to worlding](https://drive.google.com/file/d/19bzkIPR5kHHVHowBl4LGLdvRuzZPrDKL/view?usp=drive_link) |
+| myhouse.wad    | [https://www.doomworld.com/forum/topic/134292-myhousewad/](https://www.doomworld.com/forum/topic/134292-myhousewad/)                                                 |
+| Pippin Barr    | [https://pippinbarr.com/tags/top-five/](https://pippinbarr.com/tags/top-five/)                                                                                       |
+| Total Refusal  | [https://totalrefusal.com/](https://totalrefusal.com/)                                                                                                               |
+| Zach Gage      | [http://www.stfj.net/index2.php](http://www.stfj.net/index2.php)                                                                                                     |
+
+
+
 We don't have much time left in the quarter (2 weeks!) so it's good to consider the complexity and scope of what you want to do.
 
 
@@ -62,9 +77,11 @@ Fourth wall breaking in Metal Gear Solid (1998)
 > *Rise of the Videogame Zinesters* Anna Anthropy (2012)
 
 
+<iframe src="https://player.vimeo.com/video/17789896?h=a2a3fb7480" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+[Modern Warfare](https://vimeo.com/17789896). Claire L. Evans (2010)
 
 
-# Thinking about visual expression, elements of design in games
+# Visual expression and elements of design
 
 [![](https://lh5.googleusercontent.com/7wKIbZ6yIYl1B4vwBMs-N5p-ZgXAANINzuK0Zd8FZhHYm3jwGerODq8EkkzijuHWnNqkp_ZquOO3TTxkftIzj38OKgPMoWLIyhDTSecqvscZGxUzv4BwnXAiGSDKXR7aRpcoXHqiO4zNIfk5gNMjDGU)](https://youtu.be/CHm2d3wf8EU)
 *Cruelty Squad*
@@ -182,21 +199,6 @@ Global illumination is a group of techniques that model both direct and indirect
 Search online for a 3D model of a piece of furniture (the [Everything Library](https://davidoreilly.itch.io/everything-library-furnishings) is a good starting place). Change the material of this object into something impossible or unexpected. Create a composition around the object by using only Unity's default primitives. Frame the scene with the Main Camera object. Use the skybox, lights, and post-processing to enhance the scene.
 
 If you aren't sure how to recreate an effect, ask us and we can help.
-
-
-
-# Intro to Project 3
-
-[**Project 3: Game as Engine (Due: Week 10)**  ](project-3.md)
-
-
-
-## Extra Credit
-
-Read Ch 4, "Changing the Game" of *Rise of the Videogame Zinesters* ([pdf](https://drive.google.com/file/d/1_Xy_K0T7GHnaOLjsjEUpHlG7ShGXlp0F/view?usp=drive_link)) and respond to the questions in this [form](https://forms.gle/8TeLm7JJH42XU82V7) 
-
-<iframe src="https://player.vimeo.com/video/17789896?h=a2a3fb7480" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-[Modern Warfare](https://vimeo.com/17789896). Claire L. Evans (2010)
 
 # Mapping Metagames
 
