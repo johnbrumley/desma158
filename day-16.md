@@ -11,18 +11,6 @@ title: Day 16
 
 Let's take a look at the [Project 3 page](project-3.md) and start thinking about ideas for the project. Take a look at some examples on that page or check out some of these projects for ideas:
 
-| test           | test                                                                                                                                                                 |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Angela Washko  | [https://angelawashko.com/section/289333-Gaming%20Interventions.html](https://angelawashko.com/section/289333-Gaming%20Interventions.html)                           |
-| Cory Arcangel  | [https://coryarcangel.com/things-i-made/](https://coryarcangel.com/things-i-made/)                                                                                   |
-| Everest Pipkin | [https://everest-pipkin.com/](https://everest-pipkin.com/)                                                                                                           |
-| Ian Cheng      | [http://iancheng.com/](http://iancheng.com/) , [emmisaries guide to worlding](https://drive.google.com/file/d/19bzkIPR5kHHVHowBl4LGLdvRuzZPrDKL/view?usp=drive_link) |
-| myhouse.wad    | [https://www.doomworld.com/forum/topic/134292-myhousewad/](https://www.doomworld.com/forum/topic/134292-myhousewad/)                                                 |
-| Pippin Barr    | [https://pippinbarr.com/tags/top-five/](https://pippinbarr.com/tags/top-five/)                                                                                       |
-| Total Refusal  | [https://totalrefusal.com/](https://totalrefusal.com/)                                                                                                               |
-| Zach Gage      | [http://www.stfj.net/index2.php](http://www.stfj.net/index2.php)                                                                                                     |
-|                |                                                                                                                                                                      |
-
 | name           | project                                                                                                                                                              |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Angela Washko  | [https://angelawashko.com/section/289333-Gaming%20Interventions.html](https://angelawashko.com/section/289333-Gaming%20Interventions.html)                           |
@@ -33,8 +21,6 @@ Let's take a look at the [Project 3 page](project-3.md) and start thinking about
 | Pippin Barr    | [https://pippinbarr.com/tags/top-five/](https://pippinbarr.com/tags/top-five/)                                                                                       |
 | Total Refusal  | [https://totalrefusal.com/](https://totalrefusal.com/)                                                                                                               |
 | Zach Gage      | [http://www.stfj.net/index2.php](http://www.stfj.net/index2.php)                                                                                                     |
-
-
 
 We don't have much time left in the quarter (2 weeks!) so it's good to consider the complexity and scope of what you want to do.
 
@@ -90,6 +76,7 @@ Take each of these into consideration when designing the visual features of your
 
 It can be useful to look online (or use a virtual assistant) on how to achieve the "look" from an existing game in Unity. Try including the term "shader" or "material", e.g.  "zelda shader in Unity"
 # Line
+
 Horizontal, vertical, diagonal, straight, curved, dotted, broken, thick, thin. 
 
 [![](https://lh3.googleusercontent.com/B312KoDC4ofrUSBQx7OgWpsN6EOLKDrJC8dEEEYg4Co6biCJD3NHc1Gj7hcM6v2U_BdivWcCMaHYXkXq6bRNlBfiCmV4M6BmHoo-WsvH65-XwUc9XQSTJ1YXBuBiYc6heU5v1C5Cz6RvhhhAVnNjdRk)](https://nikitadiakur.com/)
@@ -97,6 +84,7 @@ Horizontal, vertical, diagonal, straight, curved, dotted, broken, thick, thin. 
 
 Nice talk about achieving outline effects in the game Roller Drome - [https://youtu.be/G1NY0LKDqJo](https://youtu.be/G1NY0LKDqJo) 
 # Color
+
 The wavelength of light. Hue, value, intensity, and temperature.  
 
 [![](https://lh4.googleusercontent.com/_KYd_SE2MxOeby-x4UCYigqzECMEFh2N-EXE15P7mNF5uWX1oOdVlH5gnMJ2o3d6lyjddQayRCJWT2196O4Qc6G4hsCPHJYPTkN1sWvmFyAY0usZEZbJ3bnmOFp9lJASWeKn9hqvbwYJbziZhOkepbA)](https://www.youtube.com/watch?v=1b9kVuavlqA)
@@ -108,6 +96,7 @@ The wavelength of light. Hue, value, intensity, and temperature.
 [![](https://lh3.googleusercontent.com/cjH5nRkVm6HeyS_Ft9nQ3DDfmJMxgX7ZB2cRxVL4RL-HiUPjoqvQxd3oV6X7z9WXT1c-Prkqhju-e-dL55PPOXVpGvpCMsxfV5-tmZkbW7UzxY6Cc7klcBnY5s6Xt8MYVFNkzS4xulyVxccPberMCB0)](https://www.facebook.com/GazelliArtHouse/videos/peter-burr-dirtscraper-live/566167464450625/)
 [*Peter Burr*](https://www.peterburr.org/)
 # Form
+
 3D, Geometric, organic
 
 [![](https://lh6.googleusercontent.com/D-Ql7leOim7zk3n_20AguviEbXcgxpo2kCFs8vXWgybzicoh-InlkXYFLOPyVAc3ZDoa_X8Z9oDSH7obtGiSc44AvfZHhCyhEDIKsoe6ex71PxONm5R7ueiFs4vCFCuz66CSim3urbqHImI7YC6Zv_k)](http://iancheng.com/)
@@ -144,11 +133,11 @@ For a ton of insightful opinions and examples – references within and beyond g
 ## Toon Shaders
 
 ![](assets/Pasted%20image%2020231004235517.png)
-Lots of the effects mentioned at the start of the day can be achieved using a technique called "toon shading" that mixes elements of both lit and unlit shading. The example image above is from a free URP toon shading pack called [OToon](https://assetstore.unity.com/packages/vfx/shaders/otoon-urp-toon-shading-216102) (sadly no longer available via asset store -- backup)
+Lots of the effects mentioned at the start of the day can be achieved using a technique called "toon shading" that mixes elements of both lit and unlit shading. The example image above is from a free URP toon shading pack called [OToon](https://assetstore.unity.com/packages/vfx/shaders/otoon-urp-toon-shading-216102) (sadly no longer available via asset store -- [backup](https://drive.google.com/file/d/1lIjkL4184Dfdk-WngoLva_X1QdqtZ1bO/view?usp=drive_link))
 
 *Note: When looking for custom assets on the Unity Asset Store (or elsewhere), check to make sure they are compatible with your render pipeline.*
 
-## Custom Shaders and Shader Graph
+# Custom Shaders and Shader Graph
 
 URP (and HDRP) include a node-based editor for creating custom shaders, called “Shader Graph”
 
@@ -185,24 +174,9 @@ URP uses **Volumes** for adding post-processing effects to the scene. When a cam
 ![](https://lh4.googleusercontent.com/sm1cjQ5nPucXWSn-htBTXzZVJ3Mvo1srIBJoMGZ1gIDQU110ZrW4TOO7ycWin-CoGETJI4iIV-ui6vFXOI7auRd45e2DU32YJqfSXlMdVUaHhOMMiWNEtbyGn_rBBckMONHPy2_fVuE_Q91bwORsIxE)
 
 
-## Global illumination
-
-![](https://lh6.googleusercontent.com/lfrfA4iPe9KvfuoDjLmWQkm6m18Og0GTD9Vue3pF22E0p95UMjrB_D3sZnWVLUHI_Zi_ZvwF84FjyZ4nAG4lmKs_PsQJC8eNwd2VZvDG6bb29KWr1zm1G3S7EUeXysIL9yKY7oIWjEYJlowxIzCsL3g)![](https://lh6.googleusercontent.com/lfrfA4iPe9KvfuoDjLmWQkm6m18Og0GTD9Vue3pF22E0p95UMjrB_D3sZnWVLUHI_Zi_ZvwF84FjyZ4nAG4lmKs_PsQJC8eNwd2VZvDG6bb29KWr1zm1G3S7EUeXysIL9yKY7oIWjEYJlowxIzCsL3g)
-
-Global illumination is a group of techniques that model both direct and indirect lighting to provide realistic lighting results. Unity has systems for both baked and real time global illumination. In URP, real-time global illumination is not turned on by default ([more info](https://docs.unity3d.com/Manual/realtime-gi-using-enlighten.html))
-
-## Exercise
-
-![](https://d7hftxdivxxvm.cloudfront.net/?quality=80&resize_to=width&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FaFR2A_1SkjNf3nza0_oWyA%2Fnormalized.jpg&width=910)
-*Object*. Méret Oppenheim (1936)
-
-Search online for a 3D model of a piece of furniture (the [Everything Library](https://davidoreilly.itch.io/everything-library-furnishings) is a good starting place). Change the material of this object into something impossible or unexpected. Create a composition around the object by using only Unity's default primitives. Frame the scene with the Main Camera object. Use the skybox, lights, and post-processing to enhance the scene.
-
-If you aren't sure how to recreate an effect, ask us and we can help.
-
 # Mapping Metagames
 
-Let's consider Google Maps as a Game Engine and take a look at ways that it has been approached: 
+Consider Google Maps as a Game Engine and take a look at ways at how it's been leveraged for different purposes: 
 ![](https://storage.googleapis.com/nianticweb-media/v1/img/posts/PokemonGO2.png)
 
 *Pokemon GO*. Niantic/Google (2016) -- see also *Ingress* from the same company
@@ -278,7 +252,7 @@ Speedrunning is another form of hacking, but only with in-universe tools.
 ![](https://lh7-us.googleusercontent.com/ETFB2EPiwbF1bnHWMmGPD-Bz2d_7TcGEudbTe2V2m6PqdDr26tfh5YCRT-H3o2HlN_EAWv6VT87Nm-EsHC3XPWZt6FAqzkVhG4h3WT-BJsV_af0y5047ZIDMvg9UPBX6a4A_me9EwJQQHbxQCgkUkNY)
 
 
-# Camera Tools
+# Cameras
 
 ![](https://cdn.cloudflare.steamstatic.com/steam/apps/1202900/ss_fd6b98c41553fd1579b535f0d5c92d4aebaa772e.1920x1080.jpg?t=1692002567)
 
@@ -288,7 +262,7 @@ Knowing a bit more about working with cameras in Unity can be especially useful 
 
 I'll cover some important tools to know about and a few tricks:
 
-# Camera component
+## Camera component
 
 The Camera ([Standard](https://docs.unity3d.com/Manual/class-Camera.html)) ([URP](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@17.0/manual/camera-component-reference.html)) 
 
@@ -322,7 +296,7 @@ The URP camera adds a significant number of options compared to the default came
 ![](https://catlikecoding.com/unity/tutorials/advanced-rendering/fxaa/setting-the-scene/aliased.png)
 
 Some intense aliasing
-# Render Texture
+## Render Texture
 
 Camera output isn't limited to a display. You can add the output to other objects in the scene using a [Render Texture](https://docs.unity3d.com/Manual/class-RenderTexture.html)
 
@@ -340,7 +314,7 @@ Here's a short setup step-by-step for connecting a camera output to a material u
 
 Output of camera attached to a cube using a Render Texture
 
-# Webcam input
+## Webcam input
 
 Getting the input from a webcam uses a slightly different type of texture called a [WebCamTexture](https://docs.unity3d.com/ScriptReference/WebCamTexture.html)  
 
@@ -365,7 +339,7 @@ public class GetWebCam : MonoBehaviour
 
 Attach this script to an object in your scene and it will replace the BaseMap color of the material with the WebCamTexture
 
-# Virtual Webcam Input
+## Virtual Webcam Input
 
 If I want to route video from another program on my computer, I can create a "Virtual Webcam" to pass the input into Unity using the WebCamTexture.
 
@@ -425,7 +399,7 @@ webcamTexture.deviceName = devices[1].name;
 
 Applying the virtual camera input as a texture on an object
 
-# Reading Pixels
+## Reading Pixels
 
 For grabbing pixels off a Camera or Render Texture see [ReadPixels](https://docs.unity3d.com/ScriptReference/Texture2D.ReadPixels.html)
 
@@ -491,7 +465,7 @@ public class GetWebCam : MonoBehaviour
 
 This begins to encroach into the territory of shaders (or shader graphs) -- URP has a built-in [Fullscreen Shader Graph](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@16.0/manual/post-processing/post-processing-custom-effect-low-code.html) that can be used to design custom post processing effects.
 
-# Decal Projectors
+## Decal Projectors
 
 It is not uncommon to add complexity, shadows, markings, logos, etc. to surfaces without wanting to create a custom texture. This can be achieved using a [decal projector](https://docs.unity3d.com/Packages/com.unity.render-pipelines.universal@17.0/manual/renderer-feature-decal.html)
 
@@ -514,7 +488,7 @@ This should reload the scene and the decal projector will be available to use. U
 The decal projector, depending on the width, height, and projection depth settings in the component will apply a texture (and/or normal map) onto a surface based on it's forward z-direction:
 
 ![](assets/urp-decal-example.png)
-# Boring Challenge
+## Boring Challenge
 
 Set up a live mini map using an overhead camera, render texture, and a UI Raw Image. For an extra challenge, use culling layers on the cameras to have the character look different on the mini map.
 
@@ -522,7 +496,7 @@ Set up a live mini map using an overhead camera, render texture, and a UI Raw Im
 
 ![](assets/render-texture-minimap.png)
 
-# Better Challenge
+## Better Challenge
 
 Using camera techniques from above, mix together video from inside and outside Unity. Create video feedback loops. Mash up multiple video sources and project them onto 3D objects. Add yourself to the mix with a webcam. Add remote performers from zoom using virtual cameras. Anything can become a source from inside and outside of Unity.
 
@@ -542,11 +516,13 @@ Using camera techniques from above, mix together video from inside and outside U
 
 ![](whispering-pines-shana-moulton.png)
 [Shana Moulton](https://www.whisperingpines10.com/)
-
+<!--
 ![](https://www.istanbulmodern.org/pic_lib/bigSize/icerikler/267/ryan_trecartin_267_5280534.jpg)
 
 [Ryan Trecartin & Lizzie Fitch](https://www.instagram.com/ryantrecartin/?hl=en)
-
+-->
 ![](https://www.phaidon.com/resource/1970corridor.jpg)
 
 *Corridor Installation (Nick Wilder Installation)* Bruce Nauman (1970)
+
+

@@ -1327,3 +1327,17 @@ The [FAQ on the website](https://docs.yarnspinner.dev/using-yarnspinner-with-uni
 Finally, the Yarn Spinner unity package comes with a bunch of samples that you can use as a template for the type of dialogue that you're trying to make. There is a samples tab in the package manager where you can download and try them out.
 
 
+## Global illumination
+
+![](https://lh6.googleusercontent.com/lfrfA4iPe9KvfuoDjLmWQkm6m18Og0GTD9Vue3pF22E0p95UMjrB_D3sZnWVLUHI_Zi_ZvwF84FjyZ4nAG4lmKs_PsQJC8eNwd2VZvDG6bb29KWr1zm1G3S7EUeXysIL9yKY7oIWjEYJlowxIzCsL3g)![](https://lh6.googleusercontent.com/lfrfA4iPe9KvfuoDjLmWQkm6m18Og0GTD9Vue3pF22E0p95UMjrB_D3sZnWVLUHI_Zi_ZvwF84FjyZ4nAG4lmKs_PsQJC8eNwd2VZvDG6bb29KWr1zm1G3S7EUeXysIL9yKY7oIWjEYJlowxIzCsL3g)
+
+Global illumination is a group of techniques that model both direct and indirect lighting to provide realistic lighting results. Unity has systems for both baked and real time global illumination. In URP, real-time global illumination is not turned on by default ([more info](https://docs.unity3d.com/Manual/realtime-gi-using-enlighten.html))
+
+## Exercise
+
+![](https://d7hftxdivxxvm.cloudfront.net/?quality=80&resize_to=width&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FaFR2A_1SkjNf3nza0_oWyA%2Fnormalized.jpg&width=910)
+*Object*. Méret Oppenheim (1936)
+
+Search online for a 3D model of a piece of furniture (the [Everything Library](https://davidoreilly.itch.io/everything-library-furnishings) is a good starting place). Change the material of this object into something impossible or unexpected. Create a composition around the object by using only Unity's default primitives. Frame the scene with the Main Camera object. Use the skybox, lights, and post-processing to enhance the scene.
+
+If you aren't sure how to recreate an effect, ask us and we can help.
