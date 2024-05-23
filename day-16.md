@@ -502,7 +502,7 @@ Using camera techniques from above, mix together video from inside and outside U
 
 ![](https://lh7-us.googleusercontent.com/3Talx6Im5upG_4u5cj4UZWv8QiD1SQwLW_PhvqeEPoKodqUSE5gxDe_9e3a_PoxkSh-qMu1ORfttcu4pbXKsrpor9rvtIy2BdO_CSwFzWwm2XiJ8VtQUPegRy0Lvc8ra-OEhorhpMHNbkTcRY9aHbFs)
 
-[Let’s Paint, Exercise & Blend Drinks](https://youtu.be/PvbL_5rH1QQ) - public access television
+[Let’s Paint, Exercise & Blend Drinks](https://youtu.be/PvbL_5rH1QQ) - public access television 
 
 ![](sam-rolfes.png)
 [Sam Rolfes](https://www.instagram.com/sam.rolfes/)
