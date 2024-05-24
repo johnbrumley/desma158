@@ -59,7 +59,7 @@ For example:
 
 
 # 3. Build it
-**Due by Thursday 12/7**
+**Due by Thursday 6/6**
 
 [Submit Project 3: Game As Engine](https://docs.google.com/forms/d/e/1FAIpQLScf0BCxuv03V0W_HngS1RunHHZAP5oOLWLjxDtktjOd_K07dQ/viewform?usp=sf_link)
 
