@@ -45,8 +45,8 @@ A traditional T-pose
 
 # 1: Scan Yourselves!
 
-1. Use a 3D scanning / photogrammetry app on your cell phone to scan yourself and your partners in a [T-Pose](https://youtu.be/7nD9H6__29A?si=Dis7N7wG-6UZleo5) (see reference image)    
-2. Export as **fbx** OR **obj** file. Depending on the service, you may need to 
+1. Use a 3D scanning / photogrammetry app on your cell phone to scan yourself and your partners in a [T-Pose](https://youtu.be/7nD9H6__29A?si=Dis7N7wG-6UZleo5) (see reference image)  -- this pose is important for rigging later on
+2. Export as **fbx** OR **obj** file. Depending on the service, you may need to convert the file. Importing into Blender and exporting to obj / fbx usually works well. 
 
 ---
 
@@ -78,9 +78,7 @@ A traditional T-pose
 
 ![](https://lh7-us.googleusercontent.com/5O5IlH3Zwto72L_Yi8mtUi5iXo97aeaHG6Op_5RsJLWCpe2JvJEFecSEP1_9VJeQ8pLoY6t5yFF6sj4VsBmMFH9IOW9DDHBPfglaYVam3CpFpmQmKkxAWIqku4uL4x72nwYOxf65QaRlNaPXk_GeF20)
 
-
 # 4: Combine in Unity
-
   
 6. After you've completed both your rigging and motion capture process, export file as an .fbx
 7. Launch Unity Hub and create a New 3D URP Project. 
