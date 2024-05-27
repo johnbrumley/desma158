@@ -26,7 +26,7 @@ int randomIndex = Random.Range(0, MyArray.Length); // get random index from arra
 // getting points / positions / vectors
 float radius = 10f;
 Vector3 randomPosition = Random.insideUnitSphere * radius; // within sphere
-Vector2 random2DPosition = Random.insideUnitCircle * radius;
+Vector2 random2DPosition = Random.insideUnitCircle * radius; // within circle
 
 // Random color
 Color randomColor = Random.ColorHSV(minHue, maxHue); // see API doc for full reference
