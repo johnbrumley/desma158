@@ -15,9 +15,10 @@ This is a workshop by [Jenny Rodenhouse](https://jennyrodenhouse.com/) that uses
 # Software in Tutorial:
 
 ## 1. 3D Scan (export .obj/.fbx): 
-1. MagiScan
-2. KIRIEngine
-3. Polycam (paid)
+- [Scaniverse](https://scaniverse.com/)
+- [Luma AI](https://lumalabs.ai/interactive-scenes)
+- [KIRI Engine](https://www.kiriengine.com/)
+- [Polycam](https://poly.cam/) (free trial)
 
 ## 2. Motion Capture:
 
