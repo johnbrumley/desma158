@@ -6,6 +6,8 @@ title: Day 18
 
 The end of the quarter is approaching fast! Please let us know how your projects are coming along and if you are stuck on anything.
 
+Also please evaluate the class if you can. You can go to [this link]([https://be.my.ucla.edu/directlink.aspx?featureID=161&src=r0](https://be.my.ucla.edu/directlink.aspx?featureID=161&src=r0)) to access your evaluations.
+
 
 ![](https://lh7-us.googleusercontent.com/Yk9wV1Y3taImmIvkmREzgfYbmkwO5YbW_wfDnK_bm5tRDe3_vbxow6DGnnXwsWH0SWP8DHodfba3m3u9XE33j6sY_uH2QwcWjW-tcnb1u9hQh3uMMK3blg0aKqDSSpoM0T1exvUriTqlfln5RhsNM2nbjHIuarING433aVCqmRYomeu-l-oZMEdn79WNgQ)
 
