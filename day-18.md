@@ -17,7 +17,9 @@ This guide will walk you through setting up Unity and an Arduino. With some exam
 I am using an Arduino Leonardo in the examples, check if your board is compatible [here](https://marcteyssier.com/uduino/docs/compatibility)
 
 > If you don't want to use Uduino and are more comfortable writing your own arduino code, check out [this project](https://github.com/dyadica/Unity_SerialPort) which has an example project for getting non-blocking serial port communication. If you just want the script, here's the [UnitySerialPort.cs](https://raw.githubusercontent.com/dyadica/Unity_SerialPort/master/Unity_SerialPort/Assets/Scripts/UnitySerialPort.cs) file.
-# Arduino
+
+
+# Arduino Info
 
 Arduino is a company that develops programmable boards (microcontrollers) and an associated software platform for developing code and uploading it to the board. An Arduino is great for developing projects and experimenting with a system before designing a more permanent piece of hardware (or you can also keep using the Arduino board). 
 
